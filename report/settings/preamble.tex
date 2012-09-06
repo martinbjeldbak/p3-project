@@ -1,0 +1,170 @@
+\documentclass[openany,twoside,11pt]{memoir}
+%
+% Packages
+%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\linespread{1.05}
+
+
+%% Fonts
+%\usepackage[sc]{mathpazo}
+%\usepackage{courier}
+%\usepackage{inconsolata}
+%\usepackage[scaled]{uarial}
+%\renewcommand*\familydefault{\sfdefault}
+
+% En pil...
+\usepackage{textcomp}
+
+\usepackage{multirow}
+\usepackage{icomma}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage[table]{xcolor} % til farvning af celler i tabel
+\usepackage{url}
+\usepackage[bottom]{footmisc} % keep footnotes at bottom
+\usepackage{bbding}
+\usepackage{pdfpages}
+\usepackage{float} %kan bruge H placement modifier, bedre end "h!"
+%\usepackage{wrapfig}
+\usepackage{subfig}
+%\usepackage{sagetex}
+\usepackage[section]{placeins}
+\usepackage{xspace}
+\usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+
+\parskip=5pt plus 2pt minus 1pt
+\parindent=0pt
+
+\frenchspacing % kommeretninger
+
+% Fancy ting med enheder og datatabeller. Læs manualen til pakken
+% Manual: http://www.ctan.org/tex-archive/macros/latex/contrib/siunitx/siunitx.pdf
+\usepackage{siunitx}
+
+%\usepackage{siunitx}
+%\usetikzlibrary{shapes}
+\usepackage{enumitem} %stackoverflow.com/questions/3275622/latex-remove-spaces-between-items-in-list
+\usepackage{listings}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+\definecolor{shcomment}{rgb}{0.12, 0.38, 0.18 } %adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
+\definecolor{shkeyword}{rgb}{0.37, 0.08, 0.25}  % #5F1441
+\definecolor{shstring}{rgb}{0.06, 0.10, 0.98} % #101AF9
+
+\setfloatlocations{figure}{htb}
+
+ \lstset{ % http://stackoverflow.com/questions/741985/latex-source-code-listing-like-in-professional-books
+%         basicstyle=\footnotesize\ttfamily,% the size of the fonts
+                                % that are used for the code
+        basicstyle=\footnotesize\ttfamily,% the size of the fonts that are used for the code
+         numbers=left,                     % where to put the line-numbers
+         numberstyle=\tiny,                % the size of the fonts that are used for the line-numbers
+         stepnumber=1,                     % line numbering steps
+         numbersep=5pt,                    % how far the line-numbers are from the code
+         tabsize=2,                        % sets default tabsize to 2 spaces
+         breaklines=true,                  % sets automatic line breaking
+         keywordstyle=\color{shkeyword},        % language function text color
+    		frame=b,
+ %        keywordstyle=[1]\textbf,    % Stil der Keywords
+ %        keywordstyle=[2]\textbf,    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         stringstyle=\color{shstring}, % string text color
+%         stringstyle=\color{red},
+        commentstyle=\color{shcomment},
+         showspaces=false,           % show spaces adding particular underscores
+         showtabs=false,             % show tabs within strings adding particular underscores   
+         showstringspaces=false,     % underline spaces within strings
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         language=[Sharp]C
+ }
+    %\DeclareCaptionFont{blue}{\color{blue}} 
+
+%\captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\hrule\smallskip\parbox{\textwidth}{\hspace{15pt}#1#2#3}\smallskip\hrule}
+\captionsetup[lstlisting]{format=listing,
+  singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+
+\usepackage{memhfixc}
+%
+% Fra AAU temp
+%
+\usepackage{calc}
+\usepackage{lastpage}
+
+\usepackage{hyperref}
+%
+% Layout
+%
+\newenvironment{indledning}{\sffamily}{\vskip 0.75cm}
+\newenvironment{tail}{\vskip 0.75cm\itshape}{}
+\newcommand{\spc}[1] {#1 \vskip 1cm}
+\definecolor{aaublue}{HTML}{0492D2}
+
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
+{\raggedright\footnotesize\color{red} #1}}
+% Margins
+\setstocksize{11in}{8.5in}
+\settrimmedsize{11in}{8.5in}{*}
+\settrims{0in}{0in}
+\settypeblocksize{9.0in}{6in}{*}
+\setlrmargins{1.25in}{*}{*}
+\setulmargins{1.0in}{*}{*}
+\setheadfoot{14pt}{26pt}
+\setheaderspaces{*}{13pt}{*}
+
+\chapterstyle{hangnum}
+\raggedbottom
+\setlength{\beforechapskip}{0pt}
+\setlength{\afterchapskip}{10pt} % vspace under chapters
+\setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
+\setsecnumdepth{subsection}
+
+% Fra settings.tex
+\setlrmarginsandblock{3.5cm}{2.5cm}{*}
+\setulmarginsandblock{2.5cm}{3.0cm}{*}
+
+\checkandfixthelayout
+%
+% Tikz
+%
+%\tikzstyle{block}=[draw, rectangle, text width=2cm, minimum height=1cm, text badly centered, node distance=\afs]
+%\tikzstyle{cloud}=[draw, ellipse, minimum width=2cm, fill=gray!40]
+%\tikzstyle{valg} = [draw, diamond, inner sep=1pt, text badly centered, text width=4.5em]
+%\tikzstyle{pil} = [draw, -latex]
+
+\setlength{\unitlength}{2em} % for the picture environment
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+% Forhindrer horeunger..:
+
+\widowpenalty=300
+\clubpenalty=300
+
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+
+%extra colonner til titelbladet
+\usepackage{multicol}
+
+% procenttegn
+\let\oldpercent=\%
+\renewcommand{\%}{\ifmmode\ \oldpercent\else\oldpercent\fi}
