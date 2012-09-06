@@ -1,9 +1,8 @@
-Her er vores P3 projekt! Håber I kan få noget ud af det! :)
-  - Simon, Niels, Martin, Sebastian, Kent, Elias
+# Nu med overskrift
 
+Her er vores P3 projekt!
 
 HUSK:
-lkafkasf
 
 På Windows:
   git config --global core.autocrlf true
