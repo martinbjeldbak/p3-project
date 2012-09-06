@@ -1,6 +1,8 @@
+# Nu med overskrift
+
 Her er vores P3 projekt!
 
-HUSK:
+## Husk
 
 På Windows:
   git config --global core.autocrlf true
