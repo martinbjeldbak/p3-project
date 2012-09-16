@@ -1,0 +1,14 @@
+# LaTeX fyldefiler #
+####################
+
+report/*.pdf
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+*.synctex.gz
+*.tex.latexmain
+*.toc
+*.aux
+*.bib.bak
