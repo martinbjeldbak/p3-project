@@ -17,6 +17,30 @@ body {
   font-size:14px;
 }
 
+#bottom {
+  position:fixed;
+  bottom:0;
+  left:0;
+  text-align:center;
+  width:100%;
+  line-height:16px;
+  height:24px;
+  font-size:12px;
+}
+
+#bottom a:link,
+#bottom a:visited,
+#bottom a:active {
+  padding:0 12px;
+  color:#667;
+  text-decoration:none;
+}
+
+#bottom a:hover {
+  text-decoration:underline;
+  color:#446;
+}
+
 #top img {
   height:32px;
 }
