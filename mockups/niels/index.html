@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foodl</title>
+    
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script>
+    $(function() {
+        var availableTags = [
+            "Svinekød",
+            "Havsalt",
+            "Hvidløg",
+            "Hvedemel",
+            "Rødløg",
+            "Spidskål",
+            "Svinekotelet"
+            
+        ];
+        $("#ingredient").focus();
+        $("#ingredient").autocomplete({
+          source: availableTags,
+          //source: "ingredienser.json",
+          autoFocus: true,
+          select: function(e, ui) {
+            $("#main ul").append("<li>" + ui.item.value + ' <a href="#">X</a></li>');
+            
+            setTimeout(function() {
+              $("#ingredient").val("");
+            }, 50);
+          },
+        });
+
+        $("#main ul li a").live("click", function() {
+          $(this).parent().remove();
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div id="top">
+      <img src="logo.png" />
+      <div id="menu">
+        <a href="#">Synkronisering</a>
+        <a href="#">Indkøbsliste (tom)</a>
+        <a href="#">Favoritter (0)</a>
+      </div>
+    </div>
+    <div id="logo">
+      <img src="logo.png" />
+    </div>
+    <div id="main">
+      <ul>
+      </ul>
+      <div id="search">
+        <input type="text" class="text" id="ingredient" />
+        <input type="submit" class="button" value="Søg" />
+      </div>
+    </div>
+    <div id="bottom">
+      <a href="#">Rapport&eacute;r fejl</a>
+      <a href="#">Om Foodl</a>
+      <a href="#">Kontakt Foodl</a>
+    </div>
+  
+  </body>
+</html>
