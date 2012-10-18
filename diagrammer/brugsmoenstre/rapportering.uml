@@ -4,7 +4,7 @@
     <documentation>
       <authorname>Martin Madsen</authorname>
       <authoremail>mbma11@student.aau.dk</authoremail>
-      <version>0.34</version>
+      <version>0.35.1-NIELS_EDITION</version>
       <description>
         
       </description>
@@ -62,10 +62,10 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Oct 16 12:04:42 CEST 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Oct 18 15:20:42 CEST 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
-      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+      <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
     </XMI.documentation>
     <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
   <XMI.content>
@@ -149,6 +149,15 @@
             </UML:Transition>
             <UML:Transition xmi.id = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A89'
               isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '-84-25-18-106--71c49866:13a7405a0db:-8000:0000000000001097'
+                  name = 'anon' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '-84-25-18-106--71c49866:13a7405a0db:-8000:0000000000001098'
+                      language = '' body = 'beskrivelig'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
               <UML:Transition.trigger>
                 <UML:SignalEvent xmi.idref = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A91'/>
               </UML:Transition.trigger>
@@ -185,6 +194,15 @@
             </UML:Transition>
             <UML:Transition xmi.id = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A8F'
               isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '-84-25-18-106--71c49866:13a7405a0db:-8000:0000000000001099'
+                  name = 'anon' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '-84-25-18-106--71c49866:13a7405a0db:-8000:000000000000109A'
+                      language = '' body = 'ubeskrivelig'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
               <UML:Transition.trigger>
                 <UML:SignalEvent xmi.idref = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A90'/>
               </UML:Transition.trigger>
@@ -226,9 +244,9 @@
         <UML:SignalEvent xmi.id = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A8E'
           name = 'Godkend' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A90'
-          name = 'Vælg ubeskrivelig fejltype' isSpecification = 'false'/>
+          name = 'Vælg fejltype' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A91'
-          name = 'Vælg beskrivelig fejltype' isSpecification = 'false'/>
+          name = 'Vælg fejltype' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A93'
           name = 'Rapportér generel fejl' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-18-87--6197d915:13a63b91909:-8000:0000000000000C85'
@@ -240,14 +258,17 @@
   </XMI.content>
 </XMI>
 <pgml description="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram|-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A81"
+      xmlns:argouml="http://argouml.tigris.org/pgml-extensions"
       name="Class Diagram"
 >
 </pgml>
 <pgml description="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram|-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A81"
+      xmlns:argouml="http://argouml.tigris.org/pgml-extensions"
       name="Use Case Diagram"
 >
 </pgml>
 <pgml description="org.argouml.uml.diagram.state.ui.UMLStateDiagram|-84-25-18-87--49537dc0:13a636df92c:-8000:0000000000000A82"
+      xmlns:argouml="http://argouml.tigris.org/pgml-extensions"
       name="untitledModel 0"
 >
   <group name="Fig0"
@@ -410,34 +431,6 @@
       textsize="13"
       justification="Center"
     >Dialogboks åben</text>
-    <path name="Fig2.3"
-      description="org.tigris.gef.presentation.FigLine"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="384"
-              y="98" />
-      <lineto x="501"
-              y="98" />
-    </path>
-    <text name="Fig2.4"
-      x="386"
-      y="98"
-      width="114"
-      height="18"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Dialog"
-      italic="false"
-      bold="false"
-      textsize="13"
-      justification="Left"
-    ></text>
   </group>
   <group name="Fig3"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
@@ -520,34 +513,6 @@
       textsize="13"
       justification="Center"
     >Beskrivelsesboks åben</text>
-    <path name="Fig4.3"
-      description="org.tigris.gef.presentation.FigLine"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="256"
-              y="194" />
-      <lineto x="409"
-              y="194" />
-    </path>
-    <text name="Fig4.4"
-      x="258"
-      y="194"
-      width="150"
-      height="18"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Dialog"
-      italic="false"
-      bold="false"
-      textsize="13"
-      justification="Left"
-    ></text>
   </group>
   <group name="Fig5"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
@@ -630,34 +595,6 @@
       textsize="13"
       justification="Center"
     >Rapport klar</text>
-    <path name="Fig6.3"
-      description="org.tigris.gef.presentation.FigLine"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="512"
-              y="194" />
-      <lineto x="601"
-              y="194" />
-    </path>
-    <text name="Fig6.4"
-      x="514"
-      y="194"
-      width="86"
-      height="18"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Dialog"
-      italic="false"
-      bold="false"
-      textsize="13"
-      justification="Left"
-    ></text>
   </group>
   <group name="Fig7"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
