@@ -31,23 +31,23 @@
     <searchpath href="PROJECT_DIR" />
     <members>
       <member type="profile"
-              name="søgning_profile.profile" />
+              name="soegning_profile.profile" />
       <member type="xmi"
-              name="søgning.xmi" />
+              name="soegning.xmi" />
       <member type="pgml"
-              name="søgning_ClassDiagram.pgml"
+              name="soegning_ClassDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="Class Diagram" />
       <member type="pgml"
-              name="søgning_UseCaseDiagram.pgml"
+              name="soegning_UseCaseDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
               diagramname="Use Case Diagram" />
       <member type="pgml"
-              name="søgning_untitledModel0.pgml"
+              name="soegning_untitledModel0.pgml"
               diagramclass="org.argouml.uml.diagram.state.ui.UMLStateDiagram"
               diagramname="untitledModel 0" />
       <member type="todo"
-              name="søgning.todo" />
+              name="soegning.todo" />
     </members>
     <historyfile name="" />
   </argo>
@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Oct 16 09:58:44 CEST 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Oct 18 13:36:21 CEST 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -80,13 +80,13 @@
               name = 'top' isSpecification = 'false' isConcurrent = 'false'>
               <UML:CompositeState.subvertex>
                 <UML:CompositeState xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A62'
-                  name = '' isSpecification = 'false' isConcurrent = 'false'>
+                  name = 'Befinder sig på Foodl' isSpecification = 'false' isConcurrent = 'false'>
                   <UML:StateVertex.outgoing>
                     <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A67'/>
                   </UML:StateVertex.outgoing>
                   <UML:CompositeState.subvertex>
                     <UML:SimpleState xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A63'
-                      name = 'Ankommet' isSpecification = 'false'>
+                      name = 'Søgning klar' isSpecification = 'false'>
                       <UML:StateVertex.outgoing>
                         <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A83'/>
                         <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A84'/>
@@ -97,7 +97,7 @@
                       </UML:StateVertex.incoming>
                     </UML:SimpleState>
                     <UML:CompositeState xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A7F'
-                      name = ' ' isSpecification = 'false' isConcurrent = 'false'>
+                      name = 'Aktiv' isSpecification = 'false' isConcurrent = 'false'>
                       <UML:StateVertex.outgoing>
                         <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A80'/>
                         <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A88'/>
@@ -408,7 +408,7 @@
       x="218"
       y="16"
       width="596"
-      height="24"
+      height="23"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -419,7 +419,7 @@
       bold="false"
       textsize="12"
       justification="Center"
-    ></text>
+    >Befinder sig på Foodl</text>
     <path name="Fig0.3"
       description="org.tigris.gef.presentation.FigLine"
       fill="1"
@@ -428,15 +428,15 @@
       strokecolor="black"
     >
       <moveto x="216"
-              y="40" />
+              y="39" />
       <lineto x="815"
-              y="40" />
+              y="39" />
     </path>
     <text name="Fig0.4"
       x="218"
-      y="40"
+      y="39"
       width="596"
-      height="274"
+      height="275"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -450,7 +450,7 @@
     ></text>
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[256, 56, 78, 46]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[249, 56, 90, 46]pathVisible=false;stereotypeView=0;"
        href="127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A63"
        fill="1"
        fillcolor="white"
@@ -462,9 +462,9 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="256"
+      x="249"
       y="56"
-      width="78"
+      width="90"
       height="46"
       fill="1"
       fillcolor="255 0 255"
@@ -473,9 +473,9 @@
       rounding="16"
     />
     <rectangle name="Fig1.1"
-      x="256"
+      x="249"
       y="56"
-      width="78"
+      width="90"
       height="46"
       fill="1"
       fillcolor="white"
@@ -484,10 +484,10 @@
       rounding="16"
     />
     <text name="Fig1.2"
-      x="258"
+      x="251"
       y="56"
-      width="74"
-      height="24"
+      width="86"
+      height="23"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -498,7 +498,7 @@
       bold="false"
       textsize="12"
       justification="Center"
-    >Ankommet</text>
+    >Søgning klar</text>
     <path name="Fig1.3"
       description="org.tigris.gef.presentation.FigLine"
       fill="1"
@@ -506,16 +506,16 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="256"
-              y="80" />
-      <lineto x="333"
-              y="80" />
+      <moveto x="249"
+              y="79" />
+      <lineto x="338"
+              y="79" />
     </path>
     <text name="Fig1.4"
-      x="258"
-      y="80"
-      width="74"
-      height="16"
+      x="251"
+      y="79"
+      width="86"
+      height="17"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -629,7 +629,7 @@
     >
       <moveto x="127"
               y="79" />
-      <lineto x="256"
+      <lineto x="249"
               y="79" />
     </path>
   </group>
@@ -702,7 +702,7 @@
       x="226"
       y="128"
       width="580"
-      height="24"
+      height="23"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -713,7 +713,7 @@
       bold="false"
       textsize="12"
       justification="Center"
-    > </text>
+    >Aktiv</text>
     <path name="Fig6.3"
       description="org.tigris.gef.presentation.FigLine"
       fill="1"
@@ -722,15 +722,15 @@
       strokecolor="black"
     >
       <moveto x="224"
-              y="152" />
+              y="151" />
       <lineto x="807"
-              y="152" />
+              y="151" />
     </path>
     <text name="Fig6.4"
       x="226"
-      y="152"
+      y="151"
       width="580"
-      height="154"
+      height="155"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -772,7 +772,7 @@
               y="128" />
       <lineto x="384"
               y="80" />
-      <lineto x="333"
+      <lineto x="338"
               y="80" />
     </path>
   </group>
@@ -814,7 +814,7 @@
       x="282"
       y="200"
       width="112"
-      height="24"
+      height="23"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -834,15 +834,15 @@
       strokecolor="black"
     >
       <moveto x="280"
-              y="224" />
+              y="223" />
       <lineto x="395"
-              y="224" />
+              y="223" />
     </path>
     <text name="Fig8.4"
       x="282"
-      y="224"
+      y="223"
       width="112"
-      height="16"
+      height="17"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -959,7 +959,7 @@
       x="514"
       y="200"
       width="228"
-      height="24"
+      height="23"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -979,15 +979,15 @@
       strokecolor="black"
     >
       <moveto x="512"
-              y="224" />
+              y="223" />
       <lineto x="743"
-              y="224" />
+              y="223" />
     </path>
     <text name="Fig11.4"
       x="514"
-      y="224"
+      y="223"
       width="228"
-      height="16"
+      height="17"
       fill="0"
       fillcolor="white"
       stroke="0"
