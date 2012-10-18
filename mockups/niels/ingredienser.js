@@ -1,4 +1,4 @@
-﻿[
+﻿var values = [
 "Havsalt",
 "Sort peber",
 "Løg",
