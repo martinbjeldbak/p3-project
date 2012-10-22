@@ -126,6 +126,7 @@
                             <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A8F'/>
                             <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A91'/>
                             <UML:Transition xmi.idref = '-84-25-18-87--6f5cf41b:13a63630f45:-8000:0000000000000AA3'/>
+                            <UML:Transition xmi.idref = '-84-25-18-58--52ee75b5:13a878cad6a:-8000:0000000000000987'/>
                           </UML:StateVertex.outgoing>
                           <UML:StateVertex.incoming>
                             <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A8B'/>
@@ -135,6 +136,7 @@
                             <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A8F'/>
                             <UML:Transition xmi.idref = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A91'/>
                             <UML:Transition xmi.idref = '-84-25-18-87--6f5cf41b:13a63630f45:-8000:0000000000000AA3'/>
+                            <UML:Transition xmi.idref = '-84-25-18-58--52ee75b5:13a878cad6a:-8000:0000000000000987'/>
                           </UML:StateVertex.incoming>
                         </UML:SimpleState>
                       </UML:CompositeState.subvertex>
@@ -346,7 +348,7 @@
         <UML:SignalEvent xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A6F'
           name = '*Gemte råvarer på liste' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A72'
-          name = 'Søgning' isSpecification = 'false'/>
+          name = 'Klik på &quot;søg&quot;' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A78'
           name = 'Begrænsning tilføjet' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A7A'
@@ -365,8 +367,13 @@
           name = 'Begrænsning gemt' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-18-106--11bcdcf4:13a740c9573:-8000:0000000000000A83'
           name = 'Favorisering' isSpecification = 'false'/>
+        <UML:CallEvent xmi.id = '-84-25-18-58--52ee75b5:13a878cad6a:-8000:0000000000000988'
+          name = 'Indkøbslistehåndtering' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
+    <UML:Model xmi.id = '-84-25-18-58--52ee75b5:13a878cad6a:-8000:0000000000000986'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'/>
   </XMI.content>
 </XMI>
 <pgml description="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram|127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A5F"
@@ -384,7 +391,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigCompositeState[216, 16, 600, 304]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigCompositeState[216, 16, 688, 304]pathVisible=false;stereotypeView=0;"
        href="127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A62"
        fill="1"
        fillcolor="white"
@@ -397,7 +404,7 @@
     <rectangle name="Fig0.0"
       x="216"
       y="16"
-      width="600"
+      width="688"
       height="304"
       fill="1"
       fillcolor="255 0 255"
@@ -408,7 +415,7 @@
     <rectangle name="Fig0.1"
       x="216"
       y="16"
-      width="600"
+      width="688"
       height="304"
       fill="1"
       fillcolor="white"
@@ -649,7 +656,7 @@
     </path>
   </group>
   <group name="Fig6"
-       description="org.argouml.uml.diagram.state.ui.FigCompositeState[224, 128, 584, 184]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigCompositeState[224, 128, 672, 184]pathVisible=false;stereotypeView=0;"
        href="127-0-0-1-3181faf0:13a442ec3b7:-8000:0000000000000A7F"
        fill="1"
        fillcolor="white"
@@ -663,7 +670,7 @@
     <rectangle name="Fig6.0"
       x="224"
       y="128"
-      width="584"
+      width="672"
       height="184"
       fill="1"
       fillcolor="255 0 255"
@@ -674,7 +681,7 @@
     <rectangle name="Fig6.1"
       x="224"
       y="128"
-      width="584"
+      width="672"
       height="184"
       fill="1"
       fillcolor="white"
@@ -1235,6 +1242,41 @@
               y="224" />
       <lineto x="288"
               y="224" />
+    </path>
+  </group>
+  <group name="Fig21"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="-84-25-18-58--52ee75b5:13a878cad6a:-8000:0000000000000987"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig11.0"
+      destPortFig="Fig11"
+      sourceFigNode="Fig11"
+      destFigNode="Fig11"
+      <argouml:pathitem figname="Fig21.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="-84-25-18-58--52ee75b5:13a878cad6a:-8000:0000000000000987"
+                        angle="61.0"
+                        offset="55" />
+    </private>
+    <path name="Fig21.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="743"
+              y="232" />
+      <lineto x="768"
+              y="232" />
+      <lineto x="768"
+              y="208" />
+      <lineto x="743"
+              y="208" />
     </path>
   </group>
 </pgml>
