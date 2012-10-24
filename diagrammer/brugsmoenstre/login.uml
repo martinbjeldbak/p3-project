@@ -66,7 +66,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Oct 22 12:48:40 CEST 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Oct 24 13:13:32 CEST 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -201,6 +201,9 @@
             </UML:Transition>
             <UML:Transition xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A90'
               isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '-84-25-19-86--3dec3fbd:13a926e7ef7:-8000:0000000000000BA1'/>
+              </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:SimpleState xmi.idref = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A89'/>
               </UML:Transition.source>
@@ -316,7 +319,7 @@
           </UML:StateMachine.transitions>
         </UML:StateMachine>
         <UML:SignalEvent xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8B'
-          name = 'Tryp på &quot;opret bruger&quot;' isSpecification = 'false'/>
+          name = 'Tryk på &quot;opret bruger&quot;' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8C'
           name = 'Tryk på &quot;login&quot;' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8E'
@@ -337,6 +340,8 @@
           name = 'Bruger logget ind fra tidligere session' isSpecification = 'false'/>
         <UML:CallEvent xmi.id = '-84-25-18-58-1e860ffa:13a87d41b74:-8000:0000000000000BA5'
           name = 'Indkøbslistehåndtering' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '-84-25-19-86--3dec3fbd:13a926e7ef7:-8000:0000000000000BA1'
+          name = 'Oplysninger godkendt' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -467,13 +472,13 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="615"
+      <moveto x="607"
               y="240" />
-      <lineto x="615"
+      <lineto x="607"
               y="224" />
-      <lineto x="631"
+      <lineto x="623"
               y="224" />
-      <lineto x="631"
+      <lineto x="623"
               y="240" />
     </path>
   </group>
@@ -694,8 +699,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A98"
-                        angle="191.0"
-                        offset="75" />
+                        angle="247.0"
+                        offset="18" />
     </private>
     <path name="Fig7.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -705,10 +710,10 @@
       strokecolor="51 51 153"
     >
       <moveto x="480"
-              y="216" />
-      <lineto x="567"
-              y="216" />
-      <lineto x="567"
+              y="224" />
+      <lineto x="568"
+              y="224" />
+      <lineto x="568"
               y="240" />
     </path>
   </group>
@@ -790,9 +795,9 @@
     >
       <moveto x="336"
               y="224" />
-      <lineto x="303"
+      <lineto x="304"
               y="224" />
-      <lineto x="303"
+      <lineto x="304"
               y="191" />
     </path>
   </group>
@@ -811,8 +816,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A92"
-                        angle="343.00000000000006"
-                        offset="41" />
+                        angle="340.0"
+                        offset="74" />
     </private>
     <path name="Fig10.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -822,9 +827,9 @@
       strokecolor="black"
     >
       <moveto x="336"
-              y="184" />
+              y="179" />
       <lineto x="399"
-              y="184" />
+              y="179" />
       <lineto x="399"
               y="216" />
     </path>
@@ -855,11 +860,11 @@
       strokecolor="black"
     >
       <moveto x="30"
-              y="199" />
+              y="195" />
       <lineto x="31"
-              y="184" />
+              y="180" />
       <lineto x="168"
-              y="184" />
+              y="180" />
     </path>
   </group>
   <group name="Fig12"
@@ -928,8 +933,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A90"
-                        angle="270.0"
-                        offset="10" />
+                        angle="97.0"
+                        offset="15" />
     </private>
     <path name="Fig13.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -939,9 +944,9 @@
       strokecolor="black"
     >
       <moveto x="291"
-              y="255" />
+              y="252" />
       <lineto x="552"
-              y="255" />
+              y="252" />
     </path>
   </group>
   <group name="Fig14"
@@ -994,8 +999,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8A"
-                        angle="156.99999999999997"
-                        offset="55" />
+                        angle="162.0"
+                        offset="58" />
     </private>
     <path name="Fig15.0"
       description="org.argouml.gefext.ArgoFigPoly"
