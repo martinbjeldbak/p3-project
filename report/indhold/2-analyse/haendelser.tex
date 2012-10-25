@@ -1,0 +1,53 @@
+\section{Hændelser}
+\label{sec:haendelser}
+Ved hjælp af klassekandidaterne, er det nu muligt at finde hændelseskandidater. Hændelserne er kommet til verden ud fra diverse forskellige forløb, der kan påvirke klasser. For at opretholde en konsistens mellem hændelserne, er de formuleret i datid. Det er igen vigtigt at nævne, at følgende er \emph{kandidater} og kan ændres under den iterative arbejdsproces. 
+
+\subsection{Fravalgte hændelser}
+Fravalgte hændelser ses herunder, da gruppen mener, at det er vigtigt at dokumentere hændelser, der indgik i overvejelser og tidligere klasser. De fravalgte hændelser har en kort forklaring, der beskriver hvorfor en hændelse ikke er blevet valgt. Følgende hændelseskandidater er blevet fravalgt, da de enten hørte til nogle klasser, som er blevet fravalgt, eller ikke er relevante nok, for de valgte klasser:
+
+\begin{itemize} [noitemsep]
+\item Køkkenredskab benyttet (systemet skal ikke holde styr på køkkenredskaber)
+\item Råvare benyttet (systemet skal ikke holde styr på mængden af råvarer hos brugeren)
+\item Mæthed opnået (fra fravalgte klasser: bruger, person)
+\item Madrest opstået (systemet skal ikke behandle råvarer forskelligt om det er rester eller ej)
+\item Bord opdækket (fra fravalgt klasse: husholdning)
+\item Opvask taget (fra fravalgt klasse: køkken)
+\item Service benyttet (fra fravalgt klasse: service)
+\item Køleskab åbnet (fra fravalgt klasse: opbevaringsskab)
+\item Køleskab lukket (fra fravalgt klasse: opbevaringsskab)
+\item Opskrift vurderet (opskrift valgt indebærer, at man har vurderet opskriften)
+\item Opskrift anmeldt (ikke en del af problemområdet at anmelde opskrifter)
+\item Sult opstået (fra fravalgte klasser: bruger, person)
+\item Madlavning afsluttet (fra fravalgte klasser: bruger, person)
+\item Madlavning påbegyndt (fra fravalgte klasser: bruger, person)
+\item Råvare identificeret (overvåges i form af “råvare købt”-hændelsen med samme resultat)
+\item Ingrediens identificeret (indgår i hændelsen opskrift valgt)
+\item Madplan lagt (fra fravalgt klasse: Madplan)
+\item Madplan startet (fra fravalgt klasse: Madplan)
+\item Madplan afsluttet (fra fravalgt klasse: Madplan)
+\item Opskrift fravalgt (fra fravalgt klasse: Madplan)
+\end{itemize}
+
+\subsection{Valgte hændelser}
+Følgende hændelser er blevet skabt ud fra de valgte klassekandidater, som gruppen kom frem til i \secref{sec:klasser}. Klassekandidaterne er karaktiseret ved hjælp af følgende hændelseskandidater: 
+
+\begin{itemize} [noitemsep]
+\item Råvare opbrugt
+\item Råvare smidt ud
+\item Råvare købt
+\item Opskrift fundet
+\item Opskrift valgt
+\item Opskrift smidt ud
+\item Bogmærke tilføjet
+\item Bogmærke fjernet
+\item Indkøbsliste oprettet
+\item Indkøbsliste færdig
+\item Indkøbsliste smidt ud
+\item Ingrediens tilføjet
+\item Ingrediens fjernet
+\end{itemize}
+
+\subsection{Hændelsestabel}
+Når de valgte klasser og hændelser er kommet på plads, giver det mulighed at fremstille et hændelsestabel, der danner overblik over sammenhæng mellem klasser og fælles hændelser. Herunder ses hændelsestabellen:
+
+\input{indhold/2-analyse/haendelsestabel}
