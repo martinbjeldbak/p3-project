@@ -12,5 +12,5 @@ report/*.pdf
 *.toc
 *.aux
 *.bib.bak
-*uml~
+*.uml~
 *.zargo~
