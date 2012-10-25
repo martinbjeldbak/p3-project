@@ -1,0 +1,38 @@
+% Degrees
+%\newcommand{\degree}{\ensuremath{^\circ}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+% References
+\newcommand{\secref}[1]{afsnit \ref{#1}}
+\newcommand{\chapref}[1]{kapitel \ref{#1}}
+\newcommand{\figref}[1]{figur \ref{#1}}
+\newcommand{\lstref}[1]{eksempel \ref{#1}}
+\newcommand{\apref}[1]{bilag \ref{#1}}
+\newcommand{\tableref}[1]{tabel \ref{#1}}
+\newcommand{\itemref}[1]{element \ref{#1}}
+\newcommand{\coderef}[1]{eksempel \ref{#1}} % deprecated, use \lstref
+
+\newcommand{\fileref}[1]{\texttt{#1}}
+\newcommand{\classref}[1]{\textcolor{purple}{\texttt{#1}}}
+\newcommand{\methodref}[1]{\textcolor{blue}{\texttt{#1}}}
+\newcommand{\dbtableref}[1]{\texttt{#1}}
+\newcommand{\classmethodref}[2]{\classref{#1}\texttt{.}\methodref{#2}}
+
+\floatname{algorithm}{Algoritme}
+\renewcommand\lstlistingname{Eksempel}
+\renewcommand\lstlistlistingname{Eksempler}
+
+% Other
+\newcommand{\capt}[1]{\caption{\emph{#1}}} % Emphesize caption
+\newcommand{\arrows}[2]{#1$\Leftrightarrow$#2} % Pil mellem to inputs
+\newcommand{\op}[1]{$\Uparrow$ #1} % Pil op
+\newcommand{\ned}[1]{$\Downarrow$ #1} % Pil ned
+
+%\titleformat{\subparagraph}
+%    {\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+%\titlespacing*{\subparagraph}{\parindent}{3.25ex plus 1ex minus .2ex}{.75ex plus .1ex}
+
+\newcommand{\skippar}{}
+
+\newcommand{\todo}[1]{\colorbox{yellow}{\color{red}\textbf{TODO} \hspace{1ex} #1}}
