@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="255" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg">
+<svg height="255" version="1.1" width="746" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="36" cy="116" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
 <rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="84" x="556" y="148"/>
 <rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="84" x="556" y="148"/>
 <rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="82" x="557" y="149"/>
 <text font-family="Dialog" font-size="12" font-weight="bold" x="563" y="161">
 Login aktiv</text>
-<polyline fill="none" points="611,148 611,132 627,132 627,148" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="620" x2="627" y1="136" y2="148"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="634" x2="627" y1="136" y2="148"/>
-<text font-family="Dialog" font-size="12" x="630" y="128">
-Opret / fjern favoritter</text>
 <ellipse cx="720" cy="168" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="720" cy="168" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
 <ellipse cx="719" cy="167" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="639,168 708,168" stroke="#333399" stroke-width="1"/>
-<line fill="#333399" stroke="#333399" stroke-width="1" x1="696" x2="708" y1="175" y2="168"/>
-<line fill="#333399" stroke="#333399" stroke-width="1" x1="696" x2="708" y1="161" y2="168"/>
+<polyline fill="none" points="639,168 708,168" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="696" x2="708" y1="175" y2="168"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="696" x2="708" y1="161" y2="168"/>
 <text font-family="Dialog" font-size="12" x="657" y="183">
 Log ud</text>
 <rect fill="#00ff" height="192" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="368" x="148" y="44"/>
@@ -29,9 +24,9 @@ Log ud</text>
 <rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="143" x="341" y="125"/>
 <text font-family="Dialog" font-size="12" font-weight="bold" x="346" y="137">
 Godkendelse af login</text>
-<polyline fill="none" points="484,132 572,132 572,148" stroke="#333399" stroke-width="1"/>
-<line fill="#333399" stroke="#333399" stroke-width="1" x1="565" x2="572" y1="136" y2="148"/>
-<line fill="#333399" stroke="#333399" stroke-width="1" x1="579" x2="572" y1="136" y2="148"/>
+<polyline fill="none" points="484,132 572,132 572,148" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="565" x2="572" y1="136" y2="148"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="579" x2="572" y1="136" y2="148"/>
 <text font-family="Dialog" font-size="12" x="485" y="121">
 Login godkendt</text>
 <rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="169" x="172" y="76"/>
@@ -82,11 +77,16 @@ Afbryd loginproces</text>
 <polyline fill="none" points="35,108 35,36 587,36 587,148" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="580" x2="587" y1="136" y2="148"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="594" x2="587" y1="136" y2="148"/>
-<text font-family="Dialog" font-size="12" x="223" y="27">
-Bruger logget ind fra tidligere session</text>
+<text font-family="Dialog" font-size="12" x="214" y="27">
+_ [Bruger logget ind fra tidligere session]</text>
 <polyline fill="none" points="587,171 587,196 611,196 611,171" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="618" x2="611" y1="183" y2="171"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="604" x2="611" y1="183" y2="171"/>
 <text font-family="Dialog" font-size="12" x="530" y="210">
 Indkøbslistehåndtering()</text>
+<polyline fill="none" points="612,148 612,132 628,132 628,148" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="621" x2="628" y1="136" y2="148"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="635" x2="628" y1="136" y2="148"/>
+<text font-family="Dialog" font-size="12" x="607" y="122">
+Favorisering()</text>
 </svg>
