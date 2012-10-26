@@ -1,11 +1,18 @@
-\begin{table} %[h]
-  \input{indhold/2-analyse/anvendelsesomraade/aktoertabeller/bruger}
-  \newline
-  \qquad
-  \newline
-  \input{indhold/2-analyse/anvendelsesomraade/aktoertabeller/administrator}
-  \newline
-  \qquad
-  \newline
-  \input{indhold/2-analyse/anvendelsesomraade/aktoertabeller/crawler}  
+\begin{table}
+  \centering
+    \begin{tabular}{ c r|c c c }
+  \hline
+                         & \textbf{Brugsmønster}  &            &               &            \\ %\hline
+        \textbf{Aktører} &                        & Bruger     & Administrator & Crawler    \\ \hline 
+                         & Søgning                & \checkmark &               &            \\ 
+                         & Favorisering           & \checkmark &               &            \\ 
+                         & Indkøbslistehåndtering & \checkmark &               &            \\ 
+                         & Login                  & \checkmark & \checkmark    &            \\ 
+                         & Fejlhåndtering         &            & \checkmark    &            \\ 
+                         & Rapportering           & \checkmark & \checkmark    &            \\ 
+                         & Crawling               &            &               & \checkmark \\
+    \hline
+    \end{tabular}
+    \capt{Aktørtabel for Foodl.}
+    \label{table:aktoertabel}
 \end{table}
