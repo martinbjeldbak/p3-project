@@ -42,3 +42,13 @@
 
 \newcommand{\todo}[1]{\colorbox{yellow}{\color{red}\textbf{TODO} \hspace{1ex} #1}}
 \newcommand{\tjek}[1]{TJEK MIG: \guillemotright #1 \guillemotleft}
+
+\newcommand{\brugtabel}[3]{  \begin{tabular}{p{\textwidth}}
+    \hline
+     \parbox[t][0.4cm][t]{\textwidth}{\begin{vplace}[-0.25]\centering\textbf{\textit{#1}}\end{vplace}}\\ \hline
+     \vspace{-2mm}\textbf{Formål:} #2 \\ 
+    \textbf{Karakteristik:} #3 \\ \hline
+  \end{tabular}}
+
+\newcommand{\brugtabelEx}[4]{\brugtabel{#1}{#2}{#3 \\ 
+    \textbf{Eksempler:} #4}}
