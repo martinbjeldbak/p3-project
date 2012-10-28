@@ -4,7 +4,7 @@
     <documentation>
       <authorname>Elias K. Obeid</authorname>
       <authoremail>eobeid11@student.aau.dk</authoremail>
-      <version>PRE-0.35.1</version>
+      <version>0.35.1-NIELS_EDITION</version>
       <description>
         
       </description>
@@ -62,10 +62,10 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Oct 22 10:32:08 CEST 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Oct 28 18:10:43 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
-      <XMI.exporterVersion>PRE-0.35.1(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+      <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
     </XMI.documentation>
     <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
   <XMI.content>
@@ -101,6 +101,7 @@
                     <UML:Transition xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:0000000000000871'/>
                     <UML:Transition xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:0000000000000875'/>
                     <UML:Transition xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:0000000000000878'/>
+                    <UML:Transition xmi.idref = '-64--88-0--58-28d36814:13aa859b6ca:-8000:0000000000000A7B'/>
                   </UML:StateVertex.incoming>
                 </UML:SimpleState>
                 <UML:SimpleState xmi.id = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000087B'
@@ -108,6 +109,7 @@
                   <UML:StateVertex.outgoing>
                     <UML:Transition xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000087F'/>
                     <UML:Transition xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:0000000000000885'/>
+                    <UML:Transition xmi.idref = '-64--88-0--58-28d36814:13aa859b6ca:-8000:0000000000000A7B'/>
                   </UML:StateVertex.outgoing>
                   <UML:StateVertex.incoming>
                     <UML:Transition xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000087C'/>
@@ -260,6 +262,18 @@
                 <UML:FinalState xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:0000000000000882'/>
               </UML:Transition.target>
             </UML:Transition>
+            <UML:Transition xmi.id = '-64--88-0--58-28d36814:13aa859b6ca:-8000:0000000000000A7B'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000087E'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000087B'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000086D'/>
+              </UML:Transition.target>
+            </UML:Transition>
           </UML:StateMachine.transitions>
         </UML:StateMachine>
         <UML:SignalEvent xmi.id = '-64--88-0--57-39eff12a:13a79359fc2:-8000:000000000000086B'
@@ -345,12 +359,23 @@
       width="156"
       height="24"
       fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig1.1"
+      x="208"
+      y="56"
+      width="156"
+      height="24"
+      fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
       rounding="16"
     />
-    <text name="Fig1.1"
+    <text name="Fig1.2"
       x="210"
       y="56"
       width="152"
@@ -386,7 +411,7 @@
                         offset="14" />
     </private>
     <path name="Fig2.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -407,8 +432,8 @@
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.1"
-      destPortFig="Fig1.1"
+      sourcePortFig="Fig1.0"
+      destPortFig="Fig1.0"
       sourceFigNode="Fig1"
       destFigNode="Fig1"
       <argouml:pathitem figname="Fig3.1"
@@ -419,7 +444,7 @@
                         offset="25" />
     </private>
     <path name="Fig3.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -442,8 +467,8 @@
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.1"
-      destPortFig="Fig1.1"
+      sourcePortFig="Fig1.0"
+      destPortFig="Fig1.0"
       sourceFigNode="Fig1"
       destFigNode="Fig1"
       <argouml:pathitem figname="Fig4.1"
@@ -454,7 +479,7 @@
                         offset="29" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -477,8 +502,8 @@
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.1"
-      destPortFig="Fig1.1"
+      sourcePortFig="Fig1.0"
+      destPortFig="Fig1.0"
       sourceFigNode="Fig1"
       destFigNode="Fig1"
       <argouml:pathitem figname="Fig5.1"
@@ -489,7 +514,7 @@
                         offset="37" />
     </private>
     <path name="Fig5.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -512,8 +537,8 @@
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.1"
-      destPortFig="Fig1.1"
+      sourcePortFig="Fig1.0"
+      destPortFig="Fig1.0"
       sourceFigNode="Fig1"
       destFigNode="Fig1"
       <argouml:pathitem figname="Fig6.1"
@@ -524,7 +549,7 @@
                         offset="12" />
     </private>
     <path name="Fig6.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -557,12 +582,23 @@
       width="112"
       height="24"
       fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig7.1"
+      x="224"
+      y="176"
+      width="112"
+      height="24"
+      fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
       rounding="16"
     />
-    <text name="Fig7.1"
+    <text name="Fig7.2"
       x="226"
       y="176"
       width="108"
@@ -587,7 +623,7 @@
   >
     <private>
       sourcePortFig="Fig0.0"
-      destPortFig="Fig7.1"
+      destPortFig="Fig7.0"
       sourceFigNode="Fig0"
       destFigNode="Fig7"
       <argouml:pathitem figname="Fig8.1"
@@ -598,7 +634,7 @@
                         offset="19" />
     </private>
     <path name="Fig8.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -608,7 +644,7 @@
               y="160" />
       <lineto x="104"
               y="192" />
-      <lineto x="226"
+      <lineto x="224"
               y="192" />
     </path>
   </group>
@@ -619,8 +655,8 @@
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig7.1"
-      destPortFig="Fig7.1"
+      sourcePortFig="Fig7.0"
+      destPortFig="Fig7.0"
       sourceFigNode="Fig7"
       destFigNode="Fig7"
       <argouml:pathitem figname="Fig9.1"
@@ -631,7 +667,7 @@
                         offset="13" />
     </private>
     <path name="Fig9.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -696,7 +732,7 @@
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.1"
+      sourcePortFig="Fig1.0"
       destPortFig="Fig10.0"
       sourceFigNode="Fig1"
       destFigNode="Fig10"
@@ -708,13 +744,13 @@
                         offset="29" />
     </private>
     <path name="Fig11.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="361"
+      <moveto x="363"
               y="72" />
       <lineto x="472"
               y="72" />
@@ -729,7 +765,7 @@
        strokecolor="51 51 153"
   >
     <private>
-      sourcePortFig="Fig7.1"
+      sourcePortFig="Fig7.0"
       destPortFig="Fig10.0"
       sourceFigNode="Fig7"
       destFigNode="Fig10"
@@ -741,18 +777,49 @@
                         offset="22" />
     </private>
     <path name="Fig12.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="51 51 153"
     >
-      <moveto x="333"
+      <moveto x="335"
               y="192" />
       <lineto x="472"
               y="192" />
       <lineto x="475"
               y="151" />
+    </path>
+  </group>
+  <group name="Fig13"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="-64--88-0--58-28d36814:13aa859b6ca:-8000:0000000000000A7B"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig7.0"
+      destPortFig="Fig1.0"
+      sourceFigNode="Fig7"
+      destFigNode="Fig1"
+      <argouml:pathitem figname="Fig13.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="-64--88-0--58-28d36814:13aa859b6ca:-8000:0000000000000A7B"
+                        angle="-114.0"
+                        offset="65" />
+    </private>
+    <path name="Fig13.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="256"
+              y="176" />
+      <lineto x="256"
+              y="79" />
     </path>
   </group>
 </pgml>

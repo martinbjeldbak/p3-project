@@ -1,63 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="255" version="1.1" width="452" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="54" cy="156" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="168" x="158" y="60"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="168" x="158" y="60"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="166" x="159" y="61"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="164" y="73">
+<svg height="256" version="1.1" width="450" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="52" cy="157" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="156" x="156" y="61"/>
+<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="156" x="156" y="61"/>
+<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="154" x="157" y="62"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="163" y="75">
 Igangværende redigering</text>
-<polyline fill="none" points="54,147 54,76 158,76" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="146" x2="158" y1="83" y2="76"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="146" x2="158" y1="69" y2="76"/>
-<text font-family="Dialog" font-size="12" x="15" y="68">
+<polyline fill="none" points="52,148 52,77 156,77" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="144" x2="156" y1="84" y2="77"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="144" x2="156" y1="70" y2="77"/>
+<text font-family="Dialog" font-size="12" x="15" y="69">
 Rediger indkøbsliste</text>
-<polyline fill="none" points="166,60 166,44 182,44 182,60" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="175" x2="182" y1="48" y2="60"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="189" x2="182" y1="48" y2="60"/>
-<text font-family="Dialog" font-size="12" x="104" y="39">
+<polyline fill="none" points="164,61 164,45 180,45 180,61" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="173" x2="180" y1="49" y2="61"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="187" x2="180" y1="49" y2="61"/>
+<text font-family="Dialog" font-size="12" x="103" y="40">
 Slet indkøbsliste</text>
-<polyline fill="none" points="222,60 222,36 254,36 254,60" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="247" x2="254" y1="48" y2="60"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="261" x2="254" y1="48" y2="60"/>
-<text font-family="Dialog" font-size="12" x="195" y="27">
+<polyline fill="none" points="220,61 220,37 252,37 252,61" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="245" x2="252" y1="49" y2="61"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="259" x2="252" y1="49" y2="61"/>
+<text font-family="Dialog" font-size="12" x="200" y="28">
 Tilføj / fjern ingrediens</text>
-<polyline fill="none" points="222,83 222,108 254,108 254,83" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="261" x2="254" y1="95" y2="83"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="247" x2="254" y1="95" y2="83"/>
-<text font-family="Dialog" font-size="12" x="203" y="127">
+<polyline fill="none" points="220,84 220,109 252,109 252,84" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="259" x2="252" y1="96" y2="84"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="245" x2="252" y1="96" y2="84"/>
+<text font-family="Dialog" font-size="12" x="209" y="128">
 Tilføj / fjern tekststreng</text>
-<polyline fill="none" points="166,83 166,100 182,100 182,83" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="189" x2="182" y1="95" y2="83"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="175" x2="182" y1="95" y2="83"/>
-<text font-family="Dialog" font-size="12" x="161" y="117">
+<polyline fill="none" points="164,84 164,101 180,101 180,84" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="187" x2="180" y1="96" y2="84"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="173" x2="180" y1="96" y2="84"/>
+<text font-family="Dialog" font-size="12" x="159" y="118">
 Print</text>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="117" x="174" y="180"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="117" x="174" y="180"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="115" x="175" y="181"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="180" y="193">
+<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="112" x="172" y="181"/>
+<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="112" x="172" y="181"/>
+<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="110" x="173" y="182"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="180" y="195">
 Søgeresultat vist</text>
-<polyline fill="none" points="54,164 54,196 174,196" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="162" x2="174" y1="203" y2="196"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="162" x2="174" y1="189" y2="196"/>
-<text font-family="Dialog" font-size="12" x="64" y="219">
+<polyline fill="none" points="52,165 52,197 172,197" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="160" x2="172" y1="204" y2="197"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="160" x2="172" y1="190" y2="197"/>
+<text font-family="Dialog" font-size="12" x="64" y="220">
 Klik på "søg"</text>
-<polyline fill="none" points="214,203 214,220 230,220 230,203" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="237" x2="230" y1="215" y2="203"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="223" x2="230" y1="215" y2="203"/>
-<text font-family="Dialog" font-size="12" x="154" y="237">
+<polyline fill="none" points="212,204 212,221 228,221 228,204" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="235" x2="228" y1="216" y2="204"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="221" x2="228" y1="216" y2="204"/>
+<text font-family="Dialog" font-size="12" x="158" y="238">
 Tilføj / fjern ingrediense</text>
-<ellipse cx="426" cy="144" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="426" cy="144" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
-<ellipse cx="425" cy="143" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="325,76 422,76 425,132" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="417" x2="425" y1="120" y2="132"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="431" x2="425" y1="119" y2="132"/>
-<text font-family="Dialog" font-size="12" x="326" y="97">
+<ellipse cx="424" cy="145" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="424" cy="145" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="423" cy="144" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="311,77 420,77 423,133" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="415" x2="423" y1="121" y2="133"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="429" x2="423" y1="120" y2="133"/>
+<text font-family="Dialog" font-size="12" x="325" y="96">
 Afslut redigering</text>
-<polyline fill="none" points="290,196 422,196 425,155" stroke="#333399" stroke-width="1"/>
-<line fill="#333399" stroke="#333399" stroke-width="1" x1="431" x2="425" y1="167" y2="155"/>
-<line fill="#333399" stroke="#333399" stroke-width="1" x1="417" x2="425" y1="166" y2="155"/>
-<text font-family="Dialog" font-size="12" x="304" y="188">
+<polyline fill="none" points="283,197 420,197 423,156" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="429" x2="423" y1="168" y2="156"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="415" x2="423" y1="167" y2="156"/>
+<text font-family="Dialog" font-size="12" x="302" y="189">
 Forlad søgeresultat</text>
+<polyline fill="none" points="204,181 204,84" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="211" x2="204" y1="96" y2="84"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="204" y1="96" y2="84"/>
+<text font-family="Dialog" font-size="12" x="88" y="164">
+Rediger indkøbsliste</text>
 </svg>
