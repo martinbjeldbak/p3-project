@@ -19,14 +19,13 @@
   <defs
      id="defs4">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient13460">
       <stop
          style="stop-color:#ffc000;stop-opacity:1;"
          offset="0"
          id="stop13462" />
       <stop
-         style="stop-color:#ffc000;stop-opacity:0;"
+         style="stop-color:#ffffff;stop-opacity:1;"
          offset="1"
          id="stop13464" />
     </linearGradient>
@@ -37,7 +36,7 @@
          offset="0"
          id="stop13452" />
       <stop
-         style="stop-color:#63dd00;stop-opacity:0;"
+         style="stop-color:#ffffff;stop-opacity:1;"
          offset="1"
          id="stop13454" />
     </linearGradient>
@@ -261,8 +260,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="355.76597"
-     inkscape:cy="858.71618"
+     inkscape:cx="373.94872"
+     inkscape:cy="802.14764"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
