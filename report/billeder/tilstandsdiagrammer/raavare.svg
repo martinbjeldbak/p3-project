@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="146" version="1.1" width="229" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="29" cy="78" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="46" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="70" x="85" y="54"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#000000" stroke-width="1" width="70" x="85" y="54"/>
+<rect fill="#ffffff" height="44" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="68" x="86" y="55"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="95" y="67">
+Brugbar</text>
+<polyline fill="none" points="37,78 85,78" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="73" x2="85" y1="85" y2="78"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="73" x2="85" y1="71" y2="78"/>
+<text font-family="Dialog" font-size="12" x="15" y="60">
+Råvare købt</text>
+<ellipse cx="185" cy="74" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="185" cy="74" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="184" cy="73" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="141,54 141,38 189,38 186,62" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="180" x2="186" y1="49" y2="62"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="194" x2="186" y1="50" y2="62"/>
+<text font-family="Dialog" font-size="12" x="119" y="27">
+Råvare smidt ud</text>
+<polyline fill="none" points="141,99 141,110 189,110 186,85" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="194" x2="186" y1="96" y2="85"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="180" x2="186" y1="97" y2="85"/>
+<text font-family="Dialog" font-size="12" x="119" y="128">
+Råvare opbrugt</text>
+</svg>
