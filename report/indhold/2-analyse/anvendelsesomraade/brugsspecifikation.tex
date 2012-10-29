@@ -1,0 +1,50 @@
+\section{Brugsspecifikation}
+\label{sec:brugsspecifikation}
+%\tjek{Det første led i analysen af anvendelsesområdet er en aktør- og brugsmønsterspecifikation, der skal sammen med funktioner (\secref{sec:funktioner}), danne krav til systemets brug.
+
+%Aktørene er blevet identificeret ud fra de forskellige entiteter gruppen mener, vil benytte systemet. Hver aktør har en gradvis forskellig rolle end de andre aktører og er blevet navngivet baseret på den måde, aktøren vil interagere med systemet på. Følgende er aktørbeskrivelser over de valgte aktører, der vil benytte systemet:}
+
+\input{indhold/2-analyse/anvendelsesomraade/aktoerbeskrivelse}
+
+%\tjek{Følgende ses nogle kandidater for brugsmønstre. Brugsmønstrene består af tilstandsdiagrammer, der illustrerer hvad aktørerne vil kunne bruge systemet til. Som i klasse- og hændelsesaktiviteterne, er fravalgte brugsmønstre med tilhørende forklaring dokumenteret. De valgte ses kort herefter sammen med aktørtabellen, der viser sammenhænget mellem de valgte aktører og deres brugsmønstre.}
+
+\subsection{Fravalgte brugsmønstre}
+\begin{description}
+  \item[Skalering] Skalering af ingredienser i opskrifter i forhold til antallet af personer
+Fjernet, da skalering indgår i søgningen fordi der er ingen grund til at skalere opskriften i hver visning og kan dermed indgå som en slags “filter” i søgningen.
+
+\item[Råvarehåndtering] Når man gemmer ingredienser i opskrifter... (?)
+Fjernet, da råvarehåndtering indgår i søgningen
+
+\item[Overvågning] Hvad skal vi egentligt overvåge?
+
+\item[Begrænsning] \fx ingen kød, glutenfri
+Fjernet, da begrænsning indgår i søgningen
+
+\item[Sortering] Sortere opskrifter i forhold til forskellige filtre
+Fjernet, da sortering indgår i søgningen
+
+\item[Madplanlægning] Fjernet, da klassen ``madplan'' blev fravalgt i problemområdet
+
+\item[Synkronisering] I stedet for et loginsystem, vil vi benytte cookies og derfor skal synkronisering mellem forskellige enheder håndteres
+Vi vælger i stedet et loginsystem, da brugerne er allerede klar over, hvordan sådan et system virker
+  
+\end{description}
+
+\subsection{Valgte brugsmønstre}
+
+\begin{description}
+  \item[Søgning] At søge på opskrifter i forhold til de indtastede ingredienser
+
+  \item[Favorisering] At favorisere/bogmærke en opskrift
+
+  \item[Indkøbslistehåndtering] Skal kunne tilføje ingredienser fra flere forskellige opskrifter på én fælles indkøbsliste
+
+  \item[Indlogning] Håndterer brugerens session vha. et loginsystem
+
+  \item[Fejlhåndtering]
+
+  \item[Crawling] Når crawleren besøger opskriftshjemmesider og tilføjer/opdaterer/sletter opskifter til/fra Foodl’s indeks
+\end{description}
+
+\input{indhold/2-analyse/anvendelsesomraade/aktoertabel}

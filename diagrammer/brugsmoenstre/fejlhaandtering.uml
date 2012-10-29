@@ -4,7 +4,7 @@
     <documentation>
       <authorname>Martin Madsen</authorname>
       <authoremail>mbma11@student.aau.dk</authoremail>
-      <version>0.34</version>
+      <version>0.35.1-NIELS_EDITION</version>
       <description>
         
       </description>
@@ -31,23 +31,23 @@
     <searchpath href="PROJECT_DIR" />
     <members>
       <member type="profile"
-              name="fejlhåndtering_profile.profile" />
+              name="fejlhaandtering_profile.profile" />
       <member type="xmi"
-              name="fejlhåndtering.xmi" />
+              name="fejlhaandtering.xmi" />
       <member type="pgml"
-              name="fejlhåndtering_ClassDiagram.pgml"
+              name="fejlhaandtering_ClassDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="Class Diagram" />
       <member type="pgml"
-              name="fejlhåndtering_UseCaseDiagram.pgml"
+              name="fejlhaandtering_UseCaseDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
               diagramname="Use Case Diagram" />
       <member type="pgml"
-              name="fejlhåndtering_untitledModel0.pgml"
+              name="fejlhaandtering_untitledModel0.pgml"
               diagramclass="org.argouml.uml.diagram.state.ui.UMLStateDiagram"
               diagramname="untitledModel 0" />
       <member type="todo"
-              name="fejlhåndtering.todo" />
+              name="fejlhaandtering.todo" />
     </members>
     <historyfile name="" />
   </argo>
@@ -62,10 +62,10 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Oct 15 10:29:13 CEST 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Oct 22 11:18:28 CEST 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
-      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+      <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
     </XMI.documentation>
     <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
   <XMI.content>
@@ -156,20 +156,23 @@
         <UML:SignalEvent xmi.id = '-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A8C'
           name = 'Åben fejlrapport' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A8D'
-          name = 'Log ind som admin' isSpecification = 'false'/>
+          name = 'Log ind som administrator' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
 </XMI>
 <pgml description="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram|-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A81"
+      xmlns:argouml="http://argouml.tigris.org/pgml-extensions"
       name="Class Diagram"
 >
 </pgml>
 <pgml description="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram|-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A81"
+      xmlns:argouml="http://argouml.tigris.org/pgml-extensions"
       name="Use Case Diagram"
 >
 </pgml>
 <pgml description="org.argouml.uml.diagram.state.ui.UMLStateDiagram|-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A82"
+      xmlns:argouml="http://argouml.tigris.org/pgml-extensions"
       name="untitledModel 0"
 >
   <group name="Fig0"
@@ -205,7 +208,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[112, 152, 97, 46]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[112, 152, 96, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A85"
        fill="1"
        fillcolor="white"
@@ -218,8 +221,8 @@
     <rectangle name="Fig1.0"
       x="112"
       y="152"
-      width="97"
-      height="46"
+      width="96"
+      height="24"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -229,8 +232,8 @@
     <rectangle name="Fig1.1"
       x="112"
       y="152"
-      width="97"
-      height="46"
+      width="96"
+      height="24"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -240,7 +243,7 @@
     <text name="Fig1.2"
       x="114"
       y="152"
-      width="93"
+      width="92"
       height="24"
       fill="0"
       fillcolor="white"
@@ -253,34 +256,6 @@
       textsize="13"
       justification="Center"
     >Fejlliste vises</text>
-    <path name="Fig1.3"
-      description="org.tigris.gef.presentation.FigLine"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="112"
-              y="176" />
-      <lineto x="208"
-              y="176" />
-    </path>
-    <text name="Fig1.4"
-      x="114"
-      y="176"
-      width="93"
-      height="16"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Lucida Grande"
-      italic="false"
-      bold="false"
-      textsize="13"
-      justification="Left"
-    ></text>
   </group>
   <group name="Fig2"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
@@ -297,11 +272,11 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A86"
-                        angle="266.0"
-                        offset="72" />
+                        angle="267.99999999999994"
+                        offset="89" />
     </private>
     <path name="Fig2.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -314,7 +289,7 @@
     </path>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[88, 248, 146, 46]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[88, 248, 146, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A87"
        fill="1"
        fillcolor="white"
@@ -328,7 +303,7 @@
       x="88"
       y="248"
       width="146"
-      height="46"
+      height="24"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -339,7 +314,7 @@
       x="88"
       y="248"
       width="146"
-      height="46"
+      height="24"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -362,34 +337,6 @@
       textsize="13"
       justification="Center"
     >Visning af fejlrapport</text>
-    <path name="Fig3.3"
-      description="org.tigris.gef.presentation.FigLine"
-      fill="1"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="88"
-              y="272" />
-      <lineto x="233"
-              y="272" />
-    </path>
-    <text name="Fig3.4"
-      x="90"
-      y="272"
-      width="142"
-      height="16"
-      fill="0"
-      fillcolor="white"
-      stroke="0"
-      strokecolor="black"
-      textcolor="black"
-      font="Lucida Grande"
-      italic="false"
-      bold="false"
-      textsize="13"
-      justification="Left"
-    ></text>
   </group>
   <group name="Fig4"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
@@ -410,20 +357,20 @@
                         offset="57" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
       <moveto x="160"
-              y="197" />
+              y="175" />
       <lineto x="160"
               y="248" />
     </path>
   </group>
   <group name="Fig5"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[344, 264, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[344, 248, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-18-87-1051c137:13a63870e8a:-8000:0000000000000A89"
        fill="1"
        fillcolor="white"
@@ -435,7 +382,7 @@
     
     <ellipse name="Fig5.0"
       x="356"
-      y="276"
+      y="260"
       rx="12"
       ry="12"
       fill="0"
@@ -445,7 +392,7 @@
     />
     <ellipse name="Fig5.1"
       x="356"
-      y="276"
+      y="260"
       rx="12"
       ry="12"
       fill="1"
@@ -455,7 +402,7 @@
     />
     <ellipse name="Fig5.2"
       x="355"
-      y="275"
+      y="259"
       rx="7"
       ry="7"
       fill="1"
@@ -483,16 +430,16 @@
                         offset="10" />
     </private>
     <path name="Fig6.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
       <moveto x="233"
-              y="275" />
+              y="260" />
       <lineto x="344"
-              y="275" />
+              y="260" />
     </path>
   </group>
 </pgml>
