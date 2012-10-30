@@ -5,13 +5,13 @@
 
 body {
 /*  background:#c9cccf url(bg.png) repeat-x; */
-  background-color:#fff;
+  background-color:#fcfffc;
   text-align:center;
   font-family:"Trebuchet MS", sans-serif;
 }
 
 #top {
-  background-color:#eee;
+  background-color:#ccc;
   height:32px;
   text-align:left;
   padding-left:16px;
