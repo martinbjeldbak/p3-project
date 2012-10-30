@@ -1,1049 +1,1049 @@
-0157A38, acidophilus tykmælk
-0891Aborre, rå
-0455Abrikos, konserves, let sukkerlage
-0626Abrikos, rå
-0001Abrikos, tørret
-0002Agurk, rå
-0688Agurk, syltet
-0689Agurk, syltet, uden tilsat sukker
-0004Ananas, konserves
-0003Ananas, rå
-0833Ananasjuice, konserves
-0648Ananaskirsebær, kapstikkelbær, rå
-1037And, brystkød, rå
-0006And, kød og skind, rå
-0007And, kød, rå
-0454Ansjos, marineret, konserves
-0005Appelsin, rå
-0355Appelsinjuice, konserves
-1117Appelsinmarmelade
-0453Artiskok, rå
-0452Asier, syltede
-0690Asier, syltede, uden tilsat sukker
-0815Asparges, grønne, rå
-0816Asparges, hvide, rå
-0009Asparges, konserves
-0008Asparges, uspec., rå
-0010Aubergine, rå
-0011Avocado, rå
-1304Bacon i skiver, rå
-5026Bacon i tern, rå
-0068Bagegær, presset, rå
-0389Bagepulver
-0460Baked beans i tomatsovs, konserves
-0458Bambusskud, konserves, saltet
-0459Bambusskud, konserves, usaltet
-0457Bambusskud, rå
-0014Banan, rå
-0659Batat, sød kartoffel, rå
-0543Bayonneskinke, udbenet
-1168Birkes, frø
-0839Bitter, sød, uspec.
-0838Bitter, uspec.
-0666Bladbede, sølvbede, rå
-0015Bladselleri, rå
-0016Blodpølse
-0795Blomkål, dansk, rå
-0829Blomkål, dybfrost
-0796Blomkål, importeret, rå
-0017Blomkål, uspec., rå
-0018Blomme, rå
-0019Blæksprutte, rå
-0835Blåbær, frosne, usukrede
-0020Blåbær, rå
-1270Boghvede, hel, rå
-0361Boghvedegryn, rå
-1014Boghvedemel
-0444Bolcher, blandede
-1195Bolcher, uspec.
-1097Bomuldsfrøolie
-1318Bondebrød med fedtrige frø, industrifremstillet
-1317Bondebrød, uden fedtrige frø, industrifremstillet
-1056Bouillon, hønsekød, spiseklar
-0386Bouillon, oksekød, koncentreret, terning
-1055Bouillon, oksekød, terning, spiseklar
-0907Brasen, rå
-0758Brie, 45+
-0252Brie, 50+
-0759Brie, 60+
-0904Brisling (ansjovis), marineret, konserves
-0905Brisling (sardin), i olie, konserves
-0906Brisling (sardin), i tomat, konserves
-0899Brisling, rå
-0938Brissel, kalv, rå
-1259Broccoli, dybfrost
-1258Broccoli, kogt
-0021Broccoli, rå
-0837Brombær, dybfrost, usukrede
-0022Brombær, rå
-0893Brosme, rå
-0029Brune bønner, tørrede
-1275Brune linser, tørrede, rå
-0023Brøndkarse, rå
-0397Buddingpulver
-0594Bulgur (hvedekerner, knækkede, parboiled), rå
-0024Byggryn, rå
-1015Bygmel
-0885Bækforel, filet, røget
-0876Bækforel, rå
-0687Bønnespirer, adzuki, rå
-0817Bønnespirer, mung, rå
-0034Bønnespirer, soja, konserves
-0033Bønnespirer, soja, rå
-0818Bønnespirer, uspec., rå
-1068Cacao, instant, med mælk, pulver
-0036Cacao, instant, uden mælk, pulver
-0035Cacao, pulver
-0159Cacaomælk
-0734Cacaomælk (UHT)
-0733Cacaoskummetmælk
-0735Cacaoskummetmælk (UHT)
-1099Cacaosmør
-0814Camembert, 30+
-0369Camembert, 45+
-0253Camembert, 50+
-0641Cantaloupe (melon), rå
-0630Carambol, bilimbing, stjernefrugt, rå
-0650Cashewnød, olieristet
-0649Cashewnød, tørristet
-0675Cayote, Kayote, rå
-0171Champignon, konserves
-0037Champignon, rå
-0522Cheddar, 50+
-0631Cherimoya, chirimoya, rå
-0763Chesire, 50+
-0451Chokolade, fyldt
-0040Citron, rå
-0041Citronsaft, friskpresset
-0834Citronskal, rå
-0623Cognac
-1011Cornflakes, frosted
-0043Cornflakes, uspec.
-0160Creme fraiche 18 %
-0161Creme fraiche 38 %
-1556Creme Fraiche 9%
-1132Croissant
-0750Cultura, syrnet sødmælk
-0044Daddel, tørret
-0754Danablu 50+
-0755Danablu 60+
-0776Danbo, 20+
-0775Danbo, 30+
-0769Danbo, 45+
-0045Dild, rå
-0842Dild, tørret
-2007Dragé, lakrids
-2009Dragéprodukt, uspec.
-1088Dressing, blue cheese
-1277Dressing, creme fraiche
-1278Dressing, creme fraiche, kalorielet
-0301Dressing, fransk
-0302Dressing, italiensk
-1279Dressing, mayonnaise
-1280Dressing, mayonnaise, kalorielet
-1281Dressing, olie-eddike
-1282Dressing, olie-eddike, kalorielet
-0303Dressing, thousand island
-1269Drueagurk (sylteagurk), rå
-1087Druesaft
-0047Due, kød og skind, rå
-0048Due, kød, rå
-0046Eddike
-0773Elbo, 40+
-0764Emmentaler, 45+
-0783Esrom, 45+
-0782Esrom, 60+
-1038Fasan, kød og skind, rå
-1039Fasan, kød, rå
-0462Fennikel, frø
-0853Fennikel, knold, rå
-0050Fersken, konserves
-0049Fersken, rå
-0051Fersken, tørret
-0363Feta, 40+
-0787Feta, 50+
-1006Fiberbrød
-0632Figen, rå
-0052Figen, tørret
-0813Figuraost, 10+
-0869Fiskeboller, konserves
-0870Fiskefars, rå
-0872Fiskefrikadelle
-0884Fiskeolie, hydrogeneret
-1016Fladbrød
-1311Flûte, fint, industrifremstillet
-1313Flûte, groft, industrifremstillet
-1468Flûte, med fedtrige frø, industrifremstillet
-0478Flæskesvær, snacks
-0165Fløde 13 %
-0736Fløde 13 % (UHT)
-0164Fløde 18 %
-0166Fløde 38 %, piskefløde
-0163Fløde 9 %
-0752Fløde 9 %, syrnet
-0855Flødeboller, skumboller
-0038Flødechokolade
-1101Flødechokolade med nødder
-0848Flødeis
-0368Flødeost, 60+
-0364Flødeost, 70+
-0990Flødeskumskage, uspec.
-0866Flødeyoghurt med frugt, 9 % fedt
-0784Fontina, 45+
-0788Fontina, 50+
-0663Forårsløg, rå
-0528Franskbrød
-1300Frugtkvark
-0685Frugtpålæg, figen
-0831Frugtpålæg, uspec.
-0390Frugtsaft, blandet, sødet, koncentreret
-0391Frugtsaft, blandet, usødet, koncentreret
-1110Fruktose
-0909Frølår, dybfrost
-0768Fynbo, 45+
-0053Fårekød, bov, rå
-0054Fårekød, kølle, rå
-0871Gaffelbidder
-0055Gedde, rå
-0516Gedemælk
-0058Gelatine
-1062Gin
-0529Grahamsbrød
-0542Grahamsmel, fuldkornshvedemel
-0756Grana, 32+
-0633Granatæble, punisk æble, råt
-0059Grapefrugt, rå
-0060Grapefrugtjuice, konserves, usødet
-1130Grovbolle
-1009Grovfranskbrød
-0761Gruyere, 45+
-0062Græskar, konserves
-0061Græskar, rå
-0064Grønkål, dybfrost
-0513Grønkål, konserves
-0063Grønkål, rå
-0027Grønne bønner, dybfrost
-0026Grønne bønner, konserves
-0028Grønne bønner, rå
-0343Grønne ærter, dybfrost
-0344Grønne ærter, konserves
-0342Grønne ærter, rå
-1555Grøntsagsjuice, pasteuriseret
-0627Guavabær, guajavabær, rå
-0345Gule ærter (flækærter), rå
-1128Gulerod, dansk, rå
-0828Gulerod, dybfrost
-1129Gulerod, importeret, rå
-0681Gulerod, juice, konserves
-0684Gulerod, konserves
-0065Gulerod, uspec., rå
-1057Gær, tørret
-1053Gærekstrakt, marmite
-0066Gås, kød og skind, rå
-0067Gås, kød, rå
-1139Gåsefedt
-0548Hamburgerryg, kogt
-1140Hamburgerryg, røget
-0069Hare, rå
-0192Hasselnød, tørret
-0781Havarti, 30+
-0780Havarti, 45+
-0779Havarti, 60+
-0878Havkat, plettet, rå
-0070Havkat, rå
-0071Havregryn, beriget
-1299Havregryn, ikke beriget
-0530Havregryn, uspec.
-1271Havreklid, dansk
-0916Hellefisk, gravad
-0073Hellefisk, røget
-0072Hellefisk, rå
-1141Helleflynder, røget
-0074Helleflynder, rå
-0932Helt, rå
-0075Hestekød, råt
-1554Hindbær, dybfrost
-0076Hindbær, rå
-1118Hindbærmarmelade
-1150Hindbærsaft, sur, koncentreret
-1149Hindbærsaft, sød, koncentreret
-0762Hingino, 32+
-0461Hirse, hele korn
-0864Hirseflager
-0078Hjerte, høne (kylling), råt
-0077Hjerte, kalv, råt
-0079Hjerte, okse, råt
-0080Hjerte, svin, råt
-0081Honning
-0642Honningmelon, rå
-0082Hornfisk, rå
-0914Hummer, kogt
-0084Hummer, konserves
-0083Hummer, rå
-1170Hvalkød, råt
-1469Hvedebrød, bolle, fin, industrifremstillet
-1457Hvedebrød, bolle, grov, industrifremstillet
-1458Hvedebrød, bolle, grov, med fedtrige frø, industrifremstillet
-1470Hvedebrød, bolle, italiensk, industrifremstillet
-1456Hvedebrød, fint, store
-1310Hvedebrød, groft uden fedtrige frø, uden kerner
-1467Hvedebrød, sandwich/toastbrød med fedtrige frø, industrifremstillet
-1464Hvedebrød, store, italiensk
-1463Hvedebrød, store, med fedtrige frø
-1465Hvedebrød, toastbrød, fint, industrifremstillet
-1466Hvedebrød, toastbrød, groft, industrifremstillet
-0182Hvedegryn, mannagryn
-0863Hvedekerner, hele/knækkede
-0085Hvedekim, rå
-0860Hvedekimolie
-0086Hvedeklid
-0531Hvedemel
-0025Hvide bønner, tørrede
-0088Hvidkål, rå
-0089Hvidløg, rå
-0090Hvidløg, tørret, pulver
-0091Hvidvin, medium
-1064Hvidvin, mousserende, champagne
-1063Hvidvin, Rhinskvin
-0092Hvidvin, sød
-0093Hvidvin, tør
-1086Hvidvin, uden alkohol
-1419Hvidvin, uspec.
-0896Hvilling, rå
-0095Hyben pulver, tørret
-0094Hyben, rå
-0857Hybensaft
-0096Hyldebær, rå
-1159Hyldebærsaft, sur, koncentreret
-0401Hyldebærsaft, sød, koncentreret
-0260Hytteost, 20+
-0098Høne, kød og skind, rå
-0097Høne, kød, rå
-0480Hørfrø, rå
-0481Hørfrøolie
-0667Ingefær, rod, rå
-0843Is, 3. farvet
-0099Ising, rå
-0850Ispind, jordbær
-0851Ispind, limonade
-0849Ispind, vanille
-0852Ispind, vanille med chokoladeovertræk
-2004Isvaffel med vaniljeis, uspec.
-0873Jomfruhummer, rå
-0466Jordbær i sukkerlage, konserves
-0468Jordbær, dybfrost, sukrede
-0467Jordbær, dybfrost, usukrede
-0100Jordbær, rå
-1166Jordbær, syltede
-1142Jordbærmarmelade
-1148Jordbærsaft, sur, koncentreret
-1147Jordbærsaft, sød, koncentreret
-0193Jordnød, tørret
-0859Jordnøddeolie
-0195Jordnøddesmør
-0101Jordskok, rå
-0102Julesalat, rå
-0105Kaffe, drikkeklar
-1066Kaffe, instant, decaffeinated, drikkeklar
-1065Kaffe, instant, decaffeinated, pulver
-1067Kaffe, instant, drikkeklar
-0104Kaffe, instant, pulver
-0103Kaffebønne, ristet, formalet
-0634Kakifrugt (Sharon), rå
-0635Kaktusfigen, rå
-1451Kalkun, bryst (filet), kogt/røget, pålæg
-0109Kalkun, kød og skind, rå
-0110Kalkun, kød, rå
-1346Kalkunkød, hakket, råt
-1345Kalv og flæsk, hakket, højt fedtindhold, råt
-0114Kalvekød, fedt, råt
-0111Kalvekød, helt magert
-0112Kalvekød, magert, råt
-0113Kalvekød, middelfedt, råt
-0985Kammerjunkere
-1046Kanel, stang
-0106Kanin, kød, rå
-0108Kantarel, rå
-0441Karameller, blandede
-1179Karameller, uspec.
-0406Karry, pulver
-0107Karse, frisk
-0443Kartoffel, chips (franske kartofler)
-0442Kartoffel, chips (franske kartofler), fedtreducerede
-0820Kartoffel, efterår (oktober til januar), rå
-0821Kartoffel, gammel (februar - juni), rå
-0836Kartoffel, konserves
-0819Kartoffel, ny (maj til september), rå
-0583Kartoffel, pommes frites, friturestegte
-0115Kartoffel, uspec., rå
-1332Kartoffelchips, grove
-0116Kartoffelmel
-0865Kartoffelmos, -pulver m/tørmælk
-1120Kartoffelmos, -pulver u/tørmælk
-0506Kaseinat, natrium-, Damipro RHV
-0117Kastanje, ægte, rå
-1008Kastanjebrød
-0903Kaviar, uægte (lodderogn)
-0118Kaviar, uægte (stenbiderrogn)
-0748Kefir
-0854Kiks, fuldkorns-, digestivetype
-0484Kikærter, tørrede, rå
-0120Kinakål, pe-tsai, rå
-0661Kinaradise, japanræddike, rå
-0122Kippers i olie, konserves
-0121Kirsebær, rå
-1143Kirsebær, syltede
-1153Kirsebærsaft, sur, koncentreret
-1152Kirsebærsaft, sød, koncentreret
-0465Kiwi, rå
-0123Klipfisk
-0934Knude, rå
-0660Knudekål, glaskål, rå
-0533Knækbrød, hvede-, fint
-1018Knækbrød, hvede-, granhamstype
-0124Knækbrød, rug-, fint
-1019Knækbrød, rug-, groft (Husmans)
-1167Kogechokolade
-0551Kogt oksebryst
-1093Kokosfedt
-1169Kokosfedt, Palmin
-0126Kokosmel
-0196Kokosnød, rå
-1238Konfektureprodukt, skumvare, uspec.
-0127Kongeål (pighaj), rå
-1475Koriander, blade, friske
-0527Koriander, blade, tørrede
-0526Koriander, frø
-0128Krabbe, kogt
-0129Krabbekløer, konserves
-0877Krabbekløer, rå
-0874Krebs, rå
-0989Krydder
-0130Kråse, kylling, rå
-0913Kuller, paneret, stegt
-0471Kuller, rå
-0897Kulmule, rå
-0636Kumquat, guldorange, dværgappelsin, rå
-0765Kvark, 45+
-0867Kvark, 45+, med vanille
-0261Kvark, 5+
-0624Kvæde, rå
-1449Kylling, bryst (filet), kogt, pålæg
-1042Kylling, bryst, kød og skind, rå
-0585Kylling, kød og skind, friturestegt
-1035Kylling, kød og skind, grillstegt
-1036Kylling, kød og skind, paneret, friturestegt
-0132Kylling, kød og skind, rå
-0131Kylling, kød, rå
-1043Kylling, lår, kød og skind, rå
-1044Kylling, vinge, kød og skind, rå
-1452Kyllingepølse, pålæg
-0168Kærnemælk
-0169Kærnemælk med citronsaft
-0394Kødboller, dybfrost
-0399Kødboller, konserves
-0404Kødextrakt, flydende, Bovril
-1116Kødextrakt, terning
-0296Kødpølse
-1347Kødpølse, fedtreduceret
-1273Kørvel, hakket, dybfrost
-0133Kørvel, rå
-0134Kålrabi (kålroe), rå
-1105Lakrids, salt
-1106Lakrids, sød
-1104Lakrids, uspec.
-0445Lakridskonfekt
-0898Laks, gravad
-0136Laks, konserves
-0137Laks, røget, udskåret
-0135Laks, rå
-0917Laks, saltet
-0517Lammebrissel, rå
-0139Lammekød, bov, rå
-0140Lammekød, bryst, råt
-0941Lammekød, kølle, afpudset, rå
-0940Lammekød, kølle, med fedt, rå
-0141Lammekød, kølle, uspec., rå
-0942Lammekød, rygstykke, råt
-0939Lammekød, slag, råt
-0138Lammekød, uspec., råt
-0881Lange, filet, rå
-0170Letmælk, konventionel (ikke-økologisk)
-1473Letmælk, økologisk
-0334Letmælksyoghurt med saft
-1045Lever, ande, rå
-1028Lever, gåse, rå
-0142Lever, høne, rå
-0144Lever, kalv, rå
-0143Lever, kylling, rå
-0145Lever, okse, rå
-0146Lever, svin, rå
-0297Leverpostej
-1453Leverpostej, fedtreduceret
-0562Leverpølse
-0883Levertran (Sej)
-0413Likør, Advocaat
-1070Likør, brun cacao
-0414Likør, Cherry Brandy
-1073Likør, Crème de Menthe
-0415Likør, Curacao
-1071Likør, kaffe
-1072Likør, kaffe med fløde
-1069Likør, uspec.
-0637Lime, rå
-2001Limonadeis, uspec.
-0147Linser, tørrede, uspec.
-0682Linsespirer, rå
-0638Litchi, lichiblomme, kinesisk blomme, rå
-0628Loganbær, frosne
-0639Loquat, japansk mispel, rå
-0895Lubbe, rå
-0868Lucerne, alfalfa, frø
-0683Lucernespirer, rå
-1559Læskedrik (light), koncentreret (1+10), uden tilsat sukker, uspec.
-1558Læskedrik, koncentreret (1+5), tilsat sukker, uspec.
-0662Løg, hakkede, dybfrost
-0830Løg, ristede
-0148Løg, rå
-0601Madeira
-0149Majroe, rå
-0152Majs, kerner, dybfrost
-0151Majs, kerner, konserves
-0150Majskolbe, rå
-0172Majsmel
-0153Majsolie
-0173Majsstivelse
-0599Makaroni, spaghetti, fuldkorns-, rå
-0398Makaroni, spaghetti, kogt
-0174Makaroni, spaghetti, rå
-0178Makrel i tomat, konserves
-0176Makrel, filet, naturel, konserves
-0177Makrel, røget
-0175Makrel, rå
-0180Mandarin, konserves
-0179Mandarin, rå
-0181Mandel, rå
-0523Mangofrugt, mangoblomme, mangga, rå
-0664Maniok, cassava, rå
-1103Marcipan
-2006Marcipanprodukt, m/chokolade, uspec.
-1252Margarine, 70 %, bordbrug, blød, vegetabilsk fedt
-1255Margarine, 80 %, bordbrug, blød, vegetabilsk fedt
-1250Margarine, 80 %, bordbrug, vegetabilsk fedt
-1253Margarine, 80 %, stegning/bagning, vegetabilsk fedt
-0777Maribo, 30+
-0771Maribo, 45+
-0532Mariekiks
-1115Marmelade, engelsk type
-0384Marmelade, uspec.
-0184Mayonnaise
-1094Mayonnaise, fedtreduceret
-0293Medisterpølse, røget
-0294Medisterpølse, rå
-0640Melbanan, grønsagsbanan, plantain, rå
-1003Melboller, uspec.
-1248Minarine, 30 %, vegetabilsk fedt
-1249Minarine, 40 %, vegetabilsk fedt
-0474Mineralvand, dansk vand o.lign.
-0042Mineralvand, sodavand, Cola
-0472Mineralvand, sodavand, tilsat sukker, uspec.
-0473Mineralvand, sodavand, uden tilsat sukker, uspec.
-0840Miso, sojapasta
-1301Modermælk, colostrum
-1303Modermælk, moden
-1302Modermælk, overgangsmælk (10. dag efter fødslen)
-0786Mozzarella, 30+
-0785Mozzarella, 45+
-0485Mungbønner, tørrede, rå
-1048Muskatnød, hel
-1229Musling, kogt
-0188Musling, konserves
-0187Musling, rå
-0757Mycella, 50+
-0770Mynster, 50+
-0262Myseost, 33+
-1020Müsli med tilsat sukker.
-1021Müsli uden tilsat sukker.
-1012Müsli, uspec.
-0856Mælkebøtte, blade, rå
-0446Mælkeis, uspec.
-0039Mørk chokolade
-0625Nektarin, rå
-0185Netmelon, rå
-2008Nougat
-0844Nougatis
-0189Nyre, kalv, rå
-0190Nyre, okse, rå
-0191Nyre, svin, rå
-0596Nøddepasta, Nutella
-0678Okra, gumbo, rå
-0423Oksekød, culotte, rå
-0430Oksekød, entrecote med kappe, rå
-1342Oksekød, hakket, lavt fedtindhold, råt
-1296Oksekød, hakket, råt
-0429Oksekød, højrebsfilet med kappe, rå
-0431Oksekød, højrebsfilet, afpudset, rå
-0418Oksekød, inderlår med kappe, rå
-0419Oksekød, inderlår uden kappe, rå
-0421Oksekød, klump uden kappe, rå
-0422Oksekød, lårtunge, rå
-0433Oksekød, mellemskært, råt
-0428Oksekød, mørbrad, afpudset, rå
-0417Oksekød, skank (osso-buco), rå
-0440Oksekød, slag, råt
-0436Oksekød, spidsbryst, råt
-0439Oksekød, tværreb, råt
-0435Oksekød, tykbov (marvpibebov), rå
-0437Oksekød, tykbryst, råt
-0432Oksekød, tykkam, rå
-0424Oksekød, tykstegsfilet med kappe, rå
-0425Oksekød, tykstegsfilet uden kappe, rå
-0434Oksekød, tyndbov + mellembov, rå
-0438Oksekød, tyndbryst, råt
-0426Oksekød, tyndsteg med mørbrad, rå
-0427Oksekød, tyndstegsfilet med fedtkant, rå
-0200Oksekød, uspec., fedt, råt
-0199Oksekød, uspec., helt magert, råt
-0201Oksekød, uspec., magert, råt
-0202Oksekød, uspec., middelfedt, råt
-0420Oksekød, yderlår, råt
-0930Oksetalg
-0203Oliven, grønne, marinerede, konserves
-0204Oliven, sorte, saltede, i olie
-1274Oliven, sorte, uden sten, i saltlage
-0482Olivenolie
-0766Ost, blå- og hvidskimmel, 70+
-0255Ost, fast, 20+, alle typer
-0256Ost, fast, 30+, alle typer
-0257Ost, fast, 40+, alle typer
-0258Ost, fast, 45+, alle typer
-1017Ostekiks, Cream Crackers
-0665Paksoi, pak-choi, pai tsai, rå
-0858Palmekerneolie
-1098Palmeolie
-0464Papaya, mamaja, træmelon, rå
-0643Paradisæble, råt
-0197Paranød
-0259Parmesan, 32+
-0365Parmesan, revet
-0644Passionsfrugt, grenadil, rå
-1233Pastiller, med sukker, uspec.
-1234Pastiller, sukkerfri, uspec.
-0205Pastinak, rå
-1454Paté, pålæg
-0194Peanuts, (jordnød, ristet og saltet)
-0677Peber, chili, konserves
-0676Peber, chili, rå
-1054Peber, hvid
-0405Peber, sort
-0206Peberfrugt, grøn, rå
-0524Peberfrugt, konserves
-0207Peberfrugt, rød, rå
-0208Peberrod, rå
-0653Pecannød, olieristet
-0651Pecannød, tørret
-0652Pecannød, tørristet
-0209Persille, rå
-0210Persillerod, rå
-0211Pighvarre, rå
-0654Pinjefrø, tørrede
-0655Pistacienød, tørret
-0656Pistacienød, tørristet
-0992Pizza napolitana, dybfrost
-0995Pizza romana, dybfrost
-0500Pizza, dybfrost, uspec.
-0469Pop Corn (poppede majskærner)
-1337Pop corn, microovn
-1336Pop corn, traditionelle
-0212Porre, rå
-0407Portvin
-1029Poulard, kød og skind, rå
-1455Pumpernickel
-0213Purløg, rå
-0215Pære, konserves
-0214Pære, rå
-0552Pølse, cervelatpølse
-0935Pølse, hot dog
-0580Pølsebrød
-5029Pølser, cocktailpølser
-1134Rabarber, dybfrost
-0216Rabarber, rå
-0217Radise, rå
-1100Rapsolie
-1095Rapsolie (lavt erucasyreindhold)
-0534Rasp
-0218Reje, dybfrost
-0910Reje, kogt
-0219Reje, konserves
-0991Remoulade, fedtreduceret, uspec.
-0357Remoulade, uspec.
-0220Ribs, rå
-1136Ribsgele
-1155Ribssaft, sur, koncentreret
-1154Ribssaft, sød, koncentreret
-0221Ris, brune, rå
-0223Ris, parboiled, rå
-0224Ris, polerede, rå
-1272Risengryn, grødris, brune, rå
-1013Risengryn, grødris, polerede, rå
-1023Risklid
-0222Rismel
-1022Risstivelse
-1450Roastbeef
-1077Rom
-0254Roquefort, 50+
-0226Rosenkål, dybfrost
-0822Rosenkål, efterår (oktober til december), rå
-0225Rosenkål, uspec., rå
-0823Rosenkål, vinter (januar til april), rå
-1075Rosévin
-0227Rosin uden kerner
-0573Roulade, abrikos-
-0574Roulade, hindbær-
-0572Roulade, uspec.
-1309Rugbrød med fedtrige frø og hele kerner
-0732Rugbrød, fuldkorn
-0535Rugbrød, lyst
-0536Rugbrød, mørkt
-1010Rugbrød, revet, med brunt sukker, uspec.
-0862Rugkerner, hele/knækkede
-0541Rugmel, groft, fuldkornsrugmel
-1292Rugmel, halvsigtet (udmalingsgrad ca. 85 %)
-1291Rugsigtemel (udmalingsgrad ca. 70 %)
-0295Rullepølse
-0547Rullepølse, lammekød
-0537Rundstykke
-1131Rundstykke, spansk
-0264Rygeost, 40+
-0263Rygeost, 5+
-1040Rype, kød, rå
-0231Ræddike, rå
-0233Rødbede, konserves
-0824Rødbede, konserves, uden tilsat sukker
-0232Rødbede, rå
-1287Røde linser, tørrede, rå
-0894Rødfisk, lille, filet, rå
-0879Rødfisk, rå
-0235Rødkål, konserves
-0825Rødkål, konserves, uden tilsat sukker
-0234Rødkål, rå
-0902Rødspætte, filet, paneret, dybfrost
-0586Rødspætte, filet, paneret, friturestegt
-0236Rødspætte, rå
-0483Rødtunge, rå
-1085Rødvin, rosévin, uden alkohol
-0237Rødvin, uspec.
-0298Røget svinefilet
-1109Saccharin
-1090Safflowerolie (højt linolsyreindhold)
-1091Safflowerolie (højt oliesyreindhold)
-0238Sagogryn (kartoffelstivelse)
-0266Salami
-0670Salat, egeløv, rå
-0671Salat, endivie, bredbladet (escarole), rå
-0672Salat, endivie, kruset (frisee), rå
-0239Salat, hovedsalat, rå
-0668Salat, Iceberg, rå
-0673Salat, Radicchio rosso, rå
-0669Salat, Romaine, romersk, rå
-0549Salt kød
-0388Salt, bordsalt
-0267Salt, havsalt (ikke jodberiget)
-0387Salt, stensalt, køkkensalt
-0774Samsø, 30+
-0767Samsø, 45+
-0931Sandart, rå
-0240Sardin, i olie, konserves
-0241Sardin, i tomat, konserves
-0679Sauce, barbeque
-1059Sauce, gravad laks
-1051Sauce, shaslik
-0674Savoykål, rå
-0908Sej, filet, dybfrost
-0882Sej, filet, rå
-1156Selleri, blade, rå
-0243Selleri, rod, rå
-0587Sennep, brun, færdiglavet
-0588Sennep, gul, færdiglavet
-0463Sesamfrø, afskallede
-0657Sesamfrø, hele, tørrede
-1092Sesamolie
-0409Sherry, medium
-0410Sherry, sød
-0408Sherry, tør
-0538Sigtebrød
-0539Sigtemel
-1124Sild, høstsild, fedsild, rå
-0244Sild, marineret
-0911Sild, marineret, i karrysauce
-0912Sild, marineret, i madeirasauce
-1295Sild, marineret, kryddersild
-0915Sild, paneret, stegt, i lage
-0245Sild, røget
-0246Sild, rå
-1294Sildepostej
-1108Sirup
-0375Skinke med skank, rå
-0924Skinke, hoftestykke, helt afpudset, råt
-0923Skinke, inderlår, helt afpudset, rå
-0248Skinke, kogt, konserves
-1448Skinke, kogt, skiveskåret
-0249Skinke, røget
-0250Skinke, røget, kogt
-0919Skinke, yderlår, helt afpudset, råt
-0920Skinkeculotte (yderlår), ca. 5 mm spæk, råt
-0921Skinkemignon, lårtunge, helt afpudset, rå
-5012Skinkemignon, rå
-5005Skinkeschnitzel, inderlår, rå
-0922Skinkesteg uden svær, helt afpudset, rå
-0518Skorzonnerrod, rå
-0268Skrubbe, rå
-0251Skummetmælk
-1560Skummetmælk 0.5 % fedt (Minimælk)
-1474Skummetmælk, økologisk
-0366Skummetmælkspulver
-0565Skærekage, chokoladekage/-pie
-0564Skærekage, citronkage
-0986Skærekage, formkage, uspec.
-0566Skærekage, mazarinkage
-0525Skærekage, sandkage
-1557Smelteost, 20+
-0760Smelteost, 30+
-0265Smelteost, 45+
-0269Smør, saltet
-0270Smør, usaltet
-1235Smørbart blandingsprodukt, 80% fedt
-0569Småkage, finsk brød
-0540Småkage, uspec.
-0570Småkage, vanillekranse
-1333Snacks, ekspanderet, kartoffelbasis
-1334Snacks, ekspanderet, majsbasis
-1335Snacks, ekstruderet, majsbasis
-1079Snaps, 40 % vol., uspec.
-1080Snaps, krydder-, uspec.
-1314Softrugbrød (uden fedtrige frø)
-1315Softrugbrød med fedtrige frø og hele kerner
-0385Soja sauce
-0032Sojabønner, tørrede
-0403Sojadrik, kommercielt tilberedt
-0155Sojamel
-0271Sojaolie
-0272Solbær, rå
-1163Solbær, syltede
-1119Solbærmarmelade
-1158Solbærsaft, sur, koncentreret
-1157Solbærsaft, sød, koncentreret
-1007Solsikkebrød
-0479Solsikkefrø, afskallede, tørrede
-0273Solsikkeolie
-1107Sorbitol
-0880Sortmund, blåhvilling, filet, rå
-0274Spegepølse
-0544Spegepølse, oksekød
-0247Spegesild
-0892Sperling, kød, rå
-0275Spidskål, rå
-0276Spinat, hakket, dybfrost
-0278Spinat, rå
-0416Spirituosa, gennemsnitlige værdier
-0550Sprængt nakke, svinekød
-1431Spædbørnsmad, modermælkserstatning, højt jernindhold, pulver
-0470Squash, alle typer, rå
-0402Squash, zucchini, rå
-0789St. Paulin, 50+
-0901Stenbider, røget
-0900Stenbider, rå
-0279Stikkelsbær, rå
-0502Sukker, brun farin
-1112Sukker, demerara
-0154Sukker, stødt melis (saccharose)
-1265Sukkerært (mangetout), rå
-1027Surbrød
-0772Svenbo, 45+
-0280Sveske, rå
-1247Svinebov med svær, rå
-0376Svinebov til fars, ca. 16 % fedt, rå
-0925Svinebov, helt afpudset, rå
-0374Svinebryst, kogestykke med svær, rå
-0926Svinebryst, kogestykke uden svær, ca. 2 mm spæk, rå
-0012Svinebryst, kogestykke, helt, saltet
-0372Svinebryst, slag, rullesteg, råt
-0373Svinebryst, stegestykke med svær, rå
-0013Svinebryst, stegestykke, helt, saltet
-0929Svinebryst, stegestykke, uden svær, ca. 2 mm spæk, rå
-0281Svinefedt, afsmeltet
-1135Svinefedt, afsmeltet, Raffinol
-0927Svinefilet, helt afpudset, rå
-5020Svinekam med svær, rå
-0380Svinekam uden svær, ca. 3 mm spæk, rå
-5015Svinekam uden svær, rå
-5016Svinekotelet, fadkotelet, rå
-0379Svinekød , mellemkam med svær, rå
-1244Svinekød, bagskank uden svær, rå
-5010Svinekød, bov i tern, rå
-5017Svinekød, bovsteaks, rå
-5001Svinekød, filet royal af svinefilet, rå
-5023Svinekød, flæskesteg af nakkekam med svær, rå
-5021Svinekød, flæskesteg af svinekam med svær, rå
-5028Svinekød, hakket, ca.  6% fedt, råt
-1343Svinekød, hakket, højt fedtindhold, råt
-1344Svinekød, hakket, lavt fedtindhold, råt
-0371Svinekød, halssnitte, rå
-5007Svinekød, kæbeklump, rå
-5002Svinekød, medaillon af svinefilet, rå
-5004Svinekød, mørbrad royal, rå
-0928Svinekød, mørbradstykke, helt afpudset, råt
-0381Svinekød, nakkefilet, helt afpudset (Nakkekotelet), rå
-0382Svinekød, nakkekam med svær, rå
-5014Svinekød, nakkekotelet, rå
-5024Svinekød, revelsben, rå
-5022Svinekød, ribbensteg, rå
-5019Svinekød, ribsteaks, rå
-5018Svinekød, rullesteg af slag, rå
-5003Svinekød, sautéskiver af svinefilet, rå
-0918Svinekød, skinkemuskler -skank, helt afpudsede, rå
-5009Svinekød, skinkestrimler af yderlår, rå
-5008Svinekød, skinketern af yderlår, rå
-5025Svinekød, spareribs, rå
-0285Svinekød, uspec., ca. 10 % fedt, råt
-0287Svinekød, uspec., ca. 20 % fedt, råt
-0284Svinekød, uspec., fedt, råt
-0286Svinekød, uspec., magert, råt
-5027Svinekød, vikingsteaks, rå
-5006Svinekød, wokstrimler af skinkeinderlår, rå
-0378Svinemørbrad, afpudset, rå
-0288Svinespæk, rygspæk
-0299Sylte
-0383Syltetøj, uspec.
-0680Syre (krydderplante), rå
-1171Sælkød, råt
-0753Sødmælk (UHT)
-0156Sødmælk, konventionel (ikke-økologisk)
-1411Sødmælk, økologisk
-0367Sødmælkspulver
-0300Søtunge, rå
-0647Tamarind, rå
-1050Tang, agar
-1049Tang, konbu, tørret (kelp)
-0304Te, blade
-0305Te, drikkeklar
-1133Tebirkes
-1286Tidselolie
-0841Tofu, sojabønneost
-0790Tomat, dansk, rå
-0307Tomat, flået, konserves
-0791Tomat, importeret, rå
-1478Tomat, tørret
-0306Tomat, uspec., rå
-0308Tomatjuice, konserves
-0309Tomatketchup
-1052Tomatketchup, stærk
-0310Tomatpure
-0311Tomatpure, koncentreret
-1058Tomatsuppe, spiseklar
-0888Torsk, filet, kogt
-0889Torsk, filet, paneret, rå
-0890Torsk, filet, røget, med skind
-0312Torsk, filet, rå
-0887Torsk, filet, stegt
-0314Torsk, lever, konserves
-1137Torsk, lever, røget
-0313Torsk, lever, rå
-0315Torsk, levertran
-0317Torsk, rogn, konserves
-1293Torsk, rogn, røget
-0316Torsk, rogn, rå
-0629Tranebær, rå
-1004Trekornsbrød
-0319Tun i olie, konserves
-0320Tun i tomat, konserves
-0318Tun i vand, konserves
-0321Tun, rå
-0322Tunge, kalv, rå
-0936Tunge, kalv, saltet
-0323Tunge, okse, rå
-0324Tunge, svin, rå
-0937Tunge, svin, saltet
-0984Tvebakker
-1236Tyggegummi, med sukker, uspec.
-1237Tyggegummi, uden sukker, uspec.
-0325Tykmælk
-0326Tyttebær, rå
-0832Tyttebær, syltede
-1024Tørkage, kokosmakroner
-1025Tørkage, kransekage
-1298Tørkage, linse
-0567Tørkage, mazariner
-0568Tørkage, napoleonshatte
-0987Tørkage, uspec.
-0515Valle
-0514Vallepulver, tørret
-0198Valnød
-1026Valnøddebrød
-0861Valnøddeolie
-0327Vand, drikke-, vejl. værdier
-0186Vandmelon, rå
-0845Vanilleis
-1243Vekao
-0412Vermouth, sød
-0411Vermouth, tør
-0602Vinbjergssnegle, rå
-0329Vindrue, rå
-0328Vindruekerneolie
-0448Vingummi
-1078Vodka
-0031Voksbønner, konserves
-0030Voksbønner, rå
-0330Whisky
-0520Wienerbrød, julekage
-0571Wienerbrød, kringle/stang
-0521Wienerbrød, smørkrans
-0519Wienerbrød, spandauer
-0988Wienerbrød, uspec.
-0292Wienerpølse
-0582Wienerpølse (bayersk pølse), kogt
-1001Wienerpølse, konserves
-0581Wienerpølse, ristet
-0658Yams, rå
-1246Yderlår, skinkeculotte, ca. 2 mm spæk, rå
-1245Yderlår, skinkesteg (med svær), rå
-0331Ylette naturel
-0332Ymer naturel
-0745Yoghurt med appelsinsaft
-0335Yoghurt med frugt, uspec.
-0737Yoghurt med jordbær
-0743Yoghurt med müsli
-0738Yoghurt med peach melba
-0739Yoghurt med pære og banan
-0333Yoghurt naturel
-0804Æble, dansk, råt
-0805Æble, importeret, råt
-0338Æble, tørret
-0336Æble, uspec., råt
-1161Æblegele
-0337Æblemost, uspec.
-1033Æg, and, rå
-0339Æg, blomme, rå
-0590Æg, blomme, saltet, pasteuriseret, dybfrost
-0591Æg, blomme, tilsat sukker, pasteuriseret, dybfrost
-1030Æg, blomme, tørret
-1034Æg, gås, rå
-0589Æg, hele, pasteuriseret, dybfrost
-0340Æg, hele, rå
-1032Æg, hele, tørret
-0592Æg, hvide, pasteuriseret, dybfrost
-0341Æg, hvide, rå
-1031Æg, hvide, tørret
-0593Æg, langæg, kogt, dybfrost (DANÆG)
-0350Øl, let pilsner, ubeskattet, uspec.
-0346Øl, mørkt hvidtøl, ubeskattet, uspec.
-0349Øl, pilsner, skatteklasse 1, uspec.
-0347Øl, skatteklasse 2, uspec.
-0348Øl, skatteklasse 3, uspec.
-0979Øl, ubeskattet, uspec.
-0933Ørred, dam-, sø-, rå
-0351Ørred, hav-, rå
-0886Ørred, regnbue-, rå
-0352Østers, rå
-0354Ål, røget
-0353Ål, rå
+A38, acidophilus tykmælk
+Aborre, rå
+Abrikos, konserves, let sukkerlage
+Abrikos, rå
+Abrikos, tørret
+Agurk, rå
+Agurk, syltet
+Agurk, syltet, uden tilsat sukker
+Ananas, konserves
+Ananas, rå
+Ananasjuice, konserves
+Ananaskirsebær, kapstikkelbær, rå
+And, brystkød, rå
+And, kød og skind, rå
+And, kød, rå
+Ansjos, marineret, konserves
+Appelsin, rå
+Appelsinjuice, konserves
+Appelsinmarmelade
+Artiskok, rå
+Asier, syltede
+Asier, syltede, uden tilsat sukker
+Asparges, grønne, rå
+Asparges, hvide, rå
+Asparges, konserves
+Asparges, uspec., rå
+Aubergine, rå
+Avocado, rå
+Bacon i skiver, rå
+Bacon i tern, rå
+Bagegær, presset, rå
+Bagepulver
+Baked beans i tomatsovs, konserves
+Bambusskud, konserves, saltet
+Bambusskud, konserves, usaltet
+Bambusskud, rå
+Banan, rå
+Batat, sød kartoffel, rå
+Bayonneskinke, udbenet
+Birkes, frø
+Bitter, sød, uspec.
+Bitter, uspec.
+Bladbede, sølvbede, rå
+Bladselleri, rå
+Blodpølse
+Blomkål, dansk, rå
+Blomkål, dybfrost
+Blomkål, importeret, rå
+Blomkål, uspec., rå
+Blomme, rå
+Blæksprutte, rå
+Blåbær, frosne, usukrede
+Blåbær, rå
+Boghvede, hel, rå
+Boghvedegryn, rå
+Boghvedemel
+Bolcher, blandede
+Bolcher, uspec.
+Bomuldsfrøolie
+Bondebrød med fedtrige frø, industrifremstillet
+Bondebrød, uden fedtrige frø, industrifremstillet
+Bouillon, hønsekød, spiseklar
+Bouillon, oksekød, koncentreret, terning
+Bouillon, oksekød, terning, spiseklar
+Brasen, rå
+Brie, 45+
+Brie, 50+
+Brie, 60+
+Brisling (ansjovis), marineret, konserves
+Brisling (sardin), i olie, konserves
+Brisling (sardin), i tomat, konserves
+Brisling, rå
+Brissel, kalv, rå
+Broccoli, dybfrost
+Broccoli, kogt
+Broccoli, rå
+Brombær, dybfrost, usukrede
+Brombær, rå
+Brosme, rå
+Brune bønner, tørrede
+Brune linser, tørrede, rå
+Brøndkarse, rå
+Buddingpulver
+Bulgur (hvedekerner, knækkede, parboiled), rå
+Byggryn, rå
+Bygmel
+Bækforel, filet, røget
+Bækforel, rå
+Bønnespirer, adzuki, rå
+Bønnespirer, mung, rå
+Bønnespirer, soja, konserves
+Bønnespirer, soja, rå
+Bønnespirer, uspec., rå
+Cacao, instant, med mælk, pulver
+Cacao, instant, uden mælk, pulver
+Cacao, pulver
+Cacaomælk
+Cacaomælk (UHT)
+Cacaoskummetmælk
+Cacaoskummetmælk (UHT)
+Cacaosmør
+Camembert, 30+
+Camembert, 45+
+Camembert, 50+
+Cantaloupe (melon), rå
+Carambol, bilimbing, stjernefrugt, rå
+Cashewnød, olieristet
+Cashewnød, tørristet
+Cayote, Kayote, rå
+Champignon, konserves
+Champignon, rå
+Cheddar, 50+
+Cherimoya, chirimoya, rå
+Chesire, 50+
+Chokolade, fyldt
+Citron, rå
+Citronsaft, friskpresset
+Citronskal, rå
+Cognac
+Cornflakes, frosted
+Cornflakes, uspec.
+Creme fraiche 18 %
+Creme fraiche 38 %
+Creme Fraiche 9%
+Croissant
+Cultura, syrnet sødmælk
+Daddel, tørret
+Danablu 50+
+Danablu 60+
+Danbo, 20+
+Danbo, 30+
+Danbo, 45+
+Dild, rå
+Dild, tørret
+Dragé, lakrids
+Dragéprodukt, uspec.
+Dressing, blue cheese
+Dressing, creme fraiche
+Dressing, creme fraiche, kalorielet
+Dressing, fransk
+Dressing, italiensk
+Dressing, mayonnaise
+Dressing, mayonnaise, kalorielet
+Dressing, olie-eddike
+Dressing, olie-eddike, kalorielet
+Dressing, thousand island
+Drueagurk (sylteagurk), rå
+Druesaft
+Due, kød og skind, rå
+Due, kød, rå
+Eddike
+Elbo, 40+
+Emmentaler, 45+
+Esrom, 45+
+Esrom, 60+
+Fasan, kød og skind, rå
+Fasan, kød, rå
+Fennikel, frø
+Fennikel, knold, rå
+Fersken, konserves
+Fersken, rå
+Fersken, tørret
+Feta, 40+
+Feta, 50+
+Fiberbrød
+Figen, rå
+Figen, tørret
+Figuraost, 10+
+Fiskeboller, konserves
+Fiskefars, rå
+Fiskefrikadelle
+Fiskeolie, hydrogeneret
+Fladbrød
+Flûte, fint, industrifremstillet
+Flûte, groft, industrifremstillet
+Flûte, med fedtrige frø, industrifremstillet
+Flæskesvær, snacks
+Fløde 13 %
+Fløde 13 % (UHT)
+Fløde 18 %
+Fløde 38 %, piskefløde
+Fløde 9 %
+Fløde 9 %, syrnet
+Flødeboller, skumboller
+Flødechokolade
+Flødechokolade med nødder
+Flødeis
+Flødeost, 60+
+Flødeost, 70+
+Flødeskumskage, uspec.
+Flødeyoghurt med frugt, 9 % fedt
+Fontina, 45+
+Fontina, 50+
+Forårsløg, rå
+Franskbrød
+Frugtkvark
+Frugtpålæg, figen
+Frugtpålæg, uspec.
+Frugtsaft, blandet, sødet, koncentreret
+Frugtsaft, blandet, usødet, koncentreret
+Fruktose
+Frølår, dybfrost
+Fynbo, 45+
+Fårekød, bov, rå
+Fårekød, kølle, rå
+Gaffelbidder
+Gedde, rå
+Gedemælk
+Gelatine
+Gin
+Grahamsbrød
+Grahamsmel, fuldkornshvedemel
+Grana, 32+
+Granatæble, punisk æble, råt
+Grapefrugt, rå
+Grapefrugtjuice, konserves, usødet
+Grovbolle
+Grovfranskbrød
+Gruyere, 45+
+Græskar, konserves
+Græskar, rå
+Grønkål, dybfrost
+Grønkål, konserves
+Grønkål, rå
+Grønne bønner, dybfrost
+Grønne bønner, konserves
+Grønne bønner, rå
+Grønne ærter, dybfrost
+Grønne ærter, konserves
+Grønne ærter, rå
+Grøntsagsjuice, pasteuriseret
+Guavabær, guajavabær, rå
+Gule ærter (flækærter), rå
+Gulerod, dansk, rå
+Gulerod, dybfrost
+Gulerod, importeret, rå
+Gulerod, juice, konserves
+Gulerod, konserves
+Gulerod, uspec., rå
+Gær, tørret
+Gærekstrakt, marmite
+Gås, kød og skind, rå
+Gås, kød, rå
+Gåsefedt
+Hamburgerryg, kogt
+Hamburgerryg, røget
+Hare, rå
+Hasselnød, tørret
+Havarti, 30+
+Havarti, 45+
+Havarti, 60+
+Havkat, plettet, rå
+Havkat, rå
+Havregryn, beriget
+Havregryn, ikke beriget
+Havregryn, uspec.
+Havreklid, dansk
+Hellefisk, gravad
+Hellefisk, røget
+Hellefisk, rå
+Helleflynder, røget
+Helleflynder, rå
+Helt, rå
+Hestekød, råt
+Hindbær, dybfrost
+Hindbær, rå
+Hindbærmarmelade
+Hindbærsaft, sur, koncentreret
+Hindbærsaft, sød, koncentreret
+Hingino, 32+
+Hirse, hele korn
+Hirseflager
+Hjerte, høne (kylling), råt
+Hjerte, kalv, råt
+Hjerte, okse, råt
+Hjerte, svin, råt
+Honning
+Honningmelon, rå
+Hornfisk, rå
+Hummer, kogt
+Hummer, konserves
+Hummer, rå
+Hvalkød, råt
+Hvedebrød, bolle, fin, industrifremstillet
+Hvedebrød, bolle, grov, industrifremstillet
+Hvedebrød, bolle, grov, med fedtrige frø, industrifremstillet
+Hvedebrød, bolle, italiensk, industrifremstillet
+Hvedebrød, fint, store
+Hvedebrød, groft uden fedtrige frø, uden kerner
+Hvedebrød, sandwich/toastbrød med fedtrige frø, industrifremstillet
+Hvedebrød, store, italiensk
+Hvedebrød, store, med fedtrige frø
+Hvedebrød, toastbrød, fint, industrifremstillet
+Hvedebrød, toastbrød, groft, industrifremstillet
+Hvedegryn, mannagryn
+Hvedekerner, hele/knækkede
+Hvedekim, rå
+Hvedekimolie
+Hvedeklid
+Hvedemel
+Hvide bønner, tørrede
+Hvidkål, rå
+Hvidløg, rå
+Hvidløg, tørret, pulver
+Hvidvin, medium
+Hvidvin, mousserende, champagne
+Hvidvin, Rhinskvin
+Hvidvin, sød
+Hvidvin, tør
+Hvidvin, uden alkohol
+Hvidvin, uspec.
+Hvilling, rå
+Hyben pulver, tørret
+Hyben, rå
+Hybensaft
+Hyldebær, rå
+Hyldebærsaft, sur, koncentreret
+Hyldebærsaft, sød, koncentreret
+Hytteost, 20+
+Høne, kød og skind, rå
+Høne, kød, rå
+Hørfrø, rå
+Hørfrøolie
+Ingefær, rod, rå
+Is, 3. farvet
+Ising, rå
+Ispind, jordbær
+Ispind, limonade
+Ispind, vanille
+Ispind, vanille med chokoladeovertræk
+Isvaffel med vaniljeis, uspec.
+Jomfruhummer, rå
+Jordbær i sukkerlage, konserves
+Jordbær, dybfrost, sukrede
+Jordbær, dybfrost, usukrede
+Jordbær, rå
+Jordbær, syltede
+Jordbærmarmelade
+Jordbærsaft, sur, koncentreret
+Jordbærsaft, sød, koncentreret
+Jordnød, tørret
+Jordnøddeolie
+Jordnøddesmør
+Jordskok, rå
+Julesalat, rå
+Kaffe, drikkeklar
+Kaffe, instant, decaffeinated, drikkeklar
+Kaffe, instant, decaffeinated, pulver
+Kaffe, instant, drikkeklar
+Kaffe, instant, pulver
+Kaffebønne, ristet, formalet
+Kakifrugt (Sharon), rå
+Kaktusfigen, rå
+Kalkun, bryst (filet), kogt/røget, pålæg
+Kalkun, kød og skind, rå
+Kalkun, kød, rå
+Kalkunkød, hakket, råt
+Kalv og flæsk, hakket, højt fedtindhold, råt
+Kalvekød, fedt, råt
+Kalvekød, helt magert
+Kalvekød, magert, råt
+Kalvekød, middelfedt, råt
+Kammerjunkere
+Kanel, stang
+Kanin, kød, rå
+Kantarel, rå
+Karameller, blandede
+Karameller, uspec.
+Karry, pulver
+Karse, frisk
+Kartoffel, chips (franske kartofler)
+Kartoffel, chips (franske kartofler), fedtreducerede
+Kartoffel, efterår (oktober til januar), rå
+Kartoffel, gammel (februar - juni), rå
+Kartoffel, konserves
+Kartoffel, ny (maj til september), rå
+Kartoffel, pommes frites, friturestegte
+Kartoffel, uspec., rå
+Kartoffelchips, grove
+Kartoffelmel
+Kartoffelmos, -pulver m/tørmælk
+Kartoffelmos, -pulver u/tørmælk
+Kaseinat, natrium-, Damipro RHV
+Kastanje, ægte, rå
+Kastanjebrød
+Kaviar, uægte (lodderogn)
+Kaviar, uægte (stenbiderrogn)
+Kefir
+Kiks, fuldkorns-, digestivetype
+Kikærter, tørrede, rå
+Kinakål, pe-tsai, rå
+Kinaradise, japanræddike, rå
+Kippers i olie, konserves
+Kirsebær, rå
+Kirsebær, syltede
+Kirsebærsaft, sur, koncentreret
+Kirsebærsaft, sød, koncentreret
+Kiwi, rå
+Klipfisk
+Knude, rå
+Knudekål, glaskål, rå
+Knækbrød, hvede-, fint
+Knækbrød, hvede-, granhamstype
+Knækbrød, rug-, fint
+Knækbrød, rug-, groft (Husmans)
+Kogechokolade
+Kogt oksebryst
+Kokosfedt
+Kokosfedt, Palmin
+Kokosmel
+Kokosnød, rå
+Konfektureprodukt, skumvare, uspec.
+Kongeål (pighaj), rå
+Koriander, blade, friske
+Koriander, blade, tørrede
+Koriander, frø
+Krabbe, kogt
+Krabbekløer, konserves
+Krabbekløer, rå
+Krebs, rå
+Krydder
+Kråse, kylling, rå
+Kuller, paneret, stegt
+Kuller, rå
+Kulmule, rå
+Kumquat, guldorange, dværgappelsin, rå
+Kvark, 45+
+Kvark, 45+, med vanille
+Kvark, 5+
+Kvæde, rå
+Kylling, bryst (filet), kogt, pålæg
+Kylling, bryst, kød og skind, rå
+Kylling, kød og skind, friturestegt
+Kylling, kød og skind, grillstegt
+Kylling, kød og skind, paneret, friturestegt
+Kylling, kød og skind, rå
+Kylling, kød, rå
+Kylling, lår, kød og skind, rå
+Kylling, vinge, kød og skind, rå
+Kyllingepølse, pålæg
+Kærnemælk
+Kærnemælk med citronsaft
+Kødboller, dybfrost
+Kødboller, konserves
+Kødextrakt, flydende, Bovril
+Kødextrakt, terning
+Kødpølse
+Kødpølse, fedtreduceret
+Kørvel, hakket, dybfrost
+Kørvel, rå
+Kålrabi (kålroe), rå
+Lakrids, salt
+Lakrids, sød
+Lakrids, uspec.
+Lakridskonfekt
+Laks, gravad
+Laks, konserves
+Laks, røget, udskåret
+Laks, rå
+Laks, saltet
+Lammebrissel, rå
+Lammekød, bov, rå
+Lammekød, bryst, råt
+Lammekød, kølle, afpudset, rå
+Lammekød, kølle, med fedt, rå
+Lammekød, kølle, uspec., rå
+Lammekød, rygstykke, råt
+Lammekød, slag, råt
+Lammekød, uspec., råt
+Lange, filet, rå
+Letmælk, konventionel (ikke-økologisk)
+Letmælk, økologisk
+Letmælksyoghurt med saft
+Lever, ande, rå
+Lever, gåse, rå
+Lever, høne, rå
+Lever, kalv, rå
+Lever, kylling, rå
+Lever, okse, rå
+Lever, svin, rå
+Leverpostej
+Leverpostej, fedtreduceret
+Leverpølse
+Levertran (Sej)
+Likør, Advocaat
+Likør, brun cacao
+Likør, Cherry Brandy
+Likør, Crème de Menthe
+Likør, Curacao
+Likør, kaffe
+Likør, kaffe med fløde
+Likør, uspec.
+Lime, rå
+Limonadeis, uspec.
+Linser, tørrede, uspec.
+Linsespirer, rå
+Litchi, lichiblomme, kinesisk blomme, rå
+Loganbær, frosne
+Loquat, japansk mispel, rå
+Lubbe, rå
+Lucerne, alfalfa, frø
+Lucernespirer, rå
+Læskedrik (light), koncentreret (1+10), uden tilsat sukker, uspec.
+Læskedrik, koncentreret (1+5), tilsat sukker, uspec.
+Løg, hakkede, dybfrost
+Løg, ristede
+Løg, rå
+Madeira
+Majroe, rå
+Majs, kerner, dybfrost
+Majs, kerner, konserves
+Majskolbe, rå
+Majsmel
+Majsolie
+Majsstivelse
+Makaroni, spaghetti, fuldkorns-, rå
+Makaroni, spaghetti, kogt
+Makaroni, spaghetti, rå
+Makrel i tomat, konserves
+Makrel, filet, naturel, konserves
+Makrel, røget
+Makrel, rå
+Mandarin, konserves
+Mandarin, rå
+Mandel, rå
+Mangofrugt, mangoblomme, mangga, rå
+Maniok, cassava, rå
+Marcipan
+Marcipanprodukt, m/chokolade, uspec.
+Margarine, 70 %, bordbrug, blød, vegetabilsk fedt
+Margarine, 80 %, bordbrug, blød, vegetabilsk fedt
+Margarine, 80 %, bordbrug, vegetabilsk fedt
+Margarine, 80 %, stegning/bagning, vegetabilsk fedt
+Maribo, 30+
+Maribo, 45+
+Mariekiks
+Marmelade, engelsk type
+Marmelade, uspec.
+Mayonnaise
+Mayonnaise, fedtreduceret
+Medisterpølse, røget
+Medisterpølse, rå
+Melbanan, grønsagsbanan, plantain, rå
+Melboller, uspec.
+Minarine, 30 %, vegetabilsk fedt
+Minarine, 40 %, vegetabilsk fedt
+Mineralvand, dansk vand o.lign.
+Mineralvand, sodavand, Cola
+Mineralvand, sodavand, tilsat sukker, uspec.
+Mineralvand, sodavand, uden tilsat sukker, uspec.
+Miso, sojapasta
+Modermælk, colostrum
+Modermælk, moden
+Modermælk, overgangsmælk (10. dag efter fødslen)
+Mozzarella, 30+
+Mozzarella, 45+
+Mungbønner, tørrede, rå
+Muskatnød, hel
+Musling, kogt
+Musling, konserves
+Musling, rå
+Mycella, 50+
+Mynster, 50+
+Myseost, 33+
+Müsli med tilsat sukker.
+Müsli uden tilsat sukker.
+Müsli, uspec.
+Mælkebøtte, blade, rå
+Mælkeis, uspec.
+Mørk chokolade
+Nektarin, rå
+Netmelon, rå
+Nougat
+Nougatis
+Nyre, kalv, rå
+Nyre, okse, rå
+Nyre, svin, rå
+Nøddepasta, Nutella
+Okra, gumbo, rå
+Oksekød, culotte, rå
+Oksekød, entrecote med kappe, rå
+Oksekød, hakket, lavt fedtindhold, råt
+Oksekød, hakket, råt
+Oksekød, højrebsfilet med kappe, rå
+Oksekød, højrebsfilet, afpudset, rå
+Oksekød, inderlår med kappe, rå
+Oksekød, inderlår uden kappe, rå
+Oksekød, klump uden kappe, rå
+Oksekød, lårtunge, rå
+Oksekød, mellemskært, råt
+Oksekød, mørbrad, afpudset, rå
+Oksekød, skank (osso-buco), rå
+Oksekød, slag, råt
+Oksekød, spidsbryst, råt
+Oksekød, tværreb, råt
+Oksekød, tykbov (marvpibebov), rå
+Oksekød, tykbryst, råt
+Oksekød, tykkam, rå
+Oksekød, tykstegsfilet med kappe, rå
+Oksekød, tykstegsfilet uden kappe, rå
+Oksekød, tyndbov + mellembov, rå
+Oksekød, tyndbryst, råt
+Oksekød, tyndsteg med mørbrad, rå
+Oksekød, tyndstegsfilet med fedtkant, rå
+Oksekød, uspec., fedt, råt
+Oksekød, uspec., helt magert, råt
+Oksekød, uspec., magert, råt
+Oksekød, uspec., middelfedt, råt
+Oksekød, yderlår, råt
+Oksetalg
+Oliven, grønne, marinerede, konserves
+Oliven, sorte, saltede, i olie
+Oliven, sorte, uden sten, i saltlage
+Olivenolie
+Ost, blå- og hvidskimmel, 70+
+Ost, fast, 20+, alle typer
+Ost, fast, 30+, alle typer
+Ost, fast, 40+, alle typer
+Ost, fast, 45+, alle typer
+Ostekiks, Cream Crackers
+Paksoi, pak-choi, pai tsai, rå
+Palmekerneolie
+Palmeolie
+Papaya, mamaja, træmelon, rå
+Paradisæble, råt
+Paranød
+Parmesan, 32+
+Parmesan, revet
+Passionsfrugt, grenadil, rå
+Pastiller, med sukker, uspec.
+Pastiller, sukkerfri, uspec.
+Pastinak, rå
+Paté, pålæg
+Peanuts, (jordnød, ristet og saltet)
+Peber, chili, konserves
+Peber, chili, rå
+Peber, hvid
+Peber, sort
+Peberfrugt, grøn, rå
+Peberfrugt, konserves
+Peberfrugt, rød, rå
+Peberrod, rå
+Pecannød, olieristet
+Pecannød, tørret
+Pecannød, tørristet
+Persille, rå
+Persillerod, rå
+Pighvarre, rå
+Pinjefrø, tørrede
+Pistacienød, tørret
+Pistacienød, tørristet
+Pizza napolitana, dybfrost
+Pizza romana, dybfrost
+Pizza, dybfrost, uspec.
+Pop Corn (poppede majskærner)
+Pop corn, microovn
+Pop corn, traditionelle
+Porre, rå
+Portvin
+Poulard, kød og skind, rå
+Pumpernickel
+Purløg, rå
+Pære, konserves
+Pære, rå
+Pølse, cervelatpølse
+Pølse, hot dog
+Pølsebrød
+Pølser, cocktailpølser
+Rabarber, dybfrost
+Rabarber, rå
+Radise, rå
+Rapsolie
+Rapsolie (lavt erucasyreindhold)
+Rasp
+Reje, dybfrost
+Reje, kogt
+Reje, konserves
+Remoulade, fedtreduceret, uspec.
+Remoulade, uspec.
+Ribs, rå
+Ribsgele
+Ribssaft, sur, koncentreret
+Ribssaft, sød, koncentreret
+Ris, brune, rå
+Ris, parboiled, rå
+Ris, polerede, rå
+Risengryn, grødris, brune, rå
+Risengryn, grødris, polerede, rå
+Risklid
+Rismel
+Risstivelse
+Roastbeef
+Rom
+Roquefort, 50+
+Rosenkål, dybfrost
+Rosenkål, efterår (oktober til december), rå
+Rosenkål, uspec., rå
+Rosenkål, vinter (januar til april), rå
+Rosévin
+Rosin uden kerner
+Roulade, abrikos-
+Roulade, hindbær-
+Roulade, uspec.
+Rugbrød med fedtrige frø og hele kerner
+Rugbrød, fuldkorn
+Rugbrød, lyst
+Rugbrød, mørkt
+Rugbrød, revet, med brunt sukker, uspec.
+Rugkerner, hele/knækkede
+Rugmel, groft, fuldkornsrugmel
+Rugmel, halvsigtet (udmalingsgrad ca. 85 %)
+Rugsigtemel (udmalingsgrad ca. 70 %)
+Rullepølse
+Rullepølse, lammekød
+Rundstykke
+Rundstykke, spansk
+Rygeost, 40+
+Rygeost, 5+
+Rype, kød, rå
+Ræddike, rå
+Rødbede, konserves
+Rødbede, konserves, uden tilsat sukker
+Rødbede, rå
+Røde linser, tørrede, rå
+Rødfisk, lille, filet, rå
+Rødfisk, rå
+Rødkål, konserves
+Rødkål, konserves, uden tilsat sukker
+Rødkål, rå
+Rødspætte, filet, paneret, dybfrost
+Rødspætte, filet, paneret, friturestegt
+Rødspætte, rå
+Rødtunge, rå
+Rødvin, rosévin, uden alkohol
+Rødvin, uspec.
+Røget svinefilet
+Saccharin
+Safflowerolie (højt linolsyreindhold)
+Safflowerolie (højt oliesyreindhold)
+Sagogryn (kartoffelstivelse)
+Salami
+Salat, egeløv, rå
+Salat, endivie, bredbladet (escarole), rå
+Salat, endivie, kruset (frisee), rå
+Salat, hovedsalat, rå
+Salat, Iceberg, rå
+Salat, Radicchio rosso, rå
+Salat, Romaine, romersk, rå
+Salt kød
+Salt, bordsalt
+Salt, havsalt (ikke jodberiget)
+Salt, stensalt, køkkensalt
+Samsø, 30+
+Samsø, 45+
+Sandart, rå
+Sardin, i olie, konserves
+Sardin, i tomat, konserves
+Sauce, barbeque
+Sauce, gravad laks
+Sauce, shaslik
+Savoykål, rå
+Sej, filet, dybfrost
+Sej, filet, rå
+Selleri, blade, rå
+Selleri, rod, rå
+Sennep, brun, færdiglavet
+Sennep, gul, færdiglavet
+Sesamfrø, afskallede
+Sesamfrø, hele, tørrede
+Sesamolie
+Sherry, medium
+Sherry, sød
+Sherry, tør
+Sigtebrød
+Sigtemel
+Sild, høstsild, fedsild, rå
+Sild, marineret
+Sild, marineret, i karrysauce
+Sild, marineret, i madeirasauce
+Sild, marineret, kryddersild
+Sild, paneret, stegt, i lage
+Sild, røget
+Sild, rå
+Sildepostej
+Sirup
+Skinke med skank, rå
+Skinke, hoftestykke, helt afpudset, råt
+Skinke, inderlår, helt afpudset, rå
+Skinke, kogt, konserves
+Skinke, kogt, skiveskåret
+Skinke, røget
+Skinke, røget, kogt
+Skinke, yderlår, helt afpudset, råt
+Skinkeculotte (yderlår), ca. 5 mm spæk, råt
+Skinkemignon, lårtunge, helt afpudset, rå
+Skinkemignon, rå
+Skinkeschnitzel, inderlår, rå
+Skinkesteg uden svær, helt afpudset, rå
+Skorzonnerrod, rå
+Skrubbe, rå
+Skummetmælk
+Skummetmælk 0.5 % fedt (Minimælk)
+Skummetmælk, økologisk
+Skummetmælkspulver
+Skærekage, chokoladekage/-pie
+Skærekage, citronkage
+Skærekage, formkage, uspec.
+Skærekage, mazarinkage
+Skærekage, sandkage
+Smelteost, 20+
+Smelteost, 30+
+Smelteost, 45+
+Smør, saltet
+Smør, usaltet
+Smørbart blandingsprodukt, 80% fedt
+Småkage, finsk brød
+Småkage, uspec.
+Småkage, vanillekranse
+Snacks, ekspanderet, kartoffelbasis
+Snacks, ekspanderet, majsbasis
+Snacks, ekstruderet, majsbasis
+Snaps, 40 % vol., uspec.
+Snaps, krydder-, uspec.
+Softrugbrød (uden fedtrige frø)
+Softrugbrød med fedtrige frø og hele kerner
+Soja sauce
+Sojabønner, tørrede
+Sojadrik, kommercielt tilberedt
+Sojamel
+Sojaolie
+Solbær, rå
+Solbær, syltede
+Solbærmarmelade
+Solbærsaft, sur, koncentreret
+Solbærsaft, sød, koncentreret
+Solsikkebrød
+Solsikkefrø, afskallede, tørrede
+Solsikkeolie
+Sorbitol
+Sortmund, blåhvilling, filet, rå
+Spegepølse
+Spegepølse, oksekød
+Spegesild
+Sperling, kød, rå
+Spidskål, rå
+Spinat, hakket, dybfrost
+Spinat, rå
+Spirituosa, gennemsnitlige værdier
+Sprængt nakke, svinekød
+Spædbørnsmad, modermælkserstatning, højt jernindhold, pulver
+Squash, alle typer, rå
+Squash, zucchini, rå
+St. Paulin, 50+
+Stenbider, røget
+Stenbider, rå
+Stikkelsbær, rå
+Sukker, brun farin
+Sukker, demerara
+Sukker, stødt melis (saccharose)
+Sukkerært (mangetout), rå
+Surbrød
+Svenbo, 45+
+Sveske, rå
+Svinebov med svær, rå
+Svinebov til fars, ca. 16 % fedt, rå
+Svinebov, helt afpudset, rå
+Svinebryst, kogestykke med svær, rå
+Svinebryst, kogestykke uden svær, ca. 2 mm spæk, rå
+Svinebryst, kogestykke, helt, saltet
+Svinebryst, slag, rullesteg, råt
+Svinebryst, stegestykke med svær, rå
+Svinebryst, stegestykke, helt, saltet
+Svinebryst, stegestykke, uden svær, ca. 2 mm spæk, rå
+Svinefedt, afsmeltet
+Svinefedt, afsmeltet, Raffinol
+Svinefilet, helt afpudset, rå
+Svinekam med svær, rå
+Svinekam uden svær, ca. 3 mm spæk, rå
+Svinekam uden svær, rå
+Svinekotelet, fadkotelet, rå
+Svinekød , mellemkam med svær, rå
+Svinekød, bagskank uden svær, rå
+Svinekød, bov i tern, rå
+Svinekød, bovsteaks, rå
+Svinekød, filet royal af svinefilet, rå
+Svinekød, flæskesteg af nakkekam med svær, rå
+Svinekød, flæskesteg af svinekam med svær, rå
+Svinekød, hakket, ca.  6% fedt, råt
+Svinekød, hakket, højt fedtindhold, råt
+Svinekød, hakket, lavt fedtindhold, råt
+Svinekød, halssnitte, rå
+Svinekød, kæbeklump, rå
+Svinekød, medaillon af svinefilet, rå
+Svinekød, mørbrad royal, rå
+Svinekød, mørbradstykke, helt afpudset, råt
+Svinekød, nakkefilet, helt afpudset (Nakkekotelet), rå
+Svinekød, nakkekam med svær, rå
+Svinekød, nakkekotelet, rå
+Svinekød, revelsben, rå
+Svinekød, ribbensteg, rå
+Svinekød, ribsteaks, rå
+Svinekød, rullesteg af slag, rå
+Svinekød, sautéskiver af svinefilet, rå
+Svinekød, skinkemuskler -skank, helt afpudsede, rå
+Svinekød, skinkestrimler af yderlår, rå
+Svinekød, skinketern af yderlår, rå
+Svinekød, spareribs, rå
+Svinekød, uspec., ca. 10 % fedt, råt
+Svinekød, uspec., ca. 20 % fedt, råt
+Svinekød, uspec., fedt, råt
+Svinekød, uspec., magert, råt
+Svinekød, vikingsteaks, rå
+Svinekød, wokstrimler af skinkeinderlår, rå
+Svinemørbrad, afpudset, rå
+Svinespæk, rygspæk
+Sylte
+Syltetøj, uspec.
+Syre (krydderplante), rå
+Sælkød, råt
+Sødmælk (UHT)
+Sødmælk, konventionel (ikke-økologisk)
+Sødmælk, økologisk
+Sødmælkspulver
+Søtunge, rå
+Tamarind, rå
+Tang, agar
+Tang, konbu, tørret (kelp)
+Te, blade
+Te, drikkeklar
+Tebirkes
+Tidselolie
+Tofu, sojabønneost
+Tomat, dansk, rå
+Tomat, flået, konserves
+Tomat, importeret, rå
+Tomat, tørret
+Tomat, uspec., rå
+Tomatjuice, konserves
+Tomatketchup
+Tomatketchup, stærk
+Tomatpure
+Tomatpure, koncentreret
+Tomatsuppe, spiseklar
+Torsk, filet, kogt
+Torsk, filet, paneret, rå
+Torsk, filet, røget, med skind
+Torsk, filet, rå
+Torsk, filet, stegt
+Torsk, lever, konserves
+Torsk, lever, røget
+Torsk, lever, rå
+Torsk, levertran
+Torsk, rogn, konserves
+Torsk, rogn, røget
+Torsk, rogn, rå
+Tranebær, rå
+Trekornsbrød
+Tun i olie, konserves
+Tun i tomat, konserves
+Tun i vand, konserves
+Tun, rå
+Tunge, kalv, rå
+Tunge, kalv, saltet
+Tunge, okse, rå
+Tunge, svin, rå
+Tunge, svin, saltet
+Tvebakker
+Tyggegummi, med sukker, uspec.
+Tyggegummi, uden sukker, uspec.
+Tykmælk
+Tyttebær, rå
+Tyttebær, syltede
+Tørkage, kokosmakroner
+Tørkage, kransekage
+Tørkage, linse
+Tørkage, mazariner
+Tørkage, napoleonshatte
+Tørkage, uspec.
+Valle
+Vallepulver, tørret
+Valnød
+Valnøddebrød
+Valnøddeolie
+Vand, drikke-, vejl. værdier
+Vandmelon, rå
+Vanilleis
+Vekao
+Vermouth, sød
+Vermouth, tør
+Vinbjergssnegle, rå
+Vindrue, rå
+Vindruekerneolie
+Vingummi
+Vodka
+Voksbønner, konserves
+Voksbønner, rå
+Whisky
+Wienerbrød, julekage
+Wienerbrød, kringle/stang
+Wienerbrød, smørkrans
+Wienerbrød, spandauer
+Wienerbrød, uspec.
+Wienerpølse
+Wienerpølse (bayersk pølse), kogt
+Wienerpølse, konserves
+Wienerpølse, ristet
+Yams, rå
+Yderlår, skinkeculotte, ca. 2 mm spæk, rå
+Yderlår, skinkesteg (med svær), rå
+Ylette naturel
+Ymer naturel
+Yoghurt med appelsinsaft
+Yoghurt med frugt, uspec.
+Yoghurt med jordbær
+Yoghurt med müsli
+Yoghurt med peach melba
+Yoghurt med pære og banan
+Yoghurt naturel
+Æble, dansk, råt
+Æble, importeret, råt
+Æble, tørret
+Æble, uspec., råt
+Æblegele
+Æblemost, uspec.
+Æg, and, rå
+Æg, blomme, rå
+Æg, blomme, saltet, pasteuriseret, dybfrost
+Æg, blomme, tilsat sukker, pasteuriseret, dybfrost
+Æg, blomme, tørret
+Æg, gås, rå
+Æg, hele, pasteuriseret, dybfrost
+Æg, hele, rå
+Æg, hele, tørret
+Æg, hvide, pasteuriseret, dybfrost
+Æg, hvide, rå
+Æg, hvide, tørret
+Æg, langæg, kogt, dybfrost (DANÆG)
+Øl, let pilsner, ubeskattet, uspec.
+Øl, mørkt hvidtøl, ubeskattet, uspec.
+Øl, pilsner, skatteklasse 1, uspec.
+Øl, skatteklasse 2, uspec.
+Øl, skatteklasse 3, uspec.
+Øl, ubeskattet, uspec.
+Ørred, dam-, sø-, rå
+Ørred, hav-, rå
+Ørred, regnbue-, rå
+Østers, rå
+Ål, røget
+Ål, rå
