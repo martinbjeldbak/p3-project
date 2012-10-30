@@ -16,9 +16,9 @@
    id="svg13518"
    inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="logo2.svg"
-   inkscape:export-filename="/home/darx/UNI/dat3/mockups/niels/logo3.png"
-   inkscape:export-xdpi="57.873463"
-   inkscape:export-ydpi="57.873463">
+   inkscape:export-filename="/home/darx/UNI/dat3/mockups/niels/logo2.png"
+   inkscape:export-xdpi="58.060616"
+   inkscape:export-ydpi="58.060616">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -730,7 +730,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
