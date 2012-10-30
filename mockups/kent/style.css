@@ -4,7 +4,7 @@
 }
 
 body {
-  background:#c9cccf url(bg.png) repeat-x;
+  background:#ffffff url(bg.png) repeat-x;
   text-align:center;
   font-family:"Trebuchet MS", sans-serif;
 }
@@ -73,7 +73,7 @@ body {
 input.button {
   border:1px solid #037;
   border-radius:5px;
-  background-color:#08F;
+  background-color:#048;
   color:#037;
   font-size:16px;
   padding:4px 8px;
