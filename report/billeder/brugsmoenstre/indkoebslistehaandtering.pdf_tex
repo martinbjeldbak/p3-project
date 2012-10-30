@@ -1,0 +1,66 @@
+%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'indkoebslistehaandtering.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{360bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.56888889)%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/indkoebslistehaandtering.pdf}}%
+    \put(0.36222222,0.40222222){\makebox(0,0)[lb]{\smash{Igangværende redigering}}}%
+    \put(0.03333333,0.41555556){\makebox(0,0)[lb]{\smash{Rediger indkøbsliste}}}%
+    \put(0.22888889,0.48){\makebox(0,0)[lb]{\smash{Slet indkøbsliste}}}%
+    \put(0.44444444,0.50666667){\makebox(0,0)[lb]{\smash{Tilføj / fjern ingrediens}}}%
+    \put(0.46444444,0.28444444){\makebox(0,0)[lb]{\smash{Tilføj / fjern tekststreng}}}%
+    \put(0.35333333,0.30666667){\makebox(0,0)[lb]{\smash{Print}}}%
+    \put(0.4,0.13555556){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
+    \put(0.14222222,0.08){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
+    \put(0.35111111,0.04){\makebox(0,0)[lb]{\smash{Tilføj / fjern ingrediense}}}%
+    \put(0.72222222,0.35555556){\makebox(0,0)[lb]{\smash{Afslut redigering}}}%
+    \put(0.67111111,0.14888889){\makebox(0,0)[lb]{\smash{Forlad søgeresultat}}}%
+    \put(0.19555556,0.20444444){\makebox(0,0)[lb]{\smash{Rediger indkøbsliste}}}%
+  \end{picture}%
+\endgroup%
