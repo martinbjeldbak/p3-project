@@ -2,13 +2,29 @@
 <html>
 <head>
   <title>Foodl</title>
+  <link rel="shortcut icon" href="http://foodl.dk/favicon.ico" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="top">
+<a href="index.php">
+</a>
+<div id="menu">
+<a href="#">Log ind</a>
+<a href="#">Indkøbsliste (tom)</a>
+<a href="#">Favoritter (0)</a>
+</div>
+</div>
 
 <%= yield %>
 
-</body>
+<div id="bottom">
+<a href="#">Rapport&eacute;r fejl</a>
+<a href="#">Om Foodl</a>
+<a href="#">Kontakt Foodl</a>
+</div>
+  
+  </body>
 </html>
