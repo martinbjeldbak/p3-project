@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.38461538)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/favorisering.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/favorisering.pdf}}%
     \put(0.47527473,0.30769231){\makebox(0,0)[lb]{\smash{Opskrift gemt i favoritter}}}%
     \put(0.1043956,0.2967033){\makebox(0,0)[lb]{\smash{Favorisér opskrift}}}%
     \put(0.49725275,0.1456044){\makebox(0,0)[lb]{\smash{Fjern opskrift fra favoritter}}}%
