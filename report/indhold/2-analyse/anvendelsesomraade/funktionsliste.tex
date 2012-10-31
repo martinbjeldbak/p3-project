@@ -1,30 +1,34 @@
-%\begin{figure}
-\begin{table} [H]
-    \begin{tabular}{ l|l l }
+\begin{table}[H]
+\centering
+ \begin{tabular}{ r|c c }
   \hline
-        \textbf{Navn}               & \textbf{Funktionstype} & \textbf{Kompleksitet} \\ %\hline
-        Håndter opskrifter          & Beregning              & Medium                \\
-        Håndter favoritter          & Opdatering             & Medium                \\
-        Håndter indkøbsliste        & Opdatering             & Medium                \\
-        Søg                         & Beregning              & Kompleks              \\
-        Skaler søgeresultat         & Beregning              & Simpel                \\
-        Hent synkroniseringskode    & Aflæsning              & Simpel                \\
-        Indtast synkroniseringskode & Opdatering             & Medium                \\
-        Vis favoritter              & Aflæsning              & Simpel                \\
-        Opret fejlrapport           & Opdatering             & Medium                \\
-        Luk fejlrapport             & Opdatering             & Simpel                \\
-        Udfør crawling              & Beregning              & Kompleks              \\ \hline
-    \end{tabular}
-    % HVORFOR ER DET SOM OM DER ER EN EKSTRA RÆKKE (med hline)
+  & \multicolumn{2}{c}{\textbf{Egenskaber}} \\
+\textbf{Navn} & Funktionstype & Kompleksitet \\ \hline
+Håndter opskrifter & Beregning & Medium \\
+Håndter favoritter & Opdatering & Medium \\
+Håndter indkøbsliste & Opdatering & Medium \\
+Søg & Beregning & Kompleks \\
+Skaler søgeresultat & Beregning & Simpel \\
+Hent synkroniseringskode & Aflæsning  & Simpel  \\
+Indtast synkroniseringskode & Opdatering & Medium  \\
+Vis favoritter & Aflæsning & Simpel  \\
+Opret fejlrapport & Opdatering & Medium \\
+Luk fejlrapport & Opdatering & Simpel  \\
+Udfør crawling & Beregning & Kompleks \\ \hline
+\end{tabular}
     \capt{Funktionsliste over systemet.}
 \end{table}
 
-\begin{table} [H]
-    \begin{tabular}{ l l l }
-    \hline
-        Find opskrift                 & Beregning  & Medium \\
-        Find ingredienser på opskrift & Beregning  & Medium \\
-        Gem opskrift                  & Opdatering & Simpel \\ \hline
-    \end{tabular}
+\begin{table}[H]
+\centering
+\begin{tabular}{ r| l l }
+
+\multicolumn{3}{c}{\textbf{Udfør crawling}} \\ \hline
+  & \multicolumn{2}{c}{\textbf{Egenskaber}} \\
+\textbf{Navn} & Funktionstype & Kompleksitet \\ \hline
+Find opskrift & Beregning & Medium \\
+Find ingredienser på opskrift & Beregning & Medium \\
+Gem opskrift  & Opdatering & Simpel \\ \hline
+\end{tabular}
     \capt{Funktionsliste over den komplekse funktion ``crawling''.}
 \end{table}
