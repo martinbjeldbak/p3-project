@@ -1,44 +1,13 @@
 \section{Klasser}
 \label{sec:klasser}
-Når systemdefinitionen gradvist er på plads, brainstormer gruppen over forskellige klasser. Det er vigtigt, at \emph{identitet}, \emph{tilstand} og \emph{adfærd} tages i betragtning for hver enkelt klassekandidat. De er blevet dannet ud fra systemdefinitionen og diverse rige billeder og metaforer, som hver gruppemedlem lavede (se bilag XX), samt diskussion over elementerne i problemområdet. Herunder er en liste af de ``vigtigste'' klasser, som blev diskuteret og modelleret. Argumenterne for, om klassen skal indgå/ikke indgå i systemet ses under den specifikke klasse. Det skal siges, at klasserne er kandidater og er blevet tilføjet/fjernet under hele projektforløbet pga. den iterative arbejdsproces, som gruppen vælger at benytte.
+Vi ønsker nu at vælge de bestanddele, som vi vil modellere i problemområdet. Disse vælges
+ved at kigge på systemdefinitionen og ved at fremstille rige billeder (se \todo{bilag}).
 
-\subsection{Fravalgte klassekandidater}
-Herunder ses de fravalgte klasser, som gruppen ikke finder en del af problemområdet. De listes her, da der har været meget diskussion, om hvorvidt klasserne skulle med i systemet eller ej. 
+Grundet den iterative arbejdsproces, er klasser undervejs blevet tilføjet og fjerent, og vi ønsker nu at kaste lys over baggrunden bag de valgte klasser. I gennem processen har vi også fravalgt klasser. Disse, med beskrivelse, kan findes i \apref{ap:fravalgteklasser}.
 
-\begin{description}
-\item[Person] \hfill \\
-Vi vælger at fjerne person-klassen, fordi vi mener, at vores løsning ikke skal være noget socialt media, og derfor mener vi, at det er selve husholdningen, der er fælles om madlavningen selvom det måske blot er en person, der laver mad og står for indkøb og lignende. Brugeren af programmet er ikke en del af problemområdet og skal derfor ikke modelleres som klasse.
-
-\item[Køkken] \hfill \\
-Køkken og husholdning dækker over samme del af problemområdet, og vi fjerner derfor køkken og vurderer bagefter om husholdning skal være en klasse.
-
-\item[Husholdning] \hfill \\
-En husholdning repræsenterer et hjem, som indeholder én til flere personer. Det er ikke en del af problemområdet at holde styr på eller at kommunikere med andre husstande.
-
-\item[Køleskab/skab/opbevaringsskab] \hfill \\
-Om råvarene befinder sig i et køleskab eller i en skuffe er, for os, uinteressant, derfor er vi ikke interesseret i at modellere disse skabe som en klasse.
-
-\item[Køkkenredskab/komfur] \hfill \\
-Ligesom ved køleskab/anden opbevaring er vi ikke interesseret i at modellere hvilke redskaber husholdningen har adgang til.
-
-\item[Service] \hfill \\ 
-Vi har valgt at fjerne klassen service, fordi denne ikke findes i vores problemområde. Service er noget, der bliver brugt, når man er i færd med at spise det færdige mad, og ikke under selve madlavningen.
-
-\item[Butik] \hfill \\
-Vi har valgt at fjerne klassen Butik, da vores system fokuserer på madspild og varieret kost. En modellering af butikker ville være relevant, hvis vores fokus lå på at begrænse udgifter på mad, men da dette imidlertidig ikke er situationen i problemområdet, bliver den udeladt.
-
-\item[Typisk/atypisk ingrediens] \hfill \\
-Det er ikke en del af problemområdet at folk ikke er klar over hvilke ingredienser der er normale/unormale at have.
-
-\item[Enhed/Mængde] \hfill \\
-Enhed og mængde er ikke klasser, men attributter til en ingrediens.
-
-\item[Madplan] \hfill \\
-Informanterne syntes ikke at en madplan var særlig nødvendig. Den indgik i systemdefinition S2, som informanterne fravalgte. Madplanen anses derfor som overflødig, hvorfor denne fjernes som klasse.
-\end{description}
-
-\subsection{Valgte klassekandidater}
-Herunder ses de valgte klasser og hvorfor gruppen vælger, at have dem med i det færdige system. Gruppen mener, at de forekommer som vigtige objekter i problemområdet og skal derfor modelleres.
+\subsection{Valgte klasser}
+Herunder ses de valgte klasser og hvorfor vi vælger at have dem med i vores model af problemområdet.
+Vi mener at disse klasser samler de objekter og hændelser, som er relevant for denne model af problemområdet.
 
 \begin{description}
 \item[Ingrediens] \hfill \\ 
@@ -57,7 +26,7 @@ Vi vurderer, at der i en husholdning ofte bliver skrevet en indkøbsliste med de
 En opskrift er det centrale i problemområdet. Opskrifterne indeholder forskellige ingredienser. Det er nødvendigt at have råvarer nok til at matche ingredienserne i opskriften, før denne kan laves. Man må gå ud fra at den typiske private madlaver har mange opskrifter i kogebogen, som han/hun reelt ikke har råvarerne til at kunne lave.
 \end{description}
 
-\subsection{Klassediagram}
+\subsection{Struktur}
 
 De valgte klasser giver anledning til et klassediagram. Under diagrammet ses en kort beskrivelse af relationerne mellem klasserne samt klassens attributter. 
 
