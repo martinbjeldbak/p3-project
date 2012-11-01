@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+﻿%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'fejlhaandtering.pdf' (pdf, eps, ps)
 %%
@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.66233766)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/fejlhaandtering.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/fejlhaandtering.pdf}}%
     \put(0.14285714,0.38961039){\makebox(0,0)[lb]{\smash{Fejlliste vises}}}%
     \put(0.29545455,0.49350649){\makebox(0,0)[lb]{\smash{Log ind som administrator}}}%
     \put(0.06493506,0.07792208){\makebox(0,0)[lb]{\smash{Visning af fejlrapport}}}%
