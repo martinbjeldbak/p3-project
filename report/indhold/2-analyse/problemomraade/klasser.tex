@@ -32,25 +32,22 @@ De valgte klasser giver anledning til et klassediagram. Dette kan ses i \figref{
 
 \input{indhold/2-analyse/problemomraade/klassediagram}
 
-Klassediagrammet ovenover er bygget op af aggregeringer og associationer imellem klasserne i diagrammet. For konkrete beskrivelser af de forskellige klasser, konsulteres hændelses- og klassebeskrivelserne. Her beskrives relationen mellem klasserne.
+Klassediagrammet ovenover er bygget op af aggregeringer og associationer imellem klasserne i diagrammet. Disse relationer er ligeledes beskrevet tekstuelt herunder.
 
 \begin{description}
   \item[Bogmærke] \hfill \\
-    En bogmærke kan repræsentere opskrifter.
+    Et bogmærke peger på netop en opskrift.
 
   \item[Opskrift] \hfill \\
-    Består udelukkende af ingredienser og har fremgangsmåden som attribut. En opskrift kan bogmærkes en gang pr. bruger. Som minimum består en opskrift af en ingrediens.
-Attributter: Titel, Billede, Fremgangsmåde
+    En opskrift består af en eller flere ingredienser og kan være tilknyttet nul til mange bogmærker.
 
 \item[Indkøbsliste] \hfill \\
-  Indkøbslisten består udelukkende af en til flere ingredienser, der tilføjes ud fra opskrifterne. Derudover er det muligt at yderligere tilføje elementer på indkøbslisten i form af arbitrære tekststrenge.
+  En indkøbslisten består af flere ingredienser, den kan dog også være tom.
 
 \item[Ingrediens] \hfill \\
-  En ingrediens består af en råvare.
-Attributter: Mængde, Enhed
+  En ingrediens består af netop en råvare og kan tilhøre nul til mange opskrifter. Ligeledes kan en ingrediens tilhøre en indkøbsliste.
 
 \item[Råvare] \hfill \\
-  En råvare er en dekomponering af en ingrediens. En råvare er blot en ingrediens uden nogen form for information om mængde eller enhed. En ingrediens kunne for eksempel være 200g oksekød.
-Attributter: Navn
+  En råvare er en dekomponering af en ingrediens. En råvare er blot en ingrediens uden nogen form for information om mængde eller enhed. En ingrediens kunne for eksempel være "200g oksekød", hvormed den underliggende råvare ville være "oksekød".
 \end{description}
 
