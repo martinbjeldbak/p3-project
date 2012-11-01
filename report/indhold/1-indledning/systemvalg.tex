@@ -1,21 +1,68 @@
 \section{Systemvalg}
+\label{sec:systemvalg}
 
-%systemdefinition
-%Systemdefinitionen nedenunder er en naturlig og kortfattet beskrivelse af den løsning, vi ønsker at fremstille. Den er baseret på gruppens egne ønsker om projektretning og interviews med gruppens to informanter. BATOFF-modellen er blevet brugt til at formulere systemdefinitionen. BATOFF indeholdholder følgende punkter: \emph{\textbf{b}etingelser}, \emph{\textbf{a}nvendelsesområde}, \emph{\textbf{t}eknologier}, \emph{\textbf{f}unktioner}, \emph{\textbf{f}ilosofi}. Gruppen benytter BATOFF-modellen fordi det fastsætter nogle rammer i forhold til opsætningen og indholdet af systemdefinitionen samt opretter en form for standard, der gør det muligt at sammenligne flere forskellige systemdefinitioner på en logisk måde.
+%INTRODUKTION
+%introduktion til batoff-model
+Til udarbejdelsen af systemdefinitioner benytter vi os af seks kriterier, der forkortes til BATOFF. \cite[s.~37]{ooad} BATOFF indeholdholder følgende punkter: 
 
-%Efter møde 1 (se bilag) med vores informanter, har gruppen fået forståelse for at madspild er et reelt problem for dem. Det er blevet forklaret hvad der ofte er grunden til madspildet, og på baggrund af møde 1 er to systemdefinitioner blevet konstrueret. Blandt de to systemdefinitioner valgte informanterne systemdefinition 1. Systemdefinition 2 kan ses i den akademiske rapport.
+\begin{itemize}[noitemsep]
+\item \textbf{B}etingelser \textit{- betingelser for systemets udvikling og brug}
+\item \textbf{A}nvendelsesområde \textit{- de organisationsdele, der administrerer, overvåger eller styrer problemområdet}
+\item \textbf{T}eknologier \textit{- den teknologi, som systemet udvikles til og ved hjælp af}
+\item \textbf{O}jekter \textit{- De væsentligste objekter i et problemområde}
+\item \textbf{F}unktioner \textit{- de systemdefinitioner, som understøtter arbejdsopgaver i anvendelses området}
+\item \textbf{F}ilosofi \textit{- den filosofi, der ligger bag IT-systemets anvendelse}
+\end{itemize}
 
-%Systemdefinition er defineret som følgende:
+Disse kriterier har til formål at støtte udviklingen af systemdefinitioner ved at vurdere de forhold, der er gældende for et givet systems funktion i forhold til en organisation eller forbruger og omverden. Derudover benytter vi BATOFF-kriterierne, fordi de fastsætter nogle rammer i forhold til opsætningen og indholdet af systemdefinitioner samt opretter en form for standard, der gør det muligt at sammenligne flere forskellige systemdefinitioner på en logisk måde.
 
-%\begin{quote}
-%Systemet skal fungere som et online opskriftsregister, der giver brugeren idéer til opskrifter han rent faktisk kan lave ud fra de madvarer han har. Systemet fokuserer på at mindske madspild, da forbrugere smider mad ud på grund af et manglende formål med anvendelsen af resterne. Brugerne af programmet er en del af en husholdning og vil have meget varierende erfaringer inden for brug af internettet. Udviklerne af systemet er ulønnede studerende. Deadline for det færdige system kan ikke ændres. Systemet skal køre på en server, der kan tilgås via en webapplikation fra en internetbrowser på enhver type computer. På baggrund af en mængde fødevarer som input, findes forskellige opskrifter, der bedst muligt matcher disse. Opskrifterne skal kunne sorteres på flere måder, og ingredienser skal kunne huskes til næste gang, hvis ønsket.
-%\end{quote}
+%SYSTEMDEFINITION
+Vi starter med at definere selve systemdefinitionerne og derefter sikrer vi os, at systemdefinitionerne stemmer overens med BATOFF-kriterier. Når definitionerne er blevet udarbejdet og kontrolleret, så skal de præsenteres for informanter. 
 
-%Gruppen mødtes anden gang med informanterne efter at have fremstillet de to systemdefinitioner for at få feedback på projektets retning og få valgt et attraktivt systemdefinition. Formålet med mødet er at fortælle informanterne om gruppens idé om en opskriftssøgemaskine, der kun finder opskrifter man kan lave ud fra de råvarer, man har til rådighed. Gruppen vil høre om informanterne ville kunne bruge et sådan system. Gruppen holder sig på nuværende tidspunkt meget åbent, da gruppen vil gerne gøre det muligt for informanterne at komme med nye idéer, også selvom de er markant anderledes fra gruppens initierende problemstilling og systemdefinitioner. Derfor foregår mødet som et semistruktureret interview. Det er vigtigt for gruppen at få informanternes idéer til hvilke funktioner et sådan system skal have og hvilken krav, de stiller.
+Efter møder med vores informanter, har vi fået forståelse for at madspild er et reelt problem for de to familier. Det er blevet forklaret, hvad der ofte er grunden til madspildet, og på baggrund af møderne er to systemdefinitioner blevet konstrueret. Vi vælger at forklare systemdefinitionernes grundlæggende idé i grove træk, så læseren ikke behøver at læse en masse unødvendig tekst igennem. De fravalgte systemdefinition kan læses i \todo{referer til S2 i bilag}. Informanterne er blevet præsenteret med hele systemdefinitionerne, da de skulle træffe et valg. Den valgte systemdefinition bliver vist og forklaret herefter.
 
-%Møde 2 gjorde det klart, at informanterne ser systemdefinition 1 som et meget brugbart system. Vi er blevet præsenteret for en masse funktioner, som hver informant har ønsket til et sådan system.
+\begin{description}
+\item[Systemdefinition 1 (S1)] bygger på en idé om, at en bruger af systemet kan indtaste ingredienser, som brugeren ønsker at bruge i madlavninge. Systemet skal give forslag til hvilke retter, der kan laves ud af disse ingredienser.
+\item[Systemdefinition 2 (S2)] bygger på en idé om, at systemet skal være i stand til at udarbejde en madplan til brugeren. Systemet skal gøre dette ved at holde styr på, hvad der er blevet lavet til aftensmad de foregående dage og bruge rester fra disse dage.
+\end{description}
 
-%Dokumentation og referater fra møde 1 og 2 samt alle efterfølgende møder med informanterne kan findes i \apref{ap:informant}.
+Efter udarbejdelsen af systemdefinitionerne har vi undersøgt, om de overholder BATOFF-kriterierne. Dette har vi gjort ved at skrive de forskellige kriterier ind i \tableref{table:batoff}, hvor vi har indtastet de relevante forklaringer for de seks kriterier. På denne måde har vi skabt os et overblik over kriterierne, og de kan meget lettere sammenlignes. Dette er en fordel, da vi mindsker det arbejde, der skal til for at få et overblik over systemdefinitionerne, og dermed gjort det lettere for informanterne at tage et kvalificeret valg mht. hvilken definition, der ville løse problemet med madspild i husstanden.
 
-%systemvalg
-%I det private køkken, sker det til tider, at der smides mad væk. En del af madspildet kan for eksempel ske efter endt madlavning, hvor man kan risikere at stå tilbage med nogle fødevarer, der helst skal bruges hurtigst muligt for ikke at blive for gamle. Man kunne for eksempel have lavet hele kyllingbryst med persille, og fået en masse af begge dele tilovers. Næste aften har man ikke lyst til at få samme ret igen, men maden kan ikke holde sig meget længere, så man fristes derfor til at smide maden væk. Dette problem forsøger vi at løse ved at udvikle et system. Systemet vælger vi at kalde Foodl.
+\begin{table}[H]
+ \centering
+  \begin{tabular}{r | c c}
+  \hline
+                     & \multicolumn{2}{c}{\textbf{Systemdefinitioner}} \\
+  \textbf{Kriterier} & Online opskriftsregister (S1) & Madplanlægger (S2) \\ \hline
+  Betingelser        & Ulønnede udviklere. & Ulønnede udviklere. \\
+  Avendelsesområde   & Dele af husholdninger, & Dele af husholdninger, \\
+                     & \fx forældre eller lignende. & \fx forældre eller lignende. \\
+  Teknologier        & Internetforbindelse. & Internetforbindelse. \\
+                     & PC. Tablet. Mobiltelefon. & PC. Tablet. Mobiltelefon. \\
+  Objekter           & Opskrifter. Ingredienser. & Opskrifter. Ingredienser. Vitaminer. \\
+  Funktioner         & Søgningsværktøj. Find & Planlægningsværktøj. Planlægge \\
+                     & opskrifter indeholdende & madlavning ud fra  \\
+                     & valgte ingredienser & tidligere dages retter. \\
+  Filosofi           & Folk smider mad ud, fordi de & Folk spiser ikke varieret nok, \\
+                     & mangler et sted at & hvilket er en trussel \\
+                     & bruge deres rester. & mod folkesundheden. \\
+  \end{tabular}
+  \capt{Tabel med forklaringer over BATOFF-kriterier for systemdefinitionerne S1 og S2. Systemdefinitionerne vil blive refereret til som S1 og S2 fremover.}
+  \label{table:batoff}
+\end{table}
+
+
+%SYSTEMVALG
+Efter at have fremstillet de to systemdefinitioner præsenterede vi disse for informanter for at få feedback på projektets retning og få valgt en attraktivt systemdefinition. Formålet med mødet er at fortælle informanterne om gruppens initierende idé om en opskriftssøgemaskine, der kun finder opskrifter man kan lave ud fra de råvarer, man har til rådighed. Alt efter hvilken systemdefinition, som vi vælger i fællesskab med informanterne, så vil projektet tage en specifik retning. Vi vil høre om informanterne ville være i stand til bruge et sådan system. Vi holder os meget åbne for nye løsningsforslag, da vi gerne vil gøre det muligt for informanterne at komme med nye idéer, også selvom de er markant anderledes fra vores initierende problemstilling og systemdefinitioner. Derfor foregår møderne som et semistruktureret interview. Det er vigtigt for os at få informanternes idéer til hvilke funktioner et sådan system skal have og hvilke krav, de stiller.
+
+Der er blevet taget højde for informanternes respons (Al dokumentation og alle referater fra de afholdte møder med informanterne kan findes i \todo{referer til bilag}.) på de udarbejdede systemdefinitioner, og der er nu blevet truffet et valg, som alle parter kan se som en mulig løsning på problemerne mht. madlavning og madspild i danske husstande. Efter møderne var det helt klart, at informanterne ser S1 som et meget brugbart system. 
+
+Den valgte systemdefinition S1 er defineret på følgende måde:
+
+\begin{quote}
+Systemet skal fungere som et online opskriftsregister, der giver brugeren idéer til opskrifter som kan lave ud fra de madvarer brugeren har. Systemet fokuserer på at mindske madspild, da forbrugere smider mad ud på grund af et manglende formål med anvendelsen af resterne. Brugerne af systemet er en del af en husholdning og vil have meget varierende erfaringer inden for brug af internettet. Udviklerne af systemet er ulønnede studerende. Deadline for det færdige system kan ikke ændres. Systemet skal køre på en server, der kan tilgås via en webapplikation fra en internetbrowser på enhver type computer. På baggrund af en mængde fødevarer som input, findes forskellige opskrifter, der bedst muligt matcher disse fødevarer. Opskrifterne skal kunne sorteres på flere måder, og ingredienser skal kunne huskes til næste gang, hvis ønsket.
+\end{quote}
+
+I danske husstande smides der ofte mad væk. En del af madspildet kan \fx ske efter endt madlavning, hvor man kan risikere at stå tilbage med nogle fødevarer, der helst skal bruges hurtigst muligt for ikke at blive for gamle. Man kunne \fx have lavet hele kyllingbryst med persille, og fået en masse af begge dele tilovers. Næste aften har man ikke lyst til at få samme ret igen, men maden kan ikke holde sig meget længere, så man fristes derfor til at smide maden væk. Dette problem forsøger vi at løse ved at udvikle et system, der stemmer overens med den valgte systemdefinition. Systemet vælger vi at kalde Foodl.
+
+%AFSLUTNING
