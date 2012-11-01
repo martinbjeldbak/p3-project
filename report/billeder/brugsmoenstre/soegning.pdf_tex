@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+﻿%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'soegning.pdf' (pdf, eps, ps)
 %%
@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.37261504)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/soegning.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/soegning.pdf}}%
     \put(0.52974186,0.34231201){\makebox(0,0)[lb]{\smash{Befinder sig på Foodl}}}%
     \put(0.26150393,0.28843996){\makebox(0,0)[lb]{\smash{Søgning klar}}}%
     \put(0.10549944,0.29517396){\makebox(0,0)[lb]{\smash{Ankom til Foodl}}}%
