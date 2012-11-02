@@ -16,11 +16,12 @@
 
 \tableofcontents*
 %--Clear page
-\newpage
-\thispagestyle{empty}
-\hspace{1cm}
-\newpage
+%\newpage
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\newpage
 %--
+\cleardoublepage
 
 \pagenumbering{arabic}
 \mainmatter
@@ -32,10 +33,8 @@
 \input{indhold/4-implementering/implementering}
 \input{indhold/5-kvalitetssikring/kvalitetssikring}
 \input{indhold/6-konklusion/konklusion}
-\part{Akademisk rapport}
 
-
-\newpage
+\cleardoublepage
 	
 \bibliographystyle{plain}
 \bibliography{kildeliste}
@@ -44,6 +43,7 @@
 
 
 \part{Bilag}
+
 \appendix
 \input{indhold/bilag/appendiks}
 
