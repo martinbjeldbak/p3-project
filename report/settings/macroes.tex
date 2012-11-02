@@ -45,12 +45,15 @@
 \newcommand{\todo}[1]{\colorbox{yellow}{\color{red}\textbf{TODO} \hspace{1ex} #1}}
 \newcommand{\tjek}[1]{\textbf{LÆS MIG:} \guillemotright #1 \guillemotleft}
 
+\newlength{\tablewidth}
+\setlength{\tablewidth}{\textwidth}
+\addtolength{\tablewidth}{-12pt}
+\newcommand{\tabelmedoverskrift}[2]{\begin{table}[H]\begin{tabular}{p{\tablewidth}}
+\hline
+\parbox[t][0.4cm][t]{\tablewidth}{\begin{vplace}[-0.25]\centering\textbf{\textit{#1}}\end{vplace}}\\ \hline
+\vspace{-2mm}#2 \\ \hline
+\end{tabular}\end{table}}
 
-\newcommand{\tabelmedoverskrift}[2]{\begin{tabular}{p{\textwidth}}
-    \hline
-     \parbox[t][0.4cm][t]{\textwidth}{\begin{vplace}[-0.25]\centering\textbf{\textit{#1}}\end{vplace}}\\ \hline
-     \vspace{-2mm}#2 \\ \hline
-  \end{tabular}}
 \newcommand{\aktortabel}[3]{\tabelmedoverskrift{#1}{
 \textbf{Formål:} #2 \\ 
 \textbf{Karakteristik:} #3
