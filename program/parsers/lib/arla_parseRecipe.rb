@@ -10,6 +10,9 @@ def parseRecipe(recipeUrl)
 	puts "Parsing ingredients from link: " + recipeUrl
 	doc = Nokogiri::HTML open(recipeUrl)
 	findIngredients(doc)
+	img_snapper(recipeUrl)
+	portion(recipeUrl)
+	prepTime(recipeUrl)
 end 
 
 
