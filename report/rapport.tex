@@ -16,26 +16,25 @@
 
 \tableofcontents*
 %--Clear page
-\newpage
-\thispagestyle{empty}
-\hspace{1cm}
-\newpage
+%\newpage
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\newpage
 %--
+\cleardoublepage
 
 \pagenumbering{arabic}
 \mainmatter
 \part{Udviklingsrapport}
-\input{indhold/1-indledning/indledning}
+\input{indhold/1-indledning/problemstilling}
 \input{indhold/2.1-analyseafproblemomraade/analyseafpo}
 \input{indhold/2.2-analyseafanvendelsesomraade/analyseafao}
 \input{indhold/3-design/design}
 \input{indhold/4-implementering/implementering}
 \input{indhold/5-kvalitetssikring/kvalitetssikring}
 \input{indhold/6-konklusion/konklusion}
-\part{Akademisk rapport}
 
-
-\newpage
+\cleardoublepage
 	
 \bibliographystyle{plain}
 \bibliography{kildeliste}
@@ -44,6 +43,7 @@
 
 
 \part{Bilag}
+
 \appendix
 \input{indhold/bilag/appendiks}
 
