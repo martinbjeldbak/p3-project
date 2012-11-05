@@ -47,25 +47,31 @@
 \newlength{\tablewidth}
 \setlength{\tablewidth}{\textwidth}
 \addtolength{\tablewidth}{-12pt}
-\newcommand{\tabelmedoverskrift}[2]{\begin{table}[H]\begin{tabular}{p{\tablewidth}}
-\hline
-\parbox[t][0.4cm][t]{\tablewidth}{\begin{vplace}[-0.25]\centering\textbf{\textit{#1}}\end{vplace}}\\ \hline
-\vspace{-2mm}#2 \\ \hline
-\end{tabular}\end{table}}
 
-\newcommand{\aktortabel}[3]{\tabelmedoverskrift{#1}{
-\textbf{Formål:} #2 \\ 
-\textbf{Karakteristik:} #3
-}}
+\newcommand{\tabelmedoverskrift}[2]{
+\subsubsection{#1}
+#2}
 
-\newcommand{\aktortabelEx}[4]{\aktortabel{#1}{#2}{#3 \\ 
-    \textbf{Eksempler:} #4}}
+% old tabelmedoverskrift
+% \newcommand{\tabelmedoverskrift}[2]{\begin{table}[H]\begin{tabular}{p{\tablewidth}}
+% \hline
+% \parbox[t][0.4cm][t]{\tablewidth}{\begin{vplace}[-0.25]\centering\textbf{\textit{#1}}\end{vplace}}\\ \hline
+% \vspace{-2mm}#2 \\ \hline
+% \end{tabular}\end{table}}
 
-\newcommand{\brugtabel}[4]{\tabelmedoverskrift{#1}{
-\textbf{Brugsmønster:} #2 \\ 
-\textbf{Objekter:} #3 \\ 
-\textbf{Funktioner:} #4
-}}
+\newcommand{\aktortabel}[3]{\tabelmedoverskrift{#1}{Formål: #2
+ 
+Karakteristik: #3}}
+
+\newcommand{\aktortabelEx}[4]{\aktortabel{#1}{#2}{#3 
+
+Eksempler: #4}}
+
+\newcommand{\brugtabel}[4]{\tabelmedoverskrift{#1}{Brugsmønster: #2 
+
+Objekter: #3 
+
+Funktioner: #4}}
 
 
 % Table stuff!!!
