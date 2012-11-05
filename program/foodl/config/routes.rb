@@ -1,5 +1,4 @@
 Foodl::Application.routes.draw do
-  get "users/new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -55,6 +54,8 @@ Foodl::Application.routes.draw do
   match "about" => "home#about"
 
   match "contact" => "home#contact"
+
+  match "users/:action" => "users"
 
   # See how all your routes lay out with "rake routes"
 
