@@ -1,5 +1,12 @@
 require "nokogiri"
 require "open-uri"
+
+
+def parseRecipe(recipeUrl)
+	puts "Starting to parse: "+recipeUrl
+end 
+
+
 page = 1
 recipesFound = true
 while recipesFound 
@@ -12,7 +19,9 @@ while recipesFound
 		recipesFound = false
 	end
 	for i in 0..urlsOnPage.length
-		puts "Found link: "+urlsOnPage[i].to_s()
+		parseRecipe(urlsOnPage[i].to_s)
 	end
 end
+
+
 
