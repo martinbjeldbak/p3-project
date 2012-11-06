@@ -55,9 +55,18 @@ body {
   color:#464;
 }
 
-#top img {
+#top a:link img,
+#top a:visited img,
+#top a:active img {
   height:24px;
   margin-top:4px;
+  opacity:0.7;
+}
+
+#top a:hover img {
+  height:24px;
+  margin-top:4px;
+  opacity:1;
 }
 
 #menu {
