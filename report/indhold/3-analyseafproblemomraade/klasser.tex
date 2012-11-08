@@ -1,6 +1,8 @@
 \section{Klasser}
 \label{sec:klasser}
 
+
+\subsection{Valgte klasser}
 En klasse er en beskrivelse af en samling af objekter med samme struktur, adfærdsmønster og attributter \cite[s. ~51]{ooad}. Som nævnt i indledningen til kapitlet, er et af målene med analysen af problemområdet, at skabe et overblik over hvilke klasser og hændelser systemet skal have. Hændelser vil vi dog først komme nærmere ind på, i kommende section \ref{sec:haendelser}, men overblikket over hvilke klasser systemet skal have, kan skabes ved først at finde så mange klasserkandidater, som muligt, og dernæst at afgrænse disse, så kun de mest relevante klasser er tilbage. I vores tilfælde anvendte vi rigebilleder, som kan ses i \ref{ap:rigebilleder}, samt systemdefinitionen, til at hente inspiration til de klasser, som vi vil modellere i problemområdet.
 
 Grundet den iterative arbejdsproces, er klasser undervejs blevet tilføjet og fjerent, og vi ønsker nu at kaste lys over baggrunden bag de valgte klasser. I gennem processen har vi også fravalgt klasser. Disse, med beskrivelse, kan findes i \apref{ap:fravalgteklasser}.
@@ -24,3 +26,35 @@ Vi vurderer, at der i en husholdning ofte bliver skrevet en indkøbsliste med de
 \item[Opskrift] \hfill \\
 En opskrift er det centrale i problemområdet. Opskrifterne indeholder forskellige ingredienser. Det er nødvendigt at have råvarer nok til at matche ingredienserne i opskriften, før denne kan laves. Man må gå ud fra at den typiske private madlaver har mange opskrifter i kogebogen, som han/hun reelt ikke har råvarerne til at kunne lave.
 \end{description}
+
+\subsection{Valgte hændelser}
+\label{sec:haendelser}
+Ved hjælp af klassekandidaterne, er det nu muligt at finde hændelseskandidater. Hændelserne er kommet til verden ud fra diverse forskellige forløb, der kan påvirke klasser. For at opretholde en konsistens mellem hændelserne, er de formuleret i datid. Det er igen vigtigt at nævne, at følgende er \emph{kandidater} og kan ændres under den iterative arbejdsproces. 
+
+\subsection{Valgte hændelser}
+Følgende hændelser er blevet skabt ud fra de valgte klassekandidater, som gruppen kom frem til i \secref{sec:klasser}. Klassekandidaterne er karaktiseret ved hjælp af følgende hændelseskandidater: 
+
+\begin{itemize} [noitemsep]
+\item Råvare opbrugt
+\item Råvare smidt ud
+\item Råvare købt
+\item Opskrift fundet
+\item Opskrift valgt
+\item Opskrift smidt ud
+\item Bogmærke tilføjet
+\item Bogmærke fjernet
+\item Indkøbsliste oprettet
+\item Indkøbsliste færdig
+\item Indkøbsliste smidt ud
+\item Ingrediens tilføjet
+\item Ingrediens fjernet
+\item Tekst tilføjet
+\item Tekst fjernet
+\end{itemize}
+
+\subsection{Hændelsestabel}
+Når de valgte klasser og hændelser er kommet på plads, giver det mulighed at fremstille et hændelsestabel, der danner overblik over sammenhæng mellem klasser og fælles hændelser. Herunder ses hændelsestabellen:
+
+\input{indhold/3-analyseafproblemomraade/haendelser/haendelsestabel}
+
+
