@@ -3,6 +3,7 @@
 
 \begin{document}
 
+
 \setcounter{page}{-100}
 \pagenumbering{roman}
 \frontmatter
@@ -14,8 +15,11 @@
 \pagestyle{ruled}
 \input{indhold/forord}
 
+\cleardoublepage
+
 \tableofcontents*
-%--Clear page
+
+%--Clear page ... don't ever use this crap??
 %\newpage
 %\thispagestyle{empty}
 %\hspace{1cm}
@@ -29,7 +33,8 @@
 
 \pagenumbering{arabic}
 \mainmatter
-\part{Udviklingsrapport}
+\part[\hspace{5pt}Udviklingsrapport]{Udviklingsrapport}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
 \input{indhold/1-metode/metode}
 \input{indhold/2-systemvalg/systemvalg}
 \input{indhold/3-analyseafproblemomraade/analyseafpo}
@@ -44,10 +49,12 @@
 \bibliographystyle{plain}
 \bibliography{kildeliste}
 
-\part{Akademisk rapport}
+\part[\hspace{5pt}Akedemisk rapport]{Akademisk rapport}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
 
 
-\part{Bilag}
+\part[\hspace{5pt}Bilag]{Bilag}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
 
 \appendix
 \input{indhold/bilag/appendiks}
