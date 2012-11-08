@@ -1,37 +1,24 @@
-\begin{table}[H]
-  \centering
-  \begin{tabular}{ r|c c }
-    \hline
-    & \multicolumn{2}{c}{\textbf{Egenskaber}} \\
-    \textbf{Navn} & Funktionstype & Kompleksitet \\ \hline
-    Håndter opskrifter & Beregning & Medium \\
-    Håndter favoritter & Opdatering & Medium \\
-    Håndter indkøbsliste & Opdatering & Medium \\
-    Søg & Beregning & Kompleks \\
-    Skaler søgeresultat & Beregning & Simpel \\
-    Log ind & Opdatering  & Simpel  \\
-    Log af & Opdatering & Simpel  \\
-    Registrer bruger & Opdatering & Simpel  \\
-    Vis favoritter & Aflæsning & Simpel  \\
-    Opret fejlrapport & Opdatering & Medium \\
-    Luk fejlrapport & Opdatering & Simpel  \\
-    Udfør crawling & Beregning & Kompleks \\ \hline
-  \end{tabular}
-  \capt{Funktionsliste over systemet.}
-  \label{table:funktionsliste}
-\end{table}
+\ourtable{funktionsliste}{2}{Funktionsliste over systemet.}
+                                        {Egenskaber}
+       {Navn                 }{ Funktionstype & Kompleksitet  }{
+\ourrow{Håndter opskrifter   }{ Beregning     & Medium        }
+\ourrow{Håndter favoritter   }{ Opdatering    & Medium        }
+\ourrow{Håndter indkøbsliste }{ Opdatering    & Medium        }
+\ourrow{Søg                  }{ Beregning     & Kompleks      }
+\ourrow{Skaler søgeresultat  }{ Beregning     & Simpel        }
+\ourrow{Log ind              }{ Opdatering    & Simpel        }
+\ourrow{Log af               }{ Opdatering    & Simpel        }
+\ourrow{Registrer bruger     }{ Opdatering    & Simpel        }
+\ourrow{Vis favoritter       }{ Aflæsning     & Simpel        }
+\ourrow{Opret fejlrapport    }{ Opdatering    & Medium        }
+\ourrow{Luk fejlrapport      }{ Opdatering    & Simpel        }
+\ourrow{Udfør crawling       }{ Beregning     & Kompleks      }
+}
 
-\begin{table}[H]
-  \centering
-  \begin{tabular}{ r| l l }
-
-    \multicolumn{3}{c}{\textbf{Udfør crawling}} \\ \hline
-    & \multicolumn{2}{c}{\textbf{Egenskaber}} \\
-    \textbf{Navn} & Funktionstype & Kompleksitet \\ \hline
-    Find opskrift & Beregning & Medium \\
-    Find ingredienser på opskrift & Beregning & Medium \\
-    Gem opskrift  & Opdatering & Simpel \\ \hline
-  \end{tabular}
-  \capt{Funktionsliste over den komplekse funktion ``crawling''.}
-  \label{table:crawlingliste}
-\end{table}
+\ourtable{crawlingliste}{2}{Funktionsliste over den komplekse funktion ``crawling''.}
+                                     {Egenskaber}
+       {Navn              }{ Funktionstype & Kompleksitet  }{
+\ourrow{Find opskrift     }{ Beregning     & Medium        }
+\ourrow{Find ingredienser }{ Beregning     & Medium        }
+\ourrow{Gem opskrift      }{ Opdatering    & Simpel        }
+}
