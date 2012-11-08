@@ -9,6 +9,23 @@
 
 \usepackage{tocloft}
 
+\usepackage{courier}
+
+\chapterstyle{hangnum}
+\raggedbottom
+\setlength{\beforechapskip}{0pt}
+\setlength{\afterchapskip}{10pt} % vspace under chapters
+\setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
+\setsecnumdepth{subsection}
+
+\renewcommand*{\partnamefont}{\normalfont\Huge\ttfamily\bfseries}
+\renewcommand*{\partnumfont}{\normalfont\Huge\ttfamily\bfseries}
+\renewcommand*{\parttitlefont}{\normalfont\HUGE\ttfamily\bfseries}
+\renewcommand*{\chaptitlefont}{\normalfont\HUGE\ttfamily\bfseries}
+\setsecheadstyle{\normalfont\huge\ttfamily\bfseries}
+\setsubsecheadstyle{\normalfont\Large\ttfamily\bfseries}
+\setsubsubsecheadstyle{\normalfont\large\ttfamily\bfseries}
+
 %% Fonts
 %\usepackage[sc]{mathpazo}
 %\usepackage{courier}
@@ -25,7 +42,7 @@
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{gensymb}
-\usepackage[table]{xcolor} % til farvning af celler i tabel
+\usepackage[usenames,dvipsnames,table]{xcolor} % til farvning af celler i tabel
 \usepackage{url}
 %\usepackage[bottom]{footmisc} % keep footnotes at bottom UNCOMMENTED
 %PGA errors
@@ -56,7 +73,8 @@
 %\setcounter{secnumdepth}{3}
 %\setcounter{tocdepth}{3}
 
-\definecolor{shcomment}{rgb}{0.12, 0.38, 0.18 } %adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
+\definecolor{shcomment}{rgb}{0.12, 0.38, 0.18 }
+%adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
 \definecolor{shkeyword}{rgb}{0.37, 0.08, 0.25}  % #5F1441
 \definecolor{shstring}{rgb}{0.06, 0.10, 0.98} % #101AF9
 
@@ -128,13 +146,6 @@
 \setulmargins{1.0in}{*}{*}
 \setheadfoot{14pt}{26pt}
 \setheaderspaces{*}{13pt}{*}
-
-\chapterstyle{hangnum}
-\raggedbottom
-\setlength{\beforechapskip}{0pt}
-\setlength{\afterchapskip}{10pt} % vspace under chapters
-\setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
-\setsecnumdepth{subsection}
 
 % Fra settings.tex
 \setlrmarginsandblock{3.5cm}{2.5cm}{*}
