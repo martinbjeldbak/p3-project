@@ -1,19 +1,17 @@
 \subsection{Sammendrag}
 \label{sec:forbilleder:sammendrag}
-De tre forbilleder: For Resten, DK-Kogebogen og Opskrifter.dk er i foregående afsnit blevet undersøgt og analyseret. Vi har i vores undersøgelse og analyse lagt vægt på fire hovedpunkter: antallet af opskrifter i systemet, Kvaliteten af opskrifterne, systemets fleksibilitet og opskriftssøgningsfunktionen (også kaldet ``Tøm køleskabet''-funktionen). De fire hovedpunkter er specificeret i detaljer i (REFERER TIL AFSNIT FORBILLEDER). For at skabe et samlet overblik, har vi valgt at samle de vigtigste og mest karakteristiske dele fra hver af forbillederne i dette afsnit.
+De tre forbilleder: For Resten, DK-Kogebogen og Opskrifter.dk er i foregående afsnit blevet undersøgt og analyseret. Vi har i vores undersøgelse og analyse lagt vægt på fire hovedpunkter: antallet af opskrifter i systemet, Kvaliteten af opskrifterne, systemets fleksibilitet og opskriftssøgningsfunktionen (også kaldet ``Tøm køleskabet''-funktionen). De fire hovedpunkter er specificeret i detaljer i \secref{sec:existsystems}. For at skabe et samlet overblik, har vi valgt at samle de vigtigste og mest karakteristiske dele fra hver af forbillederne i dette afsnit.
 
-\begin{table}
-\centering
-\begin{tabular}{| c | c | c | c |}
-\hline
-\textbf{Forbillede} & For Resten & DK-kogebogen & Opskrifter.dk \\ \hline
-\textbf{Antal opskrifter} & 550 & 36.500 & 2.700 \\ \hline
-\end{tabular}
-\capt{Antallet af opskrifter i de tre forbilleder: For Resten, DK-Kogebogen og Opskrifter.dk. Antallet er angivet i cirkatal, da det præcise antal ikke er væsentligt.}
-\label{table:forbilledeantal}
-\end{table}
+\ourtable{sammentabel}{3}{Oversigt over opfyldelse af kriterier af de existerende systemer.}
+                                            {System}
+       { Features                  }{ For Resten   & DK-kogebogen   & Opskrifter.dk }{
+\ourrow{ Kvalitet af opskrifter    }{ ringe        & svingende      & god           }
+\ourrow{ Antal opskrifter          }{ 550          & 36.500         & 2.700         }
+\ourrow{ Fleksibilitet             }{ meget ringe  & middel         & god           }
+\ourrow{ Opskriftssøgningsfunktion }{ meget ringe  & middel         & middel        }
+}
 
-Som det ses i tabel (REFERER TIL TABEL HER), har DK-Kogebogen det langt største antal opskrifter, mens Opskrifter.dk har ca. fem gange flere opskrifter end For Resten. Dermed har DK-Kogenbogens ``Tøm køleskabet''-funktion også langt bedre chance for at give brugeren et resultat, når han/hun søger på opskrifter med specifikke ingredienser. Til gengæld er kvaliteten af opskrifterne på DK-Kogebogen meget varierende, og derfor kan brugeren risikere at støde på opskrifter, som er dårlige eller ubrugelige. Kvaliteten af opskrifterne på For Resten er sammenlagt dårlig. Opskrifterne er udelukkende lavet eller tilføjet af folkene bag app’en, og derfor er opskrifternes opbygning og design konsistent, hvilket naturligvis havde været en god egenskab, hvis det ikke var for det faktum, at opbygningen er uoverskuelig. Der er nemlig ingen ingrediensliste på opskriften og beskrivelsen af fremgangsmåden er også kortfattet. Derimod er kvaliteten af opskrifterne på Opskrifter.dk høj. Dette skyldes, at opskrifterne bliver gennemgået af en administrator, inden de bliver tilgængelige på Opskrifter.dk’s side, hvilket er modsat af DK-Kogebogen, hvor opskrifterne bliver tilgængelige med det samme. Desuden er Opskrifter.dk’s opskriftopbygning konsekvent i alle opskrifter, hvilket også er i modsætning til DK-Kogebogens opskrifter.
+Som det ses i \tableref{table:sammentabel}, har DK-Kogebogen det langt største antal opskrifter, mens Opskrifter.dk har ca. fem gange flere opskrifter end For Resten. Dermed har DK-Kogenbogens ``Tøm køleskabet''-funktion også langt bedre chance for at give brugeren et resultat, når han/hun søger på opskrifter med specifikke ingredienser. Til gengæld er kvaliteten af opskrifterne på DK-Kogebogen meget varierende, og derfor kan brugeren risikere at støde på opskrifter, som er dårlige eller ubrugelige. Kvaliteten af opskrifterne på For Resten er sammenlagt dårlig. Opskrifterne er udelukkende lavet eller tilføjet af folkene bag app’en, og derfor er opskrifternes opbygning og design konsistent, hvilket naturligvis havde været en god egenskab, hvis det ikke var for det faktum, at opbygningen er uoverskuelig. Der er nemlig ingen ingrediensliste på opskriften og beskrivelsen af fremgangsmåden er også kortfattet. Derimod er kvaliteten af opskrifterne på Opskrifter.dk høj. Dette skyldes, at opskrifterne bliver gennemgået af en administrator, inden de bliver tilgængelige på Opskrifter.dk’s side, hvilket er modsat af DK-Kogebogen, hvor opskrifterne bliver tilgængelige med det samme. Desuden er Opskrifter.dk’s opskriftopbygning konsekvent i alle opskrifter, hvilket også er i modsætning til DK-Kogebogens opskrifter.
 
 Der er stor forskel i fleksibiliteten fra forbillede til forbillede. I For Restens app, er det slet ikke muligt at op- og nedskalere portionsstørrelse, på DK-Kogebogens side er det kun muligt med nogle opskrifter, mens det på Opskrifter.dk er muligt at op- og nedskalere portionsstørrelse hver eneste opskrift. Det er en funktion som er meget brugbar, da man som bruger ikke ønsker at bruge en masse tid på selv at beregne en passende portionsstørrelse. Dette vil vi også bestræbe os på at implementere i de opskrifter der er tilgængelige på Foodl. Af sorteringsmuligheder af opskriftresultaterne, er det kun Opskrifter.dk som tilbyder denne mulighed. Her kan der sorteres efter alfabetisk orden, opskrifter med billeder, opskrifter med kød samt flere. Som en bruger på Opskrifter.dk dog pointere, mangler den sorteringsmulighed, som sortere efter de opskrifter som indeholder flest af de ingredienser som brugeren har indtastet. Denne sorteringsmulighed anses for os, som værende den mest relevante, da man som bruger er interesseret i at få anvendt så mange af ens madrester som muligt. 
 
