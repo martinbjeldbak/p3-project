@@ -24,29 +24,3 @@ Vi vurderer, at der i en husholdning ofte bliver skrevet en indkøbsliste med de
 \item[Opskrift] \hfill \\
 En opskrift er det centrale i problemområdet. Opskrifterne indeholder forskellige ingredienser. Det er nødvendigt at have råvarer nok til at matche ingredienserne i opskriften, før denne kan laves. Man må gå ud fra at den typiske private madlaver har mange opskrifter i kogebogen, som han/hun reelt ikke har råvarerne til at kunne lave.
 \end{description}
-
-\subsection{Struktur}
-
-De valgte klasser giver anledning til et klassediagram. Dette kan ses i \figref{fig:klassediagram}. 
-
-\input{indhold/3-analyseafproblemomraade/klasser/klassediagram}
-
-Klassediagrammet ovenover er bygget op af aggregeringer og associationer imellem klasserne i diagrammet. Disse relationer er ligeledes beskrevet tekstuelt herunder.
-
-\begin{description}
-  \item[Bogmærke] \hfill \\
-    Et bogmærke peger på netop en opskrift.
-
-  \item[Opskrift] \hfill \\
-    En opskrift består af en eller flere ingredienser og kan være tilknyttet nul til mange bogmærker.
-
-\item[Indkøbsliste] \hfill \\
-  En indkøbslisten består af flere ingredienser, den kan dog også være tom.
-
-\item[Ingrediens] \hfill \\
-  En ingrediens består af netop en råvare og kan tilhøre nul til mange opskrifter. Ligeledes kan en ingrediens tilhøre en indkøbsliste.
-
-\item[Råvare] \hfill \\
-  En råvare er en dekomponering af en ingrediens. En råvare er blot en ingrediens uden nogen form for information om mængde eller enhed. En ingrediens kunne for eksempel være "200g oksekød", hvormed den underliggende råvare ville være "oksekød".
-\end{description}
-
