@@ -9,18 +9,18 @@ Klassediagrammet ovenover er bygget op af aggregeringer og associationer imellem
 
 \begin{description}
   \item[Bogmærke] \hfill \\
-    Et bogmærke peger på netop en opskrift.
+    Et bogmærke er associeret med netop én opskrift. Multipliciteten er valgt på baggrund af at et bogmærke kan sættes på én og kun én side i en kogebog.
 
   \item[Opskrift] \hfill \\
-    En opskrift består af en eller flere ingredienser og kan være tilknyttet nul til mange bogmærker.
+    En opskrift kan være associeret med 0 eller 1 bogmærke. Man kan argumentere for, at der godt kan placeres flere bogmærker på samme opskrift, men vi ønsker kun at overvåge hvorvidt en opskrift er bogmærket eller ej, og det er derfor kun nødvendigt at skelne mellem 0 og 1 bogmærker. En opskrift består af 1 til flere ingredienser. Hvis opskriften ikke bestod af ingredienser, ville det ikke være en opskrift.
 
 \item[Indkøbsliste] \hfill \\
-  En indkøbslisten består af flere ingredienser, den kan dog også være tom.
+  En indkøbslisten består af 0 til flere ingredienser. 0 er muligt, da indkøbslisten er tom inden man tilføjer ingredienser til den. Det kan også være at man starter med bare at skrive ``Jeg handler ind kl. 17, skriv hvad jeg skal købe - Farmand'', og lader resten af familien udfylde sedlen.
 
 \item[Ingrediens] \hfill \\
-  En ingrediens består af netop en råvare og kan tilhøre nul til mange opskrifter. Ligeledes kan en ingrediens tilhøre en indkøbsliste.
+  En ingrediens består af netop én råvare og aggregeres altid af kun én opskrift. Selvom flere opskrifter indeholder oksekød, kan mængden være forskellig. Samtidig er det logisk, at hvis to opskrifter begge indeholder en ingrediens \textit{400 g oksekød}, så kan den ene opskrift ændres til \textit{500 g oksekød}, uden at den anden opskrift skal ændres.
 
 \item[Råvare] \hfill \\
-  En råvare er en dekomponering af en ingrediens. En råvare er blot en ingrediens uden nogen form for information om mængde eller enhed. En ingrediens kunne for eksempel være "200g oksekød", hvormed den underliggende råvare ville være "oksekød".
+  En råvare er en dekomponering af en ingrediens. En råvare er blot en ingrediens uden nogen form for information om mængde eller enhed. En ingrediens kunne for eksempel være \textit{400 g oksekød}, som består af råvaren \textit{oksekød}.
 \end{description}
 
