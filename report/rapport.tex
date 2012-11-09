@@ -14,13 +14,10 @@
 \pagestyle{ruled}
 \input{indhold/forord}
 
+\cleardoublepage
+
 \tableofcontents*
-%--Clear page
-%\newpage
-%\thispagestyle{empty}
-%\hspace{1cm}
-%\newpage
-%--
+
 \cleardoublepage
 
 \input{indhold/indledning}
@@ -30,6 +27,8 @@
 \pagenumbering{arabic}
 \mainmatter
 \part{Udviklingsrapport}
+%\part[\hspace{5pt}Udviklingsrapport]{Udviklingsrapport}
+%\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
 \input{indhold/1-metode/metode}
 \input{indhold/2-systemvalg/systemvalg}
 \input{indhold/3-analyseafproblemomraade/analyseafpo}
@@ -42,10 +41,10 @@
 \cleardoublepage
 	
 \bibliographystyle{plain}
+\raggedright
 \bibliography{kildeliste}
 
 \part{Akademisk rapport}
-
 
 \part{Bilag}
 

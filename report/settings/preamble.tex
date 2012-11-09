@@ -2,11 +2,38 @@
 %
 % Packages
 %
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[danish]{babel}
 \linespread{1.05}
+\usepackage{fontspec}
 
+\setmainfont[Ligatures=TeX]{Garamond}
+% Eksempel
+%\newfontfamily{\titlefont}{Antique-Olive Th}
+
+%\newcommand{\heading}[1]{ \vspace{0.5cm} {\titlefont \Large #1}\\ }
+%\newcommand{\bilagtitle}[1]{ {\titlefont \LARGE #1}\\ }
+
+%---- 
+
+\usepackage{tocloft}
+\usepackage{courier}
+
+\chapterstyle{hangnum}
+\raggedbottom
+\setlength{\beforechapskip}{0pt}
+\setlength{\afterchapskip}{10pt} % vspace under chapters
+\setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
+\setsecnumdepth{subsection}
+
+\renewcommand*{\partnamefont}{\normalfont\Huge\bfseries}
+\renewcommand*{\partnumfont}{\normalfont\Huge\bfseries}
+\renewcommand*{\parttitlefont}{\normalfont\HUGE\bfseries}
+\renewcommand*{\chaptitlefont}{\normalfont\HUGE\bfseries}
+\setsecheadstyle{\normalfont\huge\bfseries}
+\setsubsecheadstyle{\normalfont\Large\bfseries}
+\setsubsubsecheadstyle{\normalfont\large\bfseries}
 
 %% Fonts
 %\usepackage[sc]{mathpazo}
@@ -24,7 +51,7 @@
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{gensymb}
-\usepackage[table]{xcolor} % til farvning af celler i tabel
+\usepackage[usenames,dvipsnames,table]{xcolor} % til farvning af celler i tabel
 \usepackage{url}
 %\usepackage[bottom]{footmisc} % keep footnotes at bottom UNCOMMENTED
 %PGA errors
@@ -55,7 +82,8 @@
 %\setcounter{secnumdepth}{3}
 %\setcounter{tocdepth}{3}
 
-\definecolor{shcomment}{rgb}{0.12, 0.38, 0.18 } %adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
+\definecolor{shcomment}{rgb}{0.12, 0.38, 0.18 }
+%adjusted, in Eclipse: {0.25, 0.42, 0.30 } = #3F6A4D
 \definecolor{shkeyword}{rgb}{0.37, 0.08, 0.25}  % #5F1441
 \definecolor{shstring}{rgb}{0.06, 0.10, 0.98} % #101AF9
 
@@ -128,13 +156,6 @@
 \setheadfoot{14pt}{26pt}
 \setheaderspaces{*}{13pt}{*}
 
-\chapterstyle{hangnum}
-\raggedbottom
-\setlength{\beforechapskip}{0pt}
-\setlength{\afterchapskip}{10pt} % vspace under chapters
-\setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
-\setsecnumdepth{subsection}
-
 % Fra settings.tex
 \setlrmarginsandblock{3.5cm}{2.5cm}{*}
 \setulmarginsandblock{2.5cm}{3.0cm}{*}
@@ -190,4 +211,3 @@
 	% N.B.: floatpagefraction MUST be less than topfraction !!
     \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
-	% remember to use [htp] or [htpb] for placement
