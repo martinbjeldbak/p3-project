@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{427.2bp}%
+    \setlength{\unitlength}{336bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,13 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.34269663)%
+  \begin{picture}(1,0.32619048)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/ingrediens.pdf}}%
-    \put(0.34082397,0.29026217){\makebox(0,0)[lb]{\smash{Eksisterer i opskrift}}}%
-    \put(0.11985019,0.28838951){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
-    \put(0.37078652,0.11048689){\makebox(0,0)[lb]{\smash{På indkøbsliste}}}%
-    \put(0.02808989,0.03370787){\makebox(0,0)[lb]{\smash{Ingrediens tilføjet}}}%
-    \put(0.61235955,0.08801498){\makebox(0,0)[lb]{\smash{Indkøbsliste smidt ud}}}%
-    \put(0.66479401,0.28651685){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
+    \put(0.42857143,0.24761905){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.1,0.25714286){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
+    \put(0.67619048,0.25714286){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
+    \put(0.20714286,0.0452381){\makebox(0,0)[lb]{\smash{Ingrediens tilføjet}}}%
+    \put(0.57380952,0.05){\makebox(0,0)[lb]{\smash{Ingrediens fjernet}}}%
   \end{picture}%
 \endgroup%

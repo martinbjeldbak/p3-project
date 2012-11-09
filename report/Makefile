@@ -1,7 +1,7 @@
 Report.pdf: rapport.tex
-	pdflatex rapport.tex
+	xelatex rapport.tex
 	bibtex rapport
-	pdflatex rapport.tex
-	pdflatex rapport.tex > texoutput
+	xelatex rapport.tex
+	xelatex rapport.tex > texoutput
 	grep Warning -i --color -n texoutput
 

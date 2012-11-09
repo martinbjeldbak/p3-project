@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.63755459)%
-    \put(0,0){\includegraphics[width=\unitlength]{bileder/tilstandsdiagrammer/raavare.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/raavare.pdf}}%
     \put(0.41484716,0.34497817){\makebox(0,0)[lb]{\smash{Brugbar}}}%
     \put(0.06550218,0.37554585){\makebox(0,0)[lb]{\smash{Råvare købt}}}%
     \put(0.51965066,0.51965066){\makebox(0,0)[lb]{\smash{Råvare smidt ud}}}%
