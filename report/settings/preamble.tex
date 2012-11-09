@@ -2,13 +2,15 @@
 %
 % Packages
 %
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[danish]{babel}
 \linespread{1.05}
 
-\usepackage{tocloft}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
 
+\usepackage{tocloft}
 \usepackage{courier}
 
 \chapterstyle{hangnum}
@@ -18,13 +20,13 @@
 \setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
 \setsecnumdepth{subsection}
 
-\renewcommand*{\partnamefont}{\normalfont\Huge\ttfamily\bfseries}
-\renewcommand*{\partnumfont}{\normalfont\Huge\ttfamily\bfseries}
-\renewcommand*{\parttitlefont}{\normalfont\HUGE\ttfamily\bfseries}
-\renewcommand*{\chaptitlefont}{\normalfont\HUGE\ttfamily\bfseries}
-\setsecheadstyle{\normalfont\huge\ttfamily\bfseries}
-\setsubsecheadstyle{\normalfont\Large\ttfamily\bfseries}
-\setsubsubsecheadstyle{\normalfont\large\ttfamily\bfseries}
+\renewcommand*{\partnamefont}{\normalfont\Huge\bfseries}
+\renewcommand*{\partnumfont}{\normalfont\Huge\bfseries}
+\renewcommand*{\parttitlefont}{\normalfont\HUGE\bfseries}
+\renewcommand*{\chaptitlefont}{\normalfont\HUGE\bfseries}
+\setsecheadstyle{\normalfont\huge\bfseries}
+\setsubsecheadstyle{\normalfont\Large\bfseries}
+\setsubsubsecheadstyle{\normalfont\large\bfseries}
 
 %% Fonts
 %\usepackage[sc]{mathpazo}
