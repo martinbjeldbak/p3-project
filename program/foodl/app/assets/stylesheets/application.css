@@ -164,11 +164,11 @@ input.text:focus {
   background-color:#F93;
 }
 
-#search {
-  width:100%;
+#main input.text {
 }
 
-#main input.text {
+#search {
+  width:100%;
 }
 
 #search input.button {
