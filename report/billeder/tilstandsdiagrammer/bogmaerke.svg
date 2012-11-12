@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="120" version="1.1" width="251" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="38" cy="59" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="46" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="70" x="94" y="35"/>
-<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#000000" stroke-width="1" width="70" x="94" y="35"/>
-<rect fill="#ffffff" height="44" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="68" x="95" y="36"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="112" y="48">
-Aktiv</text>
-<polyline fill="none" points="47,59 94,59" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="82" x2="94" y1="66" y2="59"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="82" x2="94" y1="52" y2="59"/>
-<text font-family="Dialog" font-size="12" x="15" y="27">
-Bogmærke tilføjet</text>
-<ellipse cx="218" cy="63" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="218" cy="63" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
-<ellipse cx="217" cy="62" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="163,62 206,62" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="206" y1="69" y2="62"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="206" y1="55" y2="62"/>
-<text font-family="Dialog" font-size="12" x="133" y="102">
-Bogmærke fjernet</text>
+<svg height="137" version="1.1" width="596" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="39" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="46" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="222" y="15"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="222" y="15"/>
+<rect fill="#ffffff" height="44" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="223" y="16"/>
+<text font-family="Lucida Grande" font-size="13" x="259" y="29">
+Eksisterer</text>
+<polyline fill="none" points="31,39 222,39" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="210" x2="222" y1="46" y2="39"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="210" x2="222" y1="32" y2="39"/>
+<text font-family="Lucida Grande" font-size="13" x="51" y="31">
+Opskrift fundet(opskrift)</text>
+<ellipse cx="570" cy="35" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="570" cy="35" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="569" cy="34" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="357,35 558,35" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="546" x2="558" y1="42" y2="35"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="546" x2="558" y1="28" y2="35"/>
+<text font-family="Lucida Grande" font-size="13" x="374" y="28">
+Opskrift smidt ud(opskrift)</text>
+<polyline fill="none" points="238,60 238,95 278,95 278,60" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="285" x2="278" y1="72" y2="60"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="271" x2="278" y1="72" y2="60"/>
+<text font-family="Lucida Grande" font-size="13" x="94" y="115">
+Ingrediens tilføjet(ingrediens)</text>
+<polyline fill="none" points="350,60 350,95 310,95 310,60" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="317" x2="310" y1="72" y2="60"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="303" x2="310" y1="72" y2="60"/>
+<text font-family="Lucida Grande" font-size="13" x="307" y="119">
+Ingrediens fjernet(ingrediens)</text>
 </svg>

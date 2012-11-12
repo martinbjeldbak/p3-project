@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{513.6bp}%
+    \setlength{\unitlength}{279.2bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,17 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.33021807)%
+  \begin{picture}(1,0.46418338)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/indkoebsliste.pdf}}%
-    \put(0.3317757,0.17601246){\makebox(0,0)[lb]{\smash{Redigeres}}}%
-    \put(0.24922118,0.05607477){\makebox(0,0)[lb]{\smash{Tekst tilføjet}}}%
-    \put(0.24454829,0.24454829){\makebox(0,0)[lb]{\smash{Tekst fjernet}}}%
-    \put(0.39252336,0.24610592){\makebox(0,0)[lb]{\smash{Ingrediens fjernet}}}%
-    \put(0.39252336,0.05607477){\makebox(0,0)[lb]{\smash{Ingrediens tilføjet}}}%
-    \put(0.02336449,0.17912773){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
-    \put(0.64641745,0.17601246){\makebox(0,0)[lb]{\smash{Aktiv}}}%
-    \put(0.62461059,0.05919003){\makebox(0,0)[lb]{\smash{Råvare købt}}}%
-    \put(0.7834891,0.19314642){\makebox(0,0)[lb]{\smash{Indkøbsliste smidt ud}}}%
-    \put(0.46728972,0.20560748){\makebox(0,0)[lb]{\smash{Indkøbsliste færdig}}}%
+    \put(0.34670487,0.26361032){\makebox(0,0)[lb]{\smash{Redigeres}}}%
+    \put(0.08882521,0.05444126){\makebox(0,0)[lb]{\smash{Tekst tilføjet(tekst)}}}%
+    \put(0.08595989,0.38681948){\makebox(0,0)[lb]{\smash{Tekst fjernet(tekst)}}}%
+    \put(0.46991404,0.38681948){\makebox(0,0)[lb]{\smash{Ingrediens fjernet(ingrediens)}}}%
+    \put(0.47277937,0.05157593){\makebox(0,0)[lb]{\smash{Ingrediens tilføjet(ingrediens)}}}%
   \end{picture}%
 \endgroup%

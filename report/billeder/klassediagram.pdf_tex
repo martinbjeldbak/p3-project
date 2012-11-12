@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'KlasseDiagram.pdf' (pdf, eps, ps)
+%% Accompanies image file 'klassediagram.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -37,7 +37,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{258.4bp}%
+    \setlength{\unitlength}{264.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -49,20 +49,20 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.94736842)%
+  \begin{picture}(1,0.92749245)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagram.pdf}}%
-    \put(0.58513932,0.37770898){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
-    \put(0.60990712,0.08049536){\makebox(0,0)[lb]{\smash{Råvare}}}%
-    \put(0.15479876,0.52631579){\makebox(0,0)[lb]{\smash{Opskrift}}}%
-    \put(0.56965944,0.82352941){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
-    \put(0.59752322,0.15789474){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.57585139,0.24148607){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.21052632,0.3250774){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.46130031,0.30650155){\makebox(0,0)[lb]{\smash{1..*}}}%
-    \put(0.57275542,0.70278638){\makebox(0,0)[lb]{\smash{0..1}}}%
-    \put(0.57275542,0.47368421){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.13931889,0.82352941){\makebox(0,0)[lb]{\smash{Bogmærke}}}%
-    \put(0.18266254,0.6625387){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.15479876,0.59752322){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.60422961,0.36555891){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
+    \put(0.61933535,0.0755287){\makebox(0,0)[lb]{\smash{Råvare}}}%
+    \put(0.18126888,0.51057402){\makebox(0,0)[lb]{\smash{Opskrift}}}%
+    \put(0.59214502,0.80060423){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
+    \put(0.60725076,0.15407855){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.59214502,0.23564955){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.24169184,0.31117825){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.48036254,0.29909366){\makebox(0,0)[lb]{\smash{1..*}}}%
+    \put(0.58912387,0.6858006){\makebox(0,0)[lb]{\smash{0..1}}}%
+    \put(0.58912387,0.46223565){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.16918429,0.80060423){\makebox(0,0)[lb]{\smash{Bogmærke}}}%
+    \put(0.16012085,0.70694864){\makebox(0,0)[lb]{\smash{0..1}}}%
+    \put(0.17220544,0.56495468){\makebox(0,0)[lb]{\smash{1}}}%
   \end{picture}%
 \endgroup%
