@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{183.2bp}%
+    \setlength{\unitlength}{324bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +48,11 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.63755459)%
+  \begin{picture}(1,0.22962963)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/raavare.pdf}}%
-    \put(0.41484716,0.34497817){\makebox(0,0)[lb]{\smash{Brugbar}}}%
-    \put(0.06550218,0.37554585){\makebox(0,0)[lb]{\smash{Råvare købt}}}%
-    \put(0.51965066,0.51965066){\makebox(0,0)[lb]{\smash{Råvare smidt ud}}}%
-    \put(0.51965066,0.07860262){\makebox(0,0)[lb]{\smash{Råvare opbrugt}}}%
+    \put(0.18765432,0.13580247){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.77530864,0.13580247){\makebox(0,0)[lb]{\smash{Brugbar}}}%
+    \put(0.4,0.16296296){\makebox(0,0)[lb]{\smash{Råvare købt(navn)}}}%
+    \put(0.39012346,0.04444444){\makebox(0,0)[lb]{\smash{Råvare opbrugt(navn)}}}%
   \end{picture}%
 \endgroup%

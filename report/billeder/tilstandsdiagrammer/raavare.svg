@@ -1,224 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="146"
-   version="1.1"
-   width="229"
-   id="svg2"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="raavare.tex">
-  <metadata
-     id="metadata48">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs46" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="720"
-     id="namedview44"
-     showgrid="false"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:zoom="1.9267888"
-     inkscape:cx="79.569627"
-     inkscape:cy="89.637694"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg2">
-    <sodipodi:guide
-       orientation="-1,2.2569854e-07"
-       position="185.97075,83.30609"
-       id="guide3026" />
-  </sodipodi:namedview>
-  <ellipse
-     cx="29"
-     cy="78"
-     fill="#000000"
-     rx="8.0"
-     ry="8.0"
-     stroke="#000000"
-     stroke-width="1"
-     id="ellipse4" />
-  <rect
-     fill="#00ff"
-     height="46"
-     rx="16"
-     ry="16"
-     stroke="#00ff"
-     stroke-width="1"
-     width="70"
-     x="85"
-     y="54"
-     id="rect6" />
-  <rect
-     fill="#ffffff"
-     height="46"
-     rx="16"
-     ry="16"
-     stroke="#000000"
-     stroke-width="1"
-     width="70"
-     x="85"
-     y="54"
-     id="rect8" />
-  <rect
-     fill="#ffffff"
-     height="44"
-     rx="16"
-     ry="16"
-     stroke="#ffffff"
-     stroke-width="1"
-     width="68"
-     x="86"
-     y="55"
-     id="rect10" />
-  <text
-     font-size="12"
-     font-weight="bold"
-     x="92.431091"
-     y="80.578529"
-     id="text12"
-     style="font-size:12px;font-weight:bold;font-family:Dialog">Brugbar</text>
-  <polyline
-     fill="none"
-     points="37,78 85,78"
-     stroke="#000000"
-     stroke-width="1"
-     id="polyline14" />
-  <line
-     fill="#000000"
-     stroke="#000000"
-     stroke-width="1"
-     x1="73"
-     x2="85"
-     y1="85"
-     y2="78"
-     id="line16" />
-  <line
-     fill="#000000"
-     stroke="#000000"
-     stroke-width="1"
-     x1="73"
-     x2="85"
-     y1="71"
-     y2="78"
-     id="line18" />
-  <text
-     font-family="Dialog"
-     font-size="12"
-     x="15"
-     y="60"
-     id="text20">
-Råvare købt</text>
-  <ellipse
-     cx="185"
-     cy="74"
-     fill="#000000"
-     rx="12.0"
-     ry="12.0"
-     stroke="#000000"
-     stroke-width="1"
-     id="ellipse22" />
-  <ellipse
-     cx="185"
-     cy="74"
-     fill="#ffffff"
-     rx="11.0"
-     ry="11.0"
-     stroke="#ffffff"
-     stroke-width="1"
-     id="ellipse24" />
-  <ellipse
-     cx="184"
-     cy="73"
-     rx="7.5"
-     ry="7.5"
-     id="ellipse26"
-     sodipodi:cx="184"
-     sodipodi:cy="73"
-     sodipodi:rx="7.5"
-     sodipodi:ry="7.5"
-     transform="translate(1.0092147,1.0092147)"
-     style="fill:#000000;stroke:#000000;stroke-width:1" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
-     d="m 141,54 0,-16 44.97075,0 L 186,62"
-     id="polyline28"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc" />
-  <line
-     x1="179.54138"
-     x2="185.99989"
-     y1="49.917576"
-     y2="61.999893"
-     id="line30"
-     style="fill:#333399;stroke:#000000;stroke-width:1.00021684;stroke-opacity:1" />
-  <line
-     x1="192.66136"
-     x2="185.96245"
-     y1="49.77895"
-     y2="62.03756"
-     id="line32"
-     style="fill:#333399;stroke:#000000;stroke-width:0.92488384;stroke-opacity:1" />
-  <text
-     font-family="Dialog"
-     font-size="12"
-     x="119"
-     y="27"
-     id="text34">
-Råvare smidt ud</text>
-  <path
-     style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
-     d="m 141,99 0,11 44.97075,0 L 186,85"
-     id="polyline36"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc" />
-  <line
-     x1="192.64925"
-     x2="185.97456"
-     y1="96.851166"
-     y2="84.974556"
-     id="line38"
-     style="fill:#333399;stroke:#000000;stroke-width:0.94911760000000001;stroke-opacity:1" />
-  <line
-     x1="180"
-     x2="186"
-     y1="97"
-     y2="85"
-     id="line40"
-     stroke-width="1"
-     stroke="#333399"
-     fill="#333399"
-     style="stroke:#000000;stroke-opacity:1" />
-  <text
-     font-family="Dialog"
-     font-size="12"
-     x="119"
-     y="128"
-     id="text42">
-Råvare opbrugt</text>
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="93" version="1.1" width="405" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="49" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="40" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="74" x="70" y="25"/>
+<rect fill="#ffffff" height="40" rx="16" ry="16" stroke="#000000" stroke-width="1" width="74" x="70" y="25"/>
+<rect fill="#ffffff" height="38" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="72" x="71" y="26"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="76" y="38">
+Eksisterer</text>
+<polyline fill="none" points="29,48 70,48" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="58" x2="70" y1="55" y2="48"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="58" x2="70" y1="41" y2="48"/>
+<rect fill="#00ff" height="40" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="105" x="286" y="25"/>
+<rect fill="#ffffff" height="40" rx="16" ry="16" stroke="#000000" stroke-width="1" width="105" x="286" y="25"/>
+<rect fill="#ffffff" height="38" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="103" x="287" y="26"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="314" y="38">
+Brugbar</text>
+<polyline fill="none" points="143,33 286,33" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="274" x2="286" y1="40" y2="33"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="274" x2="286" y1="26" y2="33"/>
+<text font-family="Dialog" font-size="12" x="162" y="27">
+Råvare købt(navn)</text>
+<polyline fill="none" points="286,57 143,57" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="155" x2="143" y1="50" y2="57"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="155" x2="143" y1="64" y2="57"/>
+<text font-family="Dialog" font-size="12" x="158" y="75">
+Råvare opbrugt(navn)</text>
 </svg>
