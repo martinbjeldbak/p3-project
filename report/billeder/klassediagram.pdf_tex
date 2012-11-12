@@ -24,6 +24,7 @@
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
+\sffamily
 \begingroup%
   \makeatletter%
   \providecommand\color[2][]{%
@@ -49,7 +50,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.94736842)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/KlasseDiagram.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagram.pdf}}%
     \put(0.58513932,0.37770898){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
     \put(0.60990712,0.08049536){\makebox(0,0)[lb]{\smash{Råvare}}}%
     \put(0.15479876,0.52631579){\makebox(0,0)[lb]{\smash{Opskrift}}}%
