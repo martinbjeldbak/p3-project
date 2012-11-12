@@ -24,6 +24,7 @@
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
+\sffamily
 \begingroup%
   \makeatletter%
   \providecommand\color[2][]{%
