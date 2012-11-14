@@ -31,19 +31,19 @@
     <searchpath href="PROJECT_DIR" />
     <members>
       <member type="profile"
-              name="klassediagram_profile.profile" />
+              name="klassediagramDes_profile.profile" />
       <member type="xmi"
-              name="klassediagram.xmi" />
+              name="klassediagramDes.xmi" />
       <member type="pgml"
-              name="klassediagram_ClassDiagram.pgml"
+              name="klassediagramDes_ClassDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="Class Diagram" />
       <member type="pgml"
-              name="klassediagram_UseCaseDiagram.pgml"
+              name="klassediagramDes_UseCaseDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
               diagramname="Use Case Diagram" />
       <member type="todo"
-              name="klassediagram.todo" />
+              name="klassediagramDes.todo" />
     </members>
     <historyfile name="" />
   </argo>
@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Nov 12 16:58:41 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Nov 14 11:57:49 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -73,6 +73,18 @@
           name = 'Ingrediens' visibility = 'public' isSpecification = 'false' isRoot = 'false'
           isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
           <UML:Classifier.feature>
+            <UML:Attribute xmi.id = '-84-25-21--23-55067b4e:13afe832f90:-8000:0000000000000BF7'
+              name = 'navn' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '-84-25-21--23-55067b4e:13afe832f90:-8000:0000000000000BF8'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '-84-25-21--23-55067b4e:13afe832f90:-8000:0000000000000BF9'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+            </UML:Attribute>
             <UML:Attribute xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:000000000000211B'
               name = 'mængde' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable' targetScope = 'instance'>
@@ -208,6 +220,15 @@
                 </UML:Multiplicity>
               </UML:StructuralFeature.multiplicity>
             </UML:Attribute>
+            <UML:Operation xmi.id = '-84-25-21--23-55067b4e:13afe832f90:-8000:0000000000000BFA'
+              name = 'håndterOpskrift' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id = '-84-25-21--23-55067b4e:13afe832f90:-8000:0000000000000BFB'
+                  name = 'return' isSpecification = 'false' kind = 'return'/>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
           </UML:Classifier.feature>
         </UML:Class>
         <UML:Class xmi.id = '-84-25-18-50--77cec990:13a442f3719:-8000:000000000000086A'
@@ -460,7 +481,7 @@
       name="Class Diagram"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[320, 240, 96, 64]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[320, 240, 104, 80]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
        href="-84-25-18-50--77cec990:13a442f3719:-8000:0000000000000866"
        fill="1"
        fillcolor="white"
@@ -473,8 +494,8 @@
     <rectangle name="Fig0.0"
       x="320"
       y="240"
-      width="96"
-      height="64"
+      width="104"
+      height="80"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -483,7 +504,7 @@
     <text name="Fig0.1"
       x="321"
       y="241"
-      width="94"
+      width="102"
       height="22"
       fill="0"
       fillcolor="white"
@@ -522,7 +543,7 @@
     <rectangle name="Fig0.3"
       x="320"
       y="263"
-      width="96"
+      width="104"
       height="1"
       fill="1"
       fillcolor="black"
@@ -530,7 +551,7 @@
       strokecolor="black"
     />
     <group name="Fig0.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[321, 264, 94, 40]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[321, 264, 102, 56]"
          href="-84-25-18-50--77cec990:13a442f3719:-8000:0000000000000866"
          fill="0"
          fillcolor="white"
@@ -543,8 +564,8 @@
       <rectangle name="Fig0.4.0"
         x="321"
         y="264"
-        width="94"
-        height="40"
+        width="102"
+        height="56"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -553,7 +574,23 @@
       <text name="Fig0.4.1"
         x="321"
         y="264"
-        width="94"
+        width="102"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >navn</text>
+      <text name="Fig0.4.2"
+        x="321"
+        y="280"
+        width="102"
         height="16"
         fill="0"
         fillcolor="white"
@@ -566,10 +603,10 @@
         textsize="12"
         justification="Left"
       >mængde</text>
-      <text name="Fig0.4.2"
+      <text name="Fig0.4.3"
         x="321"
-        y="280"
-        width="94"
+        y="296"
+        width="102"
         height="22"
         fill="0"
         fillcolor="white"
@@ -780,7 +817,7 @@
     </group>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[72, 216, 152, 128]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[56, 216, 116, 152]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-84-25-18-50--77cec990:13a442f3719:-8000:0000000000000869"
        fill="1"
        fillcolor="white"
@@ -791,19 +828,19 @@
     </private>
     
     <rectangle name="Fig2.0"
-      x="72"
+      x="56"
       y="216"
-      width="152"
-      height="128"
+      width="116"
+      height="152"
       fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     />
     <text name="Fig2.1"
-      x="73"
+      x="57"
       y="217"
-      width="150"
+      width="114"
       height="22"
       fill="0"
       fillcolor="white"
@@ -840,9 +877,9 @@
       />
     </group>
     <rectangle name="Fig2.3"
-      x="72"
+      x="56"
       y="239"
-      width="152"
+      width="116"
       height="1"
       fill="1"
       fillcolor="black"
@@ -850,7 +887,7 @@
       strokecolor="black"
     />
     <group name="Fig2.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[73, 240, 150, 104]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[57, 240, 114, 104]"
          href="-84-25-18-50--77cec990:13a442f3719:-8000:0000000000000869"
          fill="0"
          fillcolor="white"
@@ -861,9 +898,9 @@
       </private>
       
       <rectangle name="Fig2.4.0"
-        x="73"
+        x="57"
         y="240"
-        width="150"
+        width="114"
         height="104"
         fill="0"
         fillcolor="white"
@@ -871,9 +908,9 @@
         strokecolor="black"
       />
       <text name="Fig2.4.1"
-        x="73"
+        x="57"
         y="240"
-        width="150"
+        width="114"
         height="16"
         fill="0"
         fillcolor="white"
@@ -887,9 +924,9 @@
         justification="Left"
       >navn</text>
       <text name="Fig2.4.2"
-        x="73"
+        x="57"
         y="256"
-        width="150"
+        width="114"
         height="16"
         fill="0"
         fillcolor="white"
@@ -903,9 +940,9 @@
         justification="Left"
       >billede</text>
       <text name="Fig2.4.3"
-        x="73"
+        x="57"
         y="272"
-        width="150"
+        width="114"
         height="16"
         fill="0"
         fillcolor="white"
@@ -919,9 +956,9 @@
         justification="Left"
       >tilberedningstid</text>
       <text name="Fig2.4.4"
-        x="73"
+        x="57"
         y="288"
-        width="150"
+        width="114"
         height="16"
         fill="0"
         fillcolor="white"
@@ -935,9 +972,9 @@
         justification="Left"
       >url</text>
       <text name="Fig2.4.5"
-        x="73"
+        x="57"
         y="304"
-        width="150"
+        width="114"
         height="16"
         fill="0"
         fillcolor="white"
@@ -951,9 +988,9 @@
         justification="Left"
       >bekræftet</text>
       <text name="Fig2.4.6"
-        x="73"
+        x="57"
         y="320"
-        width="150"
+        width="114"
         height="22"
         fill="0"
         fillcolor="white"
@@ -968,39 +1005,52 @@
       >rating</text>
     </group>
     <rectangle name="Fig2.5"
-      x="72"
+      x="56"
       y="343"
-      width="98"
+      width="116"
       height="1"
       fill="1"
       fillcolor="black"
       stroke="1"
       strokecolor="black"
-      visibility="0"
     />
     <group name="Fig2.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[73, 344, 96, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[57, 344, 114, 24]"
          href="-84-25-18-50--77cec990:13a442f3719:-8000:0000000000000869"
          fill="0"
          fillcolor="white"
          stroke="0"
          strokecolor="black"
-         visibility="0"
     >
       <private>
       </private>
       
       <rectangle name="Fig2.6.0"
-        x="73"
+        x="57"
         y="344"
-        width="96"
-        height="21"
+        width="114"
+        height="24"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
-        visibility="0"
       />
+      <text name="Fig2.6.1"
+        x="57"
+        y="344"
+        width="114"
+        height="22"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >håndterOpskrift()</text>
     </group>
   </group>
   <group name="Fig3"
@@ -1199,7 +1249,7 @@
       strokecolor="black"
     >
       <moveto x="344"
-              y="303" />
+              y="319" />
       <lineto x="344"
               y="376" />
     </path>
@@ -1255,7 +1305,7 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="223"
+      <moveto x="171"
               y="272" />
       <lineto x="320"
               y="272" />
