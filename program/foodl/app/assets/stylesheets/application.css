@@ -7,25 +7,39 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
+ * jquery-ui theme:
+ * http://jqueryui.com/themeroller/#ffDefault='Titillium%20Web'%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=2px&bgColorHeader=dddddd&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=50&borderColorHeader=dddddd&fcHeader=444444&iconColorHeader=00ea23&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=dddddd&fcContent=444444&iconColorContent=ffc40f&bgColorDefault=f6f6f6&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=100&borderColorDefault=dddddd&fcDefault=3cea00&iconColorDefault=666666&bgColorHover=3cea00&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=25&borderColorHover=3cea00&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=dddddd&fcActive=ffc40f&iconColorActive=454545&bgColorHighlight=ffffff&bgTextureHighlight=01_flat.png&bgImgOpacityHighlight=55&borderColorHighlight=cccccc&fcHighlight=444444&iconColorHighlight=3cea00&bgColorError=ffffff&bgTextureError=01_flat.png&bgImgOpacityError=55&borderColorError=ffc40f&fcError=222222&iconColorError=ffc40f&bgColorOverlay=eeeeee&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=80&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=60&thicknessShadow=4px&offsetTopShadow=-4px&offsetLeftShadow=-4px&cornerRadiusShadow=0px
  *
+ *= require star
  *= require_self
  *= require_tree .
- *= require jquery.ui.core
- *= require jquery.ui.theme
- *= require jquery.ui.autocomplete
- *= require jquery.ui.button
- *= require jquery.ui.dialog
+ * require jquery.ui.core
+ * require jquery.ui.theme
+ * require jquery.ui.autocomplete
+ * require jquery.ui.button
+ * require jquery.ui.dialog
+ *= require jquery-ui-1.9.1.custom.css
  */
-* {
-  padding:0;
-  margin:0;
-}
-
 body {
 /*  background:#c9cccf url(bg.png) repeat-x; */
   background-color:#fcfffc;
   text-align:center;
-  font-family:"Trebuchet MS", sans-serif;
+  font-family:'Titillium Web', sans-serif;
+  font-size:12px;
+}
+
+input.text {
+  padding:0px 4px;
+  font-size:1.1em;
+  font-family:'Titillium Web', sans-serif;
+  border:1px solid #ddd;
+  background-color:#fefefe;
+  border-radius:2px;
+  color:#555;
+}
+
+input.button {
+  padding:0px 10px;
 }
 
 #top {
@@ -99,34 +113,6 @@ body {
   margin-right:0;
 }
 
-input.button {
-  border:1px solid #240;
-  border-radius:5px;
-  background-color:#63DD00;
-  color:#240;
-  font-size:16px;
-  padding:4px 8px;
-}
-
-input.button:hover {
-  background-color:#8DE645;
-}
-
-input.text {
-  border:1px solid #343;
-  border-radius:5px;
-  font-size:16px;
-  padding:4px 8px;
-  color:#334;
-  background-color:#fff;
-}
-
-input.text:focus {
-  outline:0px solid #08F;
-  border:2px solid #63DD00;
-  padding:3px 7px;
-}
-
 #main {
   margin:64px auto;
   width:248px;
@@ -174,6 +160,10 @@ input.text:focus {
 
 #search {
   width:100%;
+}
+
+#search input.text {
+  width:170px;
 }
 
 #search input.button {
