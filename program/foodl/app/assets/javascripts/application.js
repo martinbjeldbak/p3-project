@@ -9,8 +9,18 @@
 //
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
+//  see https://github.com/joliss/jquery-ui-rails for modules
 //
 //= require jquery
 //= require jquery_ujs
-// require jquery.ui.all
+//= require jquery.ui.core
+//= require jquery.ui.widget
+//= require jquery.ui.mouse
+//= require jquery.ui.position
+//= require jquery.ui.button
+//= require jquery.ui.autocomplete
 //= require_tree .
+
+$(function() {
+  $('input.button').button();
+});
