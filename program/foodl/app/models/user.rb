@@ -24,4 +24,6 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   has_and_belongs_to_many :favorites, :class_name = "Recipe"
+
+  has_many :list_item
 end
