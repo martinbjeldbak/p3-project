@@ -8,6 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require star
  *= require_self
  *= require_tree .
  * require jquery.ui.core
@@ -17,17 +18,15 @@
  * require jquery.ui.dialog
  *= require jquery-ui-1.9.1.custom.css
  */
-* {
-  padding:0;
-  margin:0;
-}
-
-
 body {
 /*  background:#c9cccf url(bg.png) repeat-x; */
   background-color:#fcfffc;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
+}
+
+input.button {
+  padding:0px 10px;
 }
 
 #top {
