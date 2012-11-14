@@ -8,24 +8,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="top">
-<a href="<%=url_for :controller => 'home', :action => 'index' %> ">
-  <%=image_tag("logobw.png", :alt => "Foodl") %>
-</a>
-<div id="menu">
-<a href="#">Log ind</a>
-<a href="#">Indkøbsliste (tom)</a>
-<a href="#">Favoritter (0)</a>
-</div>
-</div>
-
-<%= yield %>
-
-<div id="bottom">
-<a href="#">Rapport&eacute;r fejl</a>
-<%= link_to "Om Foodl", :action => "about" %>
-<%= link_to "Kotakt Foodl", :action => "contact" %>
-</div>
-  
-  </body>
+  <%= render 'layouts/header' %>
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+</body>
 </html>
