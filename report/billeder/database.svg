@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="396" version="1.1" width="616" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="128" stroke="#ffffff" stroke-width="1" width="160" x="50" y="14"/>
+<rect fill="none" height="128" stroke="#000000" stroke-width="1" width="160" x="50" y="14"/>
+<text font-family="DejaVu Sans" font-size="12" font-weight="bold" x="110" y="27">
+users</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="160" x="50" y="37"/>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="51">
+id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="67">
+name : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="83">
+email : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="99">
+password_digest : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="115">
+created_at : date</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="131">
+updated_at : date</text>
+<rect fill="#ffffff" height="64" stroke="#ffffff" stroke-width="1" width="128" x="274" y="30"/>
+<rect fill="none" height="64" stroke="#000000" stroke-width="1" width="128" x="274" y="30"/>
+<text font-family="DejaVu Sans" font-size="12" font-weight="bold" x="289" y="43">
+users_recipes</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="128" x="274" y="53"/>
+<text font-family="DejaVu Sans" font-size="12" x="278" y="67">
+user_id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="278" y="83">
+recipe_id : integer</text>
+<rect fill="#ffffff" height="144" stroke="#ffffff" stroke-width="1" width="144" x="458" y="14"/>
+<rect fill="none" height="144" stroke="#000000" stroke-width="1" width="144" x="458" y="14"/>
+<text font-family="DejaVu Sans" font-size="12" font-weight="bold" x="504" y="27">
+recipes</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="144" x="458" y="37"/>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="51">
+id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="67">
+name : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="83">
+url : text</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="99">
+picture : binary</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="115">
+rating : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="131">
+created_at : date</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="147">
+updated_at : date</text>
+<rect fill="#ffffff" height="160" stroke="#ffffff" stroke-width="1" width="160" x="50" y="222"/>
+<rect fill="none" height="160" stroke="#000000" stroke-width="1" width="160" x="50" y="222"/>
+<text font-family="DejaVu Sans" font-size="12" font-weight="bold" x="96" y="235">
+list_items</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="160" x="50" y="245"/>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="259">
+id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="275">
+quantity : float</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="291">
+name : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="307">
+unit : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="323">
+user_id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="339">
+food_type_id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="355">
+created_at : date</text>
+<text font-family="DejaVu Sans" font-size="12" x="54" y="371">
+updated_at : date</text>
+<rect fill="#ffffff" height="160" stroke="#ffffff" stroke-width="1" width="144" x="458" y="222"/>
+<rect fill="none" height="160" stroke="#000000" stroke-width="1" width="144" x="458" y="222"/>
+<text font-family="DejaVu Sans" font-size="12" font-weight="bold" x="489" y="235">
+ingredients</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="144" x="458" y="245"/>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="259">
+id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="275">
+quantity : float</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="291">
+unit : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="307">
+name : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="323">
+food_type_id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="339">
+recipe_id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="355">
+created_at : date</text>
+<text font-family="DejaVu Sans" font-size="12" x="462" y="371">
+updated_at : date</text>
+<rect fill="#ffffff" height="112" stroke="#ffffff" stroke-width="1" width="128" x="266" y="222"/>
+<rect fill="none" height="112" stroke="#000000" stroke-width="1" width="128" x="266" y="222"/>
+<text font-family="DejaVu Sans" font-size="12" font-weight="bold" x="291" y="235">
+food_types</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="128" x="266" y="245"/>
+<text font-family="DejaVu Sans" font-size="12" x="270" y="259">
+id : integer</text>
+<text font-family="DejaVu Sans" font-size="12" x="270" y="275">
+name : string</text>
+<text font-family="DejaVu Sans" font-size="12" x="270" y="291">
+verified : boolean</text>
+<text font-family="DejaVu Sans" font-size="12" x="270" y="307">
+created_at : date</text>
+<text font-family="DejaVu Sans" font-size="12" x="270" y="323">
+updated_at : date</text>
+<polyline fill="none" points="274,70 209,70" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="221" x2="209" y1="63" y2="70"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="221" x2="209" y1="77" y2="70"/>
+<text font-family="DejaVu Sans" font-size="12" x="248" y="85">
+0..*</text>
+<text font-family="DejaVu Sans" font-size="12" x="232" y="84">
+1</text>
+<polyline fill="none" points="401,70 458,70" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="446" x2="458" y1="77" y2="70"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="446" x2="458" y1="63" y2="70"/>
+<text font-family="DejaVu Sans" font-size="12" x="410" y="84">
+0..*</text>
+<text font-family="DejaVu Sans" font-size="12" x="437" y="84">
+1</text>
+<polyline fill="none" points="458,286 393,286" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="405" x2="393" y1="279" y2="286"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="405" x2="393" y1="293" y2="286"/>
+<text font-family="DejaVu Sans" font-size="12" x="434" y="304">
+0..*</text>
+<text font-family="DejaVu Sans" font-size="12" x="410" y="303">
+1</text>
+<ellipse cx="426" cy="284" fill="#000000" rx="0.5" ry="0.5" stroke="#000000" stroke-width="1"/>
+<ellipse cx="427" cy="285" fill="#ffffff" rx="-0.5" ry="-0.5" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="522,222 522,157" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="529" x2="522" y1="169" y2="157"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="515" x2="522" y1="169" y2="157"/>
+<text font-family="DejaVu Sans" font-size="12" x="533" y="216">
+0..*</text>
+<text font-family="DejaVu Sans" font-size="12" x="537" y="173">
+1</text>
+<polyline fill="none" points="209,286 266,286" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="254" x2="266" y1="293" y2="286"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="254" x2="266" y1="279" y2="286"/>
+<text font-family="DejaVu Sans" font-size="12" x="215" y="302">
+0..*</text>
+<text font-family="DejaVu Sans" font-size="12" x="255" y="304">
+1</text>
+<polyline fill="none" points="106,222 106,141" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="113" x2="106" y1="153" y2="141"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="99" x2="106" y1="153" y2="141"/>
+<text font-family="DejaVu Sans" font-size="12" x="115" y="215">
+0..*</text>
+<text font-family="DejaVu Sans" font-size="12" x="119" y="159">
+1</text>
+</svg>
