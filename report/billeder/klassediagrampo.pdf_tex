@@ -50,7 +50,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.92749245)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagram.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagrampo.pdf}}%
     \put(0.60422961,0.36555891){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
     \put(0.61933535,0.0755287){\makebox(0,0)[lb]{\smash{Råvare}}}%
     \put(0.18126888,0.51057402){\makebox(0,0)[lb]{\smash{Opskrift}}}%
