@@ -162,6 +162,10 @@ input.button {
   width:100%;
 }
 
+#search input.text {
+  width:170px;
+}
+
 #search input.button {
   float:right;
 }
