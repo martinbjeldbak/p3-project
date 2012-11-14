@@ -25,5 +25,6 @@ class User < ActiveRecord::Base
 
   has_and_belongs_to_many :favorites, :class_name => "Recipe"
 
-  has_many :list_item
+  has_many :list_items
+  has_many :issues
 end
