@@ -23,6 +23,17 @@ body {
   background-color:#fcfffc;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
+  font-size:12px;
+}
+
+input.text {
+  padding:0px 4px;
+  font-size:1.1em;
+  font-family:'Titillium Web', sans-serif;
+  border:1px solid #ddd;
+  background-color:#fefefe;
+  border-radius:2px;
+  color:#555;
 }
 
 input.button {
@@ -98,21 +109,6 @@ input.button {
   margin-top:64px;
   margin-left:0;
   margin-right:0;
-}
-
-input.text {
-  border:1px solid #343;
-  border-radius:5px;
-  font-size:16px;
-  padding:4px 8px;
-  color:#334;
-  background-color:#fff;
-}
-
-input.text:focus {
-  outline:0px solid #08F;
-  border:2px solid #63DD00;
-  padding:3px 7px;
 }
 
 #main {
