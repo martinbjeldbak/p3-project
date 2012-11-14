@@ -1,7 +1,8 @@
+<% provide(:title, 'Food') %>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Foodl</title>
+  <title>Foodl <%= yield(:title) %></title>
   <link rel="shortcut icon" href="favicon.ico" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -9,7 +10,10 @@
 </head>
 <body>
   <%= render 'layouts/header' %>
-  <%= yield %>
-  <%= render 'layouts/footer' %>
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development?  %>
+  </div>
 </body>
 </html>
