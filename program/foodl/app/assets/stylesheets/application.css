@@ -10,22 +10,24 @@
  *
  *= require_self
  *= require_tree .
- *= require jquery.ui.core
- *= require jquery.ui.theme
- *= require jquery.ui.autocomplete
- *= require jquery.ui.button
- *= require jquery.ui.dialog
+ * require jquery.ui.core
+ * require jquery.ui.theme
+ * require jquery.ui.autocomplete
+ * require jquery.ui.button
+ * require jquery.ui.dialog
+ *= require jquery-ui-1.9.1.custom.css
  */
 * {
   padding:0;
   margin:0;
 }
 
+
 body {
 /*  background:#c9cccf url(bg.png) repeat-x; */
   background-color:#fcfffc;
   text-align:center;
-  font-family:"Trebuchet MS", sans-serif;
+  font-family:'Titillium Web', sans-serif;
 }
 
 #top {
@@ -97,19 +99,6 @@ body {
   margin-top:64px;
   margin-left:0;
   margin-right:0;
-}
-
-input.button {
-  border:1px solid #240;
-  border-radius:5px;
-  background-color:#63DD00;
-  color:#240;
-  font-size:16px;
-  padding:4px 8px;
-}
-
-input.button:hover {
-  background-color:#8DE645;
 }
 
 input.text {
