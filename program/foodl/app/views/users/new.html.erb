@@ -1,24 +1,37 @@
-<div id="Login_content">
-  <div id="login_dialog">
-    <h1>
-      Log på Foodl
-    </h1>
-    <div id="get_brugernavn_box" style="height: 40px">
-      <form action="/" method="get">
-        <input type="text" class="text" id="brugernavn" title="Brugernavn" />
-      </form>
+
+<div id="Login_page">
+  <div id="Register_user">
+    <%= form_for @user do |f| %>
+      <%= f.text_field(:navn) %>
+      <%= f.email_field(:user, :email)%>
+      <%= f.password_field_tag(:password)%>
+      <%= text_area_tag(:message, "Hi, nice site", :size => "24x6") %>
+    <% end %>
+  </div>
+
+  <div id="Login_content">
+    <div id="login_dialog">
+      <h1>
+        Log på Foodl
+      </h1>
+      <div id="get_brugernavn_box" style="height: 40px">
+        <form action="/" method="get">
+          <input type="text" class="text" id="brugernavn" title="Brugernavn" />
+        </form>
+      </div>
+      <div id="get_password_box">
+        <form action="/" method="get">
+          <input type="password" class="text" id="password" title="Kodeord" />
+        </form>
+      </div>
+      <div id="login_button">
+        <input type="submit" class="button" value="Log ind" />
+      </div>
     </div>
-    <div id="get_password_box">
-      <form action="/" method="get">
-        <input type="password" class="text" id="password" title="Kodeord" />
-      </form>
-    </div>
-    <div id="login_button">
-      <input type="submit" class="button" value="Log ind" />
+    <div id="create_new_user"> 
+        <a href="#">Opret bruger</a>
+        <a href="#">Glemt password? Få hjælp her</a>
     </div>
   </div>
-  <div id="create_new_user"> 
-      <a href="#">Opret bruger</a>
-      <a href="#">Glemt password? Få hjælp her</a>
-  </div>
+  <div style="clear:both"> </div>
 </div>
