@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="568" version="1.1" width="866" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#ffffff" points="36,14 554,14 554,37 603,37 603,541 36,541 36,14" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="518" x="36" y="14"/>
+<text font-family="Dialog" font-size="12" x="41" y="27">
+Model</text>
+<rect fill="none" height="504" stroke="#000000" stroke-width="1" width="567" x="36" y="37"/>
+<rect fill="#ffffff" height="85" stroke="#ffffff" stroke-width="1" width="71" x="468" y="270"/>
+<rect fill="none" height="85" stroke="#000000" stroke-width="1" width="71" x="468" y="270"/>
+<text font-family="Dialog" font-size="12" x="473" y="283">
+Ingrediens</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="71" x="468" y="293"/>
+<text font-family="Dialog" font-size="12" x="472" y="307">
+mængde</text>
+<text font-family="Dialog" font-size="12" x="472" y="323">
+enhed</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="71" x="468" y="333"/>
+<rect fill="#ffffff" height="88" stroke="#ffffff" stroke-width="1" width="96" x="452" y="414"/>
+<rect fill="none" height="88" stroke="#000000" stroke-width="1" width="96" x="452" y="414"/>
+<text font-family="Dialog" font-size="12" x="480" y="427">
+Råvare</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="96" x="452" y="437"/>
+<text font-family="Dialog" font-size="12" x="456" y="451">
+eksisterer</text>
+<text font-family="Dialog" font-size="12" x="456" y="467">
+navn</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="96" x="452" y="478"/>
+<rect fill="#ffffff" height="165" stroke="#ffffff" stroke-width="1" width="116" x="196" y="302"/>
+<rect fill="none" height="165" stroke="#000000" stroke-width="1" width="116" x="196" y="302"/>
+<text font-family="Dialog" font-size="12" x="231" y="315">
+Opskrift</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="116" x="196" y="325"/>
+<text font-family="Dialog" font-size="12" x="200" y="339">
+navn</text>
+<text font-family="Dialog" font-size="12" x="200" y="355">
+billede</text>
+<text font-family="Dialog" font-size="12" x="200" y="371">
+tilberedningstid</text>
+<text font-family="Dialog" font-size="12" x="200" y="387">
+url</text>
+<text font-family="Dialog" font-size="12" x="200" y="403">
+bekræftet</text>
+<text font-family="Dialog" font-size="12" x="200" y="419">
+rating</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="116" x="196" y="437"/>
+<polyline fill="none" points="311,334 468,334" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="311,334 321,329 331,334 321,339" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="311,334 321,329 331,334 321,339" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="327" y="355">
+1</text>
+<text font-family="Dialog" font-size="12" x="433" y="354">
+1..*</text>
+<rect fill="#ffffff" height="184" stroke="#ffffff" stroke-width="1" width="146" x="188" y="54"/>
+<rect fill="none" height="184" stroke="#000000" stroke-width="1" width="146" x="188" y="54"/>
+<text font-family="Dialog" font-size="12" x="242" y="67">
+Bruger</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="146" x="188" y="77"/>
+<text font-family="Dialog" font-size="12" x="192" y="91">
+navn</text>
+<text font-family="Dialog" font-size="12" x="192" y="107">
+email</text>
+<text font-family="Dialog" font-size="12" x="192" y="123">
+adgangskode</text>
+<text font-family="Dialog" font-size="12" x="192" y="139">
+adgangsniveau</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="146" x="188" y="157"/>
+<text font-family="Dialog" font-size="12" x="192" y="171">
+ret stamdata()</text>
+<text font-family="Dialog" font-size="12" x="192" y="187">
+slet bruger()</text>
+<text font-family="Dialog" font-size="12" x="192" y="203">
+håndter indkøbsliste()</text>
+<text font-family="Dialog" font-size="12" x="192" y="219">
+håndter favoritter()</text>
+<rect fill="#ffffff" height="72" stroke="#ffffff" stroke-width="1" width="96" x="484" y="126"/>
+<rect fill="none" height="72" stroke="#000000" stroke-width="1" width="96" x="484" y="126"/>
+<text font-family="Dialog" font-size="12" x="518" y="139">
+Vare</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="96" x="484" y="149"/>
+<text font-family="Dialog" font-size="12" x="488" y="163">
+navn</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="96" x="484" y="174"/>
+<polyline fill="none" points="508,354 508,414" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="508,354 513,364 508,374 503,364" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="508,354 513,364 508,374 503,364" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="518" y="376">
+0..*</text>
+<text font-family="Dialog" font-size="12" x="522" y="411">
+1</text>
+<polyline fill="none" points="516,270 516,197" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="516,197 523,209 509,209" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="516,197 523,209 509,209" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="333,166 484,166" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="380" y="157">
+indkøbsliste</text>
+<text font-family="Dialog" font-size="12" x="343" y="160">
+0..1</text>
+<text font-family="Dialog" font-size="12" x="454" y="161">
+0..*</text>
+<polyline fill="none" points="252,237 252,302" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="261" y="272">
+favoritter</text>
+<text font-family="Dialog" font-size="12" x="258" y="259">
+0..*</text>
+<text font-family="Dialog" font-size="12" x="258" y="292">
+0..*</text>
+<polygon fill="#ffffff" points="652,254 802,254 802,277 851,277 851,541 652,541 652,254" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="150" x="652" y="254"/>
+<text font-family="Dialog" font-size="12" x="657" y="267">
+Funktion</text>
+<rect fill="none" height="264" stroke="#000000" stroke-width="1" width="199" x="652" y="277"/>
+<rect fill="#ffffff" height="101" stroke="#ffffff" stroke-width="1" width="104" x="692" y="422"/>
+<rect fill="none" height="101" stroke="#000000" stroke-width="1" width="104" x="692" y="422"/>
+<text font-family="Dialog" font-size="12" x="699" y="435">
+Søgehåndtering</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="104" x="692" y="445"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="104" x="692" y="474"/>
+<text font-family="Dialog" font-size="12" x="696" y="488">
+søg()</text>
+<text font-family="Dialog" font-size="12" x="696" y="504">
+skaler()</text>
+<polygon fill="#ffffff" points="84,102 152,102 162,112 162,157 84,157 84,102" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="84,102 152,102 162,112 162,157 84,157 84,102" stroke="#000000" stroke-width="1"/>
+<polygon fill="#b2b2b2" points="152,102 162,112 152,112 152,102" stroke="#b2b2b2" stroke-width="1"/>
+<polyline fill="none" points="152,102 162,112 152,112 152,102" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="87" y="117">
+Værditype:</text>
+<text font-family="Dialog" font-size="12" x="87" y="132">
+{bruger,</text>
+<text font-family="Dialog" font-size="12" x="87" y="147">
+admin}</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="162" x2="167" y1="134" y2="134"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="172" x2="177" y1="134" y2="134"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="182" x2="187" y1="134" y2="134"/>
+<rect fill="#ffffff" height="104" stroke="#ffffff" stroke-width="1" width="128" x="692" y="294"/>
+<rect fill="none" height="104" stroke="#000000" stroke-width="1" width="128" x="692" y="294"/>
+<text font-family="Dialog" font-size="12" x="706" y="307">
+Brugerhåndtering</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="128" x="692" y="317"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="128" x="692" y="339"/>
+<text font-family="Dialog" font-size="12" x="696" y="353">
+log ind()</text>
+<text font-family="Dialog" font-size="12" x="696" y="369">
+log ud()</text>
+<text font-family="Dialog" font-size="12" x="696" y="385">
+opret bruger()</text>
+<polyline fill="none" points="333,102 756,102 756,294" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="69" stroke="#ffffff" stroke-width="1" width="112" x="52" y="286"/>
+<rect fill="none" height="69" stroke="#000000" stroke-width="1" width="112" x="52" y="286"/>
+<text font-family="Dialog" font-size="12" x="76" y="299">
+Fejlrapport</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="112" x="52" y="309"/>
+<text font-family="Dialog" font-size="12" x="56" y="323">
+beskrivelse</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="112" x="52" y="333"/>
+<polyline fill="none" points="116,286 116,278 228,278 228,237" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="128" y="273">
+rapporter fejl</text>
+<text font-family="Dialog" font-size="12" x="73" y="279">
+0..*</text>
+<text font-family="Dialog" font-size="12" x="207" y="253">
+1</text>
+<rect fill="#ffffff" height="85" stroke="#ffffff" stroke-width="1" width="104" x="60" y="406"/>
+<rect fill="none" height="85" stroke="#000000" stroke-width="1" width="104" x="60" y="406"/>
+<text font-family="Dialog" font-size="12" x="78" y="419">
+Fejlkategori</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="104" x="60" y="429"/>
+<text font-family="Dialog" font-size="12" x="64" y="443">
+navn</text>
+<text font-family="Dialog" font-size="12" x="64" y="459">
+beskrivelig</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="104" x="60" y="469"/>
+<polyline fill="none" points="116,354 116,406" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="122" y="371">
+0..*</text>
+<text font-family="Dialog" font-size="12" x="129" y="401">
+1</text>
+<polyline fill="none" points="252,466 252,518 692,518" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="547,462 692,462" stroke="#000000" stroke-width="1"/>
+</svg>

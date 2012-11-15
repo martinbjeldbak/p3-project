@@ -1,5 +1,7 @@
 Foodl::Application.routes.draw do
 
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -49,13 +51,13 @@ Foodl::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  root to: 'home#index'
   
-  match "about" => "home#about"
-
-  match "contact" => "home#contact"
-
-  match "users/:action" => "users"
+  match "/about", to: 'home#about'
+  match "/contact", to: 'home#contact'
+  match '/register', to: 'users#new'
+  match '/login', to: 'users#login'
+  match "users/:action", to: 'users'
 
   # See how all your routes lay out with "rake routes"
 

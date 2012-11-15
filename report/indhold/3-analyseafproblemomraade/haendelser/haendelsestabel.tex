@@ -1,24 +1,14 @@
-\begin{table}[H]
-\centering
-\begin{tabular}{ r | c  c  c  c  c }
-\hline
-                      &  \multicolumn{5}{c}{\textbf{Klasser}} \\
-\textbf{Hændelser}    & Bogmærke   & Opskrift   & Indkøbsliste & Ingrediens & Råvare     \\ \hline
-Opskrift fundet       &            & \once      &              & \once      &            \\
-Opskrift smidt ud     & \iter      & \once      &              & \once      &            \\
-Bogmærke tilføjet     & \once      & \iter      &              &            &            \\
-Bogmærke fjernet      & \once      & \iter      &              &            &            \\
-Indkøbsliste oprettet &            &            & \once        &            &            \\
-Indkøbsliste færdig   &            &            & \once        &            &            \\
-Ingrediens tilføjet   &            &            & \iter        & \iter      &            \\
-Ingrediens fjernet    &            &            & \iter        & \iter      &            \\
-Tekst tilføjet        &            &            & \iter        &            &            \\
-Tekst fjernet         &            &            & \iter        &            &            \\
-Råvare smidt ud       &            &            &              &            & \once      \\
-Råvare opbrugt        &            &            &              &            & \once      \\
-Råvare købt           &            &            & \iter        &            & \once      \\ \hline
-\end{tabular}
-\capt{Hændelsestabel for klasserne bogmærke, opskrift, indkøbsliste, ingrediens og råvare.}
-\label{table:haendelsestabel}
-\end{table}
-
+\ourtable{haendelsestabel}{5}{Hændelsestabel for klasserne bogmærke, opskrift, indkøbsliste, ingrediens og råvare. \iter-symbolet illustrerer, at den tilhørende hændelse kan forekomme flere gange i samme klasse. Det betyder, at denne hændelse kan ses som en iteration i tilstandsdiagrammerne i \secref{sec:adfaerd}. \once-symbolet illustrerer, at den tilhørende hændelse forekommer en gang i samme klasse. Det betyder, at hændelsen kan ses som en selektion eller en sekvens i tilstandsdiagrammerne.}
+           {Klasser}
+       {Hændelser             }{Bogmærke   & Opskrift   & Indkøbsliste & Ingrediens  & Råvare  }{
+\ourrow{Opskrift smidt ud     }{\iter      & \once      &              &  \once      &         }
+\ourrow{Bogmærke tilføjet     }{\once      & \iter      &              &             &         }
+\ourrow{Bogmærke fjernet      }{\once      & \iter      &              &             &         }
+\ourrow{Indkøbsliste færdig   }{           &            &  \once       &             &         }
+\ourrow{Ingrediens tilføjet   }{           &            &  \iter       &  \iter     &         }
+\ourrow{Ingrediens fjernet    }{           &            &  \iter       &  \iter     &         }
+\ourrow{Tekst tilføjet        }{           &            &  \iter       &             &         } 
+\ourrow{Tekst fjernet         }{           &            &  \iter       &             &         }
+\ourrow{Råvare opbrugt        }{           &            &              &             & \iter   }
+\ourrow{Råvare købt           }{           &            &              &             & \iter   }
+}
