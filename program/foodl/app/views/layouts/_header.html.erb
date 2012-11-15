@@ -3,7 +3,7 @@
     <%=image_tag("logobw.png", :alt => "Foodl") %>
   </a>
   <nav>
-    <a href="#">Log ind</a>
+    <%= link_to "Log ind", :controller => "users", :action => "new" %>
     <a href="#">Indkøbsliste (tom)</a>
     <a href="#">Favoritter (0)</a>
   </nav>

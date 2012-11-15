@@ -57,8 +57,7 @@ Foodl::Application.routes.draw do
  
   match '/about', to: 'home#about'
   match '/contact', to: 'home#contact'
-  match '/register', to: 'users#new'
-  match '/login', to: 'users#login'
+  match '/login', to: 'users#new'
 
   # See how all your routes lay out with "rake routes"
 
