@@ -7,20 +7,13 @@
     <%= form_for @user do |f| %>
       <%= render 'shared/error_messages'%>
     <div class="input">
-      <%= f.label(:name, "Brugernavn:")%>
-      <%= f.text_field(:name, :class => "text") %>
+      <%= f.email_field(:email, :class => "text", :placeholder => "Email") %>
     </div>
     <div class="input">
-      <%= f.label(:email, "E-mail adresse:")%>
-      <%= f.email_field(:email, :class => "text") %>
+      <%= f.password_field(:password, :class => "text", :placeholder => "Kodeord")%>
     </div>
     <div class="input">
-      <%= f.label(:password, "kodeord:")%>
-      <%= f.password_field(:password, :class => "text")%>
-    </div>
-    <div class="input">
-      <%= f.label(:password_confirmation, "Bekræft kodeord:")%>
-      <%= f.password_field(:password_confirmation, :class => "text")%>
+      <%= f.password_field(:password_confirmation, :class => "text", :placeholder => "Bekræft kodeord")%>
     </div>
     <div>
       <input type="submit" class="button" value="Opret" />
@@ -33,19 +26,17 @@
       <h1>
         Log på Foodl
       </h1>
-      <div id="get_brugernavn_box" style="height: 40px">
-        <form action="/" method="get">
-          <input type="text" class="text" id="brugernavn" title="Brugernavn" />
-        </form>
+      <%= form_for :session, url: sessions_path do |f| %>
+      <div class="input">
+        <%= f.email_field(:email, :class => "text", :placeholder => "Email")%>
       </div>
-      <div id="get_password_box">
-        <form action="/" method="get">
-          <input type="password" class="text" id="password" title="Kodeord" />
-        </form>
+      <div class="input">
+        <%= f.password_field(:password, :class => "text", :placeholder => "Password")%>
       </div>
-      <div id="login_button">
+      <div>
         <input type="submit" class="button" value="Log ind" />
       </div>
+      <% end %>
     </div>
     <div id="create_new_user"> 
         <a href="#">Glemt password? Få hjælp her</a>
