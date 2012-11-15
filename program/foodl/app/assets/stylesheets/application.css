@@ -33,6 +33,18 @@ body {
   margin:64px auto;
 }
 
+.container a:link,
+.container a:visited,
+.container a:active {
+  color:#3cea00;
+  text-decoration:none;
+}
+
+.container a:hover {
+  color:#ffc40f;
+  text-decoration:underline;
+}
+
 input.text {
   padding:0px 4px;
   font-size:1.1em;
