@@ -1,20 +1,20 @@
 class SessionsController < ApplicationController
   def new
-    #redirect_to 'users/new'
   end
 
   def create
     user = User.find_by_email(params[:session][:email].downcase)
-    if user and user.authenticate(params[:session][:password])
-      # Sign user in and redirect to homepage?
+    if user && user.authenticate(params[:session][:password])
+      sign_in user
+      redirect_to root_path
     else
       flash[:error] = "Forkert brugernavn/kodeord kombination"
-      render 'users/new'
+      redirect_to login_path
     end
-    #render 'user/new'
-    render 'new'
   end
 
   def destroy
+    sign_out
+    redirect_to root_url
   end
 end
