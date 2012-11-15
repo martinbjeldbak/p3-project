@@ -18,6 +18,27 @@ $grayMediumLight: #eaeaea;
   }
 }
 
+.alert {
+  border-radius: 15px;
+  background: $grayMediumLight;
+  float: center;
+  clear: both;
+  width: 50%;
+  padding: 5px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  @include box_sizing;
+}
+
+.alert-success {
+
+}
+
+.alert-error {
+
+}
+
 .debug_dump {
   border-radius: 15px;
   //border: 1px solid
