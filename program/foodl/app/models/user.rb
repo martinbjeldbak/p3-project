@@ -23,5 +23,8 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
-  has_and_belongs_to_many :favorites, :class_name = "Recipe"
+  has_and_belongs_to_many :favorites, :class_name => "Recipe"
+
+  has_many :list_items
+  has_many :issues
 end

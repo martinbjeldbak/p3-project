@@ -1,16 +1,16 @@
 \section{Klasser}
 \label{sec:klasser}
 
-En klasse er en beskrivelse af en samling af objekter med samme struktur, adfærdsmønster og attributter \cite[s. ~51]{ooad}. Som nævnt i indledningen til kapitlet, er et af målene med analysen af problemområdet, at skabe et overblik over hvilke klasser og hændelser systemet skal have. Hændelser vil vi dog først komme nærmere ind på, i kommende section \ref{sec:haendelser}, men overblikket over hvilke klasser systemet skal have, kan skabes ved først at finde så mange klasserkandidater, som muligt, og dernæst at afgrænse disse, så kun de mest relevante klasser er tilbage. I vores tilfælde anvendte vi rigebilleder, som kan ses i \ref{ap:rigebilleder}, samt systemdefinitionen, som hjælpemidler, til at finde frem til de klasser, som vi vil modellere i problemområdet.
+En klasse er en beskrivelse af en samling af objekter med samme struktur, adfærdsmønster og attributter \cite[s. ~51]{ooad}. Som nævnt i indledningen til kapitlet, er et af målene med analysen af problemområdet at skabe et overblik over, hvilke klasser og hændelser systemet skal have. Hændelser bliver dog præsenteret i \tableref{table:haendelsestabel}. Overblikket over hvilke klasser systemet skal have, kan skabes ved først at finde så mange klasserkandidater, som muligt, og dernæst at afgrænse disse, så kun de mest relevante klasser er tilbage. I vores tilfælde anvendte vi rigebilleder, som kan ses i \apref{ap:rigebilleder}, samt systemdefinitionen som hjælpemidler til at finde frem til de klasser, som vi vil modellere i problemområdet.
 
-Grundet den iterative arbejdsproces, er klasser undervejs blevet tilføjet og fjerent, og vi ønsker nu at kaste lys over baggrunden bag de valgte klasser. I gennem processen har vi også fravalgt klasser. Disse, med beskrivelse, kan findes i \apref{ap:fravalgteklasser}.
+Grundet den iterative arbejdsproces, er klasser undervejs blevet tilføjet og fjernet, og vi ønsker nu at kaste lys over baggrunden bag de valgte klasser. I gennem processen har vi også fravalgt klasser. Disse, med beskrivelse, kan findes i \apref{ap:fravalgteklasser}.
 
-Herunder ses de valgte klasser og hvorfor vi vælger at have dem med i vores model af problemområdet.
-Vi mener at disse klasser samler de objekter og hændelser, som er relevant for denne model af problemområdet.
+Herunder ses de valgte klasser, og hvorfor vi vælger at have dem med i vores model af problemområdet.
+Vi mener at disse klasser samler de objekter og hændelser, som er relevante for denne model af problemområdet.
 
 \begin{description}
 \item[Ingrediens] \hfill \\ 
-I opskrifter bruges der flere ingredienser. En ingrediens består af en råvare og en mængde af denne. Det er et problem at finde opskrifter, der indeholder ingredienser svarende til de råvarer man har til rådig. Det er et problem for informanterne at maden laves i for store portioner, altså er det et problem hvis en opskrifts ingredienser indeholder store mængder.
+I opskrifter bruges der flere ingredienser. En ingrediens består af en råvare og en mængde af denne. Det er et problem at finde opskrifter, der indeholder ingredienser svarende til de råvarer man har til rådighed. Det er et problem for informanterne, at maden laves i for store portioner, altså er det et problem, hvis en opskrifts ingredienser indeholder store mængder.
 
 \item[Bogmærke] \hfill \\
 Det er en del af problemområdet, for brugere at huske de gode opskrifter. Der vil til tider blive benyttet en opskrift, der er så god, at den er værd at gemme til en anden gang. Derfor beholder vi denne klasse.
@@ -25,34 +25,26 @@ Vi vurderer, at der i en husholdning ofte bliver skrevet en indkøbsliste med de
 En opskrift er det centrale i problemområdet. Opskrifterne indeholder forskellige ingredienser. Det er nødvendigt at have råvarer nok til at matche ingredienserne i opskriften, før denne kan laves. Man må gå ud fra at den typiske private madlaver har mange opskrifter i kogebogen, som han/hun reelt ikke har råvarerne til at kunne lave.
 \end{description}
 
-\subsection{Valgte hændelser}
-\label{sec:haendelser}
-Ved hjælp af klassekandidaterne, er det nu muligt at finde hændelseskandidater. Hændelserne er kommet til verden ud fra diverse forskellige forløb, der kan påvirke klasser. For at opretholde en konsistens mellem hændelserne, er de formuleret i datid. Det er igen vigtigt at nævne, at følgende er \emph{kandidater} og kan ændres under den iterative arbejdsproces. 
+Ved hjælp af klassekandidaterne er det nu muligt at finde hændelseskandidater. Hændelserne er kommet til verden ud fra diverse forskellige forløb, der kan påvirke klasser. For at opretholde en konsistens mellem hændelserne, er de formuleret i datid. Det er igen vigtigt at nævne, at følgende er \emph{kandidater} og kan ændres under den iterative arbejdsproces. 
 
-\subsection{Valgte hændelser}
-Følgende hændelser er blevet skabt ud fra de valgte klassekandidater, som gruppen kom frem til i \secref{sec:klasser}. Klassekandidaterne er karaktiseret ved hjælp af følgende hændelseskandidater: 
+I \tableref{table:haendelsestabel} ses de valgte hændelser, og hvilke klasser, disse hændelser, har en indflydelse på. Hver hændelse forårsager et tilstandsskift, og disse tilstande kan ses i tilstandsdiagrammerne i \secref{sec:adfaerd}. Hændelsestabellen giver et hurtigt overblik over hændelser og klasser. I hændelsestabellen benytter vi \iter-symbolet til at illustrere, at den tilhørende hændelse kan forekomme flere gange i samme klasse. Det betyder, at denne hændelse kan ses som en iteration i tilstandsdiagrammerne i \secref{sec:adfaerd}. Derudover benytter vi \once-symbolet til at illustrere, at den tilhørende hændelse forekommer en gang i samme klasse. Det betyder, at hændelsen kan ses som en selektion eller en sekvens i tilstandsdiagrammerne.
 
-\begin{itemize} [noitemsep]
-\item Råvare opbrugt
-\item Råvare smidt ud
-\item Råvare købt
-\item Opskrift fundet
-\item Opskrift valgt
-\item Opskrift smidt ud
-\item Bogmærke tilføjet
-\item Bogmærke fjernet
-\item Indkøbsliste oprettet
-\item Indkøbsliste færdig
-\item Indkøbsliste smidt ud
-\item Ingrediens tilføjet
-\item Ingrediens fjernet
-\item Tekst tilføjet
-\item Tekst fjernet
-\end{itemize}
-
-\subsection{Hændelsestabel}
-Når de valgte klasser og hændelser er kommet på plads, giver det mulighed at fremstille et hændelsestabel, der danner overblik over sammenhæng mellem klasser og fælles hændelser. Herunder ses hændelsestabellen:
+%\begin{itemize} [noitemsep]
+%\item Råvare opbrugt
+%\item Råvare smidt ud
+%\item Råvare købt
+%\item Opskrift fundet
+%\item Opskrift valgt
+%\item Opskrift smidt ud
+%\item Bogmærke tilføjet
+%\item Bogmærke fjernet
+%\item Indkøbsliste oprettet
+%\item Indkøbsliste færdig
+%\item Indkøbsliste smidt ud
+%\item Ingrediens tilføjet
+%\item Ingrediens fjernet
+%\item Tekst tilføjet
+%\item Tekst fjernet
+%\end{itemize}
 
 \input{indhold/3-analyseafproblemomraade/haendelser/haendelsestabel}
-
-
