@@ -5,6 +5,7 @@
       Opret bruger på Foodl
     </h1>
     <%= form_for @user do |f| %>
+      <%= render 'shared/error_messages'%>
     <div class="input">
       <%= f.label(:name, "Brugernavn:")%>
       <%= f.text_field(:name, :class => "text") %>
