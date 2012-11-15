@@ -62,7 +62,7 @@ Foodl::Application.routes.draw do
   match '/login', to: 'users#new'
   match '/logout', to: 'sessions#destroy', via: :delete
 
-  match '/search/:action', to: 'search#index'
+  match '/search', to: 'search#result'
   match '/users/:action', to: 'users'
 
   # See how all your routes lay out with "rake routes"

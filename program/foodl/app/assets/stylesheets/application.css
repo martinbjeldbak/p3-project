@@ -22,7 +22,8 @@
  */
 body {
 /*  background:#c9cccf url(bg.png) repeat-x; */
-  background-color:#fcfffc;
+//  background-color:#fcfffc;
+  background:#dee8d9 url(bg.png) repeat-x;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
   font-size:12px;
@@ -30,13 +31,13 @@ body {
 
 .container {
   width:800px;
-  margin:64px auto;
+  margin:128px auto;
 }
 
 .container a:link,
 .container a:visited,
 .container a:active {
-  color:#35AC0B;
+  color:#325030;
   text-decoration:none;
 }
 
@@ -49,7 +50,7 @@ input.text {
   padding:0px 4px;
   font-size:1.1em;
   font-family:'Titillium Web', sans-serif;
-  border:1px solid #ddd;
+  border:1px solid #aba;
   background-color:#fefefe;
   border-radius:2px;
   color:#555;
@@ -72,7 +73,10 @@ footer, nav, header {
 }
 
 header {
-  background-color:#ccc;
+  background-color:#3B4539;
+  background-color:#222C21;
+  background:#222C21 url(header.png) repeat-x;
+  box-shadow:0 0 16px 0px #333;
   height:32px;
   text-align:left;
   padding-left:16px;
@@ -104,7 +108,8 @@ footer a:hover {
 }
 
 h1 {
-  font-family: "Ropa sans";
+  font-family: "Segoe UI";
+  color:#325030;
   font-size: 21px;
   margin-bottom: 20px;
 }
@@ -112,15 +117,18 @@ h1 {
 header a:link img,
 header a:visited img,
 header a:active img {
+  font-weight:bold;
   height:24px;
   margin-top:4px;
   opacity:0.7;
+  background-color:#eee;
 }
 
 header a:hover img {
   height:24px;
   margin-top:4px;
   opacity:1;
+  background-color:#fff;
 }
 
 header nav {
@@ -132,14 +140,16 @@ header nav a:link,
 header nav a:active,
 header nav a:visited {
   text-decoration:none;
-  color:#676;
+  color:#eee;
+  text-shadow:1px 1px 2px #000;
   line-height:32px;
   padding:0 8px;
   font-weight:bold;
 }
 
 header nav a:hover {
-  color:#141;
+  color:#fff;
+  text-decoration:underline;
 }
 
 #logo {

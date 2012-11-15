@@ -1,6 +1,7 @@
 <header>
-  <%= link_to image_tag("logobw.png", alt: "Foodl"), root_url %>
-
+  <a href="<%=url_for :controller => 'search', :action => 'index' %> ">
+    <%=image_tag("header_logo.png", :alt => "Foodl") %>
+  </a>
   <nav>
     <a href="#">Indkøbsliste (tom)</a>
     <a href="#">Favoritter (0)</a>

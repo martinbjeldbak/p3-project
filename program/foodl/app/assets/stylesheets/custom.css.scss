@@ -41,7 +41,8 @@ $grayMediumLight: #eaeaea;
 .debug_dump {
   border-radius: 15px;
   //border: 1px solid
-  background: $grayMediumLight;
+  background-color: #f7fcf7;
+  box-shadow:0 0 32px 0 #ccd2cc; 
   clear: both;
   float: center;
   width: 50%;
