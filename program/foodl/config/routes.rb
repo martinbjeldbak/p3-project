@@ -1,6 +1,6 @@
 Foodl::Application.routes.draw do
 
-  get "search/index"
+#  get "search/index"
 
   resources :users
 
@@ -59,7 +59,7 @@ Foodl::Application.routes.draw do
   match '/contact', to: 'home#contact'
   match '/register', to: 'users#new'
   match '/login', to: 'users#login'
-  match '/search/:action', to: 'search'
+  match '/search/:action', to: 'search#index'
   match '/users/:action', to: 'users'
 
   # See how all your routes lay out with "rake routes"
