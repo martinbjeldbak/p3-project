@@ -20,7 +20,6 @@ $grayMediumLight: #eaeaea;
 
 .alert {
   border-radius: 15px;
-  background: $grayMediumLight;
   float: center;
   clear: both;
   width: 50%;
@@ -32,11 +31,11 @@ $grayMediumLight: #eaeaea;
 }
 
 .alert-success {
-
+  background: yellow;
 }
 
 .alert-error {
-
+  background: #ff0000;
 }
 
 .debug_dump {
