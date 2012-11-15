@@ -54,16 +54,16 @@ Foodl::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root to: 'home#index'
-  
+  root to: 'search#index'
+ 
   match '/about', to: 'home#about'
   match '/contact', to: 'home#contact'
+
   match '/register', to: 'users#new'
 
   match '/login', to: 'users#new'
   match '/logud', to: 'sessions#destroy', via: :delete
   match '/sessions', to: 'users#new'
-
 
   match '/search/:action', to: 'search#index'
   match '/users/:action', to: 'users'

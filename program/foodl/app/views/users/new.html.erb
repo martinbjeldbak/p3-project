@@ -5,21 +5,22 @@
       Opret bruger på Foodl
     </h1>
     <%= form_for @user do |f| %>
+      <%= render 'shared/error_messages'%>
     <div class="input">
       <%= f.label(:name, "Brugernavn:")%>
-      <%= f.text_field(:name) %>
+      <%= f.text_field(:name, :class => "text") %>
     </div>
     <div class="input">
       <%= f.label(:email, "E-mail adresse:")%>
-      <%= f.email_field(:email) %>
+      <%= f.email_field(:email, :class => "text") %>
     </div>
     <div class="input">
       <%= f.label(:password, "kodeord:")%>
-      <%= f.password_field(:password)%>
+      <%= f.password_field(:password, :class => "text")%>
     </div>
     <div class="input">
       <%= f.label(:password_confirmation, "Bekræft kodeord:")%>
-      <%= f.password_field(:password_confirmation)%>
+      <%= f.password_field(:password_confirmation, :class => "text")%>
     </div>
     <div>
       <input type="submit" class="button" value="Opret" />

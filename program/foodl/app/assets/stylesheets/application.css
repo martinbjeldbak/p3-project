@@ -28,6 +28,12 @@ body {
   font-size:12px;
 }
 
+.container {
+  width:800px;
+  margin:0 auto;
+  padding-top:120px;
+}
+
 input.text {
   padding:0px 4px;
   font-size:1.1em;
@@ -126,7 +132,6 @@ header nav a:hover {
 }
 
 #logo {
-  margin-top:64px;
   margin-left:0;
   margin-right:0;
 }
@@ -181,7 +186,7 @@ header nav a:hover {
 }
 
 #search input.text {
-  width:170px;
+  width:185px;
 }
 
 #search input.button {
