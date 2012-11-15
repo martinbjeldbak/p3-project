@@ -42,6 +42,10 @@ input.button {
   padding:0px 10px;
 }
 
+pre {
+  font-family: Consolas, monospace;
+}
+
 #top {
   background-color:#ccc;
   height:32px;
