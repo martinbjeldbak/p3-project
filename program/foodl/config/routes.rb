@@ -3,7 +3,7 @@ Foodl::Application.routes.draw do
 #  get "search/index"
 
   resources :users
-  resources :sessions, only: [:new, :destroy]
+  resources :sessions, only: [:new, :create, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -63,7 +63,6 @@ Foodl::Application.routes.draw do
 
   match '/login', to: 'users#new'
   match '/logud', to: 'sessions#destroy', via: :delete
-  match '/sessions', to: 'users#new'
 
   match '/search', to: 'search#result'
   match '/users/:action', to: 'users'
