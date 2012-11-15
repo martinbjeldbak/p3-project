@@ -36,7 +36,7 @@ body {
 .container a:link,
 .container a:visited,
 .container a:active {
-  color:#3cea00;
+  color:#35AC0B;
   text-decoration:none;
 }
 
@@ -209,3 +209,12 @@ header nav a:hover {
   font-size:14px;
 }
 
+.input {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.actions {
+  margin-bottom:10px;
+  text-align:center;
+}
