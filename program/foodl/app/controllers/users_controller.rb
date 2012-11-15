@@ -11,7 +11,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:success] = "Velkommen til foodl, #{@user.name}!"
+      sign_in @user
+      flash[:success] = "Velkommen til foodl, #{@user.email.split('@')[0]}!"
       redirect_to root_path
     else
       render 'new'
