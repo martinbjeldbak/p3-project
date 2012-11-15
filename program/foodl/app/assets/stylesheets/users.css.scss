@@ -1,21 +1,31 @@
 
 #Login_page {
-  padding: 200px;
-  border: 1px solid black;
-  background-color: red;
+  padding: 150px; 
 }
 
 #Register_user {
-  border: 1px solid black;
-  height: 200px;
-  width: 400px;
+  border-radius: 5px;
+  width: 300px;
   float: left;
+  padding: 20px;
+  background-color: #eee;
+}
+
+.input {
+  margin-bottom: 10px;
+  text-align: left;
+  
+}
+
+.input input {
+  float: right;
+  width: 180px;
 }
 
 #Login_content {
-  border: 1px solid black;
-  width: 400px;
+  border-radius: 5px;
+  width: 300px;
   float: right;
+  padding: 25px;
+  background-color: #eee;
 }
-
-
