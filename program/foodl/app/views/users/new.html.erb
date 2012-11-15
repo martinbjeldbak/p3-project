@@ -1,11 +1,29 @@
 
 <div id="Login_page">
   <div id="Register_user">
+    <h1>
+      Opret bruger på Foodl
+    </h1>
     <%= form_for @user do |f| %>
-      <%= f.text_field(:navn) %>
-      <%= f.email_field(:user, :email)%>
-      <%= f.password_field_tag(:password)%>
-      <%= text_area_tag(:message, "Hi, nice site", :size => "24x6") %>
+    <div class="input">
+      <%= f.label(:name, "Brugernavn:")%>
+      <%= f.text_field(:name) %>
+    </div>
+    <div class="input">
+      <%= f.label(:email, "E-mail adresse:")%>
+      <%= f.email_field(:email) %>
+    </div>
+    <div class="input">
+      <%= f.label(:password, "kodeord:")%>
+      <%= f.password_field(:password)%>
+    </div>
+    <div class="input">
+      <%= f.label(:password_confirmation, "Bekræft kodeord:")%>
+      <%= f.password_field(:password_confirmation)%>
+    </div>
+    <div>
+      <input type="submit" class="button" value="Opret" />
+    </div>
     <% end %>
   </div>
 
@@ -29,7 +47,6 @@
       </div>
     </div>
     <div id="create_new_user"> 
-        <a href="#">Opret bruger</a>
         <a href="#">Glemt password? Få hjælp her</a>
     </div>
   </div>

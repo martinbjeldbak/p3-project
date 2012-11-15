@@ -56,14 +56,17 @@ Foodl::Application.routes.draw do
   # just remember to delete public/index.html.
   root to: 'home#index'
   
-  match "/search", to: 'search#index'
-  match "/about", to: 'home#about'
-  match "/contact", to: 'home#contact'
+  match '/about', to: 'home#about'
+  match '/contact', to: 'home#contact'
   match '/register', to: 'users#new'
+
   match '/login', to: 'sessions#new'
   match '/logud', to: 'sessions#destroy', via: :delete
   match '/sessions', to: 'users#new'
-  match "users/:action", to: 'users'
+
+
+  match '/search/:action', to: 'search#index'
+  match '/users/:action', to: 'users'
 
   # See how all your routes lay out with "rake routes"
 
