@@ -7,7 +7,6 @@ describe "User Pages" do
     before { visit register_path }
 
     it { should have_selector('h1', text: 'Opret bruger')}
-    it { should have_selector('title', text: 'Login eller opret bruger')}
   end
 
   describe "login page" do
@@ -19,7 +18,6 @@ describe "User Pages" do
     before { visit user_path(user) }
 
     it { should have_selector('h1', text: user.name) }
-    it { should have_selector('title', text: user.name) }
   end
 
   describe "register" do

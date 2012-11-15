@@ -5,7 +5,11 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    if params[:register]
+      @user = User.new
+    elsif params[:login]
+      
+    end
   end
 
   def create
