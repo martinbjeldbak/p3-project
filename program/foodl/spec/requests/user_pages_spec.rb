@@ -21,4 +21,29 @@ describe "User Pages" do
     it { should have_selector('h1', text: user.name) }
     it { should have_selector('title', text: user.name) }
   end
+
+  describe "register" do
+    before { visit register_path }
+
+    let(:submit) { "Opret konto" }
+
+    describe "with invalid information" do
+      it "should not create a user" do
+        expect { click_button submit }.not_to change (User, :count)
+      end
+    end
+
+    describe "with valid information" do
+      before do
+        fill_in "Navn", with: "Example User"
+        fill_in "Email", with: "user@example.dk"
+        fill_in "Password", with: "foobar"
+        fill_in "Confirmation", with: "foobar"
+      end
+
+      it "should create a user" do
+        expect { click_button submit }.to change (User, :count).by(1)
+      end
+    end
+  end
 end
