@@ -59,10 +59,8 @@ Foodl::Application.routes.draw do
   match '/about', to: 'home#about'
   match '/contact', to: 'home#contact'
 
-  match '/register', to: 'users#new'
-
   match '/login', to: 'users#new'
-  match '/logud', to: 'sessions#destroy', via: :delete
+  match '/logout', to: 'sessions#destroy', via: :delete
 
   match '/search', to: 'search#result'
   match '/users/:action', to: 'users'
