@@ -1,5 +1,7 @@
 Foodl::Application.routes.draw do
 
+#  get "search/index"
+
   resources :users
 
   # The priority is based upon order of creation:
@@ -53,6 +55,7 @@ Foodl::Application.routes.draw do
   # just remember to delete public/index.html.
   root to: 'home#index'
   
+  match "/search", to: 'search#index'
   match "/about", to: 'home#about'
   match "/contact", to: 'home#contact'
   match '/register', to: 'users#new'
