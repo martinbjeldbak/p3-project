@@ -38,6 +38,10 @@ input.text {
   color:#555;
 }
 
+a img {
+  border:0;
+}
+
 input.button {
   padding:0px 10px;
 }
@@ -46,7 +50,11 @@ pre {
   font-family: Consolas, monospace;
 }
 
-#top {
+footer, nav, header {
+  display:block;
+}
+
+header {
   background-color:#ccc;
   height:32px;
   text-align:left;
@@ -54,7 +62,7 @@ pre {
   font-size:14px;
 }
 
-#bottom {
+footer {
   position:fixed;
   bottom:0;
   left:0;
@@ -65,41 +73,41 @@ pre {
   font-size:12px;
 }
 
-#bottom a:link,
-#bottom a:visited,
-#bottom a:active {
+footer a:link,
+footer a:visited,
+footer a:active {
   padding:0 12px;
   color:#676;
   text-decoration:none;
 }
 
-#bottom a:hover {
+footer a:hover {
   text-decoration:underline;
   color:#464;
 }
 
-#top a:link img,
-#top a:visited img,
-#top a:active img {
+header a:link img,
+header a:visited img,
+header a:active img {
   height:24px;
   margin-top:4px;
   opacity:0.7;
 }
 
-#top a:hover img {
+header a:hover img {
   height:24px;
   margin-top:4px;
   opacity:1;
 }
 
-#menu {
+header nav {
   float:right;
   margin-right:16px;
 }
 
-#menu a:link,
-#menu a:active,
-#menu a:visited {
+header nav a:link,
+header nav a:active,
+header nav a:visited {
   text-decoration:none;
   color:#676;
   line-height:32px;
@@ -107,7 +115,7 @@ pre {
   font-weight:bold;
 }
 
-#menu a:hover {
+header nav a:hover {
   color:#141;
 }
 
