@@ -22,7 +22,6 @@
   </div>
 
   <div id="Login_content">
-    <div id="login_dialog">
       <h1>
         Log på Foodl
       </h1>
@@ -33,12 +32,11 @@
       <div class="input">
         <%= f.password_field(:password, :class => "text", :placeholder => "Password")%>
       </div>
-      <div>
+      <div class="actions">
         <input type="submit" class="button" value="Log ind" />
       </div>
       <% end %>
-    </div>
-    <div id="create_new_user"> 
+    <div> 
         <a href="#">Glemt password? Få hjælp her</a>
     </div>
   </div>
