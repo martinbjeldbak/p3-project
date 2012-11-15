@@ -5,17 +5,15 @@ class UsersController < ApplicationController
   end
 
   def new
-    if params[:register]
       @user = User.new
-    elsif params[:login]
-      
-    end
   end
 
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to @user
+      flash[:success] = "Velkommen til foodl, #{@user.name}!"
+      #redirect_to @user
+      redirect_to root
     else
       render 'new'
     end
