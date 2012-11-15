@@ -5,12 +5,11 @@
     <a href="#">Indkøbsliste (tom)</a>
     <a href="#">Favoritter (0)</a>
     <% if signed_in? %>
-        <%= link_to "Profil", current_user %>
+        <!-- <%= link_to "Profil", current_user %> -->
         <%= link_to "Indstillinger", '#' %>
         <%= link_to "Log ud", logud_path , method: "delete" %>
     <% else %>
         <%= link_to "Log ind", login_path %>
     <% end %>
-
   </nav>
 </header>
