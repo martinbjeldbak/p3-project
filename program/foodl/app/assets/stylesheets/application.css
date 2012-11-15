@@ -30,8 +30,7 @@ body {
 
 .container {
   width:800px;
-  margin:0 auto;
-  padding-top:120px;
+  margin:64px auto;
 }
 
 input.text {
@@ -134,6 +133,7 @@ header nav a:hover {
 #logo {
   margin-left:0;
   margin-right:0;
+  margin-bottom:64px;
 }
 
 #main {
@@ -182,15 +182,14 @@ header nav a:hover {
 }
 
 #search {
-  width:100%;
 }
 
 #search input.text {
   width:185px;
+  margin-right:10px;
 }
 
 #search input.button {
-  float:right;
 }
 
 .ui-menu-item {
