@@ -1,9 +1,9 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+  /*
+   * This is a manifest file that'll be compiled into application.css, which will include all the files
+   * listed below.
+   *
+   * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+   * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
@@ -31,6 +31,18 @@ body {
 .container {
   width:800px;
   margin:64px auto;
+}
+
+.container a:link,
+.container a:visited,
+.container a:active {
+  color:#3cea00;
+  text-decoration:none;
+}
+
+.container a:hover {
+  color:#ffc40f;
+  text-decoration:underline;
 }
 
 input.text {
