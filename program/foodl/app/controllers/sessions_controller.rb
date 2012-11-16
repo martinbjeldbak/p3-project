@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       redirect_to root_url
     else
       flash[:error] = "Forkert brugernavn/kodeord kombination"
-      redirect_to controller: 'users', action: 'new',  :email => params[:session][:email].downcase
+      redirect_to login_path(:email => params[:session][:email].downcase)
     end
   end
 
