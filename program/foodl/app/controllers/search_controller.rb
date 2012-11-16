@@ -6,7 +6,10 @@ class SearchController < ApplicationController
   end
 
   def autocomplete_food_types
-    types = FoodType.where("name LIKE ?", "%" + params[:q] + "%");
-    render :json => types
+    names = FoodType.select(:name)
+      .where("name LIKE ?", "%" + params[:q] + "%")
+      .limit(5)
+      .pluck(:id)
+    render :json => names
   end
 end

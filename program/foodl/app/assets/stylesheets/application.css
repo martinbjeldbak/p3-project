@@ -203,17 +203,6 @@ header nav a:hover {
 #main input.text {
 }
 
-#search {
-}
-
-#search input.text {
-  width:185px;
-  margin-right:10px;
-}
-
-#search input.button {
-}
-
 .ui-menu-item {
   text-align:left;
   font-size:14px;
@@ -227,4 +216,8 @@ header nav a:hover {
 .actions {
   margin-bottom:10px;
   text-align:center;
+}
+
+.ui-autocomplete {
+  list-style: none;
 }
