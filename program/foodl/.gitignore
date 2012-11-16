@@ -15,3 +15,6 @@
 /log/*.log
 /tmp
 *.swp
+
+#gem with compile shit and stuff
+mysql2
