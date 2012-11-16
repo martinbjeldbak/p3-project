@@ -1,6 +1,7 @@
 // Place all the styles related to the search controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 #toolbar {
   width: 200px;
   height: 400px;
@@ -12,4 +13,14 @@
   width: 600px;
   height: 50px;
   background-color: blue;
+}
+#search {
+}
+
+#search input.text {
+  width:185px;
+  margin-right:10px;
+}
+
+#search input.button {
 }

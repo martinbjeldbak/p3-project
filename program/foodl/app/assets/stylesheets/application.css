@@ -203,17 +203,6 @@ header nav a:hover {
 #main input.text {
 }
 
-#search {
-}
-
-#search input.text {
-  width:185px;
-  margin-right:10px;
-}
-
-#search input.button {
-}
-
 .ui-menu-item {
   text-align:left;
   font-size:14px;
@@ -228,3 +217,28 @@ header nav a:hover {
   margin-bottom:10px;
   text-align:center;
 }
+
+.ui-autocomplete {
+  list-style: none;
+}
+
+.ui-menu-item {
+  display:block;
+}
+
+.ui-menu-item a {
+  font-weight:normal;
+  color:#000;
+  display:block;
+  font-size:14px;
+  padding:2px 4px;
+}
+
+.ui-menu-item a.ui-state-hover {
+  color:#fff;
+  font-weight:normal;
+  text-decoration:none;
+  font-size:14px;
+  padding:2px 4px;
+}
+
