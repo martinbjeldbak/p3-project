@@ -64,6 +64,9 @@ Foodl::Application.routes.draw do
 
   match '/search', to: 'search#result'
   match '/users/:action', to: 'users'
+  
+  match '/favorites', to: 'favorites#index'
+  match '/favorites/:action', to: 'favorites'
 
   # See how all your routes lay out with "rake routes"
 
