@@ -221,3 +221,11 @@ header nav a:hover {
 .ui-autocomplete {
   list-style: none;
 }
+
+.ui-menu-item {
+  display:block;
+}
+
+.ui-menu-item a {
+  display:block
+}
