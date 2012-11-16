@@ -2,8 +2,9 @@ Foodl::Application.routes.draw do
 
 #  get "search/index"
 
-  resources :users
+  #resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :shopping_list
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -62,12 +63,14 @@ Foodl::Application.routes.draw do
   match '/login', to: 'users#new'
   match '/logout', to: 'sessions#destroy', via: :delete
 
+  match '/list', to: 'shopping_list#index'
+
   match '/search', to: 'search#result'
-  match '/users/:action', to: 'users'
   
   match '/favorites', to: 'favorites#index'
   match '/favorites/:action', to: 'favorites'
 
+  match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

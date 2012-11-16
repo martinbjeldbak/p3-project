@@ -144,7 +144,7 @@ describe User do
     describe "as an admin user" do
       let(:admin) { FactoryGirl.create(:admin) }
       before do
-        sign_in admin
+        log_in admin
         visit users_path
       end
 
