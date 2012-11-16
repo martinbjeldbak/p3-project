@@ -2,7 +2,7 @@ Foodl::Application.routes.draw do
 
 #  get "search/index"
 
-  resources :users
+  #resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
   # The priority is based upon order of creation:
@@ -63,8 +63,6 @@ Foodl::Application.routes.draw do
   match '/logout', to: 'sessions#destroy', via: :delete
 
   match '/search', to: 'search#result'
-  match '/users/:action', to: 'users'
-
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
