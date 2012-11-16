@@ -1,5 +1,5 @@
 module SessionsHelper
-  def sign_in(user)
+  def log_in(user)
     # Store a permanent cookie for the user
     cookies.permanent[:remember_token] = user.remember_token
     self.current_user = user
@@ -13,11 +13,11 @@ module SessionsHelper
     @current_user ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
-  def signed_in?
+  def logged_in?
     !current_user.nil?
   end
 
-  def sign_out
+  def log_out
     self.current_user = nil
     cookies.delete(:remember_token)
   end

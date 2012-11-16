@@ -2,7 +2,7 @@
 <div id="Login_page">
   <div id="Register_user">
     <h1>
-      Opret bruger på Foodl
+      Opret bruger
     </h1>
     <%= form_for @user do |f| %>
       <%= render 'shared/error_messages'%>
@@ -23,11 +23,11 @@
 
   <div id="Login_content">
       <h1>
-        Log på Foodl
+        Log på
       </h1>
       <%= form_for :session, url: sessions_path do |f| %>
       <div class="input">
-        <%= f.email_field(:email, :class => "text", :placeholder => "Email")%>
+        <%= f.email_field(:email, :class => "text", :placeholder => "Email", :value => params[:email])%>
       </div>
       <div class="input">
         <%= f.password_field(:password, :class => "text", :placeholder => "Password")%>
