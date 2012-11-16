@@ -63,6 +63,7 @@ Foodl::Application.routes.draw do
   match '/logout', to: 'sessions#destroy', via: :delete
 
   match '/search', to: 'search#result'
+  match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
   match '/users/:action', to: 'users'
 
   # See how all your routes lay out with "rake routes"
