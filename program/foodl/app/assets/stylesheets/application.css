@@ -230,5 +230,15 @@ header nav a:hover {
   font-weight:normal;
   color:#000;
   display:block;
+  font-size:14px;
+  padding:2px 4px;
+}
+
+.ui-menu-item a.ui-state-hover {
+  color:#fff;
+  font-weight:normal;
+  text-decoration:none;
+  font-size:14px;
+  padding:2px 4px;
 }
 
