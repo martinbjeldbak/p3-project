@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+    <div id="error_explanation">
+      <div class="highlight">
+        Formen indeholder <%= @user.errors.count %> fejl
+      </div>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+            <li>* <%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>

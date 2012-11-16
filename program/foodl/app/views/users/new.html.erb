@@ -1,24 +1,46 @@
-<div id="Login_content">
-  <div id="login_dialog">
+
+<div id="Login_page">
+  <div id="Register_user">
     <h1>
-      Log på Foodl
+      Opret bruger på Foodl
     </h1>
-    <div id="get_brugernavn_box" style="height: 40px">
-      <form action="/" method="get">
-        <input type="text" class="text" id="brugernavn" title="Brugernavn" />
-      </form>
+    <%= form_for @user do |f| %>
+      <%= render 'shared/error_messages'%>
+    <div class="input">
+      <%= f.email_field(:email, :class => "text", :placeholder => "Email") %>
     </div>
-    <div id="get_password_box">
-      <form action="/" method="get">
-        <input type="password" class="text" id="password" title="Kodeord" />
-      </form>
+    <div class="input">
+      <%= f.password_field(:password, :class => "text", :placeholder => "Kodeord")%>
     </div>
-    <div id="login_button">
-      <input type="submit" class="button" value="Log ind" />
+    <div class="input">
+      <%= f.password_field(:password_confirmation, :class => "text", :placeholder => "Bekræft kodeord")%>
+    </div>
+    <div>
+      <input type="submit" class="button" value="Opret" />
+    </div>
+    <% end %>
+  </div>
+
+  <div id="Login_content">
+      <h1>
+        Log på Foodl
+      </h1>
+      <%= form_for :session, url: sessions_path do |f| %>
+      <div class="input">
+        <%= f.email_field(:email, :class => "text", :placeholder => "Email")%>
+      </div>
+      <div class="input">
+        <%= f.password_field(:password, :class => "text", :placeholder => "Password")%>
+      </div>
+      <div class="actions">
+        <input type="submit" class="button" value="Log ind" />
+      </div>
+      <% end %>
+    <div> 
+        <a href="#">Glemt password? Få hjælp her</a>
     </div>
   </div>
-  <div id="create_new_user"> 
-      <a href="#">Opret bruger</a>
-      <a href="#">Glemt password? Få hjælp her</a>
-  </div>
+  <div style="clear:both"> </div>
 </div>
+
+<div style="height:100%;position:absolute;top:0;left:50%;border-right:1px dashed #aba;z-index:-10;"></div>
