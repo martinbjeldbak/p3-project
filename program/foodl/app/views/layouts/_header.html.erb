@@ -5,7 +5,7 @@
   <nav>
     <a href="#">Indkøbsliste (tom)</a>
     <a href="#">Favoritter (0)</a>
-    <% if signed_in? %>
+    <% if logged_in? %>
         <!-- <%= link_to "Profil", current_user %> -->
         <%= link_to "Indstillinger", '#' %>
         <%= link_to "Log ud", logout_path , method: "delete" %>
