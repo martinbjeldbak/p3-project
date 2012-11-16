@@ -1,0 +1,22 @@
+﻿<h1>Favoritter</h1>
+<% if signed_in? and @favs; begin %>
+<ul>
+<% @favs.each do |fav| %>
+	<li><a href="<%= fav.url %>"><%= fav.name %></a>
+	</li>
+<% end %>
+</ul>
+<% end %>
+<% elsif %>
+<h1>No cookie stuff : \</h1>
+<% end %>
+
+<h2>Test af indsætning</h2>
+<form method="post" action="/favorites/add">
+	<input name="id" type="text" />
+</form>
+
+<h2>Test af sletning</h2>
+<form method="post" action="/favorites/remove">
+	<input name="id" type="text" />
+</form>
