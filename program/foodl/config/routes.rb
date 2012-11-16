@@ -2,6 +2,7 @@ Foodl::Application.routes.draw do
 
 #  get "search/index"
 
+  resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :shopping_list
 
@@ -61,6 +62,8 @@ Foodl::Application.routes.draw do
 
   match '/login', to: 'users#new'
   match '/logout', to: 'sessions#destroy', via: :delete
+
+  match '/list', to: 'shopping_list#index'
 
   match '/search', to: 'search#result'
 
