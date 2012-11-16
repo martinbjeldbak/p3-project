@@ -63,6 +63,8 @@ Foodl::Application.routes.draw do
   match '/logout', to: 'sessions#destroy', via: :delete
 
   match '/search', to: 'search#result'
+
+  match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
