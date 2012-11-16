@@ -2,7 +2,6 @@ Foodl::Application.routes.draw do
 
 #  get "search/index"
 
-  #resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
   # The priority is based upon order of creation:
