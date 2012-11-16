@@ -227,5 +227,8 @@ header nav a:hover {
 }
 
 .ui-menu-item a {
-  display:block
+  font-weight:normal;
+  color:#000;
+  display:block;
 }
+
