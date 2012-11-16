@@ -1,9 +1,9 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+  /*
+   * This is a manifest file that'll be compiled into application.css, which will include all the files
+   * listed below.
+   *
+   * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+   * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
@@ -22,20 +22,42 @@
  */
 body {
 /*  background:#c9cccf url(bg.png) repeat-x; */
-  background-color:#fcfffc;
+//  background-color:#fcfffc;
+  background:#dee8d9 url(bg.png) repeat-x;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
   font-size:12px;
+}
+
+.container {
+  width:800px;
+  margin:128px auto;
+}
+
+.container a:link,
+.container a:visited,
+.container a:active {
+  color:#325030;
+  text-decoration:none;
+}
+
+.container a:hover {
+  color:#ffc40f;
+  text-decoration:underline;
 }
 
 input.text {
   padding:0px 4px;
   font-size:1.1em;
   font-family:'Titillium Web', sans-serif;
-  border:1px solid #ddd;
+  border:1px solid #aba;
   background-color:#fefefe;
   border-radius:2px;
   color:#555;
+}
+
+a img {
+  border:0;
 }
 
 input.button {
@@ -46,15 +68,22 @@ pre {
   font-family: Consolas, monospace;
 }
 
-#top {
-  background-color:#ccc;
+footer, nav, header {
+  display:block;
+}
+
+header {
+  background-color:#3B4539;
+  background-color:#222C21;
+  background:#222C21 url(header.png) repeat-x;
+  box-shadow:0 0 16px 0px #333;
   height:32px;
   text-align:left;
   padding-left:16px;
   font-size:14px;
 }
 
-#bottom {
+footer {
   position:fixed;
   bottom:0;
   left:0;
@@ -65,56 +94,68 @@ pre {
   font-size:12px;
 }
 
-#bottom a:link,
-#bottom a:visited,
-#bottom a:active {
+footer a:link,
+footer a:visited,
+footer a:active {
   padding:0 12px;
   color:#676;
   text-decoration:none;
 }
 
-#bottom a:hover {
+footer a:hover {
   text-decoration:underline;
   color:#464;
 }
 
-#top a:link img,
-#top a:visited img,
-#top a:active img {
+h1 {
+  font-family: "Segoe UI";
+  color:#325030;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+header a:link img,
+header a:visited img,
+header a:active img {
+  font-weight:bold;
   height:24px;
   margin-top:4px;
   opacity:0.7;
+  background-color:#eee;
 }
 
-#top a:hover img {
+header a:hover img {
   height:24px;
   margin-top:4px;
   opacity:1;
+  background-color:#fff;
 }
 
-#menu {
+header nav {
   float:right;
   margin-right:16px;
 }
 
-#menu a:link,
-#menu a:active,
-#menu a:visited {
+header nav a:link,
+header nav a:active,
+header nav a:visited {
   text-decoration:none;
-  color:#676;
+  color:#eee;
+  text-shadow:1px 1px 2px #000;
   line-height:32px;
   padding:0 8px;
   font-weight:bold;
 }
 
-#menu a:hover {
-  color:#141;
+header nav a:hover {
+  color:#fff;
+  text-decoration:underline;
 }
 
 #logo {
-  margin-top:64px;
   margin-left:0;
   margin-right:0;
+  margin-bottom:64px;
 }
 
 #main {
@@ -163,15 +204,14 @@ pre {
 }
 
 #search {
-  width:100%;
 }
 
 #search input.text {
-  width:170px;
+  width:185px;
+  margin-right:10px;
 }
 
 #search input.button {
-  float:right;
 }
 
 .ui-menu-item {
@@ -179,3 +219,12 @@ pre {
   font-size:14px;
 }
 
+.input {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.actions {
+  margin-bottom:10px;
+  text-align:center;
+}

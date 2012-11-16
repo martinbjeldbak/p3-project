@@ -1,9 +1,7 @@
-<footer class="footer">
-<div id="bottom">
+<footer>
   <nav>
   <a href="#">Rapport&eacute;r fejl</a>
-  <%= link_to "Om Foodl", :action => "about" %>
-  <%= link_to "Kotakt Foodl", :action => "contact" %>
+  <%= link_to "Om Foodl", :controller => "home", :action => "about" %>
+  <%= link_to "Kotakt Foodl", :controller => "home", :action => "contact" %>
   </nav>
-</div>
 </footer>

@@ -1,12 +1,16 @@
-<div id="top">
-  <a href="<%=url_for :controller => 'home', :action => 'index' %> ">
-    <%=image_tag("logobw.png", :alt => "Foodl") %>
+<header>
+  <a href="<%=url_for :controller => 'search', :action => 'index' %> ">
+    <%=image_tag("header_logo.png", :alt => "Foodl") %>
   </a>
-  <div id="menu">
-    <nav>
-    <a href="#">Log ind</a>
+  <nav>
     <a href="#">Indkøbsliste (tom)</a>
     <a href="#">Favoritter (0)</a>
-    </nav>
-  </div>
-</div>
+    <% if signed_in? %>
+        <!-- <%= link_to "Profil", current_user %> -->
+        <%= link_to "Indstillinger", '#' %>
+        <%= link_to "Log ud", logout_path , method: "delete" %>
+    <% else %>
+        <%= link_to "Log ind", login_path %>
+    <% end %>
+  </nav>
+</header>
