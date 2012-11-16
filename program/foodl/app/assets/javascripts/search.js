@@ -1,10 +1,20 @@
 $(function() {
+  $("#ingredient").data('rIndex', 0);
   $("#ingredient").autocomplete({
     source: function(request, response) {
-      $.ajax({
+      $("#ingredient").data('rIndex', $("#ingredient").data('rIndex') + 1);
+      if (this.xhr) {
+        this.xhr.abort();
+      }
+      this.xhr = $.ajax({
         url: "/search/autocomplete/" + request.term,
+        context: {
+          autocompleteRequest: $("ingredient").data('rIndex')
+        },
         success: function(data) {
-          response(data);
+          if (this.autocompleteRequest === $("ingredient").data('rIndex')) {
+            response(data);
+          }
         },
       });
     },
