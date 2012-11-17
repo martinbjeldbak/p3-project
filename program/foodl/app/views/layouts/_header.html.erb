@@ -3,7 +3,7 @@
     <%=image_tag("header_logo.png", :alt => "Foodl") %>
   </a>
   <nav>
-    <%= link_to "indkøbsliste", list_path %>
+    <%= link_to "indkøbsliste #{listCount}", list_path %>
     <a href="#">favoritter (0)</a>
     <% if logged_in? %>
         <%= link_to "indstillinger", '#' %>
