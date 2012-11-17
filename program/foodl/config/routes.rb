@@ -2,7 +2,7 @@ Foodl::Application.routes.draw do
 
 #  get "search/index"
 
-  #resources :users
+  #resources :users, only: [:new]
   resources :sessions, only: [:new, :create, :destroy]
   resources :shopping_list
 

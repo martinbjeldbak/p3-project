@@ -3,10 +3,10 @@
     <%=image_tag("header_logo.png", :alt => "Foodl") %>
   </a>
   <nav>
-    <%= link_to "Indkøbsliste", list_path %>
+    <%= link_to "indkøbsliste", list_path %>
     <a href="#">favoritter (0)</a>
     <% if logged_in? %>
-        <%= link_to "Indstillinger", '#' %>
+        <%= link_to "indstillinger", '#' %>
         <%= link_to "log ud", logout_path , method: "delete" %>
     <% else %>
         <%= link_to "log ind / opret bruger", login_path %>
