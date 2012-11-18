@@ -10,7 +10,7 @@
 #
 
 class FoodType < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :id, :name
 
   has_many :ingredients
   has_many :list_items
