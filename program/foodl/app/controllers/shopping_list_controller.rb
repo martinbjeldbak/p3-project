@@ -7,6 +7,7 @@ class ShoppingListController < ApplicationController
 
   # Manglende actions:
   #   - Tilføj item fra opskrift
+  #      - husk at tilføj til session hvis ikke loggt ind
   #   - Fjern tilføjet listitem fra opskrift
 
   #   - Fjern listeitem fra indkøbslisten
