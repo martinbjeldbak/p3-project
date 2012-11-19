@@ -1,4 +1,5 @@
 $(function() {
+
   var submitButton = $("#search-form .submit-button");
   submitButton.enable = function() {
     this.removeAttr('disabled');
@@ -13,6 +14,7 @@ $(function() {
     this.button('disable');
   };
   submitButton.disable();
+  $('#search ul li a').listRemoveButton();
   $("#ingredient").data('rIndex', 0);
   $("#ingredient").autocomplete({
     source: function(request, response) {
@@ -39,7 +41,7 @@ $(function() {
       submitButton.enable();
       setTimeout(function() {
         $("#ingredient").val("");
-      }, 50);
+      }, 50)
     },
   });
   $("#search-form").submit(function() {

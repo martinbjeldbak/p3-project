@@ -18,10 +18,27 @@
 #search {
 }
 
+#search ul {
+  width:195px;
+  margin:0 auto;
+  padding-right:74px;
+  list-style-type:none;
+}
+
+#search ul li {
+  margin-bottom:8px;
+  padding:0 0;
+  text-align:left;
+  padding:0 2px;
+  font-size:1.1em;
+}
+
+
 #search input.text {
   width:185px;
-  margin-right:10px;
+  margin-right:8px;
 }
 
 #search input.button {
+  width:64px;
 }
