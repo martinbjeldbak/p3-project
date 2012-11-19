@@ -39,6 +39,16 @@ div.blue_line_vertical {
   position:relative;
   margin-left: auto;
   margin-right: auto;
+
+  ul li {
+    font-family: 'Crafty Girls';
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-bottom: 20px;
+  }
 }
 
 #shopping_list_title {
@@ -52,15 +62,4 @@ div.blue_line_vertical {
   text-decoration: underline;
   font-weight: bold;
   font-size: 30px;
-}
-
-
-ul {
-  list-style-type: none;
-  padding-bottom: 20px;
-}
-
-ul li {
-  font-family: 'Crafty Girls';
-  font-size: 20px;
 }

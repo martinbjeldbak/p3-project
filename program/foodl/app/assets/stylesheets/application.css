@@ -228,12 +228,41 @@ header nav a:hover {
   display:block;
 }
 
+.ui-menu {
+  width:100px;
+  position:absolute;
+}
+
+li .favoured .ui-icon-heart{
+  background-image:url(images/ui-icons_deepred_256x240.png);
+}
+li .ui-state-hover .ui-icon-heart{
+  background-image:url(images/ui-icons_666666_256x240.png);
+}
+
+li .favour-button:hover {
+  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
+  /*animation-duration:3s;
+  animation-name:heartbeat;
+  animation-iteration-count:infinite;*/
+}
+
 .ui-menu-item a {
   font-weight:normal;
   color:#000;
   display:block;
   font-size:14px;
   padding:2px 4px;
+}
+
+.slidertool{
+  float:left;
+  padding:8px;
+  
+}
+
+.slidertool label {
+  font-size:11.5px;
 }
 
 .ui-menu-item a.ui-state-hover {
@@ -244,9 +273,42 @@ header nav a:hover {
   padding:2px 4px;
 }
 
+#amount {
+  border: none;
+}
+
+#toolbar {
+  height: 38px;
+  padding: 8px 0;
+  background-color: pink;
+}
+#subtoolbar{
+  width: 800px;
+  margin: 0 auto;
+}
+#subtoolbar .slidertool{
+  margin:0;
+  padding:0;
+  float:left;
+  width:33.33%;
+}
+
+#subtoolbar #prep-time, #subtoolbar #sorting {
+  padding-top:6px;
+}
+
+#amount-slider{
+  margin:0 auto;
+}
+
+
 .ui-slider {
   width:200px;
   
+}
+
+.ui-slider .ui-slider-handle {
+  width:8px !important;
 }
 
 .placeholder {
@@ -269,3 +331,13 @@ header nav a:hover {
 .list-remove .ui-button-text {
   display:none;
 }
+
+/*@keyframes heartbeat {
+  from {
+    width:30px !important;
+  }
+  
+  to {
+    width:200px !important;
+  }
+}*/
