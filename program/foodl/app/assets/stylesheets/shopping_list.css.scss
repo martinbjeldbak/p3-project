@@ -1,3 +1,65 @@
 // Place all the styles related to the ShoppingList controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.blue_line_horisontal {
+  height: 0px;
+  border-top: 1px solid #d6e3b5;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.blue_line_vertical {
+  height: 100%;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 2px solid #d6e3b5;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  left:100px;
+}
+
+#shopping_list {
+  border: black solid;
+  border-radius: 5px;
+  width: 500px;
+  background-color: #fff7c6;
+  box-shadow:0 0 32px 0 #ccd2cc;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul li {
+    font-family: 'Crafty Girls';
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-bottom: 20px;
+  }
+}
+
+#shopping_list_title {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  height: 40px;
+}
+
+#shopping_list_title h1 {
+  font-family: 'Crafty Girls';
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+}
