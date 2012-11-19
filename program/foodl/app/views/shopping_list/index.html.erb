@@ -14,7 +14,8 @@ Tilføj på indkøbsliste:
     <ul>
       <div class="blue_line_horisontal"></div>
       <% @shopping_list.each do |item| %>
-        <li><%= item.quantity %> <%= item.unit %> <%= item.name %><a href="#"></a></li>
+        <li> <span id="float_left"> <%= formatQuantityAndUnit(item) %> </span> 
+          <span id="float_right"><%= item.name %> </span> <a href="#"></a></li>
         <div class="blue_line_horisontal"></div>
       <% end %>
     </ul>
