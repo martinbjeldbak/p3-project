@@ -242,3 +242,7 @@ header nav a:hover {
   padding:2px 4px;
 }
 
+.ui-slider {
+  width:200px;
+  
+}
