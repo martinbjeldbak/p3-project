@@ -228,12 +228,27 @@ header nav a:hover {
   display:block;
 }
 
+.ui-menu {
+  width:100px;
+  position:absolute;
+}
+
 .ui-menu-item a {
   font-weight:normal;
   color:#000;
   display:block;
   font-size:14px;
   padding:2px 4px;
+}
+
+.slidertool{
+  float:left;
+  padding:8px;
+  
+}
+
+.slidertool label {
+  font-size:11.5px;
 }
 
 .ui-menu-item a.ui-state-hover {
@@ -244,18 +259,43 @@ header nav a:hover {
   padding:2px 4px;
 }
 
-#slider{
-  text-align:left;
-  
+#amount {
+  border: none;
 }
 
-#slider a{
-  position:relative;
+#toolbar {
+  height: 38px;
+  padding: 8px 0;
+  background-color: pink;
 }
+#subtoolbar{
+  width: 800px;
+  margin: 0 auto;
+}
+#subtoolbar .slidertool{
+  margin:0;
+  padding:0;
+  float:left;
+  width:33.33%;
+}
+
+#subtoolbar #prep-time, #subtoolbar #sorting {
+  padding-top:6px;
+}
+
+#amount-slider{
+  margin:0 auto;
+}
+
+#dropdown-bt
 
 .ui-slider {
-  width:100px;
+  width:200px;
   
+}
+
+.ui-slider .ui-slider-handle {
+  width:8px !important;
 }
 
 .placeholder {
