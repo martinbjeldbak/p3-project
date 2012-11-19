@@ -25,4 +25,16 @@
 $(function() {
   $('input.button').button();
   $('input, textarea').placeholder();
+
+  jQuery.fn.listRemoveButton = function() {
+    this.button({
+      icons: {
+        primary: "ui-icon-close"
+      },
+      text: false
+    }).removeClass('ui-button')
+      .removeClass('ui-state-default')
+      .addClass('ui-dialog-titlebar-close')
+      .addClass('list-remove');
+  };
 });
