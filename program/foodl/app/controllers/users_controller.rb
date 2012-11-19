@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def new
-      @user = User.new
+    @user = User.new
   end
 
   def create
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       flash[:success] = "Velkommen til foodl, #{@user.email.split('@')[0]}!"
       redirect_to root_path
     else
-      render 'new'
+      render 'login'
     end
   end
 

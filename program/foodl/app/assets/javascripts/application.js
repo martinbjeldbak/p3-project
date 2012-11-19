@@ -24,4 +24,5 @@
 
 $(function() {
   $('input.button').button();
+  $('input, textarea').placeholder();
 });
