@@ -108,7 +108,8 @@ footer a:hover {
 }
 
 h1 {
-  font-family: "Segoe UI";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:normal;
   color:#325030;
   font-size: 21px;
   margin-bottom: 20px;
