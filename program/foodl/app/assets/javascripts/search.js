@@ -1,4 +1,18 @@
 $(function() {
+  var submitButton = $("#search-form .submit-button");
+  submitButton.enable = function() {
+    this.removeAttr('disabled');
+    this.removeClass('ui-state-hover');
+    this.removeClass('ui-state-active');
+    this.button('enable');
+  };
+  submitButton.disable = function() {
+    this.attr('disabled', 'disabled');
+    this.removeClass('ui-state-hover');
+    this.removeClass('ui-state-active');
+    this.button('disable');
+  };
+  submitButton.disable();
   $("#ingredient").data('rIndex', 0);
   $("#ingredient").autocomplete({
     source: function(request, response) {
@@ -22,9 +36,16 @@ $(function() {
     autoFocus: true,
     select: function(e, ui) {
       alert(ui.item.value + " selected!");
+      submitButton.enable();
       setTimeout(function() {
         $("#ingredient").val("");
       }, 50);
     },
+  });
+  $("#search-form").submit(function() {
+    if ($("#search-form input[name=food_types]").val() == "") {
+      submitButton.disable();
+      return false;
+    }
   });
 });
