@@ -118,6 +118,7 @@ h1 {
 header a:link img,
 header a:visited img,
 header a:active img {
+  font-family: 'Ubuntu', sans-serif;
   font-weight:bold;
   height:24px;
   margin-top:4px;
