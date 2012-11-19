@@ -233,6 +233,20 @@ header nav a:hover {
   position:absolute;
 }
 
+li .favoured .ui-icon-heart{
+  background-image:url(images/ui-icons_deepred_256x240.png);
+}
+li .ui-state-hover .ui-icon-heart{
+  background-image:url(images/ui-icons_666666_256x240.png);
+}
+
+li .favour-button:hover {
+  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
+  /*animation-duration:3s;
+  animation-name:heartbeat;
+  animation-iteration-count:infinite;*/
+}
+
 .ui-menu-item a {
   font-weight:normal;
   color:#000;
@@ -287,7 +301,6 @@ header nav a:hover {
   margin:0 auto;
 }
 
-#dropdown-bt
 
 .ui-slider {
   width:200px;
@@ -318,3 +331,13 @@ header nav a:hover {
 .list-remove .ui-button-text {
   display:none;
 }
+
+/*@keyframes heartbeat {
+  from {
+    width:30px !important;
+  }
+  
+  to {
+    width:200px !important;
+  }
+}*/
