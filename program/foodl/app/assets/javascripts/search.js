@@ -14,7 +14,6 @@ $(function() {
     this.button('disable');
   };
   submitButton.disable();
-  $('#search ul li a').listRemoveButton();
   $("#ingredient").data('rIndex', 0);
   $("#ingredient").autocomplete({
     source: function(request, response) {
@@ -37,7 +36,15 @@ $(function() {
     appendTo: '#menu-container',
     autoFocus: true,
     select: function(e, ui) {
-      alert(ui.item.value + " selected!");
+      var listItem = $('<li />');
+      listItem.html(ui.item.value);
+      var removeButton = $('<a />').html('Fjern').attr('href', '#').listRemoveButton();
+      removeButton.click(function() {
+        $(this).parent().remove();
+      });
+      listItem.append(removeButton);
+      $('#search ul').append(listItem);
+      $('#search-form .food_types').val($('#search-form .food_types').val() + ui.item.value);
       submitButton.enable();
       setTimeout(function() {
         $("#ingredient").val("");
