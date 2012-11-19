@@ -1,3 +1,33 @@
 // Place all the styles related to the ShoppingList controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.blue_line {
+ height:0px;
+ border-top: 1px solid #d6e3b5;
+ border-bottom: 0px;
+ border-left: 0px;
+ border-right: 0px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+#shopping_list {
+  border: black solid;
+  border-radius: 5px;
+  height: 200px;
+  width: 500px;
+  background-color: #fff7c6;
+  float: center;
+  box-shadow:0 0 32px 0 #ccd2cc;
+}
+
+#shopping_list_title {
+  font-family: Lucida handwritting;
+}
+
+ul  {
+list-style-type: none;
+}
