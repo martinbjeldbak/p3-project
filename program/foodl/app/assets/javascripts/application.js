@@ -36,5 +36,6 @@ $(function() {
       .removeClass('ui-state-default')
       .addClass('ui-dialog-titlebar-close')
       .addClass('list-remove');
+    return this;
   };
 });
