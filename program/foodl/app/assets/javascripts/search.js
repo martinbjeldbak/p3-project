@@ -1,5 +1,11 @@
 $(function() {
 
+  var addFoodType = function(value) {
+  };
+
+  var removeFoodType = function(value) {
+  };
+
   var submitButton = $("#search-form .submit-button");
   submitButton.enable = function() {
     this.removeAttr('disabled');
@@ -38,7 +44,7 @@ $(function() {
     select: function(e, ui) {
       var listItem = $('<li />');
       listItem.html(ui.item.value);
-      var removeButton = $('<a />').html('Fjern').attr('href', '#').listRemoveButton();
+      var removeButton = $('<a />').attr('href', '#').listRemoveButton();
       removeButton.click(function() {
         $(this).parent().remove();
       });
