@@ -252,3 +252,20 @@ header nav a:hover {
 .placeholder {
   color:#aaa;
 }
+
+.list-remove {
+  position:relative;
+  padding:12px 8px 4px;
+  font-size:0;
+  float:right;
+  width:auto!important;
+}
+
+.list-remove .ui-icon {
+  left:50%;
+  top:50%;
+}
+
+.list-remove .ui-button-text {
+  display:none;
+}
