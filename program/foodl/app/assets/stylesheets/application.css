@@ -60,8 +60,8 @@ a img {
   border:0;
 }
 
-input.button {
-  padding:0px 10px;
+input.button, input.ui-button {
+  padding:0px 10px!important;
 }
 
 pre {
@@ -108,7 +108,8 @@ footer a:hover {
 }
 
 h1 {
-  font-family: "Segoe UI";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:normal;
   color:#325030;
   font-size: 21px;
   margin-bottom: 20px;
@@ -117,6 +118,7 @@ h1 {
 header a:link img,
 header a:visited img,
 header a:active img {
+  font-family: 'Ubuntu', sans-serif;
   font-weight:bold;
   height:24px;
   margin-top:4px;
@@ -249,4 +251,21 @@ header nav a:hover {
 
 .placeholder {
   color:#aaa;
+}
+
+.list-remove {
+  position:relative;
+  padding:12px 8px 4px;
+  font-size:0;
+  float:right;
+  width:auto!important;
+}
+
+.list-remove .ui-icon {
+  left:50%;
+  top:50%;
+}
+
+.list-remove .ui-button-text {
+  display:none;
 }
