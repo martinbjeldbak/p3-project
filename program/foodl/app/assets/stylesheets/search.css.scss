@@ -2,14 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#toolbar {
+  width: 200px;
+  height: 400px;
+  background-color: red; 
+  float: left;
+}
+
+#toolbartop {
+  width: 600px;
+  height: 50px;
+  background-color: blue;
+}
+
 #search {
 }
 
+#search ul {
+  width:195px;
+  margin:0 auto;
+  padding-right:74px;
+  list-style-type:none;
+}
+
+#search ul li {
+  margin-bottom:8px;
+  padding:0 0;
+  text-align:left;
+  padding:0 2px;
+  font-size:1.1em;
+}
+
+
 #search input.text {
   width:185px;
-  margin-right:10px;
+  margin-right:8px;
 }
 
 #search input.button {
+  width:64px;
 }
-
