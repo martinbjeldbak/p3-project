@@ -1,15 +1,15 @@
 <div id="shopping_list">
-  <div id="shopping_list_head">
-    <h1>
-      Indkøbsliste
-    </h1>
-  </div>
-  <div id="shopping_list_body">
+  <div class="blue_line_vertical"></div>
+    <div id="shopping_list_title">
+      <h1>
+        Indkøbsliste
+      </h1>
+    </div>
     <ul>
+      <div class="blue_line_horisontal"></div>
       <% @shopping_list.each do |item| %>
         <li><%= item.quantity %> <%= item.name %></li>
-        <div class="blue_line" />
+        <div class="blue_line_horisontal"></div>
       <% end %>
     </ul>
-  </div>
 </div>
