@@ -2,6 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#toolbar {
+  width: 200px;
+  height: 400px;
+  background-color: red; 
+  float: left;
+}
+
+#toolbartop {
+  width: 600px;
+  height: 50px;
+  background-color: blue;
+}
+
 #search {
 }
 
@@ -12,4 +25,3 @@
 
 #search input.button {
 }
-

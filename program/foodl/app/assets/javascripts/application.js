@@ -19,6 +19,7 @@
 //= require jquery.ui.position
 //= require jquery.ui.button
 //= require jquery.ui.autocomplete
+//= require jquery.ui.slider
 //= require_tree .
 
 $(function() {
