@@ -1,5 +1,15 @@
-<ul>
-  <% @shopping_list.each do |item| %>
-      <li><%= item.quantity %> <%= item.name %></li>
-  <% end %>
-</ul>
+<div id="shopping_list">
+  <div id="shopping_list_head">
+    <h1>
+      Indkøbsliste
+    </h1>
+  </div>
+  <div id="shopping_list_body">
+    <ul>
+      <% @shopping_list.each do |item| %>
+        <li><%= item.quantity %> <%= item.name %></li>
+        <div class="blue_line" />
+      <% end %>
+    </ul>
+  </div>
+</div>
