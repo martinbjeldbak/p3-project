@@ -9,4 +9,9 @@ module ApplicationHelper
       "(#{items})"
     end
   end
+  
+  @toolbar=false
+  def toolbar?
+    return @toolbar
+  end
 end
