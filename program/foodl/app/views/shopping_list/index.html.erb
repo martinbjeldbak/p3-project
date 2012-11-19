@@ -1,3 +1,9 @@
+Tilføj på indkøbsliste:
+<%= form_for @listItem, url: {action: "create"}, remote: true, html: {class: "addListItemForm", id: "addListItemForm"} do |f| %>
+    <%= f.text_field :name, class: "text" %>
+    <%= f.submit "Tilføj", class: "button" %>
+<% end %>
+
 <div id="shopping_list">
   <div class="blue_line_vertical"></div>
     <div id="shopping_list_title">
@@ -8,8 +14,9 @@
     <ul>
       <div class="blue_line_horisontal"></div>
       <% @shopping_list.each do |item| %>
-        <li><%= item.quantity %> <%= item.name %></li>
+        <li><%= item.quantity %> <%= item.unit %> <%= item.name %><a href="#"></a></li>
         <div class="blue_line_horisontal"></div>
       <% end %>
     </ul>
 </div>
+
