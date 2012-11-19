@@ -3,14 +3,13 @@
     <%=image_tag("header_logo.png", :alt => "Foodl") %>
   </a>
   <nav>
-    <a href="#">Indkøbsliste (tom)</a>
-    <a href="#">Favoritter (0)</a>
+    <%= link_to "indkøbsliste #{listCount}", list_path %>
+    <a href="#">favoritter (0)</a>
     <% if logged_in? %>
-        <!-- <%= link_to "Profil", current_user %> -->
-        <%= link_to "Indstillinger", '#' %>
-        <%= link_to "Log ud", logout_path , method: "delete" %>
+        <%= link_to "indstillinger", '#' %>
+        <%= link_to "log ud", logout_path , method: "delete" %>
     <% else %>
-        <%= link_to "Log ind", login_path %>
+        <%= link_to "log ind / opret bruger", login_path %>
     <% end %>
   </nav>
 </header>
