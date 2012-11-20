@@ -13,7 +13,7 @@
 #
 
 class ListItem < ActiveRecord::Base
-  attr_accessible :food_type_id, :name, :quantity, :unit, :user_id
+  attr_accessible :food_type_id, :name, :quantity, :unit, :user_id, :id
 
   validates :name, presence: true, length: { minimum: 1}
   validates :user_id, presence: true
