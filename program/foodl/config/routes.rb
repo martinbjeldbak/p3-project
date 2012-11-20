@@ -71,7 +71,8 @@ Foodl::Application.routes.draw do
   match '/search', to: 'search#result'
   
   match '/favorites', to: 'favorites#index'
-  match '/favorites/:action', to: 'favorites'
+  match '/favorites/add/:id', to: 'favorites#add'
+  match '/favorites/remove/:id', to: 'favorites#remove'
 
   match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
   # See how all your routes lay out with "rake routes"
