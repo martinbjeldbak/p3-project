@@ -1,23 +1,22 @@
-Tilføj på indkøbsliste:
-<%= form_for @listItem, url: {action: "create"}, remote: true, html: {class: "addListItemForm", id: "addListItemForm"} do |f| %>
-    <%= f.text_field :name, class: "text" %>
-    <%= f.submit "Tilføj", class: "button" %>
-<% end %>
 
 <div id="shopping_list">
   <div class="blue_line_vertical"></div>
-    <div id="shopping_list_title">
-      <h1>
-        Indkøbsliste
-      </h1>
-    </div>
-    <ul>
-      <div class="blue_line_horisontal"></div>
-      <% @shopping_list.each do |item| %>
-        <li> <span id="quantity_unit_span"> <%= formatQuantityAndUnit(item) %> </span> 
-          <span id="name_span"><%= item.name %> </span> <a href="#"></a></li>
-        <div class="blue_line_horisontal"></div>
-      <% end %>
-    </ul>
+  <div id="shopping_list_title">
+    <h1>
+      Indkøbsliste
+    </h1>
+  </div>
+  <ul>
+    <div class="blue_line_horisontal"></div>
+    <% @shopping_list.each do |item| %>
+    <li> <%= formatQuantityAndUnit(item) %> <%= item.name %> <a href="#"></a></li>
+    <div class="blue_line_horisontal"></div>
+    <% end %>
+  </ul>
 </div>
-
+<div id="add_to_shopping_list" class="no_print">
+  <%= form_for @listItem, url: {action: "create"}, remote: true, html: {class: "addListItemForm", id: "addListItemForm"} do |f| %>
+  <%= f.text_field :name, class: "text", placeholder: "tilføj varer: eks.:\"2 liter mælk\"" %>
+  <%= f.submit "Tilføj", class: "button" %>
+  <% end %>
+</div>
