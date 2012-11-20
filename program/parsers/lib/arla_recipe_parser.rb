@@ -11,6 +11,9 @@ end
 #method that retrieves a recipe's default portion from www.arla.dk
 def self.GetPortion()
   portion = @@page.css("div.listAmount").text.to_s.strip.partition(" ")
+  if (portion[0] == "60+") #save 60+ as another integer than 60
+	portion[0] == "61"
+  end
   return portion[0]
 end
 

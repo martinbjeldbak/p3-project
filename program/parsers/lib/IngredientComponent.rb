@@ -32,46 +32,6 @@ def self.remove_fx_suggestion()
 	return
 end
 
-def self.remove_non_food_substrings()
-	
-	removes = 	[	"skrællede","i","både","stykker","skiver","tern","med","meget","finthakket","finthakkede","grofthakkede","groft","tynde",
-					"strimler","kogt","skyllet","klippet","frisk","ristet","fast","modnet","vaskede","pillede","små","store","luftede","faste", "kolde","varme", "revet",
-					"mindre", "Arla Karolines Køkken®", "Arla", "lange", "stave", "stødt", "dampede", "grøn", "tørret", "soltørrede", "friskkværnet", "friskpresset",
-					"koldt", "friskrevet", "grofthakket", "stilke","ristede","hakkede","friske","mild","sød","kogte","dampet","fintsnittet","buketter","vildtfond", "evt.",
-					"uden skind", "moden", "presset", "fed", "saltede", "til pensling", "syrnet", "sigtet", "mellemlagret", "sprødstegt", "fintrevet", "eller",
-					"stegt", "kold", "fra dåse", "løse", "lyse", "uden kerner", "milde", "røde", "stort", "snittet", "fintstrimlet", "blødt", "røget", "lunt",
-					"hvid", "saltlage", "knækkede", "halve", "grønne", "bør omrystes"]
-	removes.each do |s|
-
-	#Removes at start of string			"tynde bananer" -> "tynde bananer" and "bananer, tynde" -> "bananer" 
-		if (@@food_name[0,s.length+1] == s+" ")
-			@@food_name = @@food_name[s.length+1..@@food_name.length]
-		end
-		if (@@food_name[0,s.length+2] == s+", ")
-			@@food_name = @@food_name[s.length+2..@@food_name.length]
-		end
-		
-		#Removes at end of string		"ærter, pillede" -> "ærter" and "kartofler i både" -> "kartofler" 
-		if (@@food_name[@@food_name.length-s.length-1,s.length+1] == " "+s)
-			@@food_name = @@food_name[0..@@food_name.length-s.length-2]
-		end
-		if (@@food_name[@@food_name.length-s.length-2,s.length+2] == ", "+s)
-			@@food_name = @@food_name[0..@@food_name.length-s.length-3]
-		end
-	
-	#Removes in string					"bananer, pillede ..." -> "bananer ..." "bananer i skiver ..." -> "bananer ..."
-		for i in 0..@@food_name.length do
-			if (@@food_name[i,s.length+2] == " "+s+" ")
-				@@food_name = @@food_name[0..i]+@@food_name[i+s.length+2..@@food_name.length]
-			end
-			if (@@food_name[i,s.length+3] == " "+s+", ")
-				@@food_name = @@food_name[0..i]+@@food_name[i+s.length+3..@@food_name.length]
-			end
-		end
-		
-	end
-end
-
 def self.modify_white_spaces(str) #Converts the weird whitespaces to real white spaces
 	for i in 0..str.length-1
 		if (is_space(str[i]))
@@ -92,11 +52,12 @@ def self.trim_food_name()
 end
 
 def self.Analyze(ingredient, portion_size)
-	@@original = ingredient
+	@@original = ingredient.dup #dont hold the reference since ingredient will change in this scope
 	@@amount = ""
+	@@unit = ""
 	ingredient = modify_white_spaces(ingredient)
 
-	#EXTRACT AMOUNT
+	#EXTRACT AMOUNT (in Arla's syntax, amount is always first)
 	run = true
 	while ingredient.length > 0 && run do
 		if (is_number(ingredient[0]))
@@ -115,14 +76,15 @@ def self.Analyze(ingredient, portion_size)
 			run = false
 		end
 	end
-	
+
 
 	@@amount = @@amount.to_f / portion_size.to_f
 
-	# REMOVE SPACE AFTER AMOUNT
-	if (ingredient[0] == " ") #remove leading whitespace
+	# REMOVE SPACE AFTER AMOUNT (Arla's syntax has always space after amount)
+	if (ingredient[0] == " ")
 		ingredient[0] = ''
 	end
+	
 	#EXTRACT UNIT
 	@@unitTable.each do |s|
 		if ingredient[0..s.length] == s + " "  #important to check space after, ex: "2 g fløde" or "2 glas kartofler"  
@@ -145,11 +107,11 @@ def self.GetUnit
 	return @@unit
 end
 
-def self.GetFoodName
+def self.GetName
 	return @@food_name
 end
 
-def self.GetOriginal
+def self.GetOriginalName
 	return @@original
 end
 
