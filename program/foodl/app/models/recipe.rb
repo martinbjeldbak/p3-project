@@ -12,7 +12,7 @@
 #
 
 class Recipe < ActiveRecord::Base
-  attr_accessible :name, :picture, :rating, :url
+  attr_accessible :name, :picture, :rating, :url, :prep_time
 
   has_many :ingredients
 

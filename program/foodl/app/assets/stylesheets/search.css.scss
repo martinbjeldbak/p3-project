@@ -5,8 +5,22 @@
 #sidebar {
   width: 200px;
   height: 400px;
-  background-color: red; 
-  float: left;
+  
+  border-radius: 5px;
+  background-color: #f7fcf7;
+  box-shadow:0 0 32px 0 #ccd2cc; 
+}
+#recipe-result > ul > li{
+  background-color: #f7fcf7;
+  box-shadow:0 0 32px 0 #ccd2cc; 
+  border-radius: 5px;
+  margin-bottom:8px;
+  padding: 8px;
+}
+#recipe-result ul li .recipe-actions{
+  clear:left;
+}
+#recipe-result > ul ul li{
 }
 
 #search {
@@ -36,4 +50,96 @@
 
 #search input.button {
   width:64px;
+}
+
+
+
+
+#recipe-result li a img{
+  float:left;
+}
+
+li .favoured .ui-icon-heart {
+  background-image:url(images/ui-icons_deepred_256x240.png);
+}
+
+.favour-button{
+  float:right;
+}
+
+li .ui-state-hover .ui-icon-heart {
+  background-image:url(images/ui-icons_666666_256x240.png);
+}
+li .favour-button:hover{
+  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
+
+}
+li .favour-button:hover .ui-icon-heart {
+  -ms-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  -webkit-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  -moz-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+}
+
+#recipe-result{
+  width:592px;
+  float:right;
+}
+
+#recipe-result li {
+  text-align:left;
+  list-style-type: none;
+}
+
+#recipe-result li ul {
+  height:100px;
+  overflow:hidden;
+}
+#recipe-result li ul:hover {
+  overflow:visible;
+}
+
+
+#recipe-result > ul > li > * {
+	margin-left: 208px;
+}
+#recipe-result > ul > li > .recipe-actions,
+#recipe-result > ul > li > a,
+#recipe-result > ul > li > .favour-button{
+	margin-left: 0;
+}
+#recipe-result > ul > li > a > img{
+	width: 200px;
+}
+
+
+.report-button{
+  display:block;
+  float:right;
+  height:16px;
+  width:16px;
+}
+
+.report-button .ui-icon{
+  position:static !important;
+  top:auto !important;
+  left:auto !important;
+  margin:0 !important;
+}
+
+.rating {
+  height:16px;
+  width:80px;
+  background-image:url(images/rating.png);
+  background-position: 0px 16px;
+  position:relative;
+}
+
+.recipe-actions{
+}
+
+.rating div{
+  height:16px;
+  background-image:url(images/rating.png);
+  background-position: 0px 0px;
 }
