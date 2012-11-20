@@ -1,21 +1,17 @@
-<%= render partial: 'form' %>
-
 <div id="shopping_list">
   <div class="blue_line_vertical"></div>
-    <div id="shopping_list_title">
-      <h1>
-        Indkøbsliste
-      </h1>
-    </div>
-    <div id="list">
-    <ul>
-      <div class="blue_line_horisontal"></div>
-
-      <% @shopping_list.each do |item| %>
-            <li data-id="<%= item.id %>"><%= item.quantity %> <%= item.unit %> <%= item.name %><a href="#"></a></li>
-        <div class="blue_line_horisontal"></div>
-      <% end %>
-    </ul>
-    </div>
+  <div id="shopping_list_title">
+    <h1>
+      Indkøbsliste
+    </h1>
+  </div>
+  <ul>
+    <div class="blue_line_horisontal"></div>
+    <% @shopping_list.each do |item| %>
+      <li data-id="<%= item.id %>"> <%= formatQuantityAndUnit(item) %> <%= item.name %> <a href="#"></a></li>
+    <div class="blue_line_horisontal"></div>
+    <% end %>
+  </ul>
+>>>>>>> 48eca7da08a62b87ff7755e83a5f3fea6d93c5b7
 </div>
-
+<%= render partial: 'form' %>

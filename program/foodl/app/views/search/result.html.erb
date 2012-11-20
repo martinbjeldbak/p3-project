@@ -1,13 +1,33 @@
+<% @toolbar=true %>
 
-<div id="toolbartop">
-  <div id="slider">
-    
-  </div>
-  <div id="amount">
-    
-  </div>
+<div id="sidebar">
+
 </div>
 
-<div id="toolbar">
-  
+<div id="recipe-result">
+  <ul>
+    <% @recipes.each do |recipe| %>
+
+
+    <li>
+
+      <a href="<%= recipe.url %>">
+        <img src="<%=url_for controller: :recipes, action: :picture, id: recipe.id %>" width="200">
+      </a>
+      <button class="favour-button favoured">Fjern opskrift fra favoritter</button>
+      <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
+      <div class="rating">
+        <div style="width:50%;"></div>
+      </div>
+      <ul>
+      </ul>
+      <div class="recipe-actions">
+        <a href="#" class="report-button ui-button-icon-only" title="Rapporter en fejl vedr. opskriften">
+
+        </a>
+        <p> Tilberedningstid: 30 min. </p>
+      </div>
+    </li>
+    <% end %>
+  </ul>
 </div>
