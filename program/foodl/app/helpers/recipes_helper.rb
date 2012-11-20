@@ -1,2 +1,2 @@
-module RecipeHelper
+module RecipesHelper
 end
