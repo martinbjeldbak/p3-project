@@ -8,7 +8,7 @@ class SearchController < ApplicationController
     if names.empty?
       redirect_to :root
     end
-    sql = "SELECT name, id FROM recipes WHERE id IN ("
+    sql = "SELECT * FROM recipes WHERE id IN ("
     sql += "SELECT recipe_id FROM ingredients WHERE food_type_id IN ("
     sql += "SELECT id FROM food_types WHERE"
     first = true
