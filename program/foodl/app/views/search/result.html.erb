@@ -4,11 +4,11 @@
   <ul>
     <% @recipes.each do |recipe| %>
     <li>
+      <button class="favour-button favoured">Fjern opskrift fra favoritter</button>
+      <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
       <a href="<%= recipe.url %>">
         <img src="<%=url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Færdiglavet ret">
       </a>
-      <button class="favour-button favoured">Fjern opskrift fra favoritter</button>
-      <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
       <div class="rating">
         <div style="width:50%;"></div>
       </div>
