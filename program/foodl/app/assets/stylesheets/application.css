@@ -267,7 +267,8 @@ header nav a:hover {
 #toolbar {
   height: 38px;
   padding: 8px 0;
-  background-color: pink;
+  background-color: #f7fcf7;
+  border-bottom: 1px solid #ccd2cc;
 }
 #subtoolbar{
   width: 800px;
