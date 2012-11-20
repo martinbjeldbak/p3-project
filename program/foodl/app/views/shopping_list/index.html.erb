@@ -1,4 +1,3 @@
-
 <div id="shopping_list">
   <div class="blue_line_vertical"></div>
   <div id="shopping_list_title">
@@ -6,17 +5,17 @@
       Indkøbsliste
     </h1>
   </div>
+  <div id="list">
   <ul>
     <div class="blue_line_horisontal"></div>
     <% @shopping_list.each do |item| %>
-    <li> <%= formatQuantityAndUnit(item) %> <%= item.name %> <a href="#"></a></li>
-    <div class="blue_line_horisontal"></div>
+        <li data-id="<%= item.id %>"> <%= formatQuantityAndUnit(item) %> <%= item.name %> <a href="#"></a></li>
+        <div class="blue_line_horisontal"></div>
     <% end %>
   </ul>
+  </div>
 </div>
-<div id="add_to_shopping_list" class="no_print">
-  <%= form_for @listItem, url: {action: "create"}, remote: true, html: {class: "addListItemForm", id: "addListItemForm"} do |f| %>
-  <%= f.text_field :name, class: "text", placeholder: "tilføj varer: eks.:\"2 liter mælk\"" %>
-  <%= f.submit "Tilføj", class: "button" %>
-  <% end %>
-</div>
+<%= render partial: 'form' %>
+
+
+

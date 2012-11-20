@@ -9,7 +9,9 @@ class FavoritesController < ApplicationController
 	if logged_in?
       recipe = Recipe.find_by_id(params[:id])
       if recipe
-          current_user.favorites << recipe
+        current_user.favorites << recipe
+        recipe.rating += 1
+        recipe.save
         return respond_to do |format|
           format.html do
             redirect_to :favorites
