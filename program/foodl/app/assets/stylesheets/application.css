@@ -233,18 +233,21 @@ header nav a:hover {
   position:absolute;
 }
 
-li .favoured .ui-icon-heart{
+li .favoured .ui-icon-heart {
   background-image:url(images/ui-icons_deepred_256x240.png);
 }
-li .ui-state-hover .ui-icon-heart{
+li .ui-state-hover .ui-icon-heart {
   background-image:url(images/ui-icons_666666_256x240.png);
 }
-
-li .favour-button:hover {
+li .favour-button:hover{
   background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
-  /*animation-duration:3s;
-  animation-name:heartbeat;
-  animation-iteration-count:infinite;*/
+
+}
+li .favour-button:hover .ui-icon-heart {
+  -ms-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  -webkit-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  -moz-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
 }
 
 .ui-menu-item a {
@@ -332,12 +335,19 @@ li .favour-button:hover {
   display:none;
 }
 
-/*@keyframes heartbeat {
-  from {
-    width:30px !important;
-  }
-  
-  to {
-    width:200px !important;
-  }
-}*/
+@-ms-keyframes heartbeat {
+  from{ transform: scale(1.0); }
+  to { transform: scale(1.2); }
+}
+@-webkit-keyframes heartbeat {
+  from{ -webkit-transform: scale(1.0); }
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes heartbeat {
+  from{ -moz-transform: scale(1.0); }
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes heartbeat {
+  from{ transform: scale(1.0); }
+  to { transform: scale(1.2); }
+}
