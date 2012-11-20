@@ -21,8 +21,9 @@ class SearchController < ApplicationController
       sql += ' name = ' + Recipe.connection.quote(name)
     end
     sql += '))'
-    firebug "hello, world"
+    firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
+    firebug "Results: " + @recipes.length.to_s
   end
 
   def autocomplete_food_types
