@@ -1,19 +1,6 @@
 $(function() {
 
   var submitButton = $("#search-form .submit-button");
-  submitButton.enable = function() {
-    this.removeAttr('disabled');
-    this.removeClass('ui-state-hover');
-    this.removeClass('ui-state-active');
-    this.button('enable');
-  };
-  submitButton.disable = function() {
-    this.attr('disabled', 'disabled');
-    this.removeClass('ui-state-hover');
-    this.removeClass('ui-state-active');
-    this.button('disable');
-  };
-
   var foodTypes = [];
 
   var updateFoodTypes = function () {

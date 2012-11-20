@@ -12,16 +12,25 @@ class ShoppingListController < ApplicationController
   def create
     @listItem = ListItem.new
 
-    @listItem.name = params[:list_item][:name]
+    @listItem.name = params[:name]
     @listItem.user = current_user
 
     if @listItem.save
       render json: @listItem
     else
-      #redirect_to root_url
-      #respond_with @listItem.errors
       render json: @listItem.errors
     end
+  end
+
+  def remove
+    @listItem = ListItem.find_by_id(params[:id])
+
+    if @listItem.destroy # and @listItem.user == current_user
+      render json: @listItem
+    else
+      render json: @listItem.errors
+    end
+
   end
 
   # Manglende actions:
