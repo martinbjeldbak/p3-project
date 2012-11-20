@@ -233,9 +233,18 @@ header nav a:hover {
   position:absolute;
 }
 
+#recipe-result li a img{
+  float:left;
+}
+
 li .favoured .ui-icon-heart {
   background-image:url(images/ui-icons_deepred_256x240.png);
 }
+
+.favour-button{
+  float:right;
+}
+
 li .ui-state-hover .ui-icon-heart {
   background-image:url(images/ui-icons_666666_256x240.png);
 }
@@ -248,6 +257,61 @@ li .favour-button:hover .ui-icon-heart {
   -webkit-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
   -moz-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
   animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+}
+
+#recipe-result li {
+  margin-left:200px;
+  background-color:pink;
+  text-align:left;
+  list-style-type: none;
+}
+
+#recipe-result li ul, #recipe-result li h2 a, .rating{
+  margin-left:8px;
+}
+#recipe-result li li{
+  margin-left:8px;
+}
+
+#recipe-result li ul {
+  height:80px;
+  overflow:hidden;
+}
+
+.recipe-actions{
+  background-color:cyan;
+}
+
+.report-button{
+  display:block;
+  float:right;
+  height:16px;
+  width:16px;
+}
+
+.report-button .ui-icon{
+  position:static !important;
+  top:auto !important;
+  left:auto !important;
+  margin:0 !important;
+}
+
+.rating {
+  display:inline-block;
+  height:16px;
+  width:80px;
+  background-image:url(images/rating.png);
+  background-position: 0px 16px;
+  position:relative;
+}
+
+.recipe-actions{
+}
+
+.rating div{
+  height:16px;
+  background-image:url(images/rating.png);
+  background-position: 0px 0px;
 }
 
 .ui-menu-item a {

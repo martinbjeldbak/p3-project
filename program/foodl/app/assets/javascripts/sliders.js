@@ -20,4 +20,13 @@ $(function() {
     },
     text: false
   });
+  
+  $( ".report-button" ).button({
+    icons: {
+      primary: "ui-icon-alert"
+    },
+    text: false
+  }).removeClass('ui-button')
+    .removeClass('ui-state-default')
+    .addClass('ui-dialog-titlebar-close');
 });

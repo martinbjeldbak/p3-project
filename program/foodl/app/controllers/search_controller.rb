@@ -4,11 +4,14 @@ class SearchController < ApplicationController
 
   def result
     querystring = params[:q]
+    if !querystring 
+      return redirect_to :root
+    end
     names = querystring.split '|'
     if names.empty?
-      redirect_to :root
+      return redirect_to :root
     end
-    sql = "SELECT name, id FROM recipes WHERE id IN ("
+    sql = "SELECT * FROM recipes WHERE id IN ("
     sql += "SELECT recipe_id FROM ingredients WHERE food_type_id IN ("
     sql += "SELECT id FROM food_types WHERE"
     first = true
@@ -21,7 +24,9 @@ class SearchController < ApplicationController
       sql += ' name = ' + Recipe.connection.quote(name)
     end
     sql += '))'
+    firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
+    firebug "Results: " + @recipes.length.to_s
   end
 
   def autocomplete_food_types
