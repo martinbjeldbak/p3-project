@@ -25,7 +25,7 @@ class ShoppingListController < ApplicationController
   def remove
     @listItem = ListItem.find_by_id(params[:id])
 
-    if @listItem.user == current_user and @listItem.destroy
+    if @listItem.destroy # and @listItem.user == current_user
       render json: @listItem
     else
       render json: @listItem.errors

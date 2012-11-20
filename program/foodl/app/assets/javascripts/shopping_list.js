@@ -13,6 +13,9 @@ $(function() {
     $('#list').on("click", "li a", function(event){
         var listItem = this;
 
+        $(this).children().hide();
+        $(this).hide();
+
         $.ajax({
             url: "/list/remove",
             type: "POST",
@@ -60,7 +63,7 @@ $(function() {
                 $('#list ul').append(listItem);
                 listItem.after('<div class="blue_line_horisontal"></div>');
 
-                $('#list_item_name').val('');
+                $('#list_item_name').val(' ');
             },
             error: function(error) {
                 alert("Fejl på siden! Kunne ikke tilføje tekststreng");
