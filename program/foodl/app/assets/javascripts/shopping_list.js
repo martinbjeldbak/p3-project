@@ -3,30 +3,69 @@
  You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/ */
 
 $(function() {
-    $('#shoppingList li a').listRemoveButton();
+    var submitButton = $('input[type="submit"]');
+    $(submitButton).disable();
 
-    $('#addListItemForm').submit(function() {
+    // Add remove button to links
+    $('#list li a').listRemoveButton();
 
-        var valuesToSubmit = $(this).serialize();
-
-        var name = $('input#list_item_name').val();
+    // Upon clicking on the remove button
+    $('#list').on("click", "li a", function(event){
+        var listItem = this;
 
         $.ajax({
-            url: $(this).attr('action'), // submits to the given URL
+            url: "/list/remove",
             type: "POST",
-            data: valuesToSubmit,
+            data: {id: $(this).parent().data("id") },
             dataType: "JSON",
             success: function(json) {
-                $('#shoppingList ul').append('<li>' + name + '<a href="#"></a></li>');
+                $(listItem).parent().next().remove();
+                $(listItem).parent().remove();
+            },
+            error: function(error) {
+                alert("Fejl på siden! Kunne ikke fjerne indhold på indkøbslisten. ");
+            }
+        });
+        return false;
+    });
+
+    // When the user types in the list item add box for the form
+    $('#list_item_name').keyup(function() {
+
+        if($('#list_item_name').val().length == 0) {
+            $(submitButton).disable();
+        } else {
+            $(submitButton).enable();
+        }
+    });
+
+    // Upon submitting to the form, go through the controller
+    $('#addListItemForm').submit(function() {
+        var name = $('input#list_item_name').val();
+
+        if(name < 1) {
+          return false;
+        }
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: "POST",
+            data: {name: name},
+            dataType: "JSON",
+            success: function(responseItem) {
+                var listItem = $('<li />');
+                listItem.data("id", responseItem.id);
+                listItem.html(name);
+                listItem.append($('<a href="#"></a>').listRemoveButton());
+                $('#list ul').append(listItem);
+                listItem.after('<div class="blue_line_horisontal"></div>');
+
                 $('#list_item_name').val('');
             },
-            error: function(test) {
-                alert("Fejl på siden");
+            error: function(error) {
+                alert("Fejl på siden! Kunne ikke tilføje tekststreng");
             }
-        })/*.success(function(json){
-         $('#shoppingList ul').append('<li>test</li>');
-         $('#shoppinglist ul').refresh();
-         }); */
+        });
         return false;
     });
 });
