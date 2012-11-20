@@ -233,7 +233,7 @@ header nav a:hover {
   position:absolute;
 }
 
-li a img{
+#recipe-result li a img{
   float:left;
 }
 
@@ -259,21 +259,21 @@ li .favour-button:hover .ui-icon-heart {
   animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
 }
 
-li {
+#recipe-result li {
   margin-left:200px;
   background-color:pink;
   text-align:left;
   list-style-type: none;
 }
 
-li ul, li h2 a, .rating{
+#recipe-result li ul, #recipe-result li h2 a, .rating{
   margin-left:8px;
 }
-li li{
+#recipe-result li li{
   margin-left:8px;
 }
 
-li ul {
+#recipe-result li ul {
   height:80px;
   overflow:hidden;
 }
