@@ -35,6 +35,20 @@ jQuery.fn.listRemoveButton = function() {
   return this;
 };
 
+jQuery.fn.enable = function() {
+    this.removeProp('disabled');
+    this.removeClass('ui-state-hover');
+    this.removeClass('ui-state-active');
+    this.button('enable');
+};
+jQuery.fn.disable = function() {
+    this.prop('disabled', 'disabled');
+    this.removeClass('ui-state-hover');
+    this.removeClass('ui-state-active');
+    this.button('disable');
+};
+
+
 $(function() {
   $('input.button').button();
   $('input, textarea').placeholder();
