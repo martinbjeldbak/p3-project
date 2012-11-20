@@ -228,12 +228,108 @@ header nav a:hover {
   display:block;
 }
 
+.ui-menu {
+  width:100px;
+  position:absolute;
+}
+
+#recipe-result li a img{
+  float:left;
+}
+
+li .favoured .ui-icon-heart {
+  background-image:url(images/ui-icons_deepred_256x240.png);
+}
+
+.favour-button{
+  float:right;
+}
+
+li .ui-state-hover .ui-icon-heart {
+  background-image:url(images/ui-icons_666666_256x240.png);
+}
+li .favour-button:hover{
+  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
+
+}
+li .favour-button:hover .ui-icon-heart {
+  -ms-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  -webkit-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  -moz-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+  animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+}
+
+#recipe-result li {
+  margin-left:200px;
+  background-color:pink;
+  text-align:left;
+  list-style-type: none;
+}
+
+#recipe-result li ul, #recipe-result li h2 a, .rating{
+  margin-left:8px;
+}
+#recipe-result li li{
+  margin-left:8px;
+}
+
+#recipe-result li ul {
+  height:80px;
+  overflow:hidden;
+}
+
+.recipe-actions{
+  background-color:cyan;
+}
+
+.report-button{
+  display:block;
+  float:right;
+  height:16px;
+  width:16px;
+}
+
+.report-button .ui-icon{
+  position:static !important;
+  top:auto !important;
+  left:auto !important;
+  margin:0 !important;
+}
+
+.rating {
+  display:inline-block;
+  height:16px;
+  width:80px;
+  background-image:url(images/rating.png);
+  background-position: 0px 16px;
+  position:relative;
+}
+
+.recipe-actions{
+}
+
+.rating div{
+  height:16px;
+  background-image:url(images/rating.png);
+  background-position: 0px 0px;
+}
+
 .ui-menu-item a {
   font-weight:normal;
   color:#000;
   display:block;
   font-size:14px;
   padding:2px 4px;
+}
+
+.slidertool{
+  float:left;
+  padding:8px;
+  
+}
+
+.slidertool label {
+  font-size:11.5px;
 }
 
 .ui-menu-item a.ui-state-hover {
@@ -244,9 +340,42 @@ header nav a:hover {
   padding:2px 4px;
 }
 
+#amount {
+  border: none;
+}
+
+#toolbar {
+  height: 38px;
+  padding: 8px 0;
+  background-color: pink;
+}
+#subtoolbar{
+  width: 800px;
+  margin: 0 auto;
+}
+#subtoolbar .slidertool{
+  margin:0;
+  padding:0;
+  float:left;
+  width:33.33%;
+}
+
+#subtoolbar #prep-time, #subtoolbar #sorting {
+  padding-top:6px;
+}
+
+#amount-slider{
+  margin:0 auto;
+}
+
+
 .ui-slider {
   width:200px;
   
+}
+
+.ui-slider .ui-slider-handle {
+  width:8px !important;
 }
 
 .placeholder {
@@ -268,4 +397,21 @@ header nav a:hover {
 
 .list-remove .ui-button-text {
   display:none;
+}
+
+@-ms-keyframes heartbeat {
+  from{ transform: scale(1.0); }
+  to { transform: scale(1.2); }
+}
+@-webkit-keyframes heartbeat {
+  from{ -webkit-transform: scale(1.0); }
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes heartbeat {
+  from{ -moz-transform: scale(1.0); }
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes heartbeat {
+  from{ transform: scale(1.0); }
+  to { transform: scale(1.2); }
 }

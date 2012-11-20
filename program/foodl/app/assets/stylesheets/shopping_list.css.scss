@@ -32,7 +32,7 @@ div.blue_line_vertical {
 
 #shopping_list {
   border: black solid;
-  border-radius: 5px;
+  border-radius: 2px;
   width: 500px;
   background-color: #fff7c6;
   box-shadow:0 0 32px 0 #ccd2cc;
@@ -43,6 +43,8 @@ div.blue_line_vertical {
   ul li {
     font-family: 'Crafty Girls';
     font-size: 20px;
+    text-align: left;
+    padding-left: 110px;
   }
 
   ul {
@@ -63,3 +65,9 @@ div.blue_line_vertical {
   font-weight: bold;
   font-size: 30px;
 }
+
+#add_to_shopping_list {
+  padding-top: 20px;
+}
+
+

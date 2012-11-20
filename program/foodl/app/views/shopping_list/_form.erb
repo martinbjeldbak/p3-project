@@ -1,5 +1,7 @@
+<div id="add_to_shopping_list">
 Tilføj på indkøbsliste:
 <%= form_for @listItem, url: {action: "create"}, remote: true, html: {class: "addListItemForm", id: "addListItemForm"} do |f| %>
     <p><%= f.text_field :name, class: "text" %></p></p>
     <p><%= f.submit "Tilføj", id: "submitButton", class: "button" %></p>
 <% end %>
+</div>
