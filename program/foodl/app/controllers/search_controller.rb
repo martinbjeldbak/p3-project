@@ -21,6 +21,7 @@ class SearchController < ApplicationController
       sql += ' name = ' + Recipe.connection.quote(name)
     end
     sql += '))'
+    firebug "hello, world"
     @recipes = Recipe.find_by_sql(sql)
   end
 
