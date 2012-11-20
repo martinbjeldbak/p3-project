@@ -7,20 +7,36 @@ class FavoritesController < ApplicationController
   
   def add
 	if logged_in?
-		recip = Recipe.find_by_id( params[:id] )
-		if recip
-			current_user.favorites<<recip
-		end
+      recipe = Recipe.find_by_id(params[:id])
+      if recipe
+          current_user.favorites << recipe
+        return respond_to do |format|
+          format.html do
+            redirect_to :favorites
+          end
+          format.json do
+            render json: recipe 
+          end
+        end
+      end
 	end
-	redirect_to :favorites
+    redirect_to :favorites
   end
   
   def remove
 	if logged_in?
-		fav = current_user.favorites.find_by_id( params[:id] )
-		if fav
-			fav.destroy
-		end
+      fav = current_user.favorites.find_by_id( params[:id] )
+      if fav
+        fav.destroy
+        return respond_to do |format|
+          format.html do
+            redirect_to :favorites
+          end
+          format.json do
+            render json: true
+          end
+        end
+      end
 	end
 	redirect_to :favorites
   end
