@@ -1,0 +1,26 @@
+<h1>Opdatér din profil</h1>
+
+<div>
+  <%= form_for @user do |f| %>
+    <%= render 'shared/error_messages' %>
+
+    <div class="input">
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </div>
+
+    <div class="input">
+      <%= f.label :password, "Kodeord" %>
+      <%= f.password_field :password %>
+    </div>
+
+    <div class="input">
+      <%= f.label :password_confirmation, "Bekræft kodeord" %>
+      <%= f.password_field :password_confirmation %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Gem ændringer", class: "button" %>
+    </div>
+  <% end %>
+</div>
