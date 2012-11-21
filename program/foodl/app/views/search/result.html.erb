@@ -9,8 +9,8 @@
 <div id="sidebar">
   <h2>Din søgning</h2>
   <ul>
-  <% food_types.each do |food_type| %>
-    <li> <%= food_type.name %></li>  
+  <% @food_types.each do |food_type| %>
+  <li><%= food_type.name %><a href="#"></a></li>  
   <% end %>
   </ul>
   <form action="<%=url_for :action => "result" %>" method="get" id="search-form">
@@ -18,4 +18,6 @@
     <input type="text" class="text" id="ingredient" placeholder="Indtast råvare" />
     <input type="submit" class="button submit-button" value="Søg" />
   </form>
+  
+  <div id="menu-container" style="position:absolute; width: 185px;"></div>
 </div>
