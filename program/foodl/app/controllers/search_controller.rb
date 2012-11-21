@@ -14,16 +14,11 @@ class SearchController < ApplicationController
 #SELECT recipes.*, COUNT(*) as reccount FROM ingredients RIGHT JOIN recipes ON recipe_id = recipes.id WHERE food_type_id IN (SELECT id FROM food_types WHERE name = "havregryn" OR name = "bagepulver" OR name = "hvedemel") GROUP BY recipes.id ORDER BY reccount DESC
     sql = "SELECT recipes.*, COUNT(*) as relevance FROM ingredients"
     sql += " RIGHT JOIN recipes ON recipe_id = recipes.id"
-    sql += " WHERE food_type_id IN (SELECT id FROM food_types WHERE ("
-    first = true
-    for name in names
-      if first
-        first = false
-      else
-        sql += ' OR'
-      end
-      sql += ' name = ' + Recipe.connection.quote(name)
+    sql += " WHERE food_type_id IN (SELECT id FROM food_types WHERE name in ("
+    names.map! do |name|
+      name = Recipe.connection.quote(name)
     end
+    sql += names.join ", "
     sql += ')) GROUP BY recipes.id ORDER BY relevance DESC'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
