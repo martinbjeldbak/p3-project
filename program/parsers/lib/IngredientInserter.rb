@@ -137,9 +137,9 @@ NULL ,
 '"+recipe_id.to_s+"', 
 now(),
 now(),
-'"+@@db.escape_string(IngredientComponent.GetOriginalName()).force_encoding("UTF-8")+"',
+'"+@@db.escape_string(IngredientComponent.GetName()).force_encoding("UTF-8")+"',
 '"+match.to_s+"',
-'"+@@db.escape_string(IngredientComponent.GetName()).force_encoding("UTF-8")+"'
+'"+@@db.escape_string(IngredientComponent.GetOriginalName()).force_encoding("UTF-8")+"'
 )"
 @@db.query(q)
 	end
