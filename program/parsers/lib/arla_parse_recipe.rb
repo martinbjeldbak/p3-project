@@ -30,21 +30,13 @@ end
 
 def parseRecipe(recipe_url, db)
 	puts "Parsing ingredients from link: " + recipe_url
-	#doc = Nokogiri::HTML open(recipeUrl)
-	
 	ArlaParser.SetUrl(recipe_url)
-	
 	preptime = ArlaParser.GetPrepTime()
 	img = ArlaParser.GetImage()
 	name = ArlaParser.GetName()
-	
 	puts "Parsing recipe name: "+ name.to_s
-	
-	recipe_id = insertRecipeInDB(db, name, recipe_url, preptime, img)
-	
+	recipe_id = insertRecipeInDB(db, name, recipe_url, preptime, img)	
 	portion = ArlaParser.GetPortion()
 	ingredients = ArlaParser.GetIngredients()
 	IngredientInserter.Insert(recipe_id, ingredients, portion) #handles the insertion of ingredients
-	
-	
 end 
