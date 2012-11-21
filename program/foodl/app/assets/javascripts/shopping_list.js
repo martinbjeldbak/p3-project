@@ -3,7 +3,7 @@
  You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/ */
 
 $(function() {
-    var submitButton = $('input[type="submit"]');
+    var submitButton = $('#submitButton');
     $(submitButton).disable();
 
     // Add remove button to links
