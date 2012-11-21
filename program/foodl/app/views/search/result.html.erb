@@ -2,29 +2,7 @@
 
 <div id="recipe-result">
   <ul>
-    <% @recipes.each do |recipe| %>
-    <li>
-      <button class="favour-button favoured">Fjern opskrift fra favoritter</button>
-      <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
-      <a href="<%= recipe.url %>">
-        <img src="<%=url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Færdiglavet ret">
-      </a>
-      <div class="rating">
-        <div style="width:50%;"></div>
-      </div>
-      <ul>
-	    <% recipe.ingredients.each do |ingredient| %>
-		  <li><%= ingredient.name %></li>
-	    <% end %>
-      </ul>
-      <div class="recipe-actions">
-        <a href="#" class="report-button ui-button-icon-only" title="Rapporter en fejl vedr. opskriften">
-
-        </a>
-        <p> Tilberedningstid: <%= recipe.prep_time %> min. </p>
-      </div>
-    </li>
-    <% end %>
+	<%= render :partial => 'search/recipe', :locals => { :recipes => @recipes } %>
   </ul>
 </div>
 
