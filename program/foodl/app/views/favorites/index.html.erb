@@ -2,7 +2,7 @@
 <% if @favs; begin %>
 <div id="recipe-result">
 <ul>
-	<%= render :partial => 'search/recipe', :locals => { :recipes => @favs } %>
+	<%= render :partial => 'search/recipe', :locals => { :recipes => @favs, :search => false } %>
 </ul>
 </div>
 <% end %>
