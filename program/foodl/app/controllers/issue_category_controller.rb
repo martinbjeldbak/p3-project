@@ -1,0 +1,2 @@
+class IssueCategoryController < ApplicationController
+end
