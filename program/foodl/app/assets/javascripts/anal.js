@@ -1,4 +1,5 @@
-h(['_setAccount', 'UA-627108-7']);
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-627108-7']);
 _gaq.push(['_setDomainName', 'foodl.dk']);
 _gaq.push(['_trackPageview']);
 
