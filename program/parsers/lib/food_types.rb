@@ -14,7 +14,7 @@ require "mysql"
 @@db.query("SET NAMES utf8")
 
 def self.LoadFoodTypesFromDB
-	res = @@db.query("select `name`, `id` from `foodl`.`ingredients`")
+	res = @@db.query("select `name`, `id` from `foodl`.`food_types`")
 	res.each do |row|
 		@@foods << [row[0].force_encoding("UTF-8"), row[1]]
 	end
@@ -30,7 +30,6 @@ def self.Get
 	return @@foods
 end
 
-load_food_from_db() #loads food_types from database
 #print_food_table() #prints the food table
 
 end #end of class
