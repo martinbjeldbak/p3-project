@@ -21,8 +21,8 @@ end
 
 def self.GetPrepTime()
 	prepTime = @@page.css("p.nutrition time").text.to_s.strip.partition(" ")
-	if (prepTime == "60+")
-		prepTime = "60"
+	if (prepTime[0] == "60+")
+		prepTime[0] = "61"
 	end
 	return prepTime[0]
 end
