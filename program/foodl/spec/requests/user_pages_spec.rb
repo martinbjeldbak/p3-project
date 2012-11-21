@@ -13,6 +13,39 @@ describe "User Pages" do
 
   end
 
+  describe "edit" do
+    let(:user) { FactoryGirl.create(:user) }
+    before { visit edit_user_path(user) }
+
+    describe "page" do
+      it { should have_selector('h1',    text: "Opdater profil") }
+      it { should have_selector('title', text: "Redigér bruger") }
+    end
+
+    describe "with invalid information" do
+      before { click_button "Gem ændringer" }
+
+      it { should have_content('error') }
+    end
+
+    describe "with valid information" do
+      let(:new_name)  { "Ny navn" }
+      let(:new_email) { "ny@example.dk" }
+      before do
+        fill_in "Email",            with: new_email
+        fill_in "Kodeord",         with: user.password
+        fill_in "Bekræft kodeord", with: user.password
+        click_button "Gem ændringer"
+      end
+
+      #it { should have_selector('title', text: new_name) }
+      it { should have_selector('div.alert.alert-success') }
+      it { should have_link('Log ud', href: signout_path) }
+      specify { user.reload.name.should  == new_name }
+      specify { user.reload.email.should == new_email }
+    end
+  end
+
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
     before { visit user_path(user) }
