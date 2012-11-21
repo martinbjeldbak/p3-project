@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_filter :logged_in_user, only: [:edit, :update, :destroy] #:edit, :update
+  before_filter :correct_user,   only: [:edit, :update]
+  before_filter :admin_user,     only: [:index, :destroy]
 
   def index
     @users = User.all
@@ -23,6 +26,43 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    # Gets @user from correct_user...
+
+  end
+
+  def update
+    # Also gets @user from correct_user
+    if @user.update_attributes(params[:user])
+      flash[:success] = "Profil opdateret"
+      log_in @user
+      redirect_to root_path
+    else
+      render 'edit'
+    end
+  end
+
   def login
+  end
+
+  def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "Bruger slettet."
+    redirect_to users_url
+  end
+
+  private
+
+  def logged_in_user
+    redirect_to login_url, notice: "Log venligst ind." unless logged_in?
+  end
+
+  def correct_user
+    @user = User.find(params[:id])
+    redirect_to root_path, notice: "Det har du ikke tilladelse til" unless current_user?(@user)
+  end
+
+  def admin_user
+    redirect_to root_path, notice: "Det har du ikke tilladelse til!" unless current_user.admin?
   end
 end

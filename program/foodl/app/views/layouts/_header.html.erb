@@ -6,7 +6,7 @@
     <%= link_to "indkøbsliste #{listCount}", list_path %>
     <a href="#">favoritter (0)</a>
     <% if logged_in? %>
-        <%= link_to "indstillinger", '#' %>
+        <%= link_to "indstillinger", edit_user_path(current_user) %>
         <%= link_to "log ud", logout_path , method: "delete" %>
     <% else %>
         <%= link_to "log ind / opret bruger", login_path %>
