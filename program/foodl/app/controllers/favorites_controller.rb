@@ -10,7 +10,7 @@ class FavoritesController < ApplicationController
       recipe = Recipe.find_by_id(params[:id])
       if recipe
         current_user.favorites << recipe
-        recipe.rating += 1
+        recipe.rating = recipe.rating ? (recipe.rating + 1) : 1
         recipe.save
         return respond_to do |format|
           format.html do
