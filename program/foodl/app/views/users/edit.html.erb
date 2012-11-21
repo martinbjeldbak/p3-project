@@ -1,26 +1,30 @@
-<h1>Opdatér din profil</h1>
 
-<div>
+
+<div id="Edit_page">
+  <div id="Register_user">
+  <h1>Opdatér din profil</h1>
   <%= form_for @user do |f| %>
     <%= render 'shared/error_messages' %>
 
     <div class="input">
-      <%= f.label :email %>
-      <%= f.email_field :email %>
+      <!-- <%= f.label :email %> -->
+      <%= f.email_field :email, class: "text" %>
+
     </div>
 
     <div class="input">
-      <%= f.label :password, "Kodeord" %>
-      <%= f.password_field :password %>
+      <!-- <%= f.label :password, "Kodeord" %> -->
+      <%= f.password_field :password, class: "text", placeholder: "Kodeord" %>
     </div>
 
     <div class="input">
-      <%= f.label :password_confirmation, "Bekræft kodeord" %>
-      <%= f.password_field :password_confirmation %>
+      <!-- <%= f.label :password_confirmation, "Bekræft kodeord" %> -->
+      <%= f.password_field :password_confirmation, class: "text", placeholder: "Bekræft kodeord" %>
     </div>
 
     <div class="actions">
       <%= f.submit "Gem ændringer", class: "button" %>
     </div>
   <% end %>
+  </div>
 </div>
