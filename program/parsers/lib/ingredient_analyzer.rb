@@ -1,4 +1,12 @@
-﻿class IngredientComponent
+﻿#Provides methods for analyzing an ingredients components: amount, unit, name
+#Usage:
+#Call Analyze("5 kg kartofler")
+#GetAmount() -> 5
+#GetUnit() -> kg
+#GetName() -> kartofler
+#GetOriginal -> 5 kg kartofler
+
+class IngredientComponent
 
 @@amount = ""
 @@unit = ""
