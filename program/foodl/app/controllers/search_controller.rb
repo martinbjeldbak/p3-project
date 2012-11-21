@@ -12,14 +12,18 @@ class SearchController < ApplicationController
       return redirect_to :root
     end
 #SELECT recipes.*, COUNT(*) as reccount FROM ingredients RIGHT JOIN recipes ON recipe_id = recipes.id WHERE food_type_id IN (SELECT id FROM food_types WHERE name = "havregryn" OR name = "bagepulver" OR name = "hvedemel") GROUP BY recipes.id ORDER BY reccount DESC
-    sql = "SELECT recipes.*, COUNT(*) as relevance FROM ingredients"
-    sql += " RIGHT JOIN recipes ON recipe_id = recipes.id"
-    sql += " WHERE food_type_id IN (SELECT id FROM food_types WHERE name in ("
+    sql = "SELECT * FROM food_types WHERE name in ("
     names.map! do |name|
       name = Recipe.connection.quote(name)
     end
     sql += names.join ", "
-    sql += ')) GROUP BY recipes.id ORDER BY relevance DESC'
+    sql += ")"
+    @food_types = FoodType.find_by_sql(sql)
+    sql = "SELECT recipes.*, COUNT(*) as relevance FROM ingredients"
+    sql += " RIGHT JOIN recipes ON recipe_id = recipes.id"
+    sql += " WHERE food_type_id IN ("
+    sql += @food_types.map { |type| type.id }.join ", "
+    sql += ') GROUP BY recipes.id ORDER BY relevance DESC'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
     firebug "Results: " + @recipes.length.to_s
