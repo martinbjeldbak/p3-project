@@ -39,9 +39,8 @@
   list-style-type:none;
 }
 
-#search ul li {
-  margin-bottom:8px;
-  padding:0 0;
+#search ul li, #sidebar ul li {
+  margin-bottom:4px;
   text-align:left;
   padding:0 2px;
   font-size:1.1em;
