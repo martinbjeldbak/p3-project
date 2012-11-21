@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121121081619) do
+ActiveRecord::Schema.define(:version => 20121121100259) do
 
   create_table "food_types", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.boolean  "verified"
+    t.integer  "alias_for"
   end
 
   add_index "food_types", ["name"], :name => "index_food_types_on_name", :unique => true
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20121121081619) do
     t.datetime "updated_at",   :null => false
     t.string   "name"
     t.float    "match"
+    t.string   "original"
   end
 
   create_table "issue_categories", :force => true do |t|
@@ -62,9 +63,9 @@ ActiveRecord::Schema.define(:version => 20121121081619) do
     t.string   "name"
     t.text     "url"
     t.binary   "picture"
-    t.integer  "rating"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "rating",     :default => 0
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.integer  "prep_time"
   end
 

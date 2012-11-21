@@ -1,22 +1,11 @@
 ﻿<h1>Favoritter</h1>
 <% if @favs; begin %>
-<ul data-action="/favorites/remove" data-field="id">
-<% @favs.each do |fav| %>
-	<li data-value="<%= fav.id %>"><a href="<%= fav.url %>"><%= fav.name %></a>
-	</li>
-<% end %>
+<div id="recipe-result">
+<ul>
+	<%= render :partial => 'search/recipe', :locals => { :recipes => @favs, :search => false } %>
 </ul>
+</div>
 <% end %>
 <% elsif %>
 <p>Du har ingen favoriter endnu. Favoriser opskrifter under søgninger og du vil kunne finde dem igen her.</p>
 <% end %>
-
-<h2>Test af indsætning</h2>
-<form method="post" action="/favorites/add">
-	<input name="id" type="text" />
-</form>
-
-<h2>Test af sletning</h2>
-<form method="post" action="/favorites/remove">
-	<input name="id" type="text" />
-</form>

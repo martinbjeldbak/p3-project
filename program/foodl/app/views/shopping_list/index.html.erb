@@ -1,5 +1,9 @@
+
 <div id="shopping_list">
   <div class="blue_line_vertical"></div>
+  <div id="print_button_div" class="no_print">
+    <input type="button" class="print_button" value="Udskriv" onclick="window.print();return false;" />
+  </div>
   <div id="shopping_list_title">
     <h1>
       Indkøbsliste
@@ -16,6 +20,3 @@
   </div>
 </div>
 <%= render partial: 'form' %>
-
-
-
