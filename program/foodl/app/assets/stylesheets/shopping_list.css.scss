@@ -68,6 +68,25 @@ div.blue_line_vertical {
 
 #add_to_shopping_list {
   padding-top: 20px;
+  float: left;
+  padding-left: 300px;
+}
+
+#print_button_div {
+  float: right;
+  background-color: #fff7c6;
+}
+
+.print_button {
+  background-color: #fff7c6;
+  border: 2px solid #d6e3b5;
+  font-family: 'Crafty Girls';
+  font-size: 16px;
+}
+
+.print_button:hover {
+  background-color: #fff7c6;
+  text-decoration: underline;
 }
 
 

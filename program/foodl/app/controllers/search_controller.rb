@@ -12,32 +12,33 @@ class SearchController < ApplicationController
       return redirect_to :root
     end
 #SELECT recipes.*, COUNT(*) as reccount FROM ingredients RIGHT JOIN recipes ON recipe_id = recipes.id WHERE food_type_id IN (SELECT id FROM food_types WHERE name = "havregryn" OR name = "bagepulver" OR name = "hvedemel") GROUP BY recipes.id ORDER BY reccount DESC
+    sql = "SELECT * FROM food_types WHERE name in ("
+    names.map! do |name|
+      name = Recipe.connection.quote(name)
+    end
+    sql += names.join ", "
+    sql += ")"
+    @food_types = FoodType.find_by_sql(sql)
     sql = "SELECT recipes.*, COUNT(*) as relevance FROM ingredients"
     sql += " RIGHT JOIN recipes ON recipe_id = recipes.id"
-    sql += " WHERE food_type_id IN (SELECT id FROM food_types WHERE"
-    first = true
-    for name in names
-      if first
-        first = false
-      else
-        sql += ' OR'
-      end
-      sql += ' name = ' + Recipe.connection.quote(name)
-    end
+    sql += " WHERE food_type_id IN ("
+    sql += @food_types.map { |type| type.id }.join ", "
     sql += ') GROUP BY recipes.id ORDER BY relevance DESC'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
     firebug "Results: " + @recipes.length.to_s
+    if @recipes[0]
+      firebug @recipes[0].relevance.to_s
+    end
   end
 
   def autocomplete_food_types
-    query = "%" + params[:q] + "%"
     orderBy = FoodType.send(
       :sanitize_sql_array,
-      ["case when name LIKE ? then 1 else 0 end DESC", query]
+      ["case when name LIKE ? then 1 else 0 end DESC", params[:q] ]
     )
     names = FoodType.select(:name)
-      .where("name LIKE ?", query)
+      .where("name LIKE ?", "%" + params[:q] + "%")
       .order(orderBy)
       .limit(5)
       .pluck(:name)
