@@ -2,10 +2,20 @@
 
 <div id="recipe-result">
   <ul>
-	<%= render :partial => 'search/recipe', :locals => { :recipes => @recipes, :search => true } %>
+    <%= render :partial => 'search/recipe', :locals => { :recipes => @recipes, :search => true } %>
   </ul>
 </div>
 
 <div id="sidebar">
-
+  <h2>Din søgning</h2>
+  <ul>
+  <% food_types.each do |food_type| %>
+    <li> <%= food_type.name %></li>  
+  <% end %>
+  </ul>
+  <form action="<%=url_for :action => "result" %>" method="get" id="search-form">
+    <input type="hidden" name="q" class="food-types" />
+    <input type="text" class="text" id="ingredient" placeholder="Indtast råvare" />
+    <input type="submit" class="button submit-button" value="Søg" />
+  </form>
 </div>
