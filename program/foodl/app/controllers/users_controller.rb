@@ -1,7 +1,11 @@
+require 'bcrypt'
+
 class UsersController < ApplicationController
   before_filter :logged_in_user, only: [:edit, :update, :destroy] #:edit, :update
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: [:index, :destroy]
+
+  include BCrypt
 
   def index
     @users = User.all
@@ -15,6 +19,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  #Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Check for password og password_confirmation
   def create
     @user = User.new(params[:user])
     if @user.save
@@ -33,11 +38,17 @@ class UsersController < ApplicationController
 
   def update
     # Also gets @user from correct_user
-    if @user.update_attributes(params[:user])
+    passwordEquality = BCrypt::Password.new(@user.password_digest) == params[:user][:old_password]
+    formInfo = params[:user]
+
+    if passwordEquality and @user.update_attributes(password: formInfo[:password], password_confirmation: formInfo[:password_confirmation], email: formInfo[:email])
       flash[:success] = "Profil opdateret"
       log_in @user
       redirect_to root_path
     else
+      if !passwordEquality
+        flash[:error] = "Dit nuvaerende kodeord er ikke rigtigt"
+      end
       render 'edit'
     end
   end
