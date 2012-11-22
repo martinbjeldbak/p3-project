@@ -82,7 +82,6 @@ header {
 }
 
 footer {
-  position:fixed;
   bottom:0;
   left:0;
   text-align:center;
@@ -331,4 +330,20 @@ header nav a:hover {
 @keyframes heartbeat {
   from{ transform: scale(1.0); }
   to { transform: scale(1.2); }
+}
+@-ms-keyframes heartstroke {
+  from{ -ms-transform: scale(1.0); }
+  to { -ms-transform: scale(0.8); }
+}
+@-webkit-keyframes heartstroke {
+  from{ -webkit-transform: scale(1.0); }
+  to { -webkit-transform: scale(0.8); }
+}
+@-moz-keyframes heartstroke {
+  from{ -moz-transform: scale(1.0); }
+  to { -moz-transform: scale(0.8); }
+}
+@keyframes heartstroke {
+  from{ transform: scale(1.0); }
+  to { transform: scale(0.8); }
 }
