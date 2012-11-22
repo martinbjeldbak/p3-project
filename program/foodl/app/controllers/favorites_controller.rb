@@ -29,7 +29,9 @@ class FavoritesController < ApplicationController
 	if logged_in?
       fav = current_user.favorites.find_by_id( params[:id] )
       if fav
-        fav.destroy
+        fav.rating = fav.rating ? (fav.rating > 0 ? fav.rating - 1 : 0) : 0
+        fav.save
+        current_user.favorites.delete(fav)
         return respond_to do |format|
           format.html do
             redirect_to :favorites

@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   helper_method :firebug
+
   private
   def firebug(message, type = :debug)
     request.env['firebug.logs'] ||= []
