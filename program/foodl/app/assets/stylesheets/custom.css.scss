@@ -35,13 +35,15 @@ $grayLighter: #eee;
 }
 
 .alert {
-  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+  padding-bottom: 15px;
+  padding-top: 15px;
   clear: both;
-  width: 50%;
-  padding: 5px;
-  margin-top: 45px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 30%;
+  right: 30%;
   @include box_sizing;
 }
 
@@ -51,8 +53,9 @@ $grayLighter: #eee;
 }
 
 .alert-error {
-  background: #990000;
-  box-shadow:0 0 32px 0 #ccd2cc; 
+  background: #C00;
+  box-shadow:0 0 32px 0 #ccd2cc;
+  color: #FFF;
 }
 
 .debug_dump {
