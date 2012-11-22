@@ -95,4 +95,33 @@ $(function() {
       return true;
     }
   });
+  
+  var checkboxValue = 0;
+  
+  $("#prep-time input").change(function() {
+    if ($(this).is(":checked")) {
+      checkboxValue += parseInt($(this).val());
+    }
+    else {
+      checkboxValue -= parseInt($(this).val());
+    }
+    var value = '';
+    foodTypes.forEach(function(foodType, i) {
+      value += foodType + "|";
+    });
+    $.ajax({
+      url: "/search",
+      method: "GET",
+      data: {q: value, r: checkboxValue},
+    //  dataType: "json",
+      success: function(data) {
+        alert("ello");
+      },
+      error: function(xmlHttpderp, nogetAndet) {
+        alert("nope");
+      },
+    });
+  });
+
+	
 });
