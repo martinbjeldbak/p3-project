@@ -8,7 +8,7 @@ class ShoppingListController < ApplicationController
       user = current_user
       @shopping_list = user.list_items
     else
-      (session[:list_items] ||= [])
+      session[:list_items] ||= []
 
       @shopping_list = session[:list_items]
     end
