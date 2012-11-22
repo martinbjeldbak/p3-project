@@ -26,7 +26,7 @@ class SearchController < ApplicationController
     sql += " RIGHT JOIN recipes ON recipe_id = recipes.id"
     sql += " WHERE food_type_id IN ("
     sql += @food_types.map { |type| type.id }.join ", "
-    sql += ') GROUP BY recipes.id ORDER BY relevance DESC'
+    sql += ') GROUP BY recipes.id ORDER BY relevance DESC LIMIT 0, 50'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
     firebug "Results: " + @recipes.length.to_s
