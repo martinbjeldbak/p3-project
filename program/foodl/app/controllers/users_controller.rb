@@ -1,7 +1,7 @@
 require 'bcrypt'
 
 class UsersController < ApplicationController
-  before_filter :logged_in_user, only: [:edit, :update, :destroy] #:edit, :update
+  before_filter :logged_in_user, only: [:index, :edit, :update, :destroy] #:edit, :update
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: [:index, :destroy]
 
@@ -19,6 +19,9 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def login
+  end
+
   #Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Check for password og password_confirmation
   def create
     @user = User.new(params[:user])
@@ -27,17 +30,16 @@ class UsersController < ApplicationController
       flash[:success] = "Velkommen til foodl, #{@user.email.split('@')[0]}!"
       redirect_to root_path
     else
+      flash[:error] = "Lolnoob"
       render 'login'
     end
   end
 
   def edit
-    # Gets @user from correct_user...
-
   end
 
   def update
-    # Also gets @user from correct_user
+    # Gets @user from correct_user
     passwordEquality = BCrypt::Password.new(@user.password_digest) == params[:user][:old_password]
     formInfo = params[:user]
 
@@ -53,14 +55,20 @@ class UsersController < ApplicationController
     end
   end
 
-  def login
-  end
-
   def destroy
     User.find(params[:id]).destroy
     flash[:success] = "Bruger slettet."
     redirect_to users_url
   end
+
+  # Mailer? http://api.rubyonrails.org/classes/ActionMailer/Base.html
+  #def forgotPassword
+  #  @user = User.find_by_email(params[:email])
+  #  random_password = Array.new(10).map { (65 + rand(58)).chr }.join
+  #  @user.password = random_password
+  #  @user.save!
+  #  Mailer.create_and_deliver_password_change(@user, random_password)
+  #end
 
   private
 
