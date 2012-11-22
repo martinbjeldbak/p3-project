@@ -35,6 +35,18 @@ $(function() {
   };
 
   submitButton.disable();
+  
+  $('#search-form').parent().find(">ul").children().each(
+	function(index, element){
+		addFoodType( $(this).text() );
+		var removeButton = $(this).find(">a").listRemoveButton();
+        removeButton.click(function() {
+          removeFoodType($(this).parent().text());
+          $(this).parent().remove();
+        });
+	}
+  );
+ 
   $("#ingredient").data('rIndex', 0);
   $("#ingredient").autocomplete({
     source: function(request, response) {
@@ -67,11 +79,11 @@ $(function() {
           $(this).parent().remove();
         });
         listItem.append(removeButton);
-        $('#search ul').append(listItem);
+        $('#search-form').parent().find(">ul").append(listItem);
       }
       setTimeout(function() {
         $("#ingredient").val("");
-        $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        //$("html, body").animate({ scrollTop: $(document).height() }, 1000);
       }, 50)
     },
   });
