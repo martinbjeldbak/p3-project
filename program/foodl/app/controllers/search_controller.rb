@@ -35,7 +35,7 @@ class SearchController < ApplicationController
         restrictionSql << 'recipes.prep_time < 30'
       end
       if restrictions & 2 != 0
-        restrictionSql << '(recipes.prep_time >= 30 OR recipes.prep_time <= 60)'
+        restrictionSql << '(recipes.prep_time >= 30 AND recipes.prep_time <= 60)'
       end
       if restrictions & 4 != 0
         restrictionSql << 'recipes.prep_time > 60'
