@@ -79,8 +79,11 @@ li .favoured .ui-icon-heart {
   background-image:url(images/ui-icons_deepred_256x240.png);
 }
 
-.favour-button{
+.favour-button, .shopping-button{
   float:right;
+}
+.shopping-button{
+	margin-right:8px;
 }
 
 li .ui-state-hover .ui-icon-heart {
@@ -130,6 +133,7 @@ li .favoured:hover  .ui-icon-heart{
 #recipe-result > ul > li > h2,
 #recipe-result > ul > li > .recipe-actions,
 #recipe-result > ul > li > a,
+#recipe-result > ul > li > .shopping-button,
 #recipe-result > ul > li > .favour-button{
 	margin-left: 0;
 }
