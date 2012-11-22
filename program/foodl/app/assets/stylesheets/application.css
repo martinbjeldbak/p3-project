@@ -21,8 +21,6 @@
  *= require jquery-ui-1.9.1.custom.css
  */
 body {
-/*  background:#c9cccf url(bg.png) repeat-x; */
-//  background-color:#fcfffc;
   background:#dee8d9 url(bg.png) repeat-x;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
@@ -31,7 +29,7 @@ body {
 
 .container {
   width:800px;
-  margin:128px auto;
+  margin:8px auto;
 }
 
 .container a:link,
@@ -154,9 +152,7 @@ header nav a:hover {
 }
 
 #logo {
-  margin-left:0;
-  margin-right:0;
-  margin-bottom:64px;
+  margin: 64px 0;
 }
 
 #main {
