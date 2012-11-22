@@ -1,37 +1,50 @@
 ﻿<% recipes.each do |recipe| %>
 <li>
+  
   <% if current_user and current_user.favorites.find_by_id( recipe.id ) %>
-	<a href="<%= url_for controller: :favorites, action: :remove, id: recipe.id %>" class="favour-button favoured">Fjern opskrift fra favoritter</a>
-  <% elsif %>
-	<a href="<%= url_for controller: :favorites, action: :add, id: recipe.id %>" class="favour-button">Tilføj opskrift til favoritter</a>
+    <a href="<%= url_for controller: :favorites, action: :remove, id: recipe.id %>" class="favour-button favoured">Fjern opskrift fra favoritter</a>
+  <% else %>
+    <a href="<%= url_for controller: :favorites, action: :add, id: recipe.id %>" class="favour-button">Tilføj opskrift til favoritter</a>
   <% end %>
+  
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">
-	<img src="<%=url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Færdiglavet ret">
+    <img src="<%= url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Færdiglavet ret">
   </a>
   <div class="rating">
-	<div style="width:<%= (recipe.calculate_rating ? recipe.calculate_rating : 0) * 100 %>%;"></div>
+    <div style="width:<%= (recipe.calculate_rating ? recipe.calculate_rating : 0) * 100 %>%;"></div>
   </div>
+  
   <% if search %>
-    <p class="relevance"><%= recipe.relevance %> ingredienser matcher</p>
+    <% if recipe.relevance == 1 %>
+      <p class="relevance"><%= recipe.relevance %> ingrediens matcher</p>
+    <% else %>
+      <p class="relevance"><%= recipe.relevance %> ingredienser matcher</p>
+    <% end %>
   <% end %>
+  
   <ul>
-	<% recipe.ingredients.each do |ingredient| %>
-	  <li>
-	  <% if ingredient.quantity > 0 %>
-	    <%= (ingredient.quantity * 100).round() / 100.0 %> <%= ingredient.unit %>
-	  <% end %>
-	  <%= ingredient.name %>
-	  
-	  <% if ingredient.food_type %>
-		<span class="foodtype"><%= ingredient.food_type.name %></span>
-	  <% end %>
-	  </li>
+    <% recipe.ingredients.each do |ingredient| %>
+    <% if search and (search - [ingredient.food_type]).length < search.length %>
+	<li class="in_search">
+	<% else %>
+	<li>
 	<% end %>
+      <% if ingredient.quantity > 0 %>
+        <%= (ingredient.quantity * 100).round() / 100.0 %> <%= ingredient.unit %>
+      <% end %>
+      
+      <%= ingredient.name %>
+
+      <% if ingredient.food_type %>
+        <span class="foodtype"><%= ingredient.food_type.name %></span>
+      <% end %>
+    </li>
+    <% end %>
   </ul>
   <div class="recipe-actions">
-	<a href="#" class="report-button ui-button-icon-only" title="Rapporter en fejl vedr. opskriften"></a>
-	<p> Tilberedningstid: <%= (recipe.prep_time > 60) ? "60+" : recipe.prep_time %> min. </p>
+    <a href="#" class="report-button ui-button-icon-only" title="Rapporter en fejl vedr. opskriften"></a>
+    <p> Tilberedningstid: <%= (recipe.prep_time > 60) ? "60+" : recipe.prep_time %> min. </p>
   </div>
 </li>
 <% end %>

@@ -9,6 +9,10 @@
   box-shadow:0 0 32px 0 #ccd2cc; 
 }
 
+#Login_page, #Edit_page {
+	margin-top: 64px;
+}
+
 #Login_content {
   border-radius: 5px;
   width: 300px;
@@ -22,4 +26,11 @@
   font-size:1.1em;
   margin-bottom:10px;
   padding:1px;
+}
+
+#pinapple {
+  float:right;
+  width:300px;
+  text-align:center;
+  margin-top:-10px;
 }
