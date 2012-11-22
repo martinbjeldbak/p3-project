@@ -1,0 +1,18 @@
+
+@media print {
+  footer {
+    display: none;
+  }  
+  
+  header {
+    display: none;
+  }
+  
+  #toolbar {
+    display: none;
+  }
+  
+  .no_print {
+    display: none;
+  }
+}
