@@ -25,8 +25,10 @@ $(function() {
                 $(listItem).parent().next().remove();
                 $(listItem).parent().remove();
             },
-            error: function(error) {
-                alert("Fejl på siden! Kunne ikke fjerne indhold på indkøbslisten. ");
+            error: function(xhr, err) {
+                if(xhr.status == 500) {
+                    $(document.body).html(xhr.responseText);
+                }
             }
         });
         return false;
@@ -60,13 +62,19 @@ $(function() {
                 listItem.data("id", responseItem.id);
                 listItem.html(name);
                 listItem.append($('<a href="#"></a>').listRemoveButton());
+
                 $('#list ul').append(listItem);
                 listItem.after('<div class="blue_line_horisontal"></div>');
 
                 $('#list_item_name').val(' ');
             },
-            error: function(error) {
-                alert("Fejl på siden! Kunne ikke tilføje tekststreng");
+            error: function(xhr, error) {
+                //alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+
+                if(xhr.status == 500) {
+                    $(document.body).html(xhr.responseText);
+                }
+                //alert("Fejl på siden! Kunne ikke tilføje tekststreng: " + error.message + ".");
             }
         });
         return false;
