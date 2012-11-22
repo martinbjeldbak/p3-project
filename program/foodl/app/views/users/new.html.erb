@@ -25,7 +25,7 @@
       <h1>
         Log på
       </h1>
-      <%= form_for :session do |f| %>
+      <%= form_for :session, url: sessions_path do |f| %>
       <%= render 'shared/error_messages'%>
       <div class="input">
         <%= f.email_field(:email, :class => "text", :placeholder => "Email", :value => params[:email])%>
