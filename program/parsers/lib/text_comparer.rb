@@ -1,9 +1,6 @@
-﻿#Provides methods for calculating how equal two strings are (0-100 %)
+﻿#Provides method Compare(str1, str2) for calculating how equal two strings are (0-100 %)
 
 class TextComparer
-
-@@powerScore = true #the point system for string match algorithm (longer matching strings will get good rewards)
-
 
 def self.find_longest_common_string(str1, str2)
 	lc = ""
@@ -18,7 +15,7 @@ def self.find_longest_common_string(str1, str2)
 	return lc;
 end
   
-def self.remove_first_on_text(text, remove) 
+def self.remove_first_on_text(text, remove)
 	for i in 0..text.length - remove.length do
 		if (text[i, remove.length] == remove) 
 		  return text[0,i] + text[i+remove.length,text.length-(i+remove.length)]
@@ -27,33 +24,30 @@ def self.remove_first_on_text(text, remove)
 	return text
 end
 
-def self.find_text_match(txt1, txt2)
+def self.Compare(txt1, txt2)
 	txt1 = txt1.downcase
 	txt2 = txt2.downcase
-	maxStartSize = [txt1.length, txt2.length].max
-	if (maxStartSize == 0) #if both string are empty
-		return 1
+	max_size = [txt1.length, txt2.length].max
+	total_size = txt1.length + txt2.length
+	if (max_size == 0) #if both string are empty
+		return 100
 	end
-	score = 1
-	while (lc = find_longest_common_string(txt1, txt2)) != "" do
+	score = 0
+	runs_left = 2
+	while (lc = find_longest_common_string(txt1, txt2)) != "" && runs_left > 0 do
+		runs_left -= 1
 		txt1 = remove_first_on_text(txt1, lc)
 		txt2 = remove_first_on_text(txt2, lc)
-		if (@@powerScore)
-			score += lc.length * lc.length 
-		else
-			score += lc.length
-		end
-		score -= 1
+		score += lc.length * lc.length
 	end
-	if (@@powerScore)
-		match = score * 100 / (maxStartSize * maxStartSize)
-	else
-		match = score * 100 / maxStartSize
-	end
+	leftovers = txt1.length + txt2.length
+	score /= (1 + leftovers).to_f
+	max_score = max_size * max_size
+	match = score.to_f * 100 / max_score
 	return match
 end
 
-def self.test()
+def self.test() #Used to do test in console to check match between different inputted strings
 	input1 = "agurk"
 	input2 = "gakurk"
 	while input1 != "" || input2 != "" do
@@ -61,11 +55,9 @@ def self.test()
 		input1 = gets.chomp
 		puts "Indtast ingrediens 2: "
 		input2 = gets.chomp
-		puts find_text_match(input1, input2)
+		puts Compare(input1, input2).to_f
 	end
 end
-
-
 
 end #end of class
 

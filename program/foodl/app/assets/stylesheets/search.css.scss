@@ -3,13 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #sidebar {
-  width: 200px;
-  height: 400px;
+  width: 200px - 2*8px;
+  padding: 8px;
   
   border-radius: 5px;
   background-color: #f7fcf7;
   box-shadow:0 0 32px 0 #ccd2cc; 
 }
+#sidebar form input.text{ width: 120px; }
+#sidebar form{ text-align: left; }
 #recipe-result > ul > li{
   background-color: #f7fcf7;
   box-shadow:0 0 32px 0 #ccd2cc; 
@@ -27,6 +29,11 @@
   margin-bottom:200px;
 }
 
+#sidebar ul {
+  
+  list-style-type:none;
+}
+
 #search ul {
   width:195px;
   margin:0 auto;
@@ -34,9 +41,8 @@
   list-style-type:none;
 }
 
-#search ul li {
-  margin-bottom:8px;
-  padding:0 0;
+#search ul li, #sidebar ul li {
+  margin-bottom:4px;
   text-align:left;
   padding:0 2px;
   font-size:1.1em;
@@ -54,6 +60,9 @@
 
 .relevance{
 	color:gray;
+}
+.in_search{
+	font-weight:bold;
 }
 
 .foodtype{

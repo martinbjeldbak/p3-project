@@ -37,6 +37,8 @@ def parseRecipe(recipe_url, db)
 	puts "Parsing recipe name: "+ name.to_s
 	recipe_id = insertRecipeInDB(db, name, recipe_url, preptime, img)	
 	portion = ArlaParser.GetPortion()
-	ingredients = ArlaParser.GetIngredients()
+	ingredients = ArlaParser.GetIngredients()   #Get ingredients from the recipe url
+	puts "Ingredients loaded: "
 	IngredientInserter.Insert(recipe_id, ingredients, portion) #handles the insertion of ingredients
+	puts "Ingredients inserted"
 end 
