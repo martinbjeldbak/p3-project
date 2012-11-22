@@ -59,8 +59,6 @@ Foodl::Application.routes.draw do
   match '/about', to: 'home#about'
   match '/contact', to: 'home#contact'
 
-  #match '/users', to: 'users#index'
-  #match '/users/:id', to: 'users#show'
   match '/login', to: 'users#new'
   match '/logout', to: 'sessions#destroy', via: :delete
 
@@ -77,8 +75,10 @@ Foodl::Application.routes.draw do
   match '/favorites/remove/:id', to: 'favorites#remove'
 
   match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
-  # See how all your routes lay out with "rake routes"
+
   resources :users
+
+  # See how all your routes lay out with "rake routes"
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
