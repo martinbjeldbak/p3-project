@@ -3,13 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #sidebar {
-  width: 200px;
-  height: 400px;
+  width: 200px - 2*8px;
+  padding: 8px;
   
   border-radius: 5px;
   background-color: #f7fcf7;
   box-shadow:0 0 32px 0 #ccd2cc; 
 }
+#sidebar form input.text{ width: 120px; }
+#sidebar form{ text-align: left; }
 #recipe-result > ul > li{
   background-color: #f7fcf7;
   box-shadow:0 0 32px 0 #ccd2cc; 
