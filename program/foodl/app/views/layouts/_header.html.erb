@@ -4,7 +4,9 @@
   </a>
   <nav>
     <%= link_to "indkøbsliste #{listCount}", list_path %>
-    <a href="<%=url_for :controller => 'favorites', :action => 'index' %>">favoritter</a>
+    <a href="<%=url_for :controller => 'favorites', :action => 'index' %>">favoritter
+      (<%=num_favorites %>)
+    </a>
     <% if logged_in? %>
         <%= link_to "indstillinger", edit_user_path(current_user) %>
         <%= link_to "log ud", logout_path , method: "delete" %>
