@@ -1,4 +1,7 @@
 class SearchController < ApplicationController
+
+  include RecipesHelper
+
   def index
   end
 
@@ -29,6 +32,8 @@ class SearchController < ApplicationController
     firebug "Results: " + @recipes.length.to_s
     if @recipes[0]
       firebug @recipes[0].relevance.to_s
+      firebug "max rating: " + max_rating.to_s
+      firebug "0 rating: " + @recipes[0].calculate_rating.to_s
     end
   end
 
