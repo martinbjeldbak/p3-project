@@ -1,5 +1,5 @@
-﻿<% recipes.each do |recipe| %>
-<li data-id="<%= recipe.id %>">
+<% recipes.each do |recipe| %>
+<li>
   
   <% if current_user and current_user.favorites.find_by_id( recipe.id ) %>
     <a href="<%= url_for controller: :favorites, action: :remove, id: recipe.id %>" class="favour-button favoured">Fjern opskrift fra favoritter</a>
