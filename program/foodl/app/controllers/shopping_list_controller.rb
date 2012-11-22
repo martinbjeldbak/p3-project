@@ -2,43 +2,66 @@ class ShoppingListController < ApplicationController
   respond_to :json
 
   def index
-    @user = current_user
-
-    @shopping_list = @user.list_items
-
     @listItem = ListItem.new
+
+    if logged_in?
+      user = current_user
+      @shopping_list = user.list_items
+    else
+      (session[:list_items] ||= [])
+
+      @shopping_list = session[:list_items]
+    end
+
+
   end
 
   def create
-    @listItem = ListItem.new
+    @listItem = ListItem.new(name: params[:name])
 
-    @listItem.name = params[:name]
-    @listItem.user = current_user
+    if logged_in?
+      @listItem.user = current_user
 
-    if @listItem.save
-      render json: @listItem
+      if @listItem.save
+        render json: @listItem
+      else
+        render json: @listItem.errors
+      end
+
     else
-      render json: @listItem.errors
+      @listItem.id = session[:list_items].length
+      session[:list_items] << @listItem
+
+      if session[:list_items].include?(@listItem)
+        render json: @listItem
+      else
+        render json: @listItem.errors
+      end
     end
+
+
   end
 
   def remove
-    @listItem = ListItem.find_by_id(params[:id])
+    if logged_in?
+      @listItem = ListItem.find_by_id(params[:id])
 
-    if @listItem.destroy # and @listItem.user == current_user
-      render json: @listItem
+      if @listItem.destroy # and @listItem.user == current_user
+        render json: @listItem
+      else
+        render json: @listItem.errors
+      end
     else
-      render json: @listItem.errors
+      @listItem = session[:list_items][params[:id].to_i]
+
+      if session[:list_items].delete(@listItem)
+        render json: @listItem
+      else
+        render json: @listItem.errors
+      end
     end
 
+
+
   end
-
-  # Manglende actions:
-  #   - Tilføj item fra opskrift
-  #      - husk at tilføj til session hvis ikke loggt ind
-  #   - Fjern tilføjet listitem fra opskrift
-
-  #   - Fjern listeitem fra indkøbslisten
-  #   - Printfunktion
-  #   - Send til email
 end
