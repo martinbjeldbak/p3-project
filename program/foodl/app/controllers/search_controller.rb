@@ -7,6 +7,7 @@ class SearchController < ApplicationController
 
   def result
     querystring = params[:q]
+    restrictions = params[:r].to_i
     if !querystring 
       return redirect_to :root
     end
@@ -26,7 +27,23 @@ class SearchController < ApplicationController
     sql += " RIGHT JOIN recipes ON recipe_id = recipes.id"
     sql += " WHERE food_type_id IN ("
     sql += @food_types.map { |type| type.id }.join ", "
-    sql += ') GROUP BY recipes.id ORDER BY relevance DESC LIMIT 0, 50'
+    sql += ')'
+    if restrictions != 0 and restrictions != 7
+      sql += ' AND ('
+      restrictionSql = []
+      if restrictions & 1 != 0
+        restrictionSql << 'recipes.prep_time < 30'
+      end
+      if restrictions & 2 != 0
+        restrictionSql << '(recipes.prep_time >= 30 OR recipes.prep_time <= 60)'
+      end
+      if restrictions & 4 != 0
+        restrictionSql << 'recipes.prep_time > 60'
+      end
+      sql += restrictionSql.join " OR "
+      sql += ')'
+    end
+    sql += ' GROUP BY recipes.id ORDER BY relevance DESC LIMIT 0, 50'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
     firebug "Results: " + @recipes.length.to_s
