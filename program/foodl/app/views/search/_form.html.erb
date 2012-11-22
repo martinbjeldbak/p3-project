@@ -1,0 +1,10 @@
+<ul>
+	<% food_types.each do |food_type| %>
+	<li><%= food_type.name %><a href="#"></a></li>  
+	<% end %>
+</ul>
+<form action="<%=url_for :action => "result" %>" method="get" id="search-form">
+	<input type="hidden" name="q" class="food-types" />
+	<input type="text" class="text" id="ingredient" placeholder="Indtast råvare" />
+	<input type="submit" class="button submit-button" value="Søg" />
+</form>
