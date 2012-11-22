@@ -1,4 +1,4 @@
-﻿<% recipes.each do |recipe| %>
+<% recipes.each do |recipe| %>
 <li>
   
   <% if current_user and current_user.favorites.find_by_id( recipe.id ) %>
