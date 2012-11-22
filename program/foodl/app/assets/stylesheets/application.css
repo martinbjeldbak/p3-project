@@ -90,6 +90,7 @@ footer {
   line-height:16px;
   height:24px;
   font-size:12px;
+  clear:both;
 }
 
 footer a:link,
