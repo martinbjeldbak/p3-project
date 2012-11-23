@@ -61,6 +61,16 @@ class SearchController < ApplicationController
       firebug "max rating: " + max_rating.to_s
       firebug "0 rating: " + @recipes[0].calculate_rating.to_s
     end
+    respond_to do |format|
+      format.js do
+        render partial: 'search/recipe',
+          locals: {recipes: @recipes, search: @food_types},
+          layout: false
+      end
+      format.html do
+        render action: "result"
+      end
+    end
   end
 
   def autocomplete_food_types
