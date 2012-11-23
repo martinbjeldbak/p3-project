@@ -35,7 +35,7 @@ class SearchController < ApplicationController
         restrictionSql << 'recipes.prep_time < 30'
       end
       if restrictions & 2 != 0
-        restrictionSql << '(recipes.prep_time >= 30 OR recipes.prep_time <= 60)'
+        restrictionSql << '(recipes.prep_time >= 30 AND recipes.prep_time <= 60)'
       end
       if restrictions & 4 != 0
         restrictionSql << 'recipes.prep_time > 60'
@@ -43,7 +43,16 @@ class SearchController < ApplicationController
       sql += restrictionSql.join " OR "
       sql += ')'
     end
-    sql += ' GROUP BY recipes.id ORDER BY relevance DESC LIMIT 0, 50'
+    sql += ' GROUP BY recipes.id'
+    sql += ' ORDER BY'
+    if params[:s] == "n"
+      sql += ' name ASC'
+    elsif params[:s] == "p"
+      sql += ' prep_time ASC'
+    else
+      sql += ' relevance DESC'
+    end
+    sql += ' LIMIT 0, 50'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
     firebug "Results: " + @recipes.length.to_s

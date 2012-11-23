@@ -22,11 +22,17 @@ class UsersController < ApplicationController
   def login
   end
 
-  #Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Check for password og password_confirmation
   def create
     @user = User.new(params[:user])
     if @user.save
       log_in @user
+
+      # Check if user has any saved items in the shopping list from session
+      unless session[:list_items].nil?
+        session[:list_items].map { |listItem| listItem.user = @user; listItem.id = nil; listItem.save; }
+        session[:list_items] = nil
+      end
+
       flash[:success] = "Velkommen til foodl, #{@user.email.split('@')[0]}!"
       redirect_to root_path
     else
