@@ -14,26 +14,4 @@ $(function() {
 
   $( "#sorting" ).buttonset();
 
-  $( ".favour-button" ).button({
-    icons: {
-      primary: "ui-icon-heart"
-    },
-    text: false
-  });
-
-  $( ".shopping-button" ).button({
-    icons: {
-      primary: "ui-icon-note"
-    },
-    text: false
-  });
-  
-  $( ".report-button" ).button({
-    icons: {
-      primary: "ui-icon-alert"
-    },
-    text: false
-  }).removeClass('ui-button')
-    .removeClass('ui-state-default')
-    .addClass('ui-dialog-titlebar-close');
 });
