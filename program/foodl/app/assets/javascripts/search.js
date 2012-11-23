@@ -142,9 +142,9 @@ $(function() {
       },
       error: function(xmlHttpderp, error) {
         alert("nope. " + error);
-      },
+      }
     });
-  }
+  };
 
   $("#sidebar #search-form").submit(function() {
     if ($("#search-form .submit-button").attr('disabled') == 'disabled') {
@@ -173,5 +173,10 @@ $(function() {
     getNewRecipes();
   });
 
-	
+  $('#addRecipe').on("click", "button", function(event) {
+    alert("DU ER EN NOOB MARTIN");
+  });
+
+
+
 });

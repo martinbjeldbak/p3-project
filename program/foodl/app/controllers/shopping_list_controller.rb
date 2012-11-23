@@ -60,8 +60,28 @@ class ShoppingListController < ApplicationController
         render json: @listItem.errors
       end
     end
+  end
 
+  def addRecipe
+    recipe = Recipe.find_by_id(params[:id])
 
+    recipe.ingredients.each do |ingredient|
+      listItem = ingredient_to_list_item(ingredient)
 
+      if logged_in?
+        listItem.user = current_user
+        listItem.save
+      else
+        session[:list_items] ||= []
+        listItem.id = session[:list_items].length
+        session[:list_items] << listItem
+      end
+    end
+  end
+
+  private
+
+  def ingredient_to_list_item(ingredient)
+    ListItem.new(name: ingredient.name, quantity: ingredient.quantity, unit: ingredient.unit)
   end
 end
