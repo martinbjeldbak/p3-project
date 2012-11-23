@@ -43,7 +43,16 @@ class SearchController < ApplicationController
       sql += restrictionSql.join " OR "
       sql += ')'
     end
-    sql += ' GROUP BY recipes.id ORDER BY relevance DESC LIMIT 0, 50'
+    sql += ' GROUP BY recipes.id'
+    sql += ' ORDER BY'
+    if params[:s] == "n"
+      sql += ' name ASC'
+    elsif params[:s] == "p"
+      sql += ' prep_time ASC'
+    else
+      sql += ' relevance DESC'
+    end
+    sql += ' LIMIT 0, 50'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
     firebug "Results: " + @recipes.length.to_s

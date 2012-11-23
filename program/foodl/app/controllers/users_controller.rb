@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       log_in @user
 
       # Check if user has any saved items in the shopping list from session
-      if session[:list_items].nil?
+      unless session[:list_items].nil?
         session[:list_items].map { |listItem| listItem.user = @user; listItem.id = nil; listItem.save; }
         session[:list_items] = nil
       end

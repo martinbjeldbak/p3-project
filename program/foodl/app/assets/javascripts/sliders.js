@@ -20,6 +20,13 @@ $(function() {
     },
     text: false
   });
+
+  $( ".shopping-button" ).button({
+    icons: {
+      primary: "ui-icon-note"
+    },
+    text: false
+  });
   
   $( ".report-button" ).button({
     icons: {
