@@ -65,6 +65,7 @@ Foodl::Application.routes.draw do
   match '/list', to: 'shopping_list#index'
   match '/list/add', to: 'shopping_list#create'
   match '/list/remove', to: 'shopping_list#remove'
+  match '/list/addrecipe', to: 'shopping_list#addRecipe'
 
   match '/recipes/images/:id', to: 'recipes#picture'
 

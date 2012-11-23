@@ -119,9 +119,14 @@ $(function() {
       },
       error: function(xmlHttpderp, nogetAndet) {
         alert("nope");
-      },
+      }
     });
   });
 
-	
+  $('#addRecipe').on("click", "button", function(event) {
+    alert("DU ER EN NOOB MARTIN");
+  });
+
+
+
 });
