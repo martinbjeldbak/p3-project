@@ -20,7 +20,6 @@ def self.Insert(recipe_id, ingredients, portion)
 		food_type_id = map_result[0]
 		match = map_result[1]
 		q = "INSERT INTO  `foodl`.`ingredients` (
-`id` ,
 `quantity` ,
 `unit` ,
 `food_type_id` ,
@@ -32,7 +31,6 @@ def self.Insert(recipe_id, ingredients, portion)
 `original`
 )
 VALUES (
-NULL , 
 '"+IngredientComponent.GetAmount().to_s+"' , 
 '"+IngredientComponent.GetUnit()+"' , 
 '"+food_type_id+"',

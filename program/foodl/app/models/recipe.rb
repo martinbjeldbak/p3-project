@@ -12,6 +12,9 @@
 #
 
 class Recipe < ActiveRecord::Base
+
+  include RecipesHelper
+
   attr_accessible :name, :picture, :rating, :url, :prep_time
 
   has_many :ingredients
@@ -19,6 +22,6 @@ class Recipe < ActiveRecord::Base
   has_and_belongs_to_many :users, :join_table => 'users_recipes'
 
   def calculate_rating
-    return rating
+    return rating.to_f / max_rating.to_f
   end
 end

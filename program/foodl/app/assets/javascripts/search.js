@@ -34,6 +34,33 @@ $(function() {
     }
   };
 
+  var setupButtons = function() {
+    $( ".favour-button" ).button({
+      icons: {
+        primary: "ui-icon-heart"
+      },
+      text: false
+    });
+
+    $( ".shopping-button" ).button({
+      icons: {
+        primary: "ui-icon-note"
+      },
+      text: false
+    });
+    
+    $( ".report-button" ).button({
+      icons: {
+        primary: "ui-icon-alert"
+      },
+      text: false
+    }).removeClass('ui-button')
+      .removeClass('ui-state-default')
+      .addClass('ui-dialog-titlebar-close');
+  }
+
+  setupButtons();
+
   submitButton.disable();
   
   $('#search-form').parent().find(">ul").children().each(
@@ -95,4 +122,56 @@ $(function() {
       return true;
     }
   });
+  
+  var checkboxValue = 0;
+  var radioValue = '';
+
+  getNewRecipes = function() {
+    var value = '';
+    foodTypes.forEach(function(foodType, i) {
+      value += foodType + "|";
+    });
+    $.ajax({
+      url: "/search",
+      method: "GET",
+      data: {q: value, r: checkboxValue, s: radioValue},
+      dataType: 'text',
+      success: function(data) {
+        $("#recipe-result ul").html(data);
+        setupButtons();
+      },
+      error: function(xmlHttpderp, error) {
+        alert("nope. " + error);
+      },
+    });
+  }
+
+  $("#sidebar #search-form").submit(function() {
+    if ($("#search-form .submit-button").attr('disabled') == 'disabled') {
+      return false;
+    }
+    else {
+      getNewRecipes();
+      return false;
+    }
+  });
+
+  $("#sorting input").change(function() {
+    if ($(this).is(":checked")) {
+      radioValue = $(this).val();
+    }
+    getNewRecipes();
+  });
+  
+  $("#prep-time input").change(function() {
+    if ($(this).is(":checked")) {
+      checkboxValue += parseInt($(this).val());
+    }
+    else {
+      checkboxValue -= parseInt($(this).val());
+    }
+    getNewRecipes();
+  });
+
+	
 });

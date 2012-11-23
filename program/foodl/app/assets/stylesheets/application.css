@@ -82,7 +82,6 @@ header {
 }
 
 footer {
-  position:fixed;
   bottom:0;
   left:0;
   text-align:center;
@@ -90,6 +89,7 @@ footer {
   line-height:16px;
   height:24px;
   font-size:12px;
+  clear:both;
 }
 
 footer a:link,
@@ -330,4 +330,35 @@ header nav a:hover {
 @keyframes heartbeat {
   from{ transform: scale(1.0); }
   to { transform: scale(1.2); }
+}
+@-ms-keyframes heartstroke {
+  from{ -ms-transform: scale(1.0); }
+  to { -ms-transform: scale(0.8); }
+}
+@-webkit-keyframes heartstroke {
+  from{ -webkit-transform: scale(1.0); }
+  to { -webkit-transform: scale(0.8); }
+}
+@-moz-keyframes heartstroke {
+  from{ -moz-transform: scale(1.0); }
+  to { -moz-transform: scale(0.8); }
+}
+@keyframes heartstroke {
+  from{ transform: scale(1.0); }
+  to { transform: scale(0.8); }
+}
+
+#about-container {
+  border-radius:5px;
+  margin:50px 0 25px 0;
+  padding: 10px 10px 0 10px;
+  width: 400px;
+  display: inline-block;
+  background-color:#F7FCF7;
+  box-shadow:0 0 32px 0 #CCD2CC;
+}
+
+.about-text {
+  padding-bottom: 25px;
+  text-align:left;
 }

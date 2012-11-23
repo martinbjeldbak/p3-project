@@ -79,8 +79,11 @@ li .favoured .ui-icon-heart {
   background-image:url(images/ui-icons_deepred_256x240.png);
 }
 
-.favour-button{
+.favour-button, .shopping-button{
   float:right;
+}
+.shopping-button{
+	margin-right:8px;
 }
 
 li .ui-state-hover .ui-icon-heart {
@@ -88,13 +91,20 @@ li .ui-state-hover .ui-icon-heart {
 }
 li .favour-button:hover{
   background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
-
 }
 li .favour-button:hover .ui-icon-heart {
+  background-image:url(images/ui-icons_deepred_256x240.png);
   -ms-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
   -webkit-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
   -moz-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
   animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
+}
+li .favoured:hover  .ui-icon-heart{
+  background-image:url(images/ui-icons_666666_256x240.png);
+  -ms-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
+  -moz-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
+  animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
 }
 
 #recipe-result{
@@ -110,6 +120,7 @@ li .favour-button:hover .ui-icon-heart {
 #recipe-result li ul {
 //  height:100px;
   overflow:hidden;
+  clear:right;
 }
 #recipe-result li ul:hover {
   overflow:visible;
@@ -122,6 +133,7 @@ li .favour-button:hover .ui-icon-heart {
 #recipe-result > ul > li > h2,
 #recipe-result > ul > li > .recipe-actions,
 #recipe-result > ul > li > a,
+#recipe-result > ul > li > .shopping-button,
 #recipe-result > ul > li > .favour-button{
 	margin-left: 0;
 }
@@ -144,12 +156,16 @@ li .favour-button:hover .ui-icon-heart {
   margin:0 !important;
 }
 
-.rating {
+#recipe-result > ul > li > .rating {
   height:16px;
   width:80px;
   background-image:url(images/rating.png);
   background-position: 0px 16px;
   position:relative;
+  float:right;
+  clear:right;
+  margin-top:4px;
+  margin-left: 0px;
 }
 
 .recipe-actions{
