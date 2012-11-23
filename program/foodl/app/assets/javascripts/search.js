@@ -146,6 +146,16 @@ $(function() {
     });
   };
 
+  $("#sidebar #search-form").submit(function() {
+    if ($("#search-form .submit-button").attr('disabled') == 'disabled') {
+      return false;
+    }
+    else {
+      getNewRecipes();
+      return false;
+    }
+  });
+
   $("#sorting input").change(function() {
     if ($(this).is(":checked")) {
       radioValue = $(this).val();
