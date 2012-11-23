@@ -1,4 +1,6 @@
-﻿values = [
+﻿Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
+
+values = [
 "Havsalt",
 "Sort peber",
 "Løg",
@@ -926,13 +928,11 @@
 "Husk pulver"
 ]
 
-require 'mysql'
 begin
-    con = Mysql.new '198.175.125.69', 'foodl', 'foodl4321', 'foodl'
-	con.query("SET NAMES utf8")
+    @@DB.Connect
 	num = 1
 	values.each do |s|
-		con.query("INSERT INTO food_types(id, name, created_at, updated_at, verified) VALUES('', '" + s + "', '', '', '')")  
+		@@DB.query("INSERT INTO food_types(id, name, created_at, updated_at, verified) VALUES('', '" + s + "', '', '', '')")  
 		puts num.to_s + ": " + s
 		num += 1
 	end

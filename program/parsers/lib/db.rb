@@ -1,6 +1,5 @@
 class DB
 	require "mysql"
-
 	@@db
 	
 	def self.Get
