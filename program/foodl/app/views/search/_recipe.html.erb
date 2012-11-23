@@ -6,7 +6,7 @@
   <% else %>
     <a href="<%= url_for controller: :favorites, action: :add, id: recipe.id %>" class="favour-button">Tilføj opskrift til favoritter</a>
   <% end %>
-  <a href="#" class="shopping-button">Tilføj til indkøbsliste</a>
+  <a href="#" class="shopping-button" data-id="<%= recipe.id %>">Tilføj til indkøbsliste</a>
   
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">

@@ -79,6 +79,8 @@ li .favoured .ui-icon-heart {
   background-image:url(images/ui-icons_deepred_256x240.png);
 }
 
+li
+
 .favour-button, .shopping-button{
   float:right;
 }
@@ -105,6 +107,10 @@ li .favoured:hover  .ui-icon-heart{
   -webkit-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
   -moz-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
   animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
+}
+
+li .shopping-button:hover{
+  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
 }
 
 #recipe-result{

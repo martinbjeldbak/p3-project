@@ -62,7 +62,7 @@ class ShoppingListController < ApplicationController
     end
   end
 
-  def addRecipe
+  def add_recipe
     recipe = Recipe.find_by_id(params[:id])
 
     recipe.ingredients.each do |ingredient|
@@ -75,6 +75,15 @@ class ShoppingListController < ApplicationController
         session[:list_items] ||= []
         listItem.id = session[:list_items].length
         session[:list_items] << listItem
+      end
+    end
+
+    return respond_to do |format|
+      format.html do
+        redirect_to :shopping_list
+      end
+      format.json do
+        render json: true
       end
     end
   end

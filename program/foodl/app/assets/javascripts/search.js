@@ -173,10 +173,24 @@ $(function() {
     getNewRecipes();
   });
 
-  $('#addRecipe').on("click", "button", function(event) {
-    alert("DU ER EN NOOB MARTIN");
+  $('.shopping-button').on("click", "span", function() {
+    // Span er jQuery specific... ved ikke, om det er noobified
+      $(this).parent().hide();
+
+      var recipeID = $('.shopping-button').data('id');
+
+      $.ajax({
+          url: "/list/addrecipe",
+          type: "POST",
+          data: {id: recipeID},
+          dataType: "json",
+          success: function(response) {
+          },
+          error: function(xhr, error) {
+              alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
+              //$(document.body).html(xhr.responseText);
+          }
+      });
   });
-
-
-
+  return false;
 });
