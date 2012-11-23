@@ -22,6 +22,7 @@ class IngredientMapper
 		if (best_match < @@warn_below)
 			puts "Warning: low match ("+best_match.to_s+") between: '"+str+"' and '"+ best_name +"'"
 		end
+		#puts "Matching: " + str.force_encoding("UTF-8") + " and " + best_name.force_encoding("UTF-8")
 		return [best_id, best_match, best_name]
 	end
 end
