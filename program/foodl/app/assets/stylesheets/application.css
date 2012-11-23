@@ -347,3 +347,18 @@ header nav a:hover {
   from{ transform: scale(1.0); }
   to { transform: scale(0.8); }
 }
+
+#about-container {
+  border-radius:5px;
+  margin:50px 0 25px 0;
+  padding: 10px 10px 0 10px;
+  width: 400px;
+  display: inline-block;
+  background-color:#F7FCF7;
+  box-shadow:0 0 32px 0 #CCD2CC;
+}
+
+.about-text {
+  padding-bottom: 25px;
+  text-align:left;
+}
