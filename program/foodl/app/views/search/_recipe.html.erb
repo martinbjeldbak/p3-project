@@ -1,4 +1,4 @@
-﻿<% recipes.each do |recipe| %>
+<% recipes.each do |recipe| %>
 <li>
   
   <% if current_user and current_user.favorites.find_by_id( recipe.id ) %>
@@ -6,6 +6,7 @@
   <% else %>
     <a href="<%= url_for controller: :favorites, action: :add, id: recipe.id %>" class="favour-button">Tilføj opskrift til favoritter</a>
   <% end %>
+  <a href="#" class="shopping-button">Tilføj til indkøbsliste</a>
   
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">
@@ -25,20 +26,13 @@
   
   <ul>
     <% recipe.ingredients.each do |ingredient| %>
-    <% if search and (search - [ingredient.food_type]).length < search.length %>
-	<li class="in_search">
-	<% else %>
 	<li>
-	<% end %>
-      <% if ingredient.quantity > 0 %>
-        <%= (ingredient.quantity * 100).round() / 100.0 %> <%= ingredient.unit %>
+      <% if ingredient.quantity > 0 #TODO: brug antal personer! %>
+        <span data-value="<%= ingredient.quantity %>"><%= format_quantity(ingredient.quantity * 2) %></span> <%= ingredient.unit %>
       <% end %>
       
       <%= ingredient.name %>
 
-      <% if ingredient.food_type %>
-        <span class="foodtype"><%= ingredient.food_type.name %></span>
-      <% end %>
     </li>
     <% end %>
   </ul>

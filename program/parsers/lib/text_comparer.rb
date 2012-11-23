@@ -25,8 +25,13 @@ def self.remove_first_on_text(text, remove)
 end
 
 def self.Compare(txt1, txt2)
+txt1 = txt1.force_encoding("ASCII")
+txt2 = txt2.force_encoding("ASCII")
 	txt1 = txt1.downcase
 	txt2 = txt2.downcase
+
+	txt1 = txt1.to_s
+	txt2 = txt2.to_s
 	max_size = [txt1.length, txt2.length].max
 	total_size = txt1.length + txt2.length
 	if (max_size == 0) #if both string are empty
