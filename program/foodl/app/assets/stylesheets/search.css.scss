@@ -9,29 +9,15 @@
   border-radius: 5px;
   background-color: #f7fcf7;
   box-shadow:0 0 32px 0 #ccd2cc; 
-}
-#sidebar form input.text{ width: 120px; }
-#sidebar form{ text-align: left; }
-#recipe-result > ul > li{
-  background-color: #f7fcf7;
-  box-shadow:0 0 32px 0 #ccd2cc; 
-  border-radius: 5px;
-  margin-bottom:8px;
-  padding: 8px;
-}
-#recipe-result ul li .recipe-actions{
-  clear:left;
-}
-#recipe-result > ul ul li{
+  
+  form{ text-align: left; }
+  form input.text{ width: 120px; }
+  
+  ul { list-style-type:none; }
 }
 
 #search {
   margin-bottom:200px;
-}
-
-#sidebar ul {
-  
-  list-style-type:none;
 }
 
 #search ul {
@@ -58,121 +44,121 @@
   width:64px;
 }
 
-.relevance{
-	color:gray;
-}
-.in_search{
-	font-weight:bold;
-}
-
-.foodtype{
-	float:right;
-	color:gray;
-}
-
-
-#recipe-result li a img{
-  float:left;
-}
-
-li .favoured .ui-icon-heart {
-  background-image:url(images/ui-icons_deepred_256x240.png);
-}
-
-.favour-button, .shopping-button{
-  float:right;
-}
-.shopping-button{
-	margin-right:8px;
-}
-
-li .ui-state-hover .ui-icon-heart {
-  background-image:url(images/ui-icons_666666_256x240.png);
-}
-li .favour-button:hover{
-  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
-}
-li .favour-button:hover .ui-icon-heart {
-  background-image:url(images/ui-icons_deepred_256x240.png);
-  -ms-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
-  -webkit-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
-  -moz-animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
-  animation: heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none;
-}
-li .favoured:hover  .ui-icon-heart{
-  background-image:url(images/ui-icons_666666_256x240.png);
-  -ms-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
-  -webkit-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
-  -moz-animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
-  animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
+@mixin animation( $anim ) {
+  -ms-animation: $anim;
+  -webkit-animation: $anim;
+  -moz-animation: $anim;
+  animation: $anim;
 }
 
 #recipe-result{
   width:592px;
   float:right;
+  
+  li {
+	  text-align:left;
+	  list-style-type: none;
+	}
+
+	& > ul > li {
+		background-color: #f7fcf7;
+		box-shadow:0 0 32px 0 #ccd2cc; 
+		border-radius: 5px;
+		margin-bottom:8px;
+		padding: 8px;
+
+		& > * { margin-left: 208px; }
+		
+		& > h2, & > .recipe-actions,
+		& > a, & > .shopping-button,
+		& > .favour-button {
+			margin-left: 0;
+		}
+		
+		.relevance{ color:gray; }
+		
+		//Reduce size of image
+		& > a > img {
+			width: 200px;
+			float:left;
+		}
+		
+		//Rating
+		.rating {
+			height: 16px;
+			width: 80px;
+			background-image: url(images/rating.png);
+			background-position: 0px 16px;
+			position: relative;
+			float: right;
+			clear: right;
+			margin-top: 4px;
+			margin-left: 0px;
+			
+			div {
+				height: 16px;
+				background-image: url(images/rating.png);
+				background-position: 0px 0px;
+			}
+		}
+		
+		.recipe-actions{ clear:left; }
+		
+		//Styling for report button
+		.report-button {
+			display: block;
+			float: right;
+			height: 16px;
+			width: 16px;
+			
+			.ui-icon{
+				//Overide some jQuery-ui stuff
+				position: static;
+				top: auto;
+				left: auto;
+				margin: 0;
+			}
+		}
+		
+		.favour-button, .shopping-button{
+			float:right;
+		}
+		.shopping-button{ margin-right:8px; }
+		
+		//Styling of favoured button + animations
+		.favoured .ui-icon-heart { //Default image for favoured
+			background-image:url(images/ui-icons_deepred_256x240.png);
+		}
+		.favour-button:hover{ //Override highlight color on hover
+			background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x;
+			
+			.ui-icon-heart { //Favouring animation
+				background-image:url(images/ui-icons_deepred_256x240.png);
+				@include animation( heartbeat 0.65s cubic-bezier(1,0,1,.75) 0s infinite alternate none );
+			}
+		}
+		.favoured:hover  .ui-icon-heart{ //Animation for defavouring
+			background-image:url(images/ui-icons_666666_256x240.png);
+			@include animation( heartstroke 0.65s ease-in-out 0s 1 normal forwards );
+		}
+		
+		//Styling of ingredients
+		& > ul {
+			//	height: 100px;
+			overflow: hidden;
+			clear: right;
+			
+			& :hover {
+				overflow:visible;
+			}
+			
+			.in_search{ font-weight:bold; }
+
+			.foodtype{
+				float:right;
+				color:gray;
+			}
+		}
+	}
 }
 
-#recipe-result li {
-  text-align:left;
-  list-style-type: none;
-}
-
-#recipe-result li ul {
-//  height:100px;
-  overflow:hidden;
-  clear:right;
-}
-#recipe-result li ul:hover {
-  overflow:visible;
-}
-
-
-#recipe-result > ul > li > * {
-	margin-left: 208px;
-}
-#recipe-result > ul > li > h2,
-#recipe-result > ul > li > .recipe-actions,
-#recipe-result > ul > li > a,
-#recipe-result > ul > li > .shopping-button,
-#recipe-result > ul > li > .favour-button{
-	margin-left: 0;
-}
-#recipe-result > ul > li > a > img{
-	width: 200px;
-}
-
-
-.report-button{
-  display:block;
-  float:right;
-  height:16px;
-  width:16px;
-}
-
-.report-button .ui-icon{
-  position:static !important;
-  top:auto !important;
-  left:auto !important;
-  margin:0 !important;
-}
-
-#recipe-result > ul > li > .rating {
-  height:16px;
-  width:80px;
-  background-image:url(images/rating.png);
-  background-position: 0px 16px;
-  position:relative;
-  float:right;
-  clear:right;
-  margin-top:4px;
-  margin-left: 0px;
-}
-
-.recipe-actions{
-}
-
-.rating div{
-  height:16px;
-  background-image:url(images/rating.png);
-  background-position: 0px 0px;
-}
