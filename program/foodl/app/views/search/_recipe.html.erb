@@ -1,7 +1,7 @@
 <% recipes.each do |recipe| %>
 <li>
   
-  <% if current_user and current_user.favorites.find_by_id( recipe.id ) %>
+  <% if has_favour( recipe.id ) %>
     <a href="<%= url_for controller: :favorites, action: :remove, id: recipe.id %>" class="favour-button favoured">Fjern opskrift fra favoritter</a>
   <% else %>
     <a href="<%= url_for controller: :favorites, action: :add, id: recipe.id %>" class="favour-button">Tilføj opskrift til favoritter</a>
@@ -17,22 +17,20 @@
   </div>
   
   <% if search %>
-    <% if recipe.relevance == 1 %>
-      <p class="relevance"><%= recipe.relevance %> ingrediens matcher</p>
-    <% else %>
-      <p class="relevance"><%= recipe.relevance %> ingredienser matcher</p>
-    <% end %>
+    <p class="relevance"><%= recipe.relevance %> <%= plural( recipe.relevance, "ingrediens", "ingredienser" ) %> matcher</p>
   <% end %>
-  
   <ul>
     <% recipe.ingredients.each do |ingredient| %>
-	<li>
+      <% if id_match( search, ingredient.food_type_id ) %>
+    <li class="in_search">
+      <% else %>
+    <li>
+      <% end %>
       <% if ingredient.quantity > 0 #TODO: brug antal personer! %>
         <span data-value="<%= ingredient.quantity %>"><%= format_quantity(ingredient.quantity * 2) %></span> <%= ingredient.unit %>
       <% end %>
       
       <%= ingredient.name %>
-
     </li>
     <% end %>
   </ul>

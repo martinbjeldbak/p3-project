@@ -28,4 +28,26 @@
 			end
 		end
 	end
+	
+	def has_favour( id )
+		if current_user
+			return id_match( current_user.favorites, id )
+		end
+		return false
+	end
+	
+	def plural( number, singular, plural )
+		return number == 1 ? singular : plural
+	end
+	
+	def id_match( array, id )
+		if array
+			array.each do |a|
+				if a.id == id
+					return true
+				end
+			end
+		end
+		return false
+	end
 end
