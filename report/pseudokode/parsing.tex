@@ -1,0 +1,16 @@
+\begin{algorithmic}
+\Function{FindTextMatch}{str1, str2}
+
+\State $max\_score \gets \max(str1.length^2, str2.length^2)$
+\State $score \gets 1$
+
+\While{a common string (lc) exists in str1 and str2}
+	\State $score \gets score + lc.length^2 $
+	\State remove lc from str1 and str2
+	\State $score \gets score - 1 $
+\EndWhile
+
+\State $score \gets \frac{score}{max\_score * 100} $
+
+\EndFunction
+\end{algorithmic}
