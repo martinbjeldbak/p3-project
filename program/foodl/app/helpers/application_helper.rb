@@ -10,6 +10,13 @@ module ApplicationHelper
     end
   end
   
+  def num_favorites
+    if !current_user
+      return 0
+    end
+    current_user.favorites.size
+  end
+  
   @toolbar=false
   def toolbar?
     return @toolbar
