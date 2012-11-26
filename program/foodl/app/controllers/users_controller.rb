@@ -2,6 +2,7 @@ require 'bcrypt'
 
 class UsersController < ApplicationController
   before_filter :logged_in_user, only: [:index, :edit, :update, :destroy] #:edit, :update
+  before_filter :not_logged_in,  only: [:new]
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: [:index, :destroy]
 
@@ -77,6 +78,10 @@ class UsersController < ApplicationController
   #end
 
   private
+
+  def not_logged_in
+    redirect_to root_url, notice: "Du er allerede logget ind." if logged_in?
+  end
 
   def logged_in_user
     redirect_to login_url, notice: "Log venligst ind." unless logged_in?
