@@ -25,6 +25,7 @@ body {
   text-align:center;
   font-family:'Titillium Web', sans-serif;
   font-size:12px;
+  margin-bottom:64px;
 }
 
 body > img{ margin-top:8px; }
@@ -73,6 +74,9 @@ footer, nav, header {
 }
 
 header {
+  position:fixed;
+  z-index:10000;
+  width:100%;
   background-color:#3B4539;
   background-color:#222C21;
   background:#222C21 url(header.png) repeat-x;
@@ -84,9 +88,10 @@ header {
 }
 
 footer {
+  position:fixed;
   bottom:0;
-  left:0;
-  text-align:center;
+  left:16px;
+  text-align:left;
   width:100%;
   line-height:16px;
   height:24px;
@@ -112,7 +117,7 @@ h1 {
   font-weight:normal;
   color:#325030;
   font-size: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 header a:link img,
@@ -262,10 +267,14 @@ header nav a:hover {
 }
 
 #toolbar {
+  position:fixed;
+  width:100%;
+  margin-top:32px;
   height: 38px;
   padding: 8px 0;
   background-color: #f7fcf7;
   border-bottom: 1px solid #ccd2cc;
+  z-index:10000;
 }
 #subtoolbar{
   width: 800px;
@@ -353,14 +362,14 @@ header nav a:hover {
 #about-container {
   border-radius:5px;
   margin:50px 0 25px 0;
-  padding: 10px 10px 0 10px;
+  padding: 16px;
   width: 400px;
   display: inline-block;
   background-color:#F7FCF7;
   box-shadow:0 0 32px 0 #CCD2CC;
 }
 
-.about-text {
-  padding-bottom: 25px;
+p {
+  margin-bottom:8px;
   text-align:left;
 }
