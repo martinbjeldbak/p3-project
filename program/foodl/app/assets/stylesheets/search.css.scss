@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #sidebar {
+  position:fixed;
   width: 200px - 2*8px;
   padding: 8px;
   
@@ -218,12 +219,11 @@ li .shopping-button:hover{
 
 
 .welcome {
-  width:400px;
+  width:600px;
   margin:32px auto 32px;
   border-radius: 5px;
-  padding: 16px ;
+  padding: 8px;
   background-color: #f7fcf7;
   box-shadow:0 0 32px 0 #ccd2cc; 
-  font-size:1.1em;
 }
 

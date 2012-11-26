@@ -24,4 +24,22 @@ For at gøre hjemmesiden dynamisk og brugervenlig, har vi brugt JavaScript\cite{
 \label{fig:toolbar}
 \end{figure}
 
-Derudover er Ruby on Rails\cite{rubyonrailswiki}, der er et framework for programmeringssproget Ruby. Ruby on Rails er blevet brugt til understøttelse af webudvikling. Ruby on Rails gjorde det også muligt for os at kommunikere med databasen.
+Derudover er Ruby on Rails\cite{rubyonrailswiki}, som er et webudviklingsframework baseret på programmeringssproget Ruby, som vi brugte til understøttelse af webudviklingen. Intentionerne bag Rails var at skabe et framework, der gjorde det lettere og hurtigere for webudviklere at udvikle webapplikationer, hvilket også er en af de væsentlige årsager til, at vi valgte at anvende Rails. 
+
+Målet med Rails blev bl.a. opnået vha. af følgende filosofi:
+\begin{quote}
+``konventioner over konfigurationer''
+\end{quote} 
+
+Filosofien har både sine fordele og ulemper. Det er en ulempe, at webudvikleren skal have arbejdet meget med Rails i forvejen, for at kunne huske de mange konventionerne og kommandoer, eller bruge en masse tid, på at slå dem op, når de skal bruges. Det er på den anden siden en fordel, at webudviklere, vha. Rails' konventioner, kan lave applikationer, som kan udrette meget, ud fra få linjers kode. Rails viser allerede fra første møde, at der skal meget lidt arbejde til, for at få et stort afkast. Dette kan ses på \figref{fig:Rails-new-foodl}, hvor en enkelt linje i kommandoprompten, genererer en ny mappe, som indeholder en funktionsdygtig Railsapplikation, kaldet ``Foodl''.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{billeder/Rails-new-foodl.png}
+	\capt{Railskommando, der indtastes i kommandopromten, hvorefter rails genererer en mappe med en fuldtfungerende web-applikation, kaldet ``Foodl''}
+	\label{fig:Rails-new-foodl}
+\end{figure}
+
+Enhver Railsapplikation tager udgangspunkt i arkitekturen Model-View-Controller. Mappen med webapplikationen består af en lang række undermapper, hvori ``models'', ``views'' og ``controllers'' bl.a. befinder sig. Kort sagt genererer Rails, vha. New-kommandoen, hele skelettet for webapplikationen, og derefter er det ``bare'' at fylde det indhold, man ønsker i sin webapplikation, i de rigtige mapper. Denne Model-View-Controllerarkitektur vil blive forklaret yderligere i \secref{subsec:mvc}.
+
+\input{indhold/6-implementering/mvc}
