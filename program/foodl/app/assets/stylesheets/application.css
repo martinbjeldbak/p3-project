@@ -73,6 +73,7 @@ footer, nav, header {
 }
 
 header {
+  position:fixed;
   background-color:#3B4539;
   background-color:#222C21;
   background:#222C21 url(header.png) repeat-x;
@@ -262,6 +263,7 @@ header nav a:hover {
 }
 
 #toolbar {
+  position:fixed;
   height: 38px;
   padding: 8px 0;
   background-color: #f7fcf7;
