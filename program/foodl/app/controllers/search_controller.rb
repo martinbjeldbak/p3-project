@@ -55,7 +55,13 @@ class SearchController < ApplicationController
     sql += ' LIMIT 0, 50'
     firebug "SQL: " + sql
     @recipes = Recipe.find_by_sql(sql)
-    firebug "Results: " + @recipes.length.to_s
+    
+	 ActiveRecord::Associations::Preloader.new( @recipes, :ingredients ).run
+	 if current_user
+	   ActiveRecord::Associations::Preloader.new( current_user, :favorites ).run
+	 end
+	 
+	 firebug "Results: " + @recipes.length.to_s
     if @recipes[0]
       firebug @recipes[0].relevance.to_s
       firebug "max rating: " + max_rating.to_s
