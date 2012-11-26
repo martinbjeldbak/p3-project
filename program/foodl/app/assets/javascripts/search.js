@@ -131,6 +131,7 @@ $(function() {
     foodTypes.forEach(function(foodType, i) {
       value += foodType + "|";
     });
+    startLoading();
     $.ajax({
       url: "/search",
       method: "GET",
@@ -139,9 +140,11 @@ $(function() {
       success: function(data) {
         $("#recipe-result ul").html(data);
         setupButtons();
+        stopLoading();
       },
       error: function(xmlHttpderp, error) {
         alert("nope. " + error);
+        stopLoading();
       }
     });
   };
@@ -195,14 +198,17 @@ $(function() {
 
       $currentList.text($ingCount + $currentListCount);
 
+      startLoading();
       $.ajax({
           url: "/list/addrecipe",
           type: "POST",
           data: {id: $recipeID},
           dataType: "json",
           success: function(response) {
+            stopLoading();
           },
           error: function(xhr, error) {
+            stopLoading();
               //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }

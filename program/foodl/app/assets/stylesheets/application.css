@@ -373,3 +373,21 @@ p {
   margin-bottom:8px;
   text-align:left;
 }
+
+#loading {
+  position:fixed;
+  top:50%;
+  left:50%;
+  height:160px;
+  width:160px;
+  background-color:#000;
+  opacity:0.8;
+  text-align:center;
+  color:#fff;
+  margin-left:-80px;
+  margin-top:-80px;
+  border-radius:5px;
+  box-shadow:0 0 16px #000;
+  font-size:14px;
+  display:none;
+}
