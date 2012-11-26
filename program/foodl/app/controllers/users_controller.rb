@@ -36,8 +36,8 @@ class UsersController < ApplicationController
       flash[:success] = "Velkommen til foodl, #{@user.email.split('@')[0]}!"
       redirect_to root_path
     else
-      flash[:error] = "Lolnoob"
-      render 'login'
+      #flash[:error] = "Lolnoob"
+      render 'new'
     end
   end
 
