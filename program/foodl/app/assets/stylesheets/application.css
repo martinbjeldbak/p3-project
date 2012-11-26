@@ -27,6 +27,8 @@ body {
   font-size:12px;
 }
 
+body > img{ margin-top:8px; }
+
 .container {
   width:800px;
   margin:8px auto;
@@ -351,14 +353,14 @@ header nav a:hover {
 #about-container {
   border-radius:5px;
   margin:50px 0 25px 0;
-  padding: 10px 10px 0 10px;
+  padding: 16px;
   width: 400px;
   display: inline-block;
   background-color:#F7FCF7;
   box-shadow:0 0 32px 0 #CCD2CC;
 }
 
-.about-text {
-  padding-bottom: 25px;
+p {
+  margin-bottom:16px;
   text-align:left;
 }

@@ -1,10 +1,21 @@
 <div id="logo">
-  <%=image_tag("logo.png", :alt => "Foodl") %>
+  <%=image_tag "logo.png", :alt => "Foodl" %>
 </div>
 <div id="search">
   <%= render :partial => 'search/form', :locals => { :food_types => [] } %>
+
+  <div class="welcome">
+    <h1>Velkommen til Foodl</h1>
+    <p>Foodl hjælper dig med at finde opskrifter baseret på de ubrugte
+    ingredienser du har til at ligge i bunden af dit køleskab.</p>
+
+    <p><%=link_to "Fjern denne tekst", class: "button" %></p>
+  </div>
 </div>
 
 <div id="menu-container" style="position:absolute; width: 185px;"></div>
 
-<div>Test</div>
+<div>
+
+
+</div>
