@@ -78,9 +78,39 @@ class ShoppingListController < ApplicationController
       end
     end
 
-    return respond_to do |format|
+    respond_to do |format|
       format.html do
         redirect_to :shopping_list
+      end
+      format.json do
+        render json: true
+      end
+    end
+  end
+
+  def delete_list
+
+    #listItems = params[:ids].split(',')
+
+    #firebug("'#{listItems.join("','")}'")
+
+    params[:ids].each do |itemID|
+      if logged_in?
+        listItem = ListItem.find_by_id(itemID)
+
+        listItem.destroy
+
+      # User not logged in
+      else
+        listItem = session[:list_items][itemID.to_i]
+
+        sessions[:list_items].delete(listItem)
+      end
+    end
+
+    respond_to do |format|
+      format.html do
+        redirect_to :list
       end
       format.json do
         render json: true

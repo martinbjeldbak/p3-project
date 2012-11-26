@@ -75,18 +75,29 @@ div.blue_line_vertical {
 #print_button_div {
   float: right;
   background-color: #fff7c6;
+  border-left: 2px solid #d6e3b5;
+  padding-left: 10px;
 }
 
 .print_button {
   background-color: #fff7c6;
-  border: 2px solid #d6e3b5;
   font-family: 'Crafty Girls';
   font-size: 16px;
+  border-style: none;
+  border-bottom: 2px solid #d6e3b5;
 }
 
 .print_button:hover {
-  background-color: #fff7c6;
   text-decoration: underline;
 }
 
+.delete_all_listitems_button {
+  border-style: none;
+  font-family: 'Crafty Girls';
+  background-color: #fff7c6;
+  font-size: 16px;
+}
 
+.delete_all_listitems_button:hover {
+  text-decoration: underline;
+}

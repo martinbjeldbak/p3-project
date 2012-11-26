@@ -34,6 +34,32 @@ $(function() {
         return false;
     });
 
+    $('.delete_all_listitems_button').on("click", function() {
+        var dataIDs = [];
+        var $list = $('ul');
+
+        $list.slideUp();
+
+        $('ul li').each(function() {
+            dataIDs.push($(this).data('id'));
+        });
+
+        $.ajax({
+            url: "/list/deletelist",
+            type: "POST",
+            data: {ids: dataIDs},
+            dataType: "JSON",
+            success: function(responseItem) {
+            },
+            error: function(xhr, error) {
+                if(xhr.status == 500) {
+                    $(document.body).html(xhr.responseText);
+              }
+            }
+        });
+        return false;
+    });
+
     // When the user types in the list item add box for the form
     $('#list_item_name').keyup(function() {
 
@@ -44,7 +70,7 @@ $(function() {
         }
     });
 
-    // Upon submitting to the form, go through the controller
+    // When adding new list items through the form
     $('#addListItemForm').submit(function() {
         var name = $('input#list_item_name').val();
 
