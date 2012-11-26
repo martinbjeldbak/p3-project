@@ -3,14 +3,6 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   helper_method :firebug
-  helper_method :num_favorites
-
-  def num_favorites
-    if !current_user
-      return 0
-    end
-    current_user.favorites.size
-  end
 
   private
   def firebug(message, type = :debug)
