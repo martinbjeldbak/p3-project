@@ -23,5 +23,7 @@
   <%= render 'layouts/toolbar' %>
 <% end %>
 
-<img src="https://www.google.com/help/hc/images/adsense/adsense_185665_adformat-text_728x90_en.png" alt="ad" >
+<% if show_ad? %>
+	<img src="http://placehold.it/728x90/dee8d9/000000&text=Reklamer!!!" alt="ad" >
+<% end %>
 
