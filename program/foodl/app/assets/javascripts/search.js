@@ -185,15 +185,20 @@ $(function() {
   });
 
   $('.shopping-button').on("click", function() {
-    // Span er jQuery specific... ved ikke, om det er noobified
-      $(this).parent().hide();
+      $(this).hide();
 
-      var recipeID = $('.shopping-button').data('id');
+      var $recipeID = $('.shopping-button').data('id');
+      var $ingCount = parseInt($('.shopping-button').data('count'));
+
+      var $currentList = $('#num_list_items');
+      var $currentListCount = parseInt($currentList.text());
+
+      $currentList.text(($ingCount + $currentListCount), 10);
 
       $.ajax({
           url: "/list/addrecipe",
           type: "POST",
-          data: {id: recipeID},
+          data: {id: $recipeID},
           dataType: "json",
           success: function(response) {
           },
