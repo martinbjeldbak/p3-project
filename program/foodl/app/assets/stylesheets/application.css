@@ -431,4 +431,13 @@ p {
 
 .contacts {
   float:left;
+
+  height: 390px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.contact-picture {
+    width: 100%;
+
 }
