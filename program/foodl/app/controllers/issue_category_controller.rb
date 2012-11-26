@@ -1,2 +1,0 @@
-class IssueCategoryController < ApplicationController
-end
