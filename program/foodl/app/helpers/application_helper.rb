@@ -2,19 +2,18 @@ module ApplicationHelper
 
   def listCount
     if logged_in?
-      #items = current_user.list_items
-      items = current_user.list_items.count
-      #totalItems = items.inject(0) { |sum, item| sum + item.quantity if item.quantity}
-
-      "#{items}"
+      "#{current_user.list_items.count}"
+    else
+      "#{session[:list_items].count}"
     end
   end
   
   def num_favorites
-    if !current_user
-      return 0
+    if logged_in?
+      current_user.favorites.size
+    else
+      0
     end
-    current_user.favorites.size
   end
   
   def toolbar?
