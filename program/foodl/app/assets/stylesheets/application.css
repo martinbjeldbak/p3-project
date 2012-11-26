@@ -73,6 +73,9 @@ footer, nav, header {
 }
 
 header {
+  position:fixed;
+  z-index:10000;
+  width:100%;
   background-color:#3B4539;
   background-color:#222C21;
   background:#222C21 url(header.png) repeat-x;
@@ -112,7 +115,7 @@ h1 {
   font-weight:normal;
   color:#325030;
   font-size: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 header a:link img,
@@ -262,10 +265,14 @@ header nav a:hover {
 }
 
 #toolbar {
+  position:fixed;
+  width:100%;
+  margin-top:32px;
   height: 38px;
   padding: 8px 0;
   background-color: #f7fcf7;
   border-bottom: 1px solid #ccd2cc;
+  z-index:10000;
 }
 #subtoolbar{
   width: 800px;
@@ -361,6 +368,6 @@ header nav a:hover {
 }
 
 p {
-  margin-bottom:16px;
+  margin-bottom:8px;
   text-align:left;
 }
