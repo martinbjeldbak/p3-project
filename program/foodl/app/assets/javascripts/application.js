@@ -50,6 +50,6 @@ jQuery.fn.disable = function() {
 
 
 $(function() {
-  $('input.button').button();
+  $('.button').button();
   $('input, textarea').placeholder();
 });
