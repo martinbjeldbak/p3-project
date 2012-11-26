@@ -17,6 +17,7 @@ $(function() {
         $(this).children().hide();
         $(this).hide();
 
+        startLoading();
         $.ajax({
             url: "/list/remove",
             type: "POST",
@@ -28,11 +29,13 @@ $(function() {
 
                 var $currentListCount = parseInt($currentList.text(), 10);
                 $currentList.text($currentListCount - 1);
+                stopLoading();
             },
             error: function(xhr, err) {
                 if(xhr.status == 500) {
                     $(document.body).html(xhr.responseText);
                 }
+                stopLoading();
             }
         });
         return false;
@@ -48,6 +51,7 @@ $(function() {
             dataIDs.push($(this).data('id'));
         });
 
+        startLoading();
         $.ajax({
             url: "/list/deletelist",
             type: "POST",
@@ -55,12 +59,14 @@ $(function() {
             dataType: "JSON",
             success: function(responseItem) {
                 $currentList.text(0);
+                stopLoading();
             },
             error: function(xhr, error) {
                 $currentList.text(0);
                 if(xhr.status == 500) {
                     $(document.body).html(xhr.responseText);
               }
+              stopLoading();
             }
         });
         return false;
@@ -84,6 +90,7 @@ $(function() {
           return false;
         }
 
+        startLoading();
         $.ajax({
             url: $(this).attr('action'),
             type: "POST",
@@ -102,6 +109,7 @@ $(function() {
 
                 var $currentListCount = parseInt($currentList.text(), 10);
                 $currentList.text($currentListCount + 1);
+                stopLoading();
             },
             error: function(xhr, error) {
                 //alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
@@ -109,6 +117,7 @@ $(function() {
                 if(xhr.status == 500) {
                     $(document.body).html(xhr.responseText);
                 }
+                stopLoading();
                 //alert("Fejl på siden! Kunne ikke tilføje tekststreng: " + error.message + ".");
             }
         });
