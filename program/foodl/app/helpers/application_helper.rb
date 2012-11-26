@@ -6,7 +6,7 @@ module ApplicationHelper
       items = current_user.list_items.count
       #totalItems = items.inject(0) { |sum, item| sum + item.quantity if item.quantity}
 
-      "(#{items})"
+      "#{items}"
     end
   end
   
@@ -17,8 +17,11 @@ module ApplicationHelper
     current_user.favorites.size
   end
   
-  @toolbar=false
   def toolbar?
     return @toolbar
+  end
+  
+  def show_ad?
+    return !@hide_ad
   end
 end
