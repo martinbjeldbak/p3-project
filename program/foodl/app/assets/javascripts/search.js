@@ -204,4 +204,15 @@ $(function() {
       });
       return false;
   });
+    
+   $window = $(window),
+   $sidebar = $("#sidebar"),
+   sidebarTop = $sidebar.position().top;
+   $sidebar.addClass('fixed');
+
+   $window.scroll(function(event) {
+      scrollTop = $window.scrollTop(),
+      topPosition = Math.max(sidebarTop, sidebarTop * 2 - scrollTop),
+      $sidebar.css('top', topPosition);
+   });
 });
