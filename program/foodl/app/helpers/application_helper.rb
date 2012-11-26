@@ -17,8 +17,11 @@ module ApplicationHelper
     current_user.favorites.size
   end
   
-  @toolbar=false
   def toolbar?
     return @toolbar
+  end
+  
+  def show_ad?
+    return !@hide_ad
   end
 end
