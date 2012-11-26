@@ -1,19 +1,13 @@
 ﻿module SearchHelper
 	#Formats a value nicely, with fractions
 	def format_quantity( value )
+		#Remove everything below .##
 		value = (value * 100).round() / 100.0;
 		
 		#Check for common fractions
-		if( value == 0.25 )
-			return "1/4";
-		elsif( value == 0.33 )
-			return "1/3";
-		elsif( value == 0.5 )
-			return "1/2";
-		elsif( value == 0.66 )
-			return "2/3";
-		elsif( value == 0.75 )
-			return "3/4";
+		fracs = Hash[ 0.25=>"1/4", 0.33=>"1/3", 0.5=>"1/2", 0.66=>"2/3", 0.75=>"3/4" ]
+		if fracs.has_key?( value )
+			return fracs[ value ]
 		else
 			#find amount of decimals to display
 			decimal0 = value.round();
@@ -29,9 +23,9 @@
 		end
 	end
 	
-	def has_favour( id )
+	def has_favour?( id )
 		if current_user
-			return id_match( current_user.favorites, id )
+			return id_match?( current_user.favorites, id )
 		end
 		return false
 	end
@@ -40,7 +34,7 @@
 		return number == 1 ? singular : plural
 	end
 	
-	def id_match( array, id )
+	def id_match?( array, id )
 		if array
 			array.each do |a|
 				if a.id == id
