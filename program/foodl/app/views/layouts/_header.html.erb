@@ -3,9 +3,12 @@
     <%=image_tag("header_logo.png", :alt => "Foodl") %>
   </a>
   <nav>
-    <%= link_to "indkøbsliste #{listCount}", list_path %>
+    <a href="<%= url_for controller: 'shopping_list', action: 'index' %>">indkøbsliste
+      (<span id="num_list_items"><%= listCount %></span>)
+    </a>
+
     <a href="<%=url_for :controller => 'favorites', :action => 'index' %>">favoritter
-      (<%=num_favorites %>)
+      (<span id="num_favorites"><%=num_favorites %></span>)
     </a>
     <% if logged_in? %>
         <%= link_to "indstillinger", edit_user_path(current_user) %>
