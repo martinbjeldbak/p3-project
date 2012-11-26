@@ -6,6 +6,7 @@
 // TODO: TÆL ANTAL LISTITEMS I INDKØBSLISTE OP OG NED, NÅR MAN GØR DE FORSKELLIGE TING
 
 $(function() {
+    var $currentList = $('#num_list_items');
     var submitButton = $('#submitButton');
     $(submitButton).disable();
 
@@ -27,6 +28,9 @@ $(function() {
             success: function(json) {
                 $(listItem).parent().next().remove();
                 $(listItem).parent().remove();
+
+                var $currentListCount = parseInt($currentList.text(), 10);
+                $currentList.text($currentListCount - 1);
             },
             error: function(xhr, err) {
                 if(xhr.status == 500) {
@@ -53,8 +57,10 @@ $(function() {
             data: {ids: dataIDs},
             dataType: "JSON",
             success: function(responseItem) {
+                $currentList.text(0);
             },
             error: function(xhr, error) {
+                $currentList.text(0);
                 if(xhr.status == 500) {
                     $(document.body).html(xhr.responseText);
               }
@@ -96,6 +102,9 @@ $(function() {
                 listItem.after('<div class="blue_line_horisontal"></div>');
 
                 $('#list_item_name').val(' ');
+
+                var $currentListCount = parseInt($currentList.text(), 10);
+                $currentList.text($currentListCount + 1);
             },
             error: function(xhr, error) {
                 //alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);

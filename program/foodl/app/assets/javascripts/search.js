@@ -188,12 +188,12 @@ $(function() {
       $(this).hide();
 
       var $recipeID = $('.shopping-button').data('id');
-      var $ingCount = parseInt($('.shopping-button').data('count'));
+      var $ingCount = parseInt($('.shopping-button').data('count'), 10);
 
       var $currentList = $('#num_list_items');
-      var $currentListCount = parseInt($currentList.text());
+      var $currentListCount = parseInt($currentList.text(), 10);
 
-      $currentList.text(($ingCount + $currentListCount), 10);
+      $currentList.text($ingCount + $currentListCount);
 
       $.ajax({
           url: "/list/addrecipe",
