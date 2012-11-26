@@ -27,6 +27,8 @@ body {
   font-size:12px;
 }
 
+body > img{ margin-top:8px; }
+
 .container {
   width:800px;
   margin:8px auto;
