@@ -1,2 +1,27 @@
-\chapter{Teknologier}
+\section{Teknologier}
 \label{sec:teknologier}
+Systemet er en webapplikation, hvor der er lagt vægt på enkelt og forståeligt design, effektivitet, fleksibilitet og brugbarhed. For at kunne opfylde alle disse krav, som er beskrevet i \secref{sec:kriterier}, har vi gjort brug af nogle forskellige webudviklings- og programmeringsteknologier.
+
+Vi har brugt følgende teknologier:
+
+\begin{itemize}[noitemsep]
+\item HTML og CSS
+\item Javascript, jQuery UI og AJAX og JSON
+\item Ruby on Rails
+\item MySQL og phpMyAdmin
+\end{itemize}
+
+Vi har brugt HTML\cite{htmlwiki} til at opmærke og strukturere hjemmesiden med. HTML fungerer godt til opmærkning og strukturering af en hjemmeside, men det er ikke særlig flot at se på. For at designe hjemmesiden har vi brugt CSS\cite{csswiki}, der er et sprog, som bruges til at beskrive, hvordan man ønsker indholdet af bl.a. et HTML-dokument skal præsenteres i \fx en webbrowser.
+
+Hvad angår databaser, så har vi har brugt MySQL\cite{mysqlwiki}, der er en flertrådet SQL-databaseserver, som understøtter flere samtidige brugere. I og med at vi består af en gruppe af individer med vidt forskellige kompetencer og erfaringer med web- og systemudvikling, har vi brugt det browserbaserede program, phpMyAdmin\cite{phpmyadminwiki}, til at administrere og opdatere MySQL-databasen. phpMyAdmin præsenterer en letforståelig brugergrænseflade til redigering af databasen. Udviklerne bag MySQL har også udviklet deres eget administrationsmodul til databasen, men den skal installers på en computer, hvorimod phpMyAdmin præsenteres direkte via webbrowseren, hvilket betyder, at vi ikke behøver installere et program på seks forskellige computere, men blot bruge det samme via webbrowseren.
+
+For at gøre hjemmesiden dynamisk og brugervenlig, har vi brugt JavaScript\cite{javascriptwiki}, som er et objektorienteret scriptsprog, som de fleste moderne webbrowsere forstår. Derudover har vi også brugt jQuery UI\cite{jqueryuiwiki}, der bruges til at udvikle interaktive webapplikationer, og AJAX\cite{ajaxwiki} og JSON\cite{jsonwiki}, som bruges til at udvikle asynkrone webapplikationer. Figur \ref{fig:toolbar} illustrerer tre forskellige jQuery UI applikationer, som brugeren kan se, når der bliver udført en søgning på hjemmesiden. AJAX gør det muligt at udveksle data mellem hjemmeside og server uden at siden skal gennemgå en fuld sideopdatering hver gang, der sker en overførsel, for at vise det nye indhold. Alle dataoverførsler sker i baggrunden og brugeren præsenteres med disse ændringer med det samme.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{billeder/jqueryuieksempel.png}
+\capt{Denne figur viser tre forskellige eksempler af interaktive applikationer, der kan laves via jQuery UI. Til venstre ses en samling af tre knapper, som fungerer som afkrydsningsbokse, hvilket betyder, at man kan markere flere af gangen. Disse knapper gør det muligt for brugeren at begrænse søgeresultatet efter disse tre kriterier for tilberedningstiden. Midt for ses en justerbar knap, der gør det muligt for brugeren at skalere opskrifterne. Til højre ses endnu en samling af tre knapper, der fungerer som radioknapper, hvilket betyder, at man kun kan vælge én knap af gangen. Disse knapper giver brugeren mulighed for at sortere resultaterne efter navn, relevans eller tilberedningstid.}
+\label{fig:toolbar}
+\end{figure}
+
+Derudover er Ruby on Rails\cite{rubyonrailswiki}, der er et framework for programmeringssproget Ruby. Ruby on Rails er blevet brugt til understøttelse af webudvikling. Ruby on Rails gjorde det også muligt for os at kommunikere med databasen.
