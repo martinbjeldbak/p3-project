@@ -131,6 +131,7 @@ $(function() {
     foodTypes.forEach(function(foodType, i) {
       value += foodType + "|";
     });
+    startLoading();
     $.ajax({
       url: "/search",
       method: "GET",
@@ -139,9 +140,11 @@ $(function() {
       success: function(data) {
         $("#recipe-result ul").html(data);
         setupButtons();
+        stopLoading();
       },
       error: function(xmlHttpderp, error) {
         alert("nope. " + error);
+        stopLoading();
       }
     });
   };
@@ -185,19 +188,27 @@ $(function() {
   });
 
   $('.shopping-button').on("click", function() {
-    // Span er jQuery specific... ved ikke, om det er noobified
-      $(this).parent().hide();
+      $(this).hide();
 
-      var recipeID = $('.shopping-button').data('id');
+      var $recipeID = $('.shopping-button').data('id');
+      var $ingCount = parseInt($('.shopping-button').data('count'), 10);
 
+      var $currentList = $('#num_list_items');
+      var $currentListCount = parseInt($currentList.text(), 10);
+
+      $currentList.text($ingCount + $currentListCount);
+
+      startLoading();
       $.ajax({
           url: "/list/addrecipe",
           type: "POST",
-          data: {id: recipeID},
+          data: {id: $recipeID},
           dataType: "json",
           success: function(response) {
+            stopLoading();
           },
           error: function(xhr, error) {
+            stopLoading();
               //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }
