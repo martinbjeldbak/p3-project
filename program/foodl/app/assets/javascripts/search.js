@@ -173,10 +173,35 @@ $(function() {
     getNewRecipes();
   });
 
-  $('#addRecipe').on("click", "button", function(event) {
-    alert("DU ER EN NOOB MARTIN");
+
+  $('.welcome form').submit(function() {
+    var box = $(this).parent().parent();
+    box.animate({opacity: '0'}, 400).slideUp(500, function() {
+      var d = new Date();
+      d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
+      document.cookie = "welcome=welcome; expires=" + d.toGMTString() + "; path=/";
+    });
+    return false;
   });
 
+  $('.shopping-button').on("click", function() {
+    // Span er jQuery specific... ved ikke, om det er noobified
+      $(this).parent().hide();
 
+      var recipeID = $('.shopping-button').data('id');
 
+      $.ajax({
+          url: "/list/addrecipe",
+          type: "POST",
+          data: {id: recipeID},
+          dataType: "json",
+          success: function(response) {
+          },
+          error: function(xhr, error) {
+              //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
+              //$(document.body).html(xhr.responseText);
+          }
+      });
+      return false;
+  });
 });
