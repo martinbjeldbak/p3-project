@@ -187,10 +187,10 @@ $(function() {
           success: function(response) {
           },
           error: function(xhr, error) {
-              alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
+              //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }
       });
+      return false;
   });
-  return false;
 });
