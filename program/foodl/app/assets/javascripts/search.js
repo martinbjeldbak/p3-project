@@ -177,6 +177,15 @@ $(function() {
     alert("DU ER EN NOOB MARTIN");
   });
 
+  $('.welcome form').submit(function() {
+    var box = $(this).parent().parent();
+    box.animate({opacity: '0'}, 400).slideUp(500, function() {
+      var d = new Date();
+      d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
+      document.cookie = "welcome=welcome; expires=" + d.toGMTString() + "; path=/";
+    });
+    return false;
+  });
 
 
 });
