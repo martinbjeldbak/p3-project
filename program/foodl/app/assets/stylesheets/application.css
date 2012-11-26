@@ -26,6 +26,7 @@ body {
   text-align:center;
   font-family:'Titillium Web', sans-serif;
   font-size:12px;
+  margin-bottom:64px;
 }
 
 body > img{ margin-top:8px; }
@@ -89,9 +90,10 @@ header {
 }
 
 footer {
+  position:fixed;
   bottom:0;
-  left:0;
-  text-align:center;
+  left:16px;
+  text-align:left;
   width:100%;
   line-height:16px;
   height:24px;

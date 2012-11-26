@@ -1,3 +1,5 @@
+<% if !cookies[:welcome] %>
+<div class="welcome-container">
 <div class="welcome">
   <form action="" method="get">
   <h1>Velkommen til Foodl</h1>
@@ -9,9 +11,11 @@
   der kommer frem, eller tryk på enter. Klik til sidst på "Søg"-knappen
   for at udføre søgningen.</p>
 
-  <input type="submi" class="button" value="Fjern denne tekst" />
+  <input type="submit" class="button" value="Fjern denne tekst" />
 </form>
 </div>
+</div>
+<% end %>
 <div id="logo">
   <%=image_tag "logo.png", :alt => "Foodl" %>
 </div>
