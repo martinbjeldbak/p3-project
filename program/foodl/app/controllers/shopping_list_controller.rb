@@ -98,7 +98,11 @@ class ShoppingListController < ApplicationController
       if logged_in?
         listItem = ListItem.find_by_id(itemID)
 
-        listItem.destroy
+        begin
+          listItem.destroy
+        rescue
+          next
+        end
 
       # User not logged in
       else
