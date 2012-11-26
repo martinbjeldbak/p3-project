@@ -1,0 +1,115 @@
+\subsection{Parsing af råvarer}
+\label{subsec:parsingafraavarer}
+I forbindelse med at crawle efter opskrifter, og løbende parse dem, har vi besluttet, at vi er nødt til at gemme en tabel i vores database med råvarer og en anden tabel med opskrifter. Råvaretabellen indeholder udelukkende rækker med navne for alle unikke råvarer. Opskrifttabellen indeholder en opskrifts navn, billede, m.m.
+
+Det centrale i dette afsnit er, at vi for hver opskrifts ingrediens indsætter en relation mellem opskriften og råvaren, som denne ingrediens svarer til.
+
+En gemt tabel af unikke råvarer er nødvendig af flere grunde:
+
+\begin{itemize}[noitemsep]
+\item Når en bruger er i gang med at indtaste en råvare, kan vi stille forslag til hvilke råvarer vores system kender til. Dette hjælper med en hurtigere indtastning og giver brugeren en sikkerhed for at hans råvare er kendt i systemet.
+\item Når der søges på en råvare, \fx gulerod, kan vi benytte en relationstabel mellem råvaren og opskrifter, den indgår i, for at opnå en hurtigere søgning.
+\item De opskrifter, vi benytter, indeholder ingredienser med utroligt mange beskrivende ord. En ingrediens bestående af råvaren “persille”, kan optræde som meget forskellige ingredienser i Arlas opskrifter: ``finthakket, frisk persille'', ``skyllet, kogt persille''. Vi vil gerne have, at en bruger kun skal indtaste teksten ``persille'', (uden at få stillet forslag til ``skyllet, kogt persille'') og få mulighed for at søge på alle opskrifter, der indeholder persille, hvad enten det skal koges, pilles, skrælles m.m
+\item Arla indeholder ingredienser, hvis navne er skrevet forskelligt \fx ``gulerod'' og ``gulerødder''. Når en bruger indtaster råvaren ``gule'', skal han ikke præsenteres for 2 forslag ``gulerod'' og ``gulerødder''. Det vil kunne gøre brugeren i tvivl om, hvorvidt han vælger nogle opskrifter fra ved at vælge det ene frem for det andet.
+\end{itemize}
+
+Den første delløsning på problemet med at lave en unik tabel over ingredienser var at udvikle en algoritme til at sammenligne to tekststrenge for at finde ud af, hvor meget de matchede hinanden. Dette er nødvendigt for at kunne betragte ``gulerod'' og ``gulerødder'' som det samme. Vi betragtede en eksisterende algoritme ved navn Levenshtein, men vi besluttede, at denne algoritme ikke var tilstrækkelig til den sammenligning, vi har behov for. 
+
+Betragt hvordan Levenshtein beregner forskellen på disse tekststrenge:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c c c c c c c c c c c c c c c }
+t & ø & r & t &  & p & e & r & s & i & l & l & e & & & & & \\ \hline
+ &  &  &  &  & p & e & r & s & i & l & l & e & & t & ø & r & t \\ 
+\end{tabular}
+\capt{Sammenligning af ``persille tørt'' og ``tørt persille'' giver forskellen 10.}
+\label{table:levenshtein1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c c c c c c c c c c c c c c c  }
+k & o & g & t &  & p & e & r & s & i & l & l & e &  &   &   &   & \\ \hline
+ &  &  &   &  & p & e & r & s & i & l & l & e &  & t & ø & r & t \\
+\end{tabular}
+\capt{Sammenligning af ``persille tørt'' og ``kogt persille'' giver forskellen 10.}
+\label{table:levenshtein2}
+\end{table}
+
+Levenshtein belønner altså ikke at samme ord er blevet flyttet, og dette er nødvendigt også at tage i betragtning, da vi vil have at ``oksekød (hakket)'' skal minde mere om ``hakket oksekød'' end enhver anden form for ``...... oksekød''. Der er generelt mange ingredienser, der kan skrives på mange forskellige måder, fx ``rød peberfrugt'' og ``peberfrugt (rød)''. Vi har erfaret at Arlas opskrifter er inkonsistente på dette område.
+
+Vi har udviklet en algoritme til at udregne hvor meget to tekststrenge er lig hinanden. Algoritmen beskrives her i pseudokode.
+
+\begin{algorithm} [H]
+	\capt{Algoritmen udregner hvor ens to tekststrenge er.}
+	\label{pseudo:parsing}
+	\input{pseudokode/parsing}
+\end{algorithm}
+
+Algoritmen tager to strenge som input $str1$ og $str2$. Den outputter et tal mellem 0 og 100, som er dens svar på, hvor stor ligheden er mellem de to strenge. Algoritmen starter med at gemme længden af den længste streng af $str1$ og $str2$ i anden potens som $max\_score$ (linje 2). Dette er den maksimalt opnåelige score.
+
+For hver gang der kan findes en fælles streng i $str1$ og $str2$, kaldes $lc$ (linje 4), øges scoren med længden af $lc$ i anden potens. $lc$ fjernes fra str1 og str2 (linje 6), og scoren mindskes med 1 (linje 7). I linje 8 beregnes den endelig score som en procentdel af det maskimalt opnåelige.
+
+Hvis to ens tekststrenge indsættes, vil den højeste score på 100 opnåes, da $max\_score$ sættes til $str1.length^2$ (der også er lig $str2.length^2$). Scoren starter på 1 (linje 3), hvorefter scoren øges med $lc^2$, som i dette tilfælde er det samme som $max\_score$, $lc = str1 = str2$. Scoren er nu $1 + max\_score^2$. I linje 7 bliver $score = 1 + max\_score^2 - 1 = max$. While løkken eksekveres kun én gang, så i linje 8 bliver $score = max\_score / max\_score * 100 = 100$.
+
+Det bør bemærkes at $max\_score = max(str1.length^2, str2.length^2)$ (linje 3) gør det muligt at give samme score for det omvendte input $(str2, str1)$. Sammen med $score = score / max\_score * 100$ (linje 8), vil en kortere matchende streng blive belønnet. For eksempel vil (kylling, kylling)  have et større match (100 \%) end (kylling, kyllingelår) (40 \%).
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| r | c | c | c | c | c | c |}
+\hline
+\textbf{str1}  & agurk & kartoffel & rød peberfrugt   & rød peberfrugt   & æg  & æg  \\ \hline
+\textbf{str2}  & agurk & kartofler & peberfrubt (rød) & peberfrugt (gul) & gær & ananas  \\ \hline
+\textbf{match} & 100   &     66    &       75         &       62         & 33  & 16 \\ \hline
+\end{tabular}
+\capt{Test af vores metode til sammenligning af tekststrenge. Parametrene (str1, str2) kan byttes rund og vil stadig give samme resultat.}
+\label{table:testparse}
+\end{table}
+
+
+%\ourtable{parsetest}{5}{Oversigt over vigtigheden af designkriterierne for projektet.}
+%                                                            {Vigtighed}
+%      {Kriterium      }{ Meget vigtig   & Vigtig         & Mindre vigtig  & Irrelevant     & Trivielt       }{
+%\ourrow{Brugbart       }{ \checkmark     &                &                &                &                }
+%\ourrow{Sikkert        }{                &                &                & \checkmark     &                }
+%\ourrow{Effektivt      }{                & \checkmark     &                &                &                }
+%\ourrow{Korrekt        }{                &                & \checkmark     &                &                }
+%\ourrow{Pålideligt     }{                &                & \checkmark     &                &                }
+%\ourrow{Vedligeholdbart}{                & \checkmark     &                &                &                }
+%\ourrow{Testbart       }{                &                & \checkmark     &                &                }
+%\ourrow{Fleksibelt     }{                & \checkmark     &                &                &                }
+%\ourrow{Forståeligt    }{                & \checkmark     &                &                &                }
+%\ourrow{Genbrugbart    }{                &                &                & \checkmark     &                }
+%\ourrow{Flytbart       }{                &                & \checkmark     &                &                }
+%\ourrow{Integrerbart   }{                &                & \checkmark     &                &                }
+%}
+
+Man kan se at sammenligningsmetoden konkluderer, at rød peberfrugt minder mere om peberfrugt (rød) end peberfrugt (gul). (med henholdsvis 75 og 62 \% match). Levenshteinalgoritmen ville give samme match på disse to sammenligninger. Der opstår dog også problemer i forbindelse med denne metode. Betragt \fx denne sammenligning:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+ & kylling & råddyr ovnstegt ved middelvarme \\ \hline
+kyllingelår med meget lavt fedtindhold & 18 & 21 \\ \hline
+\end{tabular}
+\end{table}
+
+Det er tydeligt, at ``kyllingelår med meget lavt fedtindhold'' burde mappes til ``kylling'', fremfor ``råddyr ovnstegt ved middelvarme'', der i dette tilfælde får en højere score. Problemet ved algoritmen er, at kylling kun får 7 point for at matche de 7 først bogstaver af ``kylling med meget lavt fedtindhold''. De 7 point betyder meget lidt, når det divideres med længden af ``kyllingelår med meget lavt fedtindhold''.
+
+\subsubsection{Oprettelse af råvaretabel}
+Vi forsøgte først at oprette råvaretabellen, ved at lade crawleren løbe alle opskrifter igennem på Arla.dk
+
+Hver gang den stødte på en ingrediens, slog den op i råvaretabellen, for at se om den kunne finde en ingrediens, der matchede med mere end 50 \% ifølge vores tekstmatch-algoritme. Hvis ingrediensen ikke fandtes, blev den tilføjet til tabellen. For hver ingrediens, blev der indsat en relation mellem den opskrift den fandtes på (opskrifter blev gemt i en anden tabel) og ingrediensens id i tabellen. Det skulle dog hurtigt vise sig at blive svært at benytte denne metode.
+
+Når vi med denne metode stødte på ingrediensen ``pillede, små, kolde, kartofler'' på Arlas hjemmeside, så ville vi gerne have denne ingrediens til at hedde ``kartofler'' i vores tabel. Vi lavede derfor en lang liste over ord som \fx ``kolde'', ``små'', ``pillede'', osv. som blev fjernet når vi stødte på en ingrediens. Efter at have tilføjet undtagelserne fra de første 50 ingredienser erfarede vi, at dette blev alt for besværligt. For mange undtagelser kunne ødelægge andre ingredienser. Persille kunne hedde hakket, vasket persille, og ved at fjerne betegnelsen hakket ødelagde vi ingrediensen hakket oksekød, hvori vi ikke ønskede at fjerne hakket.
+
+Vi prøvede forskellige små work-arounds til at løse alle disse problemer, men i sidste ende måtte vi indse, at metoden med løbende at tilføje ingredienser ikke gav et ordentlig resultat.
+
+\subsubsection{Løsning}
+Vi benytter fra starten en liste over fødevarer udarbejdet af andre, som vi indsætter i vores råvaretabel. Det er vigtigt for os at finde en liste, hvor ingredienser optræder med færrest mulige betegnelser, såsom ``kogte, skrællede, m.m.''.
+
+Når vi begynder at crawle og parse opskrifter, analyserer vi hver ingrediens og forsøger at finde ud af, hvilken råvare den matcher med højeste score ved brug af vores tekstsammenligningsmetode. Den råvare der matcher bedst, indsættes der en relation i vores database for mellem råvare og opskriften, der indeholdt en ingrediensen, der matchede råvaren. Et udpluk af råvarers navne i den liste vi benytter:
+
+\textit{Rød peberfrugt, Persille, Citron, Tomat, Agurk, Hakket tomater}
