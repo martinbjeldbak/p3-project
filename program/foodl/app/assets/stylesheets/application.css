@@ -21,6 +21,7 @@
  *= require jquery-ui-1.9.1.custom.css
  */
 body {
+  margin-top:32px;
   background:#dee8d9 url(bg.png) repeat-x;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
@@ -74,6 +75,7 @@ footer, nav, header {
 
 header {
   position:fixed;
+  top:0;
   z-index:10000;
   width:100%;
   background-color:#3B4539;
@@ -267,13 +269,18 @@ header nav a:hover {
 #toolbar {
   position:fixed;
   width:100%;
-  margin-top:32px;
+  top:32px;
   height: 38px;
   padding: 8px 0;
   background-color: #f7fcf7;
   border-bottom: 1px solid #ccd2cc;
   z-index:10000;
 }
+
+#toolbar + * {
+  margin-top:64px;
+}
+
 #subtoolbar{
   width: 800px;
   margin: 0 auto;
