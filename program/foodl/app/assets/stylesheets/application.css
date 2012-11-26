@@ -115,7 +115,7 @@ h1 {
   font-weight:normal;
   color:#325030;
   font-size: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 header a:link img,
@@ -368,6 +368,6 @@ header nav a:hover {
 }
 
 p {
-  margin-bottom:16px;
+  margin-bottom:8px;
   text-align:left;
 }
