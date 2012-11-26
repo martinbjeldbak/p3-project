@@ -48,6 +48,14 @@ jQuery.fn.disable = function() {
     this.button('disable');
 };
 
+var startLoading = function() {
+  $("#loading").fadeIn(300);
+};
+
+var stopLoading = function() {
+  $("#loading").fadeOut(300);
+};
+
 
 $(function() {
   $('.button').button();
