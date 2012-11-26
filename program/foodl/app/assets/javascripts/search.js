@@ -218,7 +218,8 @@ $(function() {
     
    $window = $(window),
    $sidebar = $("#sidebar"),
-   sidebarTop = $sidebar.position().top;
+   // WTF???
+   //sidebarTop = $sidebar.position().top; 
    $sidebar.addClass('fixed');
 
    $window.scroll(function(event) {
