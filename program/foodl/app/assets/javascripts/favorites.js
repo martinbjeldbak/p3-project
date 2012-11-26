@@ -6,6 +6,7 @@ $(function() {
     var $favCount = $('#num_favorites');
     var newFavCount = 0;
 
+    startLoading();
     $.ajax({
       url: action,
       type: "POST",
@@ -28,8 +29,10 @@ $(function() {
           newFavCount = parseInt($favCount.text(), 10) - 1;
           $favCount.text(newFavCount);
         }
+        stopLoading();
       },
       error: function(error) {
+        stopLoading();
         alert("Der skete en ubeskrivelig fejl");
       }
     });
