@@ -14,7 +14,9 @@
   
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">
-    <img src="<%= url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Færdiglavet ret">
+    <img src="<%= image_path "foodl-kontakt/Elias.jpg" #url_for controller: :recipes, action: :picture, id: recipe.id
+%>" alt="Færdiglavet ret">
+
   </a>
   <div class="rating">
     <div style="width:<%= (recipe.calculate_rating ? recipe.calculate_rating : 0) * 100 %>%;"></div>
