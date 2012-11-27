@@ -1,5 +1,5 @@
 // Place all the styles related to the search controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #sidebar { 
@@ -17,7 +17,6 @@
 }
 
 #search {
-  margin-bottom:200px;
 }
 
 #search ul {
@@ -102,7 +101,7 @@ li .favoured:hover  .ui-icon-heart{
 }
 
 li .shopping-button:hover{
-  background:white url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
+  background: url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
 }
 
 #recipe-result{
