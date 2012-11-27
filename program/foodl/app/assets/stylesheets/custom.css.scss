@@ -34,28 +34,30 @@ $grayLighter: #eee;
   }
 }
 
-.alert {
+#notification {
+  display:none;
   position: fixed;
-  top: 32px;
+  bottom:25%;
   border-radius: 5px;
-  border: 1px solid #AAA;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  clear: both;
+  padding:8px;
   left: 50%;
-  width:496px;
-  margin-left:-248px;
+  width:320px;
+  margin-left:-160px;
+  background-color:#000;
+  box-shadow:0 0 16px #000;
+  font-size:14px;
+  opacity:0.8;
+  text-align:center;
   @include box_sizing;
 }
 
-.alert-success {
-  background: #FFDE78;
-  box-shadow:0 0 32px 0 #ccd2cc; 
+#notification.success {
+  background-color: #000;
+  color: #FFF;
 }
 
-.alert-error {
-  background: #C00;
-  box-shadow:0 0 32px 0 #ccd2cc;
+#notification.error {
+  background-color: #C00;
   color: #FFF;
 }
 
