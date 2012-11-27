@@ -1,10 +1,29 @@
+<% @hide_ad=true %>
+<% if !cookies[:welcome] %>
+<div class="welcome-container">
+<div class="welcome">
+  <form action="" method="get">
+  <h1>Velkommen til Foodl</h1>
+  <p><strong>Foodl</strong> hjælper dig med at finde opskrifter baseret på de ubrugte
+    råvarer du har til at ligge i bunden af dit køleskab.</p>
+
+  <p>Start med at indtaste de råvarer du ønsker at bruge i nedenstående
+  felt. Skriv f.eks. "Gulerødder" og klik på "Gulerødder" i boksen
+  der kommer frem, eller tryk på enter. Klik til sidst på "Søg"-knappen
+  for at udføre søgningen.</p>
+
+  <input type="submit" class="button" value="Fjern denne tekst" />
+</form>
+</div>
+</div>
+<% end %>
 <div id="logo">
-  <%=image_tag("logo.png", :alt => "Foodl") %>
+  <%=image_tag "logo.png", :alt => "Foodl" %>
 </div>
 <div id="search">
   <%= render :partial => 'search/form', :locals => { :food_types => [] } %>
+
 </div>
 
 <div id="menu-container" style="position:absolute; width: 185px;"></div>
 
-<div>Test</div>

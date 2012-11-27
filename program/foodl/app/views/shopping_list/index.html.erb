@@ -1,8 +1,8 @@
-
 <div id="shopping_list">
   <div class="blue_line_vertical"></div>
   <div id="print_button_div" class="no_print">
     <input type="button" class="print_button" value="Udskriv" onclick="window.print();return false;" />
+    <%= button_to "Slet alt", {controller: 'shopping_list', action: 'delete_list'}, class: "delete_all_listitems_button" %>
   </div>
   <div id="shopping_list_title">
     <h1>

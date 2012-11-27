@@ -1,12 +1,16 @@
+<% if recipes.size < 1 %>
+  <p>Din søgning resulterede desværre ikke i nogen resutater.</p>
+  <p>Prøv at udvide dine søgeparametre.</p>
+<% end %>
 <% recipes.each do |recipe| %>
 <li>
   
-  <% if has_favour( recipe.id ) %>
+  <% if has_favour?( recipe.id ) %>
     <a href="<%= url_for controller: :favorites, action: :remove, id: recipe.id %>" class="favour-button favoured">Fjern opskrift fra favoritter</a>
   <% else %>
     <a href="<%= url_for controller: :favorites, action: :add, id: recipe.id %>" class="favour-button">Tilføj opskrift til favoritter</a>
   <% end %>
-  <a href="#" class="shopping-button">Tilføj til indkøbsliste</a>
+  <a href="#" class="shopping-button" data-id="<%= recipe.id %>" data-count="<%= recipe.ingredients.count %>">Tilføj til indkøbsliste</a>
   
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">
@@ -21,7 +25,7 @@
   <% end %>
   <ul>
     <% recipe.ingredients.each do |ingredient| %>
-      <% if id_match( search, ingredient.food_type_id ) %>
+      <% if id_match?( search, ingredient.food_type_id ) %>
     <li class="in_search">
       <% else %>
     <li>
