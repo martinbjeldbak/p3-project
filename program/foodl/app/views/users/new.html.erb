@@ -4,8 +4,8 @@
     <h1>
       Opret bruger
     </h1>
-    <%= form_for @user  do |f| %>
-      <%= render 'shared/error_messages'%>
+    <%= form_for @user_created do |f| %>
+      <%= render 'shared/error_messages_create'%>
     <div class="input">
       <%= f.email_field(:email, :class => "text", :placeholder => "Email") %>
     </div>
