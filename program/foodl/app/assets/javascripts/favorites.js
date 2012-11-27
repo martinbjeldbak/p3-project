@@ -33,7 +33,7 @@ $(function() {
       },
       error: function(error) {
         stopLoading();
-        alert("Der skete en ubeskrivelig fejl");
+        flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
       }
     });
     return false;
