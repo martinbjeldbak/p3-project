@@ -26,10 +26,6 @@ $(function() {
           button.attr('title', 'Tilføj opskrift til favoritter');
           button.attr('href', action.replace('remove', 'add'));
 
-          if('#recipe-result') {
-            $(this).parent().slideUp();
-          }
-
           newFavCount = parseInt($favCount.text(), 10) - 1;
           $favCount.text(newFavCount);
         }
