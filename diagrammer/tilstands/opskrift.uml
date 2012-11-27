@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Nov 12 15:02:36 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Nov 27 13:51:35 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -97,11 +97,13 @@
                     <UML:Transition xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB7'/>
                     <UML:Transition xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB8'/>
                     <UML:Transition xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001ABB'/>
+                    <UML:Transition xmi.idref = '-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B81'/>
                   </UML:StateVertex.outgoing>
                   <UML:StateVertex.incoming>
                     <UML:Transition xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB7'/>
                     <UML:Transition xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB8'/>
                     <UML:Transition xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000003EC9'/>
+                    <UML:Transition xmi.idref = '-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B81'/>
                   </UML:StateVertex.incoming>
                 </UML:SimpleState>
               </UML:CompositeState.subvertex>
@@ -153,6 +155,18 @@
                 <UML:SimpleState xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB6'/>
               </UML:Transition.target>
             </UML:Transition>
+            <UML:Transition xmi.id = '-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B81'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:CallEvent xmi.idref = '-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B82'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB6'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '-84-25-19-47--126ac2f1:13adf461a90:-8000:0000000000001AB6'/>
+              </UML:Transition.target>
+            </UML:Transition>
           </UML:StateMachine.transitions>
         </UML:StateMachine>
         <UML:SignalEvent xmi.id = '-64--88-56-1--15c825da:13a4ebd2314:-8000:000000000000086F'
@@ -186,6 +200,13 @@
           name = 'Opskrift fundet' isSpecification = 'false'>
           <UML:Event.parameter>
             <UML:Parameter xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000003EC8'
+              name = 'opskrift' isSpecification = 'false' kind = 'in'/>
+          </UML:Event.parameter>
+        </UML:CallEvent>
+        <UML:CallEvent xmi.id = '-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B82'
+          name = 'Tilføj til indkøbsliste' isSpecification = 'false'>
+          <UML:Event.parameter>
+            <UML:Parameter xmi.id = '-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B83'
               name = 'opskrift' isSpecification = 'false' kind = 'in'/>
           </UML:Event.parameter>
         </UML:CallEvent>
@@ -356,13 +377,13 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="248"
+      <moveto x="192"
               y="152" />
-      <lineto x="248"
+      <lineto x="192"
               y="128" />
-      <lineto x="280"
+      <lineto x="216"
               y="128" />
-      <lineto x="280"
+      <lineto x="216"
               y="152" />
     </path>
   </group>
@@ -391,13 +412,13 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="248"
+      <moveto x="192"
               y="191" />
-      <lineto x="248"
+      <lineto x="192"
               y="216" />
-      <lineto x="280"
+      <lineto x="216"
               y="216" />
-      <lineto x="280"
+      <lineto x="216"
               y="191" />
     </path>
   </group>
@@ -451,7 +472,7 @@
                         offset="10" />
     </private>
     <path name="Fig6.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -461,6 +482,41 @@
               y="176" />
       <lineto x="176"
               y="176" />
+    </path>
+  </group>
+  <group name="Fig7"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B81"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig7.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="-84-25-20-15--4dddacab:13b41eaea36:-8000:0000000000000B81"
+                        angle="344.0"
+                        offset="66" />
+    </private>
+    <path name="Fig7.0"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="304"
+              y="152" />
+      <lineto x="304"
+              y="128" />
+      <lineto x="336"
+              y="128" />
+      <lineto x="336"
+              y="152" />
     </path>
   </group>
 </pgml>
