@@ -56,6 +56,50 @@ var stopLoading = function() {
   $("#loading").fadeOut(300);
 };
 
+var messageQueue = [];
+
+var flashMessageFromQueue = function() {
+  if (messageQueue.length == 0) {
+    return;
+  }
+  var message = messageQueue[0];
+  $("#notification").html(message.message)
+    .removeClass()
+    .addClass(message.type)
+    .fadeIn(300, function() {
+      setTimeout(function() {
+        $("#notification").fadeOut(300, function() {
+          setTimeout(function() {
+            messageQueue.shift();
+            flashMessageFromQueue();
+          }, 50);
+        });
+      }, message.duration);
+    });
+};
+
+/**
+ * Flash a message to the user
+ * @param string message The message
+ * @param string type Either "success"(default) or "error"
+ * @param integer duration Duration in ms (default=5000)
+ */
+var flashMessage = function(message, type, duration) {
+  if (!duration) {
+    duration = 5000;
+  }
+  if (!type) {
+    type = "success";
+  }
+  if (messageQueue.length == 0) {
+    messageQueue.push({message: message, type: type, duration: duration});
+    flashMessageFromQueue();
+  }
+  else {
+    messageQueue.push({message: message, type: type, duration: duration});
+  }
+};
+
 
 $(function() {
   $('.button').button();
