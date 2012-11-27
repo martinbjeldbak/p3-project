@@ -366,7 +366,7 @@ header nav a:hover {
   to { transform: scale(0.8); }
 }
 
-#about-container {
+#upper-about {
   border-radius:5px;
   margin:50px 0 25px 0;
   padding: 16px;
@@ -399,37 +399,47 @@ p {
   display:none;
 }
 
-#outer-contact {
+#lower-about {
   display:inline-block;
 }
 
-#outer-contact p {
+#lower-about p {
   text-align:center;
 }
 
-.left-contact{
-  border-radius:5px;
-  margin:10px 10px 10px 0;
-  padding: 16px;
-  display: inline-block;
-  background-color:#F7FCF7;
-  box-shadow:0 0 32px 0 #CCD2CC;
-  float:left;
-  clear:left;
+#who-are-we {
+    border-radius:5px;
+    width: 75%;
+    height: 25px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#F7FCF7;
+    box-shadow:0 0 32px 0 #CCD2CC;
 }
 
-.right-contact{
+@mixin profile-picture-styling {
   border-radius:5px;
   margin:10px 0 10px 10px;
   padding: 16px;
   display: inline-block;
   background-color:#F7FCF7;
   box-shadow:0 0 32px 0 #CCD2CC;
+}
+
+.left-picture{
+  @include profile-picture-styling;
+  float:left;
+  clear:left;
+}
+
+.right-picture{
+  @include profile-picture-styling;
   float:right;
   clear:right;
 }
 
-.contacts {
+.profile-picture {
   float:left;
 
   height: 390px;
@@ -439,5 +449,22 @@ p {
 
 .contact-picture {
     width: 100%;
+}
 
+#contact-container {
+  margin-top: 40px;
+}
+
+#contact-box {
+  border-radius:5px;
+  margin:50px 0 25px 0;
+  padding: 16px;
+  width: 400px;
+  display: inline-block;
+  background-color:#F7FCF7;
+  box-shadow:0 0 32px 0 #CCD2CC;
+
+  p {
+    text-align: center;
+  }
 }

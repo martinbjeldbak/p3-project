@@ -45,6 +45,7 @@ $grayLighter: #eee;
   margin-left:-160px;
   background-color:#000;
   box-shadow:0 0 16px #000;
+  color: #FFF;
   font-size:14px;
   opacity:0.8;
   text-align:center;
@@ -53,12 +54,10 @@ $grayLighter: #eee;
 
 #notification.success {
   background-color: #000;
-  color: #FFF;
 }
 
 #notification.error {
   background-color: #C00;
-  color: #FFF;
 }
 
 .debug_dump {
