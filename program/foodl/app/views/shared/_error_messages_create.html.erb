@@ -1,0 +1,12 @@
+<% if @user_created.present? and @user_created.errors.any? %>
+    <div id="error_explanation">
+      <div class="highlight">
+        Formen indeholder <%= @user_created.errors.count %> fejl
+      </div>
+      <ul>
+        <% @user_created.errors.full_messages.each do |msg| %>
+            <li>* <%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>

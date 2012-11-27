@@ -140,11 +140,12 @@ $(function() {
       success: function(data) {
         $("#recipe-result ul").html(data);
         setupButtons();
+		$("html, body").animate({ scrollTop: 0 }, 1000);
         stopLoading();
       },
       error: function(xmlHttpderp, error) {
-        alert("nope. " + error);
         stopLoading();
+        flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
       }
     });
   };
@@ -209,22 +210,30 @@ $(function() {
           },
           error: function(xhr, error) {
             stopLoading();
+            flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
               //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }
       });
       return false;
   });
-    
-   $window = $(window),
-   $sidebar = $("#sidebar"),
-   // WTF???
-   //sidebarTop = $sidebar.position().top; 
-   $sidebar.addClass('fixed');
-
-   $window.scroll(function(event) {
-      scrollTop = $window.scrollTop(),
-      topPosition = Math.max(sidebarTop, sidebarTop * 2 - scrollTop),
-      $sidebar.css('top', topPosition);
-   });
+  
 });
+
+$(window).load( function(){
+  var sidebar = $( "#sidebar" );
+  if( sidebar.length > 0 ){
+    var sidebarTop = sidebar.offset().top;
+    sidebar.css( 'position', 'fixed' );
+    
+	var scroll_update = function(event){
+      scrollTop = $(window).scrollTop();
+      topPosition = Math.min( sidebarTop, Math.max( sidebarTop - scrollTop, 92 ) );
+      sidebar.css( 'top', topPosition );
+    };
+	
+    $(window).scroll( scroll_update );
+	scroll_update();
+  }
+});
+
