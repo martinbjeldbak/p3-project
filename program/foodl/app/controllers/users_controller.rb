@@ -72,7 +72,7 @@ class UsersController < ApplicationController
   # Mailer? http://api.rubyonrails.org/classes/ActionMailer/Base.html
   #def forgotPassword
   #  @user = User.find_by_email(params[:email])
-  #  random_password = Array.new(10).map { (65 + rand(58)).chr }.join
+  #  random_password = Array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
   #  @user.password = random_password
   #  @user.save!
   #  Mailer.create_and_deliver_password_change(@user, random_password)
