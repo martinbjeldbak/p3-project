@@ -21,7 +21,7 @@
  *= require jquery-ui-1.9.1.custom.css
  */
 body {
-  margin-top:32px;
+  margin-top:40px;
   background:#dee8d9 url(bg.png) repeat-x;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
@@ -280,7 +280,7 @@ header nav a:hover {
 }
 
 #toolbar + * {
-  margin-top:64px;
+  margin-top:56px;
 }
 
 #subtoolbar{
