@@ -1,4 +1,5 @@
 <% @hide_ad=true %>
+<div id="logo">
 <% if !cookies[:welcome] %>
 <div class="welcome-container">
 <div class="welcome">
@@ -17,7 +18,6 @@
 </div>
 </div>
 <% end %>
-<div id="logo">
   <%=image_tag "logo.png", :alt => "Foodl" %>
 </div>
 <div id="search">
