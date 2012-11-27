@@ -140,6 +140,7 @@ $(function() {
       success: function(data) {
         $("#recipe-result ul").html(data);
         setupButtons();
+		$("html, body").animate({ scrollTop: 0 }, 1000);
         stopLoading();
       },
       error: function(xmlHttpderp, error) {
