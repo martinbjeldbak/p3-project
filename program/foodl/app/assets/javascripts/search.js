@@ -144,8 +144,8 @@ $(function() {
         stopLoading();
       },
       error: function(xmlHttpderp, error) {
-        alert("nope. " + error);
         stopLoading();
+        flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
       }
     });
   };
@@ -210,6 +210,7 @@ $(function() {
           },
           error: function(xhr, error) {
             stopLoading();
+            flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
               //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }
