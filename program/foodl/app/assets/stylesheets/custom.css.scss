@@ -35,15 +35,16 @@ $grayLighter: #eee;
 }
 
 .alert {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 32px;
   border-radius: 5px;
   border: 1px solid #AAA;
   padding-bottom: 15px;
   padding-top: 15px;
   clear: both;
-  left: 30%;
-  right: 30%;
+  left: 50%;
+  width:496px;
+  margin-left:-248px;
   @include box_sizing;
 }
 
