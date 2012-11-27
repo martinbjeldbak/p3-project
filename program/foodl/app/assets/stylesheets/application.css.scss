@@ -453,5 +453,18 @@ p {
 
 #contact-container {
   margin-top: 40px;
-  text-align: center;
+}
+
+#contact-box {
+  border-radius:5px;
+  margin:50px 0 25px 0;
+  padding: 16px;
+  width: 400px;
+  display: inline-block;
+  background-color:#F7FCF7;
+  box-shadow:0 0 32px 0 #CCD2CC;
+
+  p {
+    text-align: center;
+  }
 }
