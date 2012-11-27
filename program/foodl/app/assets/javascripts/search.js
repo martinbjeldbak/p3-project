@@ -216,16 +216,19 @@ $(function() {
       });
       return false;
   });
+  
+  var sidebar = $( "#sidebar" );
+  if( sidebar.length > 0 ){
+    var sidebarTop = sidebar.offset().top;
+    sidebar.css( 'position', 'fixed' );
     
-   $window = $(window),
-   $sidebar = $("#sidebar"),
-   // WTF???
-   //sidebarTop = $sidebar.position().top; 
-   $sidebar.addClass('fixed');
-
-   $window.scroll(function(event) {
-      scrollTop = $window.scrollTop(),
-      topPosition = Math.max(sidebarTop, sidebarTop * 2 - scrollTop),
-      $sidebar.css('top', topPosition);
-   });
+	var scroll_update = function(event){
+      scrollTop = $(window).scrollTop();
+      topPosition = Math.min( sidebarTop, Math.max( sidebarTop - scrollTop, 92 ) );
+      sidebar.css( 'top', topPosition );
+    };
+	
+    $(window).scroll( scroll_update );
+	scroll_update();
+  }
 });
