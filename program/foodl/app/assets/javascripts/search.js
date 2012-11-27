@@ -218,6 +218,9 @@ $(function() {
       return false;
   });
   
+});
+
+$(window).load( function(){
   var sidebar = $( "#sidebar" );
   if( sidebar.length > 0 ){
     var sidebarTop = sidebar.offset().top;
@@ -233,3 +236,4 @@ $(function() {
 	scroll_update();
   }
 });
+
