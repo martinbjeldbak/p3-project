@@ -1,5 +1,7 @@
 Foodl::Application.routes.draw do
 
+  get "issues/index"
+
 #  get "search/index"
 
   resources :sessions, only: [:new, :create, :destroy]
@@ -75,6 +77,9 @@ Foodl::Application.routes.draw do
   match '/favorites', to: 'favorites#index'
   match '/favorites/add/:id', to: 'favorites#add'
   match '/favorites/remove/:id', to: 'favorites#remove'
+
+  # Issues
+  match '/issues', to: 'issues#index'
 
   match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
 
