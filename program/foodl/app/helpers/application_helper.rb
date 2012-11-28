@@ -13,8 +13,10 @@ module ApplicationHelper
   def num_favorites
     if logged_in?
       current_user.favorites.size
-    else
-      0
+    elsif session[:favored]
+      session[:favored].count
+		else
+		  0
     end
   end
 
