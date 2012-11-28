@@ -87,6 +87,8 @@ class ShoppingListController < ApplicationController
       end
     end
   end
+  
+   
 
   def delete_list
 
