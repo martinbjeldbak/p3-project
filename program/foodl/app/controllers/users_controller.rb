@@ -51,7 +51,13 @@ class UsersController < ApplicationController
 
       # Check if user has any saved items in the shopping list from session
       unless session[:list_items].nil?
-        session[:list_items].map { |listItem| listItem.user = @user_created; listItem.id = nil; listItem.save }
+        session[:list_items].map do |id, listItem|
+          if id.is_a? Integer
+            listItem.user = @user_created
+            listItem.id = nil
+            listItem.save
+          end
+        end
         session[:list_items] = nil
       end
 
