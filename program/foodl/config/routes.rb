@@ -71,6 +71,7 @@ Foodl::Application.routes.draw do
   match '/list/addrecipe', to: 'shopping_list#add_recipe'
   match '/list/deletelist', to: 'shopping_list#delete_list'
 
+  
   match '/recipes/images/:id', to: 'recipes#picture'
 
   match '/search', to: 'search#result'
@@ -78,7 +79,8 @@ Foodl::Application.routes.draw do
   match '/favorites', to: 'favorites#index'
   match '/favorites/add/:id', to: 'favorites#add'
   match '/favorites/remove/:id', to: 'favorites#remove'
-
+  
+  
   # Issues
   match '/issues', to: 'issues#index'
 
