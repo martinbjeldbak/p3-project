@@ -8,9 +8,14 @@ class ShoppingListController < ApplicationController
       user = current_user
       @shopping_list = user.list_items
     else
-      session[:list_items] ||= []
+      session[:list_items] ||= {id: 0}
 
-      @shopping_list = session[:list_items]
+      @shopping_list = []
+      session[:list_items].each do |k, v|
+        if (k.is_a? Integer)
+          @shopping_list << v
+        end
+      end
     end
 
 
@@ -29,10 +34,11 @@ class ShoppingListController < ApplicationController
       end
 
     else
-      @listItem.id = session[:list_items].length
-      session[:list_items] << @listItem
+      @listItem.id = session[:list_items][:id]
+      session[:list_items][@listItem.id] = @listItem
+      session[:list_items][:id] += 1;
 
-      if session[:list_items].include?(@listItem)
+      if session[:list_items].has_value?(@listItem)
         render json: @listItem
       else
         render json: @listItem.errors
@@ -52,9 +58,7 @@ class ShoppingListController < ApplicationController
         render json: @listItem.errors
       end
     else
-      @listItem = session[:list_items][params[:id].to_i]
-
-      if session[:list_items].delete(@listItem)
+      if session[:list_items].delete(params[:id].to_i)
         render json: @listItem
       else
         render json: @listItem.errors
@@ -72,9 +76,10 @@ class ShoppingListController < ApplicationController
         listItem.user = current_user
         listItem.save
       else
-        session[:list_items] ||= []
-        listItem.id = session[:list_items].length
-        session[:list_items] << listItem
+        session[:list_items] ||= {id: 0}
+        listItem.id = session[:list_items][:id]
+        session[:list_items][listItem.id] = listItem
+        session[:list_items][:id] += 1
       end
     end
 
@@ -106,9 +111,7 @@ class ShoppingListController < ApplicationController
 
       # User not logged in
       else
-        listItem = session[:list_items][itemID.to_i]
-
-        sessions[:list_items].delete(listItem)
+        sessions[:list_items].delete(itemID.to_i)
       end
     end
 
