@@ -44,8 +44,6 @@ class ShoppingListController < ApplicationController
         render json: @listItem.errors
       end
     end
-
-
   end
 
   def remove
@@ -66,6 +64,7 @@ class ShoppingListController < ApplicationController
     end
   end
 
+  # TODO: Brug skaleringen (fra cookie (Sebastian?))
   def add_recipe
     recipe = Recipe.find_by_id(params[:id])
 
@@ -96,11 +95,6 @@ class ShoppingListController < ApplicationController
    
 
   def delete_list
-
-    #listItems = params[:ids].split(',')
-
-    #firebug("'#{listItems.join("','")}'")
-
     params[:ids].each do |itemID|
       if logged_in?
         listItem = ListItem.find_by_id(itemID)
