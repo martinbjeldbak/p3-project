@@ -24,10 +24,11 @@
 	end
 	
 	def has_favour?( id )
-		if current_user
+		if logged_in?
 			return id_match?( current_user.favorites, id )
+		else
+			return session[:favored].nil? ? false : session[:favored].include?( id.to_s )
 		end
-		return false
 	end
 	
 	def plural( number, singular, plural )
