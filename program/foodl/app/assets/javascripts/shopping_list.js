@@ -111,6 +111,9 @@ $(function() {
 
                 var $currentListCount = parseInt($currentList.text(), 10);
                 $currentList.text($currentListCount + 1);
+                if ($("#login-reminder").css('display') == 'none') {
+                  $("#login-reminder").fadeIn(300);
+                }
                 stopLoading();
             },
             error: function(xhr, error) {
