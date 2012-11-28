@@ -1,10 +1,10 @@
 module ApplicationHelper
 
-  def listCount
+  def list_count
     if logged_in?
       "#{current_user.list_items.count}"
     elsif session[:list_items]
-      "#{session[:list_items].count}"
+      "#{session[:list_items].count - 1}"
     else
       "0"
     end
