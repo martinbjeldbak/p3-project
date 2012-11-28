@@ -1,8 +1,10 @@
 \subsection{Bogmærke}
-Et bogmærke kommer til verdenen når et bogmærke tilføjes til en opskrift. Dette beskriver vi ved at hændelsen \textit{bogmærke tilføjet} indtræffer. Bogmærket er i samme tilstand \textit{Aktiv}, indtil den kommer i sluttilstanden efter at hændelsen \textit{bogmærke fjernet} er indtruffet. Brugsmønsteret kan ses i \figref{fig:bogmaerke-adfaerd}.
-\begin{figure}[htp]
-\centering
-\scalebox{0.6}{
-\input{billeder/tilstandsdiagrammer/bogmaerke.pdf_tex}}
-\capt{Tilstandsdiagram for Bogmærke-klassens adfærdsmønstre}\label{fig:bogmaerke-adfaerd}
+Som nævnt kan man vælge at tilføje et bogmærke til en opskrift, man kan lide. Denne hændelse kaldes \textit{bogmærke tilføjet}, og bringer klassen i tilstanden \textit{aktiv}. Bogmærket er aktiv, indtil den kommer i sluttilstanden efter, at hændelsen \textit{bogmærke fjernet} indtræffer. Se \figref{fig:bogmaerke-adfaerd}.
+
+\begin{figure}[H]
+	\centering
+	\scalebox{0.8}{
+	\input{billeder/tilstandsdiagrammer/bogmaerke.pdf_tex}}
+	\capt{Tilstandsdiagram for klassen bogmærke. De afrundede rektangulære bokse med tekst, skal anses som tilstande, som klassen kan have. De pile, der fører til en tilstand, skal anses som hændelser, som kan være skyld i et tilstandsskift. I dette tilfælde har klassen én tilstand (aktiv) og en afsluttende hændelse, der fører klassen ud i en sluttilstand (den sorte prik i den sorte cirkel).}
+	\label{fig:bogmaerke-adfaerd}
 \end{figure}

@@ -1,8 +1,14 @@
 \subsection{Opskrift}
-En opskrift kommer til verdenen når man i sin husstand får tilegnet sig en ny opskrift. Det kan \fx være ved at købe en kogebog. Ved at købe en kogebog, kommer mange forskellige opskrifts-objekter til verdenen. Dette gøres igennem tilstanden \textit{opskrift fundet}. Hvis man er blevet rigtig glad for en opskrift, kan man sætte et bogmærke på opskriften, så man hurtigt kan finde den igen. Dette kan \fx gøres ved at sætte en post-it note på en bestemt side i kogebogen. Sådan en hændelse kaldes for \textit{bogmærke tilføjet}. Hvis man ombestemmer sig og fjerner bogmærket, kaldes hændelsen \textit{bogmærke fjernet}. Ønsker man ikke længere at blive støde på en opskrift, måske fordi man ikke kan fordrage fisk, kan man vælge at rive siden ud af sin kogebog. Denne hændelse kaldes \textit{opskrift fjernet}, og bringer opskriften i sin sluttilstand.
-\begin{figure}[htp]
-\centering
-\scalebox{0.6}{
-\input{billeder/tilstandsdiagrammer/opskrift.pdf_tex}}
-\capt{Tilstandsdiagram for Opskrift-klassens adfærdsmønstre}\label{fig:opskrift-adfaerd}
+En opskrift kan befinde sig i en kogebog eller blot et stykke papir, som man en gang har skrevet ned, fordi man synes om opskriften. Det er ikke relevant, hvor denne opskrift befinder sig, men at man har den i husstanden. Det er ikke sikkert, at man ønsker at bevare alle opskrifter, man har på nuværende tidspunkt. Derfor er det muligt at fjerne opskrifter, man ikke ønsker at gemme. Denne afsluttende hændelse kaldes for \textit{opskrift fjernet}. Denne hændelse fører opskrift-klassen i sin sluttilstand. Se \figref{fig:opskrift-adfaerd}.
+
+\todo{skal vi ikke have en starttilstand?} Dette gøres igennem tilstanden \textit{opskrift fundet}.
+
+Hvis man er rigtig glad for en opskrift, kan man sætte et bogmærke på opskriften, så man hurtigt kan finde den igen. Dette kan \fx gøres ved at sætte en post-it note på en bestemt side i kogebogen. Sådan en hændelse kaldes for \textit{bogmærke tilføjet}. Hvis man ombestemmer sig og fjerner bogmærket, kaldes hændelsen \textit{bogmærke fjernet}. Derudover kan man være nødsaget til at handle ind til en specifik opskrift, fordi man mangler nogle ingredienser. Det betyder, at man skal tilføje nogle opskrifter til en indkøbsliste. Denne hændelse kaldes for \textit{tilføj til indkøbsliste}. Disse tre hændelser medfører ikke et tilstandsskift. Opskriften ryger kun ud af tilstanden \textit{findes i opskriftssamlingen}, når opskriften fjernes.
+
+\begin{figure}[H]
+	\centering
+	\scalebox{0.8}{
+	\input{billeder/tilstandsdiagrammer/opskrift.pdf_tex}}
+	\capt{Tilstandsdiagram for klassen opskrift. De afrundede rektangulære bokse med tekst, skal anses som tilstande, som klassen kan have. De pile, der fører til en tilstand, skal anses som hændelser, som kan være skyld i et tilstandsskift. I dette tilfælde har klassen én tilstand (findes i opskriftssamlingen) og en afsluttende hændelse, der fører klassen ud i en sluttilstand (den sorte prik i den sorte cirkel).}
+	\label{fig:opskrift-adfaerd}
 \end{figure}	
