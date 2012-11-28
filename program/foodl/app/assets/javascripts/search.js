@@ -227,7 +227,7 @@ $(function() {
       return false;
   });
   
-  $('.add-ingredient-to-list').on("click", function() {
+  $('.add-ingredient-to-list').live("click", function() {
       $(this).hide();
 	  startLoading();
 	
