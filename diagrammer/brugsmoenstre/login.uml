@@ -66,7 +66,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Nov 27 14:24:58 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Nov 28 18:02:28 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -135,8 +135,8 @@
                       </UML:StateVertex.outgoing>
                       <UML:StateVertex.incoming>
                         <UML:Transition xmi.idref = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A88'/>
-                        <UML:Transition xmi.idref = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A96'/>
                         <UML:Transition xmi.idref = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8D'/>
+                        <UML:Transition xmi.idref = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A96'/>
                       </UML:StateVertex.incoming>
                     </UML:SimpleState>
                     <UML:SimpleState xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A91'
@@ -356,7 +356,7 @@
         <UML:SignalEvent xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA3'
           name = 'Log ud' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA6'
-          name = 'Afbryd login- eller brugeroprettelsesproces' isSpecification = 'false'/>
+          name = 'Afbryd proces' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA8'
           name = '_' isSpecification = 'false'/>
         <UML:CallEvent xmi.id = '-84-25-18-58-1e860ffa:13a87d41b74:-8000:0000000000000BA5'
@@ -399,7 +399,7 @@
       name="untitledModel 0 3"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[24, 200, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[16, 112, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A86"
        fill="1"
        fillcolor="black"
@@ -410,8 +410,8 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="32"
-      y="208"
+      x="24"
+      y="120"
       rx="8"
       ry="8"
       fill="0"
@@ -420,8 +420,8 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="32"
-      y="208"
+      x="24"
+      y="120"
       rx="8"
       ry="8"
       fill="1"
@@ -431,7 +431,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[552, 240, 128, 64]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[248, 344, 128, 32]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8F"
        fill="1"
        fillcolor="white"
@@ -442,10 +442,10 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="552"
-      y="240"
+      x="248"
+      y="344"
       width="128"
-      height="64"
+      height="32"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -453,10 +453,10 @@
       rounding="16"
     />
     <rectangle name="Fig1.1"
-      x="552"
-      y="240"
+      x="248"
+      y="344"
       width="128"
-      height="64"
+      height="32"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -464,10 +464,10 @@
       rounding="16"
     />
     <text name="Fig1.2"
-      x="554"
-      y="240"
+      x="250"
+      y="344"
       width="124"
-      height="23"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -481,7 +481,7 @@
     >Login aktiv</text>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[808, 240, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[456, 352, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA1"
        fill="1"
        fillcolor="white"
@@ -492,8 +492,8 @@
     </private>
     
     <ellipse name="Fig2.0"
-      x="820"
-      y="252"
+      x="468"
+      y="364"
       rx="12"
       ry="12"
       fill="0"
@@ -502,8 +502,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig2.1"
-      x="820"
-      y="252"
+      x="468"
+      y="364"
       rx="12"
       ry="12"
       fill="1"
@@ -512,8 +512,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig2.2"
-      x="819"
-      y="251"
+      x="467"
+      y="363"
       rx="7"
       ry="7"
       fill="1"
@@ -547,14 +547,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="679"
-              y="252" />
-      <lineto x="808"
-              y="252" />
+      <moveto x="375"
+              y="363" />
+      <lineto x="456"
+              y="363" />
     </path>
   </group>
   <group name="Fig4"
-       description="org.argouml.uml.diagram.state.ui.FigCompositeState[88, 136, 424, 288]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigCompositeState[80, 48, 384, 248]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA4"
        fill="1"
        fillcolor="white"
@@ -565,10 +565,10 @@
     </private>
     
     <rectangle name="Fig4.0"
-      x="88"
-      y="136"
-      width="424"
-      height="288"
+      x="80"
+      y="48"
+      width="384"
+      height="248"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -576,10 +576,10 @@
       rounding="16"
     />
     <rectangle name="Fig4.1"
-      x="88"
-      y="136"
-      width="424"
-      height="288"
+      x="80"
+      y="48"
+      width="384"
+      height="248"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -587,10 +587,10 @@
       rounding="16"
     />
     <text name="Fig4.2"
-      x="90"
-      y="136"
-      width="420"
-      height="23"
+      x="82"
+      y="48"
+      width="380"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -609,16 +609,16 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="88"
-              y="159" />
-      <lineto x="511"
-              y="159" />
+      <moveto x="80"
+              y="72" />
+      <lineto x="463"
+              y="72" />
     </path>
     <text name="Fig4.4"
-      x="90"
-      y="159"
-      width="420"
-      height="259"
+      x="82"
+      y="72"
+      width="380"
+      height="218"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -632,7 +632,7 @@
     ></text>
   </group>
   <group name="Fig5"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[304, 264, 145, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[296, 144, 145, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A91"
        fill="1"
        fillcolor="white"
@@ -644,8 +644,8 @@
     </private>
     
     <rectangle name="Fig5.0"
-      x="304"
-      y="264"
+      x="296"
+      y="144"
       width="145"
       height="24"
       fill="1"
@@ -655,8 +655,8 @@
       rounding="16"
     />
     <rectangle name="Fig5.1"
-      x="304"
-      y="264"
+      x="296"
+      y="144"
       width="145"
       height="24"
       fill="1"
@@ -666,10 +666,10 @@
       rounding="16"
     />
     <text name="Fig5.2"
-      x="306"
-      y="264"
+      x="298"
+      y="144"
       width="141"
-      height="23"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -697,8 +697,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A98"
-                        angle="342.0"
-                        offset="33" />
+                        angle="142.0"
+                        offset="79" />
     </private>
     <path name="Fig6.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -707,18 +707,16 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="448"
-              y="264" />
-      <lineto x="448"
-              y="216" />
-      <lineto x="568"
-              y="216" />
-      <lineto x="568"
-              y="240" />
+      <moveto x="400"
+              y="167" />
+      <lineto x="400"
+              y="352" />
+      <lineto x="375"
+              y="352" />
     </path>
   </group>
   <group name="Fig7"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[168, 168, 288, 23]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[96, 80, 288, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A87"
        fill="1"
        fillcolor="white"
@@ -730,10 +728,10 @@
     </private>
     
     <rectangle name="Fig7.0"
-      x="168"
-      y="168"
+      x="96"
+      y="80"
       width="288"
-      height="23"
+      height="24"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -741,10 +739,10 @@
       rounding="16"
     />
     <rectangle name="Fig7.1"
-      x="168"
-      y="168"
+      x="96"
+      y="80"
       width="288"
-      height="23"
+      height="24"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -752,10 +750,10 @@
       rounding="16"
     />
     <text name="Fig7.2"
-      x="170"
-      y="168"
+      x="98"
+      y="80"
       width="284"
-      height="23"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -783,8 +781,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A96"
-                        angle="-85.0"
-                        offset="26" />
+                        angle="-267.0"
+                        offset="39" />
     </private>
     <path name="Fig8.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -793,10 +791,10 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="432"
-              y="264" />
-      <lineto x="432"
-              y="190" />
+      <moveto x="360"
+              y="144" />
+      <lineto x="360"
+              y="103" />
     </path>
   </group>
   <group name="Fig9"
@@ -814,8 +812,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A92"
-                        angle="94.0"
-                        offset="50" />
+                        angle="91.0"
+                        offset="44" />
     </private>
     <path name="Fig9.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -824,10 +822,10 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="344"
-              y="190" />
-      <lineto x="344"
-              y="264" />
+      <moveto x="336"
+              y="103" />
+      <lineto x="336"
+              y="144" />
     </path>
   </group>
   <group name="Fig10"
@@ -845,8 +843,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A88"
-                        angle="45.0"
-                        offset="22" />
+                        angle="329.99999999999994"
+                        offset="30" />
     </private>
     <path name="Fig10.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -855,16 +853,18 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="30"
-              y="199" />
-      <lineto x="31"
-              y="180" />
-      <lineto x="168"
-              y="180" />
+      <moveto x="24"
+              y="111" />
+      <lineto x="24"
+              y="40" />
+      <lineto x="192"
+              y="40" />
+      <lineto x="192"
+              y="80" />
     </path>
   </group>
   <group name="Fig11"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[160, 344, 116, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[96, 200, 116, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A89"
        fill="1"
        fillcolor="white"
@@ -876,8 +876,8 @@
     </private>
     
     <rectangle name="Fig11.0"
-      x="160"
-      y="344"
+      x="96"
+      y="200"
       width="116"
       height="24"
       fill="1"
@@ -887,8 +887,8 @@
       rounding="16"
     />
     <rectangle name="Fig11.1"
-      x="160"
-      y="344"
+      x="96"
+      y="200"
       width="116"
       height="24"
       fill="1"
@@ -898,10 +898,10 @@
       rounding="16"
     />
     <text name="Fig11.2"
-      x="162"
-      y="344"
+      x="98"
+      y="200"
       width="112"
-      height="23"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -929,8 +929,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A90"
-                        angle="169.0"
-                        offset="72" />
+                        angle="264.0"
+                        offset="11" />
     </private>
     <path name="Fig12.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -939,14 +939,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="275"
-              y="360" />
-      <lineto x="472"
-              y="360" />
-      <lineto x="472"
-              y="288" />
-      <lineto x="552"
-              y="288" />
+      <moveto x="200"
+              y="223" />
+      <lineto x="200"
+              y="256" />
+      <lineto x="272"
+              y="256" />
+      <lineto x="272"
+              y="344" />
     </path>
   </group>
   <group name="Fig13"
@@ -964,8 +964,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000A8D"
-                        angle="-233.0"
-                        offset="67" />
+                        angle="-237.00000000000003"
+                        offset="57" />
     </private>
     <path name="Fig13.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -974,10 +974,10 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="240"
-              y="344" />
-      <lineto x="240"
-              y="190" />
+      <moveto x="203"
+              y="200" />
+      <lineto x="203"
+              y="103" />
     </path>
   </group>
   <group name="Fig14"
@@ -995,8 +995,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA5"
-                        angle="158.0"
-                        offset="46" />
+                        angle="79.0"
+                        offset="31" />
     </private>
     <path name="Fig14.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -1005,12 +1005,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="511"
-              y="376" />
-      <lineto x="824"
-              y="376" />
-      <lineto x="820"
-              y="263" />
+      <moveto x="463"
+              y="280" />
+      <lineto x="496"
+              y="280" />
+      <lineto x="496"
+              y="368" />
+      <lineto x="479"
+              y="365" />
     </path>
   </group>
   <group name="Fig15"
@@ -1028,8 +1030,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21-90--68d7c39c:13a73f5e0f8:-8000:0000000000000AA7"
-                        angle="273.0"
-                        offset="15" />
+                        angle="295.0"
+                        offset="111" />
     </private>
     <path name="Fig15.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -1038,14 +1040,12 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="31"
-              y="200" />
-      <lineto x="31"
+      <moveto x="24"
               y="128" />
-      <lineto x="583"
-              y="128" />
-      <lineto x="583"
-              y="240" />
+      <lineto x="24"
+              y="360" />
+      <lineto x="248"
+              y="360" />
     </path>
   </group>
   <group name="Fig16"
@@ -1063,8 +1063,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-18-58-1e860ffa:13a87d41b74:-8000:0000000000000BA4"
-                        angle="90.0"
-                        offset="18" />
+                        angle="170.0"
+                        offset="57" />
     </private>
     <path name="Fig16.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -1073,14 +1073,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="575"
-              y="303" />
-      <lineto x="575"
-              y="336" />
-      <lineto x="607"
-              y="336" />
-      <lineto x="607"
-              y="303" />
+      <moveto x="264"
+              y="375" />
+      <lineto x="264"
+              y="400" />
+      <lineto x="296"
+              y="400" />
+      <lineto x="296"
+              y="375" />
     </path>
   </group>
   <group name="Fig17"
@@ -1098,8 +1098,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-19-86--6dd844e1:13a9294ca8b:-8000:0000000000000B99"
-                        angle="329.99999999999994"
-                        offset="30" />
+                        angle="309.0"
+                        offset="20" />
     </private>
     <path name="Fig17.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -1108,14 +1108,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="608"
-              y="240" />
-      <lineto x="608"
-              y="208" />
-      <lineto x="640"
-              y="208" />
-      <lineto x="640"
-              y="240" />
+      <moveto x="304"
+              y="344" />
+      <lineto x="304"
+              y="328" />
+      <lineto x="336"
+              y="328" />
+      <lineto x="336"
+              y="344" />
     </path>
   </group>
   <group name="Fig18"
@@ -1133,20 +1133,20 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-20-15--4dddacab:13b41eaea36:-8000:00000000000015CD"
-                        angle="95.0"
-                        offset="53" />
+                        angle="264.0"
+                        offset="43" />
     </private>
     <path name="Fig18.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="200"
-              y="190" />
-      <lineto x="200"
-              y="344" />
+      <moveto x="104"
+              y="103" />
+      <lineto x="104"
+              y="200" />
     </path>
   </group>
   <group name="Fig19"
@@ -1164,24 +1164,24 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-20-15--4dddacab:13b41eaea36:-8000:00000000000015CF"
-                        angle="344.0"
-                        offset="59" />
+                        angle="47.0"
+                        offset="16" />
     </private>
     <path name="Fig19.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="632"
-              y="303" />
-      <lineto x="632"
-              y="336" />
-      <lineto x="672"
-              y="336" />
-      <lineto x="672"
-              y="303" />
+      <moveto x="328"
+              y="375" />
+      <lineto x="328"
+              y="392" />
+      <lineto x="360"
+              y="392" />
+      <lineto x="360"
+              y="375" />
     </path>
   </group>
 </pgml>
