@@ -111,7 +111,7 @@ class ShoppingListController < ApplicationController
 
       # User not logged in
       else
-        sessions[:list_items].delete(itemID.to_i)
+        session[:list_items].delete(itemID.to_i)
       end
     end
 
