@@ -31,6 +31,7 @@ class UsersController < ApplicationController
       if (user)
         rand_pass = Array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
         user.password = rand_pass
+        user.password_confirmation = rand_pass
         UserMailer.create_and_deliver_password_change(user, rand_pass).deliver
         user.save!
         flash[:success] = "Et nyt kodeord er blevet sendt til din email"
