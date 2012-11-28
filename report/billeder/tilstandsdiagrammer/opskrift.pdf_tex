@@ -48,11 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.35084034)%
+  \begin{picture}(1,0.35504202)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/opskrift.pdf}}%
     \put(0.17436975,0.19327731){\makebox(0,0)[lb]{\smash{Findes i opskriftssamlingen}}}%
-    \put(0.18067227,0.29411765){\makebox(0,0)[lb]{\smash{Bogmærke tilføjet(opskrift)}}}%
-    \put(0.17857143,0.03781513){\makebox(0,0)[lb]{\smash{Bogmærke fjernet(opskrift)}}}%
+    \put(0.05462185,0.29411765){\makebox(0,0)[lb]{\smash{Bogmærke tilføjet(opskrift)}}}%
+    \put(0.05252101,0.03781513){\makebox(0,0)[lb]{\smash{Bogmærke fjernet(opskrift)}}}%
     \put(0.59453782,0.19537815){\makebox(0,0)[lb]{\smash{Opskrift fjernet(opskrift)}}}%
+    \put(0.40546218,0.29831933){\makebox(0,0)[lb]{\smash{Tilføj til indkøbsliste(opskrift)}}}%
   \end{picture}%
 \endgroup%

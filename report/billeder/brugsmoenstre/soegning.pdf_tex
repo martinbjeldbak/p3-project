@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{712.8bp}%
+    \setlength{\unitlength}{393.6bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,27 +48,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.37261504)%
+  \begin{picture}(1,0.72764228)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/soegning.pdf}}%
-    \put(0.52974186,0.34231201){\makebox(0,0)[lb]{\smash{Befinder sig på Foodl}}}%
-    \put(0.26150393,0.28843996){\makebox(0,0)[lb]{\smash{Søgning klar}}}%
-    \put(0.10549944,0.29517396){\makebox(0,0)[lb]{\smash{Ankom til Foodl}}}%
-    \put(0.15600449,0.17059484){\makebox(0,0)[lb]{\smash{Luk side}}}%
-    \put(0.58249158,0.21661055){\makebox(0,0)[lb]{\smash{Aktiv}}}%
-    \put(0.38159371,0.29741863){\makebox(0,0)[lb]{\smash{Tilbage}}}%
-    \put(0.30415264,0.12682379){\makebox(0,0)[lb]{\smash{Råvarer på liste}}}%
-    \put(0.33894501,0.17620651){\makebox(0,0)[lb]{\smash{Råvare tilføjet}}}%
-    \put(0.62177329,0.12682379){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
-    \put(0.41750842,0.26487093){\makebox(0,0)[lb]{\smash{Råvare tilføjet}}}%
-    \put(0.5308642,0.2637486){\makebox(0,0)[lb]{\smash{Råvare fjernet}}}%
-    \put(0.43995511,0.1301908){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
-    \put(0.47811448,0.04826038){\makebox(0,0)[lb]{\smash{Begrænsning tilføjet}}}%
-    \put(0.63075196,0.04713805){\makebox(0,0)[lb]{\smash{Begrænsning fjernet}}}%
-    \put(0.77665544,0.04938272){\makebox(0,0)[lb]{\smash{Sorteret}}}%
-    \put(0.51739618,0.16722783){\makebox(0,0)[lb]{\smash{Råvare gemt}}}%
-    \put(0.61840629,0.1661055){\makebox(0,0)[lb]{\smash{Begrænsning gemt}}}%
-    \put(0.75308642,0.16722783){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
-    \put(0.01683502,0.0976431){\makebox(0,0)[lb]{\smash{Ankom til Foodl [Råvare(r) gemt på liste]}}}%
-    \put(0.81481481,0.1010101){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
+    \put(0.6402439,0.61382114){\makebox(0,0)[lb]{\smash{Luk side}}}%
+    \put(0.47154472,0.55894309){\makebox(0,0)[lb]{\smash{Aktiv}}}%
+    \put(0.09756098,0.36382114){\makebox(0,0)[lb]{\smash{Råvarer på liste}}}%
+    \put(0.60772358,0.39634146){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
+    \put(0.32723577,0.3699187){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
+    \put(0.86788618,0.26422764){\makebox(0,0)[lb]{\smash{Sorteret}}}%
+    \put(0.56707317,0.20325203){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
+    \put(0.16260163,0.6097561){\makebox(0,0)[lb]{\smash{Tilføj råvare(r)}}}%
+    \put(0.42073171,0.27235772){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
+    \put(0.74593496,0.50609756){\makebox(0,0)[lb]{\smash{Sortering gemt}}}%
+    \put(0.1300813,0.04065041){\makebox(0,0)[lb]{\smash{Råvare tilføjet}}}%
+    \put(0.36178862,0.03658537){\makebox(0,0)[lb]{\smash{Råvare fjernet}}}%
   \end{picture}%
 \endgroup%

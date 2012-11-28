@@ -8,13 +8,8 @@ require "mysql"
 
 @@foods = [] #contains elements from database table food_types [name, id]
 
-@@db = Mysql.init
-@@db.options(Mysql::SET_CHARSET_NAME, 'utf8')
-@@db.real_connect('198.175.125.69', 'foodl', 'foodl4321', 'foodl')
-@@db.query("SET NAMES utf8")
-
 def self.LoadFoodTypesFromDB
-	res = @@db.query("select `name`, `id` from `foodl`.`food_types`")
+	res = DB.Get.query("select `name`, `id` from `foodl`.`food_types`")
 	res.each do |row|
 		@@foods << [row[0].force_encoding("UTF-8"), row[1]]
 	end
