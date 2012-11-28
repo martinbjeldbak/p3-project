@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{596.8bp}%
+    \setlength{\unitlength}{668.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,23 +48,24 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.34182306)%
+  \begin{picture}(1,0.4138756)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/indlogning.pdf}}%
-    \put(0.75469169,0.12600536){\makebox(0,0)[lb]{\smash{Login aktiv}}}%
-    \put(0.88069705,0.09651475){\makebox(0,0)[lb]{\smash{Log ud}}}%
-    \put(0.46380697,0.15817694){\makebox(0,0)[lb]{\smash{Godkendelse af login}}}%
-    \put(0.65013405,0.17962466){\makebox(0,0)[lb]{\smash{Login godkendt}}}%
-    \put(0.2386059,0.22252011){\makebox(0,0)[lb]{\smash{Vent på loginoplysninger}}}%
-    \put(0.3230563,0.17962466){\makebox(0,0)[lb]{\smash{Login afvist}}}%
-    \put(0.49463807,0.23190349){\makebox(0,0)[lb]{\smash{Indtastning af oplsyninger færdig}}}%
-    \put(0.06434316,0.23592493){\makebox(0,0)[lb]{\smash{Tryk på "login"}}}%
-    \put(0.24932976,0.12600536){\makebox(0,0)[lb]{\smash{Brugeroprettelse}}}%
-    \put(0.48391421,0.10187668){\makebox(0,0)[lb]{\smash{Oplysninger godkendt}}}%
-    \put(0.27211796,0.06568365){\makebox(0,0)[lb]{\smash{Fejl i oplysninger}}}%
-    \put(0.02010724,0.15683646){\makebox(0,0)[lb]{\smash{Tryk på "opret bruger"}}}%
-    \put(0.76809651,0.02412869){\makebox(0,0)[lb]{\smash{Afbryd loginproces}}}%
-    \put(0.28686327,0.30563003){\makebox(0,0)[lb]{\smash{[Bruger logget ind fra tidligere session]}}}%
-    \put(0.71045576,0.06032172){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
-    \put(0.81367292,0.17828418){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
+    \put(0.68301435,0.22129187){\makebox(0,0)[lb]{\smash{Login aktiv}}}%
+    \put(0.8576555,0.20454545){\makebox(0,0)[lb]{\smash{Log ud}}}%
+    \put(0.35885167,0.19258373){\makebox(0,0)[lb]{\smash{Godkendelse af login}}}%
+    \put(0.56578947,0.2715311){\makebox(0,0)[lb]{\smash{Login godkendt}}}%
+    \put(0.19617225,0.30741627){\makebox(0,0)[lb]{\smash{Vent på loginoplysninger / brugeroprettelse}}}%
+    \put(0.42464115,0.25){\makebox(0,0)[lb]{\smash{Login afvist}}}%
+    \put(0.29066986,0.25){\makebox(0,0)[lb]{\smash{Tryk på "login"}}}%
+    \put(0.03708134,0.284689){\makebox(0,0)[lb]{\smash{Tryk på "login / opret"}}}%
+    \put(0.18660287,0.09688995){\makebox(0,0)[lb]{\smash{Brugeroprettelse}}}%
+    \put(0.36602871,0.07177033){\makebox(0,0)[lb]{\smash{Oplysninger godkendt}}}%
+    \put(0.28110048,0.1507177){\makebox(0,0)[lb]{\smash{Fejl i oplysninger}}}%
+    \put(0.65311005,0.04784689){\makebox(0,0)[lb]{\smash{Afbryd login- eller brugeroprettelsesproces}}}%
+    \put(0.23923445,0.38157895){\makebox(0,0)[lb]{\smash{Bruger logget ind fra tidligere session}}}%
+    \put(0.61244019,0.09449761){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
+    \put(0.71889952,0.28708134){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
+    \put(0.11244019,0.20334928){\makebox(0,0)[lb]{\smash{Tryk på "opret"}}}%
+    \put(0.80382775,0.13516746){\makebox(0,0)[lb]{\smash{Søgning()}}}%
   \end{picture}%
 \endgroup%
