@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="137" version="1.1" width="596" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="39" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="46" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="222" y="15"/>
-<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="222" y="15"/>
-<rect fill="#ffffff" height="44" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="223" y="16"/>
-<text font-family="Lucida Grande" font-size="13" x="259" y="29">
-Eksisterer</text>
-<polyline fill="none" points="31,39 222,39" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="210" x2="222" y1="46" y2="39"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="210" x2="222" y1="32" y2="39"/>
-<text font-family="Lucida Grande" font-size="13" x="51" y="31">
-Opskrift fundet(opskrift)</text>
-<ellipse cx="570" cy="35" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="570" cy="35" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
-<ellipse cx="569" cy="34" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="357,35 558,35" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="546" x2="558" y1="42" y2="35"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="546" x2="558" y1="28" y2="35"/>
-<text font-family="Lucida Grande" font-size="13" x="374" y="28">
-Opskrift smidt ud(opskrift)</text>
-<polyline fill="none" points="238,60 238,95 278,95 278,60" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="285" x2="278" y1="72" y2="60"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="271" x2="278" y1="72" y2="60"/>
-<text font-family="Lucida Grande" font-size="13" x="94" y="115">
-Ingrediens tilføjet(ingrediens)</text>
-<polyline fill="none" points="350,60 350,95 310,95 310,60" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="317" x2="310" y1="72" y2="60"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="303" x2="310" y1="72" y2="60"/>
-<text font-family="Lucida Grande" font-size="13" x="307" y="119">
-Ingrediens fjernet(ingrediens)</text>
+<svg height="63" version="1.1" width="484" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="33" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="70" x="198" y="17"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="70" x="198" y="17"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="68" x="199" y="18"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="216" y="30">
+Aktiv</text>
+<polyline fill="none" points="31,33 198,33" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="186" x2="198" y1="40" y2="33"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="186" x2="198" y1="26" y2="33"/>
+<text font-family="Dialog" font-size="12" x="37" y="27">
+Bogmærke tilføjet(opskrift)</text>
+<ellipse cx="458" cy="37" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="458" cy="37" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="457" cy="36" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="267,36 446,36" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="434" x2="446" y1="43" y2="36"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="434" x2="446" y1="29" y2="36"/>
+<text font-family="Dialog" font-size="12" x="275" y="30">
+Bogmærke fjernet(opskrift)</text>
 </svg>
