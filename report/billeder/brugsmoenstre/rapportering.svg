@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="292" version="1.1" width="508" xmlns="http://www.w3.org/2000/svg">
+<svg height="292" version="1.1" width="510" xmlns="http://www.w3.org/2000/svg">
 <rect fill="#00ff" height="216" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="448" x="46" y="14"/>
 <rect fill="#ffffff" height="216" rx="16" ry="16" stroke="#000000" stroke-width="1" width="448" x="46" y="14"/>
 <rect fill="#ffffff" height="214" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="446" x="47" y="15"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="46" x2="493" y1="40" y2="40"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="46" x2="493" y1="38" y2="38"/>
 <ellipse cx="22" cy="70" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
 <rect fill="#00ff" height="26" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="120" x="198" y="86"/>
 <rect fill="#ffffff" height="26" rx="16" ry="16" stroke="#000000" stroke-width="1" width="120" x="198" y="86"/>
 <rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="118" x="199" y="87"/>
-<text font-family="Dialog" font-size="13" x="210" y="101">
+<text font-family="Lucida Grande" font-size="13" x="205" y="100">
 Dialogboks åben</text>
 <polyline fill="none" points="31,70 246,70 246,86" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="239" x2="246" y1="74" y2="86"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="253" x2="246" y1="74" y2="86"/>
-<text font-family="Dialog" font-size="13" x="64" y="57">
+<text font-family="Lucida Grande" font-size="13" x="54" y="57">
 Rapportér fejl ved opskrift</text>
 <rect fill="#00ff" height="50" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="154" x="190" y="158"/>
 <rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#000000" stroke-width="1" width="154" x="190" y="158"/>
 <rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="152" x="191" y="159"/>
-<text font-family="Dialog" font-size="13" x="200" y="173">
+<text font-family="Lucida Grande" font-size="13" x="196" y="172">
 Beskrivelsesboks åben</text>
 <polyline fill="none" points="246,111 246,158" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="239" x2="246" y1="146" y2="158"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="253" x2="246" y1="146" y2="158"/>
-<text font-family="Dialog" font-size="13" x="92" y="132">
+<text font-family="Lucida Grande" font-size="13" x="81" y="132">
 Vælg fejltype [beskrivelig]</text>
 <rect fill="#00ff" height="50" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="90" x="382" y="94"/>
 <rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#000000" stroke-width="1" width="90" x="382" y="94"/>
 <rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="88" x="383" y="95"/>
-<text font-family="Dialog" font-size="13" x="392" y="109">
+<text font-family="Lucida Grande" font-size="13" x="388" y="108">
 Rapport klar</text>
 <polyline fill="none" points="343,190 414,190 414,143" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="421" x2="414" y1="155" y2="143"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="407" x2="414" y1="155" y2="143"/>
-<text font-family="Dialog" font-size="13" x="369" y="183">
+<text font-family="Lucida Grande" font-size="13" x="367" y="182">
 Beskriv</text>
 <ellipse cx="434" cy="266" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="434" cy="266" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
@@ -42,21 +42,21 @@ Beskriv</text>
 <polyline fill="none" points="433,143 433,254" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="426" x2="433" y1="242" y2="254"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="440" x2="433" y1="242" y2="254"/>
-<text font-family="Dialog" font-size="13" x="436" y="198">
+<text font-family="Lucida Grande" font-size="13" x="436" y="197">
 Godkend</text>
 <polyline fill="none" points="317,102 382,102" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="370" x2="382" y1="109" y2="102"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="370" x2="382" y1="95" y2="102"/>
-<text font-family="Dialog" font-size="13" x="332" y="83">
+<text font-family="Lucida Grande" font-size="13" x="324" y="83">
 Vælg fejltype [ubeskrivelig]</text>
 <polyline fill="none" points="22,78 22,174 190,174" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="178" x2="190" y1="181" y2="174"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="178" x2="190" y1="167" y2="174"/>
-<text font-family="Dialog" font-size="13" x="55" y="197">
+<text font-family="Lucida Grande" font-size="13" x="49" y="197">
 Rapportér generel fejl</text>
 <polyline fill="none" points="382,229 382,262 422,265" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="409" x2="422" y1="271" y2="265"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="410" x2="422" y1="257" y2="265"/>
-<text font-family="Dialog" font-size="13" x="326" y="256">
+<text font-family="Lucida Grande" font-size="13" x="323" y="256">
 Annullér</text>
 </svg>
