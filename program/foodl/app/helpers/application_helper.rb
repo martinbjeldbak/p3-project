@@ -34,4 +34,8 @@ module ApplicationHelper
   def show_ad?
     return !@hide_ad
   end
+
+  def elias_mode?
+    return @elias_mode
+  end
 end

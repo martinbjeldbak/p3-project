@@ -14,8 +14,11 @@
   
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">
-    <img src="<%= image_path "foodl-kontakt/Elias.jpg" #url_for controller: :recipes, action: :picture, id: recipe.id
-%>" alt="Færdiglavet ret">
+    <% if elias_mode? %>
+      <img src="<%= image_path "foodl-kontakt/Elias.jpg" %>" alt="Billede af færdiglavet ret" />
+  <% elsif %>
+    <img src="<%=url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Billede af elias" />
+  <% end %>
 
   </a>
   <div class="rating">
