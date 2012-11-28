@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{279.2bp}%
+    \setlength{\unitlength}{265.6bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.46418338)%
+  \begin{picture}(1,0.48493976)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/indkoebsliste.pdf}}%
-    \put(0.34670487,0.26361032){\makebox(0,0)[lb]{\smash{Redigeres}}}%
-    \put(0.08882521,0.05444126){\makebox(0,0)[lb]{\smash{Tekst tilføjet(tekst)}}}%
-    \put(0.08595989,0.38681948){\makebox(0,0)[lb]{\smash{Tekst fjernet(tekst)}}}%
-    \put(0.46991404,0.38681948){\makebox(0,0)[lb]{\smash{Ingrediens fjernet(ingrediens)}}}%
-    \put(0.47277937,0.05157593){\makebox(0,0)[lb]{\smash{Ingrediens tilføjet(ingrediens)}}}%
+    \put(0.4126506,0.27409639){\makebox(0,0)[lb]{\smash{Redigeres}}}%
+    \put(0.15060241,0.05421687){\makebox(0,0)[lb]{\smash{Vare tilføjet(tekst)}}}%
+    \put(0.14759036,0.40361446){\makebox(0,0)[lb]{\smash{Vare fjernet(tekst)}}}%
   \end{picture}%
 \endgroup%

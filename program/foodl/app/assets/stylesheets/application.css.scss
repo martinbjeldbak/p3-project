@@ -399,6 +399,26 @@ p {
   display:none;
 }
 
+#login-reminder {
+  position:fixed;
+  top:48px;
+  right:16px;
+  background-color:#000;
+  opacity:0.8;
+  text-align:center;
+  width:128px;
+  box-shadow:0 0 16px #000;
+  border-radius:5px;
+  padding:8px;
+  font-size:14px;
+  color:#fff;
+  display:none;
+}
+
+#login-reminder img {
+  opacity:0.8;
+}
+
 #lower-about {
   display:inline-block;
 }
