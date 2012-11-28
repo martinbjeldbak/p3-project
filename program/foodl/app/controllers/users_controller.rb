@@ -24,6 +24,26 @@ class UsersController < ApplicationController
   def login
   end
 
+  def reset_password
+    @user = User.new
+    if (params[:user])
+      user = User.find_by_email(params[:user][:email])
+      if (user)
+        rand_pass = Array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
+        user.password = rand_pass
+        UserMailer.create_and_deliver_password_change(user, rand_pass)
+        flash[:success] = "Et nyt kodeord er blevet sendt til din email"
+      else
+        flash[:error] = "En bruger med den email kunne ikke findes"
+      end
+    end
+  #  @user = User.find_by_email(params[:email])
+  #  random_password = array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
+  #  @user.password = random_password
+  #  @user.save!
+  #  Mailer.create_and_deliver_password_change(@user, random_password)
+  end
+
   def create
     @user_created = User.new(params[:user])
     if @user_created.save
