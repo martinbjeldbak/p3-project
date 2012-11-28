@@ -63,6 +63,7 @@ Foodl::Application.routes.draw do
 
   match '/login', to: 'users#new'
   match '/logout', to: 'sessions#destroy', via: :delete
+  match '/reset', to: 'users#reset_password'
 
   match '/list', to: 'shopping_list#index'
   match '/list/add', to: 'shopping_list#create'
