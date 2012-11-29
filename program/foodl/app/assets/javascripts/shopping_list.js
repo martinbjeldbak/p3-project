@@ -46,10 +46,15 @@ $(function() {
         var dataIDs = [];
         var $list = $('ul');
 
-        $list.slideUp();
+       // $list.slideUp();
 
         $('ul li').each(function() {
-            dataIDs.push($(this).data('id'));
+          $(this).next().fadeOut(300);
+          $(this).slideUp(300, function() {
+            $(this).next().remove();
+            $(this).remove();
+          });
+          dataIDs.push($(this).data('id'));
         });
 
         startLoading();
@@ -101,7 +106,7 @@ $(function() {
             success: function(responseItem) {
                 var listItem = $('<li />');
                 listItem.data("id", responseItem.id);
-                listItem.html(name);
+                listItem.html("<div>" + name + "</div>");
                 listItem.append($('<a href="#"></a>').listRemoveButton());
 
                 $('#list ul').append(listItem);
