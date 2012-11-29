@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Nov 12 13:48:06 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Nov 28 18:00:06 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -94,15 +94,11 @@
                 <UML:SimpleState xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'
                   name = 'Redigeres' isSpecification = 'false'>
                   <UML:StateVertex.outgoing>
-                    <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA6'/>
-                    <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA7'/>
                     <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAC'/>
                     <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAD'/>
                     <UML:Transition xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EEA'/>
                   </UML:StateVertex.outgoing>
                   <UML:StateVertex.incoming>
-                    <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA6'/>
-                    <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA7'/>
                     <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAC'/>
                     <UML:Transition xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAD'/>
                     <UML:Transition xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EE9'/>
@@ -112,30 +108,6 @@
             </UML:CompositeState>
           </UML:StateMachine.top>
           <UML:StateMachine.transitions>
-            <UML:Transition xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA6'
-              isSpecification = 'false'>
-              <UML:Transition.trigger>
-                <UML:CallEvent xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001252'/>
-              </UML:Transition.trigger>
-              <UML:Transition.source>
-                <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
-              </UML:Transition.source>
-              <UML:Transition.target>
-                <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
-              </UML:Transition.target>
-            </UML:Transition>
-            <UML:Transition xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA7'
-              isSpecification = 'false'>
-              <UML:Transition.trigger>
-                <UML:CallEvent xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001254'/>
-              </UML:Transition.trigger>
-              <UML:Transition.source>
-                <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
-              </UML:Transition.source>
-              <UML:Transition.target>
-                <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
-              </UML:Transition.target>
-            </UML:Transition>
             <UML:Transition xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAC'
               isSpecification = 'false'>
               <UML:Transition.trigger>
@@ -162,6 +134,9 @@
             </UML:Transition>
             <UML:Transition xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EE9'
               isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '-84-25-20-15--2f94ec57:13b473aaa55:-8000:0000000000000B83'/>
+              </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:Pseudostate xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9C'/>
               </UML:Transition.source>
@@ -189,7 +164,7 @@
         <UML:SignalEvent xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CB0'
           name = 'Indkøbsliste påbegyndt' isSpecification = 'false'/>
         <UML:CallEvent xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001250'
-          name = 'Tekst tilføjet' isSpecification = 'false'>
+          name = 'Vare tilføjet' isSpecification = 'false'>
           <UML:Event.parameter>
             <UML:Parameter xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001251'
               name = 'tekst' isSpecification = 'false' kind = 'in'/>
@@ -210,12 +185,14 @@
           </UML:Event.parameter>
         </UML:CallEvent>
         <UML:CallEvent xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001ABB'
-          name = 'Tekst fjernet' isSpecification = 'false'>
+          name = 'Vare fjernet' isSpecification = 'false'>
           <UML:Event.parameter>
             <UML:Parameter xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001ABC'
               name = 'tekst' isSpecification = 'false' kind = 'in'/>
           </UML:Event.parameter>
         </UML:CallEvent>
+        <UML:SignalEvent xmi.id = '-84-25-20-15--2f94ec57:13b473aaa55:-8000:0000000000000B83'
+          name = 'Indkøbsliste oprettet' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -235,7 +212,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[152, 120, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[24, 64, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9C"
        fill="1"
        fillcolor="black"
@@ -246,8 +223,8 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="160"
-      y="128"
+      x="32"
+      y="72"
       rx="8"
       ry="8"
       fill="0"
@@ -256,8 +233,8 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="160"
-      y="128"
+      x="32"
+      y="72"
       rx="8"
       ry="8"
       fill="1"
@@ -267,7 +244,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[432, 112, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[272, 56, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9F"
        fill="1"
        fillcolor="white"
@@ -278,8 +255,8 @@
     </private>
     
     <ellipse name="Fig1.0"
-      x="444"
-      y="124"
+      x="284"
+      y="68"
       rx="12"
       ry="12"
       fill="0"
@@ -288,8 +265,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig1.1"
-      x="444"
-      y="124"
+      x="284"
+      y="68"
       rx="12"
       ry="12"
       fill="1"
@@ -298,8 +275,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig1.2"
-      x="443"
-      y="123"
+      x="283"
+      y="67"
       rx="7"
       ry="7"
       fill="1"
@@ -309,7 +286,7 @@
     />
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[216, 104, 144, 46]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[160, 56, 88, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D"
        fill="1"
        fillcolor="white"
@@ -320,10 +297,10 @@
     </private>
     
     <rectangle name="Fig2.0"
-      x="216"
-      y="104"
-      width="144"
-      height="46"
+      x="160"
+      y="56"
+      width="88"
+      height="24"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -331,10 +308,10 @@
       rounding="16"
     />
     <rectangle name="Fig2.1"
-      x="216"
-      y="104"
-      width="144"
-      height="46"
+      x="160"
+      y="56"
+      width="88"
+      height="24"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -342,10 +319,10 @@
       rounding="16"
     />
     <text name="Fig2.2"
-      x="218"
-      y="104"
-      width="140"
-      height="23"
+      x="162"
+      y="56"
+      width="84"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -373,8 +350,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAD"
-                        angle="13.000000000000002"
-                        offset="43" />
+                        angle="75.00000000000001"
+                        offset="15" />
     </private>
     <path name="Fig3.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -383,14 +360,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="272"
-              y="149" />
-      <lineto x="272"
-              y="176" />
-      <lineto x="256"
-              y="176" />
-      <lineto x="256"
-              y="149" />
+      <moveto x="216"
+              y="79" />
+      <lineto x="216"
+              y="96" />
+      <lineto x="200"
+              y="96" />
+      <lineto x="200"
+              y="79" />
     </path>
   </group>
   <group name="Fig4"
@@ -408,8 +385,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAC"
-                        angle="-14.999999999999998"
-                        offset="43" />
+                        angle="-98.0"
+                        offset="14" />
     </private>
     <path name="Fig4.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -418,87 +395,17 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="272"
-              y="104" />
-      <lineto x="272"
-              y="80" />
-      <lineto x="256"
-              y="80" />
-      <lineto x="256"
-              y="104" />
+      <moveto x="216"
+              y="56" />
+      <lineto x="216"
+              y="40" />
+      <lineto x="200"
+              y="40" />
+      <lineto x="200"
+              y="56" />
     </path>
   </group>
   <group name="Fig5"
-       description="org.argouml.uml.diagram.state.ui.FigTransition"
-       href="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA7"
-       stroke="1"
-       strokecolor="black"
-  >
-    <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig5.1"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
-                        ownerhref="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA7"
-                        angle="351.0"
-                        offset="76" />
-    </private>
-    <path name="Fig5.0"
-      description="org.argouml.gefext.ArgoFigPoly"
-      fill="0"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="304"
-              y="104" />
-      <lineto x="304"
-              y="80" />
-      <lineto x="320"
-              y="80" />
-      <lineto x="320"
-              y="104" />
-    </path>
-  </group>
-  <group name="Fig6"
-       description="org.argouml.uml.diagram.state.ui.FigTransition"
-       href="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA6"
-       stroke="1"
-       strokecolor="black"
-  >
-    <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig6.1"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
-                        ownerhref="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA6"
-                        angle="8.0"
-                        offset="76" />
-    </private>
-    <path name="Fig6.0"
-      description="org.argouml.gefext.ArgoFigPoly"
-      fill="0"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="304"
-              y="149" />
-      <lineto x="304"
-              y="176" />
-      <lineto x="320"
-              y="176" />
-      <lineto x="320"
-              y="149" />
-    </path>
-  </group>
-  <group name="Fig7"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
        href="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EE9"
        stroke="1"
@@ -509,27 +416,27 @@
       destPortFig="Fig2.0"
       sourceFigNode="Fig0"
       destFigNode="Fig2"
-      <argouml:pathitem figname="Fig7.1"
+      <argouml:pathitem figname="Fig5.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EE9"
-                        angle="270.0"
-                        offset="10" />
+                        angle="267.0"
+                        offset="20" />
     </private>
-    <path name="Fig7.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig5.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="167"
-              y="127" />
-      <lineto x="216"
-              y="127" />
+      <moveto x="39"
+              y="71" />
+      <lineto x="160"
+              y="71" />
     </path>
   </group>
-  <group name="Fig8"
+  <group name="Fig6"
        description="org.argouml.uml.diagram.state.ui.FigTransition"
        href="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EEA"
        stroke="1"
@@ -540,24 +447,24 @@
       destPortFig="Fig1.0"
       sourceFigNode="Fig2"
       destFigNode="Fig1"
-      <argouml:pathitem figname="Fig8.1"
+      <argouml:pathitem figname="Fig6.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EEA"
                         angle="270.0"
                         offset="10" />
     </private>
-    <path name="Fig8.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig6.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="359"
-              y="124" />
-      <lineto x="432"
-              y="124" />
+      <moveto x="247"
+              y="67" />
+      <lineto x="272"
+              y="67" />
     </path>
   </group>
 </pgml>

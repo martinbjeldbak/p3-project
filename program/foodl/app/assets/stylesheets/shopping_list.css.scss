@@ -12,6 +12,7 @@ div.blue_line_horisontal {
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  clear:left;
 }
 
 div.blue_line_vertical {
@@ -41,10 +42,15 @@ div.blue_line_vertical {
   margin-right: auto;
 
   ul li {
-    font-family: 'Crafty Girls';
+    font-family: 'Crafty Girls', fantasy;
     font-size: 20px;
     text-align: left;
     padding-left: 110px;
+  }
+
+  ul li div {
+    float:left;
+    width:370px;
   }
 
   ul {
@@ -76,15 +82,19 @@ div.blue_line_vertical {
   float: right;
   background-color: #fff7c6;
   border-left: 2px solid #d6e3b5;
-  padding-left: 10px;
+  border-bottom: 2px solid #d6e3b5;
+  width: 140px;
 }
 
 .print_button {
   background-color: #fff7c6;
   font-family: 'Crafty Girls';
   font-size: 16px;
+  float: left;
   border-style: none;
-  border-bottom: 2px solid #d6e3b5;
+  border-right: 2px solid #d6e3b5;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .print_button:hover {
@@ -96,8 +106,15 @@ div.blue_line_vertical {
   font-family: 'Crafty Girls';
   background-color: #fff7c6;
   font-size: 16px;
+  float: right;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .delete_all_listitems_button:hover {
   text-decoration: underline;
+}
+
+#submitButton {
+  margin-left: 75px;
 }

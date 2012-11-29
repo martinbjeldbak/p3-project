@@ -57,6 +57,15 @@ $(function() {
     }).removeClass('ui-button')
       .removeClass('ui-state-default')
       .addClass('ui-dialog-titlebar-close');
+	  
+	 $( ".add-ingredient-to-list" ).button({
+      icons: {
+        primary: "ui-icon-plus"
+      },
+      text: false
+    }).removeClass('ui-button')
+      .removeClass('ui-state-default')
+      .addClass('ui-dialog-titlebar-close');
   }
 
   setupButtons();
@@ -217,6 +226,35 @@ $(function() {
       });
       return false;
   });
+  
+  $('.add-ingredient-to-list').live("click", function() {
+      $(this).hide();
+	  startLoading();
+	
+	  var $currentList = $('#num_list_items');
+      var $currentListCount = parseInt($currentList.text(), 10);
+      $currentList.text($currentListCount + 1);
+	
+      
+	  recipeName = $(this).data("name");
+      $.ajax({
+          url: "/list/add",
+          type: "POST",
+          data: {name: recipeName},
+          dataType: "json",
+          success: function(response) {
+            stopLoading();
+          },
+          error: function(xhr, error) {
+            stopLoading();
+            flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
+              //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
+              //$(document.body).html(xhr.responseText);
+          }
+      });
+      return false;
+  });
+  
   
 });
 
