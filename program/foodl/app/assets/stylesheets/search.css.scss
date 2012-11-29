@@ -107,6 +107,10 @@ li .shopping-button:hover{
 #recipe-result{
 	width:592px;
 	float:right;
+	
+	ul{
+		list-style-type: none;
+	}
 
 	li {
 	  text-align:left;
