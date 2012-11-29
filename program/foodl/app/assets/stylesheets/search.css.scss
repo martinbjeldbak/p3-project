@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin animation( $anim ) {
+  -ms-animation: $anim;
+  -webkit-animation: $anim;
+  -moz-animation: $anim;
+  animation: $anim;
+}
+
 #sidebar { 
   width: 200px - 2*8px;
   padding: 8px;
@@ -65,7 +72,7 @@ li .favoured .ui-icon-heart {
 
 li
 
-.favour-button, .shopping-button{
+.favour-button, .shopping-button, .add_ingredient_to_list{
   float:right;
 }
 .shopping-button{
@@ -93,24 +100,20 @@ li .favoured:hover  .ui-icon-heart{
   animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
 }
 
-@mixin animation( $anim ) {
-  -ms-animation: $anim;
-  -webkit-animation: $anim;
-  -moz-animation: $anim;
-  animation: $anim;
-}
-
 li .shopping-button:hover{
   background: url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
 }
 
 #recipe-result{
-  width:592px;
-  float:right;
-  
-  li {
+	width:592px;
+	float:right;
+	
+	ul{
+		list-style-type: none;
+	}
+
+	li {
 	  text-align:left;
-	  list-style-type: none;
 	}
 
 	& > ul > li {
@@ -173,6 +176,21 @@ li .shopping-button:hover{
 			}
 		}
 		
+		.add-ingredient-to-list {
+			display: block;
+			float: right;
+			height: 16px;
+			width: 16px;
+			
+			.ui-icon{
+				//Overide some jQuery-ui stuff
+				position: static;
+				top: auto;
+				left: auto;
+				margin: 0;
+			}
+		}
+		
 		.favour-button, .shopping-button{
 			float:right;
 		}
@@ -195,6 +213,13 @@ li .shopping-button:hover{
 			@include animation( heartstroke 0.65s ease-in-out 0s 1 normal forwards );
 		}
 		
+		.add-ingredient-to-list .ui-icon-plus {
+			background-image:url(images/ui-icons_454545_256x240.png);
+		}
+		.add-ingredient-to-list:hover .ui-icon-plus {
+			background-image:url(images/ui-icons_ffffff_256x240.png);
+		}
+		
 		//Styling of ingredients
 		& > ul {
 			//	height: 100px;
@@ -206,7 +231,8 @@ li .shopping-button:hover{
 			}
 			
 			.in_search{ font-weight:bold; }
-
+			
+			
 			.foodtype{
 				float:right;
 				color:gray;
@@ -214,6 +240,7 @@ li .shopping-button:hover{
 		}
 	}
 }
+
 
 
 .welcome {

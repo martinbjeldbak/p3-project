@@ -15,7 +15,8 @@
   <ul>
     <div class="blue_line_horisontal"></div>
     <% @shopping_list.each do |item| %>
-        <li data-id="<%= item.id %>"> <%= formatQuantityAndUnit(item) %> <%= item.name %> <a href="#"></a></li>
+      <li data-id="<%= item.id %>">
+      <div><%= formatQuantityAndUnit(item) %> <%= item.name %></div><a href="#"></a></li>
         <div class="blue_line_horisontal"></div>
     <% end %>
   </ul>

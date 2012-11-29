@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="93" version="1.1" width="405" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="49" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="40" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="74" x="70" y="25"/>
-<rect fill="#ffffff" height="40" rx="16" ry="16" stroke="#000000" stroke-width="1" width="74" x="70" y="25"/>
-<rect fill="#ffffff" height="38" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="72" x="71" y="26"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="76" y="38">
+<svg height="133" version="1.1" width="236" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="65" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="74" x="54" y="49"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="74" x="54" y="49"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="72" x="55" y="50"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="60" y="62">
 Eksisterer</text>
-<polyline fill="none" points="29,48 70,48" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="58" x2="70" y1="55" y2="48"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="58" x2="70" y1="41" y2="48"/>
-<rect fill="#00ff" height="40" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="105" x="286" y="25"/>
-<rect fill="#ffffff" height="40" rx="16" ry="16" stroke="#000000" stroke-width="1" width="105" x="286" y="25"/>
-<rect fill="#ffffff" height="38" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="103" x="287" y="26"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="314" y="38">
+<polyline fill="none" points="30,65 54,65" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="42" x2="54" y1="72" y2="65"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="42" x2="54" y1="58" y2="65"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="64" x="158" y="49"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="64" x="158" y="49"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="62" x="159" y="50"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="165" y="62">
 Brugbar</text>
-<polyline fill="none" points="143,33 286,33" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="274" x2="286" y1="40" y2="33"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="274" x2="286" y1="26" y2="33"/>
-<text font-family="Dialog" font-size="12" x="162" y="27">
+<polyline fill="none" points="94,49 94,33 182,33 182,49" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="175" x2="182" y1="37" y2="49"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="189" x2="182" y1="37" y2="49"/>
+<text font-family="Dialog" font-size="12" x="86" y="27">
 Råvare købt(navn)</text>
-<polyline fill="none" points="286,57 143,57" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="155" x2="143" y1="50" y2="57"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="155" x2="143" y1="64" y2="57"/>
-<text font-family="Dialog" font-size="12" x="158" y="75">
+<polyline fill="none" points="182,80 182,97 94,97 94,80" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="101" x2="94" y1="92" y2="80"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="87" x2="94" y1="92" y2="80"/>
+<text font-family="Dialog" font-size="12" x="81" y="115">
 Råvare opbrugt(navn)</text>
 </svg>

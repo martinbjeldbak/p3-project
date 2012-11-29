@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{553.6bp}%
+    \setlength{\unitlength}{408bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,17 +48,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.31791908)%
+  \begin{picture}(1,0.57254902)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/rapportering.pdf}}%
-    \put(0.47976879,0.23121387){\makebox(0,0)[lb]{\smash{Dialogboks åben}}}%
-    \put(0.0867052,0.18641618){\makebox(0,0)[lb]{\smash{Rapportér fejl ved opskrift}}}%
-    \put(0.29479769,0.09248555){\makebox(0,0)[lb]{\smash{Beskrivelsesboks åben}}}%
-    \put(0.25578035,0.1517341){\makebox(0,0)[lb]{\smash{Vælg fejltype [beskrivelig]}}}%
-    \put(0.66473988,0.09248555){\makebox(0,0)[lb]{\smash{Rapport klar}}}%
-    \put(0.54913295,0.06647399){\makebox(0,0)[lb]{\smash{Beskriv}}}%
-    \put(0.84393064,0.05635838){\makebox(0,0)[lb]{\smash{Godkend}}}%
-    \put(0.53179191,0.13439306){\makebox(0,0)[lb]{\smash{Vælg fejltype [ubeskrivelig]}}}%
-    \put(0.08526012,0.08959538){\makebox(0,0)[lb]{\smash{Rapportér generel fejl}}}%
-    \put(0.83526012,0.12138728){\makebox(0,0)[lb]{\smash{Annullér}}}%
+    \put(0.40196078,0.37647059){\makebox(0,0)[lb]{\smash{Dialogboks åben}}}%
+    \put(0.10588235,0.46078431){\makebox(0,0)[lb]{\smash{Rapportér fejl ved opskrift}}}%
+    \put(0.38431373,0.23529412){\makebox(0,0)[lb]{\smash{Beskrivelsesboks åben}}}%
+    \put(0.15882353,0.31372549){\makebox(0,0)[lb]{\smash{Vælg fejltype [beskrivelig]}}}%
+    \put(0.76078431,0.36078431){\makebox(0,0)[lb]{\smash{Rapport klar}}}%
+    \put(0.71960784,0.21568627){\makebox(0,0)[lb]{\smash{Beskriv}}}%
+    \put(0.85490196,0.18627451){\makebox(0,0)[lb]{\smash{Godkend}}}%
+    \put(0.63529412,0.40980392){\makebox(0,0)[lb]{\smash{Vælg fejltype [ubeskrivelig]}}}%
+    \put(0.09607843,0.18627451){\makebox(0,0)[lb]{\smash{Rapportér generel fejl}}}%
+    \put(0.63333333,0.07058824){\makebox(0,0)[lb]{\smash{Annullér}}}%
   \end{picture}%
 \endgroup%
