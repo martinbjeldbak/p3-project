@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin animation( $anim ) {
+  -ms-animation: $anim;
+  -webkit-animation: $anim;
+  -moz-animation: $anim;
+  animation: $anim;
+}
+
 #sidebar { 
   width: 200px - 2*8px;
   padding: 8px;
@@ -93,22 +100,15 @@ li .favoured:hover  .ui-icon-heart{
   animation: heartstroke 0.65s ease-in-out 0s 1 normal forwards;
 }
 
-@mixin animation( $anim ) {
-  -ms-animation: $anim;
-  -webkit-animation: $anim;
-  -moz-animation: $anim;
-  animation: $anim;
-}
-
 li .shopping-button:hover{
   background: url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x !important;
 }
 
 #recipe-result{
-  width:592px;
-  float:right;
-  
-  li {
+	width:592px;
+	float:right;
+
+	li {
 	  text-align:left;
 	  list-style-type: none;
 	}
