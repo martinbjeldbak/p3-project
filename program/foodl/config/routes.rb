@@ -70,6 +70,7 @@ Foodl::Application.routes.draw do
   match '/list/remove', to: 'shopping_list#remove'
   match '/list/addrecipe', to: 'shopping_list#add_recipe'
   match '/list/deletelist', to: 'shopping_list#delete_list'
+  match '/list/addingredientfromid', to: 'shopping_list#add_ingredient_from_id'
 
   
   match '/recipes/images/:id', to: 'recipes#picture'
