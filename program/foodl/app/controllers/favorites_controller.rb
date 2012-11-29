@@ -14,6 +14,7 @@ class FavoritesController < ApplicationController
     if logged_in?
       #Don't add if it already is favorized
       if !current_user.favorites.find_by_id(params[:id])
+				#NOTE: this is replicated in users_controller!
 				recipe = Recipe.find_by_id(params[:id]) #TODO: what is the difference between the two calls?
 				if recipe
 					#Add recipe to user
