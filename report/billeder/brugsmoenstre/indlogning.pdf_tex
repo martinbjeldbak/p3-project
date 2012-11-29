@@ -62,7 +62,7 @@
     \put(0.39370079,0.35629921){\makebox(0,0)[lb]{\smash{Oplysninger godkendt}}}%
     \put(0.4015748,0.47637795){\makebox(0,0)[lb]{\smash{Fejl i oplysninger}}}%
     \put(0.80511811,0.20275591){\makebox(0,0)[lb]{\smash{Afbryd proces}}}%
-    \put(0.04724409,0.17519685){\makebox(0,0)[lb]{\smash{_ [Bruger logget ind fra tidligere session]}}}%
+    \put(0.04724409,0.17519685){\makebox(0,0)[lb]{\smash{Bruger logget ind fra tidligere session}}}%
     \put(0.3011811,0.03543307){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
     \put(0.57480315,0.22440945){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
     \put(0.20472441,0.5511811){\makebox(0,0)[lb]{\smash{Tryk på "opret"}}}%
