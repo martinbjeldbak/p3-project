@@ -11,7 +11,7 @@
 #
 
 class Issue < ActiveRecord::Base
-  attr_accessible :description, :issue_category_id
+  attr_accessible :description
 
   belongs_to :user
   belongs_to :issue_category

@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{342.4bp}%
+    \setlength{\unitlength}{240bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +48,11 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.37616822)%
+  \begin{picture}(1,0.42666667)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/indkoebsliste.pdf}}%
-    \put(0.54439252,0.21261682){\makebox(0,0)[lb]{\smash{Redigeres}}}%
-    \put(0.3411215,0.04205607){\makebox(0,0)[lb]{\smash{Vare tilføjet(tekst)}}}%
-    \put(0.33878505,0.31308411){\makebox(0,0)[lb]{\smash{Vare fjernet(tekst)}}}%
-    \put(0.11915888,0.19859813){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
+    \put(0.55,0.21333333){\makebox(0,0)[lb]{\smash{Redigeres}}}%
+    \put(0.48,0.06){\makebox(0,0)[lb]{\smash{Vare tilføjet(tekst)}}}%
+    \put(0.49,0.33666667){\makebox(0,0)[lb]{\smash{Vare fjernet(tekst)}}}%
+    \put(0.09666667,0.25333333){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
   \end{picture}%
 \endgroup%

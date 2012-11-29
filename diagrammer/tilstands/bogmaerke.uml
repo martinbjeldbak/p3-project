@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Nov 12 15:04:07 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Nov 28 17:58:10 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -163,7 +163,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[104, 144, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[24, 32, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-64--88-56-1--15c825da:13a4ebd2314:-8000:0000000000000A8D"
        fill="1"
        fillcolor="black"
@@ -174,8 +174,8 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="112"
-      y="152"
+      x="32"
+      y="40"
       rx="8"
       ry="8"
       fill="0"
@@ -184,8 +184,8 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="112"
-      y="152"
+      x="32"
+      y="40"
       rx="8"
       ry="8"
       fill="1"
@@ -195,7 +195,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[288, 136, 70, 32]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[112, 56, 72, 24]pathVisible=false;stereotypeView=0;"
        href="-64--88-56-1--15c825da:13a4ebd2314:-8000:0000000000000A8E"
        fill="1"
        fillcolor="white"
@@ -206,10 +206,10 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="288"
-      y="136"
-      width="70"
-      height="32"
+      x="112"
+      y="56"
+      width="72"
+      height="24"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -217,10 +217,10 @@
       rounding="16"
     />
     <rectangle name="Fig1.1"
-      x="288"
-      y="136"
-      width="70"
-      height="32"
+      x="112"
+      y="56"
+      width="72"
+      height="24"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -228,10 +228,10 @@
       rounding="16"
     />
     <text name="Fig1.2"
-      x="290"
-      y="136"
-      width="66"
-      height="23"
+      x="114"
+      y="56"
+      width="68"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -259,8 +259,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-56-1--15c825da:13a4ebd2314:-8000:0000000000000A8F"
-                        angle="262.00000000000006"
-                        offset="8" />
+                        angle="333.0"
+                        offset="31" />
     </private>
     <path name="Fig2.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -269,14 +269,16 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="121"
-              y="152" />
-      <lineto x="288"
-              y="152" />
+      <moveto x="41"
+              y="40" />
+      <lineto x="152"
+              y="40" />
+      <lineto x="152"
+              y="56" />
     </path>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[536, 144, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[208, 56, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-64--88-56-1--15c825da:13a4ebd2314:-8000:0000000000000A90"
        fill="1"
        fillcolor="white"
@@ -287,8 +289,8 @@
     </private>
     
     <ellipse name="Fig3.0"
-      x="548"
-      y="156"
+      x="220"
+      y="68"
       rx="12"
       ry="12"
       fill="0"
@@ -297,8 +299,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig3.1"
-      x="548"
-      y="156"
+      x="220"
+      y="68"
       rx="12"
       ry="12"
       fill="1"
@@ -307,8 +309,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig3.2"
-      x="547"
-      y="155"
+      x="219"
+      y="67"
       rx="7"
       ry="7"
       fill="1"
@@ -332,8 +334,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-56-1--15c825da:13a4ebd2314:-8000:0000000000000A91"
-                        angle="248.0"
-                        offset="10" />
+                        angle="137.99999999999997"
+                        offset="24" />
     </private>
     <path name="Fig4.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -342,10 +344,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="357"
-              y="155" />
-      <lineto x="536"
-              y="155" />
+      <moveto x="152"
+              y="79" />
+      <lineto x="152"
+              y="96" />
+      <lineto x="216"
+              y="96" />
+      <lineto x="218"
+              y="79" />
     </path>
   </group>
 </pgml>
