@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="346" version="1.1" width="836" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="116" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="64" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="128" x="542" y="148"/>
-<rect fill="#ffffff" height="64" rx="16" ry="16" stroke="#000000" stroke-width="1" width="128" x="542" y="148"/>
-<rect fill="#ffffff" height="62" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="126" x="543" y="149"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="571" y="161">
+<svg height="429" version="1.1" width="508" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="117" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="128" x="246" y="341"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="128" x="246" y="341"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="126" x="247" y="342"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="275" y="354">
 Login aktiv</text>
-<ellipse cx="810" cy="160" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="810" cy="160" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
-<ellipse cx="809" cy="159" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="669,160 798,160" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="786" x2="798" y1="167" y2="160"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="786" x2="798" y1="153" y2="160"/>
-<text font-family="Dialog" font-size="12" x="717" y="175">
+<ellipse cx="466" cy="361" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="466" cy="361" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="465" cy="360" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="373,360 454,360" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="442" x2="454" y1="367" y2="360"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="442" x2="454" y1="353" y2="360"/>
+<text font-family="Dialog" font-size="12" x="397" y="375">
 Log ud</text>
-<rect fill="#00ff" height="288" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="424" x="78" y="44"/>
-<rect fill="#ffffff" height="288" rx="16" ry="16" stroke="#000000" stroke-width="1" width="424" x="78" y="44"/>
-<rect fill="#ffffff" height="286" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="422" x="79" y="45"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="78" x2="501" y1="67" y2="67"/>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="145" x="294" y="172"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="145" x="294" y="172"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="143" x="295" y="173"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="300" y="185">
+<rect fill="#00ff" height="248" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="384" x="78" y="45"/>
+<rect fill="#ffffff" height="248" rx="16" ry="16" stroke="#000000" stroke-width="1" width="384" x="78" y="45"/>
+<rect fill="#ffffff" height="246" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="382" x="79" y="46"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="78" x2="461" y1="68" y2="68"/>
+<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="145" x="294" y="141"/>
+<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="145" x="294" y="141"/>
+<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="143" x="295" y="142"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="300" y="154">
 Godkendelse af login</text>
-<polyline fill="none" points="438,172 438,124 558,124 558,148" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="551" x2="558" y1="136" y2="148"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="565" x2="558" y1="136" y2="148"/>
-<text font-family="Dialog" font-size="12" x="473" y="119">
+<polyline fill="none" points="398,164 398,349 373,349" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="385" x2="373" y1="342" y2="349"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="385" x2="373" y1="356" y2="349"/>
+<text font-family="Dialog" font-size="12" x="306" y="212">
 Login godkendt</text>
-<rect fill="#00ff" height="23" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="288" x="158" y="76"/>
-<rect fill="#ffffff" height="23" rx="16" ry="16" stroke="#000000" stroke-width="1" width="288" x="158" y="76"/>
-<rect fill="#ffffff" height="21" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="286" x="159" y="77"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="164" y="89">
+<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="288" x="94" y="77"/>
+<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="288" x="94" y="77"/>
+<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="286" x="95" y="78"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="100" y="90">
 Vent på loginoplysninger / brugeroprettelse</text>
-<polyline fill="none" points="422,172 422,98" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="429" x2="422" y1="110" y2="98"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="415" x2="422" y1="110" y2="98"/>
-<text font-family="Dialog" font-size="12" x="355" y="137">
+<polyline fill="none" points="358,141 358,100" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="365" x2="358" y1="112" y2="100"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="351" x2="358" y1="112" y2="100"/>
+<text font-family="Dialog" font-size="12" x="364" y="128">
 Login afvist</text>
-<polyline fill="none" points="334,98 334,172" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="327" x2="334" y1="160" y2="172"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="341" x2="334" y1="160" y2="172"/>
-<text font-family="Dialog" font-size="12" x="243" y="137">
+<polyline fill="none" points="334,100 334,141" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="327" x2="334" y1="129" y2="141"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="341" x2="334" y1="129" y2="141"/>
+<text font-family="Dialog" font-size="12" x="247" y="125">
 Tryk på "login"</text>
-<polyline fill="none" points="20,107 21,88 158,88" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="146" x2="158" y1="95" y2="88"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="146" x2="158" y1="81" y2="88"/>
-<text font-family="Dialog" font-size="12" x="31" y="108">
+<polyline fill="none" points="22,108 22,37 190,37 190,77" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="183" x2="190" y1="65" y2="77"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="190" y1="65" y2="77"/>
+<text font-family="Dialog" font-size="12" x="51" y="27">
 Tryk på "login / opret"</text>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="116" x="150" y="252"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="116" x="150" y="252"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="114" x="151" y="253"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="156" y="265">
+<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="116" x="94" y="197"/>
+<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="116" x="94" y="197"/>
+<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="114" x="95" y="198"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="100" y="210">
 Brugeroprettelse</text>
-<polyline fill="none" points="265,268 462,268 462,196 542,196" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="530" x2="542" y1="203" y2="196"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="530" x2="542" y1="189" y2="196"/>
-<text font-family="Dialog" font-size="12" x="306" y="286">
+<polyline fill="none" points="198,220 198,253 270,253 270,341" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="263" x2="270" y1="329" y2="341"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="277" x2="270" y1="329" y2="341"/>
+<text font-family="Dialog" font-size="12" x="200" y="248">
 Oplysninger godkendt</text>
-<polyline fill="none" points="230,252 230,98" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="237" x2="230" y1="110" y2="98"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="223" x2="230" y1="110" y2="98"/>
-<text font-family="Dialog" font-size="12" x="235" y="220">
+<polyline fill="none" points="201,197 201,100" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="208" x2="201" y1="112" y2="100"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="201" y1="112" y2="100"/>
+<text font-family="Dialog" font-size="12" x="204" y="187">
 Fejl i oplysninger</text>
-<polyline fill="none" points="501,284 814,284 810,171" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="817" x2="810" y1="182" y2="171"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="803" x2="810" y1="183" y2="171"/>
-<text font-family="Dialog" font-size="12" x="546" y="306">
-Afbryd login- eller brugeroprettelsesproces</text>
-<polyline fill="none" points="21,108 21,36 573,36 573,148" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="566" x2="573" y1="136" y2="148"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="580" x2="573" y1="136" y2="148"/>
-<text font-family="Dialog" font-size="12" x="200" y="27">
+<polyline fill="none" points="461,277 494,277 494,365 477,362" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="490" x2="477" y1="357" y2="362"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="487" x2="477" y1="370" y2="362"/>
+<text font-family="Dialog" font-size="12" x="409" y="326">
+Afbryd proces</text>
+<polyline fill="none" points="22,125 22,357 246,357" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="234" x2="246" y1="364" y2="357"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="234" x2="246" y1="350" y2="357"/>
+<text font-family="Dialog" font-size="12" x="24" y="340">
 _ [Bruger logget ind fra tidligere session]</text>
-<polyline fill="none" points="565,211 565,244 597,244 597,211" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="604" x2="597" y1="223" y2="211"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="590" x2="597" y1="223" y2="211"/>
-<text font-family="Dialog" font-size="12" x="512" y="267">
+<polyline fill="none" points="262,372 262,397 294,397 294,372" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="301" x2="294" y1="384" y2="372"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="287" x2="294" y1="384" y2="372"/>
+<text font-family="Dialog" font-size="12" x="153" y="411">
 Indkøbslistehåndtering()</text>
-<polyline fill="none" points="598,148 598,116 630,116 630,148" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="623" x2="630" y1="136" y2="148"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="637" x2="630" y1="136" y2="148"/>
-<text font-family="Dialog" font-size="12" x="601" y="106">
+<polyline fill="none" points="302,341 302,325 334,325 334,341" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="327" x2="334" y1="329" y2="341"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="341" x2="334" y1="329" y2="341"/>
+<text font-family="Dialog" font-size="12" x="292" y="315">
 Favorisering()</text>
-<polyline fill="none" points="190,98 190,252" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="183" x2="190" y1="240" y2="252"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="190" y1="240" y2="252"/>
-<text font-family="Dialog" font-size="12" x="94" y="176">
+<polyline fill="none" points="102,100 102,197" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="95" x2="102" y1="185" y2="197"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="109" x2="102" y1="185" y2="197"/>
+<text font-family="Dialog" font-size="12" x="104" y="149">
 Tryk på "opret"</text>
-<polyline fill="none" points="622,211 622,244 662,244 662,211" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="669" x2="662" y1="223" y2="211"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="655" x2="662" y1="223" y2="211"/>
-<text font-family="Dialog" font-size="12" x="672" y="233">
+<polyline fill="none" points="326,372 326,389 358,389 358,372" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="365" x2="358" y1="384" y2="372"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="351" x2="358" y1="384" y2="372"/>
+<text font-family="Dialog" font-size="12" x="326" y="405">
 Søgning()</text>
 </svg>

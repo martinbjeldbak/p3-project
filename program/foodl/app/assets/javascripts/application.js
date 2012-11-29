@@ -20,6 +20,7 @@
 //= require jquery.ui.button
 //= require jquery.ui.autocomplete
 //= require jquery.ui.slider
+//= require fancybox
 //= require_tree .
 
 jQuery.fn.listRemoveButton = function() {

@@ -44,7 +44,7 @@
     <% end %>
   </ul>
   <div class="recipe-actions">
-    <a href="#" class="report-button ui-button-icon-only" title="Rapporter en fejl vedr. opskriften"></a>
+    <%= link_to "", {controller: 'issues', action: 'new'}, class: "fejlbox fancybox.ajax report-button ui-button-icon-only" %>
     <p> Tilberedningstid: <%= (recipe.prep_time > 60) ? "60+" : recipe.prep_time %> min. </p>
   </div>
 </li>

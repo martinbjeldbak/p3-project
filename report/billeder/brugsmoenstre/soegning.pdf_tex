@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{393.6bp}%
+    \setlength{\unitlength}{252.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,19 +48,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.72764228)%
+  \begin{picture}(1,1.13291139)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/soegning.pdf}}%
-    \put(0.6402439,0.61382114){\makebox(0,0)[lb]{\smash{Luk side}}}%
-    \put(0.47154472,0.55894309){\makebox(0,0)[lb]{\smash{Aktiv}}}%
-    \put(0.09756098,0.36382114){\makebox(0,0)[lb]{\smash{Råvarer på liste}}}%
-    \put(0.60772358,0.39634146){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
-    \put(0.32723577,0.3699187){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
-    \put(0.86788618,0.26422764){\makebox(0,0)[lb]{\smash{Sorteret}}}%
-    \put(0.56707317,0.20325203){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
-    \put(0.16260163,0.6097561){\makebox(0,0)[lb]{\smash{Tilføj råvare(r)}}}%
-    \put(0.42073171,0.27235772){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
-    \put(0.74593496,0.50609756){\makebox(0,0)[lb]{\smash{Sortering gemt}}}%
-    \put(0.1300813,0.04065041){\makebox(0,0)[lb]{\smash{Råvare tilføjet}}}%
-    \put(0.36178862,0.03658537){\makebox(0,0)[lb]{\smash{Råvare fjernet}}}%
+    \put(0.66772152,0.94620253){\makebox(0,0)[lb]{\smash{Luk side}}}%
+    \put(0.4556962,0.87025316){\makebox(0,0)[lb]{\smash{Aktiv}}}%
+    \put(0.15189873,0.74367089){\makebox(0,0)[lb]{\smash{Råvarer på liste}}}%
+    \put(0.28797468,0.51582278){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
+    \put(0.25316456,0.62025316){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
+    \put(0.81012658,0.49050633){\makebox(0,0)[lb]{\smash{Sorteret}}}%
+    \put(0.40506329,0.30063291){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
+    \put(0.2278481,0.96202532){\makebox(0,0)[lb]{\smash{Tilføj råvare(r)}}}%
+    \put(0.16139241,0.35759494){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
+    \put(0.52848101,0.67405063){\makebox(0,0)[lb]{\smash{Sortering gemt}}}%
+    \put(0.20253165,0.06329114){\makebox(0,0)[lb]{\smash{Råvare tilføjet}}}%
+    \put(0.56329114,0.05696203){\makebox(0,0)[lb]{\smash{Råvare fjernet}}}%
   \end{picture}%
 \endgroup%
