@@ -21,6 +21,16 @@
    * require jquery.ui.dialog
    *= require jquery-ui-1.9.1.custom.css
    */
+
+//CSS3 wrappers
+@mixin transition( $prop ) {
+  -webkit-transition: $prop;
+  -moz-transition: $prop;
+  -ms-transition: $prop;
+  -o-transition: $prop;
+  transition: $prop;
+}
+
 body {
   padding-top:40px;
   background:#dee8d9 url(bg.png) repeat-x;
@@ -313,6 +323,10 @@ header nav a:hover {
   width:8px !important;
 }
 
+.ui-slider-handle{
+  @include transition( left 0.3s linear 0 );
+}
+
 .placeholder {
   color:#aaa;
 }
@@ -367,16 +381,6 @@ header nav a:hover {
   to { transform: scale(0.8); }
 }
 
-#upper-about {
-  border-radius:5px;
-  margin:50px 0 25px 0;
-  padding: 16px;
-  width: 400px;
-  display: inline-block;
-  background-color:#F7FCF7;
-  box-shadow:0 0 32px 0 #CCD2CC;
-}
-
 p {
   margin-bottom:8px;
   text-align:left;
@@ -400,6 +404,7 @@ p {
   display:none;
 }
 
+
 #login-reminder {
   position:fixed;
   top:48px;
@@ -419,74 +424,4 @@ p {
 
 #login-reminder img {
   opacity:0.8;
-}
-
-#lower-about {
-  display:inline-block;
-}
-
-#lower-about p {
-  text-align:center;
-}
-
-#who-are-we {
-    border-radius:5px;
-    width: 75%;
-    height: 25px;
-    padding: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#F7FCF7;
-    box-shadow:0 0 32px 0 #CCD2CC;
-}
-
-@mixin profile-picture-styling {
-  border-radius:5px;
-  margin:10px 0 10px 10px;
-  padding: 16px;
-  display: inline-block;
-  background-color:#F7FCF7;
-  box-shadow:0 0 32px 0 #CCD2CC;
-}
-
-.left-picture{
-  @include profile-picture-styling;
-  float:left;
-  clear:left;
-}
-
-.right-picture{
-  @include profile-picture-styling;
-  float:right;
-  clear:right;
-}
-
-.profile-picture {
-  float:left;
-
-  height: 390px;
-  width: 300px;
-  overflow: hidden;
-}
-
-.contact-picture {
-    width: 100%;
-}
-
-#contact-container {
-  margin-top: 40px;
-}
-
-#contact-box {
-  border-radius:5px;
-  margin:50px 0 25px 0;
-  padding: 16px;
-  width: 400px;
-  display: inline-block;
-  background-color:#F7FCF7;
-  box-shadow:0 0 32px 0 #CCD2CC;
-
-  p {
-    text-align: center;
-  }
 }
