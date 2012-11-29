@@ -74,7 +74,7 @@ class UsersController < ApplicationController
 			recipe.save
 		  end
         end
-        session[:list_items] = nil
+        session[:favored] = nil
       end
 
       flash[:success] = "Velkommen til foodl, #{@user_created.email.split('@')[0]}!"
