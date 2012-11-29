@@ -4,7 +4,7 @@
   </a>
   <nav>
     <a href="<%= url_for controller: 'shopping_list', action: 'index' %>">indkøbsliste
-      (<span id="num_list_items"><%= listCount %></span>)
+      (<span id="num_list_items"><%= list_count %></span>)
     </a>
 
     <a href="<%=url_for :controller => 'favorites', :action => 'index' %>">favoritter

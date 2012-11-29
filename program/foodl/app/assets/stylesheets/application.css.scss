@@ -4,22 +4,23 @@
    *
    * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
    * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- * jquery-ui theme:
- * http://jqueryui.com/themeroller/#ffDefault='Titillium%20Web'%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=2px&bgColorHeader=dddddd&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=50&borderColorHeader=dddddd&fcHeader=444444&iconColorHeader=00ea23&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=dddddd&fcContent=444444&iconColorContent=ffc40f&bgColorDefault=f6f6f6&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=100&borderColorDefault=dddddd&fcDefault=3cea00&iconColorDefault=666666&bgColorHover=3cea00&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=25&borderColorHover=3cea00&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=dddddd&fcActive=ffc40f&iconColorActive=454545&bgColorHighlight=ffffff&bgTextureHighlight=01_flat.png&bgImgOpacityHighlight=55&borderColorHighlight=cccccc&fcHighlight=444444&iconColorHighlight=3cea00&bgColorError=ffffff&bgTextureError=01_flat.png&bgImgOpacityError=55&borderColorError=ffc40f&fcError=222222&iconColorError=ffc40f&bgColorOverlay=eeeeee&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=80&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=60&thicknessShadow=4px&offsetTopShadow=-4px&offsetLeftShadow=-4px&cornerRadiusShadow=0px
- *
- *= require star
- *= require_self
- *= require_tree .
- * require jquery.ui.core
- * require jquery.ui.theme
- * require jquery.ui.autocomplete
- * require jquery.ui.button
- * require jquery.ui.dialog
- *= require jquery-ui-1.9.1.custom.css
- */
+   *
+   * You're free to add application-wide styles to this file and they'll appear at the top of the
+   * compiled file, but it's generally better to create a new file per style scope.
+   * jquery-ui theme:
+   * http://jqueryui.com/themeroller/#ffDefault='Titillium%20Web'%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=2px&bgColorHeader=dddddd&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=50&borderColorHeader=dddddd&fcHeader=444444&iconColorHeader=00ea23&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=dddddd&fcContent=444444&iconColorContent=ffc40f&bgColorDefault=f6f6f6&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=100&borderColorDefault=dddddd&fcDefault=3cea00&iconColorDefault=666666&bgColorHover=3cea00&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=25&borderColorHover=3cea00&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=dddddd&fcActive=ffc40f&iconColorActive=454545&bgColorHighlight=ffffff&bgTextureHighlight=01_flat.png&bgImgOpacityHighlight=55&borderColorHighlight=cccccc&fcHighlight=444444&iconColorHighlight=3cea00&bgColorError=ffffff&bgTextureError=01_flat.png&bgImgOpacityError=55&borderColorError=ffc40f&fcError=222222&iconColorError=ffc40f&bgColorOverlay=eeeeee&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=80&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=60&thicknessShadow=4px&offsetTopShadow=-4px&offsetLeftShadow=-4px&cornerRadiusShadow=0px
+   *
+   *= require star
+   *= require_self
+   *= require_tree .
+   *= require fancybox
+   * require jquery.ui.core
+   * require jquery.ui.theme
+   * require jquery.ui.autocomplete
+   * require jquery.ui.button
+   * require jquery.ui.dialog
+   *= require jquery-ui-1.9.1.custom.css
+   */
 
 //CSS3 wrappers
 @mixin transition( $prop ) {
@@ -30,9 +31,8 @@
   transition: $prop;
 }
 
-
 body {
-  margin-top:40px;
+  padding-top:40px;
   background:#dee8d9 url(bg.png) repeat-x;
   text-align:center;
   font-family:'Titillium Web', sans-serif;
@@ -102,10 +102,10 @@ header {
 
 footer {
   position:fixed;
-  bottom:0;
+  bottom:16px;
   left:16px;
   text-align:left;
-  width:100%;
+  float:left;
   line-height:16px;
   height:24px;
   font-size:12px;

@@ -1,30 +1,30 @@
 \section{Teknologier}
 \label{sec:teknologier}
-Systemet er en webapplikation, hvor der er lagt vægt på enkelt og forståeligt design, effektivitet, fleksibilitet og brugbarhed. For at kunne opfylde alle disse krav, som er beskrevet i \secref{sec:kriterier}, har vi gjort brug af nogle forskellige webudviklings- og programmeringsteknologier.
+Systemet er en webapplikation, hvor der er lagt vægt på enkelt og forståeligt design, effektivitet, fleksibilitet og brugbarhed. For at kunne opfylde alle disse krav og kriterier, som er beskrevet i \secref{sec:kriterier}, har vi gjort brug af nogle forskellige webudviklings- og programmeringsteknologier.
 
 Vi har brugt følgende teknologier:
 
 \begin{itemize}[noitemsep]
 \item HTML og CSS
-\item Javascript, jQuery UI og AJAX og JSON
+\item Javascript, jQuery UI, AJAX og JSON
 \item Ruby on Rails
 \item MySQL og phpMyAdmin
 \end{itemize}
 
 Vi har brugt HTML\cite{htmlwiki} til at opmærke og strukturere hjemmesiden med. HTML fungerer godt til opmærkning og strukturering af en hjemmeside, men det er ikke særlig flot at se på. For at designe hjemmesiden har vi brugt CSS\cite{csswiki}, der er et sprog, som bruges til at beskrive, hvordan man ønsker indholdet af bl.a. et HTML-dokument skal præsenteres i \fx en webbrowser.
 
-Hvad angår databaser, så har vi har brugt MySQL\cite{mysqlwiki}, der er en flertrådet SQL-databaseserver, som understøtter flere samtidige brugere. I og med at vi består af en gruppe af individer med vidt forskellige kompetencer og erfaringer med web- og systemudvikling, har vi brugt det browserbaserede program, phpMyAdmin\cite{phpmyadminwiki}, til at administrere og opdatere MySQL-databasen. phpMyAdmin præsenterer en letforståelig brugergrænseflade til redigering af databasen. Udviklerne bag MySQL har også udviklet deres eget administrationsmodul til databasen, men den skal installers på en computer, hvorimod phpMyAdmin præsenteres direkte via webbrowseren, hvilket betyder, at vi ikke behøver installere et program på seks forskellige computere, men blot bruge det samme via webbrowseren.
+Hvad angår databaser, så har vi har brugt MySQL\cite{mysqlwiki}, der er en flertrådet SQL-databaseserver, som understøtter flere samtidige brugere. I og med at vi består af en gruppe af individer med vidt forskellige kompetencer og erfaringer med web- og systemudvikling, har vi brugt det browserbaserede program, phpMyAdmin\cite{phpmyadminwiki}, til at administrere og opdatere MySQL-databasen. phpMyAdmin præsenterer en letforståelig brugergrænseflade til redigering af databasen. Udviklerne bag MySQL har også udviklet deres eget administrationsmodul til databasen, men den skal installers på en computer, hvorimod phpMyAdmin præsenteres direkte via webbrowseren, hvilket betyder, at vi ikke behøver installere et program på seks forskellige computere, men blot kan bruge det via webbrowseren.
 
-For at gøre hjemmesiden dynamisk og brugervenlig, har vi brugt JavaScript\cite{javascriptwiki}, som er et objektorienteret scriptsprog, som de fleste moderne webbrowsere forstår. Derudover har vi også brugt jQuery UI\cite{jqueryuiwiki}, der bruges til at udvikle interaktive webapplikationer, og AJAX\cite{ajaxwiki} og JSON\cite{jsonwiki}, som bruges til at udvikle asynkrone webapplikationer. Figur \ref{fig:toolbar} illustrerer tre forskellige jQuery UI applikationer, som brugeren kan se, når der bliver udført en søgning på hjemmesiden. AJAX gør det muligt at udveksle data mellem hjemmeside og server uden at siden skal gennemgå en fuld sideopdatering hver gang, der sker en overførsel, for at vise det nye indhold. Alle dataoverførsler sker i baggrunden og brugeren præsenteres med disse ændringer med det samme.
+For at gøre hjemmesiden dynamisk og brugervenlig, har vi brugt JavaScript\cite{javascriptwiki}, som er et objektorienteret scriptsprog, som de fleste moderne webbrowsere forstår. Derudover har vi også brugt jQuery UI\cite{jqueryuiwiki}, der bruges til at udvikle interaktive webapplikationer, og AJAX\cite{ajaxwiki} og JSON\cite{jsonwiki}, som bruges til at udvikle asynkrone webapplikationer. Figur \ref{fig:toolbar} illustrerer tre forskellige jQuery UI applikationer, som brugeren bliver præsenteret for, når der bliver udført en søgning på foodl-hjemmesiden. AJAX gør det muligt at udveksle data mellem hjemmeside og server uden at siden skal gennemgå en fuld sideopdatering hver gang, der sker en overførsel, for at vise det nye indhold. Alle dataoverførsler sker i baggrunden og brugeren præsenteres med disse ændringer med det samme.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{billeder/jqueryuieksempel.png}
-\capt{Denne figur viser tre forskellige eksempler af interaktive applikationer, der kan laves via jQuery UI. Til venstre ses en samling af tre knapper, som fungerer som afkrydsningsbokse, hvilket betyder, at man kan markere flere af gangen. Disse knapper gør det muligt for brugeren at begrænse søgeresultatet efter disse tre kriterier for tilberedningstiden. Midt for ses en justerbar knap, der gør det muligt for brugeren at skalere opskrifterne. Til højre ses endnu en samling af tre knapper, der fungerer som radioknapper, hvilket betyder, at man kun kan vælge én knap af gangen. Disse knapper giver brugeren mulighed for at sortere resultaterne efter navn, relevans eller tilberedningstid.}
+\capt{Figuren viser tre forskellige eksempler af interaktive applikationer, der er lavet vha. jQuery UI. Til venstre ses en samling af tre knapper, som fungerer som afkrydsningsbokse, hvilket betyder, at man kan markere flere af gangen. Disse knapper gør det muligt for brugeren at begrænse søgeresultatet efter disse tre kriterier for tilberedningstiden. Midt for ses en justerbar knap, der gør det muligt for brugeren at skalere opskrifterne. Til højre ses endnu en samling af tre knapper, der fungerer som radioknapper, hvilket betyder, at man kun kan vælge én knap af gangen. Disse knapper giver brugeren mulighed for at sortere resultaterne efter navn, relevans eller tilberedningstid.}
 \label{fig:toolbar}
 \end{figure}
 
-Derudover er Ruby on Rails\cite{rubyonrailswiki}, som er et webudviklingsframework baseret på programmeringssproget Ruby, som vi brugte til understøttelse af webudviklingen. Intentionerne bag Rails var at skabe et framework, der gjorde det lettere og hurtigere for webudviklere at udvikle webapplikationer, hvilket også er en af de væsentlige årsager til, at vi valgte at anvende Rails. 
+Derudover har vi anvendt Ruby on Rails \cite{rubyonrailswiki}, der er et webudviklingsframework baseret på programmeringssproget Ruby, til at understøtte webudviklingen. Intentionerne bag Rails var at skabe et framework, der gjorde det lettere og hurtigere for webudviklere at udvikle webapplikationer, hvilket også er en af de væsentlige årsager til, at vi valgte at anvende Rails. 
 
 Målet med Rails blev bl.a. opnået vha. af følgende filosofi:
 \begin{quote}
@@ -40,6 +40,6 @@ Filosofien har både sine fordele og ulemper. Det er en ulempe, at webudvikleren
 	\label{fig:Rails-new-foodl}
 \end{figure}
 
-Enhver Railsapplikation tager udgangspunkt i arkitekturen Model-View-Controller. Mappen med webapplikationen består af en lang række undermapper, hvori ``models'', ``views'' og ``controllers'' bl.a. befinder sig. Kort sagt genererer Rails, vha. New-kommandoen, hele skelettet for webapplikationen, og derefter er det ``bare'' at fylde det indhold, man ønsker i sin webapplikation, i de rigtige mapper. Denne Model-View-Controllerarkitektur vil blive forklaret yderligere i \secref{subsec:mvc}.
+Enhver Railsapplikation tager udgangspunkt i arkitekturen Model-View-Controller. Mappen med webapplikationen består af en lang række undermapper, hvori ``models'', ``views'' og ``controllers'' bl.a. befinder sig. Kort sagt genererer Rails, vha. New-kommandoen, hele skelettet for webapplikationen, og derefter er det ``bare'' at fylde det indhold, man ønsker i sin webapplikation, i de rigtige mapper. Denne Model-View-Controllerarkitektur vil blive forklaret yderligere i følgende \secref{subsec:mvc}.
 
 \input{indhold/6-implementering/mvc}

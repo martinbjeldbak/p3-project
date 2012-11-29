@@ -24,6 +24,28 @@ class UsersController < ApplicationController
   def login
   end
 
+  def reset_password
+    @user = User.new
+    if (params[:user])
+      user = User.find_by_email(params[:user][:email])
+      if (user)
+        rand_pass = Array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
+        user.password = rand_pass
+        user.password_confirmation = rand_pass
+        UserMailer.create_and_deliver_password_change(user, rand_pass).deliver
+        user.save!
+        flash[:success] = "Et nyt kodeord er blevet sendt til din email"
+      else
+        flash[:error] = "En bruger med den email kunne ikke findes"
+      end
+    end
+  #  @user = User.find_by_email(params[:email])
+  #  random_password = array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
+  #  @user.password = random_password
+  #  @user.save!
+  #  Mailer.create_and_deliver_password_change(@user, random_password)
+  end
+
   def create
     @user_created = User.new(params[:user])
     if @user_created.save
@@ -31,7 +53,13 @@ class UsersController < ApplicationController
 
       # Check if user has any saved items in the shopping list from session
       unless session[:list_items].nil?
-        session[:list_items].map { |listItem| listItem.user = @user_created; listItem.id = nil; listItem.save }
+        session[:list_items].map do |id, listItem|
+          if id.is_a? Integer
+            listItem.user = @user_created
+            listItem.id = nil
+            listItem.save
+          end
+        end
         session[:list_items] = nil
       end
 
@@ -72,7 +100,7 @@ class UsersController < ApplicationController
   # Mailer? http://api.rubyonrails.org/classes/ActionMailer/Base.html
   #def forgotPassword
   #  @user = User.find_by_email(params[:email])
-  #  random_password = Array.new(10).map { (65 + rand(58)).chr }.join
+  #  random_password = Array.new(10).map {((0..9).map{|x|x} + ('a'..'z').map{|x|x})[rand(36)]}.join
   #  @user.password = random_password
   #  @user.save!
   #  Mailer.create_and_deliver_password_change(@user, random_password)

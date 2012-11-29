@@ -18,8 +18,20 @@
 <div id="notification">
 </div>
 
+<div id="login-reminder">
+  <div class="img">
+    <img src="<%=image_path "arrow.png" %>" alt="Kig her" />
+  </div>
+  <div>
+    Husk at oprette en bruger for at gemme din indkøbsliste og favoritter.
+  </div>
+</div>
+
 <script type="text/javascript">
 <% flash.each do |key, value| %>
   flashMessage("<%=value.to_s.gsub('"', '\"') %>", "<%=key.to_s.gsub('"', '\"') %>", 10000);
+<% end %>
+<% if !logged_in? and session[:list_items] and session[:list_items].length > 1 %>
+  $("#login-reminder").fadeIn(300);
 <% end %>
 </script>

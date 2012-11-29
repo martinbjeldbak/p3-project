@@ -60,22 +60,22 @@
 \label{sec:#2}
 #3}
 
-\newcommand{\aktortabel}[4]{\tabelmedoverskrift{#1}{#2}{Formål: #3
+\newcommand{\aktortabel}[4]{\tabelmedoverskrift{#1}{#2}{\textbf{Formål:} #3
  
-Karakteristik: #4}}
+\textbf{Karakteristik:} #4}}
 
 \newcommand{\aktortabelEx}[5]{\aktortabel{#1}{#2}{#3}{#4 
 
-Eksempler: #5}}
+\textbf{Eksempler:} #5}}
 
-\newcommand{\brugtabel}[6]{\tabelmedoverskrift{#1}{#2}{Brugsmønster: #3
+\newcommand{\brugtabel}[6]{\tabelmedoverskrift{#1}{#2}{\textbf{Brugsmønster:} #3
 
-Objekter: #4
+\textbf{Objekter:} #4
 
-Funktioner: #5}
-\begin{figure}[htp]
+\textbf{Funktioner:} #5}
+\begin{figure}[H]
 \centering
-\scalebox{0.6}{
+\scalebox{0.9}{
 \input{billeder/brugsmoenstre/#2.pdf_tex}}
 \capt{#6}\label{fig:bm-#2}
 \end{figure}}

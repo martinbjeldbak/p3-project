@@ -14,7 +14,12 @@
   
   <h2><a href="<%= recipe.url %>"><%= recipe.name %></a></h2>
   <a href="<%= recipe.url %>">
-    <img src="<%= url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Færdiglavet ret">
+    <% if elias_mode? %>
+      <img src="<%= image_path "foodl-kontakt/Elias.jpg" %>" alt="Billede af færdiglavet ret" />
+  <% elsif %>
+    <img src="<%=url_for controller: :recipes, action: :picture, id: recipe.id %>" alt="Billede af elias" />
+  <% end %>
+
   </a>
   <div class="rating">
     <div style="width:<%= (recipe.calculate_rating ? recipe.calculate_rating : 0) * 100 %>%;"></div>
@@ -34,12 +39,12 @@
         <span data-value="<%= ingredient.quantity %>"><%= format_quantity(ingredient.quantity * 2) %></span> <%= ingredient.unit %>
       <% end %>
       
-      <%= ingredient.name %>
+      <%= ingredient.name %><a href="#" data-name="<%= ingredient.name %>" class="add-ingredient-to-list" title="Tilføj til indkøbsliste"></a>
     </li>
     <% end %>
   </ul>
   <div class="recipe-actions">
-    <a href="#" class="report-button ui-button-icon-only" title="Rapporter en fejl vedr. opskriften"></a>
+    <%= link_to "", {controller: 'issues', action: 'new'}, class: "fejlbox fancybox.ajax report-button ui-button-icon-only" %>
     <p> Tilberedningstid: <%= (recipe.prep_time > 60) ? "60+" : recipe.prep_time %> min. </p>
   </div>
 </li>
