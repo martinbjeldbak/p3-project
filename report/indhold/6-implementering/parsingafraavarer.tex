@@ -13,7 +13,7 @@ Da opskrifterne, der søges på, kommer fra Arla, ville det have været nemt hvi
 
 4 røde peberfrugter i store tern (ca. 500 g)
 
-En bruger, der indtaster teksten \textit{pe} i forsøget på at indtaste \textit{rød peberfrugt}, skal kun præsenteres for forskellige råvarer, og altså ikke samme råvare i forskellige mængder og former (skiver, strimler, hakket, m.m.). Det vil sige, at de mange forskellige ingredienser, der alle består af en rød peberfrugt, kun skal medføre at \textit{rød peberfrugt} findes én gang i råvaretabellen. Vi vurderede at Arlas navngivning af ingredienser har været for forskellig til blive brugt som kilde til vores råvaretabel. Råvaretabellen er i stedet blevet lavet ud fra en liste af råvarer offentliggjort af madopskrifter.nu. Et udpluk af listen ser således ud:
+En bruger, der indtaster teksten \textit{pe} i forsøget på at indtaste \textit{rød peberfrugt}, skal kun præsenteres for forskellige råvarer, og altså ikke samme råvare i forskellige mængder og former (skiver, strimler, hakket, m.m.). Det vil sige, at de mange forskellige ingredienser, der alle består af en rød peberfrugt, kun skal medføre at \textit{rød peberfrugt} findes én gang i råvaretabellen. Vi vurderede at Arlas navngivning af ingredienser har været for forskellig til blive brugt som kilde til vores råvaretabel. Råvaretabellen er i stedet blevet lavet ud fra en liste af råvarer offentliggjort af madopskrifter. Et udpluk af listen ser således ud:
 
 \begin{itemize}
 \item Rød peberfrugt
@@ -24,26 +24,26 @@ En bruger, der indtaster teksten \textit{pe} i forsøget på at indtaste \textit
 Listen fra madopskrifter.nu blev brugt som vores råvaretabel af følgende grunde:
 
 \begin{itemize}
-\item Listen indeholdt kun 4 dubletter, som selvfølgelig blev fjernet
+\item Listen indeholdt kun 4 dubletter, som blev fjernet
 \item Råvarerne indeholdt kun den rå råvare, ingen mængder eller andre betegnelser (vaskede, skrællede, m.m.)
 \item Listen omfattede 933 råvarer, hvilket vi anså som rigeligt
 \end{itemize}
 
 \subsubsection{Parsing af opskrifter}
-Råvaretabellen giver brugeren mulighed for at indtaste en mængde råvarer. Hvis han indtaster råvaren \textit{gulerødder}, skal han muligheden for at udføre en søgning, der finder alle opskrifter, der indeholder gulerødder. Det er derfor nødvendigt, ud fra alle ingredienser i en opskrift, at kunne afgøre hvilken af råvarerne i råvaretabellen, der er magen til. Som før nævnt er ingrediensernes navne i Arlas opskrifter meget inkonsistente. Derfor vil navnene kun i få tilfælde være helt ens. Det er derfor nødvendigt med en metode til at kunne sammenligne to tekster og bestemme hvor meget de minder om hinanden. Med en sådan metode vil det nemlig være muligt, for hver ingrediens at finde den råvare der minder mest om.
+Råvaretabellen giver brugeren mulighed for at indtaste en mængde råvarer. Hvis han indtaster råvaren \textit{gulerødder}, skal han have muligheden for at udføre en søgning, der finder alle opskrifter, der indeholder gulerødder. Det er derfor nødvendigt, ud fra alle ingredienser i en opskrift, at kunne afgøre hvilken af råvarerne i råvaretabellen, der er magen til. Som før nævnt er ingrediensernes navne i Arlas opskrifter meget inkonsistente. Derfor vil navnene kun i få tilfælde være helt ens. Det er derfor nødvendigt med en metode til at kunne sammenligne to tekster og bestemme hvor meget de minder om hinanden. Med en sådan metode vil det nemlig være muligt, for hver ingrediens at finde den råvare der minder mest om. Dette begreb vil i afsnittet blive kaldt for mapping. Metoden, vi bruger til at sammenligne to tekststrenge for lighed, vil vi fremover kalde\textit{CompareStrings}.
 
-Hvis tekstsammenligningsfunktionen køres hver gang der udføres en søgning, vil det stille høje krav til hastigheden af denne funktion, for at brugeren kan udføre en hurtig søgning. For ikke at sætte krav til hastigheden af funktionen, benytter vi en relationstabel. For hver opskrift fundet på Arla sammenligning vi hver enkelt ingrediens i opskriften med alle råvarerne i råvaretabellen med vores tekstsammenligningsfunktion. For hver ingrediens indsættes én relation mellem ingrediensen og den råvare i råvaretabellen, som ingrediensen bedst matcher ifølge vores tekstsammenlignignsfunktion. Når en bruger udfører en søgning, vil tekstsammenligningsfunktionen slet ikke blive benyttet. Det vil kun være nødvendigt at undersøge de indtastede råvares relationer til ingredienser, og blot præsentere de opskrifter, der er relateret til de fundne ingredienser, som et søgeresultat for brugeren.
+Hvis \textit{CompareStrings} køres hver gang der udføres en søgning, vil det stille høje krav til hastigheden af denne funktion, for at brugeren kan udføre en hurtig søgning. For ikke at sætte krav til hastigheden af funktionen, benytter vi en relationstabel. For hver opskrift fundet på Arla sammenligning vi hver enkelt ingrediens i opskriften med alle råvarerne i råvaretabellen med vores \textit{CompareStrings}. For hver ingrediens indsættes én relation mellem ingrediensen og den råvare i råvaretabellen, som ingrediensen bedst matcher ifølge vores \textit{CompareStrings}. Når en bruger udfører en søgning, vil \textit{CompareStrings} slet ikke blive benyttet. Det vil kun være nødvendigt at undersøge de indtastede råvares relationer til ingredienser, og blot præsentere de opskrifter, der er relateret til de fundne ingredienser, som et søgeresultat for brugeren.
 
 
-\subsubsection{Tekstsammenligningsfunktion}
+\subsubsection{Sammenligning af 2 tekststrenge}
 Der findes mange forskellige algoritmer til at sammenligne to tekststrenge for lighed. Det er vigtigt for os at finde en god og brugbar metode, der så korrekt som muligt kan mappe alle ingredienserne i Arlas opskrifter over til en passende råvare i vores råvaretabel. Det er ikke realistisk at opnå en 100 \% korrekt mapping. Vi har erfaret, at der nemt kan opstå problemer omkring ingredienser der minder meget om hinanden, som \fx ved mapping af ingrediensen \textit{hakket løg}. En parser vil have svært ved at vide, at \textit{hakket løg} skal mappes til råvaren \textit{løg} og ikke \textit{hakket oksekød}. En korrekt mapping vil i dette tilfælde kræve kendskab til at ordet \textit{hakket} er et udsagnsord og derfor bør fjernes før der forsøges at mappe. Men hvis vi vil mappe ingrediensen \textit{hakket oksekød}, så er det nødvendigt at ordet \textit{hakket} stadig indgår under mappingen (på trods af at det er et udsagnsord), fordi der findes mange former for oksekød og vi ønsker at skelne imellem de forskellige former.
 
 Vi har brugt tilfældigt udvalgte ingredienser fra Arlas opskrifter til at teste 5 forskellige metoder til tekstsammenligning. I mange tilfælde kunne alle 5 metoder mappe en ingrediens til en korrekt råvare. I enkelte tilfælde skete der dog en fejlmapping, hvilket kan ses i \tableref{table:mapping}.
 
-\paragraph{Forklaring af de forskellige tekstsammenligningsfunktioner}
+\paragraph{Forklaring af de forskellige \textit{CompareStrings} funktioner}
 \begin{enumerate}
 \item Egen algoritme (lineær)
-\item Egen algoritme (eksponentiel)
+\item Egen algoritme (polynomial)
 \item Levenshtein (1 point for slet, tilføj og udskift) %kilde ruby gem levenshtein.distance
 \item Levenshtein (1 point for slet, tilføj og udskift. Score divideres med længste streng) %kilde ruby gem levenshtein.normalized_distance
 \item Levenshtein (1 point for slet og tilføj. 2 point for udskift) %kilde ruby gem text.levenshtein.distance med modificeret vægt
@@ -54,47 +54,63 @@ Vi har brugt tilfældigt udvalgte ingredienser fra Arlas opskrifter til at teste
     \begin{tabular}{|p{2cm}|c|c|c|c|c|}
         \hline
         Ingrediens                                                 & Metode 1        & Metode 2                & Metode 3           & Metode 4           & Metode 5        \\ \hline
-        dildkvist                                                  & dild            & dild                    & dild               & sildefilet         & dild            \\ \hline
-        groft salt                                                 & salt            & citron saft             & frugtsaft          & frugtsaft          & salt            \\ \hline
-        grofthakkede krydderurter, fx koriander, persille og dild & krydderurtemix  & tikka (indisk krydderi) & hakkede tomater    & hakkede tomater    & hakkede tomater \\ \hline
-        basmatiris eller luftige urteris                           & basmati ris     & herbamare urtebouillon  & basmati ris        & basmati ris        & basmati ris     \\ \hline
-        ostindisk karry                                            & karrypasta      & kinaradise              & sød sherry         & sød sherry         & karry           \\ \hline
-        frisk salvie                                               & salvie          & salvie                  & fiskesauce         & fiskesauce         & salvie          \\ \hline
-        koncentreret tomatpure                                     & tomatpure       & tomatpure               & soltørrede tomater & soltørrede tomater & tomatpure       \\ \hline
-        hakket svinelever                                          & hakket svinekød & svinelever              & hakket svinekød    & hakket svinekød    & svinelever      \\ \hline
-        store kapers med stilk                                     & kapers          & syltede artiskokhjerter & trefarvet is       & trefarvet is       & kapers          \\ \hline
-        hvidvin fx rieslin                                         & hvidvin         & hvidvin                 & hvidvinseddike     & hvidvinseddike     & hvidvin         \\ \hline
-        friskpresset limesaft                                      & limesaft        & limesaft                & appelsinsaft       & appelsinsaft       & limesaft        \\ \hline
-        kartoffel                                                  & kartofler       & kartofler               & kartofler          & kartofler          & kartoffelmel    \\ \hline
+        dildkvist                                                  & \textbf{dild}            & \textbf{dild}                    & \textbf{dild}               & sildefilet         & dild            \\ \hline
+        groft salt                                                 & \textbf{salt}            & citron saft             & frugtsaft          & frugtsaft          & \textbf{salt}            \\ \hline
+        grofthakkede krydderurter, fx koriander, persille og dild & \textbf{krydderurtemix}  & \textbf{tikka (indisk krydderi)} & hakkede tomater    & hakkede tomater    & hakkede tomater \\ \hline
+        basmatiris eller luftige urteris                           & \textbf{basmati ris}     & herbamare urtebouillon  & \textbf{basmati ris}        & \textbf{basmati ris}        & \textbf{basmati ris}     \\ \hline
+        ostindisk karry                                            & \textbf{karrypasta}      & kinaradise              & sød sherry         & sød sherry         & \textbf{karry}           \\ \hline
+        frisk salvie                                               & \textbf{salvie}          & \textbf{salvie}                  & fiskesauce         & fiskesauce         & \textbf{salvie}          \\ \hline
+        koncentreret tomatpure                                     & \textbf{tomatpure}       & \textbf{tomatpure}               & soltørrede tomater & soltørrede tomater & \textbf{tomatpure}       \\ \hline
+        hakket svinelever                                          & hakket svinekød & \textbf{svinelever}              & hakket svinekød    & hakket svinekød    & \textbf{svinelever}      \\ \hline
+        store kapers med stilk                                     & \textbf{kapers}          & syltede artiskokhjerter & trefarvet is       & trefarvet is       & \textbf{kapers}          \\ \hline
+        hvidvin fx rieslin                                         & \textbf{hvidvin}         & \textbf{hvidvin}                 & hvidvinseddike     & hvidvinseddike     & \textbf{hvidvin}         \\ \hline
+        friskpresset limesaft                                      & \textbf{limesaft}        & \textbf{limesaft}                & appelsinsaft       & appelsinsaft       & \textbf{limesaft}        \\ \hline
+        kartoffel                                                  & \textbf{kartofler}       & \textbf{kartofler}               & \textbf{kartofler}          & \textbf{kartofler}          & kartoffelmel    \\ \hline
         ~                                                          & ~               & ~                       & ~                  & ~                  & ~               \\ \hline
         Total:                                                     & 11              & 7                       & 3                  & 2                  & 10              \\
         \hline
     \end{tabular}
-  \caption{Test af flere forskellige tekstsammenligningsfunktioner brugt til at mappe en ingrediens til en råvare. Fed skrift betyder at begge vores informanter har godkendt mappingen.}  \label{table:test-af-compares}
+  \caption{Test af flere forskellige CompareStrings brugt til at mappe en ingrediens til en råvare. Fed skrift betyder at begge vores informanter har godkendt mappingen.}  \label{table:test-af-compares}
 \end{table}
 
-Som det ses i \tableref{table:test-af-compares}, var metode 1 den, der gav den bedste mapping. Metoden fik 11 rigtige ud af 12 mulige, men det bør bemærkes at sammenligningen kun er foretaget på de ingredienser, som mindst én metode mappede forkert. Vi kom forbi 56 ingredienser udover de ingredienser vist her, før vi havde 12 ingredienser til sammenligningen, som én eller flere metoder mappede forkert. 
+Som det ses i \tableref{table:test-af-compares}, var metode 1 den, der gav den bedste mapping. Metoden fik 11 rigtige ud af 12 mulige, men det bør bemærkes at sammenligningen kun er foretaget på de ingredienser, som mindst én metode mappede forkert. Vi kom forbi 56 ingredienser udover de ingredienser vist i tabellen, før vi tilsammen havde 12 ingredienser, som én eller flere metoder mappede forkert. 
 
-Metode 1 er en algoritme vi selv har udviklet, der er beskrevet med pseudokode i \algref{alg:parsing}. Den tager to tekststrenge som input, og returnerer en værdi mellem 0 og 100. Højere returværdi betyder større lighed mellem de to inputtede strenge. 100 point opnås kun ved identiske strenge.
+Metode 1 er en algoritme vi selv har udviklet, der er beskrevet med pseudokode i \algref{alg:compare}. Den tager to tekststrenge som input, og returnerer en værdi mellem 0 og 100. Højere returværdi betyder større lighed mellem de to inputtede strenge. 100 point opnås kun ved to identiske strenge.
 Her ses et eksempel på hvordan algoritmen sammenligner \textit{hummersuppe} med \textit{suppe med hummerhale}:
 
-
-\begin{algorithm} [H]
-	\capt{Algoritmen udregner hvor ens to tekststrenge er.}
-	\label{alg:parsing}
-	\input{pseudokode/parsing}
-\end{algorithm}
-
-Et eksempel på hvordan algoritmen virker:
 \begin{table}
     \begin{tabular}{|l|l|l|}
         \hline
         str1        & str2                  & ~                             \\ \hline
-        \textbf{hummer}suppe & suppe med \textbf{hummer}haler & max_length = 21               \\ 
-        \textbf{suppe}       & \textbf{suppe} med haler       & score = 36                    \\ 
-        ~           &  med haler            & score = 36 + 25 = 61          \\ 
-        ~           & ~                     & max_score = 21 * 21  = 441    \\ 
-        ~           & ~                     & score = 61 / 441 * 100 = 13.8 \\
+hummersuppe & suppe med hummerhaler & $max\_length = 21$               \\         
+        \textbf{hummer}suppe & suppe med \textbf{hummer}haler & $score = 6^2 = 36$               \\ 
+        \textbf{suppe}       & \textbf{suppe} med haler       & $score = score + 5^2 = 36 + 25 = 61$                 \\ 
+        ~           &  med haler            & $no common substrings found$        \\ 
+        ~           & ~                     & $max\_score = 21^2  = 441$    \\ 
+        ~           & ~                     & $return \frac{61 \times 100}{441} = 13.8$ \\
         \hline
     \end{tabular}
 \end{table}
+
+Metode 2 var magen til metode 1, bortset fra at scoren blev forøget lineært i stedet for opløftet i anden. Se linje 7, \algref{alg:compare}. På samme måde blev variablen $max\_score$ i linje 5 også beregnet lineært.
+
+\begin{algorithm} [H]
+	\capt{Algoritmen udregner hvor ens to tekststrenge er.}
+	\label{alg:compare}
+	\input{pseudokode/parsing}
+\end{algorithm}
+
+
+
+\subsubsection{Mapping af ingredienser til råvarer}
+Mappingen omfattede 10,234 ingredienser, blandt 921 opskrifter. Indimellem gik mappingen galt, fx. blev ingrediensen \textit{groftkværnet peber} mappet til råvaren \textit{hvid peber} i stedet for råvaren \textit{peber}. For at få en bedst muligt mapping besluttede vi os for at gå opskrifterne igennem manuelt. Under mappingen havde vi gemt returværdien af \textit{CompareStrings(string, string)}, netop for ikke at behøve at kontrollere dem med en match på 100 \%. På denne måde kunne vi se bort fra 1,236 ingredienser.
+Til at mappe ingredienserne hurtigst muligt lavede vi et meget simpelt WinForms program med Visual Studio, skrevet i C\#. Programmet gjorde det muligt at få vist 20 labels med ignredienser. Ud for hvert label blev vist et tekstfelt med den råvare, som ingrediensen var blevet mappet til. Ved at ændre i tekstfeltet kunne man hurtigt få lavet en korrekt mapping. Vi tilføjede flere funktionaliteter for at øge hastigheden vi kunne mappe med.
+\begin{itemize}
+\item Ingredienserne blev sorteret alfabetisk. Omkring 120 ingredienser i træk var \textit{grofthakket peber}.
+\item Autocomplete gjorde det nemt at se hvilke råvarer man kunne vælge imellem og også hurtigere at indtaste råvaren.
+\item Råvarer kunne tilføjes hvis ingen fandtes, der matchede en given ingrediens.
+\item Ingredienser som \fx \textit{grillspyd} og \textit{lagkageflag} kunne fjernes i programmet.
+\item En hel side kunne godkendes med ét klik, hvis alt var mappet korrekt på forhånd.
+\end{itemize}
+
+Tidsforbruget på remappingen var ca. 6 mandetimer, hvilket kan omregnes til $\frac{10234 - 1236}{6} = 1500$ ingredienser pr. mandetime.
