@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Nov 12 14:23:44 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Nov 28 17:54:28 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -178,7 +178,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[168, 248, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[16, 48, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-84-25-19--97-af2ca71:13af437f640:-8000:000000000000295A"
        fill="1"
        fillcolor="black"
@@ -189,8 +189,8 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="176"
-      y="256"
+      x="24"
+      y="56"
       rx="8"
       ry="8"
       fill="0"
@@ -199,8 +199,8 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="176"
-      y="256"
+      x="24"
+      y="56"
       rx="8"
       ry="8"
       fill="1"
@@ -210,7 +210,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[224, 232, 74, 40]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[56, 40, 72, 32]pathVisible=false;stereotypeView=0;"
        href="-84-25-19--97-af2ca71:13af437f640:-8000:000000000000295B"
        fill="1"
        fillcolor="white"
@@ -221,10 +221,10 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="224"
-      y="232"
-      width="74"
-      height="40"
+      x="56"
+      y="40"
+      width="72"
+      height="32"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -232,10 +232,10 @@
       rounding="16"
     />
     <rectangle name="Fig1.1"
-      x="224"
-      y="232"
-      width="74"
-      height="40"
+      x="56"
+      y="40"
+      width="72"
+      height="32"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -243,10 +243,10 @@
       rounding="16"
     />
     <text name="Fig1.2"
-      x="226"
-      y="232"
-      width="70"
-      height="23"
+      x="58"
+      y="40"
+      width="68"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -284,14 +284,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="183"
-              y="255" />
-      <lineto x="224"
-              y="255" />
+      <moveto x="31"
+              y="57" />
+      <lineto x="56"
+              y="57" />
     </path>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[440, 232, 105, 40]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[160, 40, 64, 32]pathVisible=false;stereotypeView=0;"
        href="-84-25-19--97-af2ca71:13af437f640:-8000:000000000000295E"
        fill="1"
        fillcolor="white"
@@ -302,10 +302,10 @@
     </private>
     
     <rectangle name="Fig3.0"
-      x="440"
-      y="232"
-      width="105"
-      height="40"
+      x="160"
+      y="40"
+      width="64"
+      height="32"
       fill="1"
       fillcolor="255 0 255"
       stroke="0"
@@ -313,10 +313,10 @@
       rounding="16"
     />
     <rectangle name="Fig3.1"
-      x="440"
-      y="232"
-      width="105"
-      height="40"
+      x="160"
+      y="40"
+      width="64"
+      height="32"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -324,10 +324,10 @@
       rounding="16"
     />
     <text name="Fig3.2"
-      x="442"
-      y="232"
-      width="101"
-      height="23"
+      x="162"
+      y="40"
+      width="60"
+      height="24"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -365,10 +365,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="297"
-              y="240" />
-      <lineto x="440"
-              y="240" />
+      <moveto x="96"
+              y="40" />
+      <lineto x="96"
+              y="24" />
+      <lineto x="184"
+              y="24" />
+      <lineto x="184"
+              y="40" />
     </path>
   </group>
   <group name="Fig5"
@@ -396,10 +400,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="440"
-              y="264" />
-      <lineto x="297"
-              y="264" />
+      <moveto x="184"
+              y="71" />
+      <lineto x="184"
+              y="88" />
+      <lineto x="96"
+              y="88" />
+      <lineto x="96"
+              y="71" />
     </path>
   </group>
 </pgml>
