@@ -15,8 +15,8 @@ module ApplicationHelper
       current_user.favorites.size
     elsif session[:favored]
       session[:favored].count
-		else
-		  0
+    else
+      0
     end
   end
 
