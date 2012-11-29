@@ -287,12 +287,14 @@ $(function() {
       var $currentListCount = parseInt($currentList.text(), 10);
       $currentList.text($currentListCount + 1);
 	
-      
-	  recipeName = $(this).data("name");
+	  ing_id = $(this).data("ing_id");
+	  ing_scale = $('#amount').html();  //get the scaling
+
+	  
       $.ajax({
-          url: "/list/add",
+          url: "/list/addingredientfromid",
           type: "POST",
-          data: {name: recipeName},
+          data: {id: ing_id, scale: ing_scale},
           dataType: "json",
           success: function(response) {
             stopLoading();
