@@ -12,6 +12,7 @@ div.blue_line_horisontal {
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  clear:left;
 }
 
 div.blue_line_vertical {
@@ -41,10 +42,15 @@ div.blue_line_vertical {
   margin-right: auto;
 
   ul li {
-    font-family: 'Crafty Girls';
+    font-family: 'Crafty Girls', fantasy;
     font-size: 20px;
     text-align: left;
     padding-left: 110px;
+  }
+
+  ul li div {
+    float:left;
+    width:370px;
   }
 
   ul {

@@ -1,10 +1,10 @@
 module ApplicationHelper
 
-  def listCount
+  def list_count
     if logged_in?
       "#{current_user.list_items.count}"
     elsif session[:list_items]
-      "#{session[:list_items].count}"
+      "#{session[:list_items].count - 1}"
     else
       "0"
     end
@@ -13,6 +13,8 @@ module ApplicationHelper
   def num_favorites
     if logged_in?
       current_user.favorites.size
+    elsif session[:favored]
+      session[:favored].count
     else
       0
     end

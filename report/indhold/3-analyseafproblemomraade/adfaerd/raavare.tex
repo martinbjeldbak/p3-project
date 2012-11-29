@@ -1,8 +1,12 @@
-\paragraph{Råvare}
-Når nogen i sin husstand køber en råvare, \fx i et supermarked, indtræffer hændelsen \textit{råvare købt} netop. I den forbindelse kommer et råvare-objekt til verdenen. Denne råvare er klar til at blive brugt, hvilket vil sige at råvaren har tilstanden \textit{brugbar}, indtil den havner i sin sluttilstande ved at man enten smider råvaren ud eller er har opbrugt den helt. Disse to hændelser kaldes i nævnte rækkefølge \textit{råvare smidt ud} og \textit{råvare opbrugt}.
-\begin{figure}[htp]
-\centering
-\scalebox{0.6}{
-\input{billeder/tilstandsdiagrammer/raavare.pdf_tex}}
-\capt{Tilstandsdiagram for Råvare-klassens adfærdsmønstre}\label{fig:raavare-adfaerd}
+\subsection{Råvare}
+Når nogen i sin husstand køber en råvare, indtræffer hændelsen \textit{råvare købt}. Denne hændelse fører råvare-klassen i en ny tilstand, der hedder \textit{brugbar}. Denne råvare er klar til at blive brugt. Inden der bliver handlet ind, og inden der sker et tilstandsskift, så er råvaren i en tidligere tilstand, der hedder \textit{eksisterer}. Dette tilstandsdiagram har ikke en afsluttendde hændelse, fordi vi har vurderet, at en råvare altid vil eksistere. Men den er først brugbar, når man har købt den. 
+
+Indehaverne af en råvare har nu to muligheder. Man kan enten bruge hele råvaren, eller man ende med at smide noget af den ud. Disse to hændelser har vi samlet under en fælles hændelse, som vi kalder \textit{råvare opbrugt}. Denne hændelse fører klassen i en gammel tilstand, der hedder \textit{eksisterer}, da den ikke længere er brugbar i husstanden. Se \figref{fig:raavare-adfaerd}.
+
+\begin{figure}[H]
+	\centering
+	\scalebox{0.8}{
+	\input{billeder/tilstandsdiagrammer/raavare.pdf_tex}}
+	\capt{Tilstandsdiagram for klassen råvare. De afrundede rektangulære bokse med tekst, skal anses som tilstande, som klassen kan have. De pile, der fører til en tilstand, skal anses som hændelser, som kan være skyld i et tilstandsskift. I dette tilfælde har klassen to tilstande (eksisterer) og (brugbar). Dette tilstandsdiagram har ikke en afsluttendde hændelse.}
+	\label{fig:raavare-adfaerd}
 \end{figure}

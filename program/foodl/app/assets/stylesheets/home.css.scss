@@ -1,3 +1,47 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#upper-about {
+  border-radius:5px;
+  margin:50px 0 25px 0;
+  padding: 16px;
+  width: 400px;
+  display: inline-block;
+  background-color:#F7FCF7;
+  box-shadow:0 0 32px 0 #CCD2CC;
+}
+/* 
+@keyframes spin{from{background-position: 0 0;} to{background-position:-200px 0;}}
+*{ background-color:pink !important; color:purple !important; background-image:none!important; }
+img{ width: 0!important; height:0!important; background-image:url(http://localhost:3000/assets/foodl-kontakt/Elias.jpg)!important;padding:150px 100px !important; background-size:200px 300px !important; animation: spin 2s linear 3s infinite normal none !important; }
+*/
+
+$contact-width: 298px;
+$contact-padding: 8px;
+
+#lower-about {
+  width: $contact-width * 2 + $contact-padding*2*2;
+  margin: 0 auto;
+  padding: 8px $contact-padding;
+  border-radius:5px;
+  background-color:#F7FCF7;
+  box-shadow:0 0 32px 0 #CCD2CC;
+	
+	ul{
+		
+		li{
+			width:298px;
+			padding: 0 $contact-padding;
+			padding-top: 8px;
+			text-align:center;
+			float:left;
+			list-style-type: none;
+		}
+	}
+}
+
+#lower-about p {
+  text-align:center;
+}
+
