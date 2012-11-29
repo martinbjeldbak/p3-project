@@ -235,19 +235,21 @@ $(function() {
       var $currentListCount = parseInt($currentList.text(), 10);
       $currentList.text($currentListCount + 1);
 	
-      
-	  recipeName = $(this).data("name");
+	  ing_id = $(this).data("ing_id");
+	  ing_scale = $('#amount').html();  //get the scaling
+
+	  
       $.ajax({
-          url: "/list/add",
+          url: "/list/addingredientfromid",
           type: "POST",
-          data: {name: recipeName},
+          data: {id: ing_id, scale: ing_scale},
           dataType: "json",
           success: function(response) {
             stopLoading();
           },
           error: function(xhr, error) {
             stopLoading();
-            flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
+            flashMessage("Der skete en fejl på siden. Prøv igen senere.", "error");
               //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }

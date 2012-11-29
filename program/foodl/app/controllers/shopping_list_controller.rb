@@ -22,7 +22,7 @@ class ShoppingListController < ApplicationController
   end
 
   def create
-    @listItem = ListItem.new(name: params[:name])
+    listItem = ListItem.new(name: params[:name])
 
     if logged_in?
       @listItem.user = current_user
@@ -45,21 +45,45 @@ class ShoppingListController < ApplicationController
       end
     end
   end
+  
+  def add_ingredient_from_id
+    ing = Ingredient.find_by_id(params[:id])
+    listItem = ingredient_to_list_item(ing)
+	listItem.quantity = listItem.quantity.to_f * params[:scale].to_f #if something has been scaled
+    if logged_in?
+      listItem.user = current_user
+      if listItem.save
+        render json: listItem
+      else
+        render json: listItem.errors
+      end
+    else
+      session[:list_items] ||= {id: 0}
+      listItem.id = session[:list_items][:id]
+      session[:list_items][listItem.id] = listItem
+      session[:list_items][:id] += 1
+      if session[:list_items].has_value?(listItem)
+        render json: listItem
+      else
+        render json: listItem.errors
+      end
+    end
+  end
 
   def remove
     if logged_in?
-      @listItem = ListItem.find_by_id(params[:id])
+      listItem = ListItem.find_by_id(params[:id])
 
-      if @listItem.destroy # and @listItem.user == current_user
-        render json: @listItem
+      if listItem.destroy # and @listItem.user == current_user
+        render json: listItem
       else
-        render json: @listItem.errors
+        render json: listItem.errors
       end
     else
       if session[:list_items].delete(params[:id].to_i)
-        render json: @listItem
+        render json: listItem
       else
-        render json: @listItem.errors
+        render json: listItem.errors
       end
     end
   end
@@ -124,6 +148,6 @@ class ShoppingListController < ApplicationController
   private
 
   def ingredient_to_list_item(ingredient)
-    ListItem.new(name: ingredient.name, quantity: ingredient.quantity, unit: ingredient.unit)
+	ListItem.new(name: ingredient.name, quantity: ingredient.quantity, unit: ingredient.unit)
   end
 end
