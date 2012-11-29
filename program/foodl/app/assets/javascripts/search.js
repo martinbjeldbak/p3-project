@@ -58,7 +58,7 @@ $(function() {
       .removeClass('ui-state-default')
       .addClass('ui-dialog-titlebar-close');
 	  
-	 $( ".add-ingredient-to-list" ).button({
+	$( ".add-ingredient-to-list" ).button({
       icons: {
         primary: "ui-icon-plus"
       },
@@ -74,12 +74,12 @@ $(function() {
   
   $('#search-form').parent().find(">ul").children().each(
 	function(index, element){
-		addFoodType( $(this).text() );
-		var removeButton = $(this).find(">a").listRemoveButton();
-        removeButton.click(function() {
-          removeFoodType($(this).parent().text());
-          $(this).parent().remove();
-        });
+      addFoodType( $(this).text() );
+      var removeButton = $(this).find(">a").listRemoveButton();
+      removeButton.click(function() {
+        removeFoodType($(this).parent().text());
+        $(this).parent().remove();
+      });
 	}
   );
  
@@ -113,6 +113,7 @@ $(function() {
         removeButton.click(function() {
           removeFoodType($(this).parent().data('value'));
           $(this).parent().remove();
+          return false;
         });
         listItem.append(removeButton);
         $('#search-form').parent().find(">ul").append(listItem);
@@ -135,7 +136,43 @@ $(function() {
   var checkboxValue = 0;
   var radioValue = '';
 
-  getNewRecipes = function() {
+  var stateUpdated = function(value, checkboxValue, radioValue) {
+    var q = $.bbq.getState('q');
+    var r = parseInt($.bbq.getState('r'));
+    var s = $.bbq.getState('s');
+    return value != q || checkboxValue != r || radioValue != s;
+  }
+
+  var updateControls = function(value, checkboxValue, radioValue) {
+    if (value) {
+      var types = value.split("|");
+    }
+    else {
+      var types = [];
+    }
+    types.forEach(function(foodType, i) {
+      if (foodType != '') {
+        if (addFoodType(foodType)) {
+          var listItem = $('<li />');
+          listItem.html(foodType);
+          listItem.data('value', foodType);
+          var removeButton = $('<a />').attr('href', '#').listRemoveButton();
+          removeButton.click(function() {
+            removeFoodType($(this).parent().data('value'));
+            $(this).parent().remove();
+            return false;
+          });
+          listItem.append(removeButton);
+          $('#search-form').parent().find(">ul").append(listItem);
+        }
+      }
+    });
+    $("#prep-time input").each(function() {
+      $(this).next().click();
+    });
+  }
+
+  var getNewRecipes = function() {
     var value = '';
     foodTypes.forEach(function(foodType, i) {
       value += foodType + "|";
@@ -147,6 +184,9 @@ $(function() {
       data: {q: value, r: checkboxValue, s: radioValue},
       dataType: 'text',
       success: function(data) {
+        if (stateUpdated(value, checkboxValue, radioValue)) {
+          $.bbq.pushState({q: value, r: checkboxValue, s: radioValue});
+        }
         $("#recipe-result ul").html(data);
         setupButtons();
 		$("html, body").animate({ scrollTop: 0 }, 1000);
@@ -154,10 +194,22 @@ $(function() {
       },
       error: function(xmlHttpderp, error) {
         stopLoading();
-        flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
+        flashMessage("Der skete en fejl på siden. Prøv igen senere.", "error");
       }
     });
   };
+
+/*  $(window).bind("hashchange", function(e) {
+    var q = $.bbq.getState('q');
+    var r = parseInt($.bbq.getState('r'));
+    var s = $.bbq.getState('s');
+    if (stateUpdated(q, checkboxValue, radioValue)) {
+      checkboxValue = r;
+      radioValue = s;
+      updateControls(q, checkboxValue, radioValue);
+      getNewRecipes();
+    }
+  });*/
 
   $("#sidebar #search-form").submit(function() {
     if ($("#search-form .submit-button").attr('disabled') == 'disabled') {
@@ -198,33 +250,33 @@ $(function() {
   });
 
   $('.shopping-button').on("click", function() {
-      $(this).hide();
+    $(this).hide();
 
-      var $recipeID = $('.shopping-button').data('id');
-      var $ingCount = parseInt($('.shopping-button').data('count'), 10);
+    var $recipeID = $('.shopping-button').data('id');
+    var $ingCount = parseInt($('.shopping-button').data('count'), 10);
 
-      var $currentList = $('#num_list_items');
-      var $currentListCount = parseInt($currentList.text(), 10);
+    var $currentList = $('#num_list_items');
+    var $currentListCount = parseInt($currentList.text(), 10);
 
-      $currentList.text($ingCount + $currentListCount);
+    $currentList.text($ingCount + $currentListCount);
 
-      startLoading();
-      $.ajax({
-          url: "/list/addrecipe",
-          type: "POST",
-          data: {id: $recipeID},
-          dataType: "json",
-          success: function(response) {
-            stopLoading();
-          },
-          error: function(xhr, error) {
-            stopLoading();
-            flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
-              //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
-              //$(document.body).html(xhr.responseText);
-          }
-      });
-      return false;
+    startLoading();
+    $.ajax({
+      url: "/list/addrecipe",
+      type: "POST",
+      data: {id: $recipeID},
+      dataType: "json",
+      success: function(response) {
+        stopLoading();
+      },
+      error: function(xhr, error) {
+        stopLoading();
+        flashMessage("Der skete en fejl på siden. Prøv igen senere.", "error");
+          //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
+          //$(document.body).html(xhr.responseText);
+      }
+    });
+    return false;
   });
   
   $('.add-ingredient-to-list').live("click", function() {
@@ -247,7 +299,7 @@ $(function() {
           },
           error: function(xhr, error) {
             stopLoading();
-            flashMessage("Der skette en fejl på siden. Prøv igen senere.", "error");
+            flashMessage("Der skete en fejl på siden. Prøv igen senere.", "error");
               //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
               //$(document.body).html(xhr.responseText);
           }
@@ -255,6 +307,12 @@ $(function() {
       return false;
   });
   
+
+/*  if ($.deparam.fragment()) {
+    checkboxValue = parseInt($.bbq.getState('r'));
+    radioValue = $.bbq.getState('s');
+    getNewRecipes();
+  }*/
   
 });
 
