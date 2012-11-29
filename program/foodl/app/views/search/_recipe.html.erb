@@ -39,7 +39,7 @@
         <span data-value="<%= ingredient.quantity %>"><%= format_quantity(ingredient.quantity * 2) %></span> <%= ingredient.unit %>
       <% end %>
       
-      <%= ingredient.name %><a href="#" data-name="<%= ingredient.name %>" class="add-ingredient-to-list" title="Tilføj til indkøbsliste"></a>
+      <%= ingredient.name %><a href="#" data-ing_id="<%= ingredient.id %>" class="add-ingredient-to-list" title="Tilføj til indkøbsliste"></a>
     </li>
     <% end %>
   </ul>

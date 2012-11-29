@@ -63,6 +63,20 @@ class UsersController < ApplicationController
         session[:list_items] = nil
       end
 
+      # Check if user has any saved items in the shopping list from session
+      unless session[:favored].nil?
+        session[:favored].each do |fav|
+		  #NOTE: this is replicated in favorites_controller!
+          recipe = Recipe.find_by_id(fav.to_i)
+		  if recipe
+		    current_user.favorites << recipe
+			recipe.rating = recipe.rating ? (recipe.rating + 1) : 1
+			recipe.save
+		  end
+        end
+        session[:favored] = nil
+      end
+
       flash[:success] = "Velkommen til foodl, #{@user_created.email.split('@')[0]}!"
       redirect_to root_path
     else
