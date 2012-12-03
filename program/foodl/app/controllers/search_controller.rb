@@ -82,7 +82,7 @@ class SearchController < ApplicationController
   def autocomplete_food_types
     orderBy = FoodType.send(
       :sanitize_sql_array,
-      ["case when name LIKE ? then 1 else 0 end DESC", params[:q] ]
+      ["case when name LIKE ? then 1 else 0 end DESC, case when name LIKE ? then 1 else 0 end DESC, LENGTH(name) ASC", params[:q], params[:q] + "%" ]
     )
     names = FoodType.select(:name)
       .where("name LIKE ?", "%" + params[:q] + "%")

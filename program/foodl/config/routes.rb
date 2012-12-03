@@ -85,6 +85,7 @@ Foodl::Application.routes.draw do
   # Issues
   match '/issues', to: 'issues#index'
   match '/issues/new', to: 'issues#new'
+  match '/issues/create', to: 'issues#create'
 
   match '/search/autocomplete/:q', to: 'search#autocomplete_food_types'
 
