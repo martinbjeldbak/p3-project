@@ -14,15 +14,26 @@ class IssuesController < ApplicationController
   def new
     @issue = Issue.new
 
-    @issue.user = current_user
-
     # issue_category: IssueCategory.find_by_name(params[:name]),
 
     render partial: 'issues/report_form', layout: false
   end
 
   def create
+    @issue_created = Issue.new
+    @issue_created.issue_category =  IssueCategory.find_by_id(params[:issue][:issue_category_id])
 
+    if logged_in?
+      @issue_created.user = current_user
+
+      if @issue_created.save
+        render json: @issue_created
+      else
+        render json: @issue_created.errors
+      end
+    else
+      render json: true
+    end
   end
 
   private

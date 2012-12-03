@@ -1,6 +1,6 @@
 <div id="report-issue-form">
-  <%= form_for @issue do |f| %>
-    <p><%= f.collection_select(:issue_category_id, IssueCategory.all, :id, :name, options ={:prompt => "Vælg en fejltype:"}) %></p>
+  <%= form_for @issue, url: {action: 'create'} do |f| %>
+    <p><%= f.collection_select(:issue_category, IssueCategory.all, :id, :name, options ={:prompt => "Vælg en fejltype:"}) %></p>
     <p id="descriptionBox"><%= f.label "Beskrivelse:" %>
     <%= f.text_field(:description)%></p>
     <p><%= f.submit "Indmeld" %></p>
