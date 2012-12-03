@@ -38,7 +38,7 @@ $(function() {
        dataType: "JSON",
        success: function(responseItem) {
          stopLoading();
-
+         //TODO: roflmincopter - not done
 
        },
        error: function(xhr, error) {
