@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="436" version="1.1" width="367" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#ffffff" points="14,102 140,102 140,125 189,125 189,301 14,301 14,102" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="126" x="14" y="102"/>
+<text font-family="Dialog" font-size="12" x="19" y="115">
+Funktioner</text>
+<rect fill="none" height="176" stroke="#000000" stroke-width="1" width="175" x="14" y="125"/>
+<polygon fill="#ffffff" points="222,366 300,366 300,389 349,389 349,420 222,420 222,366" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="78" x="222" y="366"/>
+<text font-family="Dialog" font-size="12" x="227" y="379">
+Webcrawler</text>
+<rect fill="none" height="31" stroke="#000000" stroke-width="1" width="127" x="222" y="389"/>
+<polygon fill="#ffffff" points="214,246 301,246 301,269 350,269 350,301 214,301 214,246" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="87" x="214" y="246"/>
+<text font-family="Dialog" font-size="12" x="219" y="259">
+Opskriftsside</text>
+<rect fill="none" height="32" stroke="#000000" stroke-width="1" width="136" x="214" y="269"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="366" y2="361"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="356" y2="351"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="346" y2="341"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="336" y2="331"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="326" y2="321"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="316" y2="311"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="262" x2="262" y1="306" y2="302"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="269" x2="262" y1="314" y2="302"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="255" x2="262" y1="314" y2="302"/>
+<polygon fill="#ffffff" points="22,222 116,222 116,245 165,245 165,276 22,276 22,222" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="94" x="22" y="222"/>
+<text font-family="Dialog" font-size="12" x="27" y="235">
+ActiveRecord</text>
+<rect fill="none" height="31" stroke="#000000" stroke-width="1" width="143" x="22" y="245"/>
+<polygon fill="#ffffff" points="22,134 114,134 114,157 163,157 163,188 22,188 22,134" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="92" x="22" y="134"/>
+<text font-family="Dialog" font-size="12" x="27" y="147">
+Controller</text>
+<rect fill="none" height="31" stroke="#000000" stroke-width="1" width="141" x="22" y="157"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="189" y2="194"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="199" y2="204"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="209" y2="214"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="219" y2="222"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="79" x2="86" y1="210" y2="222"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="93" x2="86" y1="210" y2="222"/>
+<polygon fill="#ffffff" points="14,14 135,14 135,37 184,37 184,67 14,67 14,14" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="121" x="14" y="14"/>
+<text font-family="Dialog" font-size="12" x="19" y="27">
+Brugergrænseflade</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="170" x="14" y="37"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="68" y2="73"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="78" y2="83"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="88" y2="93"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="98" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="79" x2="86" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="93" x2="86" y1="90" y2="102"/>
+<polygon fill="#ffffff" points="14,318 132,318 132,341 181,341 181,421 14,421 14,318" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="118" x="14" y="318"/>
+<text font-family="Dialog" font-size="12" x="19" y="331">
+Model</text>
+<rect fill="none" height="80" stroke="#000000" stroke-width="1" width="167" x="14" y="341"/>
+<polygon fill="#ffffff" points="22,358 108,358 108,381 157,381 157,411 22,411 22,358" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="86" x="22" y="358"/>
+<text font-family="Dialog" font-size="12" x="27" y="371">
+Database</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="135" x="22" y="381"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="277" y2="282"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="287" y2="292"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="297" y2="302"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="307" y2="312"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="317" y2="322"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="327" y2="332"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="337" y2="342"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="347" y2="352"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="86" x2="86" y1="357" y2="358"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="79" x2="86" y1="346" y2="358"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="93" x2="86" y1="346" y2="358"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="222" x2="217" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="212" x2="207" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="202" x2="197" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="192" x2="187" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="182" x2="177" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="172" x2="167" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="162" x2="158" y1="398" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="170" x2="158" y1="391" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="170" x2="158" y1="405" y2="398"/>
+</svg>
