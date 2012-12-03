@@ -2,9 +2,7 @@
 
 class IngredientMapper
 
-require "levenshtein"
-
-@@warn_below = 1	#puts a warning in the console if an ingredient is mapped with a match below this. Match is in range (0-100)
+require "levenshtein" #a module that provides the levenshtein function for finding difference between 2 strings
 
 	def self.Map(str) #returns [id, match_percent, name] of the best matching food type	
 		best_match = -1
@@ -35,9 +33,9 @@ require "levenshtein"
 			match = []
 			match << TextComparer.Compare(str, name)
 			match << TextComparer.Compare2(str, name)
-			match << -Levenshtein::distance(str.downcase.force_encoding("UTF-8"), name.downcase.force_encoding("UTF-8"))
-			match << -Levenshtein::normalized_distance(str.downcase.force_encoding("UTF-8"), name.downcase.force_encoding("UTF-8"))
-			match << -TextComparer.Compare3(str, name)
+			match << TextComparer.Compare3(str, name)
+			match << TextComparer.Compare4(str, name)
+			match << TextComparer.Compare5(str, name)
 			for i in 0...best_match.length do
 				if (match[i] > best_match[i])
 					best_match[i] = match[i]
@@ -50,7 +48,6 @@ require "levenshtein"
 		end
 	end
 	
-
 	def self.Test() #Test different mapping methods to see how the results are different
 		input = "agurk"
 		while input != "" do
@@ -58,7 +55,4 @@ require "levenshtein"
 			input = gets.chomp
 		end
 	end
-
-	
-	
 end
