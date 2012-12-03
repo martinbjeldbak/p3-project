@@ -28,7 +28,7 @@ class SearchController < ApplicationController
     sql += " WHERE food_type_id IN ("
     sql += @food_types.map { |type| type.id }.join ", "
     sql += ')'
-    if restrictions != 0 and restrictions != 7
+    if restrictions > 0 and restrictions < 7
       sql += ' AND ('
       restrictionSql = []
       if restrictions & 1 != 0
