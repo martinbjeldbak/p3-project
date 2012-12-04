@@ -1,0 +1,19 @@
+\begin{algorithmic}[1]
+\Function{LongestCommonSubstring}{$a = \{a_0, a_1, ... , a_n\}, b = \{b_0, b_1, ... , b_m\}$}
+\State $max\_length \gets 0$
+\For{$x = 0 \to n$}
+  \For{$y = 0 \to m$}
+    \State $count[x, y] \gets 1$
+    \If{$x > 0 \wedge y > 0$}
+      \State $count[x, y] \gets count[x, y] + count [x-1, y-1]$
+    \EndIf
+    \If{$count[x, y] > max\_length$}
+      \State $max\_length \gets count[x, y]$
+      \State $end\_pos \gets x$
+    \EndIf
+    \State $start = end\_pos - max\_length - 1$
+    \State \Return $\{a_{start}, a_{start+1}, ... , a_{end\_pos}\}$
+  \EndFor
+\EndFor
+\EndFunction
+\end{algorithmic}

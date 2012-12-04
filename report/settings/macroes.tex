@@ -6,6 +6,7 @@
 % References
 \newcommand{\secref}[1]{afsnit \ref{#1}}
 \newcommand{\chapref}[1]{kapitel \ref{#1}}
+\newcommand{\pseudoref}[1]{algoritme \ref{#1}}
 \newcommand{\figref}[1]{figur \ref{#1}}
 \newcommand{\lstref}[1]{eksempel \ref{#1}}
 \newcommand{\apref}[1]{bilag \ref{#1}}
@@ -80,6 +81,13 @@
 \capt{#6}\label{fig:bm-#2}
 \end{figure}}
 
+\newcommand{\pdffig}[3]{\begin{figure}
+  \centering
+  \sffamily
+  \input{billeder/#1.pdf_tex}
+  \capt{#2}
+  \label{#3}
+\end{figure}}
 
 % Table stuff!!!
 \newcommand{\ourtable}[7]{

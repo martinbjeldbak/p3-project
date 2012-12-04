@@ -52,9 +52,9 @@ Listen fra madopskrifter.nu blev brugt som vores råvaretabel af følgende grund
 \end{itemize}
 
 \subsubsection{Parsing af opskrifter}
-Råvaretabellen giver brugeren mulighed for at indtaste en mængde råvarer. Hvis han indtaster råvaren \textit{gulerødder}, skal han have muligheden for at udføre en søgning, der finder alle opskrifter, der indeholder gulerødder. Det er derfor nødvendigt, ud fra alle ingredienser i en opskrift, at kunne afgøre hvilken af råvarerne i råvaretabellen, der er magen til. Som før nævnt er ingrediensernes navne i Arlas opskrifter meget inkonsistente. Derfor vil navnene kun i få tilfælde være helt ens. Det er derfor nødvendigt med en metode til at kunne sammenligne to tekster og bestemme hvor meget de minder om hinanden. Med en sådan metode vil det nemlig være muligt, for hver ingrediens at finde den råvare der minder mest om. Dette begreb vil i afsnittet blive kaldt for mapping. Metoden, vi bruger til at sammenligne to tekststrenge for lighed, vil vi fremover kalde \textit{CompareStrings}.
+Råvaretabellen giver brugeren mulighed for at indtaste en mængde råvarer. Hvis han indtaster råvaren \textit{gulerødder}, skal han have muligheden for at udføre en søgning, der finder alle opskrifter, der indeholder gulerødder. Det er derfor nødvendigt, ud fra alle ingredienser i en opskrift, at kunne afgøre hvilken af råvarerne i råvaretabellen, der er magen til. Som før nævnt er ingrediensernes navne i Arlas opskrifter meget inkonsistente. Derfor vil navnene kun i få tilfælde være helt ens. Det er derfor nødvendigt med en metode til at kunne sammenligne to tekster og bestemme hvor meget de minder om hinanden. Med en sådan metode vil det nemlig være muligt, for hver ingrediens at finde den råvare der minder mest om. Dette begreb vil i afsnittet blive kaldt for mapping. Metoden, vi bruger til at sammenligne to tekststrenge for lighed, vil vi fremover kalde \textbf{CompareStrings}.
 
-Hvis \textit{CompareStrings} køres hver gang der udføres en søgning, vil det stille høje krav til hastigheden af denne funktion, for at brugeren kan udføre en hurtig søgning. For ikke at sætte krav til hastigheden af funktionen, benytter vi en relationstabel. For hver opskrift fundet på Arla sammenligning vi hver enkelt ingrediens i opskriften med alle råvarerne i råvaretabellen med vores \textit{CompareStrings}. For hver ingrediens indsættes én relation mellem ingrediensen og den råvare i råvaretabellen, som ingrediensen bedst matcher ifølge vores \textit{CompareStrings}. Når en bruger udfører en søgning, vil \textit{CompareStrings} slet ikke blive benyttet. Det vil kun være nødvendigt at undersøge de indtastede råvares relationer til ingredienser, og blot præsentere de opskrifter, der er relateret til de fundne ingredienser, som et søgeresultat for brugeren.
+Hvis \textbf{CompareStrings} køres hver gang der udføres en søgning, vil det stille høje krav til hastigheden af denne funktion, for at brugeren kan udføre en hurtig søgning. For ikke at sætte krav til hastigheden af funktionen, benytter vi en relationstabel. For hver opskrift fundet på Arla sammenligning vi hver enkelt ingrediens i opskriften med alle råvarerne i råvaretabellen med vores \textbf{CompareStrings}. For hver ingrediens indsættes én relation mellem ingrediensen og den råvare i råvaretabellen, som ingrediensen bedst matcher ifølge vores \textbf{CompareStrings}. Når en bruger udfører en søgning, vil \textbf{CompareStrings} slet ikke blive benyttet. Det vil kun være nødvendigt at undersøge de indtastede råvares relationer til ingredienser, og blot præsentere de opskrifter, der er relateret til de fundne ingredienser, som et søgeresultat for brugeren.
 
 
 \subsubsection{Sammenligning af 2 tekststrenge}
@@ -62,7 +62,7 @@ Der findes mange forskellige algoritmer til at sammenligne to tekststrenge for l
 
 Vi har brugt tilfældigt udvalgte ingredienser fra Arlas opskrifter til at teste 5 forskellige metoder til tekstsammenligning. I mange tilfælde kunne alle 5 metoder mappe en ingrediens til en korrekt råvare. I enkelte tilfælde skete der dog en fejlmapping, hvilket kan ses i \tableref{table:mapping}.
 
-\paragraph{Forklaring af de forskellige \textit{CompareStrings} funktioner}
+\paragraph{Forklaring af de forskellige \textbf{CompareStrings} funktioner}
 \begin{enumerate}
 \item Egen algoritme (lineær)
 \item Egen algoritme (polynomial)
@@ -92,12 +92,12 @@ Vi har brugt tilfældigt udvalgte ingredienser fra Arlas opskrifter til at teste
         Total:                                                     & 11              & 7                       & 3                  & 2                  & 10              \\
         \hline
     \end{tabular}
-  \caption{Test af flere forskellige CompareStrings brugt til at mappe en ingrediens til en råvare. Fed skrift betyder at begge vores informanter har godkendt mappingen.}  \label{table:test-af-compares}
+  \caption{Test af flere forskellige \textbf{CompareStrings} funktioner, der bruges til at mappe en ingrediens til en råvare. Fed skrift betyder at begge vores informanter har godkendt mappingen.}  \label{table:test-af-compares}
 \end{table}
 
 Som det ses i \tableref{table:test-af-compares}, var metode 1 den, der gav den bedste mapping. Metoden fik 11 rigtige ud af 12 mulige, men det bør bemærkes at sammenligningen kun er foretaget på de ingredienser, som mindst én metode mappede forkert. Vi kom forbi 56 ingredienser udover de ingredienser vist i tabellen, før vi tilsammen havde 12 ingredienser, som én eller flere metoder mappede forkert. 
 
-Metode 1 er en algoritme vi selv har udviklet, der er beskrevet med pseudokode i \algref{alg:compare}. Den tager to tekststrenge som input, og returnerer en værdi mellem 0 og 100. Højere returværdi betyder større lighed mellem de to inputtede strenge. 100 point opnås kun ved to identiske strenge.
+Metode 1 er en algoritme vi selv har udviklet, der er beskrevet med pseudokode i \pseudoref{alg:compare}. Den tager to tekststrenge som input, og returnerer en værdi mellem 0 og 100. Højere returværdi betyder større lighed mellem de to inputtede strenge. 100 point opnås kun ved to identiske strenge.
 I \tableref{table:vores-compare-eksempel} ses et eksempel på hvordan algoritmen sammenligner \textit{hummersuppe} med \textit{suppe med hummerhale} og kommer frem til resultatet $13.8$.
 
 \begin{table}
@@ -116,18 +116,36 @@ hummersuppe & suppe med hummerhaler & $max\_length = 21$               \\
     \label{table:vores-compare-eksempel}
 \end{table}
 
-Metode 2 var magen til metode 1, bortset fra at scoren blev forøget lineært i stedet for opløftet i anden. Se linje 7, \algref{alg:compare}. På samme måde blev variablen $max\_score$ i linje 5 også beregnet lineært.
+Metode 2 var magen til metode 1, bortset fra at scoren blev forøget lineært i stedet for opløftet i anden. Se linje 7, \pseudoref{alg:compare}. På samme måde blev variablen $max\_score$ i linje 5 også beregnet lineært.
 
 \begin{algorithm} [H]
 	\capt{Algoritmen udregner hvor ens to tekststrenge er.}
 	\label{alg:compare}
-	\input{pseudokode/parsing}
+	\input{pseudokode/compare}
 \end{algorithm}
 
+\begin{algorithm} [H]
+	\capt{Algoritmen finder den længste fælles streng, som er indeholdt i begge de strenge, der gives som input.}
+	\label{alg:longest-common-substring}
+	\input{pseudokode/longest-common-substring}
+\end{algorithm}
 
+\pseudoref{alg:longest-common-substring} er en pseudokode vi selv har skrevet, med udgangspunkt ruby-implementation af funktionen\cite{longest-common-substring-ruby-wiki} Et eksempel på hvordan algoritmen beregner den længste fælles streng blandt \textit{smørremad} og \textit{ørred} til at være \textit{ørre}, kan ses i \figref{fig:longest-common-substring}.
+Algoritmen laver et 2-dimensionelt array af størrelsen (n, m), hvor n og m er længden af de inputtede strenge a og b. Hver karakter i a og b sammenlignes i læseretningen. Hvis karakten $a_x$ er ikke er lig med $b_y$, så indsættes værdien 0 i arrayet. Er de ens, så indsættes værdien $1 + [a_{x-1}, b_{y-1}]$.
+Variablen $max\_length$ indeholder altid den største værdi i arrayet, mens $end\_pos$ holder den værdi $x$ havde, da $max\_length$ sidst blev assignet til.
+Når algoritmen er færdig, er $end\_pos$ i dette tilfælde lig med 5, hvor begge strenge har karakteren \textit{e}. $max\_length$ er 4, så ved at gå 3 karakterer tilbage fra $end\_pos$ fås de 4 karakterer \textit{ørre}, som returneres i linje 14. Kompleksiteten af denne funktion beregnes ved at betragte løkken på linje 3, der eksekveres $n$ gange, hvori løkken på linje 4 er indeholdt, der eksekveres $m$ gange. Alle operationer inden i løkken på linje 4's scope kan udføres i konstant hastighed, hvilket betyder at algoritmens kompleksitet er $O(n \times m)$.
+
+Funktionen \textbf{CompareStrings}, der kalder funktionen \textbf{LongestCommonSubstring} kan nu beregnes ved at betragte løkken på linje 7 i \textbf{CompareStrings}. For hver iteration af løkken, fjernes minimum én karakter fra begge de strenge, der sammenlignes. Hvis én af de to strenge er tomme, trædes der ud af løkken. Derfor vil løkken maskimalt blive itereteret $p$ gange, hvor $p$ er længden af den længste af de to inputtede strenge.
+Da hver iteration af løkken kalder \textbf{LongestCommonSubstring} én gang, hvis kompleksitet er $O(n \times m)$, bliver \textbf{CompareStrings} kompleksitet $O(p \times n \times m)$. Hvis inputtet er strenge af samme længde, kan kompleksiteten simpliciferes til $O(n^3)$.
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{billeder/longest-common-substring.png}
+  \capt{Et eksempel på hvordan funktionen longest\_common\_substring virker.}
+  \label{fig:longest-common-substring}
+\end{figure}
 
 \subsubsection{Mapping af ingredienser til råvarer}
-Den automatiske mapping omfattede 10,234 ingredienser, blandt 921 opskrifter. Tidsforbruget var ca. 4 timer, og langt de fleste ingredienser blev mappet korrekt. Ind i mellem gik mappingen galt, fx. blev ingrediensen \textit{groftkværnet peber} hver gang mappet til råvaren \textit{hvid peber} i stedet for råvaren \textit{peber}. For at få en bedst muligt mapping besluttede vi os for at gå alle mappings igennem igennem manuelt. Under mappingen havde vi gemt returværdien af \textit{CompareStrings(string, string)}, der fortæller hvor ens de to sammenlignede tekstrenge var. Ved at have gemt returværdien behøver vi ikke at kontrollere mappings, der har returneret 100, da det vil sige at ingrediensen er blevet mappet til en identisk råvare. På denne måde kunne vi se bort fra 1,236 ingredienser, der ikke behøvede manuel kontrol.
+Den automatiske mapping omfattede 10,234 ingredienser, blandt 921 opskrifter. Tidsforbruget var ca. 4 timer, og langt de fleste ingredienser blev mappet korrekt. Ind i mellem gik mappingen galt, fx. blev ingrediensen \textit{groftkværnet peber} hver gang mappet til råvaren \textit{hvid peber} i stedet for råvaren \textit{peber}. For at få en bedst muligt mapping besluttede vi os for at gå alle mappings igennem igennem manuelt. Under mappingen havde vi gemt returværdien af \textbf{CompareStrings(\textit{string}, \textit{string})}, der fortæller hvor ens de to sammenlignede tekstrenge var. Ved at have gemt returværdien behøver vi ikke at kontrollere mappings, der har returneret 100, da det vil sige at ingrediensen er blevet mappet til en identisk råvare. På denne måde kunne vi se bort fra 1,236 ingredienser, der ikke behøvede manuel kontrol.
 Til at mappe ingredienserne hurtigst muligt lavede vi et meget simpelt WinForms program med Visual Studio, skrevet i C\# (se \apref{ap:manuel-mapping}. Programmet gjorde det muligt at få vist 20 labels med ignredienser. Ud for hvert label blev vist et tekstfelt med den råvare, som ingrediensen var blevet mappet til. Ved at ændre i tekstfeltet kunne man hurtigt få lavet en korrekt mapping. Vi tilføjede flere funktionaliteter for at øge hastigheden vi kunne mappe med.
 \begin{itemize}
 \item Ingredienserne blev sorteret alfabetisk. Omkring 120 ingredienser i træk var \textit{grofthakket peber}.
