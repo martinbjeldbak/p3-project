@@ -22,7 +22,7 @@ class ShoppingListController < ApplicationController
   end
 
   def create
-    listItem = ListItem.new(name: params[:name])
+    @listItem = ListItem.new(name: params[:name])
 
     if logged_in?
       @listItem.user = current_user
@@ -94,6 +94,7 @@ class ShoppingListController < ApplicationController
 
     recipe.ingredients.each do |ingredient|
       listItem = ingredient_to_list_item(ingredient)
+      listItem.quantity = listItem.quantity.to_f * params[:scale].to_f #if something has been scaled
 
       if logged_in?
         listItem.user = current_user
