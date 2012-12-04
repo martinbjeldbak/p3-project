@@ -22,7 +22,7 @@ class ShoppingListController < ApplicationController
   end
 
   def create
-    listItem = ListItem.new(name: params[:name])
+    @listItem = ListItem.new(name: params[:name])
 
     if logged_in?
       @listItem.user = current_user

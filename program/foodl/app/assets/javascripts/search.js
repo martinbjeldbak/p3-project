@@ -252,10 +252,13 @@ $(function() {
   $('.shopping-button').on("click", function() {
     $(this).hide();
 
-    var $recipeID = $('.shopping-button').data('id');
-    var $ingCount = parseInt($('.shopping-button').data('count'), 10);
+    var $recipe = $(this).closest('.shopping-button');
 
-    var $currentList = $('#num_list_items');
+    var $recipeID = $recipe.data('id');
+    var $ingCount = parseInt($recipe.data('count'), 10);
+
+
+    var $currentList = $(this).closest('#num_list_items');
     var $currentListCount = parseInt($currentList.text(), 10);
 
     $currentList.text($ingCount + $currentListCount);
