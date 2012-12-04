@@ -3,12 +3,12 @@
 %% Accompanies image file 'database.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
-%%   \input{<filename>.pdf_tex}
+%%   \input{<filename>.pdf\_tex}
 %%  instead of
 %%   \includegraphics{<filename>.pdf}
 %% To scale the image, write
 %%   \def\svgwidth{<desired width>}
-%%   \input{<filename>.pdf_tex}
+%%   \input{<filename>.pdf\_tex}
 %%  instead of
 %%   \includegraphics[width=<desired width>]{<filename>.pdf}
 %%
@@ -17,7 +17,7 @@
 %% installed) using
 %%   \usepackage{import}
 %% in the preamble, and then including the image with
-%%   \import{<path to file>}{<filename>.pdf_tex}
+%%   \import{<path to file>}{<filename>.pdf\_tex}
 %% Alternatively, one can specify
 %%   \graphicspath{{<path to file>/}}
 %% 
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{492.8bp}%
+    \setlength{\unitlength}{479.2bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,61 +48,87 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.64285714)%
-    \put(0,0){\includegraphics[width=\unitlength]{database.pdf}}%
-    \put(0.17857143,0.59902597){\makebox(0,0)[lb]{\smash{users}}}%
-    \put(0.08766234,0.56006494){\makebox(0,0)[lb]{\smash{id : integer}}}%
-    \put(0.08766234,0.53409091){\makebox(0,0)[lb]{\smash{name : string}}}%
-    \put(0.08766234,0.50811688){\makebox(0,0)[lb]{\smash{email : string}}}%
-    \put(0.08766234,0.48214286){\makebox(0,0)[lb]{\smash{password_digest : string}}}%
-    \put(0.08766234,0.45616883){\makebox(0,0)[lb]{\smash{created_at : date}}}%
-    \put(0.08766234,0.43019481){\makebox(0,0)[lb]{\smash{updated_at : date}}}%
-    \put(0.46915584,0.57305195){\makebox(0,0)[lb]{\smash{users_recipes}}}%
-    \put(0.4512987,0.53409091){\makebox(0,0)[lb]{\smash{user_id : integer}}}%
-    \put(0.4512987,0.50811688){\makebox(0,0)[lb]{\smash{recipe_id : integer}}}%
-    \put(0.81818182,0.59902597){\makebox(0,0)[lb]{\smash{recipes}}}%
-    \put(0.75,0.56006494){\makebox(0,0)[lb]{\smash{id : integer}}}%
-    \put(0.75,0.53409091){\makebox(0,0)[lb]{\smash{name : string}}}%
-    \put(0.75,0.50811688){\makebox(0,0)[lb]{\smash{url : text}}}%
-    \put(0.75,0.48214286){\makebox(0,0)[lb]{\smash{picture : binary}}}%
-    \put(0.75,0.45616883){\makebox(0,0)[lb]{\smash{rating : integer}}}%
-    \put(0.75,0.43019481){\makebox(0,0)[lb]{\smash{created_at : date}}}%
-    \put(0.75,0.40422078){\makebox(0,0)[lb]{\smash{updated_at : date}}}%
-    \put(0.15584416,0.26136364){\makebox(0,0)[lb]{\smash{list_items}}}%
-    \put(0.08766234,0.2224026){\makebox(0,0)[lb]{\smash{id : integer}}}%
-    \put(0.08766234,0.19642857){\makebox(0,0)[lb]{\smash{quantity : float}}}%
-    \put(0.08766234,0.17045455){\makebox(0,0)[lb]{\smash{name : string}}}%
-    \put(0.08766234,0.14448052){\makebox(0,0)[lb]{\smash{unit : string}}}%
-    \put(0.08766234,0.11850649){\makebox(0,0)[lb]{\smash{user_id : integer}}}%
-    \put(0.08766234,0.09253247){\makebox(0,0)[lb]{\smash{food_type_id : integer}}}%
-    \put(0.08766234,0.06655844){\makebox(0,0)[lb]{\smash{created_at : date}}}%
-    \put(0.08766234,0.04058442){\makebox(0,0)[lb]{\smash{updated_at : date}}}%
-    \put(0.79383117,0.26136364){\makebox(0,0)[lb]{\smash{ingredients}}}%
-    \put(0.75,0.2224026){\makebox(0,0)[lb]{\smash{id : integer}}}%
-    \put(0.75,0.19642857){\makebox(0,0)[lb]{\smash{quantity : float}}}%
-    \put(0.75,0.17045455){\makebox(0,0)[lb]{\smash{unit : string}}}%
-    \put(0.75,0.14448052){\makebox(0,0)[lb]{\smash{name : string}}}%
-    \put(0.75,0.11850649){\makebox(0,0)[lb]{\smash{food_type_id : integer}}}%
-    \put(0.75,0.09253247){\makebox(0,0)[lb]{\smash{recipe_id : integer}}}%
-    \put(0.75,0.06655844){\makebox(0,0)[lb]{\smash{created_at : date}}}%
-    \put(0.75,0.04058442){\makebox(0,0)[lb]{\smash{updated_at : date}}}%
-    \put(0.4724026,0.26136364){\makebox(0,0)[lb]{\smash{food_types}}}%
-    \put(0.43831169,0.2224026){\makebox(0,0)[lb]{\smash{id : integer}}}%
-    \put(0.43831169,0.19642857){\makebox(0,0)[lb]{\smash{name : string}}}%
-    \put(0.43831169,0.17045455){\makebox(0,0)[lb]{\smash{verified : boolean}}}%
-    \put(0.43831169,0.14448052){\makebox(0,0)[lb]{\smash{created_at : date}}}%
-    \put(0.43831169,0.11850649){\makebox(0,0)[lb]{\smash{updated_at : date}}}%
-    \put(0.4025974,0.50487013){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.37662338,0.50649351){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.66558442,0.50649351){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.70941558,0.50649351){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.70454545,0.14935065){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.66558442,0.15097403){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.86525974,0.29220779){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.87175325,0.36201299){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.34902597,0.1525974){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.41396104,0.14935065){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.18668831,0.29383117){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.19318182,0.38474026){\makebox(0,0)[lb]{\smash{1}}}%
+  \begin{picture}(1,1.00834725)%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/database.pdf}}%
+    \put(0.14190317,0.66944908){\makebox(0,0)[lb]{\smash{users}}}%
+    \put(0.03505843,0.6293823){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.03505843,0.60267112){\makebox(0,0)[lb]{\smash{name : string}}}%
+    \put(0.03505843,0.57595993){\makebox(0,0)[lb]{\smash{email : string}}}%
+    \put(0.03505843,0.54924875){\makebox(0,0)[lb]{\smash{password\_digest : string}}}%
+    \put(0.03505843,0.52253756){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.03505843,0.49582638){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.03505843,0.46911519){\makebox(0,0)[lb]{\smash{admin : bool}}}%
+    \put(0.45409015,0.66944908){\makebox(0,0)[lb]{\smash{users\_recipes}}}%
+    \put(0.43572621,0.6293823){\makebox(0,0)[lb]{\smash{user\_id : integer}}}%
+    \put(0.43572621,0.60267112){\makebox(0,0)[lb]{\smash{recipe\_id : integer}}}%
+    \put(0.8130217,0.66944908){\makebox(0,0)[lb]{\smash{recipes}}}%
+    \put(0.74290484,0.6293823){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.74290484,0.60267112){\makebox(0,0)[lb]{\smash{name : string}}}%
+    \put(0.74290484,0.57595993){\makebox(0,0)[lb]{\smash{url : text}}}%
+    \put(0.74290484,0.54924875){\makebox(0,0)[lb]{\smash{picture : binary}}}%
+    \put(0.74290484,0.52253756){\makebox(0,0)[lb]{\smash{rating : integer}}}%
+    \put(0.74290484,0.49582638){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.74290484,0.46911519){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.74290484,0.44240401){\makebox(0,0)[lb]{\smash{prep\_time : integer}}}%
+    \put(0.11853088,0.32220367){\makebox(0,0)[lb]{\smash{list\_items}}}%
+    \put(0.03505843,0.28213689){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.03505843,0.25542571){\makebox(0,0)[lb]{\smash{quantity : float}}}%
+    \put(0.03505843,0.22871452){\makebox(0,0)[lb]{\smash{name : string}}}%
+    \put(0.03505843,0.20200334){\makebox(0,0)[lb]{\smash{unit : string}}}%
+    \put(0.03505843,0.17529215){\makebox(0,0)[lb]{\smash{user\_id : integer}}}%
+    \put(0.03505843,0.14858097){\makebox(0,0)[lb]{\smash{food\_type\_id : integer}}}%
+    \put(0.03505843,0.12186978){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.03505843,0.0951586){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.78797997,0.32220367){\makebox(0,0)[lb]{\smash{ingredients}}}%
+    \put(0.74290484,0.28213689){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.74290484,0.25542571){\makebox(0,0)[lb]{\smash{quantity : float}}}%
+    \put(0.74290484,0.22871452){\makebox(0,0)[lb]{\smash{unit : string}}}%
+    \put(0.74290484,0.20200334){\makebox(0,0)[lb]{\smash{name : string}}}%
+    \put(0.74290484,0.17529215){\makebox(0,0)[lb]{\smash{food\_type\_id : integer}}}%
+    \put(0.74290484,0.14858097){\makebox(0,0)[lb]{\smash{recipe\_id : integer}}}%
+    \put(0.74290484,0.12186978){\makebox(0,0)[lb]{\smash{match : integer}}}%
+    \put(0.74290484,0.0951586){\makebox(0,0)[lb]{\smash{original : string}}}%
+    \put(0.74290484,0.06844741){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.74290484,0.04173623){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.46410684,0.32220367){\makebox(0,0)[lb]{\smash{food\_types}}}%
+    \put(0.43572621,0.28213689){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.43572621,0.25542571){\makebox(0,0)[lb]{\smash{name : string}}}%
+    \put(0.43572621,0.22871452){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.43572621,0.20200334){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.38898164,0.59933222){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.32721202,0.59933222){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.64607679,0.59599332){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.721202,0.59599332){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.69449082,0.20701169){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.6327212,0.20701169){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.85976628,0.35392321){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.86644407,0.39899833){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.32888147,0.21035058){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.41068447,0.20701169){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.18864775,0.35559265){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.19866444,0.41903172){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.13689482,0.96327212){\makebox(0,0)[lb]{\smash{issues}}}%
+    \put(0.03505843,0.92320534){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.03505843,0.89649416){\makebox(0,0)[lb]{\smash{description : text}}}%
+    \put(0.03505843,0.86978297){\makebox(0,0)[lb]{\smash{issue\_category\_id : integer}}}%
+    \put(0.03505843,0.84307179){\makebox(0,0)[lb]{\smash{user\_id : integer}}}%
+    \put(0.03505843,0.8163606){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.03505843,0.78964942){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.43572621,0.96327212){\makebox(0,0)[lb]{\smash{issue\_categories}}}%
+    \put(0.43572621,0.92320534){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.43572621,0.89649416){\makebox(0,0)[lb]{\smash{name : string}}}%
+    \put(0.43572621,0.86978297){\makebox(0,0)[lb]{\smash{describable : bool}}}%
+    \put(0.43572621,0.84307179){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.43572621,0.8163606){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
+    \put(0.12854758,0.74457429){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.13856427,0.70951586){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.32554257,0.88814691){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.41736227,0.88647746){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.80300501,0.96327212){\makebox(0,0)[lb]{\smash{sessions}}}%
+    \put(0.74290484,0.92320534){\makebox(0,0)[lb]{\smash{id : integer}}}%
+    \put(0.74290484,0.89649416){\makebox(0,0)[lb]{\smash{session\_id : string}}}%
+    \put(0.74290484,0.86978297){\makebox(0,0)[lb]{\smash{data : text}}}%
+    \put(0.74290484,0.84307179){\makebox(0,0)[lb]{\smash{created\_at : date}}}%
+    \put(0.74290484,0.8163606){\makebox(0,0)[lb]{\smash{updated\_at : date}}}%
   \end{picture}%
 \endgroup%

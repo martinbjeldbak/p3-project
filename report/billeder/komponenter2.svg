@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="475" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#ffffff" points="14,14 236,14 236,38 285,38 285,68 14,68 14,14" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="222" x="14" y="14"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="28">
+Brugergrænseflade</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="271" x="14" y="38"/>
+<polygon fill="#ffffff" points="14,102 124,102 124,126 173,126 173,157 14,157 14,102" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="110" x="14" y="102"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="116">
+Controller</text>
+<rect fill="none" height="31" stroke="#000000" stroke-width="1" width="159" x="14" y="126"/>
+<polygon fill="#ffffff" points="14,190 92,190 92,214 141,214 141,244 14,244 14,190" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="78" x="14" y="190"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="204">
+Model</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="127" x="14" y="214"/>
+<polygon fill="#ffffff" points="14,278 244,278 244,302 293,302 293,381 14,381 14,278" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="230" x="14" y="278"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="292">
+Ruby on Rails-laget</text>
+<rect fill="none" height="79" stroke="#000000" stroke-width="1" width="279" x="14" y="302"/>
+<polygon fill="#ffffff" points="334,102 436,102 436,126 485,126 485,285 334,285 334,102" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="102" x="334" y="102"/>
+<text font-family="Lucida Grande" font-size="13" x="339" y="116">
+JavaScript</text>
+<rect fill="none" height="159" stroke="#000000" stroke-width="1" width="151" x="334" y="126"/>
+<polygon fill="#ffffff" points="350,142 420,142 420,166 469,166 469,196 350,196 350,142" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="70" x="350" y="142"/>
+<text font-family="Lucida Grande" font-size="13" x="355" y="156">
+jQuery</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="119" x="350" y="166"/>
+<polygon fill="#ffffff" points="350,214 419,214 419,238 468,238 468,268 350,268 350,214" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="69" x="350" y="214"/>
+<text font-family="Lucida Grande" font-size="13" x="355" y="228">
+jQuery UI</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="118" x="350" y="238"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="158" y2="163"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="168" y2="173"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="178" y2="183"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="188" y2="190"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="47" x2="54" y1="178" y2="190"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="61" x2="54" y1="178" y2="190"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="245" y2="250"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="255" y2="260"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="265" y2="270"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="275" y2="278"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="47" x2="54" y1="266" y2="278"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="61" x2="54" y1="266" y2="278"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="286" x2="291" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="296" x2="301" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="306" x2="311" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="316" x2="321" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="326" x2="331" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="336" x2="341" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="346" x2="351" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="356" x2="361" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="366" x2="371" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="374" x2="374" y1="54" y2="59"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="374" x2="374" y1="64" y2="69"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="374" x2="374" y1="74" y2="79"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="374" x2="374" y1="84" y2="89"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="374" x2="374" y1="94" y2="99"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="367" x2="374" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="381" x2="374" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="158" y2="163"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="168" y2="173"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="178" y2="183"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="188" y2="193"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="198" y2="203"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="208" y2="213"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="218" y2="223"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="228" y2="233"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="238" y2="243"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="248" y2="253"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="258" y2="263"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="158" x2="158" y1="268" y2="273"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="151" x2="158" y1="266" y2="278"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="165" x2="158" y1="266" y2="278"/>
+<polygon fill="#ffffff" points="214,102 265,102 265,126 314,126 314,156 214,156 214,102" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="51" x="214" y="102"/>
+<text font-family="Lucida Grande" font-size="13" x="219" y="116">
+View</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="100" x="214" y="126"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="174" x2="179" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="184" x2="189" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="199" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="204" x2="209" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="202" x2="214" y1="149" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="202" x2="214" y1="135" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="69" y2="74"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="79" y2="84"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="89" y2="94"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="99" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="47" x2="54" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="61" x2="54" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="157" y2="162"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="167" y2="172"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="177" y2="182"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="187" y2="192"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="197" y2="202"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="207" y2="212"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="217" y2="222"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="227" y2="232"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="237" y2="242"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="247" y2="252"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="257" y2="262"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="267" y2="272"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="230" x2="230" y1="277" y2="278"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="223" x2="230" y1="266" y2="278"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="237" x2="230" y1="266" y2="278"/>
+<polygon fill="#ffffff" points="14,406 76,406 76,430 125,430 125,460 14,460 14,406" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="62" x="14" y="406"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="420">
+MySQL</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="111" x="14" y="430"/>
+<polygon fill="#ffffff" points="22,310 115,310 115,334 164,334 164,364 22,364 22,310" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="93" x="22" y="310"/>
+<text font-family="Lucida Grande" font-size="13" x="27" y="324">
+ActiveRecord</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="142" x="22" y="334"/>
+<polygon fill="#ffffff" points="174,310 227,310 227,334 276,334 276,364 174,364 174,310" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="53" x="174" y="310"/>
+<text font-family="Lucida Grande" font-size="13" x="179" y="324">
+BCrypt</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="102" x="174" y="334"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="365" y2="370"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="375" y2="380"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="385" y2="390"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="395" y2="400"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="405" y2="406"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="47" x2="54" y1="394" y2="406"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="61" x2="54" y1="394" y2="406"/>
+</svg>

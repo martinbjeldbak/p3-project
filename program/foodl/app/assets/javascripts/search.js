@@ -252,11 +252,14 @@ $(function() {
   $('.shopping-button').on("click", function() {
     $(this).hide();
 
-    var $recipeID = $('.shopping-button').data('id');
-    var $ingCount = parseInt($('.shopping-button').data('count'), 10);
+    var $recipe = $(this).closest('.shopping-button');
 
-    var $currentList = $('#num_list_items');
+    var $recipeID = $recipe.data('id');
+    var $ingCount = parseInt($recipe.data('count'), 10);
+
+    var $currentList = $(this).closest('#num_list_items');
     var $currentListCount = parseInt($currentList.text(), 10);
+    var $ing_scale = $('#amount').html();
 
     $currentList.text($ingCount + $currentListCount);
 
@@ -264,7 +267,7 @@ $(function() {
     $.ajax({
       url: "/list/addrecipe",
       type: "POST",
-      data: {id: $recipeID},
+      data: {id: $recipeID, scale: $ing_scale},
       dataType: "json",
       success: function(response) {
         stopLoading();
@@ -281,7 +284,7 @@ $(function() {
   
   $('.add-ingredient-to-list').live("click", function() {
       $(this).hide();
-	  startLoading();
+	    startLoading();
 	
 	  var $currentList = $('#num_list_items');
       var $currentListCount = parseInt($currentList.text(), 10);
@@ -290,23 +293,22 @@ $(function() {
 	  ing_id = $(this).data("ing_id");
 	  ing_scale = $('#amount').html();  //get the scaling
 
-	  
-      $.ajax({
-          url: "/list/addingredientfromid",
-          type: "POST",
-          data: {id: ing_id, scale: ing_scale},
-          dataType: "json",
-          success: function(response) {
-            stopLoading();
-          },
-          error: function(xhr, error) {
-            stopLoading();
-            flashMessage("Der skete en fejl på siden. Prøv igen senere.", "error");
-              //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
-              //$(document.body).html(xhr.responseText);
-          }
-      });
-      return false;
+    $.ajax({
+        url: "/list/addingredientfromid",
+        type: "POST",
+        data: {id: ing_id, scale: ing_scale},
+        dataType: "json",
+        success: function(response) {
+          stopLoading();
+        },
+        error: function(xhr, error) {
+          stopLoading();
+          flashMessage("Der skete en fejl på siden. Prøv igen senere.", "error");
+          //alert("Fejl i tilføjelse af ingredienser fra opskrift til indkøblisten.");
+          //$(document.body).html(xhr.responseText);
+        }
+    });
+    return false;
   });
   
 
