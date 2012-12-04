@@ -80,6 +80,13 @@
 \capt{#6}\label{fig:bm-#2}
 \end{figure}}
 
+\newcommand{\pdffig}[3]{\begin{figure}
+  \centering
+  \sffamily
+  \input{billeder/#1.pdf_tex}
+  \capt{#2}
+  \label{#3}
+\end{figure}}
 
 % Table stuff!!!
 \newcommand{\ourtable}[7]{
