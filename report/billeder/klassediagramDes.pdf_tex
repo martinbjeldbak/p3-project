@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.18446602)%
-    \put(0,0){\includegraphics[width=\unitlength]{klassediagramDes.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagramDes.pdf}}%
     \put(0.03398058,1.1407767){\makebox(0,0)[lb]{\smash{Model}}}%
     \put(0.64401294,0.70064725){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
     \put(0.61488673,0.6618123){\makebox(0,0)[lb]{\smash{navn}}}%
