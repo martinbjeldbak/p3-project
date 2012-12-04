@@ -1,4 +1,4 @@
-class ArlaRecipeLinks #The links for recipes that we have saved locally
+class ArlaRecipeLinks #The recipe urls we have parsed and saved locally
 
 def self.Get
 return [
