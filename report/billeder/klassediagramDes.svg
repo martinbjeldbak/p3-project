@@ -135,9 +135,9 @@ Værditype:</text>
 {bruger,</text>
 <text font-family="Dialog" font-size="12" x="27" y="139">
 admin}</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="102" x2="107" y1="126" y2="126"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="112" x2="117" y1="126" y2="126"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="122" x2="127" y1="126" y2="126"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="103" x2="108" y1="126" y2="126"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="113" x2="118" y1="126" y2="126"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="123" x2="128" y1="126" y2="126"/>
 <rect fill="#ffffff" height="85" stroke="#ffffff" stroke-width="1" width="128" x="184" y="614"/>
 <rect fill="none" height="85" stroke="#000000" stroke-width="1" width="128" x="184" y="614"/>
 <text font-family="Dialog" font-size="12" x="198" y="627">

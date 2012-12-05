@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Dec 03 12:26:21 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 05 15:13:47 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1836,7 +1836,7 @@
       justification="Center"
     >Vare</text>
     <group name="Fig6.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[521, 161, 78, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[529, 161, 78, 0]"
          href="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000002108"
          fill="0"
          fillcolor="white"
@@ -1848,7 +1848,7 @@
       </private>
       
       <rectangle name="Fig6.2.0"
-        x="521"
+        x="529"
         y="161"
         width="78"
         height="0"
@@ -2549,7 +2549,7 @@ admin}</text>
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="254"
+      <moveto x="255"
               y="168" />
       <lineto x="280"
               y="168" />
