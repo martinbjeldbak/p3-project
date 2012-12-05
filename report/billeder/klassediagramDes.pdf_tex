@@ -94,8 +94,8 @@
     \put(0.05825243,0.09708738){\makebox(0,0)[lb]{\smash{sorter()}}}%
     \put(0.05825243,0.07119741){\makebox(0,0)[lb]{\smash{begræns()}}}%
     \put(0.04368932,1.00809061){\makebox(0,0)[lb]{\smash{Værditype:}}}%
-    \put(0.04368932,0.98381877){\makebox(0,0)[lb]{\smash{{bruger,}}}%
-    \put(0.04368932,0.95954693){\makebox(0,0)[lb]{\smash{admin}}}}%
+    \put(0.04368932,0.98381877){\makebox(0,0)[lb]{\smash{\{bruger,}}}%
+    \put(0.04368932,0.95954693){\makebox(0,0)[lb]{\smash{admin\}}}}%
     \put(0.32038835,0.16990291){\makebox(0,0)[lb]{\smash{Brugerhåndtering}}}%
     \put(0.30420712,0.09708738){\makebox(0,0)[lb]{\smash{log ind()}}}%
     \put(0.30420712,0.07119741){\makebox(0,0)[lb]{\smash{log ud()}}}%
