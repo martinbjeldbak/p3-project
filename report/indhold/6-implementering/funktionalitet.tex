@@ -91,9 +91,13 @@ Alt dette styres af klassen \classref{SearchController}, som består af tre acti
 Den tredje action i controlleren er \methodref{autocomplete\_food\_types}, hvortil der ikke er tilknyttet et view. Denne action har til formål at returnere en liste over råvarer baseret på brugerens indtastning. Denne funktionalitet er beskrevet i detaljer i nedenstående afsnit.
 
 \subsubsection{Søgeforslag}
-En central del af forsiden, og brugerens mulighed for at vælge råvarer, er at systemet kommer med en liste over forslag, baseret på brugerens indtastning. \todo{WIP}
+En central del af forsiden, og brugerens mulighed for at vælge råvarer, er at systemet kommer med en liste over forslag, baseret på brugerens indtastning.
 
-\begin{lstlisting}[caption={SQL query.},label=lst:soegeforslag-sql,language=SQL]
+Det eneste denne action gør er at generere en SQL-forespørgsel, som sendes til MySQL-databasen og returnerer et array bestående af fem råvareforslag. Dette array konverteres til JSON-format og returneres. Dermed kan man via JavaScript tilgå denne action med en AJAX-forespørgsel, mens brugeren indtaster, og næsten med det samme fremvise resultatet.
+
+Et eksempel på en genereret SQL-forespørgsel kan ses i \lstref{lst:soegeforslag-sql}.
+
+\begin{lstlisting}[caption={Hvis en bruger indtaster ``pølse'' udføres denne SQL-forespørgsel.},label=lst:soegeforslag-sql,language=SQL]
 SELECT name
 FROM food_types
 WHERE name LIKE "%pølse%"
@@ -109,7 +113,13 @@ ORDER BY CASE
 LIMIT 5
 \end{lstlisting}
 
-Resultatet af SQL-forespørgslen i \lstref{lst:soegeforslag-sql} er en liste med 5 forslag til råvarer. Listen sorteres således at hvis der findes et forslag, der matcher det indtastede 100 \%, vil dette komme øverst (den første \texttt{CASE} i \lstref{lst:soegeforslag-sql}). Dernæst rangeres forslag, som starter med det indtastede, højere end forslag, som ikke starter med det indtastede.
+Resultatet af SQL-forespørgslen i \lstref{lst:soegeforslag-sql} er en liste med 5 forslag til råvarer. Listen sorteres således at hvis der findes et forslag, der matcher det indtastede 100 \%, vil dette komme øverst (den første \texttt{CASE} i \lstref{lst:soegeforslag-sql}). Dernæst rangeres forslag, som starter med det indtastede, højere end forslag, som ikke starter med det indtastede. Til sidst sorteres der efter længden af forslagene i stigende rækkefølge.
+
+Det returnerede JSON-array for ``pølse'' kan ses i \lstref{lst:poelse-json}.
+
+\begin{lstlisting}[caption={Et returneret JSON-array for ``pølse''.},label=lst:poelse-json,language=Ruby]
+["Pølser","Pøsebrød","Spegepølse","Wienerpølse","Røde pølser"]
+\end{lstlisting}
 
 \subsubsection{Søgeresultat}
 \todo{WIP}
