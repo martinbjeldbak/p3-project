@@ -3,7 +3,7 @@
 
 En klasse er en beskrivelse af en samling af objekter med samme struktur, adfærdsmønster og attributter \cite[s. ~51]{ooad}. Som nævnt i indledningen til kapitlet, er et af målene med analysen af problemområdet at skabe et overblik over, hvilke klasser systemet skal have. Overblikket over hvilke klasser systemet skal have, kan skabes ved først at finde så mange klasserkandidater, som muligt, og dernæst at afgrænse disse, så kun de mest relevante klasser er tilbage. I vores tilfælde anvendte vi en kombination af rigebilleder, som kan ses i \apref{ap:rigebilleder}, samt systemdefinitionen, som hjælpemidler til at finde frem til de klasser, som vi vil modellere i problemområdet.
 
-Grundet den iterative arbejdsproces som vi har arbejdet ud fra, er klasser undervejs i forløbet blevet tilføjet og fjernet. De klasser som er blevet fravalgt, kan ses i \apref{ap:fravalgteklasser}. Herunder ses de fem valgte klasser, samt beskrivelser og begrundelser for at de er med i vores problemområdet. 
+Grundet den evolutionære arbejdsmetode som vi har arbejdet ud fra, er klasser undervejs i forløbet blevet tilføjet og fjernet. De klasser som er blevet fravalgt, kan ses i \apref{ap:fravalgteklasser}. Herunder ses de fem valgte klasser, samt beskrivelser og begrundelser for at de er med i vores problemområdet. 
 
 \begin{description}
 \item[Opskrift] \hfill \\
@@ -22,26 +22,8 @@ En ingrediens består af en råvare, en mængde og en enhed. En ingrediens kan b
 En indkøbslisten skal holde styr på hvilke ingredienser en person mangler, i sit køkken, for at kunne lave en bestemt opskrift. 
 \end{description}
 
-Udfra de valgte klasser, skal vi have formuleret nogle hændelser, som beskriver klassernes adfærd. For klassen, ``indkøbsliste'', kan en hændelse \fx være ``vare tilføje'', hvor der med vare menes en ingrediens. En hændelse er en bestemt adfærd for en klasse, som beskrives med udsagnsord. En hændelse kan involvere en til flere klasser. Som i eksemplet før, så involverer hændelsen ``vare tilføjet'', både ``indkøbslisten'' men også en ``ingrediens'', da det er ingredienser der bliver tilføjet til indkøbslisten. Ligesom med klasser, har vi gennem forløbet, pga. den evolutionærearbejdsmetode, tilføjet og fjernet hændelser, igen og igen. De hændelser som er blevet skrottet, kan ses i \apref{ap:fravalgteklasseroghaendelser}.    
+Udfra de valgte klasser, skal vi have formuleret nogle hændelser, som beskriver klassernes adfærd. For klassen, ``indkøbsliste'', kan en hændelse \fx være ``vare tilføje'', hvor der med vare menes en ingrediens. En hændelse er en bestemt adfærd for en klasse, som beskrives med udsagnsord. En hændelse kan involvere en til flere klasser. Som i eksemplet før, så involverer hændelsen ``vare tilføjet'', både ``indkøbslisten'' men også en ``ingrediens'', da det er ingredienser der bliver tilføjet til indkøbslisten. Ligesom med klasser, har vi gennem forløbet, pga. den evolutionære arbejdsmetode, tilføjet og fjernet hændelser, igen og igen. De hændelser som er blevet skrottet, kan ses i \apref{ap:fravalgteklasseroghaendelser}.    
 
 I \tableref{table:haendelsestabel} ses de valgte hændelser, og hvilke klasser, disse hændelser, har en indflydelse på. Hver hændelse forårsager et tilstandsskift, og disse tilstande kan ses i tilstandsdiagrammerne i \secref{sec:adfaerd}. Hændelsestabellen giver et hurtigt overblik over hændelser og klasser. I hændelsestabellen benytter vi \iter-symbolet til at illustrere, at den tilhørende hændelse kan forekomme flere gange i samme klasse. Det betyder, at denne hændelse kan ses som en iteration i tilstandsdiagrammerne i \secref{sec:adfaerd}. Derudover benytter vi \once-symbolet til at illustrere, at den tilhørende hændelse forekommer en gang i samme klasse. Det betyder, at hændelsen kan ses som en selektion eller en sekvens i tilstandsdiagrammerne.
-
-%\begin{itemize} [noitemsep]
-%\item Råvare opbrugt
-%\item Råvare smidt ud
-%\item Råvare købt
-%\item Opskrift fundet
-%\item Opskrift valgt
-%\item Opskrift smidt ud
-%\item Bogmærke tilføjet
-%\item Bogmærke fjernet
-%\item Indkøbsliste oprettet
-%\item Indkøbsliste færdig
-%\item Indkøbsliste smidt ud
-%\item Ingrediens tilføjet
-%\item Ingrediens fjernet
-%\item Tekst tilføjet
-%\item Tekst fjernet
-%\end{itemize}
 
 \input{indhold/3-analyseafproblemomraade/haendelser/haendelsestabel}
