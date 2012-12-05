@@ -1,9 +1,18 @@
 \section{Komponenter}
 \label{sec:komponenter}
+Hvad er en komponent for en størrelse? Når der hentydes til komponenter i sammenhæng med systemudvikling, så er en komponent en samling af programdele, som udgør en helhed og har veldefinerede ansvarsområder. En programdel kan også være et helt delsystem, men i og med at platformen for vores system er objektorienteret, så vil de fleste programdele være de klasser, der findes i systemet.
 
-% modelkomponent: problemområde
-% funktionskomponent: beskriv modellens funktionalitet
-% grænseflade: interaktion mellem aktør og funktionalitet
+For at identificere de forskellige komponenter i vores system, startede vi med at opstille en meget simpel lagdelt arkitektur, som er visualiseret i \figref{fig:simpellag}. 
+Komponenten ``brugergrænseflade'' har ansvaret for at aflæse brugerens interaktion med systemets knapper og ud fra dette opdatere, hvad brugeren får vist på skærmen. 
+Funktionskomponenten er ansvarlig for systemets funktionalitet. Funktionaliteten bliver leveret til brugergrænsefladen som et set operationer på de offentlige klasser i funktionskomponenten. 
+Modelkomponentens primære ansvarsområde er at holde styr på objekterne, der repræsenterer problemområdet. Sker der noget relevant i problemområdet, så skal modelkomponentens objekter skifte tilstand i overenstemmelse hermed. 
+Dette mønster minder meget om Model-View-Controller mønstret, som vi kort har beskrevet i \secref{subsec:mvc}.
+
+\pdffig[0.7]{simpellag}
+	{Meget simpel lagdelt komponentarkitektur.}
+	{fig:simpellag}
+
+Ud fra den simple lagdelte struktur, som er vist i \figref{fig:simpellag}, er der blevet udviklet en overordnet komponentarkitektur, som kan ses i \secref{sec:overordnetkomponent}.
 
 \input{indhold/5-design/komponenter/overordnetStruktur}
 \input{indhold/5-design/komponenter/modelFunktion}
