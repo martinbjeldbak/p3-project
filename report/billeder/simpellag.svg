@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="259" version="1.1" width="446" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#ffffff" points="14,14 142,14 142,38 191,38 191,68 14,68 14,14" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="128" x="14" y="14"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="28">
+Brugergrænseflade</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="177" x="14" y="38"/>
+<polygon fill="#ffffff" points="14,102 140,102 140,126 189,126 189,156 14,156 14,102" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="126" x="14" y="102"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="116">
+Funktioner</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="175" x="14" y="126"/>
+<polygon fill="#ffffff" points="14,190 140,190 140,214 189,214 189,244 14,244 14,190" stroke="#ffffff" stroke-width="1"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="126" x="14" y="190"/>
+<text font-family="Lucida Grande" font-size="13" x="19" y="204">
+Model</text>
+<rect fill="none" height="30" stroke="#000000" stroke-width="1" width="175" x="14" y="214"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="69" y2="74"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="79" y2="84"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="89" y2="94"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="99" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="47" x2="54" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="61" x2="54" y1="90" y2="102"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="157" y2="162"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="167" y2="172"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="177" y2="182"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="54" y1="187" y2="190"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="47" x2="54" y1="178" y2="190"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="61" x2="54" y1="178" y2="190"/>
+<polygon fill="#ffffff" points="254,38 421,38 431,48 431,69 254,69 254,38" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="254,38 421,38 431,48 431,69 254,69 254,38" stroke="#000000" stroke-width="1"/>
+<polygon fill="#b2b2b2" points="421,38 431,48 421,48 421,38" stroke="#b2b2b2" stroke-width="1"/>
+<polyline fill="none" points="421,38 431,48 421,48 421,38" stroke="#000000" stroke-width="1"/>
+<text font-family="Lucida Grande" font-size="13" x="257" y="54">
+Interaktion med brugere. </text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="254" x2="249" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="244" x2="239" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="234" x2="229" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="224" x2="219" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="214" x2="209" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="204" x2="199" y1="54" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="192" y1="54" y2="54"/>
+<polygon fill="#ffffff" points="254,110 398,110 408,120 408,173 254,173 254,110" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="254,110 398,110 408,120 408,173 254,173 254,110" stroke="#000000" stroke-width="1"/>
+<polygon fill="#b2b2b2" points="398,110 408,120 398,120 398,110" stroke="#b2b2b2" stroke-width="1"/>
+<polyline fill="none" points="398,110 408,120 398,120 398,110" stroke="#000000" stroke-width="1"/>
+<text font-family="Lucida Grande" font-size="13" x="257" y="126">
+Funktionalitet:</text>
+<text font-family="Lucida Grande" font-size="13" x="257" y="142">
+opdatering, aflæsning</text>
+<text font-family="Lucida Grande" font-size="13" x="257" y="158">
+og signalering</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="254" x2="249" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="244" x2="239" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="234" x2="229" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="224" x2="219" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="214" x2="209" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="204" x2="199" y1="142" y2="142"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="190" y1="142" y2="142"/>
+</svg>
