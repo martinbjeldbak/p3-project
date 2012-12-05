@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Dec 03 12:26:21 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 05 14:52:08 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1836,7 +1836,7 @@
       justification="Center"
     >Vare</text>
     <group name="Fig6.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[521, 161, 78, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[529, 161, 78, 0]"
          href="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000002108"
          fill="0"
          fillcolor="white"
@@ -1848,7 +1848,7 @@
       </private>
       
       <rectangle name="Fig6.2.0"
-        x="521"
+        x="529"
         y="161"
         width="78"
         height="0"
@@ -2432,7 +2432,7 @@
     </group>
   </group>
   <group name="Fig12"
-       description="org.argouml.uml.diagram.static_structure.ui.FigComment[176, 136, 79, 56]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[176, 136, 80, 72]pathVisible=false;stereotypeView=0;"
        href="-84-25-21--23-55067b4e:13afe832f90:-8000:00000000000027F1"
        fill="1"
        fillcolor="white"
@@ -2446,8 +2446,8 @@
     <rectangle name="Fig12.0"
       x="176"
       y="136"
-      width="79"
-      height="56"
+      width="80"
+      height="72"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -2462,14 +2462,14 @@
     >
       <moveto x="176"
               y="136" />
-      <lineto x="244"
+      <lineto x="245"
               y="136" />
-      <lineto x="254"
+      <lineto x="255"
               y="146" />
-      <lineto x="254"
-              y="191" />
+      <lineto x="255"
+              y="207" />
       <lineto x="176"
-              y="191" />
+              y="207" />
       <lineto x="176"
               y="136" />
     </path>
@@ -2480,17 +2480,17 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="244"
+      <moveto x="245"
               y="136" />
-      <lineto x="254"
+      <lineto x="255"
               y="146" />
-      <lineto x="244"
+      <lineto x="245"
               y="146" />
-      <lineto x="244"
+      <lineto x="245"
               y="136" />
     </path>
     <group name="Fig12.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[178, 138, 65, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[178, 138, 66, 0]"
          href="-84-25-21--23-55067b4e:13afe832f90:-8000:00000000000027F1"
          fill="0"
          fillcolor="white"
@@ -2504,7 +2504,7 @@
       <rectangle name="Fig12.3.0"
         x="178"
         y="138"
-        width="65"
+        width="66"
         height="0"
         fill="0"
         fillcolor="white"
@@ -2515,8 +2515,8 @@
     <text name="Fig12.4"
       x="178"
       y="138"
-      width="65"
-      height="52"
+      width="66"
+      height="68"
       fill="0"
       fillcolor="white"
       stroke="0"
