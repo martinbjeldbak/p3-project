@@ -51,8 +51,8 @@
   \begin{picture}(1,0.42666667)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/indkoebsliste.pdf}}%
     \put(0.55,0.21333333){\makebox(0,0)[lb]{\smash{Redigeres}}}%
-    \put(0.48,0.06){\makebox(0,0)[lb]{\smash{Vare tilføjet(tekst)}}}%
-    \put(0.49,0.33666667){\makebox(0,0)[lb]{\smash{Vare fjernet(tekst)}}}%
-    \put(0.09666667,0.25333333){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
+    \put(0.48,0.06){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste(tekst)}}}%
+    \put(0.49,0.33666667){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste(tekst)}}}%
+    \put(0.09666667,0.25333333){\makebox(0,0)[lb]{\smash{Indkøbsliste lavet}}}%
   \end{picture}%
 \endgroup%
