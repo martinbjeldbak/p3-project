@@ -1,17 +1,45 @@
 ﻿#Provides method Compare(str1, str2) for calculating how equal two strings are (0-100 %)
 
 class TextComparer
-	def self.find_longest_common_string(str1, str2)
-		lc = ""
-		for start in 0...str1.length - lc.length do
-			for length in lc.length + 1..str1.length - start do
-			  find = str1[start,length]
-			  if (str2.include? find)
-				lc = find
-			  end
+	def self.find_longest_common_substring(s1, s2)
+		if (s1 == "" || s2 == "")
+			return ""
+		end
+		m = Array.new(s1.length){ [0] * s2.length }
+		longest_length, end_pos = 0,0
+		(0 .. s1.length - 1).each do |x|
+			(0 .. s2.length - 1).each do |y|
+				if s1[x] == s2[y]
+					m[x][y] = 1
+					if (x > 0 && y > 0)
+						m[x][y] += m[x-1][y-1]
+					end
+					if m[x][y] > longest_length
+						longest_length = m[x][y]
+						end_pos = x
+					end
+				end
 			end
 		end
-		return lc;
+		return s1[end_pos - longest_length + 1 .. end_pos]
+	end
+	
+	def self.find_longest_common_substring_backup(str1, str2)
+		lcs = ""
+		max = [str1, str2].max.length
+		start = 0
+		while (start < str1.length - lcs.length) do 
+			for length in lcs.length + 1..max - start do
+				find = str1[start,length]
+				if (str2.include? find)
+					lcs = find
+				else
+					break
+				end
+			end
+			start += 1
+		end
+		return lcs;
 	end
 	  
 	def self.remove_first_on_text(text, remove)
@@ -37,7 +65,7 @@ class TextComparer
 			return 100
 		end
 		score = 0
-		while (lc = find_longest_common_string(txt1, txt2)) != "" do
+		while (lc = find_longest_common_substring(txt1, txt2)) != "" do
 			txt1 = remove_first_on_text(txt1, lc)
 			txt2 = remove_first_on_text(txt2, lc)
 			score += lc.length * lc.length
@@ -63,7 +91,7 @@ class TextComparer
 			return 100
 		end
 		score = 0
-		while (lc = find_longest_common_string(txt1, txt2)) != "" do
+		while (lc = find_longest_common_substring(txt1, txt2)) != "" do
 			txt1 = remove_first_on_text(txt1, lc)
 			txt2 = remove_first_on_text(txt2, lc)
 			score += lc.length
