@@ -6,13 +6,13 @@
 % References
 \newcommand{\secref}[1]{afsnit \ref{#1}}
 \newcommand{\chapref}[1]{kapitel \ref{#1}}
-\newcommand{\pseudoref}[1]{algoritme \ref{#1}}
 \newcommand{\figref}[1]{figur \ref{#1}}
 \newcommand{\lstref}[1]{eksempel \ref{#1}}
 \newcommand{\apref}[1]{bilag \ref{#1}}
 \newcommand{\tableref}[1]{tabel \ref{#1}}
 \newcommand{\itemref}[1]{element \ref{#1}}
 \newcommand{\coderef}[1]{eksempel \ref{#1}} % deprecated, use \lstref
+\newcommand{\pseudoref}[1]{algoritme \ref{#1}}
 
 \newcommand{\fileref}[1]{\texttt{#1}}
 \newcommand{\classref}[1]{\textcolor{purple}{\texttt{#1}}}
@@ -69,25 +69,24 @@
 
 \textbf{Eksempler:} #5}}
 
+
+\newcommand{\pdffig}[4][0.9]{\begin{figure}[H]
+  \centering
+  \sffamily
+  \scalebox{#1}{
+    \input{billeder/#2.pdf_tex}
+  }
+  \capt{#3}
+  \label{#4}
+\end{figure}}
+
 \newcommand{\brugtabel}[6]{\tabelmedoverskrift{#1}{#2}{\textbf{Brugsmønster:} #3
 
 \textbf{Objekter:} #4
 
 \textbf{Funktioner:} #5}
-\begin{figure}[H]
-\centering
-\scalebox{0.9}{
-\input{billeder/brugsmoenstre/#2.pdf_tex}}
-\capt{#6}\label{fig:bm-#2}
-\end{figure}}
-
-\newcommand{\pdffig}[3]{\begin{figure}
-  \centering
-  \sffamily
-  \input{billeder/#1.pdf_tex}
-  \capt{#2}
-  \label{#3}
-\end{figure}}
+\pdffig[0.9]{brugsmoenstre/#2}{#6}{fig:bm-#2}
+}
 
 % Table stuff!!!
 \newcommand{\ourtable}[7]{
