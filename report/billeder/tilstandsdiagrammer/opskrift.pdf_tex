@@ -54,6 +54,6 @@
     \put(0.04178273,0.30362117){\makebox(0,0)[lb]{\smash{Bogmærke tilføjet(opskrift)}}}%
     \put(0.08635097,0.05013928){\makebox(0,0)[lb]{\smash{Bogmærke fjernet(opskrift)}}}%
     \put(0.56824513,0.06685237){\makebox(0,0)[lb]{\smash{Opskrift fjernet(opskrift)}}}%
-    \put(0.454039,0.35933148){\makebox(0,0)[lb]{\smash{Tilføj til indkøbsliste(opskrift)}}}%
+    \put(0.454039,0.35933148){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste(tekst)}}}%
   \end{picture}%
 \endgroup%
