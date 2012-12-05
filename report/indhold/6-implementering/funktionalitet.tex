@@ -11,64 +11,89 @@ Derudover blabla helpers.. assets.. osv\todo{}
 {\Foodl} består af følgende controllers:
 
 \begin{description}
-\item[ApplicationController] \hfill \\ 
-Den overordnede applikationscontroller, som alle andre controllers i Foodl nedarver fra. Den kan f.eks. indeholde forskellige helper-metoder, som skal kunne tilgås overalt i applikationen.
+  \item[ApplicationController] \hfill \\ 
+  Den overordnede applikationscontroller, som alle andre controllers i Foodl nedarver fra. Den kan f.eks. indeholde forskellige helper-metoder, som skal kunne tilgås overalt i applikationen.
 
-\item[FavoritesController] \hfill \\ 
-Denne controller håndterer brugerens favoritter, hvad enten denne er logget ind eller ej. Controlleren har tre actions, en til at liste favoritter, en til at tilføje favoritter og en til at fjerne favoritter.
+  \item[FavoritesController] \hfill \\ 
+  Denne controller håndterer brugerens favoritter, hvad enten denne er logget ind eller ej. Controlleren har tre actions, en til at liste favoritter, en til at tilføje favoritter og en til at fjerne favoritter.
 
-\item[HomeController] \hfill \\ 
-Denne controller håndterer applikationens to statiske sider, "Om foodl" og "Kontakt foodl".
+  \item[HomeController] \hfill \\ 
+  Denne controller håndterer applikationens to statiske sider, "Om foodl" og "Kontakt foodl".
 
-\item[IssuesController] \hfill \\ 
-Fejlhåndteringen foregår med denne controller. Dvs. oprettelsen af fejlrapporter og listen af disse.
+  \item[IssuesController] \hfill \\ 
+  Fejlhåndteringen foregår med denne controller. Dvs. oprettelsen af fejlrapporter og listen af disse.
 
-\item[RecipesController] \hfill \\
-Kun én action er indeholdt i denne controller, en action til at servere det billede der hører til en opskrift.
+  \item[RecipesController] \hfill \\
+  Kun én action er indeholdt i denne controller, en action til at servere det billede der hører til en opskrift.
 
-\item[SearchController] \hfill \\
-Søgning håndteres i denne controller. Søgningen er beskrevet i detaljer i \secref{sec:soegning}.
+  \item[SearchController] \hfill \\
+  Søgning håndteres i denne controller. Søgningen er beskrevet i detaljer i \secref{sec:funktionalitet-soegning}.
 
-\item[SessionsController] \hfill \\
-Denne controller håndtere brugersessioner, dvs. når en bruger vil logge ind eller ud.
+  \item[SessionsController] \hfill \\
+  Denne controller håndtere brugersessioner, dvs. når en bruger vil logge ind eller ud.
 
-\item[ShoppingListController] \hfill \\
-Indkøbslisten håndteres med denne controller. Tilføjelsen af elementer, hvad enten det er ingredienser, rå tekststrenge eller hele opskrifter, samt sletning af elementer muliggøres af denne controller.
+  \item[ShoppingListController] \hfill \\
+  Indkøbslisten håndteres med denne controller. Tilføjelsen af elementer, hvad enten det er ingredienser, rå tekststrenge eller hele opskrifter, samt sletning af elementer muliggøres af denne controller.
 
-\item[UsersController] \hfill \\
-Denne controller håndtere alt i forbindelse med brugere, dvs. f.eks. opretning af bruger, opdatering af kodeord og funktionen "Glemt kodeord".
+  \item[UsersController] \hfill \\
+  Denne controller håndtere alt i forbindelse med brugere, dvs. f.eks. opretning af bruger, opdatering af kodeord og funktionen "Glemt kodeord".
 
 \end{description}
 
 \subsection{Modeller}
 
-\item[FoodType] \hfill \\
-Råare
-
-\item[Ingredient] \hfill \\
-Ingrediens
-
-\item[IssueCategory] \hfill \\
-Fejltype
-
-\item[Issue] \hfill \\
-Fejlrapport
-
-\item[ListItem] \hfill \\
-Vare
-
-\item[Recipe] \hfill \\
-Opskrift
-
-\item[User] \hfill \\
-Bruger
-
 \begin{description}
+
+  \item[FoodType] \hfill \\
+  Råvare
+
+  \item[Ingredient] \hfill \\
+  Ingrediens
+
+  \item[IssueCategory] \hfill \\
+  Fejltype
+
+  \item[Issue] \hfill \\
+  Fejlrapport
+
+  \item[ListItem] \hfill \\
+  Vare
+
+  \item[Recipe] \hfill \\
+  Opskrift
+
+  \item[User] \hfill \\
+  Bruger
 
 \end{description}
 
+\subsection{Tabeller}
+\label{sec:tabeller}
+
+Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. \dbtableref{sessions}-tabellen bruges af en intern Session-model i Rails, som er nødvendig for at gemme sessionsdata på serveren.
+
+Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at udtrykke mange-til-mange-forholdet mellem brugere og opskrifter. Dvs. at hver relation mellem en bruger og en opskrift (en favorisering) svarer til en række i denne tabel, som indeholder både et id for en opskrift og et id for en bruger. Når tabellen først er oprettet sørger Rails selv for at abstrahere denne relation, sålænge en \methodref{has\_and\_belongs\_to\_many}-relation, der peger på User-modellen, er sat op i Opskrift-modellen og vice versa. Dette medvirker at man f.eks. nemt kan tilføje en opskrift til en brugers favoritter vha. en enkelt linje Ruby-kode, som illustreret i \lstref{list:rubymanytomany}.
+
+\begin{lstlisting}[caption={Hvis man har et \classref{User}-objekt i \texttt{user} (som f.eks. returneret med \lstinline{User.find_by_id(42)}) og et \classref{Recipe}-object i \texttt{recipe}, kan opskriften associeres med brugeren med denne linje Ruby-kode.},label=lst:rubymanytomany,language=ruby]
+user.favorites << recipe
+\end{lstlisting}
+
+\pdffig{database}
+  {Databasetabelstrukturen og associeringerne mellem tabellerne.}
+  {fig:database}
+
 \subsection{Søgning}
-\label{sec:soegning}
+\label{sec:funktionalitet-soegning}
+Søgningen må siges at være den vigtigste del af \Foodl. Som beskrevet i \classref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
+
+Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er er selve forsiden af \Foodl med mulighed for at indtaste ingredienser, og \methodref{result}, som er resultatsiden.
+
+Den tredje action i controlleren er \methodref{autocomplete\_food\_types}, hvortil der ikke er tilknyttet et view. Denne action har til formål at returnere en liste over råvarer baseret på brugerens indtastning. Denne funktionalitet er beskrevet i detaljer i nedenstående afsnit.
+
+\subsubsection{Søgeforslag}
+En central del af forsiden, og brugerens mulighed for at vælge råvarer, er at systemet kommer med en liste over forslag, baseret på brugerens indtastning.
+
+\subsubsection{Søgeresultat}
 
 
 
