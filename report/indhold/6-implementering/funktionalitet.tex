@@ -66,7 +66,7 @@ Derudover blabla helpers.. assets.. osv\todo{}
   Bruger
 
 \end{description}
-
+\todo{WIP}
 \subsection{Tabeller}
 \label{sec:tabeller}
 
@@ -74,10 +74,10 @@ Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figre
 
 Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at udtrykke mange-til-mange-forholdet mellem brugere og opskrifter. Dvs. at hver relation mellem en bruger og en opskrift (en favorisering) svarer til en række i denne tabel, som indeholder både et id for en opskrift og et id for en bruger. Når tabellen først er oprettet sørger Rails selv for at abstrahere denne relation, sålænge en \methodref{has\_and\_belongs\_to\_many}-relation, der peger på User-modellen, er sat op i Opskrift-modellen og vice versa. Dette medvirker at man f.eks. nemt kan tilføje en opskrift til en brugers favoritter vha. en enkelt linje Ruby-kode, som illustreret i \lstref{list:rubymanytomany}.
 
-\begin{lstlisting}[caption={Hvis man har et \classref{User}-objekt i \texttt{user} (som f.eks. returneret med \lstinline{User.find_by_id(42)}) og et \classref{Recipe}-object i \texttt{recipe}, kan opskriften associeres med brugeren med denne linje Ruby-kode.},label=lst:rubymanytomany,language=ruby]
+\begin{lstlisting}[caption={Hvis man har et \classref{User}-objekt i \texttt{user} (som f.eks. returneret med \lstinline{User.find_by_id(42)}) og et \classref{Recipe}-object i \texttt{recipe}, kan opskriften associeres med brugeren med denne linje Ruby-kode.},label=lst:rubymanytomany,language=Ruby]
 user.favorites << recipe
 \end{lstlisting}
-
+\todo{WIP}
 \pdffig{database}
   {Databasetabelstrukturen og associeringerne mellem tabellerne.}
   {fig:database}
@@ -91,9 +91,35 @@ Alt dette styres af klassen \classref{SearchController}, som består af tre acti
 Den tredje action i controlleren er \methodref{autocomplete\_food\_types}, hvortil der ikke er tilknyttet et view. Denne action har til formål at returnere en liste over råvarer baseret på brugerens indtastning. Denne funktionalitet er beskrevet i detaljer i nedenstående afsnit.
 
 \subsubsection{Søgeforslag}
-En central del af forsiden, og brugerens mulighed for at vælge råvarer, er at systemet kommer med en liste over forslag, baseret på brugerens indtastning.
+En central del af forsiden, og brugerens mulighed for at vælge råvarer, er at systemet kommer med en liste over forslag, baseret på brugerens indtastning. \todo{WIP}
+
+\begin{lstlisting}[caption={SQL query.},label=lst:soegeforslag-sql,language=SQL]
+SELECT name
+FROM food_types
+WHERE name LIKE "%pølse%"
+ORDER BY CASE
+    WHEN name LIKE "pølse" THEN 1
+    ELSE 0
+  END DESC,
+  CASE
+    WHEN name LIKE "pølse%" THEN 1
+    ELSE 0
+  END DESC,
+  LENGTH(name) ASC
+LIMIT 5
+\end{lstlisting}
+
+Resultatet af SQL-forespørgslen i \lstref{lst:soegeforslag-sql} er en liste med 5 forslag til råvarer. Listen sorteres således at hvis der findes et forslag, der matcher det indtastede 100 \%, vil dette komme øverst (den første \texttt{CASE} i \lstref{lst:soegeforslag-sql}). Dernæst rangeres forslag, som starter med det indtastede, højere end forslag, som ikke starter med det indtastede.
 
 \subsubsection{Søgeresultat}
-
-
+\todo{WIP}
+\begin{lstlisting}[caption={SQL query.},label=lst:soegeforslag-sql,language=SQL]
+SELECT recipes.*, COUNT(*) AS relevance
+FROM ingredients
+RIGHT JOIN recipes ON recipe_id = recipes.id
+WHERE food_type_id IN ( 2, 23, 12 )
+GROUP BY recipes.id
+ORDER BY relevance DESC
+LIMIT 0, 50
+\end{lstlisting}
 
