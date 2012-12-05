@@ -72,7 +72,7 @@ Derudover blabla helpers.. assets.. osv\todo{}
 
 Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. \dbtableref{sessions}-tabellen bruges af en intern Session-model i Rails, som er nødvendig for at gemme sessionsdata på serveren.
 
-Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at udtrykke mange-til-mange-forholdet mellem brugere og opskrifter. Dvs. at hver relation mellem en bruger og en opskrift (en favorisering) svarer til en række i denne tabel, som indeholder både et id for en opskrift og et id for en bruger. Når tabellen først er oprettet sørger Rails selv for at abstrahere denne relation, sålænge en \methodref{has\_and\_belongs\_to\_many}-relation, der peger på User-modellen, er sat op i Opskrift-modellen og vice versa. Dette medvirker at man f.eks. nemt kan tilføje en opskrift til en brugers favoritter vha. en enkelt linje Ruby-kode, som illustreret i \lstref{list:rubymanytomany}.
+Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at udtrykke mange-til-mange-forholdet mellem brugere og opskrifter. Dvs. at hver relation mellem en bruger og en opskrift (en favorisering) svarer til en række i denne tabel, som indeholder både et id for en opskrift og et id for en bruger. Når tabellen først er oprettet sørger Rails selv for at abstrahere denne relation, sålænge en \methodref{has\_and\_belongs\_to\_many}-relation, der peger på User-modellen, er sat op i Opskrift-modellen og vice versa. Dette medvirker at man f.eks. nemt kan tilføje en opskrift til en brugers favoritter vha. en enkelt linje Ruby-kode, som illustreret i \lstref{lst:rubymanytomany}.
 
 \begin{lstlisting}[caption={Hvis man har et \classref{User}-objekt i \texttt{user} (som f.eks. returneret med \lstinline{User.find_by_id(42)}) og et \classref{Recipe}-object i \texttt{recipe}, kan opskriften associeres med brugeren med denne linje Ruby-kode.},label=lst:rubymanytomany,language=Ruby]
 user.favorites << recipe
@@ -123,7 +123,7 @@ Det returnerede JSON-array for ``pølse'' kan ses i \lstref{lst:poelse-json}.
 
 \subsubsection{Søgeresultat}
 \todo{WIP}
-\begin{lstlisting}[caption={SQL query.},label=lst:soegeforslag-sql,language=SQL]
+\begin{lstlisting}[caption={SQL query.},label=lst:soegeresultat-sql,language=SQL]
 SELECT recipes.*, COUNT(*) AS relevance
 FROM ingredients
 RIGHT JOIN recipes ON recipe_id = recipes.id
