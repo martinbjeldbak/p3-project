@@ -3,7 +3,7 @@
 
 Da {\Foodl} er en Railsapplikation består den, som andre MVC-applikationer, hovedsageligt af modeller, controllers og views. Modeller er klasser, der repræsenerer data, dvs. f.eks. tabeller i databasen. Controllers er klasser bestående af actions, eller handlinger, som er metoder, der har til formål at reagere på en aktørs interaktion med serveren. Den sidste grundlæggende del af MVC-designet er views, som er template-filer, som bliver udfyldt med data gennem controlleren og sendt tilbage til aktøren. I {\Foodl} er der flest HTML-templates, som har til formål at præentere data i brugerens webbrowser.
 
-Derudover blabla helpers.. assets.. osv\todo{}
+Derudover består en Rails-applikation også af helpers og assets. Helpers er hjælpefunktioner, som skal være tilgængelige flere steder i applikationen, dvs. i forskellige controllers og views. Assets er de JavaScripts, stylesheets og billeder, som applikationen bruger på klientsiden. 
 
 \subsection{Controllers}
 \label{sec:controllers}
@@ -66,6 +66,7 @@ Derudover blabla helpers.. assets.. osv\todo{}
   Bruger
 
 \end{description}
+
 \todo{WIP}
 \subsection{Tabeller}
 \label{sec:tabeller}
@@ -86,7 +87,7 @@ user.favorites << recipe
 \label{sec:funktionalitet-soegning}
 Søgningen må siges at være den vigtigste del af \Foodl. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
 
-Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er er selve forsiden af \Foodl med mulighed for at indtaste ingredienser, og \methodref{result}, som er resultatsiden.
+Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er er selve forsiden af \Foodl{}med mulighed for at indtaste ingredienser, og \methodref{result}, som er resultatsiden.
 
 Den tredje action i controlleren er \methodref{autocomplete\_food\_types}, hvortil der ikke er tilknyttet et view. Denne action har til formål at returnere en liste over råvarer baseret på brugerens indtastning. Denne funktionalitet er beskrevet i detaljer i nedenstående afsnit.
 
