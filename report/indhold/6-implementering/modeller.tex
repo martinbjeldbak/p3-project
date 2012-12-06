@@ -1,28 +1,28 @@
+Enhver af de nedestående modeller er repræsenteret i klassediagrammet beskrevet i \secref{sec:modelfunktion}. Disse modeller har en direkte kobling til klassediagrammet og skal ses som den endelige implementering af designfasen. Herunder er hver model beskrevet med hvad de indeholder og hvad deres funktion består af.
 
+\classref{User} er den en af de eneste modelrepræsentationer, der benytter sig af Active Record Callbacks for at sørge for, at der \fx ikke kan oprettes to brugere med samme emailadresse og at emailen er ``gyldig'' (skal indeholde et ``@''-tegn). Dette gør vi, da vi mener ikke, at andre modeller er i direkte kontakt med brugeren på samme måde. Hovedsagligt bliver alle de andre klasser håndteret af systemet og kan derfor godt undvære en stræng kontrol på samme måde. Hvis systemet skulle bruges i produktion og håndteres af flere mennesker, ville det være åbentlyst, at tilføje mere kontrol på modellerne.
 
 \begin{description}
 
   \item[FoodType] \hfill \\
-  Råvare
+    Denne model repræsenterer ``råvare''-klassen i klassediagrammet. \classref{FoodType} er en liste af råvarer, som hver ingrediens i alle af opskrifterne svarer til. Meningen er, at hver ingrediens i alle opskrifter, uanset kilde, benytter sig af \'{e}n \classref{FoodType}. Grunden til dette er, at nogle opskriftshjemmesider benytter varemærker i ingrediensnavne eller bruger forskellige ord for den samme type råvare, \fx havsalt og salt eller schalotteløg og skalotteløg. Dette kan skabe forvirring og gøre søgning meget besværligt hvis der ikke blev søgt på ``bagekartofler'' når man indtaster ``kartofler'' i søgningen. De første råvarer er taget fra en liste af ingredienser\cite{ingrediensliste}, hvorefter de manulet er blevet indtastet, hvis en ingrediens fra en opskriftshjemmeside ikke eksisterer i forvejen. De forskellige instanser af \classref{FoodType} bliver \fx vist som søgeforslag, når man foretager en søgning på forsiden. Alle råvarer er skrevet i flertal for at få konsistens; og vi vurderer, at det et yderst sjællent, at man har lyst til \fx at bruge \'{e}n enkelt gulerod som ingrediens i sin rester.
 
   \item[Ingredient] \hfill \\
-  Ingrediens
-
-  \item[IssueCategory] \hfill \\
-  Fejltype
-
-  \item[Issue] \hfill \\
-  Fejlrapport
-
-  \item[ListItem] \hfill \\
-  Vare
+    Ingrediensmodellen indgår udelukkende i opskrifter og indeholder navn, mængde og enhed. Hver \classref{Ingredient} har en tilsvarende \classref{FoodType}, \fx svarer ``ostindisk karry'' henholdsvis til ``karry''. Navnfeltet er taget fra opskriftshjemmesiderne, da de typisk er mere beskrivende end blot en \classref{FoodType}. Det gør, at navnefeltet ikke har nogen betydning for søgningen, da der ikke bliver søgt på ingrediensnavnet. Enheden for hver \classref{Ingredient} er beskrevet ved hjælp af SI-systemet og er også taget fra ingredienslisten på opskriftshjemmesiderne. Mængden beskrkriver mængden af ingrediensen skaleret ned til en enkelt person. Det muliggøre nemmere en skaleringsfunktion på \Foodl{}, så man ikke behøver, at navigere videre til selve opskriftsiden, hvis man allerede er klar over, hvor mange personer, der skal laves mad til.
 
   \item[Recipe] \hfill \\
-  Opskrift
+    Opskriftsmodellen indeholder al information om opskrifter: navn, billede, vurdering, url, forberedningstid, samt flere instanser af klassen \classref{Ingredient}. Billedet er taget direkte fra opskriftshjemmesiden og er krævet, da vi, i forhold til informanternes ønsker, ikke interesserer os for opskriftshjemmesider uden et billede af opskriften. I forhold til favoritter, har opskrifter også mulighed for at tilhøre brugere, men dette er repræsenteret af en anden tabel i databasen.  
+
+  \item[IssueCategory] \hfill \\
+    Fejltypeemodellen beskriver de forskellige typer fejl, som brugeren kan rapport\'{e}r til administratorerne. Modellen består af et navnefelt og et beskrivelsesboolean. Navnet på en fejlkategori kunne \fx være ``dødt link'' eller ``stavefejl''. Fejltyperne kan derudover være beskrivelige eller ikke beskrivelige, da der nødvendigvis ikke behøves en forklaring af brugeren på \fx et dødt link, hvorimod andre, mere generelle fejltyper kræver en form for beskrivelse før de kan rapporteres.
+
+  \item[Issue] \hfill \\
+    Fejlrapportmodellen tislutter sig en \classref{IssueCategory} for at administratorerne på siden har mulighed for at sortere og filtrere listen af fejl i forbindelse med deres kateogori. Derudover indeholder \classref{Issue} en bruger og/eller en beskrivelse, alt afhængingt af hvilken fejlkategori den indgår i. Dvs., at hvis brugeren er logget ind under oprettelse af en fejlrapport, så kan administratorne tilgå brugerens mailadresse og eventuelle oplysninger, hvis de ønsker at kontakte brugeren for yderligere oplysninger eller lignende.
+
+  \item[ListItem] \hfill \\
+    Varer er den model, som både ingredienser og de tekststrenge, som brugeren tilføjer til indkøbslisten bliver modelleret som. Dette gøres for at undgå, at indholdet i indkøbslisten ikke ændres, hvis der bliver fjernet eller ændret i en ingrediens  og vice versa. En \classref{ListItem} har alle egenskaber som en \classref{Ingredient} har, hvor den derudover kræver et \classref{User} for at koble brugeren med de varer, der er tilføjet til indkøbslisten.
 
   \item[User] \hfill \\
-  Bruger
+    Brugermodellen repræsnterer de oprettede bruger på \Foodl{}. Brugere skal oprette sig med en emailadresse samt kodeord og kan indtaste et navn, hvis det ønskes. Email er den unikke måde, hvorpå brugeren bliver identificeret. Der kan altså på ingen tidspunkt være oprettet to brugere med samme emailadresse. Kodeord bliver gemt i databasen ved hjælp af en BCrypt rubygem, der hasher kodeordet i stedet for at gemme det i plaintekst. Brugere har iøvrigt mange \classref{ListItem}s, \classref{Issue}s og har også en tilslutning til favorit-tabllen beskrevet i \classref{Recipe}-modellen.
 
 \end{description}
-
-\todo{WIP}
