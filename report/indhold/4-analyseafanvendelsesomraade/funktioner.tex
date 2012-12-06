@@ -1,13 +1,15 @@
 \section{Funktioner}
 \label{sec:funktioner}
 
-For at skabe overblik over systemets funktionailtet er en funktionsliste er udarbejdet, hvilket beskriver hvad systemet skal kunne. Dette skal som minimum dække over hvordan aktørerne vil interagere med systemet.
+For at skabe overblik over systemets funktionailtet er en funktionsliste  blevet udarbejdet, hvilket beskriver, hvad systemet skal kunne. Dette skal som minimum dække over, hvordan aktørerne vil interagere med systemet.
 
-Funktionslisten kan ses i \tableref{table:funktionsliste} og indeholder ud over listen af funktioner, to parameter for hver funktion, funktionstype og kompleksitet. Funktionstype klassifikerer generalle typer af funktioner på hvordan de forbinder systemet med omgivelserne. Aflæsning- og opdaterings-funktioner aflæser og ændrer i modellen respektivt, hvor beregningsfunktioner aflæser modellen og udarbejder noget nyt data som vises i anvendelesområdet. Kompleksitet er vores bedømmelse af hvor svært det er at implementere funktionen og kun de komplekse funktioner vil blive nærmere uddybet her.
+Funktionslisten kan ses i \tableref{table:funktionsliste} og indeholder, ud over listen af funktioner, to parametre for hver funktion, funktionstype og kompleksitet. Funktionstype klassificerer generelle typer af funktioner på, hvordan de forbinder systemet med omgivelserne. Aflæsning- og opdaterings-funktioner aflæser og ændrer i modellen respektivt, hvor beregningsfunktioner aflæser modellen og udarbejder noget nyt data som vises i anvendelesområdet. Kompleksitet er vores bedømmelse af hvor svært det er at implementere funktionen og kun de komplekse funktioner vil blive nærmere uddybet her.
 
 \input{indhold/4-analyseafanvendelsesomraade/funktioner/funktionsliste}
 
-\subsection{Komplekse funktioner}
-Udfør crawling er beskrivet ved brug af dekomponering i mindre komplekse funktioner og funktionslisten for udfør crawling kan ses i \tableref{table:crawlingliste}. Under find opskrift crawles en opskrifthjemmeside og alle opskrifter indentifikeres. Find ingredienser finder alle ingredienser for opskrifterne og gem opskrift tilføjer det hele til modellen.
+De førte tre funktioner i \tableref{table:funktionsliste}, er funktioner der skal blive udført af dataudtrækkeren. Denne har til formål at trække relevant data ud af specifikke hjemmesider, og evt. oprette, slette eller opdatere opskrifter alt efter hvilken funktion, der er relevant. Hvis der \fx er sket en ændring i en af opskrifterne, så skal denne opdateres som følge heraf. 
 
-Søgning efter opskrifter er en kompleks beregningsfunktion som tager en liste over råvare som input og returnere en liste over relevante opskrifter. Listen skal bestå af de opskrifter som best muligt udnytter de råvarer som funktionen har fået som input og skal kunne sorteres efter forudbestemte kriterier.
+\subsection{Komplekse funktioner}
+Den komplekse funktion ``udfør dataudtrækning'' er beskrevet ved at dekomponere funktionen i mindre komplekse funktioner. Funktionslisten for ``udfør dataudtrækning'' kan ses i \tableref{table:crawlingliste}. Under funktionen ``find opskrift'' udfører dataudtrækkeren dataudtrækning af en opskriftshjemmeside og alle opskrifter identificeres. Funktionen ``find ingredienser'' finder alle ingredienser for opskrifterne og funktionen ``gem opskrift'' tilføjer det hele til modellen.
+
+Søgningen efter opskrifter er en kompleks beregningsfunktion, som tager en liste over råvarer som input og returnerer en liste over relevante opskrifter. Listen skal bestå af de opskrifter, som bedst muligt udnytter de råvarer som funktionen har fået som input og skal kunne sorteres efter forudbestemte kriterier.

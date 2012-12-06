@@ -1,33 +1,29 @@
 \section{Brug}
 \label{sec:brug}
-Denne analyse af anvendelsesområdets brug, har til formål at gøre det klart, hvilke aktører, der benytter \Foodl. Resultatet af analysen af aktører er en mængde aktørbeskrivelser. Derudover analyseres hvilke mønstre, der er for aktørernes brug af \Foodl. Resultatet af denne akvitet er en mængde brugsmønstre, der beskrives både i form af en brugsmønsterspecifikation og derefter et tilstandsdiagram. Hver enkelt brugsmønster vedrører en eller flere aktører. Denne relation vises med en aktørtabel, som afslutter aktiviteten brug.
-
-I \tableref{table:aktoertabel} ses hvilke brugsmønstre, der vedrører en given aktør. Et flueben betyder at brugsmønstret i samme række vedrører aktøren i samme kolonne.
+Denne analyse af anvendelsesområdets brug, har til formål at gøre det klart, hvilke aktører, der benytter \Foodl{}. Resultatet af analysen af aktører er en mængde aktørbeskrivelser. Resultatet af denne akvitet er brugsmønstre. Hver enkelt brugsmønster vedrører en eller flere aktører. Denne relation vises i \tableref{table:aktoertabel}. Et flueben betyder at brugsmønstret i samme række vedrører aktøren i samme kolonne.
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/aktoertabel}
 
 \subsection{Aktører}
 \label{sec:aktoerer}
-Vi har identificeret 3 aktører, der vil kunne interagere med \Foodl. Vi specificerer aktører med en beskrivelse af aktøren og om nødvendigt en eller flere eksempler på hver enkelt aktør.
+Vi har identificeret 3 aktører (Bruger, Administartor og Dataudtrækker), som også er vist i \tableref{table:aktoertabel}, der vil kunne interagere med \Foodl{}. Vi specificerer aktører med en beskrivelse af aktøren og om nødvendigt en eller flere eksempler på hver enkelt aktør.
+
+Disse beskrivelser har til formål at give læseren en bedre forståelse for, hvilke egenskaber og karakterisitka en sådan aktør besidder. 
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/aktoerbeskrivelse}
 
 \subsection{Brugsmønstre}
 \label{subsec:brugsmoenstre}
-For at beskrive beskriver hændelserne, der vedører en given aktør, modellere vi en række brugsmønstre. Brugsmønstrene præsenteres både i form af et tilstandsdiagram og en brugsmønsterspecifikation. Tilstandsdiagramet giver et hurtigt godt visuelt overblik over brugsmønsteret, hvor brugsmønsterspecifikation giver et mere detaljeret beskrivelse af brugsmønsteret.
+For at beskrive hændelserne, der vedører en given aktør, modellerer vi en række brugsmønstre. Brugsmønstrene præsenteres både i form af  tilstandsdiagrammer og brugsmønsterspecifikationer. Tilstandsdiagramet giver et visuelt overblik over brugsmønsteret, hvor brugsmønsterspecifikation giver en mere detaljeret beskrivelse af brugsmønsteret.
 
-I forbindelse med modelleringen af brugsmønstre, har vi fokuseret på fra starten af, at identificere så mange brugsmønsterkandidater som muligt. Vi har benyttet denne teknik i et forsøg på at sikre os, ikke at have overset et vigtigt brugsmønster. Kandidaterne er valgt i forbindelse med en brainstorming, og er hver især blevet analyseret for relevans efter brainstormen. Dette har resulteret i at nogle af kandidaterne er blevet fravalgt. Der har været flere grunde til at vi har fravalgt kandidater:
-\begin{itemize}
+I forbindelse med modelleringen af brugsmønstre, har vi fokuseret på, at identificere så mange brugsmønsterkandidater som muligt. Vi har benyttet denne teknik i et forsøg på at sikre, i at vi ikke har overset et vigtigt brugsmønster. Kandidaterne er valgt i forbindelse med en brainstorming, og er hver især blevet analyseret for relevans efter brainstormen. Dette har resulteret i at nogle af kandidaterne er blevet fravalgt. Der har været flere grunde til, at vi har fravalgt kandidater:
+
+\begin{itemize}[noitemsep]
 \item Brugsmønstret har ikke været en del af anvendelsesområdet
 \item Brugsmønstret har været for simpelt
 \item Brugsmønstret har været været en del af eller magen til et andet brugsmønstre
 \end{itemize}
+
 De fravalgte kandidater, samt begrundelsen fra fravælgelsen fremgår af \apref{ap:fravalgtebrugsmoenstre}.
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/brugsmoenstre}
-
-
-
-
-
-
