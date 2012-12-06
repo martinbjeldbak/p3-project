@@ -33,7 +33,7 @@ For at kunne gemme informationer om en opskrifts forskellige bestanddele, såsom
 Opskrifterne på Arla blev udsat for dataudtrækning ved brug af modulet Nokogiri i Ruby. Nokogiri-modulet gør det let at finde værdier af forskellige elementer i et dokument. På Arlas hjemmeside findes en side, der giver mulighed for at vise alle opskrifterne. Der vises 16 opskrifter af gangen, og når man bladrer frem og tilbage imellem side 1 og side 2, hver især med 16 forskellige opskrifter på hver, så ændres en query i url'en på følgende måde: \\
 \lstinline{?...\&paging=1\&...} \\
 \lstinline{?...\&paging=2\&...} \\
-En variabel ved navn \textit{paging} ændres i queryen værdi fra 1 til 2. Siderne, der indekserer 16 opskrifter af gangen er derfor lette at finde ved blot at lade en variable gå fra 1 og øges indtil ingen opskrifter fremkommer.
+En variabel ved navn \textit{paging} ændres i queryen værdi fra 1 til 2. Siderne, der indekserer 16 opskrifter af gangen er derfor lette at finde ved blot at lade en variablen \textit{paging} i queryen gå fra 1 og øges indtil ingen opskrifter fremkommer.
 
 På hver enkelt indekseringsside vises 16 opskrifter. Et link til en opskrift på Arlas indekseringsside, ser i HTML således ud:
 
