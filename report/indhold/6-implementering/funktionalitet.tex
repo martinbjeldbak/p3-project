@@ -84,7 +84,7 @@ user.favorites << recipe
 
 \subsection{Søgning}
 \label{sec:funktionalitet-soegning}
-Søgningen må siges at være den vigtigste del af \Foodl. Som beskrevet i \classref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
+Søgningen må siges at være den vigtigste del af \Foodl. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
 
 Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er er selve forsiden af \Foodl med mulighed for at indtaste ingredienser, og \methodref{result}, som er resultatsiden.
 
@@ -121,15 +121,25 @@ Det returnerede JSON-array for ``pølse'' kan ses i \lstref{lst:poelse-json}.
 ["Pølser","Pøsebrød","Spegepølse","Wienerpølse","Røde pølser"]
 \end{lstlisting}
 
+De valgte råvarer tilføjes med JavaScript til en liste, som sendes videre til \methodref{result}-siden.
+
 \subsubsection{Søgeresultat}
-\todo{WIP}
-\begin{lstlisting}[caption={SQL query.},label=lst:soegeresultat-sql,language=SQL]
+Resultatsiden håndteres af en action ved navn \methodref{result}, som foretager søgningen på opskrifterne i databasen. 
+
+Den primære parameter er en liste af råvare, som en tekstreng separeret med ``|''-tegn. Det første der bliver gjort med denne streng, er at den bliver splittet op i et array bestående af råvarenavne. Derefter genereres en SQL-forespørgsel, som henter id'erne for de valgte råvarer fra \dbtableref{food\_types}-tabellen.
+
+For søgestrengen ``\texttt{Pølser|Wasabi|Peber|}'' returneres derfor array'et \lstinline[language=Ruby]{[1116, 1113, 2]}. Disse id'er bruges til generere endnu en SQL-forespørgsel, med det formål at finde opskrifter, som indeholder de valgte råvarer. Et eksempel på dette kan ses i \lstref{lst:soegeresultat-sql}.
+
+\begin{lstlisting}[caption={Ved en søgning på ``Pølser'', ``Wasabi'' og ``Peber'' udføres denne SQL-forespørgsel.},label=lst:soegeresultat-sql,language=SQL]
 SELECT recipes.*, COUNT(*) AS relevance
 FROM ingredients
 RIGHT JOIN recipes ON recipe_id = recipes.id
-WHERE food_type_id IN ( 2, 23, 12 )
+WHERE food_type_id IN ( 1116, 1113, 2 )
 GROUP BY recipes.id
 ORDER BY relevance DESC
 LIMIT 0, 50
 \end{lstlisting}
 
+Resultatet grupperes efter opskrifternes id, således at man kan tælle hvor mange af de valgte råvarer opskriften indeholder. Denne værdi gemmes i variables \texttt{relevance}, og bliver (som standard) brugt til at sortere resultatet med. Den bliver ligeledes sendt videre til view'et sammen med hver opskrift, således at det fremgår af resultaterne, hvor mange af de valgte ingredienser, hver opskrift indeholder.
+
+Opskrifterne returneres på to måder alt efter hvordan siden forespørges. Ved et almindelig browser-forespørgsel returneres hele resultatsiden som forventet. Men foretages forespørgslen via AJAX, så returneres kun listen med opskrifter. Dette gør at resultatsiden dynamisk kan hente en ny opskriftliste fra serveren, hvis f.eks. søgeparametrene ændres.
