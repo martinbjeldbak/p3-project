@@ -42,32 +42,8 @@ Derudover består en Rails-applikation også af helpers og assets. Helpers er hj
 
 \subsection{Modeller}
 
-\begin{description}
+\input{indhold/6-implementering/modeller}
 
-  \item[FoodType] \hfill \\
-  Råvare
-
-  \item[Ingredient] \hfill \\
-  Ingrediens
-
-  \item[IssueCategory] \hfill \\
-  Fejltype
-
-  \item[Issue] \hfill \\
-  Fejlrapport
-
-  \item[ListItem] \hfill \\
-  Vare
-
-  \item[Recipe] \hfill \\
-  Opskrift
-
-  \item[User] \hfill \\
-  Bruger
-
-\end{description}
-
-\todo{WIP}
 \subsection{Tabeller}
 \label{sec:tabeller}
 
@@ -87,7 +63,7 @@ user.favorites << recipe
 \label{sec:funktionalitet-soegning}
 Søgningen må siges at være den vigtigste del af \Foodl. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
 
-Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er er selve forsiden af \Foodl{}med mulighed for at indtaste ingredienser, og \methodref{result}, som er resultatsiden.
+Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er er selve forsiden af \Foodl{} med mulighed for at indtaste ingredienser, og \methodref{result}, som er resultatsiden.
 
 Den tredje action i controlleren er \methodref{autocomplete\_food\_types}, hvortil der ikke er tilknyttet et view. Denne action har til formål at returnere en liste over råvarer baseret på brugerens indtastning. Denne funktionalitet er beskrevet i detaljer i nedenstående afsnit.
 
