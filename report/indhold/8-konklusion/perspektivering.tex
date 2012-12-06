@@ -1,0 +1,19 @@
+\section{Perspektivering}
+\label{sec:perspektivering}
+%problem: madspild - mål:mindske madspild
+Idéen bag \Foodl{}, der har til formål at mindske madspild i danske husstande, er ikke et nyt koncept. Vi har undersøgt tre systemer, der bygger på samme idé. Disse har vi forklaret i \secref{sec:eksisterendesystemer}. Systemet er relativt nyt, så der vil højst sandsynligt være mange punkter, hvor der kan ske ændringer, som vil gøre systemet bedre for befolkningen. Her prøver vi at reflektere over, hvordan dette kunne ske.
+
+%flere begrænsningsmuligheder - allergikere
+Systemet \Foodl{} implementerer ikke nogle muligheder for \fx allergikere at begrænse søgeresultater til \fx at udelukke opskrifter med nødder eller lignende. Dette kunne være en fornuftig feature at have, hvis man nemt og hurtigt ville have et overblik over de opskrifter, man selv kan have glæde af at lave.
+
+%flere opskrifter
+%andre sprog
+%involvere flere websider - mindske madspild
+Til webapplikationen \Foodl{} har vi kun kontakte \url{http://www.arla.dk/} og fået lov til at benytte os af deres opskrifter. Dette betyder, at vores opskrifter indeholder reklamer for arlas produkter. Ved at involvere flere opskriftshjemmesider, så vil det blive muligt at opsamle mange flere opskrifter. Det positive ved dette ville være, at vores database ville indeholde mange flere opskrifter, som brugerne ville få glæde af. Dette ville minimere risikoen for, at en bruger kunne komme ud for et tomt søgeresultat, fordi der ikke findes nogen opskrifter, som indeholder de råvarer, der er blevet indtastet.
+
+Madspild forekommer ikke kun i Danmark. Derfor kan man også udvikle systemet til at understøtte andre sprog, og muligvis arbejde sammen med opskriftshjemmesider fra forskellige lande for at kunne levere webapplikationens ydelse til andre lande, der også kunne have gavn af mindre madspild.
+
+%mere intelligent søgningsmetode - flest ud af, hvor mange ingredienser - hvis opskriften har mange ingredienser i forhold til opskrifter med færre ingredienser!
+Ser vi på optimering af algoritmer, så skal der være særlig fokus på, hvordan en søgning foretages. På nuværende tidspunkt, så vises søgeresultater, der indeholder ingredienser, der er indtastet af brugeren. Altså den opskrift, der indeholder de fleste matchende ingredienser bliver vist først. Man vil med fordel kunne bestemme, hvilke opskrifter, der skulle vises øverst ved at undersøge, hvor stor en procentdel af alle opskriftens ingredienser, der matcher. På denne måde mindsker vi det eventuelle indkøb, der skal til for at lave en opskrift. 
+
+Hvis vi prøver at give et eksemple på dette så ser det således ud; Vi har to opskrifter, der begge indeholder alle 10 ingredienser, som vi har indtastet i søgefeltet. Den ene af de to opskrifter har i alt 12 ingredienser og den anden har 25 ingredienser. Dette betyder, at vi blot skal købe to nye råvarer ind til at lave den ene, mens vi skal købe 15 råvarer for at lave den anden. Dvs., at vi ca. har 83 \% af den ene opskrifts ingredienser og kun 40 \% af den anden opskrifts ingredienser. Ved at udvikle en mere intelligent søgning, så kan vi også mindske det fremtidige madspild, fordi vi begrænser det eventuelle indkøb af manglende råvarer.
