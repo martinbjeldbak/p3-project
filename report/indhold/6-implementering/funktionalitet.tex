@@ -55,9 +55,9 @@ Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at u
 user.favorites << recipe
 \end{lstlisting}
 
-Som illustreret i \figref{fig:databasestruktur} så er der udover mange-til-mange-forholdene også mere simple relationer. Det ses blandt andet mellem opskrifter og ingredienser, og mellem ingredienser og råvarer. Dette betyder at ser man på \classref{Ingredient}-modellen, så er der sat to \methodref{belongs\_to}-relationer op, som peger på henholdsvis \classref{Recipe} og \classref{FoodType}. Ligeledes er der i både \classref{Recipe}- og \classref{FoodType}-modellerne sat en \methodref{has\_many}-relation op, som peger på \classref{Ingredient}.
+Som illustreret i \figref{fig:database} så er der udover mange-til-mange-forholdene også mere simple relationer. Det ses blandt andet mellem opskrifter og ingredienser, og mellem ingredienser og råvarer. Dette betyder at ser man på \classref{Ingredient}-modellen, så er der sat to \methodref{belongs\_to}-relationer op, som peger på henholdsvis \classref{Recipe} og \classref{FoodType}. Ligeledes er der i både \classref{Recipe}- og \classref{FoodType}-modellerne sat en \methodref{has\_many}-relation op, som peger på \classref{Ingredient}.
 
-\pdffig{database}
+\pdffig[0.6]{database}
   {Databasetabelstrukturen og associeringerne mellem tabellerne.}
   {fig:database}
 
