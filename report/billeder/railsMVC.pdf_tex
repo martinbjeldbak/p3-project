@@ -48,15 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.07397959)%
+  \begin{picture}(1,0.80867347)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/railsMVC.pdf}}%
     \put(0.35714286,0.45153061){\makebox(0,0)[lb]{\smash{Controller}}}%
     \put(0.09183673,0.22704082){\makebox(0,0)[lb]{\smash{Model}}}%
     \put(0.68367347,0.22704082){\makebox(0,0)[lb]{\smash{View}}}%
-    \put(0.35714286,1.00255102){\makebox(0,0)[lb]{\smash{Webbrowser}}}%
-    \put(0.3622449,0.7372449){\makebox(0,0)[lb]{\smash{Webserver}}}%
-    \put(0.39030612,0.65561224){\makebox(0,0)[lb]{\smash{Routes}}}%
-    \put(0.35714286,0.57397959){\makebox(0,0)[lb]{\smash{Dispatcher}}}%
+    \put(0.33673469,0.7372449){\makebox(0,0)[lb]{\smash{Webbrowser}}}%
     \put(0.09183673,0.06377551){\makebox(0,0)[lb]{\smash{Database}}}%
   \end{picture}%
 \endgroup%
