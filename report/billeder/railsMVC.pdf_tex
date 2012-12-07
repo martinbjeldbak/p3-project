@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{313.6bp}%
+    \setlength{\unitlength}{340.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,15 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.07397959)%
+  \begin{picture}(1,0.70657277)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/railsMVC.pdf}}%
-    \put(0.35714286,0.45153061){\makebox(0,0)[lb]{\smash{Controller}}}%
-    \put(0.09183673,0.22704082){\makebox(0,0)[lb]{\smash{Model}}}%
-    \put(0.68367347,0.22704082){\makebox(0,0)[lb]{\smash{View}}}%
-    \put(0.35714286,1.00255102){\makebox(0,0)[lb]{\smash{Webbrowser}}}%
-    \put(0.3622449,0.7372449){\makebox(0,0)[lb]{\smash{Webserver}}}%
-    \put(0.39030612,0.65561224){\makebox(0,0)[lb]{\smash{Routes}}}%
-    \put(0.35714286,0.57397959){\makebox(0,0)[lb]{\smash{Dispatcher}}}%
-    \put(0.09183673,0.06377551){\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0.3286385,0.41549296){\makebox(0,0)[lb]{\smash{Controller}}}%
+    \put(0.08450704,0.20892019){\makebox(0,0)[lb]{\smash{Model}}}%
+    \put(0.74178404,0.20892019){\makebox(0,0)[lb]{\smash{View}}}%
+    \put(0.30985915,0.64084507){\makebox(0,0)[lb]{\smash{Webbrowser}}}%
+    \put(0.08450704,0.05868545){\makebox(0,0)[lb]{\smash{Database}}}%
   \end{picture}%
 \endgroup%
