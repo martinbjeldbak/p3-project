@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Dec 06 13:39:26 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 07 09:40:57 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -420,7 +420,7 @@
     ></text>
   </group>
   <group name="Fig2"
-       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[496, 360, 101, 55]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
+       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[544, 360, 101, 55]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
        href="-84-17-58--32-38cdda9a:13b6a47487a:-8000:0000000000000A72"
        fill="1"
        fillcolor="white"
@@ -431,7 +431,7 @@
     </private>
     
     <rectangle name="Fig2.0"
-      x="496"
+      x="544"
       y="360"
       width="101"
       height="55"
@@ -447,23 +447,23 @@
       stroke="0"
       strokecolor="black"
     >
-      <moveto x="496"
+      <moveto x="544"
               y="360" />
-      <lineto x="547"
+      <lineto x="595"
               y="360" />
-      <lineto x="547"
+      <lineto x="595"
               y="384" />
-      <lineto x="596"
+      <lineto x="644"
               y="384" />
-      <lineto x="596"
+      <lineto x="644"
               y="414" />
-      <lineto x="496"
+      <lineto x="544"
               y="414" />
-      <lineto x="496"
+      <lineto x="544"
               y="360" />
     </path>
     <text name="Fig2.2"
-      x="496"
+      x="544"
       y="360"
       width="52"
       height="25"
@@ -479,7 +479,7 @@
       justification="Left"
     >View</text>
     <group name="Fig2.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[496, 360, 51, 1]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[544, 360, 51, 1]"
          href="-84-17-58--32-38cdda9a:13b6a47487a:-8000:0000000000000A72"
          fill="1"
          fillcolor="white"
@@ -491,7 +491,7 @@
       </private>
       
       <rectangle name="Fig2.3.0"
-        x="496"
+        x="544"
         y="360"
         width="51"
         height="1"
@@ -502,7 +502,7 @@
       />
     </group>
     <text name="Fig2.4"
-      x="496"
+      x="544"
       y="384"
       width="101"
       height="31"
@@ -519,7 +519,7 @@
     ></text>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[360, 160, 144, 55]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
+       description="org.argouml.uml.diagram.static_structure.ui.FigPackage[360, 176, 138, 55]pathVisible=false;stereotypeView=0;stereotypeVisible=true;visibilityVisible=false"
        href="-84-17-58--32-38cdda9a:13b6a47487a:-8000:0000000000000A74"
        fill="1"
        fillcolor="white"
@@ -531,8 +531,8 @@
     
     <rectangle name="Fig3.0"
       x="360"
-      y="160"
-      width="144"
+      y="176"
+      width="138"
       height="55"
       fill="0"
       fillcolor="white"
@@ -547,24 +547,24 @@
       strokecolor="black"
     >
       <moveto x="360"
-              y="160" />
-      <lineto x="454"
-              y="160" />
-      <lineto x="454"
-              y="184" />
-      <lineto x="503"
-              y="184" />
-      <lineto x="503"
-              y="214" />
+              y="176" />
+      <lineto x="448"
+              y="176" />
+      <lineto x="448"
+              y="200" />
+      <lineto x="497"
+              y="200" />
+      <lineto x="497"
+              y="230" />
       <lineto x="360"
-              y="214" />
+              y="230" />
       <lineto x="360"
-              y="160" />
+              y="176" />
     </path>
     <text name="Fig3.2"
       x="360"
-      y="160"
-      width="95"
+      y="176"
+      width="89"
       height="25"
       fill="0"
       fillcolor="white"
@@ -578,7 +578,7 @@
       justification="Left"
     >Webbrowser</text>
     <group name="Fig3.3"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[360, 160, 94, 1]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[360, 176, 88, 1]"
          href="-84-17-58--32-38cdda9a:13b6a47487a:-8000:0000000000000A74"
          fill="1"
          fillcolor="white"
@@ -591,8 +591,8 @@
       
       <rectangle name="Fig3.3.0"
         x="360"
-        y="160"
-        width="94"
+        y="176"
+        width="88"
         height="1"
         fill="1"
         fillcolor="white"
@@ -602,8 +602,8 @@
     </group>
     <text name="Fig3.4"
       x="360"
-      y="184"
-      width="144"
+      y="200"
+      width="138"
       height="31"
       fill="0"
       fillcolor="white"
@@ -710,9 +710,9 @@
     >
       <moveto x="492"
               y="320" />
-      <lineto x="512"
+      <lineto x="568"
               y="320" />
-      <lineto x="512"
+      <lineto x="568"
               y="360" />
     </path>
   </group>
@@ -741,9 +741,9 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="536"
+      <moveto x="584"
               y="360" />
-      <lineto x="536"
+      <lineto x="584"
               y="304" />
       <lineto x="492"
               y="304" />
@@ -777,7 +777,7 @@
       <moveto x="424"
               y="272" />
       <lineto x="424"
-              y="215" />
+              y="231" />
     </path>
   </group>
   <group name="Fig9"
@@ -930,14 +930,14 @@
                         offset="67" />
     </private>
     <path name="Fig10.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
       <moveto x="392"
-              y="215" />
+              y="231" />
       <lineto x="392"
               y="272" />
     </path>
