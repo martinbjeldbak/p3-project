@@ -29,7 +29,7 @@ Listen fra madopskrifter.nu blev brugt som vores råvaretabel af følgende grund
 Med en liste over råvarer, bliver det muligt for en bruger at indtaste en mængde råvarer. Udover dette har vi også brug for en mængde data, der fortæller noget omkring de opskrifter brugeren kan søge på. Denne data udtrækker vi fra Arlas hjemmeside, selvfølgelig med deres accept.
 
 \section{Dataudtrækning}
-For at kunne gemme informationer om en opskrifts forskellige bestanddele, såsom navn, tilberedningstid, m.m., er det nødvendigt at kunne udtrække denne data fra Arlas hjemmeside. Dette begreb kalder vi for dataudtrækning. 
+For at kunne gemme informationer om en opskrifts forskellige bestanddele, såsom navn, tilberedningstid, m.m., er det nødvendigt at kunne udtrække denne data fra Arlas hjemmeside. Dette begreb kalder vi for dataudtrækning. Formålet er at indsætte data i databasen, så brugere har mulighed for at søge efter opskrifter, m.m. Da dataudtrækning kun har til formål at indsætte indhold i databasen, og ikke skal bestå af views eller controllers, har vi valgt at benytte Ruby uden Rails frameworket til dette. 
 Opskrifterne på Arla blev udsat for dataudtrækning ved brug af modulet Nokogiri i Ruby. Nokogiri-modulet gør det let at finde værdier af forskellige elementer i et dokument. På Arlas hjemmeside findes en side, der giver mulighed for at vise alle opskrifterne. Der vises 16 opskrifter af gangen, og når man bladrer frem og tilbage imellem side 1 og side 2, hver især med 16 forskellige opskrifter på hver, så ændres en query i url'en på følgende måde: \\
 \lstinline{?...\&paging=1\&...} \\
 \lstinline{?...\&paging=2\&...} \\
@@ -98,7 +98,7 @@ Vi har brugt tilfældigt udvalgte ingredienser fra Arlas opskrifter til at teste
         Total:                                                     & 11              & 7                       & 3                  & 2                  & 10              \\
         \hline
     \end{tabular}
-  \caption{Test af flere forskellige \methodref{CompareStrings} funktioner, der bruges til at mappe en ingrediens til en råvare. Fed skrift betyder at begge vores informanter har godkendt mappingen.}  \label{table:test-af-compares}
+  \caption{Test af flere forskellige \methodref{CompareStrings} funktioner, der bruges til at mappe en ingrediens til en råvare. Fed skrift betyder at begge vores informanter har godkendt mappingen. Se \apref{ap:valgafmappingmetode}}  \label{table:test-af-compares}
 \end{table}
 
 Som det ses i \tableref{table:test-af-compares}, var metode 1 den, der gav den bedste mapping. Metoden fik 11 rigtige ud af 12 mulige, men det bør bemærkes at sammenligningen kun er foretaget på de ingredienser, som mindst én metode mappede forkert. Vi kom forbi 56 ingredienser udover de ingredienser vist i tabellen, før vi tilsammen havde 12 ingredienser, som én eller flere metoder mappede forkert. 
