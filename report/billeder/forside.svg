@@ -15,7 +15,7 @@
    id="svg3223"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="forside.svg">
+   sodipodi:docname="forside2.pdf">
   <defs
      id="defs3225">
     <linearGradient
@@ -165,16 +165,6 @@
        id="linearGradient3221"
        xlink:href="#linearGradient13450-6-5"
        inkscape:collect="always" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4072"
-       id="linearGradient4078"
-       x1="333.27338"
-       y1="-0.51615977"
-       x2="333.27338"
-       y2="1041.1947"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0175439,0,0,1.0150892,0,0.02902449)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -183,9 +173,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="589.904"
-     inkscape:cy="491.60277"
+     inkscape:zoom="2.8"
+     inkscape:cx="302.95586"
+     inkscape:cy="778.49262"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -232,18 +222,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:url(#linearGradient4078);fill-opacity:1;stroke:none"
-       id="rect3302"
-       width="745.71423"
-       height="1057.1428"
-       x="0"
-       y="-1.9235322" />
     <path
-       sodipodi:nodetypes="ccccsccccccccccsccc"
+       sodipodi:nodetypes="cccsccccccccccscccc"
        inkscape:connector-curvature="0"
        style="font-size:218.41191101px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient3221);fill-opacity:1;stroke:#63dd00;stroke-width:5.30000019;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
-       d="m 192.11611,318.07047 0,11.26615 -9.42586,0 c -7.03872,1.5e-4 -11.94445,1.4221 -14.71721,4.26586 -2.70175,2.84404 -4.05256,7.96307 -4.05256,15.35708 l 0,33.39663 19.9395,0 0,9.6946 -19.9395,0 0,108.16254 -12.65852,0 0,-108.16254 -18.2647,0 0,-9.6946 18.2647,0 0,-31.15705 c 0,-13.29512 0.0623,-18.4187 6.24778,-24.46215 6.18545,-6.11424 11.9563,-8.66635 25.3938,-8.66652 l 9.21257,0"
+       d="m 192.11611,329.33662 -9.42586,0 c -7.03872,1.5e-4 -11.94445,1.4221 -14.71721,4.26586 -2.70175,2.84404 -4.05256,7.96307 -4.05256,15.35708 l 0,33.39663 19.9395,0 0,9.6946 -19.9395,0 0,108.16254 -12.65852,0 0,-108.16254 -18.2647,0 0,-9.6946 18.2647,0 0,-31.15705 c 0,-13.29512 0.0623,-18.4187 6.24778,-24.46215 6.18545,-6.11424 11.9563,-8.66635 25.3938,-8.66652 l 9.21257,0 z"
        id="path15178" />
     <path
        inkscape:connector-curvature="0"
@@ -278,71 +261,71 @@
        xml:space="preserve"
        style="font-size:36.48734283px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#667a67;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
        x="131.75871"
-       y="604.79327"
+       y="635.06067"
        id="text3298"
        sodipodi:linespacing="125%"
        transform="scale(1.0089163,0.9911625)"><tspan
          sodipodi:role="line"
          id="tspan3300"
          x="131.75871"
-         y="604.79327">Anvendelse af Madrester</tspan></text>
+         y="635.06067">Anvendelse af Madrester</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#5c6e52;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
        x="132.32999"
-       y="685.2193"
+       y="741.2193"
        id="text4109"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="685.2193"
+         y="741.2193"
          id="tspan4162"
          style="font-size:16px;font-style:oblique;fill:#5c6e52;fill-opacity:1;-inkscape-font-specification:DejaVu Sans Oblique">Forfattere:</tspan><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="705.2193"
+         y="761.2193"
          id="tspan4191"
          style="font-size:16px;fill:#5c6e52;fill-opacity:1">Sebastian Wahl</tspan><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="725.2193"
+         y="781.2193"
          id="tspan4193"
          style="font-size:16px;fill:#5c6e52;fill-opacity:1">Simon Buus Jensen</tspan><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="745.2193"
+         y="801.2193"
          id="tspan4195"
          style="font-size:16px;fill:#5c6e52;fill-opacity:1">Elias Khazen Obeid</tspan><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="765.2193"
+         y="821.2193"
          id="tspan4197"
          style="font-size:16px;fill:#5c6e52;fill-opacity:1">Niels Sonnich Poulsen</tspan><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="785.2193"
+         y="841.2193"
          id="tspan4199"
          style="font-size:16px;fill:#5c6e52;fill-opacity:1">Kent Munthe Caspersen</tspan><tspan
          sodipodi:role="line"
          x="132.32999"
-         y="805.2193"
+         y="861.2193"
          id="tspan4201"
          style="font-size:16px;fill:#5c6e52;fill-opacity:1">Martin Bjeldbak Madsen</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#5c6e52;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
        x="592.95953"
-       y="685.2193"
+       y="741.2193"
        id="text4203"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4205"
          x="592.95953"
-         y="685.2193"
+         y="741.2193"
          style="font-style:oblique;text-align:end;text-anchor:end;fill:#5c6e52;fill-opacity:1;-inkscape-font-specification:DejaVu Sans Oblique">Vejleder:</tspan><tspan
          sodipodi:role="line"
          x="592.95953"
-         y="705.2193"
+         y="761.2193"
          id="tspan4207"
          style="text-align:end;text-anchor:end;fill:#5c6e52;fill-opacity:1">Lise T. Heeager</tspan></text>
     <text
