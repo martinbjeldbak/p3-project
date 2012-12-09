@@ -31,23 +31,23 @@
     <searchpath href="PROJECT_DIR" />
     <members>
       <member type="profile"
-              name="fejlhåndtering_profile.profile" />
+              name="fejl_profile.profile" />
       <member type="xmi"
-              name="fejlhåndtering.xmi" />
+              name="fejl.xmi" />
       <member type="pgml"
-              name="fejlhåndtering_ClassDiagram.pgml"
+              name="fejl_ClassDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
               diagramname="Class Diagram" />
       <member type="pgml"
-              name="fejlhåndtering_UseCaseDiagram.pgml"
+              name="fejl_UseCaseDiagram.pgml"
               diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
               diagramname="Use Case Diagram" />
       <member type="pgml"
-              name="fejlhåndtering_untitledModel0.pgml"
+              name="fejl_untitledModel0.pgml"
               diagramclass="org.argouml.uml.diagram.state.ui.UMLStateDiagram"
               diagramname="untitledModel 0" />
       <member type="todo"
-              name="fejlhåndtering.todo" />
+              name="fejl.todo" />
     </members>
     <historyfile name="" />
   </argo>
@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Dec 09 15:29:31 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Dec 09 16:52:38 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -180,13 +180,13 @@
           </UML:StateMachine.transitions>
         </UML:StateMachine>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6D'
-          name = 'Find fejl i opskrift' isSpecification = 'false'/>
+          name = 'Fejl fundet' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A70'
-          name = 'Rapporter fejl' isSpecification = 'false'/>
+          name = 'Fejl rapporteret' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A73'
-          name = 'Bortse fejl' isSpecification = 'false'/>
+          name = 'Fejl bortset' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A75'
-          name = 'Få tilbagemelding' isSpecification = 'false'/>
+          name = 'Tilbagemelding modtaget' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -206,7 +206,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[112, 224, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[192, 224, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6A"
        fill="1"
        fillcolor="black"
@@ -217,7 +217,7 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="120"
+      x="200"
       y="232"
       rx="8"
       ry="8"
@@ -227,7 +227,7 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="120"
+      x="200"
       y="232"
       rx="8"
       ry="8"
@@ -302,24 +302,24 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6C"
-                        angle="270.0"
-                        offset="10" />
+                        angle="254.00000000000006"
+                        offset="11" />
     </private>
     <path name="Fig2.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="129"
+      <moveto x="209"
               y="232" />
       <lineto x="288"
               y="232" />
     </path>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[448, 304, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[448, 272, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6E"
        fill="1"
        fillcolor="white"
@@ -331,7 +331,7 @@
     
     <ellipse name="Fig3.0"
       x="460"
-      y="316"
+      y="284"
       rx="12"
       ry="12"
       fill="0"
@@ -341,7 +341,7 @@
     />
     <ellipse name="Fig3.1"
       x="460"
-      y="316"
+      y="284"
       rx="12"
       ry="12"
       fill="1"
@@ -351,7 +351,7 @@
     />
     <ellipse name="Fig3.2"
       x="459"
-      y="315"
+      y="283"
       rx="7"
       ry="7"
       fill="1"
@@ -379,7 +379,7 @@
                         offset="10" />
     </private>
     <path name="Fig4.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -410,11 +410,11 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A71"
-                        angle="-42.0"
-                        offset="27" />
+                        angle="-170.0"
+                        offset="76" />
     </private>
     <path name="Fig5.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -423,9 +423,9 @@
       <moveto x="352"
               y="255" />
       <lineto x="352"
-              y="320" />
+              y="288" />
       <lineto x="448"
-              y="316" />
+              y="284" />
     </path>
   </group>
   <group name="Fig6"
@@ -493,11 +493,11 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A74"
-                        angle="84.0"
-                        offset="59" />
+                        angle="87.99999999999999"
+                        offset="89" />
     </private>
     <path name="Fig7.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -528,11 +528,11 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A76"
-                        angle="-182.0"
-                        offset="77" />
+                        angle="-171.0"
+                        offset="115" />
     </private>
     <path name="Fig8.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -541,9 +541,9 @@
       <moveto x="552"
               y="255" />
       <lineto x="552"
-              y="320" />
+              y="288" />
       <lineto x="471"
-              y="316" />
+              y="284" />
     </path>
   </group>
 </pgml>

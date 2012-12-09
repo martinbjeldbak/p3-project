@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Dec 09 15:40:39 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Dec 09 22:10:00 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -183,9 +183,11 @@
         <UML:SignalEvent xmi.id = '-84-25-20-15--2f94ec57:13b473aaa55:-8000:0000000000000B83'
           name = 'Indkøbsliste oprettet' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-17-58--64--1f2b2c3e:13b75f4cd46:-8000:0000000000000D7F'
-          name = 'Vare fjernet' isSpecification = 'false'/>
+          name = 'Fjernet fra indkøbsliste' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-17-58--64--1f2b2c3e:13b75f4cd46:-8000:0000000000000D80'
-          name = 'Vare tilføjet' isSpecification = 'false'/>
+          name = 'Skrevet på indkøbsliste' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '-64--88-1-100-7494fc67:13b805798ff:-8000:0000000000000F92'
+          name = 'Fejl fundet' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -343,8 +345,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAD"
-                        angle="75.00000000000001"
-                        offset="15" />
+                        angle="111.0"
+                        offset="13" />
     </private>
     <path name="Fig3.0"
       description="org.argouml.gefext.ArgoFigPoly"

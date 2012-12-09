@@ -48,12 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.3364486)%
+  \begin{picture}(1,0.3317757)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/indkoebsliste.pdf}}%
-    \put(0.38551402,0.1682243){\makebox(0,0)[lb]{\smash{Redigeres}}}%
-    \put(0.37850467,0.04205607){\makebox(0,0)[lb]{\smash{Vare tilføjet}}}%
-    \put(0.38551402,0.27336449){\makebox(0,0)[lb]{\smash{Vare fjernet}}}%
-    \put(0.06775701,0.19626168){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
-    \put(0.5864486,0.18457944){\makebox(0,0)[lb]{\smash{Indkøbsliste smidt ud}}}%
+    \put(0.38551402,0.1635514){\makebox(0,0)[lb]{\smash{Redigeres}}}%
+    \put(0.31542056,0.04205607){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
+    \put(0.31074766,0.26869159){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.06775701,0.19158879){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
+    \put(0.5864486,0.17990654){\makebox(0,0)[lb]{\smash{Indkøbsliste smidt ud}}}%
   \end{picture}%
 \endgroup%
