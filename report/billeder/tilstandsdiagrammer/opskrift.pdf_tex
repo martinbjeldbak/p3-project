@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{287.2bp}%
+    \setlength{\unitlength}{393.6bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.43454039)%
+  \begin{picture}(1,0.26219512)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/opskrift.pdf}}%
-    \put(0.25348189,0.19777159){\makebox(0,0)[lb]{\smash{Findes i opskriftssamlingen}}}%
-    \put(0.04178273,0.30362117){\makebox(0,0)[lb]{\smash{Bogmærke tilføjet(opskrift)}}}%
-    \put(0.08635097,0.05013928){\makebox(0,0)[lb]{\smash{Bogmærke fjernet(opskrift)}}}%
-    \put(0.56824513,0.06685237){\makebox(0,0)[lb]{\smash{Opskrift fjernet(opskrift)}}}%
-    \put(0.454039,0.35933148){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste(tekst)}}}%
+    \put(0.30081301,0.12804878){\makebox(0,0)[lb]{\smash{Findes i opskriftssamlingen}}}%
+    \put(0.19512195,0.20528455){\makebox(0,0)[lb]{\smash{Bogmærke sat ind}}}%
+    \put(0.23170732,0.03658537){\makebox(0,0)[lb]{\smash{Bogmærke fjernet}}}%
+    \put(0.68699187,0.09552846){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
+    \put(0.08333333,0.13211382){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
+    \put(0.47357724,0.20731707){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
   \end{picture}%
 \endgroup%
