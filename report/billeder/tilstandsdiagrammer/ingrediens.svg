@@ -23,11 +23,11 @@ Opskrift smidt ud</text>
 <polyline fill="none" points="182,59 182,86 206,86 206,59" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="213" x2="206" y1="71" y2="59"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="199" x2="206" y1="71" y2="59"/>
-<text font-family="Lucida Grande" font-size="13" x="101" y="105">
-Ingrediens tilføjet</text>
+<text font-family="Lucida Grande" font-size="13" x="84" y="105">
+Skrevet på indkøbsliste</text>
 <polyline fill="none" points="270,59 270,86 246,86 246,59" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="253" x2="246" y1="71" y2="59"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="239" x2="246" y1="71" y2="59"/>
-<text font-family="Lucida Grande" font-size="13" x="241" y="107">
-Ingrediens fjernet</text>
+<text font-family="Lucida Grande" font-size="13" x="247" y="107">
+Fjernet fra indkøbsliste</text>
 </svg>
