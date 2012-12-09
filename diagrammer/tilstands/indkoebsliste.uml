@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Nov 28 18:00:06 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Dec 09 15:40:39 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -111,7 +111,7 @@
             <UML:Transition xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAC'
               isSpecification = 'false'>
               <UML:Transition.trigger>
-                <UML:CallEvent xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001ABB'/>
+                <UML:SignalEvent xmi.idref = '-84-17-58--64--1f2b2c3e:13b75f4cd46:-8000:0000000000000D7F'/>
               </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
@@ -123,7 +123,7 @@
             <UML:Transition xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CAD'
               isSpecification = 'false'>
               <UML:Transition.trigger>
-                <UML:CallEvent xmi.idref = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001250'/>
+                <UML:SignalEvent xmi.idref = '-84-17-58--64--1f2b2c3e:13b75f4cd46:-8000:0000000000000D80'/>
               </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
@@ -146,6 +146,9 @@
             </UML:Transition>
             <UML:Transition xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001EEA'
               isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CA3'/>
+              </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:SimpleState xmi.idref = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9D'/>
               </UML:Transition.source>
@@ -163,13 +166,6 @@
           name = 'Råvare købt' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000CB0'
           name = 'Indkøbsliste påbegyndt' isSpecification = 'false'/>
-        <UML:CallEvent xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001250'
-          name = 'Vare tilføjet' isSpecification = 'false'>
-          <UML:Event.parameter>
-            <UML:Parameter xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001251'
-              name = 'tekst' isSpecification = 'false' kind = 'in'/>
-          </UML:Event.parameter>
-        </UML:CallEvent>
         <UML:CallEvent xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001252'
           name = 'Ingrediens tilføjet' isSpecification = 'false'>
           <UML:Event.parameter>
@@ -184,15 +180,12 @@
               name = 'ingrediens' isSpecification = 'false' kind = 'in'/>
           </UML:Event.parameter>
         </UML:CallEvent>
-        <UML:CallEvent xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001ABB'
-          name = 'Vare fjernet' isSpecification = 'false'>
-          <UML:Event.parameter>
-            <UML:Parameter xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000001ABC'
-              name = 'tekst' isSpecification = 'false' kind = 'in'/>
-          </UML:Event.parameter>
-        </UML:CallEvent>
         <UML:SignalEvent xmi.id = '-84-25-20-15--2f94ec57:13b473aaa55:-8000:0000000000000B83'
           name = 'Indkøbsliste oprettet' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '-84-17-58--64--1f2b2c3e:13b75f4cd46:-8000:0000000000000D7F'
+          name = 'Vare fjernet' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '-84-17-58--64--1f2b2c3e:13b75f4cd46:-8000:0000000000000D80'
+          name = 'Vare tilføjet' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -244,7 +237,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[272, 56, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[400, 56, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-21--108-53ff4ec3:13a4e86c63b:-8000:0000000000000C9F"
        fill="1"
        fillcolor="white"
@@ -255,7 +248,7 @@
     </private>
     
     <ellipse name="Fig1.0"
-      x="284"
+      x="412"
       y="68"
       rx="12"
       ry="12"
@@ -265,7 +258,7 @@
       strokecolor="black"
     />
     <ellipse name="Fig1.1"
-      x="284"
+      x="412"
       y="68"
       rx="12"
       ry="12"
@@ -275,7 +268,7 @@
       strokecolor="black"
     />
     <ellipse name="Fig1.2"
-      x="283"
+      x="411"
       y="67"
       rx="7"
       ry="7"
@@ -322,7 +315,7 @@
       x="162"
       y="56"
       width="84"
-      height="24"
+      height="23"
       fill="0"
       fillcolor="white"
       stroke="0"
@@ -363,9 +356,9 @@
       <moveto x="216"
               y="79" />
       <lineto x="216"
-              y="96" />
+              y="104" />
       <lineto x="200"
-              y="96" />
+              y="104" />
       <lineto x="200"
               y="79" />
     </path>
@@ -398,9 +391,9 @@
       <moveto x="216"
               y="56" />
       <lineto x="216"
-              y="40" />
+              y="32" />
       <lineto x="200"
-              y="40" />
+              y="32" />
       <lineto x="200"
               y="56" />
     </path>
@@ -463,7 +456,7 @@
     >
       <moveto x="247"
               y="67" />
-      <lineto x="272"
+      <lineto x="400"
               y="67" />
     </path>
   </group>

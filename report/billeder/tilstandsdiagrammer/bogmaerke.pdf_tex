@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{200bp}%
+    \setlength{\unitlength}{310.4bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +48,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.524)%
+  \begin{picture}(1,0.16237113)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/bogmaerke.pdf}}%
-    \put(0.484,0.264){\makebox(0,0)[lb]{\smash{Aktiv}}}%
-    \put(0.18,0.416){\makebox(0,0)[lb]{\smash{Bogmærke tilføjet(opskrift)}}}%
-    \put(0.32,0.072){\makebox(0,0)[lb]{\smash{Bogmærke fjernet(opskrift)}}}%
+    \put(0.45618557,0.08505155){\makebox(0,0)[lb]{\smash{Aktiv}}}%
+    \put(0.09793814,0.09278351){\makebox(0,0)[lb]{\smash{Bogmærke sat ind}}}%
+    \put(0.60309278,0.08247423){\makebox(0,0)[lb]{\smash{Bogmærke fjernet}}}%
   \end{picture}%
 \endgroup%

@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'indkoebsliste.pdf' (pdf, eps, ps)
+%% Accompanies image file 'fejlhaandtering.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{342.4bp}%
+    \setlength{\unitlength}{524bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.3364486)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/indkoebsliste.pdf}}%
-    \put(0.38551402,0.1682243){\makebox(0,0)[lb]{\smash{Redigeres}}}%
-    \put(0.37850467,0.04205607){\makebox(0,0)[lb]{\smash{Vare tilføjet}}}%
-    \put(0.38551402,0.27336449){\makebox(0,0)[lb]{\smash{Vare fjernet}}}%
-    \put(0.06775701,0.19626168){\makebox(0,0)[lb]{\smash{Indkøbsliste oprettet}}}%
-    \put(0.5864486,0.18457944){\makebox(0,0)[lb]{\smash{Indkøbsliste smidt ud}}}%
+  \begin{picture}(1,0.30381679)%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/fejlhaandtering.pdf}}%
+    \put(0.29923664,0.18320611){\makebox(0,0)[lb]{\smash{Opmærksom på fejl}}}%
+    \put(0.08244275,0.17557252){\makebox(0,0)[lb]{\smash{Find fejl i opskrift}}}%
+    \put(0.47633588,0.2610687){\makebox(0,0)[lb]{\smash{Rapporter fejl}}}%
+    \put(0.39541985,0.04885496){\makebox(0,0)[lb]{\smash{Bortse fejl}}}%
+    \put(0.60916031,0.18320611){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
+    \put(0.80610687,0.16335878){\makebox(0,0)[lb]{\smash{Få tilbagemelding}}}%
+    \put(0.70534351,0.06412214){\makebox(0,0)[lb]{\smash{Få tilbagemelding}}}%
   \end{picture}%
 \endgroup%

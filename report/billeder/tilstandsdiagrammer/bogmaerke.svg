@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="131" version="1.1" width="250" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="36" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="72" x="102" y="52"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="72" x="102" y="52"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="70" x="103" y="53"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="121" y="65">
+<svg height="63" version="1.1" width="388" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="33" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="72" x="158" y="17"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="72" x="158" y="17"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="70" x="159" y="18"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="177" y="30">
 Aktiv</text>
-<polyline fill="none" points="31,36 142,36 142,52" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="135" x2="142" y1="40" y2="52"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="149" x2="142" y1="40" y2="52"/>
-<text font-family="Dialog" font-size="12" x="45" y="27">
-Bogmærke tilføjet(opskrift)</text>
-<ellipse cx="210" cy="64" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="210" cy="64" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
-<ellipse cx="209" cy="63" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="142,75 142,92 206,92 208,75" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="213" x2="208" y1="87" y2="75"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="199" x2="208" y1="86" y2="75"/>
-<text font-family="Dialog" font-size="12" x="80" y="113">
-Bogmærke fjernet(opskrift)</text>
+<polyline fill="none" points="31,33 158,33" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="146" x2="158" y1="40" y2="33"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="146" x2="158" y1="26" y2="33"/>
+<text font-family="Dialog" font-size="12" x="38" y="27">
+Bogmærke sat ind</text>
+<ellipse cx="362" cy="37" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="362" cy="37" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="361" cy="36" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="229,36 350,36" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="338" x2="350" y1="43" y2="36"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="338" x2="350" y1="29" y2="36"/>
+<text font-family="Dialog" font-size="12" x="234" y="31">
+Bogmærke fjernet</text>
 </svg>
