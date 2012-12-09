@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{400bp}%
+    \setlength{\unitlength}{444.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,18 +48,20 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.95)%
+  \begin{picture}(1,1.30215827)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/komponenter2.pdf}}%
-    \put(0.038,0.894){\makebox(0,0)[lb]{\smash{Brugergrænseflade}}}%
-    \put(0.038,0.718){\makebox(0,0)[lb]{\smash{Controller}}}%
-    \put(0.038,0.542){\makebox(0,0)[lb]{\smash{Model}}}%
-    \put(0.038,0.366){\makebox(0,0)[lb]{\smash{Ruby on Rails-laget}}}%
-    \put(0.678,0.718){\makebox(0,0)[lb]{\smash{JavaScript}}}%
-    \put(0.71,0.638){\makebox(0,0)[lb]{\smash{jQuery}}}%
-    \put(0.71,0.494){\makebox(0,0)[lb]{\smash{jQuery UI}}}%
-    \put(0.438,0.718){\makebox(0,0)[lb]{\smash{View}}}%
-    \put(0.038,0.11){\makebox(0,0)[lb]{\smash{MySQL}}}%
-    \put(0.054,0.302){\makebox(0,0)[lb]{\smash{ActiveRecord}}}%
-    \put(0.358,0.302){\makebox(0,0)[lb]{\smash{BCrypt}}}%
+    \put(0.19244604,0.79136691){\makebox(0,0)[lb]{\smash{Server}}}%
+    \put(0.03417266,1.25179856){\makebox(0,0)[lb]{\smash{Klient}}}%
+    \put(0.06294964,1.1852518){\makebox(0,0)[lb]{\smash{Brugergrænseflade}}}%
+    \put(0.23561151,0.68705036){\makebox(0,0)[lb]{\smash{Controller}}}%
+    \put(0.23561151,0.52877698){\makebox(0,0)[lb]{\smash{Model}}}%
+    \put(0.23561151,0.3705036){\makebox(0,0)[lb]{\smash{Ruby on Rails}}}%
+    \put(0.43705036,1.0557554){\makebox(0,0)[lb]{\smash{JavaScript}}}%
+    \put(0.46582734,0.98381295){\makebox(0,0)[lb]{\smash{jQuery}}}%
+    \put(0.71043165,0.98381295){\makebox(0,0)[lb]{\smash{jQuery UI}}}%
+    \put(0.59532374,0.68705036){\makebox(0,0)[lb]{\smash{View}}}%
+    \put(0.23561151,0.1294964){\makebox(0,0)[lb]{\smash{MySQL}}}%
+    \put(0.25,0.31294964){\makebox(0,0)[lb]{\smash{ActiveRecord}}}%
+    \put(0.52338129,0.31294964){\makebox(0,0)[lb]{\smash{BCrypt}}}%
   \end{picture}%
 \endgroup%
