@@ -33,5 +33,11 @@ Målet med Rails blev bl.a. opnået vha. af følgende filosofi:
 
 Filosofien har både sine fordele og ulemper. Det er en ulempe, at webudvikleren skal have arbejdet meget med Rails i forvejen, for at kunne huske de mange konventionerne og kommandoer, eller bruge en masse tid på at slå dem op, når de skal bruges. Det er på den anden siden en fordel, at webudviklere, vha. Rails' konventioner, kan lave applikationer, som kan udrette meget, ud fra få linjers kode. Det gør det også lettere at kigge på andre, eksisterende Rails-applikationer uden, at man bliver nødt til at sætte sig ind i et hav af konfigurationsfiler. Rails viser allerede fra første møde, at der skal meget lidt arbejde til, for at få et stort afkast. 
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{billeder/Rails-new-foodl.png}
+	\capt{Railskommando, der indtastes i kommandopromten, hvorefter rails genererer en mappe med en fuldtfungerende web-applikation, kaldet ``Foodl''}
+	\label{fig:Rails-new-foodl}
+\end{figure}
 
-\input{indhold/6-implementering/mvc}
+Enhver Railsapplikation tager udgangspunkt i arkitekturen Model-View-Controllerarkitektur. Mappen med webapplikationen består af en lang række undermapper, hvori ``models'', ``views'' og ``controllers'' bl.a. befinder sig. Kort sagt genererer Rails, vha. \texttt{new}-kommandoen, hele skelettet for webapplikationen, og derefter er det ``bare'' at fylde det indhold, man ønsker i sin webapplikation, i de rigtige mapper. Denne Model-View-Controllerarkitektur er forklaret på en overordnet plan i \secref{subsec:mvc}.
