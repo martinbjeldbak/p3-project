@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.38650307)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/vare.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/vare.pdf}}%
     \put(0.37116564,0.29754601){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
     \put(0.04601227,0.06441718){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
     \put(0.55214724,0.05828221){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
