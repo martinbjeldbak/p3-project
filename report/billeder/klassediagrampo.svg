@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="368" version="1.1" width="468" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="71" x="250" y="226"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="71" x="250" y="226"/>
+<text font-family="Dialog" font-size="12" x="255" y="239">
+Ingrediens</text>
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="66" x="250" y="330"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="66" x="250" y="330"/>
+<text font-family="Dialog" font-size="12" x="263" y="343">
+Råvare</text>
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="66" x="90" y="178"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="66" x="90" y="178"/>
+<text font-family="Dialog" font-size="12" x="100" y="191">
+Opskrift</text>
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="81" x="242" y="74"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="81" x="242" y="74"/>
+<text font-family="Dialog" font-size="12" x="248" y="87">
+Indkøbsliste</text>
+<polyline fill="none" points="146,201 146,242 250,242" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="146,201 151,211 146,221 141,211" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="146,201 151,211 146,221 141,211" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="152" y="261">
+1</text>
+<text font-family="Dialog" font-size="12" x="215" y="262">
+1..*</text>
+<polyline fill="none" points="282,97 282,226" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="282,97 287,107 282,117 277,107" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="282,97 287,107 282,117 277,107" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="250" y="117">
+0..1</text>
+<text font-family="Dialog" font-size="12" x="251" y="208">
+0..*</text>
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="72" x="90" y="330"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="72" x="90" y="330"/>
+<text font-family="Dialog" font-size="12" x="95" y="343">
+Bogmærke</text>
+<polyline fill="none" points="121,330 121,201" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="91" y="323">
+0..1</text>
+<text font-family="Dialog" font-size="12" x="98" y="220">
+1</text>
+<polyline fill="none" points="282,249 282,330" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="282,249 287,259 282,269 277,259" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="282,249 287,259 282,269 277,259" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="292" y="273">
+0..*</text>
+<text font-family="Dialog" font-size="12" x="295" y="313">
+1</text>
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="66" x="90" y="74"/>
+<rect fill="none" height="24" stroke="#000000" stroke-width="1" width="66" x="90" y="74"/>
+<text font-family="Dialog" font-size="12" x="113" y="87">
+Fejl</text>
+<polyline fill="none" points="155,90 242,90" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="164" y="83">
+0..*</text>
+<text font-family="Dialog" font-size="12" x="223" y="85">
+1</text>
+<polyline fill="none" points="122,178 122,97" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="135" y="169">
+1</text>
+<text font-family="Dialog" font-size="12" x="129" y="116">
+0..*</text>
+</svg>
