@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'klassediagrampo.pdf' (pdf, eps, ps)
+%% Accompanies image file 'fejl.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{374.4bp}%
+    \setlength{\unitlength}{504bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,25 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.78632479)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagrampo.pdf}}%
-    \put(0.54487179,0.27564103){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
-    \put(0.56196581,0.0534188){\makebox(0,0)[lb]{\smash{Råvare}}}%
-    \put(0.21367521,0.37820513){\makebox(0,0)[lb]{\smash{Opskrift}}}%
-    \put(0.52991453,0.60042735){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
-    \put(0.32478632,0.22863248){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.45940171,0.22649573){\makebox(0,0)[lb]{\smash{1..*}}}%
-    \put(0.53418803,0.53632479){\makebox(0,0)[lb]{\smash{0..1}}}%
-    \put(0.53632479,0.34188034){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.20299145,0.0534188){\makebox(0,0)[lb]{\smash{Bogmærke}}}%
-    \put(0.19444444,0.09615385){\makebox(0,0)[lb]{\smash{0..1}}}%
-    \put(0.20940171,0.31623932){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.62393162,0.20299145){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.63034188,0.11752137){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.24145299,0.60042735){\makebox(0,0)[lb]{\smash{Fejl}}}%
-    \put(0.35042735,0.60897436){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.47649573,0.60470085){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.28846154,0.42521368){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.27564103,0.53846154){\makebox(0,0)[lb]{\smash{0..*}}}%
+  \begin{picture}(1,0.26507937)%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/fejl.pdf}}%
+    \put(0.17777778,0.11746032){\makebox(0,0)[lb]{\smash{Opmærksom på fejl}}}%
+    \put(0.05396825,0.13174603){\makebox(0,0)[lb]{\smash{Fejl fundet}}}%
+    \put(0.35873016,0.22063492){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
+    \put(0.15079365,0.04285714){\makebox(0,0)[lb]{\smash{Fejl bortset}}}%
+    \put(0.5031746,0.11746032){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
+    \put(0.72063492,0.11428571){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
+    \put(0.60793651,0.04761905){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
   \end{picture}%
 \endgroup%
