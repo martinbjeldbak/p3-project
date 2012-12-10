@@ -48,7 +48,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.78632479)%
+  \begin{picture}(1,0.65811966)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagrampo.pdf}}%
     \put(0.54487179,0.27564103){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
     \put(0.56196581,0.0534188){\makebox(0,0)[lb]{\smash{Råvare}}}%
@@ -64,8 +64,6 @@
     \put(0.62393162,0.20299145){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.63034188,0.11752137){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.24145299,0.60042735){\makebox(0,0)[lb]{\smash{Fejl}}}%
-    \put(0.35042735,0.60897436){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.47649573,0.60470085){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.28846154,0.42521368){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.27564103,0.53846154){\makebox(0,0)[lb]{\smash{0..*}}}%
   \end{picture}%
