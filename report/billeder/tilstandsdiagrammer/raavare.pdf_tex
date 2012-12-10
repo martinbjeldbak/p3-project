@@ -50,9 +50,9 @@
   \makeatother%
   \begin{picture}(1,0.5)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/raavare.pdf}}%
-    \put(0.32867268,0.24399466){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
-    \put(0.72162141,0.24112934){\makebox(0,0)[lb]{\smash{Brugbar}}}%
-    \put(0.5075188,0.39849624){\makebox(0,0)[lb]{\smash{Råvare købt}}}%
+    \put(0.33082707,0.2443609){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.72556391,0.2443609){\makebox(0,0)[lb]{\smash{Brugbar}}}%
+    \put(0.44360902,0.39849624){\makebox(0,0)[lb]{\smash{Råvare købt(navn)}}}%
     \put(0.48120301,0.06766917){\makebox(0,0)[lb]{\smash{Råvare opbrugt}}}%
   \end{picture}%
 \endgroup%
