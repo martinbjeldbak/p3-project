@@ -1,0 +1,8 @@
+\subsection{Vare}
+En vare har ikke nogen starthændelse som sætter gang i klassen. Dette skyldes at en vare, ligesom en råvare, altid eksisterer. Den befinder sig altid i tilstanden ``eksisterer'', da det ikke har nogen indflydelse på den, om den er på en indkøbsliste eller ej. Følgende to hændelser kan finde sted for en vare, nemlig ``Skrevet på indkøbsliste'' og ``Fjernet fra indkøbsliste''. Disse to hændelser kan finde sted igen og igen, ligesom gør sig gældende for ingrediens-klassen. Adfærden for vare-klassen kan ses i \figref{fig:vare-adfaerd}. 
+
+\pdffig[0.8]{tilstandsdiagrammer/vare}
+  {Tilstandsdiagram for klassen vare. Klassen har en tilstand, nemlig eksisterer. Varer har ikke en igangsættende eller afsluttende hændelse, da der altid vil eksistere en vare.}
+  {fig:vare-adfaerd}
+  
+Denne klasse er kommet til verden ud fra gruppediskussioner under komponentarkitekturdesignet. Grunden til at vi har valgt at tilføje vare-klassen, er at vi mener det skal være muligt for personer, også at tilføje og fjerne ikke-ingredienser til indkøbslisten.  
