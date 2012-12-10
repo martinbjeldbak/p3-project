@@ -1,0 +1,10 @@
+\subsection{Model-View-Controller}
+\label{subsec:mvc}
+Komponentarkitekturen vi har arbejdet os frem til (set på \figref{fig:komponenter}) afspejler et velkendt designparadigme, der er kendt som Model-View-Controller (MVC)\cite{designpatterns}. Vi mener derfor, at det er oplagt, at bruge eksisterende systemer, som allerede benytter sig af MVC designmønstret for at gøre implementeringen så overskuelig som mulig. Arkitekturen består af tre hovedkomponenter: models, views og controllers, der hver især repræsenterer nogle diverse dele af systemet og har nogle specifikke egenskaber og opgaver.
+
+Modelkomponenten bærer de data, som typisk er repræsenteret som tabeller i en database, der skal kunne manipuleres. 
+Controllerkomponenten fungerer som et slags bindeled mellem modellen og views ved at sende forespørgsler til modellen eller views, alt afhængig af brugerinputtet fra de tilsluttede views. Derudover sender controlleren også forespørgsler i form af tilstandsændringer til modellen, hvis brugeren \fx opdaterer noget i et view. Et view præsenterer brugeren for data i modellen og muliggør ændringer i tilstanden af modellen.
+
+\pdffig[0.7]{railsMVC}{Den generiske Model-View-Controller mønster. Inspireret af kilde\cite{railsmvc}.}{fig:railsmvc}
+
+MVC er den arkitektur enhver applikation skrevet i Ruby on Rails tager udgangspunkt i. Så snart en ny Railsapplikation bliver genereret, bliver der dannet mapperne ``models'', ``views'' og ``controllers'' indeholdende tilsvarende filer til de komponenter, så på den måde er man tvunget til at implementere MVC-arkitekturen i sin løsning. Igen ses princippet ``konvention over konfiguration'' på et større plan. Et diagram over den konkrete måde, hvorpå Ruby on Rails implementerer MVC, ses i \figref{fig:railsmvc}.

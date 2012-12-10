@@ -1,11 +1,18 @@
 \ourtable{haendelsestabel}{5}{Hændelsestabel for klasserne bogmærke, opskrift, indkøbsliste, ingrediens og råvare. \iter-symbolet illustrerer, at den tilhørende hændelse kan forekomme flere gange i samme klasse. Det betyder, at denne hændelse kan ses som en iteration i tilstandsdiagrammerne i \secref{sec:adfaerd}. \once-symbolet illustrerer, at den tilhørende hændelse forekommer en gang i samme klasse. Det betyder, at hændelsen kan ses som en selektion eller en sekvens i tilstandsdiagrammerne.}
-           {Klasser}
-       {Hændelser             	}{Bogmærke   & Opskrift   & Indkøbsliste & Ingrediens  & Råvare  }{
-\ourrow{Opskrift smidt ud     	}{\iter      & \once      &              &  \once      &         }
-\ourrow{Bogmærke sat ind     	}{\once      & \iter      &              &             &         }
-\ourrow{Bogmærke fjernet      	}{\once      & \iter      &              &             &         }
-\ourrow{Skrevet på indkøbsliste	}{           & \iter      &              &  \iter      &         }
-\ourrow{Fjernet fra indkøbsliste}{           &            &  \iter       &             &         } 
-\ourrow{Råvare opbrugt        	}{           &            &              &             & \iter   }
-\ourrow{Råvare købt           	}{           &            &              &             & \iter   }
+                                                             {Klasser}
+       {Hændelser             	}{Bogmærke   & Opskrift   & Indkøbsliste & Ingrediens  & Råvare  & Fejl       }{
+\ourrow{Opskrift smidt ud     	}{           & \once      &              &  \once      &         &            }
+\ourrow{Opskrift fundet         }{           & \once      &              &  \once      &         &            }
+\ourrow{Bogmærke sat ind      	}{\once      & \iter      &              &             &         &            }
+\ourrow{Bogmærke fjernet      	}{\once      & \iter      &              &             &         &            }
+\ourrow{Indkøbsliste oprettet   }{           &            & \once        &             &         &            }
+\ourrow{Indkøbsliste smidt ud   }{           &            & \once        &             &         &            }
+\ourrow{Skrevet på indkøbsliste	}{           & \iter      &  \iter       &  \iter      &         &            }
+\ourrow{Fjernet fra indkøbsliste}{           &            &  \iter       &  \iter      &         &            }
+\ourrow{Råvare opbrugt        	}{           &            &              &             & \iter   &            }
+\ourrow{Råvare købt           	}{           &            &              &             & \iter   &            }
+\ourrow{Fejl fundet             }{           & \iter      &              &             &         & \once      }
+\ourrow{Fejl rapport\'{e}ret    }{           &            &              &             &         & \once      }
+\ourrow{Tilbagemelding modtaget }{           &            &              &             &         & \iter / \once}
+\ourrow{Fejl bortset            }{           &            &              &             &         & \once      }
 }
