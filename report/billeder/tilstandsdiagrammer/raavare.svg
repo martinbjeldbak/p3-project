@@ -18,8 +18,8 @@ Brugbar</text>
 <polyline fill="none" points="126,49 126,33 214,33 214,49" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="207" x2="214" y1="37" y2="49"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="221" x2="214" y1="37" y2="49"/>
-<text font-family="Dialog" font-size="12" x="135" y="27">
-Råvare købt</text>
+<text font-family="Dialog" font-size="12" x="118" y="27">
+Råvare købt(navn)</text>
 <polyline fill="none" points="212,80 212,97 124,97 124,80" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="131" x2="124" y1="92" y2="80"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="117" x2="124" y1="92" y2="80"/>

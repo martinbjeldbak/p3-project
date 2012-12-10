@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{374.4bp}%
+    \setlength{\unitlength}{495.2bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.26709402)%
+  \begin{picture}(1,0.20193861)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/ingrediens.pdf}}%
-    \put(0.41666667,0.20726496){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
-    \put(0.09615385,0.2008547){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
-    \put(0.6474359,0.20726496){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
-    \put(0.17948718,0.04273504){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
-    \put(0.52777778,0.03846154){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.55896607,0.15670436){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.06462036,0.14862682){\makebox(0,0)[lb]{\smash{Opskrift fundet(navn, information, kilde)}}}%
+    \put(0.73344103,0.15670436){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
+    \put(0.10662359,0.02907916){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste(navn, enhed, mængde)}}}%
+    \put(0.63489499,0.02907916){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
   \end{picture}%
 \endgroup%
