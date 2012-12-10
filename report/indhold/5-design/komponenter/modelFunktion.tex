@@ -4,6 +4,10 @@
 % The purpose of the model component is to deliver current and historical data to functions, interfaces, and to users and systems. The stored information is related to the system's problem domain, that is, the part of the world that the system is used to administrate, monitor or control
 % 
 
+Klasserne \classref{fejlrapport} og \classref{fejlhåndtering} stammer fra klassen ``fejl'' i problemområdet. Her er den private hændelse ``få tilbagemelding'' iterativ, hvilket vil sige, at der kræves en ny klasse eller en omstrukturering. Vi valgte at omstrukturere klassen for at danne overblik over de mange forskellige fejltyper, der kan opstå. Derfor konstruerede vi klasserne \classref{fejlkategori} og \classref{fejlrapport} til at beskrive de fejl, der eksisterer. Fejlene er blevet udvidet, så vi overvåger ikke kun de fejl i opskrifter, men denne konstruktion gør det også muligt for brugere, at beskrive andre, mere generelle fejl i systemet. Klassen \classref{fejlrapport} er blevet dannet ud fra hændelsen ``rapport\'{e}r'' fejl. Klassen \classref{fejlkategori} bruges derimod til at håndtere de mange \classref{fejlrapport}er, som brugerne kan oprette fra forskellige steder i systemet. Hendelsen ``fejl fundet'' på klassen ``opskrift'' har \fx ledt til et instans af \classref{fejlkategori} for hændelsen. 
+
+``Indkøbsliste''-klassen fra problemområdet er ikke repræsenteret af en klasse i denne model-funktionskomponentdiagram, da vi besluttede for, at brugere kun har en fast indkøbsliste. Derfor er der ingen grund til at benytte en hel klasse til dette formål, da der højst skulle instanseres en af denne klasse for hver besøgende. Derfor benytter vi i stedet en relation mellem \classref{bruger} og \classref{vare} til modellering af indkøbslisten. En \classref{bruger} kan altså være tilkoblet mange \classref{vare}r (tilføjet manuelt eller gennem en \classref{opskrift}) og denne liste af \classref{vare}r bliver er dermed indkøbslisten.
+
 \pdffig{klassediagramDes}
 	{Det endelige klassediagram.}
 	{fig:klasseDes}
