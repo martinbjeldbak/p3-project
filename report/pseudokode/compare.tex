@@ -7,9 +7,9 @@
 \EndIf
 \State $score \gets 0$
 
-\While{a longest substring $ls$ exists in both $str1$ and $str2$}
-	\State $score \gets score + ls.length^2 $
-	\State remove $ls$ from $str1$ and $str2$
+\While{a longest common substring $lcs$ exists in both $str1$ and $str2$}
+	\State $score \gets score + lcs.length^2 $
+	\State remove $lcs$ from $str1$ and $str2$
 \EndWhile
 
 \State $max\_score \gets \max\_size^2$
