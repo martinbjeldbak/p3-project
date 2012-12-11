@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Dec 09 16:52:38 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Dec 10 12:11:26 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -132,7 +132,7 @@
             <UML:Transition xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6F'
               isSpecification = 'false'>
               <UML:Transition.trigger>
-                <UML:SignalEvent xmi.idref = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A70'/>
+                <UML:CallEvent xmi.idref = '-64--88-1-100--8b8ec11:13b84816486:-8000:0000000000000B77'/>
               </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:SimpleState xmi.idref = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6B'/>
@@ -181,12 +181,17 @@
         </UML:StateMachine>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6D'
           name = 'Fejl fundet' isSpecification = 'false'/>
-        <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A70'
-          name = 'Fejl rapporteret' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A73'
           name = 'Fejl bortset' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A75'
           name = 'Tilbagemelding modtaget' isSpecification = 'false'/>
+        <UML:CallEvent xmi.id = '-64--88-1-100--8b8ec11:13b84816486:-8000:0000000000000B77'
+          name = 'Fejl rapporteret' isSpecification = 'false'>
+          <UML:Event.parameter>
+            <UML:Parameter xmi.id = '-64--88-1-100--8b8ec11:13b84816486:-8000:0000000000000B78'
+              name = 'beskrivelse' isSpecification = 'false' kind = 'in'/>
+          </UML:Event.parameter>
+        </UML:CallEvent>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -375,8 +380,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6F"
-                        angle="270.0"
-                        offset="10" />
+                        angle="274.0"
+                        offset="14" />
     </private>
     <path name="Fig4.0"
       description="org.argouml.gefext.ArgoFigPoly"

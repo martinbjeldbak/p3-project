@@ -1,6 +1,6 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'railsMVC.pdf' (pdf, eps, ps)
+%% Accompanies image file 'vare.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{356bp}%
+    \setlength{\unitlength}{260.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +48,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.87191011)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/railsMVC.pdf}}%
-    \put(0.27865169,0.80898876){\makebox(0,0)[lb]{\smash{Klient}}}%
-    \put(0.04494382,0.53932584){\makebox(0,0)[lb]{\smash{Server}}}%
-    \put(0.31460674,0.43146067){\makebox(0,0)[lb]{\smash{Controller}}}%
-    \put(0.08089888,0.23370787){\makebox(0,0)[lb]{\smash{Model}}}%
-    \put(0.71011236,0.23370787){\makebox(0,0)[lb]{\smash{View}}}%
-    \put(0.29662921,0.71910112){\makebox(0,0)[lb]{\smash{Webbrowser}}}%
-    \put(0.08089888,0.08988764){\makebox(0,0)[lb]{\smash{Database}}}%
+  \begin{picture}(1,0.38650307)%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/vare.pdf}}%
+    \put(0.37116564,0.29754601){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.04601227,0.06441718){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
+    \put(0.55214724,0.05828221){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
   \end{picture}%
 \endgroup%
