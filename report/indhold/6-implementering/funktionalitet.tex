@@ -47,7 +47,7 @@ Controllers, som er klasser, er det centrale i implementeringen af funktionskomp
 \subsection{Tabeller}
 \label{sec:tabeller}
 
-Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. Hver kasser repræsenterer en tabel i databasen og hver pil repræsenterer en relation mellem to tabeller. Pilen vender således at den peger væk fra den tabel, som har en fremmed nøgle. Det ses \fx mellem \dbtableref{ingredients} og \dbtableref{food\_types}. Her indeholder tabellen \dbtableref{ingredients} en kolonne \texttt{food\_type\_id}, som bruges til at pege på en række i \dbtableref{food\_types}-tabellen, derfor pilen fra \dbtableref{ingredients} til \dbtableref{food\_types}.
+Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. Hver kasse repræsenterer en tabel i databasen og hver pil repræsenterer en relation mellem to tabeller. Pilen vender således at den peger væk fra den tabel, som har en fremmed nøgle. Det ses \fx mellem \dbtableref{ingredients} og \dbtableref{food\_types}. Her indeholder tabellen \dbtableref{ingredients} en kolonne \texttt{food\_type\_id}, som bruges til at pege på en række i \dbtableref{food\_types}-tabellen, derfor pilen fra \dbtableref{ingredients} til \dbtableref{food\_types}.
 
 \dbtableref{sessions}-tabellen bruges af en intern Session-model i Rails, som er nødvendig for at gemme sessionsdata på serveren, dvs. \fx den besøgendes favoritter og indkøbsliste, når denne ikke er logget ind.
 
