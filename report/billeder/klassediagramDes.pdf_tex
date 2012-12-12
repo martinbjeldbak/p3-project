@@ -66,16 +66,14 @@
     \put(0.50485437,0.54045307){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.5631068,0.54368932){\makebox(0,0)[lb]{\smash{1..*}}}%
     \put(0.29449838,1.08899676){\makebox(0,0)[lb]{\smash{Bruger}}}%
-    \put(0.21359223,1.05016181){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.21359223,1.02427184){\makebox(0,0)[lb]{\smash{email}}}%
-    \put(0.21359223,0.99838188){\makebox(0,0)[lb]{\smash{adgangskode}}}%
-    \put(0.21359223,0.97249191){\makebox(0,0)[lb]{\smash{adgangsniveau}}}%
+    \put(0.21359223,1.05016181){\makebox(0,0)[lb]{\smash{email}}}%
+    \put(0.21359223,1.02427184){\makebox(0,0)[lb]{\smash{adgangskode}}}%
+    \put(0.21359223,0.99838188){\makebox(0,0)[lb]{\smash{adgangsniveau}}}%
     \put(0.21359223,0.92394822){\makebox(0,0)[lb]{\smash{ret stamdata()}}}%
     \put(0.21359223,0.89805825){\makebox(0,0)[lb]{\smash{slet bruger()}}}%
     \put(0.21359223,0.87216828){\makebox(0,0)[lb]{\smash{håndter indkøbsliste()}}}%
     \put(0.21359223,0.84627832){\makebox(0,0)[lb]{\smash{håndter favoritter()}}}%
     \put(0.21359223,0.82038835){\makebox(0,0)[lb]{\smash{fejlrapport()}}}%
-    \put(0.21359223,0.79449838){\makebox(0,0)[lb]{\smash{newOperation()}}}%
     \put(0.66828479,0.97249191){\makebox(0,0)[lb]{\smash{Vare}}}%
     \put(0.61488673,0.93365696){\makebox(0,0)[lb]{\smash{navn}}}%
     \put(0.61488673,0.90776699){\makebox(0,0)[lb]{\smash{mængde}}}%
