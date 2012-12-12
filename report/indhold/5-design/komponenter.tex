@@ -1,14 +1,15 @@
 \section{Komponenter}
 \label{sec:komponenter}
-Hvad er en komponent for en størrelse? Når der hentydes til komponenter i sammenhæng med systemudvikling, så er en komponent en samling af programdele, som udgør en helhed og har veldefinerede ansvarsområder. En programdel kan også være et helt delsystem, men i og med at platformen for vores system er objektorienteret, så vil de fleste programdele være de klasser, der findes i systemet. 
+Når der hentydes til komponenter i sammenhæng med systemudvikling og programmeringsparadigmer, så er en komponent en samling af programdele, der udgør en helhed og har veldefinerede ansvarsområder\cite[s.~191]{ooad}. En programdel kan også være et helt delsystem, men i og med at platformen for vores system er objektorienteret, så vil de fleste programdele være de klasser, der findes i systemet. 
 
 Resultatet ved at udarbejde en komponentarkitektur er et revideret klassediagram, der indeholder operationer, attributter og eventuelle nye klasser.
 
-For at identificere de forskellige komponenter i vores system, startede vi med at opstille en meget simpel lagdelt arkitektur, som er visualiseret i \figref{fig:simpellag}. 
+For at identificere de forskellige komponenter i vores system, startede vi med at opstille en meget simpel 3-lag arkitektur\cite{Eckerson1995}, som er visualiseret i \figref{fig:simpellag}. 
 Komponenten ``brugergrænseflade'' har ansvaret for at aflæse brugerens interaktion med systemets knapper og ud fra dette opdatere, hvad brugeren får vist på skærmen. 
 Funktionskomponenten er ansvarlig for systemets funktionalitet. Funktionaliteten bliver leveret til brugergrænsefladen som et set operationer på de offentlige klasser i funktionskomponenten. 
 Modelkomponentens primære ansvarsområde er at holde styr på objekterne, der repræsenterer problemområdet. Sker der noget relevant i problemområdet, så skal modelkomponentens objekter skifte tilstand i overenstemmelse hermed. 
-Dette mønster minder meget om Model-View-Controller mønstret, som vi kort har beskrevet i \secref{subsec:mvc}.
+
+Dette mønster minder meget om Model-View-Controller mønstret, som vi benytter og har kort beskrevet i \secref{subsec:mvc}. Dog skal det nævnes, at de ikke er helt ens, da der er nogle finurligheder. I en 3-lags komponentarkitektur er det ikke muligt for præsentationslaget at tilgå modellen. MVC-mønstøret er mere trekantet idet, at views kan tilgå både funktionskomponenten og modelkomponenten og dermed blive opdateret direkte fra modellen. 
 
 \pdffig[0.7]{simpellag}
 	{Den generiske lagdelt komponentarkitektur.}

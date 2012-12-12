@@ -1,13 +1,13 @@
 \subsection{Samarbejde med Arla}
-Når en bruger har indtastet en mængde råvarer og trykker søg, så skal søgeresultatet vise opskrifter, der indeholder de indtastede råvarer. For at gøre dette muligt er det nødvendigt at \Foodl indeholder data om en masse forskellige opskrifter. Da der findes mange opskriftshjemmesider på internettet, kan vi blot benytte deres data. At benytte data fra en specifik opskriftshjemmeside kræver at vi har ejerens tilladelse til det. I dette projekt har vi af Arla fået lov til at benytte deres opskrifter, der kan ses på Arla.dk, forudsat at vi overholde disse, af Arla stillede, krav:
+Når en bruger har indtastet en mængde råvarer og trykker søg, så skal søgeresultatet vise opskrifter, der indeholder de indtastede råvarer. For at gøre dette muligt er det nødvendigt at \Foodl{} indeholder data om en masse forskellige opskrifter. Da der findes mange opskriftshjemmesider på internettet, kan vi blot benytte deres data. At benytte data fra en specifik opskriftshjemmeside kræver at vi har ejerens tilladelse til det. I dette projekt har vi af Arla fået lov til at benytte deres opskrifter, der kan ses på Arla.dk, forudsat at vi overholde disse, af Arla stillede, krav:
 \begin{itemize}
 \item Al den information, som vi ønsker at vise brugerne af \Foodl, skal gemmes lokalt. Det vil sige at vi må ikke loade billeder, ingredienser og lignende fra deres server, hver gang en bruger benytter \Foodl.
 \item Vi må ikke vise \Foodl{}'s brugere opskrifternes fremgangsmåde. \Foodl \textbf{skal} linke videre til Arla.dk når folk vil se hvordan en opskrift laves.
 \end{itemize}
-Under udviklingen af \Foodl har vi taget højde for at opfylde disse krav.
+Under udviklingen af \Foodl{} har vi taget højde for at opfylde disse krav.
 
 \subsection{Råvaretabellen}
-Efter afprøvning af prototyperne 2A og 2B på informanterne blev vi klar over, at de råvarer, som en bruger ønsker at søge på, skal autocompletes. Det vil sige, at når en bruger skriver teksten \textit{ba} i søgefeltet, så skal \Foodl foreslå råvarer som \fx \textit{banan} og \textit{balsamico}.
+Efter afprøvning af prototyperne 2A og 2B på informanterne blev vi klar over, at de råvarer, som en bruger ønsker at søge på, skal autocompletes. Det vil sige, at når en bruger skriver teksten \textit{ba} i søgefeltet, så skal \Foodl{} foreslå råvarer som \fx \textit{banan} og \textit{balsamico}.
 En autocomplete-funktion skal have noget data at stille forslag fra, og i dette tilfælde har vi brug for en tabel med alle de forskellige råvarer man kan forestille sig at en bruger vil indtaste. Denne tabel over råvarer vil fremover blive kaldt råvaretabellen.
 
 Da opskrifterne, der søges på, kommer fra Arla, ville det have været nemt hvis Arla havde offentliggjort en liste over de forskellige ingredienser de benytter, således vi kunne bruge denne data som vores råvaretabel. En sådan liste var ikke til at finde, så vi begyndte at overveje muligheden for at lave råvaretabellen ved at udtrække ingredienserne direkte fra Arlas opskrifter. Et eksempel på ingrediensernes navne i Arlas opskrifter:
