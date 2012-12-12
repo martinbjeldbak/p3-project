@@ -23,8 +23,8 @@ Fejl rapporteret(beskrivelse)</text>
 <polyline fill="none" points="174,115 174,148 270,144" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="258" x2="270" y1="151" y2="144"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="257" x2="270" y1="137" y2="144"/>
-<text font-family="Lucida Grande" font-size="13" x="95" y="143">
-Fejl bortset</text>
+<text font-family="Lucida Grande" font-size="13" x="70" y="142">
+Fejl set bort fra</text>
 <rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="115" x="310" y="68"/>
 <rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="115" x="310" y="68"/>
 <rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="113" x="311" y="69"/>
