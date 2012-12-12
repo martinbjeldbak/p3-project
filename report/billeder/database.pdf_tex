@@ -53,35 +53,35 @@
     \put(0.14858097,0.54924875){\makebox(0,0)[lb]{\smash{users}}}%
     \put(0.03505843,0.50918197){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.03505843,0.48247078){\makebox(0,0)[lb]{\smash{email : string}}}%
-    \put(0.03505843,0.4557596){\makebox(0,0)[lb]{\smash{password_digest : string}}}%
+    \put(0.03505843,0.4557596){\makebox(0,0)[lb]{\smash{password\_digest : string}}}%
     \put(0.03505843,0.42904841){\makebox(0,0)[lb]{\smash{admin : bool}}}%
-    \put(0.46744574,0.54924875){\makebox(0,0)[lb]{\smash{users_recipes}}}%
-    \put(0.43572621,0.50918197){\makebox(0,0)[lb]{\smash{user_id : integer}}}%
-    \put(0.43572621,0.48247078){\makebox(0,0)[lb]{\smash{recipe_id : integer}}}%
+    \put(0.46744574,0.54924875){\makebox(0,0)[lb]{\smash{users\_recipes}}}%
+    \put(0.43572621,0.50918197){\makebox(0,0)[lb]{\smash{user\_id : integer}}}%
+    \put(0.43572621,0.48247078){\makebox(0,0)[lb]{\smash{recipe\_id : integer}}}%
     \put(0.8196995,0.54924875){\makebox(0,0)[lb]{\smash{recipes}}}%
     \put(0.74290484,0.50918197){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.74290484,0.48247078){\makebox(0,0)[lb]{\smash{name : string}}}%
     \put(0.74290484,0.4557596){\makebox(0,0)[lb]{\smash{url : text}}}%
     \put(0.74290484,0.42904841){\makebox(0,0)[lb]{\smash{picture : binary}}}%
     \put(0.74290484,0.40233723){\makebox(0,0)[lb]{\smash{rating : integer}}}%
-    \put(0.74290484,0.37562604){\makebox(0,0)[lb]{\smash{prep_time : integer}}}%
-    \put(0.12854758,0.2687813){\makebox(0,0)[lb]{\smash{list_items}}}%
+    \put(0.74290484,0.37562604){\makebox(0,0)[lb]{\smash{prep\_time : integer}}}%
+    \put(0.12854758,0.2687813){\makebox(0,0)[lb]{\smash{list\_items}}}%
     \put(0.03505843,0.22871452){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.03505843,0.20200334){\makebox(0,0)[lb]{\smash{quantity : float}}}%
     \put(0.03505843,0.17529215){\makebox(0,0)[lb]{\smash{name : string}}}%
     \put(0.03505843,0.14858097){\makebox(0,0)[lb]{\smash{unit : string}}}%
-    \put(0.03505843,0.12186978){\makebox(0,0)[lb]{\smash{user_id : integer}}}%
-    \put(0.03505843,0.0951586){\makebox(0,0)[lb]{\smash{food_type_id : integer}}}%
+    \put(0.03505843,0.12186978){\makebox(0,0)[lb]{\smash{user\_id : integer}}}%
+    \put(0.03505843,0.0951586){\makebox(0,0)[lb]{\smash{food\_type\_id : integer}}}%
     \put(0.79966611,0.2687813){\makebox(0,0)[lb]{\smash{ingredients}}}%
     \put(0.74290484,0.22871452){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.74290484,0.20200334){\makebox(0,0)[lb]{\smash{quantity : float}}}%
     \put(0.74290484,0.17529215){\makebox(0,0)[lb]{\smash{unit : string}}}%
     \put(0.74290484,0.14858097){\makebox(0,0)[lb]{\smash{name : string}}}%
-    \put(0.74290484,0.12186978){\makebox(0,0)[lb]{\smash{food_type_id : integer}}}%
-    \put(0.74290484,0.0951586){\makebox(0,0)[lb]{\smash{recipe_id : integer}}}%
+    \put(0.74290484,0.12186978){\makebox(0,0)[lb]{\smash{food\_type\_id : integer}}}%
+    \put(0.74290484,0.0951586){\makebox(0,0)[lb]{\smash{recipe\_id : integer}}}%
     \put(0.74290484,0.06844741){\makebox(0,0)[lb]{\smash{match : integer}}}%
     \put(0.74290484,0.04173623){\makebox(0,0)[lb]{\smash{original : string}}}%
-    \put(0.47412354,0.2687813){\makebox(0,0)[lb]{\smash{food_types}}}%
+    \put(0.47412354,0.2687813){\makebox(0,0)[lb]{\smash{food\_types}}}%
     \put(0.43572621,0.22871452){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.43572621,0.20200334){\makebox(0,0)[lb]{\smash{name : string}}}%
     \put(0.38898164,0.47913189){\makebox(0,0)[lb]{\smash{0..*}}}%
@@ -99,9 +99,9 @@
     \put(0.14524207,0.77629382){\makebox(0,0)[lb]{\smash{issues}}}%
     \put(0.03505843,0.73622705){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.03505843,0.70951586){\makebox(0,0)[lb]{\smash{description : text}}}%
-    \put(0.03505843,0.68280467){\makebox(0,0)[lb]{\smash{issue_category_id : integer}}}%
-    \put(0.03505843,0.65609349){\makebox(0,0)[lb]{\smash{user_id : integer}}}%
-    \put(0.45409015,0.77629382){\makebox(0,0)[lb]{\smash{issue_categories}}}%
+    \put(0.03505843,0.68280467){\makebox(0,0)[lb]{\smash{issue\_category\_id : integer}}}%
+    \put(0.03505843,0.65609349){\makebox(0,0)[lb]{\smash{user\_id : integer}}}%
+    \put(0.45409015,0.77629382){\makebox(0,0)[lb]{\smash{issue\_categories}}}%
     \put(0.43572621,0.73622705){\makebox(0,0)[lb]{\smash{id : integer}}}%
     \put(0.43572621,0.70951586){\makebox(0,0)[lb]{\smash{name : string}}}%
     \put(0.43572621,0.68280467){\makebox(0,0)[lb]{\smash{describable : bool}}}%
@@ -111,7 +111,7 @@
     \put(0.41736227,0.69949917){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.81469115,0.77629382){\makebox(0,0)[lb]{\smash{sessions}}}%
     \put(0.74290484,0.73622705){\makebox(0,0)[lb]{\smash{id : integer}}}%
-    \put(0.74290484,0.70951586){\makebox(0,0)[lb]{\smash{session_id : string}}}%
+    \put(0.74290484,0.70951586){\makebox(0,0)[lb]{\smash{session\_id : string}}}%
     \put(0.74290484,0.68280467){\makebox(0,0)[lb]{\smash{data : text}}}%
   \end{picture}%
 \endgroup%
