@@ -72,7 +72,7 @@
     \put(0.06802721,0.46802721){\makebox(0,0)[lb]{\smash{Færdig med opskrift}}}%
     \put(0.3170068,0.40680272){\makebox(0,0)[lb]{\smash{Udfør ny søgning}}}%
     \put(0.04761905,0.31156463){\makebox(0,0)[lb]{\smash{Søgning påbegyndt}}}%
-    \put(0.7755102,0.44353741){\makebox(0,0)[lb]{\smash{.(navn, mængde, enhed)}}}%
-    \put(0.02857143,0.0244898){\makebox(0,0)[lb]{\smash{.(navn, mængde, enhed)}}}%
+    \put(0.7755102,0.44353741){\makebox(0,0)[lb]{\smash{(navn, mængde, enhed)}}}%
+    \put(0.02857143,0.0244898){\makebox(0,0)[lb]{\smash{(navn, mængde, enhed)}}}%
   \end{picture}%
 \endgroup%
