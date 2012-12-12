@@ -1,4 +1,70 @@
 \subsection{Designovervejelser}
 \label{subsec:designovervejelser}
 
-\todo{DEB!}
+Under designet af \Foodl's brugergrænseflade, har vi gjort os nogle designmæssige overvejelser for at øge kvaliteten af programmet. Vi har blandt andet taget højde for følgende principper for god usability\cite[p.~123]{deb}:
+\begin{itemize}
+
+\item Visibility
+  \begin{itemize}
+  \item De vigtigste funktioner har vi valgt altid skal være synlige for brugeren. Det omfatter links til at navigere til siderne \textit{indkøbsliste}, \textit{favoritter}, \textit{log ind / opret bruger} og \textit{forside}. De nævnte links er altid synlige aller øverst på siden i sidehovedet.
+  \end{itemize}
+  
+\item Consistency
+  \begin{itemize}
+  \item Vi er konsistente med måden hvorpå ting, der kan interageres med, bliver grønne når musen føres over dem. Knapper har den samme firkantede form med svagt afrundede hjørner, grålig baggrund og mørkere grå kanter. Har en knap tekst på sig, er teksten som udgangspunkt grøn. Hvis knappen er blevet trykket i bund og altså er aktiveret, er skriften orange. Hvis en knap er inaktiv og man ikke kan trykke på den, så er kontrasten mellem knappens baggrund, tekst og kant meget lav. Dette kaldes normalt \textit{grayed out}, og er måden man typisk viser at en knap ikke kan trykkes på.
+  \item Logoet linker til forsiden, hvilket er ret normalt for de fleste hjemmesider.
+  \item En opskrifts vurdering kan læses som 5 stjerner, hvoraf nogle af stjernerne bliver farvet fra venstre mod højre, ligesom folk kender det fra \fx avisers anmeldelser af film.
+  \end{itemize}
+  
+\item Familiarity
+  \begin{itemize}
+  \item Vi benytter symboler folk i forvejen kender, som \fx krydset man trykker på for at slette en råvare man har indtastet eller når man vil slette en ingrediens fra indkøbslisten. Når man skal tilføje en ingrediens til indkøbslisten trykker man på et plus-symbol, som ofte forbindes med at tilføje noget.
+  \item Når en søgning er sat i gang, så vises en cirkulær animation, som ofte bruges når en proces, der kan tage et stykke tid, er i gang.   
+  \end{itemize}
+  
+\item Affordance
+  \begin{itemize}
+  \item Vi har forsøgt at designe \Foodl's logo, samt forsiden hvor logoet præsenteres, på en sådan måde at folk med det samme får et indtryk af hvad systemet kan. Logoets tekst, \textit{Foodl}, får tankerne over på mad, hvilket yderligere forstærkes af at det ene ``{o'' er udskiftet med en ananas. Navnet Foodl minder en smule om Google, og har til formål at lede folks tanker i retning af en søgemaskine, hvilket yderligere forstærkes af sidehovwdet og forsidens design, der minder en hel del om Googles.  
+  \item Når man skal favorisere en opskrift, altså tilkendegive at man synes om denne, så skal man trykke på en knap med et  hjertesymbol. Hjertet skal gerne give folk en ide om, at man altså skal trykke på knappen hvis man synes om opskriften.
+  \item Indkøbslisten ligner et rigtig linieret A4-papir. Varer på listen vises med en skrifttype, der ligner håndskrift, dog ikke i så høj grad at det bliver svært at læse teksten. Vi benytter altså en metafor her, ved at tage et kendt objekt og mappe det til noget virtuelt, der ser ud og fungerer på samme måde.
+  \item En stjerne bliver associeret med noget godt. Derfor viser vi et antal stjerner ved en opskrift, for at folk skal forbinde det med hvor god en opskrift er.
+  \end{itemize}
+  
+\item Navigation - vi har forsøgt at gøre navigation imellem \Foodl's sider mere enkel ved at bruge flere forskellige elementer
+  \begin{itemize}
+  \item Et sidehovede, sørger for at de overordnede muligheder for at navigere imellem sider altid er synlig.
+  \item Hvis man ikke er logget ind, kommer der en sort, firkantet boks frem med teksten “Husk at oprette en bruger for at gemme din indkøbsliste og favoritter”. I boksen er der en pil, der peger lige netop på det link i sidehovedet man skal trykke på for at oprette en bruger.
+  \item Når man har udført en søgning får man aller først vist alle resultater. Derefter kan man sortere og begrænse søgningen. Dette opfylder designprincippet \textit{Overblik først, derefter detaljer}.
+  \end{itemize}
+  
+\item Control - vi giver viden om hvad han kan kontrollere
+  \begin{itemize}
+    \item Når musen er over en knap, der kan interageres med, bliver knappens baggrund grøn. Så ved man at man kan trykke på knappen, og på samme måde finder man hurtigt ud af at en slider kan trækkes i.
+    \item Når der trækkes i slideren, der skalerer opskrifterne i et søgeresultat, så ændres antal personer og ingrediensernes mængder sig med det samme, og ikke først når slideren er sluppet. På den måde får brugeren bedre kontrol og kan hurtigt ramme den rigtige skalering.
+    \item Ting, der ikke kontrolleres ser udhviskede ud.
+  \end{itemize}
+  
+\item Feedback - vi giver brugeren feedback, så han ved at systemet har reageret på hans forespørgsler, og fortæller ham når noget er gået galt eller hvis han har lavet en fejl.
+  \begin{itemize}
+  \item En animation af en cirkulær bevægelse viser at en søgning er i gang. På den måde tror brugeren ikke at han har klikket ved siden af en knap, hvis søgning blot tager lidt længere tid end forventet.
+  \item En besked popper op på siden når brugeren skal have feedback. Det kan \fx være når brugeren har oprettet en bruger eller har indtastet en forkert kode i et forsøg på at logge ind.
+  \end{itemize}
+
+\item Revocery
+\begin{itemize}
+  \item Hvis en bruger har glemt sin kode, kan han få den tilsendt igen.
+\end{itemize}
+
+\item Style
+\begin{itemize}
+  \item Vi har brugt HTML og CSS til at opbygge et, i vores øjne, flot og attraktivt design.
+\end{itemize}
+
+\item Conviviality
+\begin{itemize}
+  \item Hvis en bruger laver en fejl, så forholder vi os relativt roligt og viser brugeren en lille tekstmeddelelse med feedback. Vi afspiller ikke en lyd, der får folk til at spilde kaffen.
+  \item Når noget er gået galt, giver vi ikke brugeren skylden for dette direkte. Hvis en person forsøger at logge ind uden at have indtastet gyldig email-adrasse, så skriver vi blot \textit{Angiv en email-adresse}, i stedet for \textit{Du har indtastet en forkert email-adresse}. På samme måde med alle fejlmeddelelser, bebrejder vi ikke brugeren direkte.
+  \item
+\end{itemize}
+
+\end{itemize}
