@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'vare.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{260.8bp}%
+    \setlength{\unitlength}{444.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +48,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.38650307)%
+  \begin{picture}(1,0.14028777)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/vare.pdf}}%
-    \put(0.37116564,0.29754601){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
-    \put(0.04601227,0.06441718){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
-    \put(0.55214724,0.05828221){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.43705036,0.08992806){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.07913669,0.08453237){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
+    \put(0.63669065,0.07733813){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
   \end{picture}%
 \endgroup%
