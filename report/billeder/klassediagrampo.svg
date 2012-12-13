@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg height="326" version="1.1" width="440" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#ffffff" height="25" stroke="#ffffff" stroke-width="1" width="71" x="186" y="183"/>
-<rect fill="none" height="25" stroke="#000000" stroke-width="1" width="71" x="186" y="183"/>
+<rect fill="#ffffff" height="25" stroke="#ffffff" stroke-width="1" width="76" x="186" y="183"/>
+<rect fill="none" height="25" stroke="#000000" stroke-width="1" width="76" x="186" y="183"/>
 <text font-family="Dialog" font-size="12" x="191" y="196">
 Ingrediens</text>
 <rect fill="#ffffff" height="25" stroke="#ffffff" stroke-width="1" width="72" x="186" y="287"/>
 <rect fill="none" height="25" stroke="#000000" stroke-width="1" width="72" x="186" y="287"/>
-<text font-family="Dialog" font-size="12" x="202" y="300">
+<text font-family="Dialog" font-size="12" x="200" y="300">
 Råvare</text>
 <rect fill="#ffffff" height="25" stroke="#ffffff" stroke-width="1" width="66" x="74" y="135"/>
 <rect fill="none" height="25" stroke="#000000" stroke-width="1" width="66" x="74" y="135"/>
-<text font-family="Dialog" font-size="12" x="84" y="148">
+<text font-family="Dialog" font-size="12" x="83" y="148">
 Opskrift</text>
 <polyline fill="none" points="106,159 106,199 186,199" stroke="#000000" stroke-width="1"/>
 <polygon fill="#ffffff" points="106,159 111,169 106,179 101,169" stroke="#ffffff" stroke-width="1"/>
@@ -29,30 +29,28 @@ Opskrift</text>
 1</text>
 <rect fill="#ffffff" height="25" stroke="#ffffff" stroke-width="1" width="66" x="74" y="31"/>
 <rect fill="none" height="25" stroke="#000000" stroke-width="1" width="66" x="74" y="31"/>
-<text font-family="Dialog" font-size="12" x="97" y="44">
+<text font-family="Dialog" font-size="12" x="96" y="44">
 Fejl</text>
 <polyline fill="none" points="106,135 106,55" stroke="#000000" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="85" y="129">
 1</text>
 <text font-family="Dialog" font-size="12" x="77" y="72">
 0..*</text>
-<ellipse cx="104" cy="95" fill="#000000" rx="0.5" ry="0.5" stroke="#000000" stroke-width="1"/>
-<ellipse cx="105" cy="96" fill="#ffffff" rx="-0.5" ry="-0.5" stroke="#ffffff" stroke-width="1"/>
 <rect fill="#ffffff" height="25" stroke="#ffffff" stroke-width="1" width="72" x="290" y="183"/>
 <rect fill="none" height="25" stroke="#000000" stroke-width="1" width="72" x="290" y="183"/>
-<text font-family="Dialog" font-size="12" x="312" y="196">
+<text font-family="Dialog" font-size="12" x="311" y="196">
 Vare</text>
 <rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="80" x="282" y="31"/>
 <rect fill="none" height="24" stroke="#000000" stroke-width="1" width="80" x="282" y="31"/>
-<text font-family="Dialog" font-size="12" x="302" y="44">
+<text font-family="Dialog" font-size="12" x="300" y="44">
 Person</text>
 <polyline fill="none" points="330,54 330,183" stroke="#000000" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="337" y="123">
 Indkøbsliste</text>
-<text font-family="Dialog" font-size="12" x="337" y="71">
-0..*</text>
+<text font-family="Dialog" font-size="12" x="343" y="71">
+1</text>
 <text font-family="Dialog" font-size="12" x="336" y="176">
-1..*</text>
+0..*</text>
 <polyline fill="none" points="139,47 282,47" stroke="#000000" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="147" y="42">
 0..*</text>
