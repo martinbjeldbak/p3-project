@@ -1,7 +1,7 @@
 \section{Funktionalitet}
 \label{sec:funktionalitet}
 
-Da {\Foodl} er en Rails-applikation består den, som andre MVC-applikationer, hovedsageligt af modeller, controllers og views. Modeller er klasser, der repræsenerer data, dvs. f.eks. tabeller i databasen. Controllers er klasser bestående af actions, eller handlinger, som er metoder, der har til formål at reagere på en aktørs interaktion med serveren. Den sidste grundlæggende del af MVC-designet er views, som er template-filer, som bliver udfyldt med data gennem controlleren og sendt tilbage til aktøren. I {\Foodl} er der flest HTML-templates, som har til formål at præsentere data i brugerens webbrowser.
+Da {\Foodl} er en Rails-applikation består den, som andre MVC-applikationer, hovedsageligt af modeller, controllers og views. Modeller er klasser, der repræsenerer data, dvs. f.eks. tabeller i databasen. Controllers er klasser bestående af actions, eller handlinger, som er metoder, der har til formål at reagere på en aktørs interaktion med serveren. Den sidste grundlæggende del af MVC-designet er views, som er template-filer, som bliver udfyldt med data gennem controlleren og sendt tilbage til aktøren. I \Foodl{} er der flest HTML-templates, som har til formål at præsentere data i brugerens webbrowser.
 
 Derudover består en Rails-applikation også af helpers og assets. Helpers er hjælpefunktioner, som skal være tilgængelige flere steder i applikationen, dvs. i forskellige controllers og views. Assets er de JavaScripts, stylesheets og billeder, som applikationen bruger på klientsiden. 
 
@@ -12,7 +12,7 @@ Controllers, som er klasser, er det centrale i implementeringen af funktionskomp
 
 \begin{description}
   \item[ApplicationController] \hfill \\ 
-  Den overordnede applikationscontroller, som alle andre controllers i {\Foodl} nedarver fra. Den kan f.eks. indeholde forskellige helper-metoder, som skal kunne tilgås overalt i applikationen.
+  Den overordnede applikationscontroller, som alle andre controllers i \Foodl{} nedarver fra. Den kan f.eks. indeholde forskellige helper-metoder, som skal kunne tilgås overalt i applikationen.
 
   \item[FavoritesController] \hfill \\ 
   Denne controller håndterer brugerens favoritter, hvad enten denne er logget ind eller ej. Controlleren har tre actions, en til at liste favoritter, en til at tilføje favoritter og en til at fjerne favoritter.
@@ -65,7 +65,7 @@ Som illustreret i \figref{fig:database} så er der udover mange-til-mange-forhol
 
 \subsection{Søgning}
 \label{sec:funktionalitet-soegning}
-Søgningen må siges at være den vigtigste del af \Foodl. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
+Søgningen må siges at være den vigtigste del af \Foodl{}. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
 
 Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er selve forsiden af \Foodl{} med mulighed for at indtaste råvarer, og \methodref{result}, som er resultatsiden.
 

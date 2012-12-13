@@ -63,52 +63,50 @@
     \put(0.30420712,0.59708738){\makebox(0,0)[lb]{\smash{tilberedningstid}}}%
     \put(0.30420712,0.57119741){\makebox(0,0)[lb]{\smash{url}}}%
     \put(0.30420712,0.54530744){\makebox(0,0)[lb]{\smash{rating}}}%
-    \put(0.49190939,0.53398058){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.56472492,0.53236246){\makebox(0,0)[lb]{\smash{1..*}}}%
-    \put(0.29449838,1.08899676){\makebox(0,0)[lb]{\smash{Bruger}}}%
-    \put(0.21359223,1.05016181){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.21359223,1.02427184){\makebox(0,0)[lb]{\smash{email}}}%
-    \put(0.21359223,0.99838188){\makebox(0,0)[lb]{\smash{adgangskode}}}%
-    \put(0.21359223,0.97249191){\makebox(0,0)[lb]{\smash{adgangsniveau}}}%
-    \put(0.21359223,0.92071197){\makebox(0,0)[lb]{\smash{ret stamdata()}}}%
-    \put(0.21359223,0.89482201){\makebox(0,0)[lb]{\smash{slet bruger()}}}%
-    \put(0.21359223,0.86893204){\makebox(0,0)[lb]{\smash{håndter indkøbsliste()}}}%
-    \put(0.21359223,0.84304207){\makebox(0,0)[lb]{\smash{håndter favoritter()}}}%
-    \put(0.21359223,0.8171521){\makebox(0,0)[lb]{\smash{ændre fejlrapport()}}}%
+    \put(0.51132686,0.57443366){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.5566343,0.57443366){\makebox(0,0)[lb]{\smash{1..*}}}%
+    \put(0.31877023,1.08899676){\makebox(0,0)[lb]{\smash{Bruger}}}%
+    \put(0.2394822,1.05016181){\makebox(0,0)[lb]{\smash{email}}}%
+    \put(0.2394822,1.02427184){\makebox(0,0)[lb]{\smash{adgangskode}}}%
+    \put(0.2394822,0.99838188){\makebox(0,0)[lb]{\smash{adgangsniveau}}}%
+    \put(0.2394822,0.95954693){\makebox(0,0)[lb]{\smash{ret stamdata()}}}%
+    \put(0.2394822,0.93365696){\makebox(0,0)[lb]{\smash{slet bruger()}}}%
+    \put(0.2394822,0.90776699){\makebox(0,0)[lb]{\smash{håndter indkøbsliste()}}}%
+    \put(0.2394822,0.88187702){\makebox(0,0)[lb]{\smash{håndter favoritter()}}}%
+    \put(0.2394822,0.85598706){\makebox(0,0)[lb]{\smash{fejlrapport()}}}%
     \put(0.66828479,0.97249191){\makebox(0,0)[lb]{\smash{Vare}}}%
     \put(0.61488673,0.93365696){\makebox(0,0)[lb]{\smash{navn}}}%
     \put(0.61488673,0.90776699){\makebox(0,0)[lb]{\smash{mængde}}}%
     \put(0.61488673,0.88187702){\makebox(0,0)[lb]{\smash{enhed}}}%
     \put(0.68446602,0.53074434){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.69417476,0.49352751){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.47249191,0.86245955){\makebox(0,0)[lb]{\smash{indkøbsliste}}}%
-    \put(0.4579288,0.9012945){\makebox(0,0)[lb]{\smash{0..1}}}%
+    \put(0.69417476,0.49514563){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.48381877,0.86245955){\makebox(0,0)[lb]{\smash{indkøbsliste}}}%
+    \put(0.49029126,0.9012945){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.55987055,0.89967638){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.40291262,0.74110032){\makebox(0,0)[lb]{\smash{favoritter}}}%
-    \put(0.3381877,0.75566343){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.34304207,0.72168285){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.40291262,0.76699029){\makebox(0,0)[lb]{\smash{favoritter}}}%
+    \put(0.34304207,0.81391586){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.33980583,0.7184466){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.03398058,0.28640777){\makebox(0,0)[lb]{\smash{Funktion}}}%
     \put(0.0631068,0.22168285){\makebox(0,0)[lb]{\smash{Søgehåndtering}}}%
     \put(0.05825243,0.14886731){\makebox(0,0)[lb]{\smash{søg()}}}%
     \put(0.05825243,0.12297735){\makebox(0,0)[lb]{\smash{skaler()}}}%
     \put(0.05825243,0.09708738){\makebox(0,0)[lb]{\smash{sorter()}}}%
     \put(0.05825243,0.07119741){\makebox(0,0)[lb]{\smash{begræns()}}}%
-    \put(0.04368932,1.00809061){\makebox(0,0)[lb]{\smash{Værditype:}}}%
-    \put(0.04368932,0.98381877){\makebox(0,0)[lb]{\smash{\{bruger,}}}%
-    \put(0.04368932,0.95954693){\makebox(0,0)[lb]{\smash{admin\}}}}%
+    \put(0.04368932,1.0210356){\makebox(0,0)[lb]{\smash{Værditype:}}}%
+    \put(0.04368932,0.99676375){\makebox(0,0)[lb]{\smash{{bruger, admin}}}}%
     \put(0.32038835,0.16990291){\makebox(0,0)[lb]{\smash{Brugerhåndtering}}}%
     \put(0.30420712,0.09708738){\makebox(0,0)[lb]{\smash{log ind()}}}%
     \put(0.30420712,0.07119741){\makebox(0,0)[lb]{\smash{log ud()}}}%
     \put(0.09061489,0.70064725){\makebox(0,0)[lb]{\smash{Fejlrapport}}}%
     \put(0.05825243,0.6618123){\makebox(0,0)[lb]{\smash{beskrivelse}}}%
     \put(0.05825243,0.63592233){\makebox(0,0)[lb]{\smash{status}}}%
-    \put(0.06796117,0.75889968){\makebox(0,0)[lb]{\smash{rapporter fejl}}}%
-    \put(0.08576052,0.73462783){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.21197411,0.76213592){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.10841424,0.77831715){\makebox(0,0)[lb]{\smash{rapporter fejl}}}%
+    \put(0.09708738,0.73139159){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.2605178,0.81229773){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.08090615,0.46763754){\makebox(0,0)[lb]{\smash{Fejlkategori}}}%
     \put(0.07119741,0.42880259){\makebox(0,0)[lb]{\smash{navn}}}%
     \put(0.07119741,0.40291262){\makebox(0,0)[lb]{\smash{beskrivelig}}}%
     \put(0.15210356,0.52750809){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.16343042,0.49190939){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.16343042,0.49838188){\makebox(0,0)[lb]{\smash{1}}}%
   \end{picture}%
 \endgroup%
