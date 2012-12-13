@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="126" version="1.1" width="326" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#00ff" height="50" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="83" y="14"/>
-<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="83" y="14"/>
-<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="84" y="15"/>
-<text font-family="Dialog" font-size="13" x="121" y="29">
+<svg height="78" version="1.1" width="556" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="22" cy="38" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="50" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="206" y="14"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="206" y="14"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="207" y="15"/>
+<text font-family="Lucida Grande" font-size="13" x="243" y="28">
 Eksisterer</text>
-<polyline fill="none" points="107,63 107,86 131,86 131,63" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="138" x2="131" y1="75" y2="63"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="124" x2="131" y1="75" y2="63"/>
-<text font-family="Dialog" font-size="13" x="15" y="105">
+<polyline fill="none" points="31,38 206,38" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="206" y1="45" y2="38"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="194" x2="206" y1="31" y2="38"/>
+<text font-family="Lucida Grande" font-size="13" x="44" y="31">
 Skrevet på indkøbsliste</text>
-<polyline fill="none" points="195,63 195,86 171,86 171,63" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="178" x2="171" y1="75" y2="63"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="164" x2="171" y1="75" y2="63"/>
-<text font-family="Dialog" font-size="13" x="180" y="107">
+<ellipse cx="530" cy="42" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="530" cy="42" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="529" cy="41" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="341,41 518,41" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="506" x2="518" y1="48" y2="41"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="506" x2="518" y1="34" y2="41"/>
+<text font-family="Lucida Grande" font-size="13" x="354" y="35">
 Fjernet fra indkøbsliste</text>
 </svg>
