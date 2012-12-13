@@ -52,8 +52,8 @@
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/fejlhaandtering.pdf}}%
     \put(0.14285714,0.38961039){\makebox(0,0)[lb]{\smash{Fejlliste vises}}}%
     \put(0.29545455,0.49350649){\makebox(0,0)[lb]{\smash{Log ind som administrator}}}%
-    \put(0.06493506,0.07792208){\makebox(0,0)[lb]{\smash{Visning af fejlrapport}}}%
-    \put(0.2987013,0.22727273){\makebox(0,0)[lb]{\smash{Åben fejlrapport}}}%
+    \put(0.13961039,0.07792208){\makebox(0,0)[lb]{\smash{Visning af fejl}}}%
+    \put(0.37337662,0.22727273){\makebox(0,0)[lb]{\smash{Åben fejl}}}%
     \put(0.57467532,0.10064935){\makebox(0,0)[lb]{\smash{Håndtér fejl}}}%
   \end{picture}%
 \endgroup%

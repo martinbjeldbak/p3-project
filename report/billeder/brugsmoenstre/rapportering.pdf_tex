@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{408bp}%
+    \setlength{\unitlength}{419.2bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,17 +48,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.57254902)%
+  \begin{picture}(1,0.55725191)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/rapportering.pdf}}%
-    \put(0.40196078,0.37647059){\makebox(0,0)[lb]{\smash{Dialogboks åben}}}%
-    \put(0.10588235,0.46078431){\makebox(0,0)[lb]{\smash{Rapportér fejl ved opskrift}}}%
-    \put(0.38431373,0.23529412){\makebox(0,0)[lb]{\smash{Beskrivelsesboks åben}}}%
-    \put(0.15882353,0.31372549){\makebox(0,0)[lb]{\smash{Vælg fejltype [beskrivelig]}}}%
-    \put(0.76078431,0.36078431){\makebox(0,0)[lb]{\smash{Rapport klar}}}%
-    \put(0.71960784,0.21568627){\makebox(0,0)[lb]{\smash{Beskriv}}}%
-    \put(0.85490196,0.18627451){\makebox(0,0)[lb]{\smash{Godkend}}}%
-    \put(0.63529412,0.40980392){\makebox(0,0)[lb]{\smash{Vælg fejltype [ubeskrivelig]}}}%
-    \put(0.09607843,0.18627451){\makebox(0,0)[lb]{\smash{Rapportér generel fejl}}}%
-    \put(0.63333333,0.07058824){\makebox(0,0)[lb]{\smash{Annullér}}}%
+    \put(0.4980916,0.50381679){\makebox(0,0)[lb]{\smash{Aktiv}}}%
+    \put(0.39122137,0.36641221){\makebox(0,0)[lb]{\smash{Dialogboks åben}}}%
+    \put(0.11450382,0.4370229){\makebox(0,0)[lb]{\smash{Rapportér fejl ved opskrift}}}%
+    \put(0.3740458,0.21374046){\makebox(0,0)[lb]{\smash{Beskrivelsesboks åben}}}%
+    \put(0.15458015,0.29770992){\makebox(0,0)[lb]{\smash{Vælg fejltype [beskrivelig]}}}%
+    \put(0.74045802,0.36641221){\makebox(0,0)[lb]{\smash{Fejlrapport klar}}}%
+    \put(0.69465649,0.20419847){\makebox(0,0)[lb]{\smash{Beskriv}}}%
+    \put(0.83206107,0.20610687){\makebox(0,0)[lb]{\smash{Godkend}}}%
+    \put(0.59541985,0.40267176){\makebox(0,0)[lb]{\smash{Vælg fejltype [ubeskrivelig]}}}%
+    \put(0.10114504,0.17748092){\makebox(0,0)[lb]{\smash{Rapportér generel fejl}}}%
+    \put(0.61832061,0.07251908){\makebox(0,0)[lb]{\smash{Annullér}}}%
   \end{picture}%
 \endgroup%
