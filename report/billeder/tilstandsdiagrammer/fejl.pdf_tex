@@ -53,7 +53,7 @@
     \put(0.18412698,0.13968254){\makebox(0,0)[lb]{\smash{Opmærksom på fejl}}}%
     \put(0.05396825,0.13174603){\makebox(0,0)[lb]{\smash{Fejl fundet}}}%
     \put(0.2968254,0.22539683){\makebox(0,0)[lb]{\smash{Fejl rapporteret(beskrivelse)}}}%
-    \put(0.15079365,0.04285714){\makebox(0,0)[lb]{\smash{Fejl bortset}}}%
+    \put(0.11111111,0.04444444){\makebox(0,0)[lb]{\smash{Fejl set bort fra}}}%
     \put(0.50634921,0.13968254){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
     \put(0.72063492,0.11428571){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
     \put(0.60952381,0.04761905){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%

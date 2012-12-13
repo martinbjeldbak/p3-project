@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'klassediagrampo.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{366.4bp}%
+    \setlength{\unitlength}{352bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,28 +48,27 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.80786026)%
+  \begin{picture}(1,0.74090909)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagrampo.pdf}}%
-    \put(0.44203506,0.33987857){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
-    \put(0.46386912,0.11280436){\makebox(0,0)[lb]{\smash{Råvare}}}%
-    \put(0.21059401,0.44468206){\makebox(0,0)[lb]{\smash{Opskrift}}}%
-    \put(0.51408746,0.67175629){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
-    \put(0.30229707,0.29184363){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.35688222,0.29184363){\makebox(0,0)[lb]{\smash{1..*}}}%
-    \put(0.49880362,0.60625411){\makebox(0,0)[lb]{\smash{0..1}}}%
-    \put(0.50098702,0.40974756){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.17784292,0.11280436){\makebox(0,0)[lb]{\smash{Bogmærke}}}%
-    \put(0.17565951,0.15865589){\makebox(0,0)[lb]{\smash{0..1}}}%
-    \put(0.18657654,0.37699647){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.52500449,0.26564276){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.5271879,0.18048995){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.23461148,0.67175629){\makebox(0,0)[lb]{\smash{Fejl}}}%
-    \put(0.350332,0.68267333){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.4573189,0.67830651){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.28264641,0.4949004){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.27391279,0.60843752){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.7062272,0.33987857){\makebox(0,0)[lb]{\smash{Vare}}}%
-    \put(0.65382545,0.59097027){\makebox(0,0)[lb]{\smash{0..1}}}%
-    \put(0.76081235,0.40756415){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.43409091,0.29545455){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
+    \put(0.45909091,0.05909091){\makebox(0,0)[lb]{\smash{Råvare}}}%
+    \put(0.19090909,0.40454545){\makebox(0,0)[lb]{\smash{Opskrift}}}%
+    \put(0.19318182,0.34090909){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.35681818,0.25454545){\makebox(0,0)[lb]{\smash{1..*}}}%
+    \put(0.51590909,0.23181818){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.525,0.10227273){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.22045455,0.64090909){\makebox(0,0)[lb]{\smash{Fejl}}}%
+    \put(0.19318182,0.44772727){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.175,0.57727273){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.70909091,0.29545455){\makebox(0,0)[lb]{\smash{Vare}}}%
+    \put(0.68636364,0.64090909){\makebox(0,0)[lb]{\smash{Person}}}%
+    \put(0.76590909,0.46136364){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
+    \put(0.76590909,0.57954545){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.76363636,0.34090909){\makebox(0,0)[lb]{\smash{1..*}}}%
+    \put(0.33409091,0.64545455){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.59090909,0.64545455){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.48636364,0.41136364){\makebox(0,0)[lb]{\smash{Bogmærke}}}%
+    \put(0.33863636,0.40909091){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.62954545,0.575){\makebox(0,0)[lb]{\smash{0..*}}}%
   \end{picture}%
 \endgroup%
