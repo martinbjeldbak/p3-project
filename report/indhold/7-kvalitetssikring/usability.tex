@@ -1,59 +1,77 @@
 \section{Test af usability}
 \label{sec:usability}
 
-For at teste usability i forbindelse med vores system, har vi benyttet os af Instant Data Analysis-metoden \cite{debida}. Vi har dog kun haft to tænke-højt sessions, hvor det anbefalede er 4-6. Først lavede vi en liste over alle de ting, vi gerne ville have testpersonerne til at udforske. Det kunne \fx være at skifte sin adgangskode eller at favorisere en opskrift. Den fulde liste kan ses i \apref{ap:usabilitytest}. På baggrund af denne liste konstruerede vi en case bestående af opgaver, som testpersonerne skulle udføre i en bestemt rækkefølge, for netop at komme omkring alle de udvalgte ting, vi ville have udforsket. Vi udførte de to tænke-højt sessions på informanterne Keld og Merete i nævnte rækkefølge. Vi havde ikke mulighed for at benytte os af Usability Lab på Cassiopaia, da mange andre grupper havde booket en tid, og vi kunne ikke få tiderne til at passe sammen med vores informanters ønsker. I stedet for at bruge Usability Lab til at overvåge processen, installerede vi programmet Teamwiever på den bærbare computere informanten udførte casen på. De 3 personer, der ikke var ude ved informanten kunne fra deres egen bærbar logge på Teamviewer, og se hvad der foregik på skærmen samtidig med, at den indbyggede webcam og mikrofon gjorde det muligt at se informantens reaktion og høre ham tænke højt.
+For at teste usability i forbindelse med vores system, har vi benyttet os af Instant Data Analysis-metoden\cite{debida}. Vi har dog kun haft 2 tænkte-højt sessions, hvor det anbefalede er 4-6. Først lavede vi en liste over alle de ting vi gerne ville have testpersonerne til at udforske. Det kunne \fx være at skifte sin adgangskode eller at favorisere en opskrift. På baggrund af denne liste konstruerede vi en case bestående af opgaver, som testpersonerne skulle udføre i en bestemt rækkefølge, for netop at komme omkring alle de udvalgte ting vi ville have udforsket. Casen kan ses i \apref{ap:usabilitytest}. Vi udførte de to tænke-højt sessioner på informanterne Keld og Merete i nævnte rækkefølge. Vi havde ikke mulighed for at benytte os af Usability Lab på Cassiopaia, da mange andre grupper havde booket en tid, og vi kunne ikke få tiderne til at passe sammen med vores informanters ønsker. I stedet for at bruge Usability Lab til at overvåge processen, installerede vi programmet Teamviewer på den bærbare computere informanten udførte casen på. De 3 personer, der ikke var ude ved informanten kunne fra deres egen bærbar logge på Teamviewer og se hvad der foregik på skærmen, samtidig med at det indbyggede webcam og mikrofon gjorde det muligt at se informantens reaktion og høre ham tænke højt.
 
 Dokumentation for de 2 tænke-højt sessions kan findes på url'erne:
 \begin{itemize}[noitemsep]
-\item \url{http://www.youtube.com}
-\item \url{http://www.youtube.com}
+\item youtube.com
+\item youtube.com
 \end{itemize}
 
-Efter de to tænke-højt sessions, samlede vi os i grupperummet og lavede en brainstorm over de usability-problemer informanterne var stødt på. Problemerne blev klassificeret enten som kritisk, seriøst eller kosmetisk.
+Efter de 2 tænke-højt sessions, samlede vi os uden informanterne og lavede en brainstorm over de usability-problemer informanterne var stødt på i forbindelse med testen. Én logfører havde under alle tænkehøjt session noteret hver gang han opdagede et problem. De 5 andre benyttede blot deres hukommelse i forbindelse med brainstormen. Problemerne vi kom frem til blev klassificeret enten som kritisk, seriøst eller kosmetisk.
 
 \subsection{Usability-problemer}
-
  \begin{itemize}[noitemsep]
  \item Indkøbsliste
   \begin{itemize}[noitemsep]
-  \item Han havde problemer med at finde indkøbslisten, der er placeret i toppen (kritisk)
-  \item Opdatering af indholdet på indkøbslisten (headeren) skete ikke automatisk (kosmetisk)
+  \item Det var svært at finde indkøbslisten, der er placeret i toppen (kritisk)
+  \item Knappen til at udskrive indkøbslisten tog lang tid at finde (kosmetisk)
+  \item Opdatering af indholdet på indkøbslisten i sidehovedet skete ikke automatisk (kosmetisk)
   \item Han ønsker en form for bekræftelse, når en opskrift bliver tilføjet til indkøbslisten (kosmetisk)
   \item Nogle ingredienser kunne have mængden 0, fx “0 tsk salt”, “0 citronskal i strimler” (kosmetisk)
+  \item Indkøbslisten var så lang, at det var svært at finde feltet til at tilføje endnu en vare, da feltet var i bunden (kosmetisk).
+   \begin{itemize}[noitemsep]
+   \item En informant prøvede at klikke under sidste vare på listen, for at tilføje en ny.
+   \end{itemize}
   \end{itemize}
  \item Søgning
   \begin{itemize}[noitemsep]
-  \item Han lavede en stavefejl, og dette førte til at, der ikke kom forslag til råvarer i søgefeltet (seriøs)
-  \item Han kommaseparerede de råvarer han ville søge på, hvilket ikke gav nogle autocomplete-forslag (kritisk)
-  \end{itemize}
- \item Forside
-  \begin{itemize}[noitemsep]
-  \item Han prøvede at klikke tilbage vha. browserens tilbageknap (seriøs)
+  \item En stavefejl, i en indtastet ingrediens, førte til at der ikke kom forslag til råvarer i søgefeltet (seriøs)
+  \item 2 ingredienser blev indtastet i søgefeltet, separeret af et komma. (kritisk)
    \begin{itemize}[noitemsep]
-   \item Han klikkede dog på foodl-logoet, der navigerer tilbage til forsiden i andet forsøg 
-   \item Han ønskede at man brugte konventionen hus-logo (hjem)
+   \item En informant foreslog af ændre den initierende tekst i søgefeltet til ``indtast én råvare'' i stedet for ``indtast råvare''.
+   \end{itemize}
+  \item Man kan udføre en søgning på kun én råvare, hvis man har tilføjet én råvare og er ved at indtaste en anden råvare, men har lavet en stavefejl. Den anden råvare blive i så fald ikke tilføjet, og der søges kun på én enkelt råvare. (seriøs)
+  \end{itemize}
+ \item Søgeresultat
+   \begin{itemize}[noitemsep]
+  \item En informant formåede ikke på egen hånd at tilføje en ingrediens fra en opskrift til indkøbslisten (seriøs)
+  \end{itemize}
+ \item Sidehoved og Toolbar
+  \begin{itemize}[noitemsep]
+  \item Både sidehovedet og toolbaren virkede usynlige for brugeren (seriøs)
+   \begin{itemize}[noitemsep]
+   \item En informant prøvede at sortere opskrifter ved at højreklikke på siden
+   \item En informant prøvede at sortere opskrifter ved at klikke på ``Indstillinger'' i sidehovedet.
+   \end{itemize}
+   \begin{itemize}[noitemsep]
+  \item Foodl-logoet blev overset, som en funktion til at gå tilbage til forsiden.(seriøs)
+   \begin{itemize}[noitemsep]
+   \item En informant foreslog at vi kunne bruge konventionen hus-logo (hjem)
    \end{itemize}
   \end{itemize}
- \item Header og Toolbar
-  \begin{itemize}[noitemsep]
-  \item Både headeren og toolbaren virkede usynlige for brugeren (seriøs)
   \item Funktionen af knapperne i toolbaren var ikke selvbeskrivende (seriøs)
+  \item Sliderens håndtag, til at skalere opskrifter med, træder ikke klart nok frem. (seriøs)
    \begin{itemize}[noitemsep]
-   \item Han prøvede at få sorteret opskrifterne ved at højreklikke på siden
+   \item En informant prøvede at klikke på tallet, der justeres af slideren, og ændre det med tastaturet.
    \end{itemize}
-  \item Han forstod ikke, at “Navn” betød, at der ville blive sorteret i alfabetisk orden (seriøs)
+  \item En informant forventede ikke at knappen ``Navn'' ville sortere opskrifterne i alfabetisk orden (seriøs)
   \end{itemize}
  \item Favorit
   \begin{itemize}[noitemsep]
-  \item Favoriserede opskrifter forsvinder ikke med det samme, når de bliver fjernes fra favoritter (kosmetisk)
+  \item Favoriserede opskrifter forsvinder ikke med det samme, når de bliver fjernet fra favoritter (kosmetisk)
+  \end{itemize}
+ \item Kontakt os
+  \begin{itemize}[noitemsep]
+  \item En informant kunne ikke finde ud af at ordet mail i teksten ``kontakts os per mail.'' var et link, da formateringen af hele sætningen var forkert. (seriøs)
   \end{itemize}
 \end{itemize}
 
 
 \textbf{\ourtable{usabilitytable}{3}{Antallet af usabilityproblemer kategoriseret efter type}
            						 {Type}
-       {Informant             	}{Kritiske   & Seriøse   & Kosmetiske}{
-\ourrow{Kjeld     	}{2 & 5 & 4}
-\ourrow{Merete     	}{0 & 0 & 0}
+       {Fejltype             	}{Kritiske   & Seriøse   & Kosmetiske}{
+\ourrow{Antal     	}{2 & 9 & 6}
 }
 }
