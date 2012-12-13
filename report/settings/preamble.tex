@@ -128,6 +128,7 @@
 \captionsetup[lstlisting]{format=listing,
   singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
 
+\usepackage{tocvsec2}
 
 
 \usepackage{memhfixc}
@@ -214,3 +215,30 @@
 	% N.B.: floatpagefraction MUST be less than topfraction !!
     \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
+
+%
+% Weird shit added by Niels on December 13
+% Changes style of bibliography
+%
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\chapter*{\bibname}
+     \addcontentsline{toc}{part}{\bibname}
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
