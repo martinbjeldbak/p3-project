@@ -22,6 +22,7 @@
 
 \pagenumbering{arabic}
 \mainmatter
+\settocdepth{section}
 \part{Udviklingsrapport}
 \input{indhold/indledning}
 %\part[\hspace{5pt}Udviklingsrapport]{Udviklingsrapport}
@@ -36,11 +37,6 @@
 \input{indhold/7-kvalitetssikring/kvalitetssikring}
 \input{indhold/8-konklusion/konklusion}
 
-\cleardoublepage
-	
-\bibliographystyle{plain}
-\raggedright
-\bibliography{kildeliste}
 
 \part{Akademisk rapport}
 \input{indhold/akademiskrapport/indledning}
@@ -49,8 +45,15 @@
 \input{indhold/akademiskrapport/ror}
 \input{indhold/akademiskrapport/konklusion}
 
+\cleardoublepage
+	
+\bibliographystyle{plain}
+\raggedright
+\bibliography{kildeliste}
 
-\part{Bilag}
+\settocdepth{chapter}
+\part*{Bilag}
+\addcontentsline{toc}{part}{Bilag}
 
 \appendix
 \input{indhold/bilag/appendiks}
