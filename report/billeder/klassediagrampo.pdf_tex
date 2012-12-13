@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'klassediagrampo.pdf' (pdf, eps, ps)
 %%
@@ -51,20 +51,20 @@
   \begin{picture}(1,0.74090909)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagrampo.pdf}}%
     \put(0.43409091,0.29545455){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
-    \put(0.45909091,0.05909091){\makebox(0,0)[lb]{\smash{Råvare}}}%
-    \put(0.19090909,0.40454545){\makebox(0,0)[lb]{\smash{Opskrift}}}%
+    \put(0.45454545,0.05909091){\makebox(0,0)[lb]{\smash{Råvare}}}%
+    \put(0.18863636,0.40454545){\makebox(0,0)[lb]{\smash{Opskrift}}}%
     \put(0.19318182,0.34090909){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.35681818,0.25454545){\makebox(0,0)[lb]{\smash{1..*}}}%
     \put(0.51590909,0.23181818){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.525,0.10227273){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.22045455,0.64090909){\makebox(0,0)[lb]{\smash{Fejl}}}%
+    \put(0.21818182,0.64090909){\makebox(0,0)[lb]{\smash{Fejl}}}%
     \put(0.19318182,0.44772727){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.175,0.57727273){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.70909091,0.29545455){\makebox(0,0)[lb]{\smash{Vare}}}%
-    \put(0.68636364,0.64090909){\makebox(0,0)[lb]{\smash{Person}}}%
+    \put(0.70681818,0.29545455){\makebox(0,0)[lb]{\smash{Vare}}}%
+    \put(0.68181818,0.64090909){\makebox(0,0)[lb]{\smash{Person}}}%
     \put(0.76590909,0.46136364){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
-    \put(0.76590909,0.57954545){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.76363636,0.34090909){\makebox(0,0)[lb]{\smash{1..*}}}%
+    \put(0.77954545,0.57954545){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.76363636,0.34090909){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.33409091,0.64545455){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.59090909,0.64545455){\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.48636364,0.41136364){\makebox(0,0)[lb]{\smash{Bogmærke}}}%
