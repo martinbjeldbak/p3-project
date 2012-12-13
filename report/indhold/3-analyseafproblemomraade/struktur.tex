@@ -1,33 +1,30 @@
 \section{Struktur}
 \label{sec:struktur}
 
-Sturkturen på vores klasser, beskrives ved hjælp af et klassediagram. Med et klassediagram, skabes der et overblik over relationen mellem de forskellige klasser og objekter. \Foodl består af 7 klasser, nemlig ``Opskrift'', ``Bogmærke'', ``Råvare'', ``Ingrediens'', ``vare'', ``Indkøbsliste'' og ``Fejl''. Relationen mellem klasserne kan ses i \figref{fig:klassediagram}. En relation mellem to klasser markeret med en rumbe-pil, er en aggregerings-struktur, hvilket er en relation som beskrives ved udsagnet ``Har-en'' og ``indgår-i. Eksempelvis, så er en ingrediens en aggregering af indkøbsliste, hvilket betyder at en indkøbsliste ``har-en'' ingrediens, og en ingrediens ``ingår-i'' en indkøbsliste. En relation mellem to klasser markeret med en streg, er en associeringsstruktur, som betyder at de to klasser har en sammenhæng. I vores struktur, associerer klasserne bogmærke og opskrifter med hinanden. En associering er ikke, ligesom en aggregering, nem at knytte et udsagn til. Men i vores tilfælde kan en associering mellem bogmærke og opskrift beskrives som et ``hører-til''-forhold. Et bogmærke ``hører-til'' en opskrift, og en opskrift ``hører-til'' et bogmærke. Til relationerne mellem klasserne, høre der sig desuden et tilhørsforhold til. Dette beskriver forholdet mellem klasserne. Det kan eksempelvis være et et-til-et-forhold, eller et 0-til-mange-forhold. På \figref{fig:klassediagram} ses det, at forholdet mellem klassen opskrift, og klassen ingrediens er et 1-til-mange-forhold (*-tegnet betyder mange), mens forholdet mellem ingrediens og opskrift er et 1-forhold. Det betyder altså at der på hver opskrift, er minimum én ingrediens og maksimum mange, og at hver ingrediens hører til præcis én opskrift. Klassediagrammet indeholder et hierarkimønster, hvilket kan ses i forholdet mellem ``Indkøbsliste'', ``Opskrift'', ``Ingrediens'', ``vare'' og ``Råvare''. Hver enkelt klasses relationer og forhold, forklares herunder nærmere:
-
-% Troede altså, at hierarki kun forekommer ved nedarvning? Men okay, jeg ved jo heller ikke noget som helst om noget som helst :b - Martin
+Sturkturen på vores klasser beskrives ved hjælp af et klassediagram. Med et klassediagram, skabes der et overblik over relationen mellem de forskellige klasser og objekter. \Foodl{} består af 6 klasser, nemlig ``Opskrift'', ``Vare'', ``Råvare'', ``Ingrediens'', ``Fejl'' og ``Person''. Relationen mellem klasserne kan ses i klassediagrammet i \figref{fig:klassediagram}. En relation mellem to klasser markeret med en rumbe-pil, er en aggregerings-struktur, hvilket er en relation som beskrives ved udsagnet ``har-en'' og ``indgår-i. Eksempelvis, så er en råvare en aggregering af opskrift, hvilket betyder at en ingrediens ``har-en'' råvare, og en råvare ``ingår-i'' og er en dekomponering af en ingrediens. En relation mellem to klasser markeret med en streg, er en associeringsstruktur, som betyder at de to klasser har en sammenhæng. I vores struktur, associerer klasserne fejl og opskrifter med hinanden. En associering er ikke, ligesom en aggregering, nem at knytte et udsagn til. Men i vores tilfælde kan en associering mellem bogmærke og opskrift beskrives som et ``hører-til''-forhold. Fejl ``hører-til'' en opskrift, og en opskrift kan muligvis ``høre-til'' fejl. Til relationerne mellem klasserne, høre der sig desuden et tilhørsforhold til. Dette beskriver forholdet mellem klasserne. Det kan eksempelvis være et et-til-et-forhold, eller et 0-til-mange-forhold. På \figref{fig:klassediagram} ses det, at forholdet mellem klassen opskrift, og klassen ingrediens er et 1-til-mange-forhold (*-tegnet betyder mange), mens forholdet mellem ingrediens og opskrift er et 1-forhold. Det betyder altså at der på hver opskrift, er minimum én ingrediens og maksimum mange (teoretisk set ubegrænset), og at hver ingrediens hører til præcis én opskrift. Klassediagrammet indeholder et hierarkimønster, hvilket kan ses i forholdet mellem ``Opskrift'', ``Ingrediens'' og ``Råvare''. Hver enkelt klasses relationer, forhold og multiplicitet, forklares herunder nærmere:
 
 \input{indhold/3-analyseafproblemomraade/klasser/klassediagram}
 
+
 \begin{description}
-\item[Opskrift] \hfill \\
-En opskrift kan være associeret med 0-til-1 bogmærke. Man kan argumentere for, at der godt kan placeres flere bogmærker på samme opskrift, men vi ønsker kun at overvåge hvorvidt en opskrift er bogmærket eller ej, og det er derfor kun nødvendigt at skelne mellem 0 og 1 bogmærke. En opskrift består af 1-til-mange ingredienser. Hvis opskriften ikke bestod af nogle ingredienser, ville det ikke være en opskrift.
-    
-\item[Bogmærke] \hfill \\
-Et bogmærke er associeret med netop én opskrift. Forholdet er valgt på baggrund af, at et bogmærke kan sættes på én og kun én side i en kogebog.
 
-\item[Råvare] \hfill \\
-En råvare er en dekomponering af en ingrediens. En råvarer kan være 0-til-mange ingredienser. En råvare som \fx appelsin, kan være både appelsin skræl, appelsin saft, appelsinkød osv. Alle disse ingredienser er lavet ud fra den samme råvare, nemlig en appelsin. 
+\item[Person - Vare] \hfill \\
+En person associerer 1-til-mange varer, modelleret på baggrund af indkøbslistefunktionen. En indkøbsliste kan benyttes af en person til at holde styr på hvilke varer, der skal handles ind.  Det er muligt for en person være relateret til mange vare. Hvert vareobjekt er unikt for hvert personobjekt, dvs. at det altså ikke muligt for personer, at dele varer mellem sig.
 
-\item[Ingrediens] \hfill \\
-En ingrediens består af netop én råvare og aggregeres altid af kun én opskrift. Selvom flere opskrifter indeholder oksekød, kan mængden være forskellig. Samtidig er det logisk, at hvis to opskrifter begge indeholder en ingrediens \fx 400 g oksekød, så kan den ene opskrift ændres til \textit{500 g oksekød}, uden at den anden opskrift skal ændres. En ingrediens er desuden en aggregering af indkøbsliste. Den kan tilhøre 0-til-1 indkøbsliste.  
+\item[Person - Fejl] \hfill \\
+Fejl associerer med bruger-klassen, da det er brugeren, der opdager fejl. En bruger kan opdage flere fejl i den samme, eller forskellige opskrifter i løbet af brugerobjektets levetid.
 
-\item[Vare] \hfill \\
-En vare aggregeres af indkøbsliste. En vare kan tilhøre 0-til-1 indkøbsliste.  
-  
-\item[Indkøbsliste] \hfill \\
-En indkøbslisten består af 0-til-mange ingredienser og 0-til-mange varer. 0 er muligt, da indkøbslisten er tom inden man tilføjer ingredienser og varer til den.
+\item[Opskrift - Fejl] \hfill \\
+En opskrift kan bestå af 0-til-mange fejl. Hvis opskriften er dårligt fremstillet eller kommer fra en hjemmeside, hvor brugere selv kan tilføje og dele opskrifter, kan der \fx være mange fejl i en enkelt opskrift. Hvis opskriften derimod stammer fra en kilde med revidering før udgivelse, \fx en opskriftsamling eller Arlas Karolines Køkken, vil der højst sandsynligt ikke være nogle fejl. 
 
-\item[Fejl] \hfill \\
-En opskrift kan bestå af 0-til-mange fejl. Hvis opskriften er dårligt fremstillet eller kommer fra en hjemmeside, hvor brugere selv kan tilføje og dele opskrifter, kan der \fx være mange fejl i en enkelt opskrift. Hvis opskriften derimod stammer fra en kilde med revidering før udgivelse, \fx en opskriftsamling eller Arlas Karolines Køkken, vil der højst sandsynligt ikke være nogle fejl.
+\item[Opskrift - Person] \hfill \\
+Opskrifterne er associeret til flere personer i form af bogmærker. Støder personen på en opskrift, som personen synes er god, og ønsker at gøre den let tilgængelig til en anden gang, så skal det være muligt at bogmærke denne. Enhver person kan altså have op til flere bogmærker på diverse forskellige opskrifter. Man kan argumentere for, at der godt kan placeres flere bogmærker på samme opskrift, men vi ønsker kun at overvåge hvorvidt en opskrift er bogmærket eller ej, og det er derfor kun nødvendigt at skelne mellem 0 og 1 bogmærke. Dette er i stedet for at have en bogmærke- eller favoriseringsklasse, da der ikke kræves identitet på forholdet imellem opskrift og person til at specificere forholdet.
+
+\item[Opskrift - Ingrediens] \hfill \\
+En opskrift består af 1-til-mange ingredienser. Hvis opskriften ikke bestod af nogle ingredienser, ville det ikke være en opskrift og skulle derfor ikke modelleres. 
+
+\item[Ingrediens - Råvare] \hfill \\
+En råvare kan \textit{være} 0-til-mange ingredienser. \Fx kan en råvare som appelsin, være både 200ml appelsin saft, 300ml appelsin saft eller 50g appelsinkød osv. Alle disse ingredienser er lavet ud fra den samme råvare, nemlig en appelsin. Det er også væsentligt at påpege, at der ikke oprettes et nyt råvareobjekt for hver ingrediens.
 
 \end{description}
 

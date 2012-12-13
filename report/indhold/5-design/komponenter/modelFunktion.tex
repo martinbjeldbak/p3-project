@@ -1,52 +1,20 @@
 \subsection{Model- og funktionskomponent}
 \label{sec:modelfunktion}
-% model component: a part of a system that implements the              l
-% problem-domian mode The purpose of the model component is to deliver l
-% current and historical data to functions, interfaces, and to users   l
-% and systems. The stored information is related to the system's       l
-% problem domain, that is, the part of the world that the system is    l
-% used to administrate, monitor or contro                              l
-%
 
-Klassen \classref{Bruger} introduceres i model- og funktionskomponenten.
-Klassen eksisterer ikke i problemområdet, da vi ikke er interesseret
-i at administrere, overvåge, eller styre brugere i så stor en omfang,
-som problemområdet modellerer. Det er \fx ikke relevant, hvordan
-eller hvornår brugeren tilføjer bogmærker eller finder opskrifter.
-\classref{Bruger}-klassen finder dog sted i modelkomponenten, fordi
-det gør det lettere for brugere (som aktører), til \fx at administrere
-deres favoritter eller indholdet i indkøbslisten. Det muliggøre også et
-loginsystem, der identificerer brugere for at tilpasse dele af systemet
-til den enkelte besøgende.
+Model- og funktionskomponenterne repræsenterer objekterne og deres funktionalitet i problem- og anvendelsesområderne. Vi opdaterer klassediagrammet fra problemområdet i \chapref{chap:analyseafpo} ved at benytte klassernes adfærd beskrevet i \secref{sec:adfaerd} til at danne attributter og nye klasser. Operationerne på klasserne er blevet til ud fra aktørernes brugsmønstre i anvendelsesområdet, som er beskrevet i \chapref{chap:analyseafao}. Klasserne problemområdet, som er blevet opdateret eller ændret på anden vis, er beskrevet nederfor. De opdaterede klasser kan ses i \figref{fig:klasseDes}.
 
-Klasserne \classref{fejlrapport} og \classref{fejlhåndtering} stammer
-fra klassen ``fejl'' i problemområdet. Her er den private hændelse
-``få tilbagemelding'' iterativ, hvilket vil sige, at der kræves en ny
-klasse eller en omstrukturering. Vi valgte at omstrukturere klassen
-for at danne overblik over de mange forskellige fejltyper, der kan
-opstå. Derfor konstruerede vi klasserne \classref{fejlkategori} og
-\classref{fejlrapport} til at beskrive de fejl, der eksisterer. Fejlene
-er blevet udvidet, så vi overvåger ikke kun de fejl i opskrifter,
-men denne konstruktion gør det også muligt for brugere, at beskrive
-andre, mere generelle fejl i systemet. Klassen \classref{fejlrapport}
-er blevet dannet ud fra hændelsen ``rapport\'{e}r'' fejl. Klassen
-\classref{fejlkategori} bruges derimod til at håndtere de mange
-\classref{fejlrapport}er, som brugerne kan oprette fra forskellige
-steder i systemet. Hendelsen ``fejl fundet'' på klassen ``opskrift'' har
-\fx ledt til et instans af \classref{fejlkategori} for hændelsen.
-
-``Indkøbsliste''-klassen fra problemområdet er ikke repræsenteret af en
-klasse i denne model-funktionskomponentdiagram, da vi besluttede for, at
-brugere kun har en fast indkøbsliste. Derfor er der ingen grund til at
-benytte en hel klasse til dette formål, da der højst skulle instanseres
-en af denne klasse for hver besøgende. Derfor benytter vi i stedet en
-relation mellem \classref{bruger} og \classref{vare} til modellering
-af indkøbslisten. En \classref{bruger} kan altså være tilkoblet mange
-\classref{vare}r (tilføjet manuelt eller gennem en \classref{opskrift})
-og denne liste af \classref{vare}r bliver er dermed indkøbslisten.
-
-\todo{Noget med, at ingredienser og råvarer bliver til varer\ldots}
 
 \pdffig{klassediagramDes}
 	{Det endelige klassediagram.}
 	{fig:klasseDes}
+
+
+Klassen \classref{Bruger} er en abstrahering fra de personer, der kan bruge systemet. En bruger har et adgangsniveau, som kan være en bruger, der har / ikke har administratorrettighedher (AR). Dette er modulleret som en note ved adgangsniveau i \figref{fig:klasseDes}. En bruger med AR kan læse og rette fejl, der er indberettet af en bruger uden AR. Derudover kan en bruger med AR slette andre brugere af systemet.
+
+En bruger uden AR har nogle få funktioner til rådighed, som \fx \methodref{ret stamdata()}, \methodref{håndter indkøbsliste()}, \methodref{håndter favoritter()} og \methodref{fejlrapport()}, som går ud på at indberette en fejl vedr. siden eller en opskrift.
+
+Det er ikke obligatorisk at være logget ind på systemet for at bruge det, men i funktionslaget, er der en klasse, vi kalder for \classref{Brugerhåndtering}, hvorfra klassen \classref{Bruger} kan udføre operationerne \methodref{log ind()} og \methodref{log ud()}. Bortset fra \classref{Brugerhåndtering}, så har \classref{Bruger} fortsat de samme associationer til \classref{Fejlrapport}, \classref{Opskrift} og \classref{Vare}. 
+
+Klassen \classref{Vare} er associeret til klassen \classref{Bruger} i form af en indkøbsliste, hvorpå brugerens varer er skrevet på. Vi har ikke modulleret indkøbslisten som en klasse, fordi hver bruger blot har én enkelt indkøbsliste af gangen. En bruger kan altså være tilkoblet mange varer (tilføjet manuelt eller gennem en opskrift) og denne liste af varer bliver er dermed indkøbslisten. Det samme gælder for associationen mellem \classref{Bruger} og \classref{Opskrift}, er en association i form af en favoritliste. Vi har ikke modulleret favoritter som en klasse, fordi vi har vurderet, at det er blot et forhold mellem brugeren og opskriften. Men derfor skal \classref{Opskrift} være en klasse for sig.
+
+Klasserne \classref{Fejlrapport} og \classref{Fejlhåndtering} stammer fra klassen ``fejl'' i problemområdet. Her er den private hændelse ``få tilbagemelding'' iterativ, hvilket vil sige, at der kræves en ny klasse eller en omstrukturering. Vi valgte at omstrukturere klassen for at danne overblik over de mange forskellige fejltyper, der kan opstå. Derfor konstruerede vi klasserne \classref{fejlkategori} og \classref{fejlrapport} til at beskrive de fejl, der eksisterer. Fejlene er blevet udvidet, så vi overvåger ikke kun de fejl i opskrifter, men denne konstruktion gør det også muligt for brugere, at beskrive andre, mere generelle fejl i systemet. Klassen \classref{fejlrapport} er blevet dannet ud fra hændelsen ``rapport\'{e}r'' fejl. Klassen \classref{fejlkategori} bruges derimod til at håndtere de mange \classref{fejlrapport}er, som brugerne kan oprette fra forskellige steder i systemet. Hendelsen ``fejl fundet'' på klassen ``opskrift'' har \fx ledt til et instans af \classref{fejlkategori} for hændelsen.
