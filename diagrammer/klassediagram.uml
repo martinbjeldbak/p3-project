@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 12 12:44:05 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Dec 13 12:50:01 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -451,10 +451,10 @@
               visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
               aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
               <UML:AssociationEnd.multiplicity>
-                <UML:Multiplicity xmi.id = '-84-25-21--103--2db3db38:13b8ee02e4f:-8000:0000000000000C49'>
+                <UML:Multiplicity xmi.id = '-84-25-21--103--76950677:13b9418d658:-8000:0000000000000C1E'>
                   <UML:Multiplicity.range>
-                    <UML:MultiplicityRange xmi.id = '-84-25-21--103--2db3db38:13b8ee02e4f:-8000:0000000000000C48'
-                      lower = '1' upper = '-1'/>
+                    <UML:MultiplicityRange xmi.id = '-84-25-21--103--76950677:13b9418d658:-8000:0000000000000C1D'
+                      lower = '0' upper = '-1'/>
                   </UML:Multiplicity.range>
                 </UML:Multiplicity>
               </UML:AssociationEnd.multiplicity>
@@ -1226,12 +1226,6 @@
                         ownerhref="-64--88-1-100--4bbf73a:13b80488ade:-8000:0000000000000BCF"
                         angle="-101.0"
                         offset="49" />
-      <argouml:pathitem figname="Fig6.6"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigEdgePort"
-                        ownerhref="-64--88-1-100--4bbf73a:13b80488ade:-8000:0000000000000BCD"
-                        angle="270.0"
-                        offset="0" />
     </private>
     <path name="Fig6.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -1415,7 +1409,7 @@
       justification="Center"
     >Person</text>
     <group name="Fig8.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[369, 89, 64, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[369, 89, 78, 0]"
          href="-84-25-21--103--2db3db38:13b8ee02e4f:-8000:0000000000000C42"
          fill="0"
          fillcolor="white"
@@ -1429,7 +1423,7 @@
       <rectangle name="Fig8.2.0"
         x="369"
         y="89"
-        width="64"
+        width="78"
         height="0"
         fill="0"
         fillcolor="white"
@@ -1474,7 +1468,7 @@
     </group>
     <rectangle name="Fig8.5"
       x="368"
-      y="111"
+      y="132"
       width="66"
       height="1"
       fill="1"
@@ -1484,7 +1478,7 @@
       visibility="0"
     />
     <group name="Fig8.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[369, 112, 64, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[369, 133, 64, 21]"
          href="-84-25-21--103--2db3db38:13b8ee02e4f:-8000:0000000000000C42"
          fill="0"
          fillcolor="white"
@@ -1497,7 +1491,7 @@
       
       <rectangle name="Fig8.6.0"
         x="369"
-        y="112"
+        y="133"
         width="64"
         height="21"
         fill="0"
@@ -1553,7 +1547,7 @@
                         offset="5" />
     </private>
     <path name="Fig9.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -1610,7 +1604,7 @@
                         offset="5" />
     </private>
     <path name="Fig10.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -1667,7 +1661,7 @@
                         offset="5" />
     </private>
     <path name="Fig11.0"
-      description="org.tigris.gef.presentation.FigPoly"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
