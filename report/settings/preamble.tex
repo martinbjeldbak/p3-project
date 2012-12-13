@@ -20,12 +20,18 @@
 %---- 
 
 \usepackage{tocloft}
+\usepackage[toc]{multitoc}
+
+\renewcommand*{\multicolumntoc}{2}
 
 \chapterstyle{hangnum}
 \raggedbottom
 \setlength{\beforechapskip}{0pt}
 \setlength{\afterchapskip}{10pt} % vspace under chapters
 \setlength{\belowcaptionskip}{-7pt} % vspace mellem caption og tekst
+\setlength{\cftparskip}{3pt}
+\setlength{\cftbeforechapterskip}{7pt}
+\setlength{\cftbeforepartskip}{14pt}
 \setsecnumdepth{subsection}
 
 \renewcommand*{\partnamefont}{\normalfont\Huge\bfseries}
