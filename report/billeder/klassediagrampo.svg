@@ -48,7 +48,7 @@ Person</text>
 <text font-family="Dialog" font-size="12" x="337" y="123">
 Indkøbsliste</text>
 <text font-family="Dialog" font-size="12" x="337" y="71">
-0..*</text>
+1..*</text>
 <text font-family="Dialog" font-size="12" x="336" y="176">
 0..*</text>
 <polyline fill="none" points="139,47 282,47" stroke="#000000" stroke-width="1"/>
