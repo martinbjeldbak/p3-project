@@ -63,7 +63,7 @@
     \put(0.70909091,0.29545455){\makebox(0,0)[lb]{\smash{Vare}}}%
     \put(0.68636364,0.64090909){\makebox(0,0)[lb]{\smash{Person}}}%
     \put(0.76590909,0.46136364){\makebox(0,0)[lb]{\smash{Indkøbsliste}}}%
-    \put(0.76590909,0.57954545){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.76590909,0.57954545){\makebox(0,0)[lb]{\smash{1..*}}}%
     \put(0.76363636,0.34090909){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.33409091,0.64545455){\makebox(0,0)[lb]{\smash{0..*}}}%
     \put(0.59090909,0.64545455){\makebox(0,0)[lb]{\smash{1}}}%
