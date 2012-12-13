@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Dec 10 12:11:26 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 12 13:59:21 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -182,7 +182,7 @@
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A6D'
           name = 'Fejl fundet' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A73'
-          name = 'Fejl bortset' isSpecification = 'false'/>
+          name = 'Fejl set bort fra' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A75'
           name = 'Tilbagemelding modtaget' isSpecification = 'false'/>
         <UML:CallEvent xmi.id = '-64--88-1-100--8b8ec11:13b84816486:-8000:0000000000000B77'
@@ -416,7 +416,7 @@
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-64--88-1-100-3721b765:13b7ff4236a:-8000:0000000000000A71"
                         angle="-170.0"
-                        offset="76" />
+                        offset="88" />
     </private>
     <path name="Fig5.0"
       description="org.argouml.gefext.ArgoFigPoly"
