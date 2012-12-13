@@ -1,5 +1,6 @@
+\section{Dataudtrækning}
 \subsection{Samarbejde med Arla}
-Når en bruger har indtastet en mængde råvarer og trykker søg, så skal søgeresultatet vise opskrifter, der indeholder de indtastede råvarer. For at gøre dette muligt er det nødvendigt at \Foodl{} indeholder data om en masse forskellige opskrifter. Da der findes mange opskriftshjemmesider på internettet, kan vi blot benytte deres data. At benytte data fra en specifik opskriftshjemmeside kræver at vi har ejerens tilladelse til det. I dette projekt har vi af Arla fået lov til at benytte deres opskrifter, der kan ses på Arla.dk, forudsat at vi overholde disse, af Arla stillede, krav:
+Når en bruger har indtastet en mængde råvarer og trykker søg, så skal søgeresultatet vise opskrifter, der indeholder de indtastede råvarer. For at gøre dette muligt er det nødvendigt at \Foodl{} indeholder data om en masse forskellige opskrifter. Da der findes mange opskriftshjemmesider på internettet, kan vi blot benytte deres data. At benytte data fra en specifik opskriftshjemmeside kræver at vi har ejerens tilladelse til det. I dette projekt har vi af Arla fået lov til at benytte deres opskrifter, der kan ses på Arla.dk, forudsat at vi overholder disse krav:
 \begin{itemize}
 \item Al den information, som vi ønsker at vise brugerne af \Foodl, skal gemmes lokalt. Det vil sige at vi må ikke loade billeder, ingredienser og lignende fra deres server, hver gang en bruger benytter \Foodl.
 \item Vi må ikke vise \Foodl{}'s brugere opskrifternes fremgangsmåde. \Foodl{} \textbf{skal} linke videre til Arla.dk når folk vil se hvordan en opskrift laves.
@@ -36,7 +37,8 @@ Listen fra madopskrifter.nu blev brugt som vores råvaretabel af følgende grund
 
 Med en liste over råvarer, bliver det muligt for en bruger at indtaste en mængde råvarer. Udover dette har vi også brug for en mængde data, der fortæller noget omkring de opskrifter brugeren kan søge på. Denne data udtrækker vi fra Arlas hjemmeside, selvfølgelig med deres accept.
 
-\section{Dataudtrækning}
+\subsection{Udtræk af links til opskrifter}
+
 For at kunne gemme informationer om en opskrifts forskellige bestanddele, såsom navn, tilberedningstid, m.m., var det nødvendigt at kunne udtrække denne data fra Arlas hjemmeside. Dette begreb kalder vi for dataudtrækning. Formålet var at indsætte data i databasen, så brugere har mulighed for at søge efter opskrifter, m.m. Da dataudtrækningen kun havde til formål at indsætte indhold i databasen, var der ikke brug for views og controller, hvorfor vi valgte at benytte Ruby \textbf{uden} Rails frameworket til dette.
 Ved at kigge på Arlas forside fandt vi et link, der hed \textit{Vis alle opskrifter}. Ved at følge linket kom vi ind på en ny side, hvor vi fik vist 16 opskrifter af gangen og kunne bladre fra side 1 til og med side 57. I alt havde vi altså adgang til $57 \times 16 = 912$ opskrifter. Når vi bladrede fra side 1 til side 2, kunne vi se browserens url ændre en query på følgende måde:
 \lstinline{?...\&paging=1\&...} 
@@ -57,7 +59,10 @@ Kaldet til \methodref{xpath}, fandt alle \textit{<a>} tags inde i \textit{<h2>} 
 
 En forudsætning, der var til stede, for at kunne benytte denne metode, var at samme syntaks, i dette tilfælde \lstinline{<h2><a>}, ikke blev benyttet til andet end de links vi var interesserede i.
 
-Med en mulighed for at finde alle opskrifters unikke url, begyndte vi at undersøge opbygningen af siden der viser en enkelt opskrift.
+
+\subsection{Udtræk af opskrifter}
+
+Med en mulighed for at finde alle opskrifters unikke url, begyndte vi at undersøge opbygningen af siden, der viser en enkelt opskrift.
 På samme måde kunne Nokogiri også bruges her til at finde informationer omkring tilberedningstid, opskriftens navn, billede af opskriften og portionsstørrelse. Alle disse ting kunne indsættes som en ny række i databasens tabel `recipes`. Opskriftens navn vær særlig nem at dataudtrække, da det var sidens titel, og kunne derfor tages fra HTML-tagget \textit{<title>}. Der var dog tilføjet lidt mere information, adskilt af karakteren ``|''. Et eksempel: \textit{Opskrifts navn | Kløver® | Produkter |}. Ved at bruge Ruby-funktionen \textit{split}\cite{rubydoc}, var det muligt at splitte navnet ved alle ``|''-karakterer, således at de forskellige dele, der var adskilt af ´´|'', hver især blev til ét element i et array. Opskriftens navn kunne så udtrækkes som det første element i arrayet.
 
 Ingredienserne i en opskrift var nemme at dataudtrække på en lignende måde med Nokogiri, men hvordan de udtrukne ingredienser skulle håndteres var omfattende, og vil blive forklaret i \secref{sec:mapping}.
