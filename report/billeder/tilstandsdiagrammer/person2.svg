@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="194" version="1.1" width="405" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="109" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="168" x="94" y="93"/>
-<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="168" x="94" y="93"/>
-<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="166" x="95" y="94"/>
-<text font-family="Lucida Grande" font-size="13" x="161" y="107">
+<svg height="181" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="118" cy="95" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="168" x="190" y="79"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="168" x="190" y="79"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="166" x="191" y="80"/>
+<text font-family="Dialog" font-size="13" x="258" y="93">
 Aktiv</text>
-<polyline fill="none" points="30,110 22,109 94,109" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="82" x2="94" y1="116" y2="109"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="82" x2="94" y1="102" y2="109"/>
-<polyline fill="none" points="110,93 110,77 142,77 142,93" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="135" x2="142" y1="81" y2="93"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="149" x2="142" y1="81" y2="93"/>
-<text font-family="Lucida Grande" font-size="13" x="37" y="69">
+<polyline fill="none" points="126,96 118,95 190,95" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="178" x2="190" y1="102" y2="95"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="178" x2="190" y1="88" y2="95"/>
+<polyline fill="none" points="206,79 206,63 238,63 238,79" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="231" x2="238" y1="67" y2="79"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="245" x2="238" y1="67" y2="79"/>
+<text font-family="Dialog" font-size="13" x="130" y="55">
 Bogmærke sat ind</text>
-<polyline fill="none" points="126,124 126,141 150,141 150,124" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="157" x2="150" y1="136" y2="124"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="143" x2="150" y1="136" y2="124"/>
-<text font-family="Lucida Grande" font-size="13" x="50" y="156">
+<polyline fill="none" points="222,110 222,127 246,127 246,110" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="253" x2="246" y1="122" y2="110"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="239" x2="246" y1="122" y2="110"/>
+<text font-family="Dialog" font-size="13" x="143" y="142">
 Bogmærke fjernet</text>
-<polyline fill="none" points="158,93 158,53 190,53 190,93" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="183" x2="190" y1="81" y2="93"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="190" y1="81" y2="93"/>
-<text font-family="Lucida Grande" font-size="13" x="200" y="72">
+<polyline fill="none" points="254,79 254,39 286,39 286,79" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="279" x2="286" y1="67" y2="79"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="293" x2="286" y1="67" y2="79"/>
+<text font-family="Dialog" font-size="13" x="296" y="58">
 Fejl fundet</text>
-<polyline fill="none" points="214,93 214,77 246,77 246,93" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="239" x2="246" y1="81" y2="93"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="253" x2="246" y1="81" y2="93"/>
-<text font-family="Lucida Grande" font-size="13" x="97" y="28">
+<polyline fill="none" points="310,79 310,63 342,63 342,79" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="335" x2="342" y1="67" y2="79"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="349" x2="342" y1="67" y2="79"/>
+<text font-family="Dialog" font-size="13" x="204" y="28">
 Skrevet på indkøbsliste</text>
-<polyline fill="none" points="206,124 206,157 230,157 230,124" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="237" x2="230" y1="136" y2="124"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="223" x2="230" y1="136" y2="124"/>
-<text font-family="Lucida Grande" font-size="13" x="143" y="176">
+<polyline fill="none" points="302,110 302,143 326,143 326,110" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="333" x2="326" y1="122" y2="110"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="319" x2="326" y1="122" y2="110"/>
+<text font-family="Dialog" font-size="13" x="240" y="162">
 Fjernet fra indkøbsliste</text>
-<polyline fill="none" points="261,101 286,101 286,117 261,117" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="273" x2="261" y1="110" y2="117"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="273" x2="261" y1="124" y2="117"/>
-<text font-family="Lucida Grande" font-size="13" x="293" y="105">
+<polyline fill="none" points="357,87 382,87 382,103 357,103" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="369" x2="357" y1="96" y2="103"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="369" x2="357" y1="110" y2="103"/>
+<text font-family="Dialog" font-size="13" x="389" y="91">
 Tilbagemelding</text>
-<polyline fill="none" points="261,101 286,101 286,117 261,117" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="273" x2="261" y1="110" y2="117"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="273" x2="261" y1="124" y2="117"/>
-<text font-family="Lucida Grande" font-size="13" x="295" y="122">
+<polyline fill="none" points="357,87 382,87 382,103 357,103" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="369" x2="357" y1="96" y2="103"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="369" x2="357" y1="110" y2="103"/>
+<text font-family="Dialog" font-size="13" x="390" y="108">
 modtaget</text>
-<polyline fill="none" points="158,93 158,53 190,53 190,93" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="183" x2="190" y1="81" y2="93"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="190" y1="81" y2="93"/>
-<text font-family="Lucida Grande" font-size="13" x="96" y="45">
-.(navn, mængde, enhed)</text>
+<rect fill="#ffffff" height="19" stroke="#ffffff" stroke-width="1" width="80" x="14" y="79"/>
+<rect fill="none" height="18" stroke="#000000" stroke-width="1" width="79" x="14" y="79"/>
+<text font-family="Dialog" font-size="13" font-weight="bold" x="29" y="93">
+Bruger</text>
+<rect fill="#ffffff" height="19" stroke="#ffffff" stroke-width="1" width="80" x="14" y="98"/>
+<rect fill="none" height="18" stroke="#000000" stroke-width="1" width="79" x="14" y="98"/>
 </svg>

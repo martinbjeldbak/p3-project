@@ -1,6 +1,6 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'vare.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/tilstandsdiagrammer/vare.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{444.8bp}%
+    \setlength{\unitlength}{521.6bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.14028777)%
+  \begin{picture}(1,0.1595092)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/vare.pdf}}%
-    \put(0.43705036,0.08992806){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
-    \put(0.07913669,0.08453237){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
-    \put(0.63669065,0.07733813){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.51840491,0.09202454){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.21319018,0.08742331){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
+    \put(0.69171779,0.08128834){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.05674847,0.11503067){\makebox(0,0)[lb]{\smash{Vare}}}%
+    \put(0.02453988,0.08282209){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.02453988,0.05674847){\makebox(0,0)[lb]{\smash{mængde}}}%
+    \put(0.02453988,0.03067485){\makebox(0,0)[lb]{\smash{enhed}}}%
   \end{picture}%
 \endgroup%
