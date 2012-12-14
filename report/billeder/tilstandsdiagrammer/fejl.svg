@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="170" version="1.1" width="630" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="92" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="110" y="68"/>
-<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="110" y="68"/>
-<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="111" y="69"/>
-<text font-family="Lucida Grande" font-size="13" x="116" y="82">
+<svg height="170" version="1.1" width="719" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="134" cy="92" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="138" x="222" y="68"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="138" x="222" y="68"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="136" x="223" y="69"/>
+<text font-family="Dialog" font-size="13" x="228" y="82">
 Opmærksom på fejl</text>
-<polyline fill="none" points="31,92 110,92" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="98" x2="110" y1="99" y2="92"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="98" x2="110" y1="85" y2="92"/>
-<text font-family="Lucida Grande" font-size="13" x="34" y="87">
+<polyline fill="none" points="143,92 222,92" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="210" x2="222" y1="99" y2="92"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="210" x2="222" y1="85" y2="92"/>
+<text font-family="Dialog" font-size="13" x="146" y="85">
 Fejl fundet</text>
-<ellipse cx="282" cy="144" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="282" cy="144" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
-<ellipse cx="281" cy="143" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="174,68 174,36 374,36 374,68" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="367" x2="374" y1="56" y2="68"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="381" x2="374" y1="56" y2="68"/>
-<text font-family="Lucida Grande" font-size="13" x="187" y="28">
-Fejl rapporteret(beskrivelse)</text>
-<polyline fill="none" points="174,115 174,148 270,144" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="258" x2="270" y1="151" y2="144"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="257" x2="270" y1="137" y2="144"/>
-<text font-family="Lucida Grande" font-size="13" x="70" y="142">
-Fejl set bort fra</text>
-<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="115" x="310" y="68"/>
-<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="115" x="310" y="68"/>
-<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="113" x="311" y="69"/>
-<text font-family="Lucida Grande" font-size="13" x="319" y="82">
+<ellipse cx="394" cy="144" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="394" cy="144" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
+<ellipse cx="393" cy="143" fill="#000000" rx="7.5" ry="7.5" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="286,68 286,36 486,36 486,68" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="479" x2="486" y1="56" y2="68"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="493" x2="486" y1="56" y2="68"/>
+<text font-family="Dialog" font-size="13" x="337" y="28">
 Fejl rapporteret</text>
-<polyline fill="none" points="424,108 446,108 446,84 424,84" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="436" x2="424" y1="77" y2="84"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="436" x2="424" y1="91" y2="84"/>
-<text font-family="Lucida Grande" font-size="13" x="454" y="98">
+<polyline fill="none" points="286,115 286,148 382,144" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="370" x2="382" y1="151" y2="144"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="369" x2="382" y1="137" y2="144"/>
+<text font-family="Dialog" font-size="13" x="182" y="142">
+Fejl set bort fra</text>
+<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="115" x="422" y="68"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="115" x="422" y="68"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="113" x="423" y="69"/>
+<text font-family="Dialog" font-size="13" x="430" y="82">
+Fejl rapporteret</text>
+<polyline fill="none" points="536,108 558,108 558,84 536,84" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="548" x2="536" y1="77" y2="84"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="548" x2="536" y1="91" y2="84"/>
+<text font-family="Dialog" font-size="13" x="541" y="75">
 Tilbagemelding modtaget</text>
-<polyline fill="none" points="374,115 374,148 293,144" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="305" x2="293" y1="137" y2="144"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="304" x2="293" y1="151" y2="144"/>
-<text font-family="Lucida Grande" font-size="13" x="384" y="140">
+<polyline fill="none" points="486,115 486,148 405,144" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="417" x2="405" y1="137" y2="144"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="416" x2="405" y1="151" y2="144"/>
+<text font-family="Dialog" font-size="13" x="495" y="140">
 Tilbagemelding modtaget</text>
+<rect fill="#ffffff" height="21" stroke="#ffffff" stroke-width="1" width="88" x="14" y="60"/>
+<rect fill="none" height="20" stroke="#000000" stroke-width="1" width="87" x="14" y="60"/>
+<text font-family="Dialog" font-size="13" font-weight="bold" x="45" y="75">
+Fejl</text>
+<rect fill="#ffffff" height="38" stroke="#ffffff" stroke-width="1" width="88" x="14" y="81"/>
+<rect fill="none" height="37" stroke="#000000" stroke-width="1" width="87" x="14" y="81"/>
+<text font-family="Dialog" font-size="13" x="16" y="96">
+beskrivelse</text>
+<text font-family="Dialog" font-size="13" x="16" y="113">
+status</text>
 </svg>
