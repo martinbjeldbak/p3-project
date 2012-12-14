@@ -58,6 +58,6 @@
     \put(0.48,0.038){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
     \put(0.778,0.18){\makebox(0,0)[lb]{\smash{Tilbagemelding}}}%
     \put(0.78,0.146){\makebox(0,0)[lb]{\smash{modtaget}}}%
-    \put(0.058,0.176){\makebox(0,0)[lb]{\smash{Bruger}}}%
+    \put(0.056,0.182){\makebox(0,0)[lb]{\smash{Person}}}%
   \end{picture}%
 \endgroup%

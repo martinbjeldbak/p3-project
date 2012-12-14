@@ -45,10 +45,10 @@ Tilbagemelding</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="369" x2="357" y1="110" y2="103"/>
 <text font-family="Dialog" font-size="13" x="390" y="108">
 modtaget</text>
-<rect fill="#ffffff" height="19" stroke="#ffffff" stroke-width="1" width="80" x="14" y="79"/>
-<rect fill="none" height="18" stroke="#000000" stroke-width="1" width="79" x="14" y="79"/>
-<text font-family="Dialog" font-size="13" font-weight="bold" x="29" y="93">
-Bruger</text>
-<rect fill="#ffffff" height="19" stroke="#ffffff" stroke-width="1" width="80" x="14" y="98"/>
-<rect fill="none" height="18" stroke="#000000" stroke-width="1" width="79" x="14" y="98"/>
+<rect fill="#ffffff" height="27" stroke="#ffffff" stroke-width="1" width="80" x="14" y="76"/>
+<rect fill="none" height="26" stroke="#000000" stroke-width="1" width="79" x="14" y="76"/>
+<text font-family="Dialog" font-size="13" font-weight="bold" x="28" y="90">
+Person</text>
+<rect fill="#ffffff" height="19" stroke="#ffffff" stroke-width="1" width="80" x="14" y="95"/>
+<rect fill="none" height="18" stroke="#000000" stroke-width="1" width="79" x="14" y="95"/>
 </svg>
