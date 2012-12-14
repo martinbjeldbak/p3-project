@@ -57,10 +57,10 @@
     \put(0.54193548,0.19354839){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
     \put(0.51451613,0.03064516){\makebox(0,0)[lb]{\smash{Fejl fundet(beskrivelse)}}}%
     \put(0.24354839,0.12258065){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
-    \put(0.05967742,0.14193548){\makebox(0,0)[lb]{\smash{Opskrift}}}%
-    \put(0.02580645,0.11129032){\makebox(0,0)[lb]{\smash{name}}}%
-    \put(0.02580645,0.08709677){\makebox(0,0)[lb]{\smash{billede}}}%
-    \put(0.02580645,0.06290323){\makebox(0,0)[lb]{\smash{tilberedningstid}}}%
-    \put(0.02580645,0.03870968){\makebox(0,0)[lb]{\smash{kilde}}}%
+    \put(0.05967742,0.14354839){\makebox(0,0)[lb]{\smash{Opskrift}}}%
+    \put(0.02419355,0.11290323){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.02419355,0.08870968){\makebox(0,0)[lb]{\smash{billede}}}%
+    \put(0.02419355,0.06451613){\makebox(0,0)[lb]{\smash{tilberedningstid}}}%
+    \put(0.02419355,0.04032258){\makebox(0,0)[lb]{\smash{kilde}}}%
   \end{picture}%
 \endgroup%
