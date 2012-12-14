@@ -93,7 +93,7 @@
     \put(0.09695291,0.71883657){\makebox(0,0)[lb]{\smash{sorter()}}}%
     \put(0.09695291,0.6966759){\makebox(0,0)[lb]{\smash{begræns()}}}%
     \put(0.19390582,0.57617729){\makebox(0,0)[lb]{\smash{Værditype:}}}%
-    \put(0.19390582,0.55540166){\makebox(0,0)[lb]{\smash{{bruger, admin}}}}%
+    \put(0.19390582,0.55540166){\makebox(0,0)[lb]{\smash{\{bruger, admin\}}}}%
     \put(0.32963989,0.18975069){\makebox(0,0)[lb]{\smash{Fejl}}}%
     \put(0.28531856,0.1565097){\makebox(0,0)[lb]{\smash{beskrivelse}}}%
     \put(0.28531856,0.13434903){\makebox(0,0)[lb]{\smash{status}}}%
