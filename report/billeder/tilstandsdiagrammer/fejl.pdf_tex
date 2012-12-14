@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'billeder/fejl.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/tilstandsdiagrammer/fejl.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.2364395)%
-    \put(0,0){\includegraphics[width=\unitlength]{billeder/fejl.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/fejl.pdf}}%
     \put(0.31710709,0.12239221){\makebox(0,0)[lb]{\smash{Opmærksom på fejl}}}%
     \put(0.20305981,0.11821975){\makebox(0,0)[lb]{\smash{Fejl fundet}}}%
     \put(0.46870654,0.19749652){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
