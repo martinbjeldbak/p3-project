@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="133" version="1.1" width="266" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="22" cy="65" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
-<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="74" x="86" y="49"/>
-<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="74" x="86" y="49"/>
-<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="72" x="87" y="50"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="92" y="62">
+<svg height="140" version="1.1" width="351" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="126" cy="70" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="84" x="166" y="54"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="84" x="166" y="54"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="82" x="167" y="55"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="172" y="67">
 Eksisterer</text>
-<polyline fill="none" points="30,65 86,65" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="74" x2="86" y1="72" y2="65"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="74" x2="86" y1="58" y2="65"/>
-<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="64" x="188" y="49"/>
-<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="64" x="188" y="49"/>
-<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="62" x="189" y="50"/>
-<text font-family="Dialog" font-size="12" font-weight="bold" x="195" y="62">
+<polyline fill="none" points="133,69 166,69" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="154" x2="166" y1="76" y2="69"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="154" x2="166" y1="62" y2="69"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="69" x="268" y="54"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="69" x="268" y="54"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="67" x="269" y="55"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="274" y="67">
 Brugbar</text>
-<polyline fill="none" points="126,49 126,33 214,33 214,49" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="207" x2="214" y1="37" y2="49"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="221" x2="214" y1="37" y2="49"/>
-<text font-family="Dialog" font-size="12" x="118" y="27">
-Råvare købt(navn)</text>
-<polyline fill="none" points="212,80 212,97 124,97 124,80" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="131" x2="124" y1="92" y2="80"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="117" x2="124" y1="92" y2="80"/>
-<text font-family="Dialog" font-size="12" x="128" y="115">
+<polyline fill="none" points="206,54 206,38 302,38 302,54" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="295" x2="302" y1="42" y2="54"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="309" x2="302" y1="42" y2="54"/>
+<text font-family="Dialog" font-size="12" x="214" y="27">
+Råvare købt</text>
+<polyline fill="none" points="292,85 292,102 204,102 204,85" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="211" x2="204" y1="97" y2="85"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="204" y1="97" y2="85"/>
+<text font-family="Dialog" font-size="12" x="207" y="122">
 Råvare opbrugt</text>
+<rect fill="#ffffff" height="17" stroke="#ffffff" stroke-width="1" width="88" x="14" y="46"/>
+<rect fill="none" height="16" stroke="#000000" stroke-width="1" width="87" x="14" y="46"/>
+<text font-family="Dialog" font-size="12" font-weight="bold" x="17" y="59">
+Råvaretype</text>
+<rect fill="#ffffff" height="24" stroke="#ffffff" stroke-width="1" width="88" x="14" y="62"/>
+<rect fill="none" height="23" stroke="#000000" stroke-width="1" width="87" x="14" y="62"/>
+<text font-family="Dialog" font-size="12" x="15" y="75">
+navn</text>
 </svg>
