@@ -1,50 +1,49 @@
 \subsection{Begrundelser for hvert kriterie}
 \label{sec:begrundelsekriterier}
-Gruppen er i sammenråd med vores informanter, blevet enige om, hvad der rent designmæssigt er væsentligt for at foodl-systemet bliver mest attraktivit. Følgende er hvert kriterie og forklaringen for dets betydning i vores system:
+
+Vores vurderinger er opsummeret i \tableref{table:kriterietabel}, mens begrundelserne er beskrevet i \secref{sec:begrundelsekriterier}.
+
+\input{indhold/5-design/kriterier/kriterietabel}
+
+Gruppen er i sammenråd med vores informanter, blevet enige om, hvad der rent designmæssigt er væsentligt for at \Foodl{} bliver mest attraktivit. Her ses en liste over kriterierne og en vurdering af kriteriernes betydning for \Foodl{}:
 
 \paragraph{Brugbart (meget vigtig)} 
 Systemet skal være håndgribeligt for brugeren. Det skal være nemt at bruge og nemt at gå til uden nogen form for oplæring, fordi vi vurderer ud fra interviews med informanterne, at de fleste ønsker ikke at bruge meget tid på at skulle sætte sig ind i vores system. 
 
-Dette medfører, at systemet skal være intuitivt, og dette kan opnås ved at designe systemet på en lignende måde som andre velkendte systemer, såsom Googles søgefunktion og udseende. Hvorfor tages der udgangspunkt i præcis Google? Google er den mest brugte søgemaskine i verden, efterfulgt af Bing og Yahoo.\cite{googlesoeg} \cite{ebizmba} Derudover er Google også den meste besøgte hjemmeside på internettet, efterfulgt af Facebook og Youtube. \cite{alexadk} Vi ønsker at nå op på et højt abstraktionsniveau, ved at holde systemet simpelt og intuitivt som Google/Facebook/Youtube gør.
-
-\todo{flyt til brugrændseflade i design}
-Vi ønsker at brugeren skal være i stand til at kigge på systemet og genkende funktioner fra lignende systemer, såsom Google og Facebook. På den måde benytter vi os af menneskers evne til at genkende ting, og det gør det mere intuitivt, da de i forvejen kender funktionerne fra de velkendte systemer og skal ikke til at lære en hel ny måde, at gøre tingene på.
-
 \paragraph{Sikkert (irrelevant)} 
-Systemet behandler ikke personfølsomme oplysninger og håndterer ikke noget, liv afhænger af. Derfor vurderes sikkerhedskriteriet som irrelevant for systemets endelige design.
+Systemet behandler ikke personfølsomme oplysninger, som \fx kreditkortnumre. Folks sikkerhed afhænger på ingen måde af systemet er sikkert, som \fx systemet der styrer et lyskryds. Sikkerhedskriteriet vurderes som irrelevant for systemets endelige design.
 
 \paragraph{Effektivt (vigtig)} 
-Det er vigtigt, at søgninger og navigation i en webapplikation foregår hurtigt og responsivt. Hvis man bruger en webapplikation, hvor søgefunktioner og navigation ikke reagerer i løbet af relativt kort tid, bliver man hurtigt træt af det pågældende system og kan finde på at benytte et andet system. Hvis der går for mange sekunder, før der sker noget på skærmen, så kan brugeren begynde at klikke på de samme funktioner flere gange, fordi man tror, at de måske ikke har klikket korrekt i første forsøg, hvilket kan frustrere brugeren da systemet kan misforstå intentionen med handlingen. Marissa Mayer, tidligere leder hos Google, nu præsident og direktør for Yahoo udtalte følgende: \cite{googlespeed}
+Generelt er det vigtigt, at søgninger og navigation i en webapplikation foregår hurtigt og responsivt. Hvis man bruger en webapplikation, hvor søgefunktioner og navigation ikke reagerer i løbet af relativt kort tid, bliver man hurtigt træt af det pågældende system og kan finde på at benytte et andet system. Marissa Mayer, tidligere leder hos Google, nu præsident og direktør for Yahoo, udtalte følgende: \cite{googlespeed}
 
 \begin{quote}
 ``When the Google Maps home page was put on a diet, shrunk from 100K to about 70K to 80K, traffic was up 10 percent the first week and in the following three weeks, 25 percent more.''
 \end{quote}  
 
-Man kan i sidste ende vælge at forlade systemet, fordi det er langsomt og ineffektivt, og dette viser statistikken for Google Maps hjemmeside også, da hjemmesidens trafik steg med 25 \% på tre uger efter hjemmesiden blev komprimeret og effektiviseret bare en lille smule. Dette medvirkede også til, at hjemmesiden blev hurtigere til at reagere på brugerinteraktionen. Både Google og deres brugere får glæde af dette.
+Det skal være hurtigt at bruge \Foodl{} til at finde en anvendelse af sin madrest i en opskrift. Det er utrolig hurtigt blot at smide madresten i skraldespanden, så hvis folk skal bruge \Foodl{}, så er det vigtigt at de ikke mister tålmodigheden fordi de hele tiden skal vente på at en proces på \Foodl{} bliver færdig. 
 
 \paragraph{Korrekt (mindre vigtig)} 
-Korrektheden kategoriseres som mindre vigtigt, fordi gruppens fokus ligger på brugbarhed og effektivitet. Èt forkert søgeresultatet her og der, eller en gemt opskrift, der alligevel ikke blev bogmærket, kan måske skræmme nogle brugere væk, men det er ikke livsnødvendigt, at dette punkt i systemet skal konstant være 100 \% korrekt.
+Korrektheden kategoriseres som mindre vigtigt, fordi gruppens fokus ligger på brugbarhed og effektivitet. Et par forkerte søgeresultater eller en bogmærket opskrift, der alligevel ikke blev bogmærket, kan måske skræmme nogle brugere væk, men det er ikke et livsnødvendigt kriterie for systemet. Brugere vil stadig kunne få inspiration, til hvordan de kan bruge deres madrest, selvom 1 ud af 10 opskrifter måske ikke passer særlig godt på den madrest de vil bruge.
 
 \paragraph{Pålideligt (mindre vigtigt)} 
-Pålideligheden vurderes som mindre vigtig, fordi konsistens og nøjagtighed ikke er vigtige aspekter at tage hensyn til, da det ikke er vurderet som et stort problem, hvis systemet giver ét forkert søgeresultat.
+Pålideligheden vurderes som mindre vigtig, fordi det indebærer konsistens og nøjagtighed, hvilket vi anser som indre vigtigt. Hvis mængden af en ingrediens er en smule forkert er systemet stadig brugbart. Brugere kan endda klikke ind på den originale opskrift og se de helt korrekte mængder. Hvis søgemaskinen ikke er konsistent og ikke altid finder de samme opskrifter med den samme søgning, så gør det heller ikke det store. Det vil jo faktisk give brugeren endnu større inspiration til hvordan man kan anvende sine madrester, end ved blot at vise samme rækkefølge af søgeresultaterne hver gang samme søgning foretages.
 
-Det ville dog være et problem, hvis et system går ned, fordi brugeren har udført en handling, der ikke er taget højde for. Systemet skal være i stand til at melde tilbage til brugeren, at der er sket en fejl uden, at systemet går ned. Derudover mener vi, at det er en god idé at have en beskrivende fejlbesked, når der opstår en fejl, så brugeren kan læse sig til, hvad der er gået galt så brugeren ikke føler sig helt forvirret, hvis der sker noget, der ikke må ske.
+Det ville dog være et problem, hvis et system går ned, fordi brugeren har udført en handling, der ikke er taget højde for. Systemet skal være i stand til at melde tilbage til brugeren, at der er sket en fejl uden at systemet går ned.
 
 \paragraph{Vedligeholdbart og fleksibelt (vigtig)} 
-Det er vigtigt for implementeringen af systemet, at det er nemt at udbygge, videreudvikle og vedligeholde. I og med at gruppen benytter sig af en iterativ arbejdsproces, så er det vigtigt, at gruppen kan vende tilbage til koden efter \fx en måned og, uden problemer eller forsinkelser, være i stand til at læse og modificere i systemets funktioner. Endnu en grund til, at vedligeholdelse og fleksibilitet er vigtige kriterier er, at muligheden for fremtidige udvidelse til \fx andre sprog skal være overskueligt.
+Det er vigtigt for implementeringen af systemet, at det er nemt at udbygge, videreudvikle og vedligeholde. I og med at gruppen benytter sig af en iterativ arbejdsproces, så er det vigtigt, at gruppen kan vende tilbage til koden efter \fx en måned og, uden problemer eller forsinkelser, være i stand til at læse og modificere i systemets funktioner. For at kunne udvide systemet til andre sprog eller tilføje opskrifter fra mange forskellige sider, er der god grund til at vedligeholdelse og fleksibilitet er vigtige kriterier.
 
 \paragraph{Testbart (mindre vigtig)} 
-%\todo{Argumentationen giver ingen mening, hvad er det vi prøver at sige her?}
-%Testbarhed hænger meget sammen med kriterierne vedligeholdbarhed og fleksibilitet, og derfor skal faktorerne vurderes på samme niveau. Det er relevant at holde implementeringen simpel og modulær samt selvbeskrivende, men hvis man vurderer tests højt og laver systemet meget testbart, strider det imod effektivitet af programmet, da der skal laves nogle ekstra tilføjelser, der kan sløve programmet ned. Testbarhed spiller dermed en væsentlig rolle i systemet, og vurderes som mindre vigtigt. Dvs., at systemet stadig skal testes, bare ikke i så høj en grad, som hvis sikkerhed og korrekt var vurderet som mere vigtig, end de er nu.
+Systemet kan gøres testbart ved at dele koden op i mange små funktioner, så hver af disse kan testes individuelt. Men opdelingen i for mange små stumper kode kan medføre en lavere effektivitet. Det er vigtigt at \Foodl{} er effektivt, så vi vurderer testbarheden mindre vigtigt, men har det i baghovedet at vi til en vis grad selvfølgelig skal kunne teste om systemet lever op til de funktioner, der kræves.
 
 \paragraph{Forståeligt (vigtig)} 
-Forståelighed er vigtigt, fordi hvis systemet skulle lanceres i virkeligheden, kunne man umuligt vide, hvem der i fremtiden ville komme til at benytte systemet. Vi vil genbruge velkendte mønstre og designprincipper samt forsøge at gruppere ansvaret af komponenter og klasser. Vi vil standardisere designsproget således, at uanset hvor man er i systemet, vil det være muligt at genkende nogle elementer. Alt dette gør vi for at nå et højere abstraktionsniveau, der øger forståeligheden af systemet og derfor vurderes forståelighed som vigtig. 
- 
+\Foodl{} er ikke et system, der vil have et fast antal brugere. Derfor er det svært at forudsige behovet for antallet af udviklere tilknyttet systemet. Hvis \Foodl{} bliver meget populært kan der være behov for at få hjælp fra flere udviklere, og derfor er det vigtigt at systemet er forståeligt, så nye udviklere forholdsvist hurtigt kan komme i gang.
+
 \paragraph{Genbrugbart (irrelevant)} 
-Da systemdefinitionen ikke stiller krav om at \Foodl{} skal kunne genbruges i andre systemer, vurderes dette som irrelevant.
+Da systemdefinitionen ikke stiller krav om at \Foodl{} skal kunne genbruges i andre systemer vurderes dette som irrelevant.
 
 \paragraph{Flytbart (mindre vigtig)} 
-Systemet skal kunne flyttes frit mellem forskellige tekniske platforme, såsom Windows og Unix, hvis det bliver nødvendigt. \Fx skal det være muligt at køre systemet på andre webhostingsservices eller skalere systemet op, hvis behovet overstiger det tekniske systems ydelse. Derfor skal gruppen tænke over hvilke eksterne systemer, der bliver benyttet i det færdige produkt. Nogle eksterne systemer har platformsafhængigheder, der begrænser valget af platforme, som produktet kan køre på. Derfor skal gruppen være i stand til konsekvent at benytte cross-platform-biblioteker og implementere selve systemet, sådan at det er let at flytte over til andre platforme.
+Systemet skal kunne flyttes frit mellem forskellige tekniske platforme, såsom Windows og Unix, hvis det bliver nødvendigt. \Fx skal det være muligt at køre systemet på andre webhostingsservices eller skalere systemet op, hvis behovet overstiger det tekniske systems ydelse. Derfor skal vi tænke over hvilke eksterne systemer, der bliver benyttet i det færdige produkt. Nogle eksterne systemer har platformsafhængigheder, der begrænser valget af platforme, som produktet kan køre på. Derfor skal gruppen være i stand til konsekvent at benytte cross-platform-biblioteker og implementere selve systemet, sådan at det er let at flytte over til andre platforme. Det er ikke sikkert at \Foodl{} bliver så populært at webhosten ikke ydelsesmæssigt kan følge med og det er også uvist om en anden teknisk platform vil klare det belastningen bedre. Derfor vurderes kriteriet som mindre vigtigt.
 
 \paragraph{Integrerbart (mindre vigtig)} 
-Da modularitet og standardisering af datarepræsentationer er en væsentlig del af implementationen af projektet, og kriteriernes fleksibilitet samt vedligeholdbarhed er vurderet som vigtige, vil vi foretage nogle overvejelser i forhold til integrerbarhed. Det vurderes som mindre vigtig fordi systemet ikke skal benyttes i andre systemer (se ``genbrugbart''). I forhold til at koble på andre systemer refereres til ``flytbart''-kriteriet ovenover.
+Da modularitet og standardisering af datarepræsentationer er en væsentlig del af implementationen af projektet, og kriterierne fleksibilitet samt vedligeholdbarhed er vurderet som vigtige, vil vi foretage nogle overvejelser i forhold til integrerbarhed. Det vurderes som mindre vigtig fordi systemet ikke skal benyttes i andre systemer (se ``genbrugbart''). I forhold til at koble på andre systemer refereres til ``flytbart''-kriteriet ovenover.
