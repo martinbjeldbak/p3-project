@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 14 10:00:27 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 14 10:31:53 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -404,7 +404,7 @@
     x="256"
     y="224"
     width="88"
-    height="19"
+    height="17"
     fill="1"
     fillcolor="white"
     stroke="1"
@@ -415,10 +415,10 @@
     bold="true"
     textsize="12"
     justification="Center"
-  >Råvare</text>
+  >Råvaretype</text>
   <text name="Fig7"
     x="256"
-    y="243"
+    y="240"
     width="88"
     height="24"
     fill="1"
