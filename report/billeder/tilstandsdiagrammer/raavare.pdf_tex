@@ -54,7 +54,7 @@
     \put(0.78062678,0.20797721){\makebox(0,0)[lb]{\smash{Brugbar}}}%
     \put(0.60968661,0.32193732){\makebox(0,0)[lb]{\smash{Råvare købt}}}%
     \put(0.58974359,0.05128205){\makebox(0,0)[lb]{\smash{Råvare opbrugt}}}%
-    \put(0.09401709,0.22792023){\makebox(0,0)[lb]{\smash{Råvare}}}%
-    \put(0.04558405,0.17378917){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.04843305,0.23076923){\makebox(0,0)[lb]{\smash{Råvaretype}}}%
+    \put(0.04273504,0.18518519){\makebox(0,0)[lb]{\smash{navn}}}%
   \end{picture}%
 \endgroup%
