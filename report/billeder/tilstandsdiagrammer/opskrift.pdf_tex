@@ -1,6 +1,6 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'opskrift.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/tilstandsdiagrammer/opskrift.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{536.8bp}%
+    \setlength{\unitlength}{496bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +48,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.21758569)%
+  \begin{picture}(1,0.23709677)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/opskrift.pdf}}%
-    \put(0.45603577,0.12071535){\makebox(0,0)[lb]{\smash{Findes i opskriftssamlingen}}}%
-    \put(0.37555887,0.17734724){\makebox(0,0)[lb]{\smash{Bogmærke sat ind}}}%
-    \put(0.36959762,0.02682563){\makebox(0,0)[lb]{\smash{Bogmærke fjernet}}}%
-    \put(0.75707899,0.12071535){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
-    \put(0.57377049,0.17734724){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste(navn, mængde, enhed)}}}%
-    \put(0.54396423,0.02831595){\makebox(0,0)[lb]{\smash{Fejl fundet(beskrivelse)}}}%
-    \put(0.07004471,0.11177347){\makebox(0,0)[lb]{\smash{Opskrift fundet(navn, information, kilde)}}}%
+    \put(0.41935484,0.13064516){\makebox(0,0)[lb]{\smash{Findes i opskriftssamlingen}}}%
+    \put(0.33387097,0.19193548){\makebox(0,0)[lb]{\smash{Bogmærke sat ind}}}%
+    \put(0.32741935,0.02903226){\makebox(0,0)[lb]{\smash{Bogmærke fjernet}}}%
+    \put(0.74677419,0.12903226){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
+    \put(0.54193548,0.19354839){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
+    \put(0.51451613,0.03064516){\makebox(0,0)[lb]{\smash{Fejl fundet(beskrivelse)}}}%
+    \put(0.24354839,0.12258065){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
+    \put(0.05967742,0.14354839){\makebox(0,0)[lb]{\smash{Opskrift}}}%
+    \put(0.02419355,0.11290323){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.02419355,0.08870968){\makebox(0,0)[lb]{\smash{billede}}}%
+    \put(0.02419355,0.06451613){\makebox(0,0)[lb]{\smash{tilberedningstid}}}%
+    \put(0.02419355,0.04032258){\makebox(0,0)[lb]{\smash{kilde}}}%
   \end{picture}%
 \endgroup%

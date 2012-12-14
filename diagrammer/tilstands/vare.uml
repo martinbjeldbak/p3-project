@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 12 17:08:27 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 14 10:06:57 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -170,7 +170,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[64, 120, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[248, 184, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A98"
        fill="1"
        fillcolor="black"
@@ -181,8 +181,8 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="72"
-      y="128"
+      x="256"
+      y="192"
       rx="8"
       ry="8"
       fill="0"
@@ -191,8 +191,8 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="72"
-      y="128"
+      x="256"
+      y="192"
       rx="8"
       ry="8"
       fill="1"
@@ -202,7 +202,7 @@
     />
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.state.ui.FigSimpleState[256, 104, 136, 50]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[440, 168, 136, 50]pathVisible=false;stereotypeView=0;"
        href="-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A99"
        fill="1"
        fillcolor="white"
@@ -213,8 +213,8 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="256"
-      y="104"
+      x="440"
+      y="168"
       width="136"
       height="50"
       fill="1"
@@ -224,8 +224,8 @@
       rounding="16"
     />
     <rectangle name="Fig1.1"
-      x="256"
-      y="104"
+      x="440"
+      y="168"
       width="136"
       height="50"
       fill="1"
@@ -235,16 +235,16 @@
       rounding="16"
     />
     <text name="Fig1.2"
-      x="258"
-      y="104"
+      x="442"
+      y="168"
       width="132"
-      height="24"
+      height="25"
       fill="0"
       fillcolor="white"
       stroke="0"
       strokecolor="black"
       textcolor="black"
-      font="Lucida Grande"
+      font="Dialog"
       italic="false"
       bold="false"
       textsize="13"
@@ -276,14 +276,14 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="81"
-              y="128" />
-      <lineto x="256"
-              y="128" />
+      <moveto x="265"
+              y="192" />
+      <lineto x="440"
+              y="192" />
     </path>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.state.ui.FigFinalState[568, 120, 24, 24]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[752, 184, 24, 24]pathVisible=false;stereotypeView=0;"
        href="-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A9E"
        fill="1"
        fillcolor="white"
@@ -294,8 +294,8 @@
     </private>
     
     <ellipse name="Fig3.0"
-      x="580"
-      y="132"
+      x="764"
+      y="196"
       rx="12"
       ry="12"
       fill="0"
@@ -304,8 +304,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig3.1"
-      x="580"
-      y="132"
+      x="764"
+      y="196"
       rx="12"
       ry="12"
       fill="1"
@@ -314,8 +314,8 @@
       strokecolor="black"
     />
     <ellipse name="Fig3.2"
-      x="579"
-      y="131"
+      x="763"
+      y="195"
       rx="7"
       ry="7"
       fill="1"
@@ -349,12 +349,46 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="391"
-              y="131" />
-      <lineto x="568"
-              y="131" />
+      <moveto x="575"
+              y="195" />
+      <lineto x="752"
+              y="195" />
     </path>
   </group>
+  <text name="Fig5"
+    x="152"
+    y="152"
+    width="80"
+    height="21"
+    fill="1"
+    fillcolor="white"
+    stroke="1"
+    strokecolor="black"
+    textcolor="black"
+    font="Dialog"
+    italic="false"
+    bold="true"
+    textsize="13"
+    justification="Center"
+  >Vare</text>
+  <text name="Fig6"
+    x="152"
+    y="173"
+    width="80"
+    height="55"
+    fill="1"
+    fillcolor="white"
+    stroke="1"
+    strokecolor="black"
+    textcolor="black"
+    font="Dialog"
+    italic="false"
+    bold="false"
+    textsize="13"
+    justification="Left"
+  >navn
+mængde
+enhed</text>
 </pgml>
 <todo>
 <todolist>
