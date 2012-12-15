@@ -6,14 +6,17 @@ Forskellen på viewkomponenten og brugergrænsefladekomponenten er, at et view e
 
 Som det blev nævnt i tidligere \secref{sec:komponenter}, så startede vi med en meget simpelt lagdelt struktur for at få et godt startpunkt for det videre arbejde med komponentarkitekturen. Herefter har vi arbejdet på at identificere de forskellige komponenter, der er i vores system og få dem placeret i de korrekte forhold til hinanden. Resultatet af bearbejdningen kan ses i den nye komponentarkitektur vist i \figref{fig:komponenter}.
 
-\pdffig[0.7]{komponenter2}
-	{Den overordnede komponenetarkitektur for \Foodl{}.}
-	{fig:komponenter}
-
 I forhold til den generiske lagdelt komponentarkitektur set i \figref{fig:simpellag}, er der kommet to lag mere på i bunden af \figref{fig:komponenter}, der specificerer systemets tekniske platform. Det første lag, lige under \textit{model} , er et Ruby on Rails-lag. Ruby on Rails laget tilgår og ændrer data i en database. I vores system benytter vi en MySQL database, der kræver at man bruger MySQL-queryes til at tilgå og ændre i databasen. Dette illustreres som det nederste lag i komponentarkitekturen. Viewkomponenten er også ny og er en del af MVC-mønstret. Den tillader nemme måder, at fremstille skabeloner for de forskellige sider på hjemmesiden. Controllerkomponenten har overtaget funktionskomponentens plads men fungerer ligeledes som logik-laget.
 
 Komponentarkitekturen i \figref{fig:komponenter} viser tydeligt, hvordan de forskellige komponenter har forskellige ansvarsområder. Brugergrænsefladen kommunikerer bl.a. med controllerkomponenten ved at videresende brugerens interaktion til controlleren. Controlleren kan ud fra den interaktion enten sende et forespørgsel for at få vist et specifikt View, eller kommunikere med modelkomponenten, hvis brugerens interaktion kræver en ændring eller visning af objekter fra modellen af problemområdet. For at gøre brugergrænsefladen dynamisk, benytter vi JavaScript, som denne har direkte kontakt til. JavaScript er et eksisterende system, som vi benytter til klient-side-scripting. Sammen med JavaScript benytter vi jQuiry og jQuiryUI, som er frameworks til JavaScript, der giver os mulighed for lettere at tilgå forskellige elementer i brugergrænsefladen og bruge nogle indbyggede grafiske elementer og symboler.
 
+
 Både Controller, View og Model har direkte kontakt med den tekniske platform, hvorfra der er kontakt til databasen. Active Record-komponenten indbygget i Ruby on Rails giver muligheden for at kommunikere med databasen, uanset hvilket system den underliggende database består af. I softwareudvikling er Active Record et udviklingsmønster, der findes i diverse software, som gemmer data i relationelle databaser. Ruby on Rails har en implementering af Active Record, som vi benytter med MySQL-databasen. Controlleren, hvori et objekt er i overenstemmelse med dette mønster, vil omfatte funktioner som ``Insert'', ``Update'' og ``Delete'', samt egenskaber, der ca. svarer til kolonnerne i den underliggende databasetabel.\cite{activerecordwiki} Derudover består den tekniske platform af BCrypt, som er et eksternt system, der vil blive brugt til hashing af kodeord, så disse ikke blive gemt som ren tekst i modellen.
+
+
+\pdffig[0.7]{komponenter2}
+	{Den overordnede komponenetarkitektur for \Foodl{}.}
+	{fig:komponenter}
+
 
 Klienten vil bestå af Brugergrænsefladen og JavaScript, som er grænsefladekomponenten og lidt af funktionskomponenten. Det betyder, at resten af funktionskomponenten og modelkomponenten vil køre på selve serveren. Denne ansvarsfordeling mht. klient og server, hedder distribueret funktionalitet netop fordi funktionaliten er distribueret i begge områder.
