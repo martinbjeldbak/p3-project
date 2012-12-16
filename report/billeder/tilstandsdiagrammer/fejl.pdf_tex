@@ -1,6 +1,6 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'fejl.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/tilstandsdiagrammer/fejl.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{504bp}%
+    \setlength{\unitlength}{575.2bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +48,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.26984127)%
+  \begin{picture}(1,0.2364395)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/fejl.pdf}}%
-    \put(0.18412698,0.13968254){\makebox(0,0)[lb]{\smash{Opmærksom på fejl}}}%
-    \put(0.05396825,0.13174603){\makebox(0,0)[lb]{\smash{Fejl fundet}}}%
-    \put(0.2968254,0.22539683){\makebox(0,0)[lb]{\smash{Fejl rapporteret(beskrivelse)}}}%
-    \put(0.11111111,0.04444444){\makebox(0,0)[lb]{\smash{Fejl set bort fra}}}%
-    \put(0.50634921,0.13968254){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
-    \put(0.72063492,0.11428571){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
-    \put(0.60952381,0.04761905){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
+    \put(0.31710709,0.12239221){\makebox(0,0)[lb]{\smash{Opmærksom på fejl}}}%
+    \put(0.20305981,0.11821975){\makebox(0,0)[lb]{\smash{Fejl fundet}}}%
+    \put(0.46870654,0.19749652){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
+    \put(0.25312935,0.03894298){\makebox(0,0)[lb]{\smash{Fejl set bort fra}}}%
+    \put(0.59805285,0.12239221){\makebox(0,0)[lb]{\smash{Fejl rapporteret}}}%
+    \put(0.75243394,0.13212796){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
+    \put(0.68845619,0.04172462){\makebox(0,0)[lb]{\smash{Tilbagemelding modtaget}}}%
+    \put(0.06258693,0.13212796){\makebox(0,0)[lb]{\smash{Fejl}}}%
+    \put(0.02225313,0.10292072){\makebox(0,0)[lb]{\smash{beskrivelse}}}%
+    \put(0.02225313,0.07927677){\makebox(0,0)[lb]{\smash{status}}}%
   \end{picture}%
 \endgroup%
