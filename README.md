@@ -31,7 +31,7 @@ HUSK:
 
 ### Development report
 
-  - The requirements (in terms of models and prototypes), including how they were identified and selected, how they were explore and validated through prototyping, and how they were modelled.
+  - The requirements (in terms of models and prototypes), including how they were identified and selected, how they were explored and validated through prototyping, and how they were modelled.
   - The design (in terms of architecture and interaction), including arguments for the design and evaluation of its appropriateness. The design should cover all requirements unless explicitly declared in the report.
   - The program (in terms of a complete source and a running system that can be demonstrated), including arguments for the detailed program design, algorithms, and datatypes. The program should cover all requirements and design unless explicitly declared in the report.
   - The quality assurance (in terms of program tests and results and of usability evaluation and results), including arguments for its the coverage and validity.

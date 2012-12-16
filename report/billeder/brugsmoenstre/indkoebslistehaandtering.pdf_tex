@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{361.6bp}%
+    \setlength{\unitlength}{336bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,20 +48,20 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.58628319)%
+  \begin{picture}(1,0.6047619)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/indkoebslistehaandtering.pdf}}%
-    \put(0.36283186,0.42477876){\makebox(0,0)[lb]{\smash{Igangværende redigering}}}%
-    \put(0.03318584,0.43584071){\makebox(0,0)[lb]{\smash{Rediger indkøbsliste}}}%
-    \put(0.20353982,0.5){\makebox(0,0)[lb]{\smash{Tømme indkøbsliste}}}%
-    \put(0.47123894,0.52654867){\makebox(0,0)[lb]{\smash{Tilføj / fjern vare}}}%
-    \put(0.49336283,0.30530973){\makebox(0,0)[lb]{\smash{Tilføj / fjern vare}}}%
-    \put(0.35619469,0.32743363){\makebox(0,0)[lb]{\smash{Print}}}%
-    \put(0.39823009,0.15929204){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
-    \put(0.14159292,0.10176991){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
-    \put(0.28982301,0.04646018){\makebox(0,0)[lb]{\smash{Tilføj / fjern vare}}}%
-    \put(0.72123894,0.37168142){\makebox(0,0)[lb]{\smash{Afslut redigering}}}%
-    \put(0.67256637,0.17035398){\makebox(0,0)[lb]{\smash{Forlad søgeresultat}}}%
-    \put(0.19026549,0.22345133){\makebox(0,0)[lb]{\smash{Rediger indkøbsliste}}}%
-    \put(0.53761062,0.03982301){\makebox(0,0)[lb]{\smash{Tilføj opskrift}}}%
+    \put(0.31428571,0.45952381){\makebox(0,0)[lb]{\smash{Igangværende redigering}}}%
+    \put(0.0452381,0.46666667){\makebox(0,0)[lb]{\smash{Tilgå indkøbsliste}}}%
+    \put(0.15952381,0.54047619){\makebox(0,0)[lb]{\smash{Tøm indkøbsliste}}}%
+    \put(0.13809524,0.3547619){\makebox(0,0)[lb]{\smash{Print indkøbsliste}}}%
+    \put(0.35238095,0.17380952){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
+    \put(0.0547619,0.11904762){\makebox(0,0)[lb]{\smash{Søg efter opskrifter}}}%
+    \put(0.7,0.40238095){\makebox(0,0)[lb]{\smash{Afslut redigering}}}%
+    \put(0.64761905,0.18571429){\makebox(0,0)[lb]{\smash{Forlad søgeresultat}}}%
+    \put(0.16190476,0.29761905){\makebox(0,0)[lb]{\smash{Tilgå indkøbsliste}}}%
+    \put(0.50238095,0.0452381){\makebox(0,0)[lb]{\smash{Tilføj opskrift}}}%
+    \put(0.4952381,0.35714286){\makebox(0,0)[lb]{\smash{Fjern vare}}}%
+    \put(0.48809524,0.54047619){\makebox(0,0)[lb]{\smash{Tilføj vare}}}%
+    \put(0.32619048,0.04285714){\makebox(0,0)[lb]{\smash{Tilføj vare}}}%
   \end{picture}%
 \endgroup%

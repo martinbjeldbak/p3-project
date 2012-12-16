@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="358" version="1.1" width="316" xmlns="http://www.w3.org/2000/svg">
+<svg height="356" version="1.1" width="324" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="70" cy="22" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="266" cy="26" fill="#000000" rx="12.0" ry="12.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="266" cy="26" fill="#ffffff" rx="11.0" ry="11.0" stroke="#ffffff" stroke-width="1"/>
@@ -10,17 +10,17 @@
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="258" x2="265" y1="49" y2="37"/>
 <text font-family="Dialog" font-size="12" x="211" y="59">
 Luk side</text>
-<rect fill="#00ff" height="216" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="288" x="14" y="70"/>
-<rect fill="#ffffff" height="216" rx="16" ry="16" stroke="#000000" stroke-width="1" width="288" x="14" y="70"/>
-<rect fill="#ffffff" height="214" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="286" x="15" y="71"/>
-<text font-family="Dialog" font-size="12" x="144" y="83">
+<rect fill="#00ff" height="216" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="296" x="14" y="70"/>
+<rect fill="#ffffff" height="216" rx="16" ry="16" stroke="#000000" stroke-width="1" width="296" x="14" y="70"/>
+<rect fill="#ffffff" height="214" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="294" x="15" y="71"/>
+<text font-family="Dialog" font-size="12" x="148" y="83">
 Aktiv</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="14" x2="301" y1="93" y2="93"/>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="112" x="38" y="110"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="112" x="38" y="110"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="110" x="39" y="111"/>
-<text font-family="Dialog" font-size="12" x="48" y="123">
-Råvarer på liste</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="14" x2="309" y1="93" y2="93"/>
+<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="38" y="110"/>
+<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="38" y="110"/>
+<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="39" y="111"/>
+<text font-family="Dialog" font-size="12" x="44" y="123">
+Råvaretype(r) på liste</text>
 <rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="200" x="38" y="182"/>
 <rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="200" x="38" y="182"/>
 <rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="198" x="39" y="183"/>
@@ -29,7 +29,7 @@ Søgeresultat vist</text>
 <polyline fill="none" points="78,133 78,182" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="71" x2="78" y1="170" y2="182"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="85" x2="78" y1="170" y2="182"/>
-<text font-family="Dialog" font-size="12" x="80" y="162">
+<text font-family="Dialog" font-size="12" x="82" y="161">
 Klik på "søg"</text>
 <polyline fill="none" points="237,206 254,206 254,190 237,190" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="249" x2="237" y1="183" y2="190"/>
@@ -44,26 +44,21 @@ Indkøbslistehåndtering()</text>
 <polyline fill="none" points="69,29 69,110" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="62" x2="69" y1="98" y2="110"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="76" x2="69" y1="98" y2="110"/>
-<text font-family="Dialog" font-size="12" x="72" y="54">
-Tilføj råvare(r)</text>
+<text font-family="Dialog" font-size="12" x="79" y="53">
+Tilføj råvaretype(r)</text>
 <polyline fill="none" points="110,213 110,230 78,230 78,213" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="85" x2="78" y1="225" y2="213"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="71" x2="78" y1="225" y2="213"/>
 <text font-family="Dialog" font-size="12" x="51" y="245">
 Favorisering()</text>
-<polyline fill="none" points="222,182 222,158 190,158 190,182" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="183" x2="190" y1="170" y2="182"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="197" x2="190" y1="170" y2="182"/>
-<text font-family="Dialog" font-size="12" x="167" y="145">
-Sortering gemt</text>
 <polyline fill="none" points="88,285 88,318 120,318 120,285" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="127" x2="120" y1="297" y2="285"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="113" x2="120" y1="297" y2="285"/>
-<text font-family="Dialog" font-size="12" x="64" y="338">
-Råvare tilføjet</text>
+<text font-family="Dialog" font-size="12" x="56" y="338">
+Råvaretye tilføjet</text>
 <polyline fill="none" points="199,285 199,318 231,318 231,285" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="238" x2="231" y1="297" y2="285"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="224" x2="231" y1="297" y2="285"/>
-<text font-family="Dialog" font-size="12" x="178" y="340">
-Råvare fjernet</text>
+<text font-family="Dialog" font-size="12" x="165" y="338">
+Råvaretype fjernet</text>
 </svg>
