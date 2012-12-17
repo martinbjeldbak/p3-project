@@ -24,13 +24,13 @@ Det centrale i implementeringen af funktionskomponenten i vores webapplikation e
   Fejlhåndteringen foregår med denne controller. Dvs. oprettelsen af de fejl, der rapporteres og listen af fejl.
 
   \item[RecipesController] \hfill \\
-  Kun én action er indeholdt i denne controller, en action til at servere det billede der hører til en opskrift.
+  Kun én action er indeholdt i denne controller, en action til at servere det billede, der hører til en opskrift.
 
   \item[SearchController] \hfill \\
   Søgning håndteres i denne controller. Søgningen er beskrevet i detaljer i \secref{sec:funktionalitet-soegning}.
 
   \item[SessionsController] \hfill \\
-  Denne controller håndtere brugersessioner, dvs. når en bruger vil logge ind eller ud.
+  Denne controller håndterer brugersessions, dvs. når en bruger vil logge ind eller ud.
 
   \item[ShoppingListController] \hfill \\
   Indkøbslisten håndteres med denne controller. Tilføjelsen af elementer, hvad enten det er ingredienser, rå tekststrenge eller hele opskrifter, samt sletning af elementer muliggøres af denne controller.
@@ -47,17 +47,17 @@ Det centrale i implementeringen af funktionskomponenten i vores webapplikation e
 \subsection{Tabeller}
 \label{sec:tabeller}
 
-Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. Hver kasse repræsenterer en tabel i databasen og hver pil repræsenterer en relation mellem to tabeller. Pilen vender således at den peger væk fra den tabel, som har en fremmed nøgle. Det ses \fx mellem \dbtableref{ingredients} og \dbtableref{food\_types}. Her indeholder tabellen \dbtableref{ingredients} en kolonne \texttt{food\_type\_id}, som bruges til at pege på en række i \dbtableref{food\_types}-tabellen, derfor pilen fra \dbtableref{ingredients} til \dbtableref{food\_types}.
+Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. Hver kasse repræsenterer en tabel i databasen, og hver pil repræsenterer en relation mellem to tabeller. Pilen vender således, at den peger væk fra den tabel, som har en fremmed nøgle. Det ses \fx mellem \dbtableref{ingredients} og \dbtableref{food\_types}. Her indeholder tabellen \dbtableref{ingredients} en kolonne \texttt{food\_type\_id}, som bruges til at pege på en række i \dbtableref{food\_types}-tabellen, derfor pilen fra \dbtableref{ingredients} til \dbtableref{food\_types}.
 
 \dbtableref{sessions}-tabellen bruges af en intern Session-model i Rails, som er nødvendig for at gemme sessionsdata på serveren, dvs. \fx den besøgendes favoritter og indkøbsliste, når denne ikke er logget ind.
 
-Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at udtrykke mange-til-mange-forholdet mellem brugere og opskrifter. Dvs. at hver relation mellem en bruger og en opskrift (en favorisering) svarer til en række i denne tabel, som indeholder både et id for en opskrift og et id for en bruger. Når tabellen først er oprettet, sørger Rails selv for at abstrahere denne relation, så længe en \methodref{has\_and\_belongs\_to\_many}-relation, der peger på \classref{User}-modellen, er sat op i \classref{Opskrift}-modellen og vice versa. Dette medvirker til, at man \fx nemt kan tilføje en opskrift til en brugers favoritter vha. en enkelt linje Ruby-kode, som er illustreret i \lstref{lst:rubymanytomany}.
+Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at udtrykke mange-til-mange-forholdet mellem brugere og opskrifter. Dvs., at hver relation mellem en bruger og en opskrift (en favorisering) svarer til en række i denne tabel, som indeholder både et id for en opskrift og et id for en bruger. Når tabellen først er oprettet, sørger Rails selv for at abstrahere denne relation, så længe en \methodref{has\_and\_belongs\_to\_many}-relation, der peger på \classref{User}-modellen, er sat op i \classref{Opskrift}-modellen og vice versa. Dette medvirker til, at man \fx nemt kan tilføje en opskrift til en brugers favoritter vha. en enkelt linje Ruby-kode, som er illustreret i \lstref{lst:rubymanytomany}.
 
 \begin{lstlisting}[caption={Hvis man har et \classref{User}-objekt i \texttt{user} (som f.eks. returneret med \lstinline{User.find_by_id(42)}) og et \classref{Recipe}-object i \texttt{recipe}, kan opskriften associeres med brugeren med denne linje Ruby-kode.},label=lst:rubymanytomany,language=Ruby]
 user.favorites << recipe
 \end{lstlisting}
 
-Som illustreret i \figref{fig:database} så er der udover mange-til-mange-forholdene også mere simple relationer. Det ses blandt andet mellem opskrifter og ingredienser, og mellem ingredienser og råvarer. Dette betyder at ser man på \classref{Ingredient}-modellen, så er der sat to \methodref{belongs\_to}-relationer op, som peger på henholdsvis \classref{Recipe} og \classref{FoodType}. Ligeledes er der i både \classref{Recipe}- og \classref{FoodType}-modellerne sat en \methodref{has\_many}-relation op, som peger på \classref{Ingredient}.
+Som illustreret i \figref{fig:database} så er der udover mange-til-mange-forholdene også mere simple relationer. Det ses blandt andet mellem opskrifter og ingredienser, og mellem ingredienser og råvarer. Dette betyder, at ser man på \classref{Ingredient}-modellen, så er der sat to \methodref{belongs\_to}-relationer op, som peger på henholdsvis \classref{Recipe} og \classref{FoodType}. Ligeledes er der i både \classref{Recipe}- og \classref{FoodType}-modellerne sat en \methodref{has\_many}-relation op, som peger på \classref{Ingredient}.
 
 \pdffig[0.6]{database}
   {Databasetabelstrukturen og associeringerne mellem tabellerne.}
@@ -76,7 +76,7 @@ En central del af forsiden og brugerens mulighed for at vælge råvarer er, at s
 
 Det eneste denne action gør er at generere en SQL-forespørgsel, som sendes til MySQL-databasen og returnerer et array bestående af fem råvareforslag. Dette array konverteres til JSON-format og returneres. Dermed kan man via JavaScript tilgå denne action med en AJAX-forespørgsel, mens brugeren indtaster, og næsten med det samme fremvise resultatet.
 
-Et eksempel på en genereret SQL-forespørgsel kan ses i \lstref{lst:soegeforslag-sql}. SQL-forespørgslen er en \texttt{SELECT}-forespørgsel, hvilket vil sige at vi ønsker at læse fra en tabel i databasen. I første linje vælges kolonnen \texttt{name}, således at kun indholdet af denne kolonne returneres. I linje 2 vælges hvilken tabel forespørgslen skal udføres på, i dette tilfælde \dbtableref{food\_types}-tabellen, altså tabellen med alle råvarer. I linje tre sættes en betingelse for hvilke rækker fra tabellen, der skal returneres, nemlig alle dem, hvor råvarenavnet indeholder ordet ``pølse''. ``\%''-tegnet er wilcard-karakter i SQL, og matcher nul eller flere karakterer. Dvs. ``\%pølse\%'' matcher både ``pølser'', ``pølsebrød'' og ``wienerpølse''. I fjerde linjer påbegyndes sorteringsudtrykket. Der sorteres på baggrund af tre parametre. Først og fremmest sorteres resultatet efter en \texttt{CASE}, hvor rækkens navnefelt testes for lighed med det indtastede. Er dette tilfældet er udtrykket lig 1, ellers er det 0. Da der sorteres i faldende rækkefølge (\texttt{DESC}), vil den række (hvis den eksisterer), hvor navnet er lig med det indtastede, altså komme først. Den næste sorteringsparameter, har en lignende \texttt{CASE}, dog med en wildcard-karakter i enden. Dermed vil alle rækker, hvor navnet begynder med det indtastede, komme før de rækker, hvor det indtastede står inde midt i råvarenavnet. Den sidste sorteringsparameter, sorterer efter længden af råvarenavnet i stigende rækkefølge. Dette gøres for at de mest relevante foreslag kommer øverst. Den sidste linje i forespørgslen (\texttt{LIMIT}), begrænser mængden af resultater til fem.
+Et eksempel på en genereret SQL-forespørgsel kan ses i \lstref{lst:soegeforslag-sql}. SQL-forespørgslen er en \texttt{SELECT}-forespørgsel, hvilket vil sige, at vi ønsker at læse fra en tabel i databasen. I første linje vælges kolonnen \texttt{name}, således at kun indholdet af denne kolonne returneres. I linje 2 vælges hvilken tabel forespørgslen skal udføres på, i dette tilfælde \dbtableref{food\_types}-tabellen, altså tabellen med alle råvarer. I linje tre sættes en betingelse for hvilke rækker fra tabellen, der skal returneres, nemlig alle dem, hvor råvarenavnet indeholder ordet ``pølse''. ``\%''-tegnet er wilcard-karakter i SQL, og matcher nul eller flere karakterer. Dvs. ``\%pølse\%'' matcher både ``pølser'', ``pølsebrød'' og ``wienerpølse''. I fjerde linje påbegyndes sorteringsudtrykket. Der sorteres på baggrund af tre parametre. Først og fremmest sorteres resultatet efter en \texttt{CASE}, hvor rækkens navnefelt testes for lighed med det indtastede. Er dette tilfældet er udtrykket lig 1, ellers er det 0. Da der sorteres i faldende rækkefølge (\texttt{DESC}), vil den række (hvis den eksisterer), hvor navnet er lig med det indtastede, altså komme først. Den næste sorteringsparameter, har en lignende \texttt{CASE}, dog med en wildcard-karakter i enden. Dermed vil alle rækker, hvor navnet begynder med det indtastede, komme før de rækker, hvor det indtastede står inde midt i råvarenavnet. Den sidste sorteringsparameter, sorterer efter længden af råvarenavnet i stigende rækkefølge. Dette gøres for, at de mest relevante foreslag kommer øverst. Den sidste linje i forespørgslen (\texttt{LIMIT}), begrænser mængden af resultater til fem.
 
 \begin{lstlisting}[caption={Hvis en bruger indtaster ``pølse'' udføres denne SQL-forespørgsel.},label=lst:soegeforslag-sql,language=SQL]
 SELECT name
@@ -105,9 +105,9 @@ De valgte råvarer tilføjes med JavaScript til en liste, som sendes videre til 
 \subsubsection{Søgeresultat}
 Resultatsiden håndteres af en action ved navn \methodref{result}, som foretager søgningen på opskrifterne i databasen. 
 
-Den primære parameter er en liste af råvarer, som en tekststreng separeret med ``|''-tegn. Det første, der bliver gjort med denne streng, er at den bliver splittet op i et array bestående af råvarenavne. Derefter genereres en SQL-forespørgsel, som henter id'erne for de valgte råvarer fra \dbtableref{food\_types}-tabellen.
+Den primære parameter er en liste af råvaretyper, som en tekststreng separeret med ``|''-tegn. Det første, der bliver gjort med denne streng, er, at den bliver splittet op i et array bestående af råvarenavne. Derefter genereres en SQL-forespørgsel, som henter id'erne for de valgte råvaretyper fra \dbtableref{food\_types}-tabellen.
 
-For søgestrengen ``\texttt{Pølser|Wasabi|Peber|}'' returneres derfor array'et \lstinline[language=Ruby]{[1116, 1113, 2]}. Disse id'er bruges til at generere endnu en SQL-forespørgsel, med det formål at finde opskrifter, som indeholder de valgte råvarer. Et eksempel på dette kan ses i \lstref{lst:soegeresultat-sql}.
+For søgestrengen ``\texttt{Pølser|Wasabi|Peber|}'' returneres derfor array'et \lstinline[language=Ruby]{[1116, 1113, 2]}. Disse id'er bruges til at generere endnu en SQL-forespørgsel, med det formål at finde opskrifter, som indeholder de valgte råvaretyper. Et eksempel på dette kan ses i \lstref{lst:soegeresultat-sql}.
 
 \begin{lstlisting}[caption={Ved en søgning på ``Pølser'', ``Wasabi'' og ``Peber'' udføres denne SQL-forespørgsel.},label=lst:soegeresultat-sql,language=SQL]
 SELECT recipes.*, COUNT(*) AS relevance
@@ -121,4 +121,4 @@ LIMIT 0, 50
 
 Resultatet grupperes efter opskrifternes id, således at man kan tælle, hvor mange af de valgte råvarer opskriften indeholder. Denne værdi gemmes i variablen \texttt{relevance}, og bliver (som standard) brugt til at sortere resultatet med. Den bliver ligeledes sendt videre til view'et sammen med hver opskrift, således at det fremgår af resultaterne, hvor mange af de valgte ingredienser, hver opskrift indeholder.
 
-Opskrifterne returneres på to måder alt efter, hvordan siden forespørges. Ved en almindelig browser-forespørgsel returneres hele resultatsiden som forventet. Men foretages forespørgslen via AJAX, så returneres kun listen med opskrifter. Dette gør at resultatsiden dynamisk kan hente en ny opskriftsliste fra serveren, hvis \fx søgeparametrene ændres.
+Opskrifterne returneres på to måder alt efter, hvordan siden forespørges. Ved en almindelig browser-forespørgsel returneres hele resultatsiden som forventet. Men foretages forespørgslen via AJAX, så returneres kun listen med opskrifter. Dette gør, at resultatsiden dynamisk kan hente en ny opskriftsliste fra serveren, hvis \fx søgeparametrene ændres.
