@@ -2,6 +2,7 @@
 Dette afsnit beskriver, hvordan vi har formået at udtrække data til brug i det endelige system. Systemet består af opskrifter, som vi har fået lov til at benytte af Arla, hvilket bliver beskrevet i \secref{sec:samarla}. Systemet lader en bruger søge på råvaretyper, hvilket bliver forklaret i \secref{sec:raavare}. Derudover beskrives hvilke dele af opskrifterne, der bliver udtrukket af Dataudtrækkeren, som gennemgår sidens opskrifter. Til slut beskriver vi nogle forskellige metoder, hvorpå vi har oversat ingredienser til råvaretyper, som en bruger kan søge på.
 
 \subsection{Samarbejde med Arla}
+\label{sec:samarla}
 Når en bruger har indtastet en mængde råvaretyper og trykker søg, så skal søgeresultatet vise opskrifter, der indeholder de indtastede råvarer. For at gøre dette muligt, er det nødvendigt, at \Foodl{} indeholder data om en masse forskellige opskrifter. Da der findes mange opskriftshjemmesider på internettet, kan vi blot benytte deres data. At benytte data fra en specifik opskriftshjemmeside kræver, at vi har ejerens tilladelse til det. I dette projekt har vi af Arla fået lov til at benytte deres opskrifter, der kan ses på Arla.dk, forudsat, at vi overholder disse krav:
 
 \begin{itemize} [noitemsep]
@@ -11,6 +12,7 @@ Når en bruger har indtastet en mængde råvaretyper og trykker søg, så skal s
 Under udviklingen af \Foodl{} har vi taget højde for at opfylde disse krav.
 
 \subsection{Råvaretypetabellen}
+\label{sec:raavare}
 Efter afprøvning af prototyperne 2A og 2B på informanterne blev vi klar over, at de råvaretyper, som en bruger ønsker at søge på, skal autocompletes. Det vil sige, at når en bruger skriver teksten \textit{ba} i søgefeltet, så skal \Foodl{} foreslå råvaretyper som \fx \textit{banan} og \textit{balsamico}.
 En autocomplete-funktion skal have noget data at stille forslag fra, og i dette tilfælde har vi brug for en tabel med alle de forskellige råvaretyper, man kan forestille sig, at en bruger vil indtaste. Denne tabel over råvaretyper vil fremover blive kaldt råvaretypetabellen.
 
