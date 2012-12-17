@@ -1,6 +1,6 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'ingrediens.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/tilstandsdiagrammer/ingrediens.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{495.2bp}%
+    \setlength{\unitlength}{469.6bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.20193861)%
+  \begin{picture}(1,0.21465077)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/tilstandsdiagrammer/ingrediens.pdf}}%
-    \put(0.55896607,0.15670436){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
-    \put(0.06462036,0.14862682){\makebox(0,0)[lb]{\smash{Opskrift fundet(navn, information, kilde)}}}%
-    \put(0.73344103,0.15670436){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
-    \put(0.10662359,0.02907916){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste(navn, enhed, mængde)}}}%
-    \put(0.63489499,0.02907916){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.53321976,0.1669506){\makebox(0,0)[lb]{\smash{Eksisterer}}}%
+    \put(0.2879046,0.16183986){\makebox(0,0)[lb]{\smash{Opskrift fundet}}}%
+    \put(0.72231687,0.1669506){\makebox(0,0)[lb]{\smash{Opskrift smidt ud}}}%
+    \put(0.3407155,0.03236797){\makebox(0,0)[lb]{\smash{Skrevet på indkøbsliste}}}%
+    \put(0.61669506,0.03236797){\makebox(0,0)[lb]{\smash{Fjernet fra indkøbsliste}}}%
+    \put(0.0528109,0.16524702){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
+    \put(0.02725724,0.12436116){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.02725724,0.09540034){\makebox(0,0)[lb]{\smash{mængde}}}%
+    \put(0.02725724,0.06643952){\makebox(0,0)[lb]{\smash{enhed}}}%
   \end{picture}%
 \endgroup%

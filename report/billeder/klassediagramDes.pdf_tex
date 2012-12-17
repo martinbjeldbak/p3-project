@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'klassediagramDes.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/klassediagramDes.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{494.4bp}%
+    \setlength{\unitlength}{577.6bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,65 +48,65 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.18446602)%
+  \begin{picture}(1,0.92520776)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/klassediagramDes.pdf}}%
-    \put(0.03398058,1.1407767){\makebox(0,0)[lb]{\smash{Model}}}%
-    \put(0.63915858,0.70064725){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
-    \put(0.61488673,0.6618123){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.61488673,0.63592233){\makebox(0,0)[lb]{\smash{mængde}}}%
-    \put(0.61488673,0.61003236){\makebox(0,0)[lb]{\smash{enhed}}}%
-    \put(0.63106796,0.46763754){\makebox(0,0)[lb]{\smash{Råvare}}}%
-    \put(0.60194175,0.42880259){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.35275081,0.68770227){\makebox(0,0)[lb]{\smash{Opskrift}}}%
-    \put(0.30420712,0.64886731){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.30420712,0.62297735){\makebox(0,0)[lb]{\smash{billede}}}%
-    \put(0.30420712,0.59708738){\makebox(0,0)[lb]{\smash{tilberedningstid}}}%
-    \put(0.30420712,0.57119741){\makebox(0,0)[lb]{\smash{url}}}%
-    \put(0.30420712,0.54530744){\makebox(0,0)[lb]{\smash{rating}}}%
-    \put(0.51132686,0.57443366){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.5566343,0.57443366){\makebox(0,0)[lb]{\smash{1..*}}}%
-    \put(0.3171521,1.08899676){\makebox(0,0)[lb]{\smash{Bruger}}}%
-    \put(0.2394822,1.05016181){\makebox(0,0)[lb]{\smash{email}}}%
-    \put(0.2394822,1.02427184){\makebox(0,0)[lb]{\smash{adgangskode}}}%
-    \put(0.2394822,0.99838188){\makebox(0,0)[lb]{\smash{adgangsniveau}}}%
-    \put(0.2394822,0.95954693){\makebox(0,0)[lb]{\smash{ret stamdata()}}}%
-    \put(0.2394822,0.93365696){\makebox(0,0)[lb]{\smash{slet bruger()}}}%
-    \put(0.2394822,0.90776699){\makebox(0,0)[lb]{\smash{håndter indkøbsliste()}}}%
-    \put(0.2394822,0.88187702){\makebox(0,0)[lb]{\smash{håndter favoritter()}}}%
-    \put(0.2394822,0.85598706){\makebox(0,0)[lb]{\smash{fejlrapport()}}}%
-    \put(0.66666667,0.97249191){\makebox(0,0)[lb]{\smash{Vare}}}%
-    \put(0.61488673,0.93365696){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.61488673,0.90776699){\makebox(0,0)[lb]{\smash{mængde}}}%
-    \put(0.61488673,0.88187702){\makebox(0,0)[lb]{\smash{enhed}}}%
-    \put(0.68446602,0.53074434){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.69417476,0.49514563){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.48705502,0.86245955){\makebox(0,0)[lb]{\smash{indkøbsliste}}}%
-    \put(0.49514563,0.9012945){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.55987055,0.89967638){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.40291262,0.76699029){\makebox(0,0)[lb]{\smash{favoritter}}}%
-    \put(0.34304207,0.81391586){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.33980583,0.7184466){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.03398058,0.28640777){\makebox(0,0)[lb]{\smash{Funktion}}}%
-    \put(0.05987055,0.22168285){\makebox(0,0)[lb]{\smash{Søgehåndtering}}}%
-    \put(0.05825243,0.14886731){\makebox(0,0)[lb]{\smash{søg()}}}%
-    \put(0.05825243,0.12297735){\makebox(0,0)[lb]{\smash{skaler()}}}%
-    \put(0.05825243,0.09708738){\makebox(0,0)[lb]{\smash{sorter()}}}%
-    \put(0.05825243,0.07119741){\makebox(0,0)[lb]{\smash{begræns()}}}%
-    \put(0.04368932,1.0210356){\makebox(0,0)[lb]{\smash{Værditype:}}}%
-    \put(0.04368932,0.99676375){\makebox(0,0)[lb]{\smash{{bruger, admin}}}}%
-    \put(0.31067961,0.16990291){\makebox(0,0)[lb]{\smash{Brugerhåndtering}}}%
-    \put(0.30420712,0.09708738){\makebox(0,0)[lb]{\smash{log ind()}}}%
-    \put(0.30420712,0.07119741){\makebox(0,0)[lb]{\smash{log ud()}}}%
-    \put(0.12621359,0.70064725){\makebox(0,0)[lb]{\smash{Fejl}}}%
-    \put(0.05825243,0.6618123){\makebox(0,0)[lb]{\smash{beskrivelse}}}%
-    \put(0.05825243,0.63592233){\makebox(0,0)[lb]{\smash{status}}}%
-    \put(0.10841424,0.77831715){\makebox(0,0)[lb]{\smash{rapporter fejl}}}%
-    \put(0.09708738,0.73139159){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.2605178,0.81229773){\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.07605178,0.46763754){\makebox(0,0)[lb]{\smash{Fejlkategori}}}%
-    \put(0.07119741,0.42880259){\makebox(0,0)[lb]{\smash{navn}}}%
-    \put(0.07119741,0.40291262){\makebox(0,0)[lb]{\smash{beskrivelig}}}%
-    \put(0.15210356,0.52750809){\makebox(0,0)[lb]{\smash{0..*}}}%
-    \put(0.16343042,0.49838188){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.07617729,0.63296399){\makebox(0,0)[lb]{\smash{Model}}}%
+    \put(0.69944598,0.17867036){\makebox(0,0)[lb]{\smash{Ingrediens}}}%
+    \put(0.68421053,0.14542936){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.68421053,0.1232687){\makebox(0,0)[lb]{\smash{mængde}}}%
+    \put(0.68421053,0.10110803){\makebox(0,0)[lb]{\smash{enhed}}}%
+    \put(0.70221607,0.57756233){\makebox(0,0)[lb]{\smash{Råvaretype}}}%
+    \put(0.69529086,0.54432133){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.13850416,0.45567867){\makebox(0,0)[lb]{\smash{Opskrift}}}%
+    \put(0.09695291,0.42243767){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.09695291,0.40027701){\makebox(0,0)[lb]{\smash{billede}}}%
+    \put(0.09695291,0.37811634){\makebox(0,0)[lb]{\smash{tilberedningstid}}}%
+    \put(0.09695291,0.35595568){\makebox(0,0)[lb]{\smash{url}}}%
+    \put(0.09695291,0.33379501){\makebox(0,0)[lb]{\smash{rating}}}%
+    \put(0.13850416,0.25207756){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.63850416,0.0401662){\makebox(0,0)[lb]{\smash{1..*}}}%
+    \put(0.44044321,0.58864266){\makebox(0,0)[lb]{\smash{Bruger}}}%
+    \put(0.37396122,0.55540166){\makebox(0,0)[lb]{\smash{email}}}%
+    \put(0.37396122,0.533241){\makebox(0,0)[lb]{\smash{adgangskode}}}%
+    \put(0.37396122,0.51108033){\makebox(0,0)[lb]{\smash{adgangsniveau}}}%
+    \put(0.37396122,0.466759){\makebox(0,0)[lb]{\smash{ret stamdata()}}}%
+    \put(0.37396122,0.44459834){\makebox(0,0)[lb]{\smash{slet bruger()}}}%
+    \put(0.37396122,0.42243767){\makebox(0,0)[lb]{\smash{håndter indkøbsliste()}}}%
+    \put(0.37396122,0.40027701){\makebox(0,0)[lb]{\smash{håndter favoritter()}}}%
+    \put(0.37396122,0.37811634){\makebox(0,0)[lb]{\smash{fejlrapport()}}}%
+    \put(0.37396122,0.35595568){\makebox(0,0)[lb]{\smash{log ind()}}}%
+    \put(0.37396122,0.33379501){\makebox(0,0)[lb]{\smash{log ud()}}}%
+    \put(0.63019391,0.34487535){\makebox(0,0)[lb]{\smash{Vare}}}%
+    \put(0.6066482,0.31163435){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.6066482,0.28947368){\makebox(0,0)[lb]{\smash{mængde}}}%
+    \put(0.6066482,0.26731302){\makebox(0,0)[lb]{\smash{enhed}}}%
+    \put(0.63711911,0.4099723){\makebox(0,0)[lb]{\smash{indkøbsliste}}}%
+    \put(0.5900277,0.4265928){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.64819945,0.37119114){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.28116343,0.39196676){\makebox(0,0)[lb]{\smash{favoritter}}}%
+    \put(0.33518006,0.3601108){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.26038781,0.3601108){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.07617729,0.88781163){\makebox(0,0)[lb]{\smash{Controller}}}%
+    \put(0.09833795,0.82548476){\makebox(0,0)[lb]{\smash{Søgehåndtering}}}%
+    \put(0.09695291,0.76315789){\makebox(0,0)[lb]{\smash{søg()}}}%
+    \put(0.09695291,0.74099723){\makebox(0,0)[lb]{\smash{skaler()}}}%
+    \put(0.09695291,0.71883657){\makebox(0,0)[lb]{\smash{sorter()}}}%
+    \put(0.09695291,0.6966759){\makebox(0,0)[lb]{\smash{begræns()}}}%
+    \put(0.19390582,0.57617729){\makebox(0,0)[lb]{\smash{Værditype:}}}%
+    \put(0.19390582,0.55540166){\makebox(0,0)[lb]{\smash{\{bruger, admin\}}}}%
+    \put(0.32963989,0.18975069){\makebox(0,0)[lb]{\smash{Fejl}}}%
+    \put(0.28531856,0.1565097){\makebox(0,0)[lb]{\smash{beskrivelse}}}%
+    \put(0.28531856,0.13434903){\makebox(0,0)[lb]{\smash{status}}}%
+    \put(0.51246537,0.18975069){\makebox(0,0)[lb]{\smash{Fejlkategori}}}%
+    \put(0.50692521,0.1565097){\makebox(0,0)[lb]{\smash{beskrivelig}}}%
+    \put(0.50692521,0.13434903){\makebox(0,0)[lb]{\smash{navn}}}%
+    \put(0.41551247,0.12465374){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.48060942,0.12603878){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.27285319,0.21745152){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.25761773,0.29916898){\makebox(0,0)[lb]{\smash{0..1}}}%
+    \put(0.79778393,0.47783934){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.78808864,0.20221607){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.39889197,0.21606648){\makebox(0,0)[lb]{\smash{0..*}}}%
+    \put(0.40858726,0.27977839){\makebox(0,0)[lb]{\smash{1}}}%
   \end{picture}%
 \endgroup%

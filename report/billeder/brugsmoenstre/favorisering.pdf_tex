@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{291.2bp}%
+    \setlength{\unitlength}{451.2bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +48,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.38461538)%
+  \begin{picture}(1,0.29787234)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/favorisering.pdf}}%
-    \put(0.47527473,0.30769231){\makebox(0,0)[lb]{\smash{Opskrift gemt i favoritter}}}%
-    \put(0.1043956,0.2967033){\makebox(0,0)[lb]{\smash{Favorisér opskrift}}}%
-    \put(0.49725275,0.1456044){\makebox(0,0)[lb]{\smash{Fjern opskrift fra favoritter}}}%
+    \put(0.30496454,0.05673759){\makebox(0,0)[lb]{\smash{Opskrift gemt i favoritter}}}%
+    \put(0.05319149,0.06382979){\makebox(0,0)[lb]{\smash{Favorisér opskrift}}}%
+    \put(0.62056738,0.06028369){\makebox(0,0)[lb]{\smash{Fjern opskrift fra favoritter}}}%
+    \put(0.31382979,0.24113475){\makebox(0,0)[lb]{\smash{Favoritliste vist}}}%
+    \put(0.07092199,0.24822695){\makebox(0,0)[lb]{\smash{Åben favoritsiden}}}%
+    \put(0.58510638,0.24822695){\makebox(0,0)[lb]{\smash{Fjern opskrift fra favoritter}}}%
   \end{picture}%
 \endgroup%
