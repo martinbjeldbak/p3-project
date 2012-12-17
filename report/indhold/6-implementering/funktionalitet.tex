@@ -8,7 +8,7 @@ Derudover består en Rails-applikation også af helpers og assets. Helpers er hj
 \subsection{Controllers}
 \label{sec:controllers}
 
-Controllers, som er klasser, er det centrale i implementeringen af funktionskomponenten i vores webapplikation. Applikationen består af følgende controllers:
+Det centrale i implementeringen af funktionskomponenten i vores webapplikation er webapplikationens controllers. Dette er måden, hvorpå man i en MVC-applikation fordeler ansvaret for de forskellige modelklasser mellem flere controller-klasser. Som hovedregel laver man en controller for hver modelklasse, med det formål at styre klientens interaktion med den modelklasse. Webapplikationen indeholder følgende controllers:
 
 \begin{description}
   \item[ApplicationController] \hfill \\ 
@@ -36,7 +36,7 @@ Controllers, som er klasser, er det centrale i implementeringen af funktionskomp
   Indkøbslisten håndteres med denne controller. Tilføjelsen af elementer, hvad enten det er ingredienser, rå tekststrenge eller hele opskrifter, samt sletning af elementer muliggøres af denne controller.
 
   \item[UsersController] \hfill \\
-  Denne controller håndtere alt i forbindelse med brugere, dvs. f.eks. opretning af bruger, opdatering af kodeord og funktionen "Glemt kodeord".
+  Denne controller håndterer alt i forbindelse med brugere, dvs. f.eks. opretning af bruger, opdatering af kodeord og funktionen "Glemt kodeord".
 
 \end{description}
 
