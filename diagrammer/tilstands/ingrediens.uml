@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Dec 10 12:56:34 CET 2012'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 14 09:53:35 CET 2012'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.35.1-NIELS_EDITION(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -111,7 +111,7 @@
             <UML:Transition xmi.id = '-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A9A'
               isSpecification = 'false'>
               <UML:Transition.trigger>
-                <UML:CallEvent xmi.idref = '-64--88-1-100--137d72f:13b84852c3a:-8000:00000000000011B4'/>
+                <UML:SignalEvent xmi.idref = '127-0-0-1--28dbb38d:13b9497d703:-8000:00000000000014E5'/>
               </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:Pseudostate xmi.idref = '-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A98'/>
@@ -135,7 +135,7 @@
             <UML:Transition xmi.id = '-84-25-19--97-af2ca71:13af437f640:-8000:0000000000003617'
               isSpecification = 'false'>
               <UML:Transition.trigger>
-                <UML:CallEvent xmi.idref = '-64--88-1-100--137d72f:13b84852c3a:-8000:0000000000000B7D'/>
+                <UML:SignalEvent xmi.idref = '127-0-0-1--28dbb38d:13b9497d703:-8000:00000000000014E6'/>
               </UML:Transition.trigger>
               <UML:Transition.source>
                 <UML:SimpleState xmi.idref = '-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A99'/>
@@ -175,28 +175,10 @@
           name = 'Opskrift smidt ud' isSpecification = 'false'/>
         <UML:SignalEvent xmi.id = '-84-17-58--64-75c759a6:13b7602b870:-8000:0000000000000D91'
           name = 'Fjernet fra indkøbsliste' isSpecification = 'false'/>
-        <UML:CallEvent xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:0000000000000B7D'
-          name = 'Skrevet på indkøbsliste' isSpecification = 'false'>
-          <UML:Event.parameter>
-            <UML:Parameter xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:0000000000000B7E'
-              name = 'navn' isSpecification = 'false' kind = 'in'/>
-            <UML:Parameter xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:0000000000000B7F'
-              name = 'enhed' isSpecification = 'false' kind = 'in'/>
-            <UML:Parameter xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:0000000000000B80'
-              name = 'mængde' isSpecification = 'false' kind = 'in'/>
-          </UML:Event.parameter>
-        </UML:CallEvent>
-        <UML:CallEvent xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:00000000000011B4'
-          name = 'Opskrift fundet' isSpecification = 'false'>
-          <UML:Event.parameter>
-            <UML:Parameter xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:00000000000011B5'
-              name = 'navn' isSpecification = 'false' kind = 'in'/>
-            <UML:Parameter xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:00000000000011B6'
-              name = 'information' isSpecification = 'false' kind = 'in'/>
-            <UML:Parameter xmi.id = '-64--88-1-100--137d72f:13b84852c3a:-8000:00000000000011B7'
-              name = 'kilde' isSpecification = 'false' kind = 'in'/>
-          </UML:Event.parameter>
-        </UML:CallEvent>
+        <UML:SignalEvent xmi.id = '127-0-0-1--28dbb38d:13b9497d703:-8000:00000000000014E5'
+          name = 'Opskrift fundet' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-0-1--28dbb38d:13b9497d703:-8000:00000000000014E6'
+          name = 'Skrevet på indkøbsliste' isSpecification = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -216,7 +198,7 @@
       name="untitledModel 0"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.state.ui.FigInitialState[64, 120, 16, 16]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[224, 120, 16, 16]pathVisible=false;stereotypeView=0;"
        href="-84-25-18--113--412d239b:13a4ebe14d9:-8000:0000000000000A98"
        fill="1"
        fillcolor="black"
@@ -227,7 +209,7 @@
     </private>
     
     <ellipse name="Fig0.0"
-      x="72"
+      x="232"
       y="128"
       rx="8"
       ry="8"
@@ -237,7 +219,7 @@
       strokecolor="255 0 255"
     />
     <ellipse name="Fig0.1"
-      x="72"
+      x="232"
       y="128"
       rx="8"
       ry="8"
@@ -284,13 +266,13 @@
       x="361"
       y="104"
       width="132"
-      height="24"
+      height="25"
       fill="0"
       fillcolor="white"
       stroke="0"
       strokecolor="black"
       textcolor="black"
-      font="Lucida Grande"
+      font="Dialog"
       italic="false"
       bold="false"
       textsize="13"
@@ -322,7 +304,7 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="81"
+      <moveto x="241"
               y="128" />
       <lineto x="359"
               y="128" />
@@ -416,8 +398,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
                         ownerhref="-84-25-19--97-af2ca71:13af437f640:-8000:0000000000003617"
-                        angle="173.0"
-                        offset="133" />
+                        angle="156.99999999999997"
+                        offset="42" />
     </private>
     <path name="Fig5.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -471,6 +453,40 @@
               y="149" />
     </path>
   </group>
+  <text name="Fig7"
+    x="96"
+    y="104"
+    width="112"
+    height="24"
+    fill="1"
+    fillcolor="white"
+    stroke="1"
+    strokecolor="black"
+    textcolor="black"
+    font="Dialog"
+    italic="false"
+    bold="true"
+    textsize="13"
+    justification="Center"
+  >Ingrediens</text>
+  <text name="Fig8"
+    x="96"
+    y="128"
+    width="112"
+    height="55"
+    fill="1"
+    fillcolor="white"
+    stroke="1"
+    strokecolor="black"
+    textcolor="black"
+    font="Dialog"
+    italic="false"
+    bold="false"
+    textsize="13"
+    justification="Left"
+  >navn
+mængde
+enhed</text>
 </pgml>
 <todo>
 <todolist>

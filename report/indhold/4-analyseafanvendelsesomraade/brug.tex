@@ -6,9 +6,7 @@ Denne analyse af anvendelsesområdets brug, har til formål at gøre det klart, 
 
 \subsection{Aktører}
 \label{sec:aktoerer}
-For at finde aktører, har vi spurgt os selv, hvem der skal brug systemet. Vi har identificeret 3 aktører (Bruger, Administrator og Dataudtrækker), der vil kunne interagere med \Foodl{}.  Disse aktører er vist i \tableref{table:aktoertabel}. Aktørerne Bruger og Administratorer er personer, der benytter systemet, mens Dataudtrækker er et andet system. Aktørerne specificeres med en beskrivelse af aktøren og om nødvendigt en eller flere eksempler på hver enkelt aktør.
-
-Disse beskrivelser har til formål at give læseren en bedre forståelse for, hvilke egenskaber og karakteristika en sådan aktør besidder. 
+For at finde aktører, har vi spurgt os selv, hvem der skal bruge systemet. Vi har identificeret 3 aktører: Bruger, Administrator og Dataudtrækker, der vil kunne interagere med \Foodl{}. Disse aktører er vist i \tableref{table:aktoertabel}. Aktørerne Bruger og Administratorer er personer, der benytter systemet, mens Dataudtrækker er et andet system. Bruger repræsenterer person-klassen problemområdet og kan betragtes som den samme person. Det er på grund af, at der ikke er ``brugere'' i problemområdet, da der ikke er noget system, at bruge. Aktørerne specificeres med en beskrivelse af aktøren og om nødvendigt en eller flere eksempler på hver enkelt aktør. Disse beskrivelser har til formål at give læseren en bedre forståelse for, hvilke egenskaber og karakteristika en sådan aktør besidder. 
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/aktoerbeskrivelse}
 
@@ -16,7 +14,7 @@ Disse beskrivelser har til formål at give læseren en bedre forståelse for, hv
 \label{subsec:brugsmoenstre}
 For at beskrive hændelserne, der vedører en given aktør, modellerer vi en række brugsmønstre. Brugsmønstrene præsenteres både i form af  tilstandsdiagrammer og brugsmønsterspecifikationer. Tilstandsdiagramet giver et visuelt overblik over brugsmønsteret, hvor brugsmønsterspecifikation giver en mere detaljeret beskrivelse af brugsmønsteret.
 
-I forbindelse med modelleringen af brugsmønstre, har vi fokuseret på, at identificere så mange brugsmønsterkandidater som muligt. Vi har benyttet denne teknik i et forsøg på at sikre, i at vi ikke har overset et vigtigt brugsmønster. Kandidaterne er valgt i forbindelse med en brainstorming, og er hver især blevet analyseret for relevans efter brainstormen. Dette har resulteret i at nogle af kandidaterne er blevet fravalgt. Der har været flere grunde til, at vi har fravalgt kandidater:
+I forbindelse med modelleringen af brugsmønstre, har vi fokuseret på, at identificere så mange brugsmønsterkandidater som muligt. Vi har benyttet denne teknik i et forsøg på at sikre, at vi ikke har overset et vigtigt brugsmønster. Kandidaterne er valgt i forbindelse med en brainstorming, og er hver især blevet analyseret for relevans efter brainstormen. Dette har resulteret i at nogle af kandidaterne er blevet fravalgt. Der har været flere grunde til, at vi har fravalgt kandidater:
 
 \begin{itemize}[noitemsep]
 \item Brugsmønstret har ikke været en del af anvendelsesområdet
@@ -25,5 +23,7 @@ I forbindelse med modelleringen af brugsmønstre, har vi fokuseret på, at ident
 \end{itemize}
 
 De fravalgte kandidater, samt begrundelsen fra fravælgelsen fremgår af \apref{ap:fravalgtebrugsmoenstre}.
+
+Aktøren ``bruger'' vil være den vigtigste aktør i forhold til brugen af systemet. Det er meningen, at der skal være rigtig mange brugere, der kan få gavn af systemet. Disse brugeres kompetencer mht. computerbrug vil variere utroligt meget, og det skal vi tage højde for.
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/brugsmoenstre}
