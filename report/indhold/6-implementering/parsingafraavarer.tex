@@ -4,7 +4,7 @@ Dette afsnit beskriver hvordan vi har formået at udtrække data til brug i det 
 \subsection{Samarbejde med Arla}
 Når en bruger har indtastet en mængde råvaretyper og trykker søg, så skal søgeresultatet vise opskrifter, der indeholder de indtastede råvarer. For at gøre dette muligt, er det nødvendigt at \Foodl{} indeholder data om en masse forskellige opskrifter. Da der findes mange opskriftshjemmesider på internettet, kan vi blot benytte deres data. At benytte data fra en specifik opskriftshjemmeside kræver, at vi har ejerens tilladelse til det. I dette projekt har vi af Arla fået lov til at benytte deres opskrifter, der kan ses på Arla.dk, forudsat at vi overholder disse krav:
 
-\begin{itemize}
+\begin{itemize} [noitemsep]
   \item Al den information, som vi ønsker at vise brugerne af \Foodl, skal gemmes lokalt. Det vil sige at vi må ikke loade billeder, ingredienser og lignende fra deres server, hver gang en bruger benytter \Foodl.
   \item Vi må ikke vise \Foodl{}'s brugere opskrifternes fremgangsmåde. \Foodl{} \textbf{skal} linke videre til Arla.dk når folk vil se hvordan en opskrift laves.
 \end{itemize}
@@ -177,7 +177,7 @@ Da hver iteration af løkken kalder \methodref{LongestCommonSubstring} én gang,
 \subsubsection{Mapping af ingredienser til råvaretyper}
 Den automatiske mapping omfattede 10,234 ingredienser, blandt 921 opskrifter. Tidsforbruget var ca. 4 timer, og langt de fleste ingredienser blev mappet korrekt. Ind i mellem gik mappingen galt, fx.\ blev ingrediensen \textit{groftkværnet peber} hver gang mappet til råvaretypen \textit{hvid peber} i stedet for råvaretypen \textit{peber}. For at få en bedst muligt mapping besluttede vi os for at gå alle mappings igennem igennem manuelt. Under mappingen havde vi gemt returværdien af \methodref{CompareStrings(string, string)}, der fortæller hvor ens de to sammenlignede tekststrenge var. Ved at have gemt returværdien behøver vi ikke at kontrollere mappings, der har returneret 100, da det vil sige at ingrediensen er blevet mappet til en identisk råvaretype. På denne måde kunne vi se bort fra 1,236 ingredienser, der ikke behøvede manuel kontrol.
 Til at mappe ingredienserne hurtigst muligt lavede vi et meget simpelt WinForms program skrevet i C\# (se \apref{ap:manuel-mapping}). Programmet gjorde det muligt at få vist 20 labels med ingredienser. Ud for hvert label blev vist et tekstfelt med den råvaretype, som ingrediensen var blevet mappet til. Ved at ændre i tekstfeltet kunne man hurtigt få lavet en korrekt mapping. Vi tilføjede flere funktionaliteter for at øge hastigheden vi kunne mappe med.
-\begin{itemize}
+\begin{itemize} [noitemsep]
 \item Ingredienserne blev sorteret alfabetisk. Omkring 120 ingredienser i træk var \textit{grofthakket peber}.
 \item Autocomplete gjorde det nemt at se hvilke råvarer man kunne vælge imellem og også hurtigere at indtaste råvaretypen.
 \item Råvaretyper kunne tilføjes hvis ingen fandtes, der matchede en given ingrediens.
