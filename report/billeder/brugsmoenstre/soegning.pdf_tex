@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{259.2bp}%
+    \setlength{\unitlength}{260.8bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,18 +48,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.09876543)%
+  \begin{picture}(1,1.09202454)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/soegning.pdf}}%
-    \put(0.64814815,0.91666667){\makebox(0,0)[lb]{\smash{Luk side}}}%
-    \put(0.4537037,0.84259259){\makebox(0,0)[lb]{\smash{Aktiv}}}%
-    \put(0.21604938,0.7191358){\makebox(0,0)[lb]{\smash{Råvaretype(r) på liste}}}%
-    \put(0.26234568,0.49691358){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
-    \put(0.24691358,0.58950617){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
-    \put(0.79012346,0.47222222){\makebox(0,0)[lb]{\smash{Sorteret}}}%
-    \put(0.37037037,0.28703704){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
-    \put(0.22222222,0.9382716){\makebox(0,0)[lb]{\smash{Tilføj råvaretype}}}%
-    \put(0.14197531,0.34259259){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
-    \put(0.16049383,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretye tilføjet}}}%
-    \put(0.49691358,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretype fjernet}}}%
+    \put(0.64417178,0.91104294){\makebox(0,0)[lb]{\smash{Luk side}}}%
+    \put(0.45092025,0.83742331){\makebox(0,0)[lb]{\smash{Aktiv}}}%
+    \put(0.21472393,0.71472393){\makebox(0,0)[lb]{\smash{Råvaretype(r) på liste}}}%
+    \put(0.2607362,0.49386503){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
+    \put(0.24539877,0.58588957){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
+    \put(0.79447853,0.5){\makebox(0,0)[lb]{\smash{Sorteret}}}%
+    \put(0.26380368,0.25766871){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering}}}%
+    \put(0.2208589,0.93251534){\makebox(0,0)[lb]{\smash{Tilføj råvaretype}}}%
+    \put(0.07361963,0.32822086){\makebox(0,0)[lb]{\smash{Favorisering}}}%
+    \put(0.14723926,0.05521472){\makebox(0,0)[lb]{\smash{Råvaretype tilføjet}}}%
+    \put(0.49386503,0.05521472){\makebox(0,0)[lb]{\smash{Råvaretype fjernet}}}%
+    \put(0.71165644,0.35889571){\makebox(0,0)[lb]{\smash{Begrænset}}}%
   \end{picture}%
 \endgroup%
