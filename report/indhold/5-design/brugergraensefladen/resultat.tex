@@ -5,7 +5,7 @@ Når en søgning bliver udført, så bliver brugeren navigeret videre til søger
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=1]{billeder/foodl/thumbnails/soegeresultat.png}
+	\includegraphics[scale=0.4]{billeder/foodl/thumbnails/soegeresultat.png}
 	\capt{Denne figur har til formål at give et overblik over systemets resultatside.}
 	\label{fig:overblik-resultat}
 \end{figure}
@@ -37,7 +37,7 @@ Ydermere er der mulighed for at tilføje og fjerne en opskrift til ens favoritli
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.7]{billeder/foodl/opskrift.jpg}
+	\includegraphics[scale=0.5]{billeder/foodl/opskrift.png}
 	\capt{Her ses et eksempel på en opskrift, der kan være et resultat på en søgning.}
 	\label{fig:foodl-opskrift}
 \end{figure}
@@ -45,12 +45,12 @@ Ydermere er der mulighed for at tilføje og fjerne en opskrift til ens favoritli
 I toppen af resultatsiden, som er vist på \figref{fig:overblik-resultat}, er der en toolbar, hvorfra brugeren har forskellige muligheder for at manipulere søgningsresultatet. Der er blevet implementeret en toolbar i toppen af siden, der følger brugerens bevægelser mht. at scrolle op og ned. På denne måde behøver brugeren ikke at scrolle helt til toppen for at udføre en handling på søgningsresultatet. 
 
 Figur \ref{fig:foodl-toolbar} præsenterer toolbaren. I venstre side er der en samling af tre knapper, der bruges til at begrænse søgningsresultatet mht. tilberedningstiden. Her er der mulighed for at markere flere af gangen, og default kriteriet er, hvis ingen er markeret, så er alle markeret. Dette betyder, at systemet starter med at vise alle resultater. 
-I midten af toolbaren er der et skaleringsværktøj, der kan bruges til at skalere opskrifternes portioner mht. antal personer. Man kan skalere dem ned til en person og op til 10 personer. Vi valgte 10 som maximum, fordi det er relativt let at skalere yderligere, hvis dette er ønsket og det er de færreste gange, man sverer rester for over 10 mennesker.
+I midten af toolbaren er der et skaleringsværktøj, der kan bruges til at skalere opskrifternes portioner mht. antal personer. Man kan skalere dem ned til en person og op til 10 personer. Vi valgte 10 som maximum, fordi det er relativt let at skalere yderligere, hvis dette er ønsket og det er de færreste gange, man serverer rester for over 10 mennesker.
 I højre side af toolbaren er der endnu en samling af tre knapper, men disse benyttes til at sortere opskrifterne. Default er ``relevans''. De to knappesamlinger er forskellige på to måder; hvad de bruges til, og at der kun er mulighed for at markere en knap af gangen ved sorteringsknapperne (højre side) og mulighed for markering af flere af gangen ved afgrænsningsknapperne (venstre side).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{billeder/foodl/toolbar.jpg}
+	\includegraphics[scale=0.5]{billeder/foodl/toolbar.png}
 	\capt{Systemets toolbar, der er direkte under sidehovedet.}
 	\label{fig:foodl-toolbar}
 \end{figure}
@@ -59,18 +59,11 @@ Ud over toolbaren, så viser \figref{fig:foodl-sidebar} en sidebar, hvilket gør
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{billeder/foodl/sidebar.jpg}
+	\includegraphics[scale=0.5]{billeder/foodl/sidebar.png}
 	\capt{Systemets sidebar, der vises ved resultatsiden.}
 	\label{fig:foodl-sidebar}
 \end{figure}
 
-Hvis en bruger vælger at benytte sig af indkøbslisten, så kan denne tilgås via sidehovedet, ved at trykke på ``indkøbsliste''. I sidehovedet kan man også se, hvor mange varer, der allerede er blevet tilføjet til listen.
+Hvis en bruger vælger at benytte sig af indkøbslisten, så kan denne tilgåes via sidehovedet, ved at trykke på ``indkøbsliste''. I sidehovedet kan man også se, hvor mange varer, der allerede er blevet tilføjet til listen.
 
-Hvis brugere opdager en fejl med en af opskrifterne, så er det muligt at rapportere fejl i systemet. På alle opskrifterne er der en trekantet advarsels-knap i nederste højre hjørne, som kan bruges til at rapportere en fejl vedr.\ en opskrift. Figur \ref{fig:foodl-fejlrapportering} viser, hvordan det ser ud, når en bruger trykker på rapporteringsknappen ved en opskrift. Der popper en lille boks op, og baggrunden af siden bliver mørk for at fokusere koncentrationen på oprettelse af fejlrapporten. Her kan man nu specificere, hvad fejlen handler om og evt.\ give en beskrivelse, inden man vælger at indsende fejlen. Beskrivelsesfeltet vises dynamisk i forhold til den valgte fejlkategori.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{billeder/foodl/fejlrapportering.jpg}
-	\capt{Systemets fejlrapportering.}
-	\label{fig:foodl-fejlrapportering}
-\end{figure}
+Hvis brugere opdager en fejl med en af opskrifterne, så er det muligt at rapportere fejl i systemet. På alle opskrifterne er der en trekantet advarsels-knap i nederste højre hjørne, som kan bruges til at rapportere en fejl vedr.\ en opskrift. Der popper en lille boks op, og baggrunden af siden bliver mørk for at fokusere koncentrationen på oprettelse af fejlrapporten. Her kan man nu specificere, hvad fejlen handler om og evt.\ give en beskrivelse, inden man vælger at indsende fejlen. Beskrivelsesfeltet vises dynamisk i forhold til den valgte fejlkategori.
