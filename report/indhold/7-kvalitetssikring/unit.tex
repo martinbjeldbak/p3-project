@@ -3,14 +3,16 @@
 For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, som er et framework Ruby til ``behaviour-driven development''. Vi har ikke benyttet denne udviklingsmodel og har i stedet benyttet frameworket til at skrive unittests med.
 Vi fokuseret på at lave unittest for controllers og helpers, fordi modellen er rene ActiveRecord moduler og al signifikant opførsel i views er implementeret i helpers.
 
-\subsection{CompareStrings}
-Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}. Vi unittestede denne funktion I Ruby, ved at initialisere et array:
-\begin{lstlisting}
+\subsection{Unittesting af \methodref{CompareStrings}}
+Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}. Vi unittestede denne funktion I Ruby, ved at initialisere et array som vist \lstref{lst:testcases}.
+
+\begin{lstlisting}[caption={Et eksempel på en række testcases til brug ved unittesting.},label=lst:testcases,language=Ruby]
 test_cases = [
   ["aa12345", "aa67890", "aa"],
   ["aa12345", "678aa90", "aa"],
   ["aa12345", "67890aa", "aa"]
 ]
 \end{lstlisting}
+
 I arrayet \texttt{test\_cases}, består hvert element af et array, hvor hvert element i nævnte rækkefølge er: [input1, input2, forventet returværdi].
 For hvert element i arrayet, blev det testet om \methodref{CompareStrings(input1, inpu2)} returnerede den forventede værdi. Eksemplet er kun et udpluk af 26 test-cases, der fremgår af kildekoden.
