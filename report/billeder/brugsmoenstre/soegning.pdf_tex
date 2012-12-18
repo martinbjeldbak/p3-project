@@ -1,6 +1,6 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'soegning.pdf' (pdf, eps, ps)
+%% Accompanies image file 'billeder/brugsmoenstre/soegning.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -50,17 +50,16 @@
   \makeatother%
   \begin{picture}(1,1.09876543)%
     \put(0,0){\includegraphics[width=\unitlength]{billeder/brugsmoenstre/soegning.pdf}}%
-    \put(0.65123457,0.91666667){\makebox(0,0)[lb]{\smash{Luk side}}}%
-    \put(0.45679012,0.84259259){\makebox(0,0)[lb]{\smash{Aktiv}}}%
-    \put(0.13580247,0.7191358){\makebox(0,0)[lb]{\smash{Råvaretype(r) på liste}}}%
-    \put(0.2808642,0.49691358){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
-    \put(0.25308642,0.58950617){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
+    \put(0.64814815,0.91666667){\makebox(0,0)[lb]{\smash{Luk side}}}%
+    \put(0.4537037,0.84259259){\makebox(0,0)[lb]{\smash{Aktiv}}}%
+    \put(0.21604938,0.7191358){\makebox(0,0)[lb]{\smash{Råvaretype(r) på liste}}}%
+    \put(0.26234568,0.49691358){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
+    \put(0.24691358,0.58950617){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
     \put(0.79012346,0.47222222){\makebox(0,0)[lb]{\smash{Sorteret}}}%
-    \put(0.39506173,0.28703704){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
-    \put(0.22222222,0.93518519){\makebox(0,0)[lb]{\smash{Tilføj råvaretype}}}%
-    \put(0.15740741,0.34259259){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
-    \put(0.17283951,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretye tilføjet}}}%
-    \put(0.50925926,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretype fjernet}}}%
-    \put(0.62037037,0.69444444){\makebox(0,0)[lb]{\smash{Tilføj råvaretype}}}%
+    \put(0.37037037,0.28703704){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
+    \put(0.22222222,0.9382716){\makebox(0,0)[lb]{\smash{Tilføj råvaretype}}}%
+    \put(0.14197531,0.34259259){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
+    \put(0.16049383,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretye tilføjet}}}%
+    \put(0.49691358,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretype fjernet}}}%
   \end{picture}%
 \endgroup%
