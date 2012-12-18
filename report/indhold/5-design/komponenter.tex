@@ -5,7 +5,7 @@ Resultatet ved at udarbejde en komponentarkitektur er et revideret klassediagram
 
 \subsection{Generel komponentarkitektur}
 En 3-lag arkitektur\cite{Eckerson1995}, der ses i \figref{fig:simpellag} er en meget generel komponentarkitektur.
-Komponenten ``brugergrænseflade'' har ansvaret for at aflæse brugerens interaktion med systemets knapper og ud fra dette opdatere, hvad brugeren får vist på skærmen. 
+Komponenten ``brugergrænseflade'' har ansvaret for at aflæse brugerens interaktion med systemets knapper og ud fra disse opdatere, hvad brugeren får vist på skærmen. 
 Funktionskomponenten er ansvarlig for systemets funktionalitet. Funktionaliteten bliver leveret til brugergrænsefladen som et set operationer på de offentlige klasser i funktionskomponenten. 
 Modelkomponentens primære ansvarsområde er at holde styr på objekterne, der repræsenterer problemområdet. Sker der noget relevant i problemområdet, så skal modelkomponentens objekter skifte tilstand i overenstemmelse hermed.
 
