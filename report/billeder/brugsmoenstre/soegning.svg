@@ -16,9 +16,9 @@ Luk side</text>
 <text font-family="Dialog" font-size="12" x="148" y="83">
 Aktiv</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="14" x2="309" y1="93" y2="93"/>
-<rect fill="#00ff" height="24" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="38" y="110"/>
-<rect fill="#ffffff" height="24" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="38" y="110"/>
-<rect fill="#ffffff" height="22" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="39" y="111"/>
+<rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="38" y="110"/>
+<rect fill="#ffffff" height="32" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="38" y="110"/>
+<rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="39" y="111"/>
 <text font-family="Dialog" font-size="12" x="44" y="123">
 Råvaretype(r) på liste</text>
 <rect fill="#00ff" height="32" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="200" x="38" y="182"/>
@@ -26,10 +26,10 @@ Råvaretype(r) på liste</text>
 <rect fill="#ffffff" height="30" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="198" x="39" y="183"/>
 <text font-family="Dialog" font-size="12" x="91" y="195">
 Søgeresultat vist</text>
-<polyline fill="none" points="78,133 78,182" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="78,141 78,182" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="71" x2="78" y1="170" y2="182"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="85" x2="78" y1="170" y2="182"/>
-<text font-family="Dialog" font-size="12" x="82" y="161">
+<text font-family="Dialog" font-size="12" x="82" y="165">
 Klik på "søg"</text>
 <polyline fill="none" points="237,206 254,206 254,190 237,190" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="249" x2="237" y1="183" y2="190"/>
@@ -44,8 +44,8 @@ Indkøbslistehåndtering()</text>
 <polyline fill="none" points="69,29 69,110" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="62" x2="69" y1="98" y2="110"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="76" x2="69" y1="98" y2="110"/>
-<text font-family="Dialog" font-size="12" x="79" y="53">
-Tilføj råvaretype(r)</text>
+<text font-family="Dialog" font-size="12" x="72" y="53">
+Tilføj råvaretype</text>
 <polyline fill="none" points="110,213 110,230 78,230 78,213" stroke="#000000" stroke-width="1"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="85" x2="78" y1="225" y2="213"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="71" x2="78" y1="225" y2="213"/>
@@ -61,4 +61,9 @@ Råvaretye tilføjet</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="224" x2="231" y1="297" y2="285"/>
 <text font-family="Dialog" font-size="12" x="165" y="338">
 Råvaretype fjernet</text>
+<polyline fill="none" points="173,118 198,118 198,134 173,134" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="185" x2="173" y1="127" y2="134"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="185" x2="173" y1="141" y2="134"/>
+<text font-family="Dialog" font-size="12" x="201" y="131">
+Tilføj råvaretype</text>
 </svg>

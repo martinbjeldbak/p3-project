@@ -1,17 +1,16 @@
 \section{Unittests}
 \label{sec:unittests}
-For at verificere at programmet opfører sig som vi ønsker, bruger vi RSpec Rails hvilket er et framework for Rails til ``behaviour-driven development'' (også kendt som ``test-driven development''). Vi benytter ikke denne udviklingsmodel og frameworket benyttes her til at lave unittests.
-Vi har lagt fokus på at lave unittest for controllers og helpers, fordi modellen er rene ActiveRecord moduler og al signifikant opførsel i views er implementeret i helpers.
+For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, som er et framework Ruby til ``behaviour-driven development''. Vi har ikke benyttet denne udviklingsmodel og har i stedet benyttet frameworket til at skrive unittests med.
+Vi fokuseret på at lave unittest for controllers og helpers, fordi modellen er rene ActiveRecord moduler og al signifikant opførsel i views er implementeret i helpers.
 
 \subsection{CompareStrings}
-Dataudtrækkeren benyttede ikke Rails frameworket, hvorfor unittesten af dens funktion \methodref{CompareStrings} ikke blev lavet med Rspec Rails. Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}. Vi unittestede denne funktion I Ruby, ved at initialisere et array:
+Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}. Vi unittestede denne funktion I Ruby, ved at initialisere et array:
 \begin{lstlisting}
-test_cases = 
-		[
-		["aa12345", "aa67890", "aa"],
-		["aa12345", "678aa90", "aa"],
-		["aa12345", "67890aa", "aa"]
-		]
+test_cases = [
+  ["aa12345", "aa67890", "aa"],
+  ["aa12345", "678aa90", "aa"],
+  ["aa12345", "67890aa", "aa"]
+]
 \end{lstlisting}
-I arrayet \textit{text\_cases}, består hvert element af et array, hvor hvert element i nævnte rækkefølge er: [input1, input2, forventet returværdi].
+I arrayet \texttt{test\_cases}, består hvert element af et array, hvor hvert element i nævnte rækkefølge er: [input1, input2, forventet returværdi].
 For hvert element i arrayet, blev det testet om \methodref{CompareStrings(input1, inpu2)} returnerede den forventede værdi. Eksemplet er kun et udpluk af 26 test-cases, der fremgår af kildekoden.
