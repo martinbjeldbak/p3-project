@@ -56,10 +56,10 @@
     \put(0.26234568,0.49691358){\makebox(0,0)[lb]{\smash{Søgeresultat vist}}}%
     \put(0.24691358,0.58950617){\makebox(0,0)[lb]{\smash{Klik på "søg"}}}%
     \put(0.79012346,0.47222222){\makebox(0,0)[lb]{\smash{Sorteret}}}%
-    \put(0.37037037,0.28703704){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering()}}}%
+    \put(0.37037037,0.28703704){\makebox(0,0)[lb]{\smash{Indkøbslistehåndtering}}}%
     \put(0.22222222,0.9382716){\makebox(0,0)[lb]{\smash{Tilføj råvaretype}}}%
-    \put(0.14197531,0.34259259){\makebox(0,0)[lb]{\smash{Favorisering()}}}%
-    \put(0.16049383,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretye tilføjet}}}%
+    \put(0.14197531,0.34259259){\makebox(0,0)[lb]{\smash{Favorisering}}}%
+    \put(0.16049383,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretype tilføjet}}}%
     \put(0.49691358,0.05555556){\makebox(0,0)[lb]{\smash{Råvaretype fjernet}}}%
   \end{picture}%
 \endgroup%
