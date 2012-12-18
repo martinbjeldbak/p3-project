@@ -1,42 +1,39 @@
 \section{Klasser}
 \label{sec:klasser}
 
-En klasse er en beskrivelse af en samling af objekter med samme struktur, adfærdsmønster og attributter \cite[s. ~51]{ooad}. To klasser kan have en association mellem dem, men det er ikke altid helt klart, hvad denne association skal betyde. Vi har løst dette problem ved at navngive nogle af associationerne mellem klasser. Ser vi på \figref{fig:klassediagram} i \secref{sec:struktur}, så ser vi eksempler på navngivne associationer. Her er en ``Vare'' associeret med en ``Person'', som er navngivet som ``Indkøbsliste''. 
+En klasse er en beskrivelse af en samling af objekter med samme struktur, adfærdsmønster og attributter \cite[s. ~51]{ooad}. To klasser kan have en association mellem dem, men det er ikke altid helt klart, hvad denne association skal betyde. Vi har løst dette problem ved at navngive nogle af associationerne mellem klasser. Ser vi på \figref{fig:klassediagram} i \secref{sec:struktur}, så ser vi eksempler på navngivne associationer. Her er en ``Vare'' associeret med en ``Person'', og associationen er navngivet ``Indkøbsliste''. 
 
 Overblikket over hvilke klasser systemet skal have, kan skabes ved først at finde så mange klasserkandidater som muligt, og dernæst at afgrænse disse, så kun de mest relevante klasser er tilbage. I vores tilfælde anvendte vi en kombination af rigebilleder, som kan ses i \figref{fig:rigbillede1} og \figref{fig:rigbillede2}, samt systemdefinitionen som hjælpemidler til at finde frem til de klasser, som vi vil modellere i problemområdet.
 
-Grundet den evolutionære arbejdsmetode, som vi har arbejdet ud fra, er klasser undervejs i forløbet blevet tilføjet og fjernet. De klasser som er blevet fravalgt, kan ses i \apref{ap:fravalgteklasser}. Herunder ses de valgte klasser og associationer, samt beskrivelser og begrundelser for, hvorfor de er med i vores problemområde.
+Grundet den evolutionære arbejdsmetode, som vi har arbejdet ud fra, er klasser undervejs i forløbet blevet tilføjet og fjernet. De klasser som er blevet fravalgt, kan ses i \apref{ap:fravalgteklasser}. Herunder ses de valgte klasser, samt beskrivelser og begrundelser for, hvorfor de er med i vores problemområde.
 
 \begin{description}
 \item[Person] \hfill \\
-En person er en der er ansvarlig eller hjælper til ved madlavningen i husstanden. En person kan være i besiddelse af en indkøbsliste, der bruges til at håndtere fremtidige indkøb af varer. Derudover kan en person have bogmærket nogle opskrifter, som vedkommende synes godt om.
+En person er en, der er ansvarlig eller hjælper til med madlavningen i husstanden. En person kan være i besiddelse af en indkøbsliste, der bruges til at håndtere fremtidige indkøb af varer. Derudover kan en person have bogmærket nogle opskrifter, som vedkommende synes godt om.
 
 \item[Opskrift] \hfill \\
 En opskrift er den centrale klasse i problemområdet. En opskrift kan findes i en opskriftsamling, i en kogebog eller på nettet. Opskrifter indeholder en ingrediensliste. En opskrift kan være ikke-bogmærket eller bogmærket, hvis en person ønsker, at opskriften skal være let tilgængelig eller ej.
 
-\item[Bogmærke] \hfill \\
-Støder personen på en opskrift, som personen synes er god, og ønsker at gøre den let tilgængelig til en anden gang, så skal det være muligt at bogmærke denne. Dette er en association mellem klasserne person og opskrift.
-
 \item[Råvaretype] \hfill \\
-En råvaretype findes i køleskabene og på madhylderne i husstandene og i supermarkeder. Råvaretype adskiller sig fra klassen ingrediens, ved at en råvaretype ikke har nogen enhed eller mængde. Et eksempel på råvaretyper kunne være ``gulerødder'', ``mælk'', ``hakket oksekød'' osv. 
+En råvaretype findes i køleskabene, på madhylderne i husstanden og i supermarkederne. Råvaretype adskiller sig fra klassen ingrediens, ved at en råvaretype ikke har nogen enhed eller mængde. Et eksempel på råvaretyper kunne være ``gulerødder'', ``mælk'', ``hakket oksekød'' osv. 
 
 \item[Ingrediens] \hfill \\ 
-En ingrediens tilhører en råvaretype, og består af en mængde og en enhed. En ingrediens kan befinde sig på en ingrediensliste på en opskrift. Klassen ingrediens skiller sig ud fra råvaretype, netop fordi den udover at være en råvare, også har en mængde og en enhed. Eksempler på ingredienser er: ``3 styk gulerødder'', ``4 liter mælk'', ``500 gram hakket oksekød'' osv.
+En ingrediens tilhører en råvaretype, og består af en mængde og en enhed. En ingrediens kan befinde sig på en ingrediensliste på en opskrift. Klassen ingrediens skiller sig ud fra råvaretype, netop fordi den udover at være en råvaretype, også har en mængde og en enhed. Eksempler på ingredienser er: ``3 styk gulerødder'', ``4 liter mælk'', ``500 gram hakket oksekød'' osv.
 
 \item[Vare] \hfill \\
-En vare er som man kender fra supermarkeder. En vare, i modsætning til ingredienser, tilhører ikke en råvaretype. En vare kan \fx være toiletpapir, vaskepulver eller blyanter. En vare kan befinde sig på en persons indkøbsliste.
+En vare er en vare som man kender det fra supermarkeder. En vare, i modsætning til ingredienser, tilhører ikke en råvaretype. En vare kan \fx være toiletpapir, vaskepulver eller blyanter. En vare kan befinde sig på en persons indkøbsliste.
 
 \item[Fejl] \hfill \\
-Fejl opstår som \fx en mængdefejl i en opskrift eller en manglende instruktion i fremgangsmåden. Fejl er uventede, og det er svært at sige, hvor de opstår og i hvilke omfang.
+Fejl opstår som \fx en mængdefejl i en opskrift eller en manglende instruktion i fremgangsmåden. Fejl er uventede, og det er svært at sige, hvor de opstår og i hvilket omfang.
 
 \end{description}
 
 Ud fra de valgte klasser, skal vi have formuleret nogle hændelser, som beskriver klassernes adfærd. For klassen ``opskrift'', kan en hændelse \fx være ``opskrift fundet''. En hændelse er en bestemt adfærd for en klasse, som beskrives med udsagnsord. En hændelse kan involvere en til flere klasser. Som i eksemplet før, så involverer hændelsen ``opskrift fundet'', både ``opskrift'' men også ``ingrediens'', da vi vurderer, at man skal finde en opskrift før man kan arbejde med ingredienser, fordi en opskrift består af ingredienser. Ligesom med klasser, så har vi gennem forløbet, pga. den evolutionære arbejdsmetode, tilføjet og fjernet hændelser, igen og igen. De hændelser, som er blevet fravalgt, kan ses i \apref{ap:fravalgteklasseroghaendelser}.
 
-I \tableref{table:haendelsestabel} ses de valgte hændelser, og hvilke klasser, disse hændelser, har en indflydelse på. Hver hændelse forårsager et tilstandsskift, og disse tilstande kan ses i tilstandsdiagrammerne i \secref{sec:adfaerd}. Hændelsestabellen er resultaten analysen af problemområdet, men vi præsenterer den allerede nu, da den giver et godt overblik over de hændelser og klasser, vi er endt op med. 
+I \tableref{table:haendelsestabel} ses de valgte hændelser, og hvilke klasser, disse hændelser, har en indflydelse på. Hver hændelse forårsager et tilstandsskift, og disse tilstande kan ses i tilstandsdiagrammerne i \secref{sec:adfaerd}. Hændelsestabellen er resultatet af analysen af problemområdet, men vi præsenterer den allerede nu, da den giver et godt overblik over de hændelser og klasser, vi er endt op med. 
 
-I hændelsestabellen benytter vi \iter-symbolet til at illustrere, at den tilhørende hændelse kan forekomme flere gange i samme klasse. Det betyder, at denne hændelse kan ses som en iteration i tilstandsdiagrammerne i \secref{sec:adfaerd}. Derudover benytter vi \once-symbolet til at illustrere, at den tilhørende hændelse forekommer en gang i samme klasse. Det betyder, at hændelsen kan ses som en selektion eller en sekvens i tilstandsdiagrammerne.
+I hændelsestabellen benytter vi \iter-symbolet til at illustrere, at den tilhørende hændelse kan forekomme flere gange i den pågældende klasse. Det betyder, at denne hændelse kan ses som en iteration i tilstandsdiagrammerne i \secref{sec:adfaerd}. Derudover benytter vi \once-symbolet til at illustrere, at den tilhørende hændelse blot kan forekomme en gang i klassen. Det betyder, at hændelsen kan ses som en selektion eller en sekvens i tilstandsdiagrammerne.
 
 \input{indhold/3-analyseafproblemomraade/haendelser/haendelsestabel}
 
-Problemområdet består af madrester og madlavning i husstanden, derfor er det vigtigt, at disse bliver repræsenteret som klasser. Disse går ind under klasserne opskrift, ingrediens og råvaretype. Vi ønsker dog ikke at overvåge, om der bliver lavet mad i husstanden, men vi ønsker blot at udvikle et system, der giver mulighed for at genbruge madrester.
+Problemområdet består af madrester og madlavning i husstanden, derfor er det vigtigt, at problemområdet bliver repræsenteret ordentligt, i form af klasser. Madlavning, skal ikke forståes, som at vi ønsker at overvåge, om der bliver lavet mad i husstanden, da det vi ønsker blot er at udvikle et system, der giver mulighed for at genbruge madrester, og give inspiration til madlavningen.

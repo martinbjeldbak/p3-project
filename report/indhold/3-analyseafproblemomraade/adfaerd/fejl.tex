@@ -1,10 +1,12 @@
 \subsection{Fejl}
-Fejl opstår ved, at opskriftsskribenten glemmer eller overser d\'{e}t, at tilføje nogle vigtige ingredienser i en opskrift, eller \fx mangler et trin i fremgangsmåden. Skarpe hjemmekokke kan opdage sådan nogle fejl og ville godt kunne tænke sig, at give deres input til at hjælpe forelaget korrigere de fejl, der måtte eksistere i opskriften. Dette kan drastisk forbedre kvaliteten af udgivelsen. Tilstandsdiagrammet for klassen ``fejl'' ses i \figref{fig:fejl}.
+Fejl opstår ved, at opskriftsskribenten glemmer eller overser d\'{e}t, at tilføje nogle vigtige ingredienser i en opskrift, eller \fx mangler et trin i fremgangsmåden. Det skal derfor være muligt for personer, at indrapportere deres input, så de kan hjælpe forelaget med at korrigere de fejl, der måtte eksistere i opskriften. Dette kan være med til at forbedre kvaliteten af udgivelsen. Tilstandsdiagrammet for klassen ``fejl'' ses i \figref{fig:fejl}.
 
-Starthændelsen \textit{fejl fundet} opstår, når læseren opdager en fejl i en opskrift. Derefter eksisterer der en selektion, hvor brugeren har valget mellem at rapport\'{e}r fejlen til opskriftsskribenten (hændelsen \textit{fejl rapporteret}) eller blot springe den over og gå videre til en anden opskrift (hændelsen \textit{fejl bortset}, hvilket fører til henholdsvis en ny tilstand ``fejl rapporteret'' eller sluttilstanden. Hvordan fejlen bliver rapporteret er ikke relevant i forhold til denne modellering af problemområdet, vi er bare interesseret i, at det bliver gjort. Når fejlen er rapporteret, er der mulighed for både en iterativ og en tilstandsændrende (til sluttilstanden) form for tilbagemelding (hændelsen \textit{tilbagemelding modtaget}). Dette afhænger af kontekten mellem brugeren og opskriftskribenten, om kontakten kun sker envejs eller om der er løbende kontakt mellem de to parter.
-
-\pdffig[0.6]{tilstandsdiagrammer/fejl}
-{Tilstandsdiagram for klassen ``fejl''. Klassen har to tilstande, som begge kan føre til sluttilstanden i forhold til de valg, som der bliver foretaget. Derudover er det muligt, at bevæge sig rundt ved brug af 5 forskellige hændelser.}
-  {fig:fejl}
+Starthændelsen \textit{fejl fundet} opstår, når læseren opdager en fejl i en opskrift. Derefter eksisterer der en selektion, hvor brugeren har valget mellem at rapport\'{e}r fejlen til opskriftsskribenten (hændelsen \textit{fejl rapporteret}) eller blot springe den over og gå videre til en anden opskrift (hændelsen \textit{fejl set bort fra}, hvilket fører til henholdsvis en ny tilstand ``fejl rapporteret'' eller sluttilstanden. Hvordan fejlen bliver rapporteret er ikke relevant i forhold til denne modellering af problemområdet, vi er bare interesseret i, at det bliver gjort. Når fejlen er rapporteret, er der mulighed for både en iterativ og en tilstandsændrende (til sluttilstanden) form for tilbagemelding (hændelsen \textit{tilbagemelding modtaget}). Dette afhænger af konteksten mellem brugeren og opskriftskribenten, om kontakten kun sker envejs eller om der er løbende kontakt mellem de to parter.
 
 Klassen er, ligesom vare-klassen, kommet til verden ud fra gruppediskussioner under komponentarkitekturdesignet. Dette er grundet, at vi mener forskellige opskriftshjemmesider har varierende kvalitet af opskrifter. Derfor skal man, som forbrugere, kunne gøre andre opmærksom på diverse fejl der skulle befinde sig på en opskrift. Så har modtageren mulighed for at kigge på fejlene og eventuelt rette dem, så brugere får en endnu bedre oplevelse.
+
+\pdffig[0.6]{tilstandsdiagrammer/fejl}
+{Tilstandsdiagram for klassen ``fejl''. Klassen har to tilstande, som begge kan føre til sluttilstanden i forhold til de valg, som der bliver foretaget}
+  {fig:fejl}
+
+
