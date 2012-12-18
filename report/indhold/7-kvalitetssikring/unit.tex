@@ -3,7 +3,7 @@
 For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, som er et framework Ruby til ``behaviour-driven development''. Vi har ikke benyttet denne udviklingsmodel og har i stedet benyttet frameworket til at skrive unittests med.
 Vi fokuseret på at lave unittest for controllers og helpers, fordi modellen er rene ActiveRecord moduler og al signifikant opførsel i views er implementeret i helpers.
 
-\subsection{CompareStrings}
+\subsection{Unittesting af \methodref{CompareStrings}}
 Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}. Vi unittestede denne funktion I Ruby, ved at initialisere et array:
 \begin{lstlisting}
 test_cases = [
