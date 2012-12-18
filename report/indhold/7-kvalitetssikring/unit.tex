@@ -1,7 +1,26 @@
 \section{Unittests}
 \label{sec:unittests}
-For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, som er et framework Ruby til ``behaviour-driven development''. Vi har ikke benyttet denne udviklingsmodel og har i stedet benyttet frameworket til at skrive unittests med.
-Vi fokuseret på at lave unittest for controllers og helpers, fordi modellen er rene ActiveRecord moduler og al signifikant opførsel i views er implementeret i helpers.
+For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, som er et Ruby framework, der først og fremmest er minded mod ``behaviour-driven development'', men også kan bruges til at skrive unittests med. Vi har unittestet bruger-modellen, fordi den er central for systemet, og den er i direkte kontakt med brugeren. Derudover har vi også unittestet enkelte forespørgelser, nemlig log-in-forespørgelsen og log-ud-forespørgelsen. Vi har ikke foretaget unittest af hele systemet, hvilket er grundet nød af resurser, og idet pålidligheds kriteriet, specificeret i \chapref{chap:design}, er blevet vurderet som ``mindre vigtigt'', har vi valgt at nedprioritere det. Eksempler på nogle af de unittests vi har foretaget på bruger-modellen, ved hjælp af RSpec, ses i \lstref{lst:password} og \lstref{lst:email}.
+
+\begin{lstlisting}[caption={Et eksempel på unittesting af, om brugeren har indtastet et password, når han/hun opretter sig som bruger},label=lst:password,language=Ruby]
+describe "when password is not present" do
+    before { @user.password = @user.password_confirmation = " "}
+    it {should_not be_valid}
+end
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Et eksempel på unittesting af, om en brugers email er valid, når han/hun opretter sig som bruger},label=lst:email,language=Ruby]
+describe "when email format is invalid" do
+	it "should be invalid" do
+    	addresses = %w[user@foo,com user_at_foo.org example.user@foo.
+                 	 foo@bar_baz.com foo@bar+baz.com]
+    	addresses.each do |invalid_address|
+    		@user.email = invalid_address
+        	@user.should_not be_valid
+    	end
+    end
+end
+\end{lstlisting}
 
 \subsection{Unittesting af \methodref{CompareStrings}}
 Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}. Vi unittestede denne funktion I Ruby, ved at initialisere et array som vist \lstref{lst:testcases}.
