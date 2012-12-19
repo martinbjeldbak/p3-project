@@ -8,7 +8,7 @@ Derudover består en Rails-applikation også af helpers og assets. Helpers er hj
 \subsection{Controllers}
 \label{sec:controllers}
 
-Det centrale i implementeringen af funktionskomponenten i vores webapplikation er webapplikationens controllers. Dette er måden, hvorpå man i en MVC-applikation fordeler ansvaret for de forskellige modelklasser mellem flere controller-klasser. Som hovedregel laver man en controller for hver modelklasse, med det formål at styre klientens interaktion med den modelklasse. Webapplikationen indeholder følgende controllers:
+Det centrale i implementeringen af controllerkomponenten i vores webapplikation er dets controllers. Controllerkomponenten styrer, hvorpå man i en MVC-applikation fordeler ansvaret for de forskellige modelklasser mellem flere controller-klasser. Som hovedregel laver man en controller for hver modelklasse, med det formål at styre klientens interaktion med den pågældende modelklasse. Webapplikationen indeholder følgende controllers:
 
 \begin{description}
   \item[ApplicationController] \hfill \\ 
@@ -33,7 +33,7 @@ Det centrale i implementeringen af funktionskomponenten i vores webapplikation e
   Denne controller håndterer brugersessions, dvs. når en bruger vil logge ind eller ud.
 
   \item[ShoppingListController] \hfill \\
-  Indkøbslisten håndteres med denne controller. Tilføjelsen af elementer, hvad enten det er ingredienser, rå tekststrenge eller hele opskrifter, samt sletning af elementer muliggøres af denne controller.
+  Indkøbslisten håndteres med denne controller. Tilføjelsen af elementer, hvad enten det er ingredienser, rå tekststrenge eller hele opskrifter. Sletning af elementer muliggøres også af denne controller.
 
   \item[UsersController] \hfill \\
   Denne controller håndterer alt i forbindelse med brugere, dvs. f.eks. opretning af bruger, opdatering af kodeord og funktionen "Glemt kodeord".
@@ -47,7 +47,7 @@ Det centrale i implementeringen af funktionskomponenten i vores webapplikation e
 \subsection{Tabeller}
 \label{sec:tabeller}
 
-Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. Hver kasse repræsenterer en tabel i databasen, og hver pil repræsenterer en relation mellem to tabeller. Pilen vender således, at den peger væk fra den tabel, som har en fremmed nøgle. Det ses \fx mellem \dbtableref{ingredients} og \dbtableref{food\_types}. Her indeholder tabellen \dbtableref{ingredients} en kolonne \texttt{food\_type\_id}, som bruges til at pege på en række i \dbtableref{food\_types}-tabellen, derfor pilen fra \dbtableref{ingredients} til \dbtableref{food\_types}.
+Hver model svarer til en tabel i databasen. Vores tabelstruktur kan ses i \figref{fig:database}. Hver kasse repræsenterer en tabel i databasen, og hver pil repræsenterer en relation mellem to tabeller. Pilen vender således, at den peger væk fra den tabel, som har en fremmed nøgle. Det ses \fx mellem \dbtableref{ingredients} og \dbtableref{food\_types}. Her indeholder tabellen \dbtableref{ingredients} en kolonne \texttt{food\_type\_id}, der er en fremmed nøgle, som bruges til at pege på en række i \dbtableref{food\_types}-tabellen, derfor pilen fra \dbtableref{ingredients} til \dbtableref{food\_types}.
 
 \dbtableref{sessions}-tabellen bruges af en intern Session-model i Rails, som er nødvendig for at gemme sessionsdata på serveren, dvs. \fx den besøgendes favoritter og indkøbsliste, når denne ikke er logget ind.
 
@@ -57,7 +57,7 @@ Ydermere er der tabellen \dbtableref{users\_recipes}, som er nødvendig for at u
 user.favorites << recipe
 \end{lstlisting}
 
-Som illustreret i \figref{fig:database} så er der udover mange-til-mange-forholdene også mere simple relationer. Det ses blandt andet mellem opskrifter og ingredienser, og mellem ingredienser og råvarer. Dette betyder, at ser man på \classref{Ingredient}-modellen, så er der sat to \methodref{belongs\_to}-relationer op, som peger på henholdsvis \classref{Recipe} og \classref{FoodType}. Ligeledes er der i både \classref{Recipe}- og \classref{FoodType}-modellerne sat en \methodref{has\_many}-relation op, som peger på \classref{Ingredient}.
+Som illustreret i \figref{fig:database}, så er der udover mange-til-mange-forholdene også mere simple relationer. Det ses blandt andet mellem opskrifter og ingredienser, og mellem ingredienser og råvaretyper. Dette betyder, at ser man på \classref{Ingredient}-modellen, så er der sat to \methodref{belongs\_to}-relationer op, som peger på henholdsvis \classref{Recipe} og \classref{FoodType}. Ligeledes er der i både \classref{Recipe}- og \classref{FoodType}-modellerne sat en \methodref{has\_many}-relation op, som peger på \classref{Ingredient}.
 
 \pdffig[0.6]{database}
   {Databasetabelstrukturen og associeringerne mellem tabellerne.}
@@ -65,16 +65,16 @@ Som illustreret i \figref{fig:database} så er der udover mange-til-mange-forhol
 
 \subsection{Søgning}
 \label{sec:funktionalitet-soegning}
-Søgningen må siges at være den vigtigste del af \Foodl{}. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
+Søgningen er den vigtigste del af \Foodl{}. Som beskrevet i \secref{sec:systemdefinition}, så er målet med projektet netop at kunne søge blandt mange opskrifter og returnere de opskrifter, som indeholder de råvarer, som brugeren har valgt.
 
-Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er selve forsiden af \Foodl{} med mulighed for at indtaste råvarer, og \methodref{result}, som er resultatsiden.
+Alt dette styres af klassen \classref{SearchController}, som består af tre actions. Ligeledes er aktiviteten spredt ud over to views; \methodref{index}, som er selve forsiden af \Foodl{} med mulighed for at indtaste råvarer, og \methodref{result}, som er resultatsiden, hvor de relevante opskrifter bliver præsenteret.
 
 Den tredje action i controlleren er \methodref{autocomplete\_food\_types}, hvortil der ikke er knyttet et view. Denne action har til formål at returnere en liste over råvarer baseret på brugerens indtastning. Denne funktionalitet er beskrevet i detaljer i nedenstående afsnit.
 
 \subsubsection{Søgeforslag}
 En central del af forsiden og brugerens mulighed for at vælge råvarer er, at systemet kommer med en liste over forslag, som er baseret på brugerens indtastning.
 
-Det eneste denne action gør er at generere en SQL-forespørgsel, som sendes til MySQL-databasen og returnerer et array bestående af fem råvareforslag. Dette array konverteres til JSON-format og returneres. Dermed kan man via JavaScript tilgå denne action med en AJAX-forespørgsel, mens brugeren indtaster, og næsten med det samme fremvise resultatet.
+Det eneste denne action gør er at generere en SQL-forespørgsel, som sendes til MySQL-databasen og returnerer et array bestående af fem råvareforslag. Dette array konverteres til JSON-format og returneres. Dermed kan man via JavaScript tilgå denne action med en AJAX-forespørgsel, mens brugeren indtaster, og næsten med det samme fremvises resultatet.
 
 Et eksempel på en genereret SQL-forespørgsel kan ses i \lstref{lst:soegeforslag-sql}. SQL-forespørgslen er en \texttt{SELECT}-forespørgsel, hvilket vil sige, at vi ønsker at læse fra en tabel i databasen. I første linje vælges kolonnen \texttt{name}, således at kun indholdet af denne kolonne returneres. I linje 2 vælges hvilken tabel forespørgslen skal udføres på, i dette tilfælde \dbtableref{food\_types}-tabellen, altså tabellen med alle råvarer. I linje tre sættes en betingelse for hvilke rækker fra tabellen, der skal returneres, nemlig alle dem, hvor råvarenavnet indeholder ordet ``pølse''. ``\%''-tegnet er wilcard-karakter i SQL, og matcher nul eller flere karakterer. Dvs. ``\%pølse\%'' matcher både ``pølser'', ``pølsebrød'' og ``wienerpølse''. I fjerde linje påbegyndes sorteringsudtrykket. Der sorteres på baggrund af tre parametre. Først og fremmest sorteres resultatet efter en \texttt{CASE}, hvor rækkens navnefelt testes for lighed med det indtastede. Er dette tilfældet er udtrykket lig 1, ellers er det 0. Da der sorteres i faldende rækkefølge (\texttt{DESC}), vil den række (hvis den eksisterer), hvor navnet er lig med det indtastede, altså komme først. Den næste sorteringsparameter, har en lignende \texttt{CASE}, dog med en wildcard-karakter i enden. Dermed vil alle rækker, hvor navnet begynder med det indtastede, komme før de rækker, hvor det indtastede står inde midt i råvarenavnet. Den sidste sorteringsparameter, sorterer efter længden af råvarenavnet i stigende rækkefølge. Dette gøres for, at de mest relevante foreslag kommer øverst. Den sidste linje i forespørgslen (\texttt{LIMIT}), begrænser mængden af resultater til fem.
 
@@ -105,7 +105,7 @@ De valgte råvarer tilføjes med JavaScript til en liste, som sendes videre til 
 \subsubsection{Søgeresultat}
 Resultatsiden håndteres af en action ved navn \methodref{result}, som foretager søgningen på opskrifterne i databasen. 
 
-Den primære parameter er en liste af råvaretyper, som en tekststreng separeret med ``|''-tegn. Det første, der bliver gjort med denne streng, er, at den bliver splittet op i et array bestående af råvarenavne. Derefter genereres en SQL-forespørgsel, som henter id'erne for de valgte råvaretyper fra \dbtableref{food\_types}-tabellen.
+Den primære parameter er en liste af råvaretyper, som er en tekststreng separeret med ``|''-tegn. Det første, der bliver gjort med denne streng, er, at den bliver splittet op i et array bestående af råvarenavne. Derefter genereres en SQL-forespørgsel, som henter id'erne for de valgte råvaretyper fra \dbtableref{food\_types}-tabellen.
 
 For søgestrengen ``\texttt{Pølser|Wasabi|Peber|}'' returneres derfor array'et \lstinline[language=Ruby]{[1116, 1113, 2]}. Disse id'er bruges til at generere endnu en SQL-forespørgsel, med det formål at finde opskrifter, som indeholder de valgte råvaretyper. Et eksempel på dette kan ses i \lstref{lst:soegeresultat-sql}.
 
