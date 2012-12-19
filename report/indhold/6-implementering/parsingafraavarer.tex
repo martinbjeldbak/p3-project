@@ -105,29 +105,25 @@ Vi har brugt tilfældigt udvalgte ingredienser fra Arlas opskrifter til at teste
 \end{enumerate}
 
 
-\begin{table}
-  \center
-    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
-        \hline
-        Ingrediens                                                 & Metode 1        & Metode 2                & Metode 3           & Metode 4           & Metode 5        \\ \hline
-        dildkvist                                                  & \textbf{dild}            & \textbf{dild}                    & \textbf{dild}               & sildefilet         & dild            \\ \hline
-        groft salt                                                 & \textbf{salt}            & citron saft             & frugtsaft          & frugtsaft          & \textbf{salt}            \\ \hline
-        grofthakkede krydderurter, fx koriander, persille og dild & \textbf{krydderurtemix}  & \textbf{tikka (indisk krydderi)} & hakkede tomater    & hakkede tomater    & hakkede tomater \\ \hline
-        basmatiris eller luftige urteris                           & \textbf{basmati ris}     & herbamare urtebouillon  & \textbf{basmati ris}        & \textbf{basmati ris}        & \textbf{basmati ris}     \\ \hline
-        ostindisk karry                                            & \textbf{karrypasta}      & kinaradise              & sød sherry         & sød sherry         & \textbf{karry}           \\ \hline
-        frisk salvie                                               & \textbf{salvie}          & \textbf{salvie}                  & fiskesauce         & fiskesauce         & \textbf{salvie}          \\ \hline
-        koncentreret tomatpure                                     & \textbf{tomatpure}       & \textbf{tomatpure}               & soltørrede tomater & soltørrede tomater & \textbf{tomatpure}       \\ \hline
-        hakket svinelever                                          & hakket svinekød & \textbf{svinelever}              & hakket svinekød    & hakket svinekød    & \textbf{svinelever}      \\ \hline
-        store kapers med stilk                                     & \textbf{kapers}          & syltede artiskokhjerter & trefarvet is       & trefarvet is       & \textbf{kapers}          \\ \hline
-        hvidvin fx rieslin                                         & \textbf{hvidvin}         & \textbf{hvidvin}                 & hvidvinseddike     & hvidvinseddike     & \textbf{hvidvin}         \\ \hline
-        friskpresset limesaft                                      & \textbf{limesaft}        & \textbf{limesaft}                & appelsinsaft       & appelsinsaft       & \textbf{limesaft}        \\ \hline
-        kartoffel                                                  & \textbf{kartofler}       & \textbf{kartofler}               & \textbf{kartofler}          & \textbf{kartofler}          & kartoffelmel    \\ \hline
-        ~                                                          & ~               & ~                       & ~                  & ~                  & ~               \\ \hline
-        Total:                                                     & 11              & 7                       & 3                  & 2                  & 10              \\
-        \hline
-    \end{tabular}
-  \capt{Test af flere forskellige \methodref{CompareStrings} funktioner, der bruges til at mappe en ingrediens til en råvaretype. Fed skrift betyder at begge vores informanter har godkendt mappingen. Se \apref{ap:valgafmappingmetode}}  \label{table:test-af-compares}
-\end{table}
+\ourtable{test-af-compares}{5}{Test af flere forskellige \methodref{CompareStrings} funktioner, der bruges til at mappe en ingrediens til en råvaretype. Fed skrift betyder at begge vores informanter har godkendt mappingen. Se \apref{ap:valgafmappingmetode}}
+                                                                                                                               { Metode }
+       {Ingrediens                                               }{ 1                       & 2                                & 3                    & 4                    & 5                    }{
+\ourrow{dildkvist                                                }{ \textbf{dild}           & \textbf{dild}                    & \textbf{dild}        & sildefilet           & dild                 }
+\ourrow{groft salt                                               }{ \textbf{salt}           & citron saft                      & frugtsaft            & frugtsaft            & \textbf{salt}        }
+\ourrow{\begin{tabular}[t]{@{}r@{}}grofthakkede krydderurter,\\ fx koriander, persille\\ og dild\end{tabular}}
+{ \textbf{krydderurtemix} & \textbf{tikka (indisk krydderi)} & hakkede tomater      & hakkede tomater      & hakkede tomater      }
+\ourrow{basmatiris eller luftige urteris                         }{ \textbf{basmati ris}    & herbamare urtebouillon           & \textbf{basmati ris} & \textbf{basmati ris} & \textbf{basmati ris} }
+\ourrow{ostindisk karry                                          }{ \textbf{karrypasta}     & kinaradise                       & sød sherry           & sød sherry           & \textbf{karry}       }
+\ourrow{frisk salvie                                             }{ \textbf{salvie}         & \textbf{salvie}                  & fiskesauce           & fiskesauce           & \textbf{salvie}      }
+\ourrow{koncentreret tomatpure                                   }{ \textbf{tomatpure}      & \textbf{tomatpure}               & soltørrede tomater   & soltørrede tomater   & \textbf{tomatpure}   }
+\ourrow{hakket svinelever                                        }{ hakket svinekød         & \textbf{svinelever}              & hakket svinekød      & hakket svinekød      & \textbf{svinelever}  }
+\ourrow{store kapers med stilk                                   }{ \textbf{kapers}         & syltede artiskokhjerter          & trefarvet is         & trefarvet is         & \textbf{kapers}      }
+\ourrow{hvidvin fx rieslin                                       }{ \textbf{hvidvin}        & \textbf{hvidvin}                 & hvidvinseddike       & hvidvinseddike       & \textbf{hvidvin}     }
+\ourrow{friskpresset limesaft                                    }{ \textbf{limesaft}       & \textbf{limesaft}                & appelsinsaft         & appelsinsaft         & \textbf{limesaft}    }
+\ourrow{kartoffel                                                }{ \textbf{kartofler}      & \textbf{kartofler}               & \textbf{kartofler}   & \textbf{kartofler}   & kartoffelmel         }
+\ourrow{~                                                        }{ ~                       & ~                                & ~                    & ~                    & ~                    }
+\ourrow{Total:                                                   }{ 11                      & 7                                & 3                    & 2                    & 10                   }
+}
 
 Som det ses i \tableref{table:test-af-compares}, var metode 1 den, der gav den bedste mapping. Metoden fik 11 rigtige ud af 12 mulige, men det bør bemærkes, at sammenligningen kun er foretaget på de ingredienser, som mindst én metode mappede forkert. Vi kom forbi 56 ingredienser, udover de ingredienser vist i tabellen, før vi tilsammen havde 12 ingredienser, som én eller flere metoder mappede forkert. 
 
@@ -136,22 +132,15 @@ Udover metode 1 og 2, som er algoritmer, vi selv har forsøgt at skræddersy til
 Metode 1 er en algoritme, vi selv har udviklet, der er beskrevet med pseudokode i \pseudoref{alg:compare}. Vi har benyttet pseudokode i stedet for Ruby-kode, da pseudokoden gør algoritmen kortere, mere overskuelig og ikke stiller krav til at læseren har kendskab til Ruby-kode. Algoritmen tager to strenge som input, og returnerer en værdi mellem 0 og 100. Højere returværdi betyder større lighed mellem de to inputtede strenge. 100 point opnås kun ved to identiske strenge. Idéen bag algoritmen er, at to inputtede strenge, $a$ og $b$, hele tiden sammenlignes for at finde den længste streng, de har til fælles. Denne streng fjernes fra $a$ og $b$, og en score med længden af fællesstrengen i anden potens bliver lagt til variablen \textit{score}. Sådan fortsættes indtil $a$ og $b$ ikke længere har nogen streng til fælles. Dette er også tilfældet, hvis én eller begge er tomme strenge. Ligheden mellem de to strenge beregnes ved at finde ud af, hvor stor en procentdel den endelige score udgør af den maksimalt opnåelige score, der fås kun hvis $a = b$.
 I \tableref{table:vores-compare-eksempel} ses et eksempel på, hvordan algoritmen sammenligner \textit{hummersuppe} med \textit{suppe med hummerhale} og kommer frem til resultatet $13.8$.
 
-\begin{table}
-  \center
-    \begin{tabular}{|l|l|l|}
-        \hline
-        str1        & str2                  & ~                             \\ \hline
-hummersuppe & suppe med hummerhaler & $max\_length = 21$               \\         
-        \textbf{hummer}suppe & suppe med \textbf{hummer}haler & $score = 6^2 = 36$               \\ 
-        \textbf{suppe}       & \textbf{suppe} med haler       & $score = score + 5^2 = 36 + 25 = 61$                 \\ 
-        ~           &  med haler            & no common substrings found        \\ 
-        ~           & ~                     & $max\_score = 21^2  = 441$    \\ 
-        ~           & ~                     & $return \frac{61 \times 100}{441} = 13.8$ \\
-        \hline
-    \end{tabular}
-    \capt{Her vises et eksempel på, hvordan metode 1 sammenligner \textit{hummersuppe} med \textit{suppe med hummerhaler}.}
-    \label{table:vores-compare-eksempel}
-\end{table}
+\ourtable{vores-compare-eksempel}{3}{Her vises et eksempel på, hvordan metode 1 sammenligner \textit{hummersuppe} med \textit{suppe med hummerhaler}.}
+                                     { Sammenligninger }
+       {Trin}{ Tekststreng 1        & Tekststreng 2                  & Scoreudregning                           }{
+\ourrow{1   }{ hummersuppe          & suppe med hummerhaler          & $max\_length = 21$                        }
+\ourrow{2   }{ \textbf{hummer}suppe & suppe med \textbf{hummer}haler & $score = 6^2 = 36$                        }
+\ourrow{3   }{ ~                    & med haler                      & no common substrings found                }
+\ourrow{4   }{ ~                    & ~                              & $max\_score = 21^2  = 441$                }
+\ourrow{5   }{ ~                    & ~                              & $return \frac{61 \times 100}{441} = 13.8$ }
+}
 
 Metode 2 var magen til metode 1 bortset fra, at scoren kun blev forøget med længden af fællesstrengen, og ikke i anden potens som i metode 1 (se \pseudoref{alg:compare}, linje 8). På samme måde blev variablen $max\_score$ i linje 11 også beregnet lineært.
 
