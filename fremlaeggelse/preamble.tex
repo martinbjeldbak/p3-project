@@ -1,0 +1,33 @@
+\documentclass[xelatex]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Garamond}
+\setmonofont{Consolas}
+
+\usetheme{Copenhagen}
+
+% Vis disposition mellem hver sektion
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\title[Foodl - anvendelse af madrester]{Foodl}
+\subtitle{Anvendelse af maddrester}
+\author[d303e12]{Sebastian Wahl   \and
+        Simon Buus Jensen         \and
+        Elias Khazen Obeid        \and
+        Niels Sonnich Poulsen     \and
+        Kent Munthe Capsersen     \and
+        Martin Bjeldbak Madsen}
+\institute{Institut for Datalogi\\
+           Aalborg Universitet\\
+           Selma Lagerlöfs Vej 300\\
+           9220 Aalborg Ø}
+\date{11. januar 2013}
+\subject{Datalogi}
