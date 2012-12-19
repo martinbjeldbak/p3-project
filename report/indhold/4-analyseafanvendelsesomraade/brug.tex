@@ -1,12 +1,12 @@
 \section{Brug}
 \label{sec:brug}
-Denne analyse af anvendelsesområdets brug har til formål at gøre det klart, hvordan \Foodl{} interagerer med brugere og andre systemer. Vi analyserer, hvilke aktører, der benytter \Foodl{} og beskriver disse. Måden, hvorpå aktørerne interagerer med \Foodl{}, beskriver vi med brugsmønstre. Hver enkelt brugsmønster vedrører en eller flere aktører. Denne relation vises i \tableref{table:aktoertabel}. Et flueben betyder, at brugsmønstret i samme række vedrører aktøren i samme kolonne.
+Denne analyse af anvendelsesområdets brug har til formål at gøre det klart, hvordan \Foodl{} interagerer med brugere og andre systemer. Vi analyserer, hvilke aktører, der benytter \Foodl{} og beskriver disse. Måden, hvorpå aktørerne interagerer med \Foodl{}, beskriver vi med brugsmønstre. Hver enkelt brugsmønster vedrører en eller flere aktører. Relationerne vises i \tableref{table:aktoertabel}. Et flueben betyder, at brugsmønstret i samme række vedrører aktøren i samme kolonne.
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/aktoertabel}
 
 \subsection{Aktører}
 \label{sec:aktoerer}
-For at finde aktører har vi spurgt os selv, hvem der skal bruge systemet. Vi har identificeret 3 aktører: Bruger, Administrator og Dataudtrækker, der vil kunne interagere med \Foodl{}. Disse aktører er vist i \tableref{table:aktoertabel}. Aktørerne Bruger og Administrator er personer, der benytter systemet, mens Dataudtrækker er et andet system. Bruger repræsenterer person-klassen fra problemområdet og kan betragtes som den samme person. Det er på grund af, at der ikke er ``brugere'' i problemområdet, da der ikke er noget system at bruge. Aktørerne specificeres med en beskrivelse af aktøren og om nødvendigt en eller flere eksempler på hver enkelt aktør. Disse beskrivelser har til formål at give læseren en bedre forståelse for, hvilke egenskaber og karakteristika en sådan aktør besidder. 
+For at finde aktører har vi spurgt os selv, hvem der skal bruge systemet. Vi har identificeret 3 aktører: Bruger, Administrator og Dataudtrækker, der vil kunne interagere med \Foodl{}. Disse aktører er vist i \tableref{table:aktoertabel}. Aktørerne Bruger og Administrator er personer, der benytter systemet, mens Dataudtrækker er et andet system. Bruger repræsenterer den samme person, som afspejles af person-klassen i problemområdet. Aktøren har et andet navn en brugeren, for klart at skelne mellem problem- og anvendelsesområdet. Der er nemlig ikke ``brugere'' i problemområdet, da der ikke er noget system at bruge. Aktørerne specificeres med en beskrivelse af aktøren samt en, eller om nødvendigt, flere eksempler på hver enkelt aktør. Disse beskrivelser har til formål at give læseren en bedre forståelse for, hvilke egenskaber og karakteristika en sådan aktør besidder. 
 
 \input{indhold/4-analyseafanvendelsesomraade/brug/aktoerbeskrivelse}
 
@@ -22,7 +22,7 @@ I forbindelse med modelleringen af brugsmønstre, har vi fokuseret på at identi
 \item Brugsmønstret har været været en del af eller magen til et andet brugsmønstre
 \end{itemize}
 
-De fravalgte kandidater, samt begrundelsen af fravælgelsen, fremgår af \apref{ap:fravalgtebrugsmoenstre}.
+De fravalgte kandidater, samt begrundelsen for fravælgelsen, fremgår af \apref{ap:fravalgtebrugsmoenstre}.
 
 Aktøren ``bruger'' vil være den vigtigste aktør i forhold til brugen af systemet. Det er meningen, at der skal være rigtig mange brugere, der kan få gavn af systemet. Disse brugeres kompetencer mht. computerbrug vil variere utroligt meget, og det skal vi tage højde for.
 

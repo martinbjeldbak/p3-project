@@ -1,31 +1,38 @@
-\section{Unittests}
+\section{Modultest}
 \label{sec:unittests}
-For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, som er et Ruby framework, der først og fremmest er minded mod ``behaviour-driven development'', men også kan bruges til at skrive unittests med. Vi har unittestet bruger-modellen, fordi den er central for systemet, og den er i direkte kontakt med brugeren. Derudover har vi også unittestet enkelte forespørgelser, nemlig log-in-forespørgelsen og log-ud-forespørgelsen. Vi har ikke foretaget unittest af hele systemet, hvilket er grundet nød af resurser, og idet pålidligheds kriteriet, specificeret i \chapref{chap:design}, er blevet vurderet som ``mindre vigtigt'', har vi valgt at nedprioritere det. Eksempler på nogle af de unittests vi har foretaget på bruger-modellen, ved hjælp af RSpec, ses i \lstref{lst:password} og \lstref{lst:email}.
+For at verificere at programmet opfører sig som vi ønsker, har vi benyttet RSpec, hvilket er et Ruby modultestframework (unit testing framework), der først og fremmest er minded mod ``behaviour-driven development'', men også kan bruges til at skrive modultests med. Vi har modultestet bruger-modellen, fordi den er central for systemet, og den er i direkte kontakt med brugeren og kan have kritiske fejl. Derudover har vi også modultestet enkelte forespørgelser (requests i RSpec), der simulerer en brugeres interaktion med systemet. \Fx testes der login-systemet samt det HTML, der vises, efter man har logget ind. Vi har ikke foretaget modultest af hele systemet, hvilket er grundet nød af ressourcer. Idet pålidelighedskriteriet, specificeret i \chapref{chap:design}, er blevet vurderet som ``mindre vigtigt'', har vi valgt at nedprioritere dem. Eksempler på nogle af de modultest vi har foretaget på bruger-modellen, ved hjælp af RSpec, ses i \lstref{lst:password} og \lstref{lst:email}. For resten af tests refereres der til kildekoden.
 
-\begin{lstlisting}[caption={Et eksempel på unittesting af, om brugeren har indtastet et password, når han/hun opretter sig som bruger},label=lst:password,language=Ruby]
+
+Det skal nævnes, at ``@user'' er en instansvariabel defineret tidligere i modultestfilen og er et objekt af klassen ``user'' (se \secref{sec:modelfunktion}), der indeholder de attributter og metoder, der hører med til alle instanser af klassen. Eksempel \ref{lst:password} viser en enkel modultest for brugeroprettelsesprocessen. Her skal kodeordfeltet og kodeordbekræftelsesfeltet være præcis ens, ellers kan objektet ikke være valid. Metoden \methodref{valid?} på bruger-objektet er en Active Record metode (bruger-modellen nedarver fra ActiveRecord-klassen) og returnerer blot sand eller falsk, alt afhængigt om objektet kan gemmes i databasen eller ej. Denne metode bliver kaldt på linje 3 i eksemplet.
+
+\begin{lstlisting}[caption={Modultest af brugerens har indtastede password, når han/hun opretter sig som bruger},label=lst:password,language=Ruby]
 describe "when password is not present" do
-    before { @user.password = @user.password_confirmation = " "}
-    it {should_not be_valid}
+  before { @user.password = @user.password_confirmation = " " }
+  it { should_not be_valid }
 end
 \end{lstlisting}
 
-\begin{lstlisting}[caption={Et eksempel på unittesting af, om en brugers email er valid, når han/hun opretter sig som bruger},label=lst:email,language=Ruby]
+Eksempel \ref{lst:email} viser modultest af emailadressefeltet, også fundet i brugermodellen. Her testes der på validiteten af emailadressen. Emailadresser i bruger-modellen bliver tjekket af et regulære udtryk, inden objektet gemmes i databasen. Derfor testes der på adresser, der strider imod det regulære udtryk og burde derfor ikke godkendes ved brug af \methodref{@user.valid?}.
+
+\begin{lstlisting}[caption={Modultest af en brugers email er valid, når han/hun opretter sig som bruger},label=lst:email,language=Ruby]
 describe "when email format is invalid" do
-	it "should be invalid" do
-    	addresses = %w[user@foo,com user_at_foo.org example.user@foo.
-                 	 foo@bar_baz.com foo@bar+baz.com]
-    	addresses.each do |invalid_address|
-    		@user.email = invalid_address
-        	@user.should_not be_valid
-    	end
+  it "should be invalid" do
+    addresses = %w[user@foo,com user_at_foo.org example.user@foo.
+                   foo@bar_baz.com foo@bar+baz.com]
+    addresses.each do |invalid_address|
+      @user.email = invalid_address
+      @user.should_not be_valid
     end
+  end
 end
 \end{lstlisting}
+
+Der er foretaget flere lignende modultest på bruger-modellen samt login-systemet. Der er ikke nogen konkret kodedækningsprocent, da det er svært at vurdere, hvorvidt de forskellige actions er blevet testet.
 
 \subsection{Metode til at finde lighed mellem tekststrenge}
-Vi benyttede en ret simpel fremgangsmåde til at unitteste funktionen \methodref{CompareStrings}, der tester ligheden mellem to tekststrenge. Vi unittestede denne funktion i Ruby, ved at initialisere et array som vist i \lstref{lst:testcases}.
+Vi benyttede en ret simpel fremgangsmåde til at modulteste metoden \methodref{CompareStrings}, der tester ligheden mellem to tekststrenge. Vi testede denne funktion i Ruby, ved at initialisere et array som vist i \lstref{lst:testcases}. Der er ikke brugt RSpec til modultest af dette program.
 
-\begin{lstlisting}[caption={Et eksempel på en række testcases til brug ved unittesting.},label=lst:testcases,language=Ruby]
+\begin{lstlisting}[caption={Et eksempel på en række testcases til brug ved modultest.},label=lst:testcases,language=Ruby]
 test_cases = [
   ["aa12345", "aa67890", "aa"],
   ["aa12345", "678aa90", "aa"],
@@ -34,4 +41,4 @@ test_cases = [
 \end{lstlisting}
 
 I arrayet \texttt{test\_cases}, består hvert element af et array, hvor hvert element i nævnte rækkefølge er: [input1, input2, forventet returværdi].
-For hvert element i arrayet, blev det testet om \methodref{CompareStrings(input1, inpu2)} returnerede den forventede værdi. Eksemplet er kun et udpluk af 26 test-cases, der fremgår af kildekoden.
+For hvert element i arrayet, blev det testet om \methodref{CompareStrings(input1, input2)} returnerede den forventede værdi. Eksemplet er kun et udpluk af 26 test-cases, der fremgår af kildekoden.
