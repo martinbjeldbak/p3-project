@@ -1,0 +1,21 @@
+
+\begin{table}
+  \centering
+    \begin{tabular}{ r | c c c c c c }  \hline
+  & \multicolumn{6}{c}{\textbf{Overskrift1}} \\ \hline
+   \textbf{Overskrift2}    & test1 & test2 & test3 & test4 & test5 & test6\\ \hline 
+ ~ & write & write & write & write & write & write \\
+ ~ & write & write & write & write & write & write \\
+ ~ & write & write & write & write & write & write \\
+ ~ & write & write & write & write & write & write \\
+ ~ & write & write & write & write & write & write \\
+	\hline
+    \end{tabular}
+    \caption{test test test.}
+    \label{table:test}
+\end{table}
+
+
+README:
+Du skal ændre i hvor mange c'er der er i toppen og hvor mange input du har i selve tabellen. 
+Derudover skal du ændre tallet i multicolumn, så det passer med antal c'er.
