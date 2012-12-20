@@ -2,29 +2,28 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[danish]{babel}
+\usepackage{multirow}
+\usepackage{tabularx}
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Garamond}
 \setmonofont{Consolas}
 
-\usetheme{Copenhagen}
+\AtBeginSection{
+  \frame{\sectionpage}
+}
 
-% Vis disposition mellem hver sektion
-%\AtBeginSection[]
-%{
-%  \begin{frame}
-%    \frametitle{Table of Contents}
-%    \tableofcontents[currentsection]
-%  \end{frame}
-%}
+\deftranslation[to=danish]{Section}{Del}
 
-\title[Foodl - anvendelse af madrester]{Foodl}
-\subtitle{Anvendelse af maddrester}
-\author[d303e12]{Sebastian Wahl   \and
-        Simon Buus Jensen         \and
-        Elias Khazen Obeid        \and
-        Niels Sonnich Poulsen     \and
-        Kent Munthe Capsersen     \and
-        Martin Bjeldbak Madsen}
+\usetheme{intridea}
+
+\title[Foodl - anvendelse af madrester]{\includegraphics[width=0.5\textwidth]{../report/billeder/logo.png}}
+\subtitle{Anvendelse af Maddrester}
+\author[Gruppe d303e12]{Kent M. C.     \and
+        Sebastian W.   \and
+        Elias K. O.        \and\\
+        Simon B. J.         \and
+        Niels S. P.     \and
+        Martin B. M.}
 \institute{Institut for Datalogi\\
            Aalborg Universitet\\
            Selma Lagerlöfs Vej 300\\
