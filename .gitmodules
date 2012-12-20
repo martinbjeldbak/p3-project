@@ -1,0 +1,3 @@
+[submodule "fremlaeggelse/intridea"]
+	path = fremlaeggelse/intridea
+	url = git://github.com/doitian/intridea-beamer-theme.git
