@@ -2,20 +2,28 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[danish]{babel}
+\usepackage{multirow}
+\usepackage{tabularx}
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX]{Garamond}
+\setmainfont[Ligatures=TeX]{Trebuchet MS}
 \setmonofont{Consolas}
+
+\AtBeginSection{
+  \frame{\sectionpage}
+}
+
+\deftranslation[to=danish]{Section}{Del}
 
 \usetheme{intridea}
 
-\title[Foodl - anvendelse af madrester]{Foodl}
-\subtitle{Anvendelse af maddrester}
-\author[d303e12]{Sebastian Wahl   \and
-        Simon Buus Jensen         \and
-        Elias Khazen Obeid        \and
-        Niels Sonnich Poulsen     \and
-        Kent Munthe Capsersen     \and
-        Martin Bjeldbak Madsen}
+\title[Foodl - Anvendelse af Madrester]{\includegraphics[width=0.5\textwidth]{../report/billeder/logo.png}}
+\subtitle{Anvendelse af Madrester}
+\author[Gruppe d303e12]{Kent M. C.     \and
+        Sebastian W.   \and
+        Elias K. O.        \and\\
+        Simon B. J.         \and
+        Niels S. P.     \and
+        Martin B. M.}
 \institute{Institut for Datalogi\\
            Aalborg Universitet\\
            Selma Lagerlöfs Vej 300\\
